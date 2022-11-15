@@ -1,0 +1,278 @@
+---
+WorkSize: 32
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_ee100
+
+---
+; codeLabels: 
+; codeRevealer: -l 43 -l 57
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushImm 0
+ pushFromFSpVal 16
+ subf 
+ infzf 
+ jnz L73
+ pushFromFSp 0
+ gosub 4, L78
+ eqz 
+ jnz L45
+ jmp L73
+D43:
+L43:
+ jmp L45
+L45:
+ pushFromFSp 0
+ syscall 3, 90 ; ?
+ jnz L59
+ pushFromFSp 0
+ gosub 4, L137
+ jmp L73
+D57:
+L57:
+ jmp L59
+L59:
+ pushFromFSp 0
+ gosub 4, L198
+ pushFromFSpVal 16
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSpVal 16
+ halt 
+ jmp L25
+L73:
+ pushFromFSp 0
+ syscall 3, 2 ; ?
+ ret 
+L78:
+ popToSp 0
+ pushFromFSp 0
+ syscall 3, 5 ; ?
+ jnz L129
+ pushFromFSpVal 8
+ dup 
+ pushImm 0
+ sub 
+ jnz L97
+ jmp L107
+L97:
+ pushFromFSp 0
+ pushFromFSpVal 12
+ syscall 3, 4 ; ?
+ popToSp 4
+ jmp L126
+L107:
+ dup 
+ pushImm 1
+ sub 
+ jnz L116
+ jmp L126
+L116:
+ pushFromFSp 0
+ pushFromFSpVal 12
+ syscall 3, 9 ; ?
+ popToSp 4
+ jmp L126
+L126:
+ drop 
+ jmp L134
+L129:
+ pushImm 1
+ popToSp 4
+L134:
+ pushFromFSp 4
+ ret 
+L137:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1092616192
+ syscall 3, 113 ; ?
+ pushFromFSp 0
+ syscall 3, 114 ; ?
+ pushFromFSp 0
+ syscall 3, 135 ; ?
+ pushFromFSp 0
+ pushFromFSp 0
+ syscall 3, 54 ; ?
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 1
+ syscall 3, 134 ; ?
+ pushImm 1092616192
+ gosub 4, L176
+ ret 
+L176:
+ popToSp 0
+L178:
+ pushFromFSp 0
+ pushImm 0
+ subf 
+ supzf 
+ jnz L197
+ pushFromFSp 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 0
+ halt 
+ jmp L178
+L197:
+ ret 
+L198:
+ popToSp 0
+ pushFromFSp 0
+ syscall 3, 12 ; ?
+ popToSp 4
+ pushFromFSp 4
+ pushImm 1181376512
+ subf 
+ infzf 
+ jnz L222
+ pushImm 2
+ popToSp 8
+ jmp L243
+L222:
+ pushFromFSp 4
+ pushImm 1191753728
+ subf 
+ infzf 
+ jnz L238
+ pushImm 1
+ popToSp 8
+ jmp L243
+L238:
+ pushImm 0
+ popToSp 8
+L243:
+ pushFromFSpVal 20
+ pushFromFSp 8
+ sub 
+ neqz 
+ jnz L356
+ pushFromFSp 8
+ popToSpVal 20
+ pushFromFSpVal 20
+ dup 
+ pushImm 0
+ sub 
+ jnz L266
+ jmp L289
+L266:
+ pushFromFSp 0
+ pushImm 0
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 1
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 2
+ syscall 3, 40 ; ?
+ jmp L353
+L289:
+ dup 
+ pushImm 1
+ sub 
+ jnz L298
+ jmp L321
+L298:
+ pushFromFSp 0
+ pushImm 0
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 2
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 1
+ syscall 3, 40 ; ?
+ jmp L353
+L321:
+ dup 
+ pushImm 2
+ sub 
+ jnz L330
+ jmp L353
+L330:
+ pushFromFSp 0
+ pushImm 1
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 2
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 0
+ syscall 3, 40 ; ?
+ jmp L353
+L353:
+ drop 
+ jmp L356
+L356:
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L366
+ ret 
+L366:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L446
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ syscall 3, 73 ; ?
+ popToSpVal 8
+ pushFromFSp 0
+ syscall 3, 74 ; ?
+ popToSpVal 12
+ pushFromFSpVal 12
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L414
+ pushImm 0
+ popToSpVal 12
+ jmp L414
+L414:
+ pushFromFSp 0
+ syscall 3, 81 ; ?
+ popToSpVal 16
+ pushFromFSpVal 16
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L436
+ pushImm 1142292480
+ popToSpVal 16
+ jmp L436
+L436:
+ pushImm 0
+ popToSpVal 20
+ pushFromFSp 0
+ syscall 3, 89 ; ?
+ ret 
+L446:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+
+ section .bss
+W0:
+ resb 32

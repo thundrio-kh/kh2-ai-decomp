@@ -1,0 +1,121 @@
+---
+WorkSize: 64
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 11
+  Addr: TR11
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: n_ex500_money_r
+
+---
+; codeLabels: 
+; codeRevealer: -l 125
+ section .text
+TR11:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 4
+ dup 
+ pushImm 382
+ sub 
+ jnz L39
+ jmp L110
+L39:
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ popToSp 12
+ pushFromFSp 12
+ pushImm 0
+ sub 
+ info 
+ jnz L62
+ pushImm 9
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ jmp L108
+L62:
+ pushFromFSp 12
+ pushImm 10
+ sub 
+ info 
+ jnz L81
+ pushImm 10
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ jmp L108
+L81:
+ pushFromFSp 12
+ pushImm 20
+ sub 
+ info 
+ jnz L100
+ pushImm 11
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ jmp L108
+L100:
+ pushImm 12
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+L108:
+ jmp L110
+L110:
+ drop 
+ ret 
+TR1:
+ pushFromPWp W0
+ gosub 4, L117
+ ret 
+L117:
+ popToSp 0
+ gosub 4, L122
+ ret 
+L122:
+ halt 
+ jmp L122
+D125:
+L125:
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L135
+ ret 
+L135:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L146
+ ret 
+L146:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L157
+ ret 
+L157:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+D166:
+TXT166:
+ db 'near_wait',0
+TXT171:
+ db 'jump start',0,0
+TXT177:
+ db 'jump end',0,0
+TXT182:
+ db 'near',0,0
+
+ section .bss
+W0:
+ resb 64

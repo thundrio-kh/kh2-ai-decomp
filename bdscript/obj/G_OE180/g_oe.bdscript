@@ -1,0 +1,271 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_oe180
+
+---
+; codeLabels: 
+; codeRevealer: -l 59 -l 104
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+ pushImm 1132593152
+ gosub 4, L69
+L30:
+ pushFromFSp 0
+ gosub 4, L91
+ pushFromFSpVal 8
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSpVal 8
+ pushFromFSpVal 12
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSpVal 12
+ pushFromFSpVal 8
+ pushImm 1138491392
+ subf 
+ supzf 
+ jnz L61
+ jmp L64
+D59:
+L59:
+ jmp L61
+L61:
+ halt 
+ jmp L30
+L64:
+ pushFromFSp 0
+ syscall 3, 2 ; ?
+ ret 
+L69:
+ popToSp 0
+L71:
+ pushFromFSp 0
+ pushImm 0
+ subf 
+ supzf 
+ jnz L90
+ pushFromFSp 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 0
+ halt 
+ jmp L71
+L90:
+ ret 
+L91:
+ popToSp 0
+ pushFromFSpVal 12
+ pushImm 1077936128
+ subf 
+ infzf 
+ jnz L106
+ jmp L208
+D104:
+L104:
+ jmp L106
+L106:
+ pushImm 0
+ popToSpVal 12
+ pushFromFSp 0
+ syscall 3, 66 ; ?
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ gosub 12, L209
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 12
+ add 
+ pushImm 1065353216
+ memcpy 0
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ popToSp 32
+ pushFromFSp 32
+ pushImm 1058642330
+ subf 
+ supzf 
+ jnz L179
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImm 0
+ syscall 3, 134 ; ?
+ jmp L208
+L179:
+ pushFromFSp 32
+ pushImm 1050253722
+ subf 
+ supzf 
+ jnz L199
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImm 0
+ syscall 3, 115 ; ?
+ jmp L208
+L199:
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImm 0
+ syscall 3, 111 ; ?
+L208:
+ ret 
+L209:
+ pushFromPSp 0
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImm 0
+ pushImm 1065353216
+ gosub 8, L366
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImm 1056964608
+ subf 
+ infzf 
+ jnz L253
+ pushFromPSp 0
+ dup 
+ fetchValue 0
+ pushImm -1082130432
+ mulf 
+ memcpy 0
+ jmp L253
+L253:
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImm 1056964608
+ subf 
+ infzf 
+ jnz L281
+ pushFromPSp 0
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImm -1082130432
+ mulf 
+ memcpy 0
+ jmp L281
+L281:
+ pushFromPSp 0
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ drop 
+ pushImm 1142292480
+ pushImm 1155596288
+ syscall 0, 18 ; trap_random_range (2 in, 1 out)
+ popToSp 16
+ pushFromPSp 0
+ pushFromFSp 16
+ syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 0
+ pushFromPSp 0
+ pushImm 12
+ add 
+ pushImm 1065353216
+ memcpy 0
+ pushFromPSp 0
+ pushImm 8
+ add 
+ pushImm 0
+ pushImm 1178304512
+ syscall 0, 18 ; trap_random_range (2 in, 1 out)
+ memcpy 0
+ pushImm 1065353216
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImm 1056964608
+ subf 
+ infzf 
+ jnz L363
+ pushFromPSp 0
+ pushImm 8
+ add 
+ dup 
+ fetchValue 0
+ pushImm -1082130432
+ mulf 
+ memcpy 0
+ jmp L363
+L363:
+ pushFromPSp 0
+ ret 
+L366:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ pushFromFSp 16
+ popToSpVal 0
+ pushFromFSp 12
+ popToSpVal 4
+ pushFromFSp 8
+ popToSpVal 8
+ pushFromFSp 4
+ popToSpVal 12
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L402
+ ret 
+L402:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L467
+ pushFromPSp 32
+ pushImm 0
+ pushImm -958179328
+ pushImm 1184389120
+ pushImm 1065353216
+ gosub 16, L366
+ pushFromPSp 16
+ pushImm 0
+ pushImm 0
+ pushImm 1065353216
+ pushImm 0
+ gosub 16, L366
+ pushFromFSp 0
+ pushFromPSp 32
+ syscall 3, 60 ; ?
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 3, 61 ; ?
+ pushImm 0
+ popToSpVal 8
+ pushImm 1077936128
+ popToSpVal 12
+ ret 
+L467:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+
+ section .bss
+W0:
+ resb 16

@@ -1,0 +1,6 @@
+/----- (00000000004F4FF0) ----------------------------------------------------
+void __fastcall YS::trap_attack_get_param_id(BD_VALUE_19 *args)
+{
+  *(_DWORD *)args = *(_DWORD *)(*(unsigned int *)args + 0x14LL);
+}
+

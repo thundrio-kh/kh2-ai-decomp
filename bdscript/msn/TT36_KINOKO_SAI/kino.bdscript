@@ -1,0 +1,270 @@
+---
+WorkSize: 32
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+- Key: 2
+  Addr: TR2
+Name: kinoko_sai
+
+---
+; codeLabels: 
+; codeRevealer: -l 332
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 4, L60
+ pushFromFSp 4
+ dup 
+ pushImm 75
+ sub 
+ jnz L50
+ dup 
+ pushImm 174
+ sub 
+ jnz L50
+ jmp L58
+L50:
+ pushFromPWp W8
+ gosub 4, L119
+ gosub 4, L118
+ jmp L58
+L58:
+ drop 
+ ret 
+L60:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 31
+ sub 
+ jnz L75
+ jmp L93
+L75:
+ pushFromFSp 0
+ dup 
+ pushImm 668
+ sub 
+ jnz L86
+ jmp L90
+L86:
+ gosub 4, L115
+ jmp L90
+L90:
+ drop 
+ jmp L113
+L93:
+ dup 
+ pushImm 74
+ sub 
+ jnz L109
+ dup 
+ pushImm 174
+ sub 
+ jnz L109
+ jmp L113
+L109:
+ gosub 4, L118
+ jmp L113
+L113:
+ drop 
+ ret 
+L115:
+ syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
+ ret 
+L118:
+ ret 
+L119:
+ popToSp 0
+ syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
+ pushFromFSpVal 8
+ pushImm 4
+ pushFromFSpVal 0
+ syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ jnz L147
+ pushFromFSpVal 0
+ syscall 4, 47 ; trap_mission_warning_timer (1 in, 0 out)
+ pushImm 10
+ syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
+ jmp L147
+L147:
+ ret 
+TR3:
+ pushFromPWp W8
+ pushImm 34
+ pushImm 0
+ pushImm 0
+ gosub 4, L166
+ pushFromPWp W0
+ gosub 4, L227
+ ret 
+L166:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 12
+ syscall 4, 38 ; trap_score_get (1 in, 1 out)
+ popToSpVal 8
+ pushFromFSpVal 8
+ pushImm 1
+ pushImm 0
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ pushFromFSp 8
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ pushFromFSpVal 8
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 4
+ sub 
+ neqz 
+ jnz L216
+ pushFromFSpVal 4
+ syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
+ jmp L226
+L216:
+ pushFromFSp 0
+ fetchValue 8
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSpVal 4
+ syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
+L226:
+ ret 
+L227:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L306
+L233:
+ pushFromFSp 0
+ gosub 4, L319
+ jnz L242
+ halt 
+ jmp L233
+L242:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L253
+ jmp L259
+L253:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L302
+L259:
+ dup 
+ pushImm 2
+ sub 
+ jnz L268
+ jmp L274
+L268:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L302
+L274:
+ dup 
+ pushImm 3
+ sub 
+ jnz L283
+ jmp L287
+L283:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L302
+L287:
+ dup 
+ pushImm 4
+ sub 
+ jnz L296
+ jmp L302
+L296:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L302
+L302:
+ drop 
+ gosub 4, L329
+ ret 
+L306:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L319:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L329:
+ halt 
+ jmp L329
+D332:
+L332:
+ ret 
+TR2:
+ gosub 4, L336
+ ret 
+L336:
+ syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
+ ret 
+D339:
+TXT339:
+ db 'rvg_long',0,0
+TXT344:
+ db 'rst_normal',0,0
+TXT350:
+ db 'jump start',0,0
+TXT356:
+ db 'mode_battle',0
+TXT362:
+ db 'rst_hard',0,0
+TXT367:
+ db 'jump end',0,0
+TXT372:
+ db 'rst_super_hard',0,0
+TXT380:
+ db 'btl_normal',0,0
+TXT386:
+ db 'near',0,0
+TXT389:
+ db 'btl_hard',0,0
+TXT394:
+ db 'btl_super_hard',0,0
+TXT402:
+ db 'btl_attack',0,0
+TXT408:
+ db 'near_wait',0
+TXT413:
+ db 'btl_short',0
+TXT418:
+ db 'rvg_normal',0,0
+TXT424:
+ db 'leave',0
+TXT427:
+ db 'btl_long',0,0
+TXT432:
+ db 'rvg_hard',0,0
+TXT437:
+ db 'rvg_super_hard',0,0
+TXT445:
+ db 'rvg_short',0
+
+ section .bss
+W0:
+ resb 8
+W8:
+ resb 24

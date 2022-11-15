@@ -1,0 +1,195 @@
+---
+WorkSize: 64
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_ex120
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushFromFSpVal 8
+ pushImm 1131413504
+ subf 
+ infzf 
+ jnz L63
+ pushImm 1106247680
+ pushFromFSpVal 8
+ subf 
+ infzf 
+ jnz L49
+ pushFromFSp 0
+ gosub 4, L68
+ jmp L49
+L49:
+ pushFromFSp 0
+ gosub 4, L143
+ pushFromFSpVal 8
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSpVal 8
+ halt 
+ jmp L25
+L63:
+ pushFromFSp 0
+ syscall 3, 17 ; ?
+ ret 
+L68:
+ popToSp 0
+ pushFromFSpVal 16
+ eqz 
+ jnz L111
+ pushFromFSp 0
+ syscall 3, 82 ; ?
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ fetchValue 8
+ pushImm 1133903872
+ subf 
+ infzf 
+ jnz L105
+ pushImm 1
+ popToSpVal 16
+ jmp L105
+L105:
+ pushFromFSp 0
+ syscall 3, 10 ; ?
+ jmp L111
+L111:
+ pushFromFSp 0
+ pushFromFSpVal 12
+ syscall 3, 18 ; ?
+ drop 
+ pushFromFSpVal 12
+ pushImm 1063675494
+ mulf 
+ popToSpVal 12
+ pushFromFSpVal 12
+ pushImm 1106247680
+ subf 
+ infzf 
+ jnz L142
+ pushImm 1106247680
+ popToSpVal 12
+ jmp L142
+L142:
+ ret 
+L143:
+ popToSp 0
+ pushFromFSpVal 48
+ jnz L182
+ pushFromFSpVal 20
+ syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+ jnz L175
+ pushFromPSpVal 32
+ syscall 3, 119 ; ?
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSpVal 20
+ pushFromPSp 16
+ syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
+ jmp L180
+L175:
+ pushImm 0
+ popToSpVal 48
+L180:
+ jmp L182
+L182:
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L192
+ ret 
+L192:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L309
+ pushImm 0
+ popToSpVal 8
+ pushImm 1124204544
+ popToSpVal 12
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ syscall 3, 45 ; ?
+ pushFromFSp 0
+ syscall 3, 10 ; ?
+ pushImm 0
+ popToSpVal 16
+ pushFromFSp 0
+ pushImm 0
+ pushImm 1
+ pushImm 0
+ syscall 3, 53 ; ?
+ popToSp 8
+ pushFromFSp 8
+ syscall 3, 83 ; ?
+ pushFromFSp 0
+ pushImm 1
+ pushImm 1
+ pushImm 0
+ syscall 3, 51 ; ?
+ popToSpVal 20
+ pushFromPSp 16
+ pushImm 1077936128
+ pushImm 1077936128
+ pushImm 1077936128
+ pushImm 1065353216
+ gosub 12, L318
+ pushFromFSpVal 20
+ pushFromPSp 16
+ syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
+ pushFromFSp 0
+ syscall 3, 69 ; ?
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSpVal 16, 32
+ pushImm 1
+ popToSpVal 48
+ ret 
+L309:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+L318:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ pushFromFSp 16
+ popToSpVal 0
+ pushFromFSp 12
+ popToSpVal 4
+ pushFromFSp 8
+ popToSpVal 8
+ pushFromFSp 4
+ popToSpVal 12
+ ret 
+
+ section .bss
+W0:
+ resb 64

@@ -1,0 +1,231 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+- Key: 2
+  Addr: TR2
+Name: eh26_ms108
+
+---
+; codeLabels: 
+; codeRevealer: -l 269
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 136
+ sub 
+ jnz L37
+ jmp L68
+L37:
+ pushFromFSp 0
+ dup 
+ pushImm 0
+ sub 
+ jnz L55
+ dup 
+ pushImm 1
+ sub 
+ jnz L55
+ jmp L65
+L55:
+ pushImm -1
+ pushImm 0
+ syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
+ jmp L65
+L65:
+ drop 
+ jmp L117
+L68:
+ dup 
+ pushImm 82
+ sub 
+ jnz L77
+ jmp L86
+L77:
+ pushFromPWp W0
+ pushImm -1
+ gosub 4, L119
+ jmp L117
+L86:
+ dup 
+ pushImm 83
+ sub 
+ jnz L95
+ jmp L102
+L95:
+ pushImm 0
+ syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
+ jmp L117
+L102:
+ dup 
+ pushImm 74
+ sub 
+ jnz L111
+ jmp L117
+L111:
+ pushFromPWp W0
+ gosub 4, L142
+ jmp L117
+L117:
+ drop 
+ ret 
+L119:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L141
+ pushImm 4
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L141
+L141:
+ ret 
+L142:
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L158
+ pushImm 3
+ popToSpVal 0
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L158
+L158:
+ ret 
+TR3:
+ pushFromPWp W0
+ gosub 4, L164
+ ret 
+L164:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L243
+L170:
+ pushFromFSp 0
+ gosub 4, L256
+ jnz L179
+ halt 
+ jmp L170
+L179:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L190
+ jmp L196
+L190:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L239
+L196:
+ dup 
+ pushImm 2
+ sub 
+ jnz L205
+ jmp L211
+L205:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L239
+L211:
+ dup 
+ pushImm 3
+ sub 
+ jnz L220
+ jmp L224
+L220:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L239
+L224:
+ dup 
+ pushImm 4
+ sub 
+ jnz L233
+ jmp L239
+L233:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L239
+L239:
+ drop 
+ gosub 4, L266
+ ret 
+L243:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L256:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L266:
+ halt 
+ jmp L266
+D269:
+L269:
+ ret 
+TR2:
+ pushImm 0
+ syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
+ ret 
+D276:
+TXT276:
+ db 'rvg_long',0,0
+TXT281:
+ db 'rst_normal',0,0
+TXT287:
+ db 'jump start',0,0
+TXT293:
+ db 'mode_battle',0
+TXT299:
+ db 'rst_hard',0,0
+TXT304:
+ db 'jump end',0,0
+TXT309:
+ db 'rst_super_hard',0,0
+TXT317:
+ db 'btl_normal',0,0
+TXT323:
+ db 'near',0,0
+TXT326:
+ db 'btl_hard',0,0
+TXT331:
+ db 'btl_super_hard',0,0
+TXT339:
+ db 'btl_attack',0,0
+TXT345:
+ db 'near_wait',0
+TXT350:
+ db 'btl_short',0
+TXT355:
+ db 'rvg_normal',0,0
+TXT361:
+ db 'leave',0
+TXT364:
+ db 'btl_long',0,0
+TXT369:
+ db 'rvg_hard',0,0
+TXT374:
+ db 'rvg_super_hard',0,0
+TXT382:
+ db 'rvg_short',0
+
+ section .bss
+W0:
+ resb 16

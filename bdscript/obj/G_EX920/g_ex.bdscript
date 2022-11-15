@@ -1,0 +1,298 @@
+---
+WorkSize: 48
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_ex920
+
+---
+; codeLabels: 
+; codeRevealer: -l 41
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushFromFSpVal 12
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSpVal 12
+ pushFromFSpVal 36
+ syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+ eqz 
+ jnz L43
+ jmp L76
+D41:
+L41:
+ jmp L43
+L43:
+ pushFromFSpVal 32
+ eqz 
+ jnz L73
+ pushFromFSpVal 12
+ pushImm 1114636288
+ subf 
+ supzf 
+ jnz L71
+ pushFromFSp 0
+ pushImm 2
+ syscall 3, 120 ; ?
+ pushImm 1
+ popToSpVal 32
+ jmp L71
+L71:
+ jmp L73
+L73:
+ halt 
+ jmp L25
+L76:
+ pushFromFSp 0
+ syscall 3, 2 ; ?
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L90
+ ret 
+L90:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L337
+ pushImm 0
+ popToSpVal 12
+ pushImm 0
+ popToSpVal 32
+ pushFromFSp 0
+ syscall 3, 73 ; ?
+ popToSpVal 8
+ pushFromFSp 0
+ syscall 3, 78 ; ?
+ popToSpVal 20
+ pushFromFSpVal 20
+ pushImm 0
+ subf 
+ eqzf 
+ jnz L138
+ pushImm 1142292480
+ popToSpVal 20
+ jmp L138
+L138:
+ pushFromFSp 0
+ syscall 3, 79 ; ?
+ popToSpVal 24
+ pushFromFSpVal 24
+ pushImm 0
+ subf 
+ eqzf 
+ jnz L160
+ pushImm 1153138688
+ popToSpVal 24
+ jmp L160
+L160:
+ pushFromFSp 0
+ syscall 3, 80 ; ?
+ popToSpVal 28
+ pushFromFSpVal 28
+ pushImm 0
+ subf 
+ eqzf 
+ jnz L182
+ pushImm -985956352
+ popToSpVal 28
+ jmp L182
+L182:
+ pushFromFSp 0
+ syscall 3, 45 ; ?
+ syscall 3, 16 ; ?
+ dup 
+ jz L194
+ syscall 3, 15 ; ?
+ neqzv 
+L194:
+ jnz L214
+ pushFromPSp 32
+ pushImm -1082130432
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ gosub 20, L346
+ jmp L230
+L214:
+ pushFromPSp 32
+ pushImm 0
+ pushImm 0
+ pushImm -1082130432
+ pushImm 0
+ gosub 20, L346
+L230:
+ pushFromPSp 16
+ pushImm 0
+ pushImm 1065353216
+ pushImm 0
+ pushImm 0
+ gosub 20, L346
+ pushFromFSpVal 8
+ pushImm 0
+ sub 
+ eqz 
+ jnz L269
+ pushFromFSp 0
+ gosub 20, L373
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 48
+ jmp L283
+L269:
+ pushFromFSpVal 20
+ pushFromFSpVal 24
+ gosub 20, L425
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 48
+L283:
+ pushFromPSp 48
+ pushImm 4
+ add 
+ pushFromFSpVal 28
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 48
+ syscall 3, 63 ; ?
+ pushFromFSp 0
+ pushFromPSp 32
+ syscall 3, 64 ; ?
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 3, 65 ; ?
+ pushFromFSp 0
+ syscall 3, 50 ; ?
+ pushFromFSp 0
+ pushImm 0
+ syscall 3, 41 ; ?
+ pushFromFSp 0
+ pushImm 0
+ pushImm 1
+ pushImm 0
+ syscall 3, 53 ; ?
+ popToSpVal 36
+ ret 
+L337:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+L346:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ pushFromFSp 16
+ popToSpVal 0
+ pushFromFSp 12
+ popToSpVal 4
+ pushFromFSp 8
+ popToSpVal 8
+ pushFromFSp 4
+ popToSpVal 12
+ ret 
+L373:
+ popToSp 0
+ syscall 3, 146 ; ?
+ popToSpVal 40
+ pushFromFSpVal 40
+ pushImm 0
+ sub 
+ neqz 
+ jnz L408
+ pushFromPSp 4
+ pushFromFSpVal 40
+ gosub 12, L337
+ pushFromPSp 4
+ syscall 3, 69 ; ?
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ jmp L422
+L408:
+ pushFromFSpVal 20
+ pushFromFSpVal 24
+ gosub 12, L425
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+L422:
+ pushFromPSp 16
+ ret 
+L425:
+ popToSp 0
+ popToSp 4
+ pushFromPSp 16
+ pushFromFSp 4
+ pushFromFSp 0
+ syscall 0, 18 ; trap_random_range (2 in, 1 out)
+ negf 
+ pushImm 0
+ pushImm 0
+ pushImm 1065353216
+ gosub 12, L346
+ pushFromPSp 16
+ pushImm 1070141400
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 1061752792
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ syscall 3, 15 ; ?
+ jnz L502
+ pushFromPSp 16
+ pushImm 1083624420
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ jmp L544
+L502:
+ syscall 3, 16 ; ?
+ jnz L523
+ pushFromPSp 16
+ pushImm 1070141400
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ jmp L544
+L523:
+ syscall 3, 14 ; ?
+ jnz L544
+ pushFromPSp 16
+ pushImm 1078530012
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ jmp L544
+L544:
+ pushFromPSp 16
+ ret 
+
+ section .bss
+W0:
+ resb 48

@@ -1,0 +1,191 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+Name: nm00_ms202
+
+---
+; codeLabels: 
+; codeRevealer: -l 214
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 80
+ sub 
+ jnz L33
+ jmp L43
+L33:
+ pushFromFSp 0
+ neg 
+ pushImm 0
+ syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
+ jmp L79
+L43:
+ dup 
+ pushImm 81
+ sub 
+ jnz L52
+ jmp L61
+L52:
+ pushFromFSp 0
+ pushImm 0
+ syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
+ jmp L79
+L61:
+ dup 
+ pushImm 123
+ sub 
+ jnz L70
+ jmp L79
+L70:
+ pushFromPWp W0
+ pushImm -1
+ gosub 4, L81
+ jmp L79
+L79:
+ drop 
+ ret 
+L81:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L103
+ pushImm 1
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L103
+L103:
+ ret 
+TR3:
+ pushFromPWp W0
+ gosub 4, L109
+ ret 
+L109:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L188
+L115:
+ pushFromFSp 0
+ gosub 4, L201
+ jnz L124
+ halt 
+ jmp L115
+L124:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L135
+ jmp L141
+L135:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L184
+L141:
+ dup 
+ pushImm 2
+ sub 
+ jnz L150
+ jmp L156
+L150:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L184
+L156:
+ dup 
+ pushImm 3
+ sub 
+ jnz L165
+ jmp L169
+L165:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L184
+L169:
+ dup 
+ pushImm 4
+ sub 
+ jnz L178
+ jmp L184
+L178:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L184
+L184:
+ drop 
+ gosub 4, L211
+ ret 
+L188:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L201:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L211:
+ halt 
+ jmp L211
+D214:
+L214:
+ ret 
+TXT215:
+ db 'rvg_long',0,0
+TXT220:
+ db 'rst_normal',0,0
+TXT226:
+ db 'jump start',0,0
+TXT232:
+ db 'mode_battle',0
+TXT238:
+ db 'rst_hard',0,0
+TXT243:
+ db 'jump end',0,0
+TXT248:
+ db 'rst_super_hard',0,0
+TXT256:
+ db 'btl_normal',0,0
+TXT262:
+ db 'near',0,0
+TXT265:
+ db 'btl_hard',0,0
+TXT270:
+ db 'btl_super_hard',0,0
+TXT278:
+ db 'btl_attack',0,0
+TXT284:
+ db 'near_wait',0
+TXT289:
+ db 'btl_short',0
+TXT294:
+ db 'rvg_normal',0,0
+TXT300:
+ db 'leave',0
+TXT303:
+ db 'btl_long',0,0
+TXT308:
+ db 'rvg_hard',0,0
+TXT313:
+ db 'rvg_super_hard',0,0
+TXT321:
+ db 'rvg_short',0
+
+ section .bss
+W0:
+ resb 16

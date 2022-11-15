@@ -1,0 +1,111 @@
+---
+WorkSize: 32
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_oe170
+
+---
+; codeLabels: 
+; codeRevealer: -l 43
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushFromFSpVal 8
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSpVal 8
+ pushFromFSpVal 8
+ pushImm 1148846080
+ subf 
+ supzf 
+ jnz L45
+ jmp L101
+D43:
+L43:
+ jmp L45
+L45:
+ pushFromFSpVal 12
+ eqz 
+ jnz L98
+ pushFromFSpVal 8
+ pushImm 1133903872
+ subf 
+ supzf 
+ jnz L96
+ pushImm 0
+ popToSp 4
+ pushImm 9
+L67:
+ dup 
+ pushFromFSp 4
+ sub 
+ info 
+ jz L88
+ pushFromFSp 4
+ syscall 3, 175 ; ?
+ pushFromFSp 4
+ pushImm 1
+ add 
+ popToSp 4
+ jmp L67
+L88:
+ drop 
+ pushImm 1
+ popToSpVal 12
+ jmp L96
+L96:
+ jmp L98
+L98:
+ halt 
+ jmp L25
+L101:
+ pushFromFSp 0
+ syscall 3, 2 ; ?
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L115
+ ret 
+L115:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L160
+ pushImm 0
+ popToSpVal 8
+ pushImm 0
+ popToSpVal 12
+ pushFromFSp 0
+ pushImm 0
+ pushFromFSp 0
+ syscall 3, 66 ; ?
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 1
+ pushImm 0
+ syscall 3, 52 ; ?
+ popToSpVal 16
+ ret 
+L160:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+
+ section .bss
+W0:
+ resb 32

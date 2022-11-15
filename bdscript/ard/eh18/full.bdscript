@@ -1,0 +1,92 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 3
+  Addr: TR3
+Name: tutorial-fullop
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR3:
+ pushImm 18487
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jnz L38
+ pushImm 42
+ pushImm 19151
+ gosub 4, L56
+L29:
+ syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
+ jnz L36
+ halt 
+ jmp L29
+L36:
+ jmp L38
+L38:
+ pushImm 1033
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jnz L55
+ pushImm 43
+ pushImm 20542
+ gosub 4, L56
+ jmp L55
+L55:
+ ret 
+L56:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jnz L77
+ pushFromFSp 0
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ pushFromFSp 4
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ jmp L77
+L77:
+ ret 
+D78:
+TXT78:
+ db 'rvg_short',0
+TXT83:
+ db 'rvg_long',0,0
+TXT88:
+ db 'rst_normal',0,0
+TXT94:
+ db 'jump start',0,0
+TXT100:
+ db 'mode_battle',0
+TXT106:
+ db 'rst_hard',0,0
+TXT111:
+ db 'jump end',0,0
+TXT116:
+ db 'rst_super_hard',0,0
+TXT124:
+ db 'btl_normal',0,0
+TXT130:
+ db 'near',0,0
+TXT133:
+ db 'btl_hard',0,0
+TXT138:
+ db 'btl_super_hard',0,0
+TXT146:
+ db 'btl_attack',0,0
+TXT152:
+ db 'near_wait',0
+TXT157:
+ db 'btl_short',0
+TXT162:
+ db 'rvg_normal',0,0
+TXT168:
+ db 'leave',0
+TXT171:
+ db 'btl_long',0,0
+TXT176:
+ db 'rvg_hard',0,0
+TXT181:
+ db 'rvg_super_hard',0,0

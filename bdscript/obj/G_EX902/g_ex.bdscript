@@ -1,0 +1,302 @@
+---
+WorkSize: 32
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_ex902
+
+---
+; codeLabels: 
+; codeRevealer: -l 99
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushFromFSpVal 8
+ dup 
+ pushImm 0
+ sub 
+ jnz L36
+ jmp L46
+L36:
+ pushFromFSp 0
+ gosub 4, L104
+ pushFromFSp 0
+ gosub 4, L112
+ jmp L95
+L46:
+ dup 
+ pushImm 1
+ sub 
+ jnz L55
+ jmp L61
+L55:
+ pushFromFSp 0
+ gosub 4, L112
+ jmp L95
+L61:
+ dup 
+ pushImm 2
+ sub 
+ jnz L70
+ jmp L80
+L70:
+ pushFromFSp 0
+ gosub 4, L224
+ pushFromFSp 0
+ gosub 4, L257
+ jmp L95
+L80:
+ dup 
+ pushImm 3
+ sub 
+ jnz L89
+ jmp L95
+L89:
+ pushFromFSp 0
+ gosub 4, L257
+ jmp L95
+L95:
+ drop 
+ halt 
+ jmp L25
+D99:
+L99:
+ pushFromFSp 0
+ syscall 3, 2 ; ?
+ ret 
+L104:
+ popToSp 0
+ pushImm 1
+ popToSpVal 8
+ ret 
+L112:
+ popToSp 0
+ pushFromFSp 0
+ syscall 3, 73 ; ?
+ dup 
+ pushImm 0
+ sub 
+ jnz L127
+ jmp L162
+L127:
+ pushFromFSp 0
+ syscall 3, 39 ; ?
+ pushImm 0
+ sub 
+ eqz 
+ jnz L160
+ pushFromFSp 0
+ pushImm 233
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ pushImm 231
+ pushImm 0
+ syscall 3, 37 ; ?
+ jmp L160
+L160:
+ jmp L222
+L162:
+ dup 
+ pushImm 1
+ sub 
+ jnz L171
+ jmp L206
+L171:
+ pushFromFSp 0
+ syscall 3, 39 ; ?
+ pushImm 231
+ sub 
+ eqz 
+ jnz L204
+ pushFromFSp 0
+ pushImm 232
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 3, 37 ; ?
+ jmp L204
+L204:
+ jmp L222
+L206:
+ dup 
+ pushImm 2
+ sub 
+ jnz L215
+ jmp L222
+L215:
+ pushImm 2
+ popToSpVal 8
+ jmp L222
+L222:
+ drop 
+ ret 
+L224:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 201
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushImm 1107820544
+ popToSpVal 16
+ pushImm 1094713344
+ popToSpVal 12
+ pushImm 202
+ popToSpVal 20
+ pushImm 3
+ popToSpVal 8
+ ret 
+L257:
+ popToSp 0
+ pushFromFSpVal 16
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSpVal 16
+ pushFromFSpVal 16
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L288
+ pushFromFSp 0
+ pushImm 0
+ syscall 3, 8 ; ?
+ pushFromFSpVal 12
+ popToSpVal 16
+ jmp L288
+L288:
+ pushFromFSp 0
+ syscall 3, 73 ; ?
+ pushImm 2
+ sub 
+ neqz 
+ jnz L325
+ pushFromFSp 0
+ pushFromFSpVal 20
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 3, 37 ; ?
+ pushImm 0
+ popToSpVal 8
+ jmp L325
+L325:
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L335
+ ret 
+L335:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L365
+ pushImm 0
+ popToSpVal 8
+ pushFromFSp 0
+ pushImm 231
+ pushImm 0
+ syscall 3, 35 ; ?
+ pushFromFSp 0
+ gosub 4, L374
+ ret 
+L365:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+L374:
+ popToSp 0
+ pushFromPSp 32
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 1065353216
+ gosub 20, L495
+ pushFromPSp 16
+ pushImm 1065353216
+ pushImm 0
+ pushImm 0
+ pushImm 1065353216
+ gosub 20, L495
+ pushFromPSp 48
+ pushImm 6
+ memcpy 0
+ pushFromPSp 48
+ pushImm 4
+ add 
+ pushImm 8
+ memcpy 0
+ pushFromPSp 48
+ pushImm 8
+ add 
+ pushImm 10
+ memcpy 0
+ pushImm 0
+ popToSp 60
+ pushImm 3
+L442:
+ dup 
+ pushFromFSp 60
+ sub 
+ info 
+ jz L493
+ pushFromFSp 0
+ pushFromPSp 32
+ pushFromPSp 16
+ pushFromPSp 48
+ pushFromFSp 60
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ pushImm 1065353216
+ pushImm 37
+ pushImm 1109393408
+ syscall 3, 6 ; ?
+ popToSp 4
+ pushFromFSp 4
+ syscall 3, 24 ; ?
+ pushFromFSp 60
+ pushImm 1
+ add 
+ popToSp 60
+ jmp L442
+L493:
+ drop 
+ ret 
+L495:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ pushFromFSp 16
+ popToSpVal 0
+ pushFromFSp 12
+ popToSpVal 4
+ pushFromFSp 8
+ popToSpVal 8
+ pushFromFSp 4
+ popToSpVal 12
+ ret 
+
+ section .bss
+W0:
+ resb 32

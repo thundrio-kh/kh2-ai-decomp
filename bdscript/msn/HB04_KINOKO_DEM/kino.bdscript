@@ -1,0 +1,288 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+- Key: 2
+  Addr: TR2
+Name: kinoko_dem
+
+---
+; codeLabels: 
+; codeRevealer: -l 366
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 4, L54
+ pushFromFSp 4
+ dup 
+ pushImm 174
+ sub 
+ jnz L43
+ jmp L52
+L43:
+ pushFromPWp W8
+ pushImm 3
+ gosub 4, L113
+ jmp L52
+L52:
+ drop 
+ ret 
+L54:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 31
+ sub 
+ jnz L69
+ jmp L87
+L69:
+ pushFromFSp 0
+ dup 
+ pushImm 668
+ sub 
+ jnz L80
+ jmp L84
+L80:
+ gosub 4, L109
+ jmp L84
+L84:
+ drop 
+ jmp L107
+L87:
+ dup 
+ pushImm 74
+ sub 
+ jnz L103
+ dup 
+ pushImm 174
+ sub 
+ jnz L103
+ jmp L107
+L103:
+ gosub 4, L112
+ jmp L107
+L107:
+ drop 
+ ret 
+L109:
+ syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
+ ret 
+L112:
+ ret 
+L113:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 0
+ pushFromFSp 4
+ pushFromFSpVal 4
+ syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ jnz L146
+ pushFromFSp 4
+ pushImm 3
+ sub 
+ msbi 
+ jnz L144
+ pushFromFSpVal 4
+ syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
+ jmp L144
+L144:
+ jmp L146
+L146:
+ ret 
+TR3:
+ pushFromPWp W8
+ pushImm 36
+ pushImm 0
+ pushImm 1
+ gosub 4, L165
+ pushFromPWp W0
+ gosub 4, L261
+ ret 
+L165:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 12
+ syscall 4, 38 ; trap_score_get (1 in, 1 out)
+ popToSpVal 0
+ pushFromFSpVal 0
+ pushImm 1
+ pushImm 0
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ pushFromFSp 8
+ popToSpVal 4
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 2
+ sub 
+ info 
+ jnz L211
+ pushFromFSp 4
+ syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
+ jmp L260
+L211:
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 6
+ sub 
+ neqz 
+ jnz L242
+ pushImm 0
+ pushImm 0
+ pushFromFSpVal 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushImm 1
+ add 
+ pushFromFSpVal 4
+ syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
+ jmp L242
+L242:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSp 4
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushImm 10
+ pushImm 0
+ syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+L260:
+ ret 
+L261:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L340
+L267:
+ pushFromFSp 0
+ gosub 4, L353
+ jnz L276
+ halt 
+ jmp L267
+L276:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L287
+ jmp L293
+L287:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L336
+L293:
+ dup 
+ pushImm 2
+ sub 
+ jnz L302
+ jmp L308
+L302:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L336
+L308:
+ dup 
+ pushImm 3
+ sub 
+ jnz L317
+ jmp L321
+L317:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L336
+L321:
+ dup 
+ pushImm 4
+ sub 
+ jnz L330
+ jmp L336
+L330:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L336
+L336:
+ drop 
+ gosub 4, L363
+ ret 
+L340:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L353:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L363:
+ halt 
+ jmp L363
+D366:
+L366:
+ ret 
+TR2:
+ gosub 4, L370
+ ret 
+L370:
+ syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
+ ret 
+D373:
+TXT373:
+ db 'rvg_long',0,0
+TXT378:
+ db 'rst_normal',0,0
+TXT384:
+ db 'jump start',0,0
+TXT390:
+ db 'mode_battle',0
+TXT396:
+ db 'rst_hard',0,0
+TXT401:
+ db 'jump end',0,0
+TXT406:
+ db 'rst_super_hard',0,0
+TXT414:
+ db 'btl_normal',0,0
+TXT420:
+ db 'near',0,0
+TXT423:
+ db 'btl_hard',0,0
+TXT428:
+ db 'btl_super_hard',0,0
+TXT436:
+ db 'btl_attack',0,0
+TXT442:
+ db 'near_wait',0
+TXT447:
+ db 'btl_short',0
+TXT452:
+ db 'rvg_normal',0,0
+TXT458:
+ db 'leave',0
+TXT461:
+ db 'btl_long',0,0
+TXT466:
+ db 'rvg_hard',0,0
+TXT471:
+ db 'rvg_super_hard',0,0
+TXT479:
+ db 'rvg_short',0
+
+ section .bss
+W0:
+ resb 8
+W8:
+ resb 8

@@ -1,0 +1,623 @@
+---
+WorkSize: 32
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+Name: he_colosseum_2_
+
+---
+; codeLabels: 
+; codeRevealer: -l 415 -l 1012
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 2
+ sub 
+ jnz L40
+ dup 
+ pushImm 4
+ sub 
+ jnz L40
+ jmp L60
+L40:
+ pushFromPWp W0
+ fetchValue 8
+ pushImm 24
+ add 
+ pushImm 0
+ syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
+ memcpy 0
+ pushFromPWp W0
+ gosub 4, L85
+ jmp L83
+L60:
+ dup 
+ pushImm 74
+ sub 
+ jnz L69
+ jmp L75
+L69:
+ pushFromPWp W0
+ gosub 4, L216
+ jmp L83
+L75:
+ pushFromPWp W0
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 4, L233
+L83:
+ drop 
+ ret 
+L85:
+ popToSp 0
+ pushFromFSpVal 8
+ pushImm 12
+ add 
+ syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)
+ memcpy 0
+ pushFromFSpVal 8
+ fetchValue 20
+ pushImm 0
+ sub 
+ ipos 
+ jnz L123
+ pushFromFSpVal 8
+ pushImm 20
+ add 
+ dup 
+ fetchValue 0
+ pushImm 1
+ sub 
+ memcpy 0
+ jmp L123
+L123:
+ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+ pushFromFSpVal 20
+ sub 
+ msb 
+ jnz L145
+ pushFromPSpVal 12
+ fetchValue 0
+ pushImm 2
+ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ jmp L152
+L145:
+ pushFromPSpVal 12
+ pushImm 3
+ gosub 4, L159
+L152:
+ pushFromFSp 0
+ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+ gosub 4, L193
+ ret 
+L159:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 0
+ pushFromFSp 4
+ pushFromFSpVal 4
+ syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ jnz L192
+ pushFromFSp 4
+ pushImm 3
+ sub 
+ msbi 
+ jnz L190
+ pushFromFSpVal 4
+ syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
+ jmp L190
+L190:
+ jmp L192
+L192:
+ ret 
+L193:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L215
+ pushImm 1
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L215
+L215:
+ ret 
+L216:
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L232
+ pushImm 3
+ popToSpVal 0
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L232
+L232:
+ ret 
+L233:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromFSp 8
+ dup 
+ pushImm 75
+ sub 
+ jnz L250
+ jmp L306
+L250:
+ pushImm 1
+ pushImm 1142292480
+ syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
+ pushFromFSpVal 8
+ pushImm 16
+ add 
+ dup 
+ fetchValue 0
+ pushImm 1
+ add 
+ memcpy 0
+ pushFromFSpVal 8
+ fetchValue 16
+ pushImm 50
+ mod 
+ pushImm 0
+ sub 
+ eqz 
+ jnz L304
+ pushImm 19303
+ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+ pushFromFSpVal 8
+ pushImm 20
+ add 
+ pushImm 2
+ memcpy 0
+ jmp L304
+L304:
+ jmp L350
+L306:
+ dup 
+ pushImm 2
+ sub 
+ jnz L329
+ dup 
+ pushImm 4
+ sub 
+ jnz L329
+ dup 
+ pushImm 74
+ sub 
+ jnz L329
+ jmp L335
+L329:
+ pushFromFSp 0
+ gosub 8, L85
+ jmp L350
+L335:
+ dup 
+ pushImm 90
+ sub 
+ jnz L344
+ jmp L350
+L344:
+ pushFromFSp 0
+ gosub 8, L216
+ jmp L350
+L350:
+ drop 
+ ret 
+TR3:
+ pushImm 0
+ pushImm 415
+ pushImm 0
+ pushImm 0
+ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+ drop 
+ pushFromPWp W0
+ gosub 4, L525
+ pushFromPWp W0
+ fetchValue 8
+ fetchValue 24
+ popToSp 0
+ pushFromFSp 0
+ pushImm 0
+ sub 
+ neqz 
+ jnz L410
+ pushFromFSp 0
+ pushImm 15
+ add 
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
+ jmp L410
+L410:
+ pushFromPWp W0
+ gosub 4, L907
+ ret 
+D415:
+L415:
+ pushImm 1
+ syscall 1, 181 ; trap_light_create (1 in, 1 out)
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 1109393408
+ syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
+ pushImm 1106247680
+ gosub 4, L503
+ pushImm 1
+ syscall 1, 181 ; trap_light_create (1 in, 1 out)
+ popToSp 4
+ pushFromFSp 4
+ pushImm 1101004800
+ syscall 1, 259 ; trap_light_set_fog_min (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 1132396544
+ syscall 1, 260 ; trap_light_set_fog_max (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 1128792064
+ syscall 1, 257 ; trap_light_set_fog_near (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 1148846080
+ syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 1109393408
+ syscall 1, 251 ; trap_light_fadein (2 in, 0 out)
+ pushImm 19393
+ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+ pushImm 1106247680
+ gosub 4, L503
+ ret 
+L503:
+ popToSp 0
+L505:
+ pushFromFSp 0
+ pushImm 0
+ subf 
+ supzf 
+ jnz L524
+ pushFromFSp 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 0
+ halt 
+ jmp L505
+L524:
+ ret 
+L525:
+ popToSp 0
+ syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L558
+ syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
+ popToSpVal 8
+ pushFromFSpVal 8
+ fetchValue 4
+ pushImm 0
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushFromFSpVal 8
+ fetchValue 12
+ pushImm 0
+ syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
+ syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
+ ret 
+L558:
+ popToSp 0
+ pushImm 10
+ popToSpVal 20
+ syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
+ dup 
+ pushImm 189
+ sub 
+ jnz L576
+ jmp L596
+L576:
+ pushFromPSpVal 12
+ pushImm 0
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 212
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L596:
+ dup 
+ pushImm 190
+ sub 
+ jnz L605
+ jmp L625
+L605:
+ pushFromPSpVal 12
+ pushImm 1
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 213
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L625:
+ dup 
+ pushImm 191
+ sub 
+ jnz L634
+ jmp L654
+L634:
+ pushFromPSpVal 12
+ pushImm 2
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 214
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L654:
+ dup 
+ pushImm 192
+ sub 
+ jnz L663
+ jmp L683
+L663:
+ pushFromPSpVal 12
+ pushImm 3
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 215
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L683:
+ dup 
+ pushImm 193
+ sub 
+ jnz L692
+ jmp L712
+L692:
+ pushFromPSpVal 12
+ pushImm 4
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 216
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L712:
+ dup 
+ pushImm 194
+ sub 
+ jnz L721
+ jmp L741
+L721:
+ pushFromPSpVal 12
+ pushImm 5
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 217
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L741:
+ dup 
+ pushImm 195
+ sub 
+ jnz L750
+ jmp L770
+L750:
+ pushFromPSpVal 12
+ pushImm 6
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 218
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L809
+L770:
+ dup 
+ pushImm 196
+ sub 
+ jnz L779
+ jmp L804
+L779:
+ pushFromPSpVal 12
+ pushImm 7
+ pushImm 0
+ pushImm 1
+ gosub 4, L811
+ pushImm 219
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ pushImm 50
+ popToSpVal 20
+ jmp L809
+L804:
+ pushImm 0
+ syscall 0, 60 ; trap_assert (1 in, 0 out)
+L809:
+ drop 
+ ret 
+L811:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 12
+ syscall 4, 38 ; trap_score_get (1 in, 1 out)
+ popToSpVal 0
+ pushFromFSpVal 0
+ pushImm 1
+ pushImm 0
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ pushFromFSp 8
+ popToSpVal 4
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 2
+ sub 
+ info 
+ jnz L857
+ pushFromFSp 4
+ syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
+ jmp L906
+L857:
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 6
+ sub 
+ neqz 
+ jnz L888
+ pushImm 0
+ pushImm 0
+ pushFromFSpVal 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushImm 1
+ add 
+ pushFromFSpVal 4
+ syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
+ jmp L888
+L888:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSp 4
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushImm 10
+ pushImm 0
+ syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+L906:
+ ret 
+L907:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L986
+L913:
+ pushFromFSp 0
+ gosub 4, L999
+ jnz L922
+ halt 
+ jmp L913
+L922:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L933
+ jmp L939
+L933:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L982
+L939:
+ dup 
+ pushImm 2
+ sub 
+ jnz L948
+ jmp L954
+L948:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L982
+L954:
+ dup 
+ pushImm 3
+ sub 
+ jnz L963
+ jmp L967
+L963:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L982
+L967:
+ dup 
+ pushImm 4
+ sub 
+ jnz L976
+ jmp L982
+L976:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L982
+L982:
+ drop 
+ gosub 4, L1009
+ ret 
+L986:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L999:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L1009:
+ halt 
+ jmp L1009
+D1012:
+L1012:
+ ret 
+TXT1013:
+ db 'rvg_short',0
+TXT1018:
+ db 'rvg_long',0,0
+TXT1023:
+ db 'rst_normal',0,0
+TXT1029:
+ db 'jump start',0,0
+TXT1035:
+ db 'mode_battle',0
+TXT1041:
+ db 'rst_hard',0,0
+TXT1046:
+ db 'jump end',0,0
+TXT1051:
+ db 'rst_super_hard',0,0
+TXT1059:
+ db 'btl_normal',0,0
+TXT1065:
+ db 'near',0,0
+TXT1068:
+ db 'btl_hard',0,0
+TXT1073:
+ db 'btl_super_hard',0,0
+TXT1081:
+ db 'btl_attack',0,0
+TXT1087:
+ db 'near_wait',0
+TXT1092:
+ db 'btl_short',0
+TXT1097:
+ db 'rvg_normal',0,0
+TXT1103:
+ db 'leave',0
+TXT1106:
+ db 'btl_long',0,0
+TXT1111:
+ db 'rvg_hard',0,0
+TXT1116:
+ db 'rvg_super_hard',0,0
+
+ section .bss
+W0:
+ resb 32

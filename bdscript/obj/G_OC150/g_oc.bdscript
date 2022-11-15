@@ -1,0 +1,114 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 1
+  Addr: TR1
+- Key: 0
+  Addr: TR0
+Name: g_oc100
+
+---
+; codeLabels: 
+; codeRevealer: -l 34 -l 54
+ section .text
+TR1:
+ pushFromPWp W0
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+L25:
+ pushFromFSp 0
+ gosub 4, L64
+ eqz 
+ jnz L36
+ jmp L59
+D34:
+L34:
+ jmp L36
+L36:
+ pushFromFSpVal 12
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSpVal 12
+ pushFromFSpVal 12
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L56
+ jmp L59
+D54:
+L54:
+ jmp L56
+L56:
+ halt 
+ jmp L25
+L59:
+ pushFromFSp 0
+ syscall 3, 17 ; ?
+ ret 
+L64:
+ popToSp 0
+ pushFromFSp 0
+ syscall 3, 5 ; ?
+ jnz L82
+ pushFromFSp 0
+ pushFromFSpVal 8
+ syscall 3, 4 ; ?
+ popToSp 4
+ jmp L87
+L82:
+ pushImm 1
+ popToSp 4
+L87:
+ pushFromFSp 4
+ ret 
+TR0:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L99
+ ret 
+L99:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L154
+ pushFromFSp 0
+ syscall 3, 74 ; ?
+ popToSpVal 8
+ pushFromFSpVal 8
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L131
+ pushImm 1084227584
+ popToSpVal 8
+ jmp L131
+L131:
+ pushFromFSp 0
+ syscall 3, 78 ; ?
+ popToSpVal 12
+ pushFromFSpVal 12
+ pushImm 0
+ subf 
+ infoezf 
+ jnz L153
+ pushImm 1147207680
+ popToSpVal 12
+ jmp L153
+L153:
+ ret 
+L154:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+
+ section .bss
+W0:
+ resb 16

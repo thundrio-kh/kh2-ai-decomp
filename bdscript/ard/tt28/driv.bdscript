@@ -1,0 +1,73 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 3
+  Addr: TR3
+Name: tutorial-drive
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR3:
+ pushImm 35
+ pushImm 17861
+ gosub 4, L23
+ ret 
+L23:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jnz L44
+ pushFromFSp 0
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ pushFromFSp 4
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ jmp L44
+L44:
+ ret 
+D45:
+TXT45:
+ db 'rvg_short',0
+TXT50:
+ db 'rvg_long',0,0
+TXT55:
+ db 'rst_normal',0,0
+TXT61:
+ db 'jump start',0,0
+TXT67:
+ db 'mode_battle',0
+TXT73:
+ db 'rst_hard',0,0
+TXT78:
+ db 'jump end',0,0
+TXT83:
+ db 'rst_super_hard',0,0
+TXT91:
+ db 'btl_normal',0,0
+TXT97:
+ db 'near',0,0
+TXT100:
+ db 'btl_hard',0,0
+TXT105:
+ db 'btl_super_hard',0,0
+TXT113:
+ db 'btl_attack',0,0
+TXT119:
+ db 'near_wait',0
+TXT124:
+ db 'btl_short',0
+TXT129:
+ db 'rvg_normal',0,0
+TXT135:
+ db 'leave',0
+TXT138:
+ db 'btl_long',0,0
+TXT143:
+ db 'rvg_hard',0,0
+TXT148:
+ db 'rvg_super_hard',0,0

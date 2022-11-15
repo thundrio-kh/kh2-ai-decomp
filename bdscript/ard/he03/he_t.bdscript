@@ -1,0 +1,118 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 3
+  Addr: TR3
+Name: he_trophy
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR3:
+ pushImm 97
+ pushImm 6206
+ pushImm 7
+ pushImm 12
+ pushImm 130
+ gosub 4, L100
+ pushImm 105
+ pushImm 6208
+ pushImm 6
+ pushImm 11
+ pushImm 129
+ gosub 4, L100
+ pushImm 99
+ pushImm 6209
+ pushImm 5
+ pushImm 10
+ pushImm 128
+ gosub 4, L100
+ pushImm 100
+ pushImm 6212
+ pushImm 8
+ pushImm 13
+ pushImm 131
+ gosub 4, L100
+ pushImm 101
+ pushImm 6225
+ pushImm 9
+ pushImm 14
+ pushImm 132
+ gosub 4, L100
+ ret 
+L100:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ pushFromFSp 16
+ syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
+ jnz L122
+ pushFromFSp 8
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ jmp L122
+L122:
+ pushFromFSp 12
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jnz L134
+ pushFromFSp 4
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ jmp L154
+L134:
+ pushFromPSp 32
+ pushFromFSp 0
+ syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
+ pushFromPSp 32
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jnz L154
+ pushFromPSp 32
+ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+ jmp L154
+L154:
+ ret 
+D155:
+TXT155:
+ db 'near',0,0
+TXT158:
+ db 'btl_hard',0,0
+TXT163:
+ db 'btl_super_hard',0,0
+TXT171:
+ db 'btl_attack',0,0
+TXT177:
+ db 'near_wait',0
+TXT182:
+ db 'btl_short',0
+TXT187:
+ db 'rvg_normal',0,0
+TXT193:
+ db 'leave',0
+TXT196:
+ db 'btl_long',0,0
+TXT201:
+ db 'rvg_hard',0,0
+TXT206:
+ db 'rvg_super_hard',0,0
+TXT214:
+ db 'rvg_short',0
+TXT219:
+ db 'rvg_long',0,0
+TXT224:
+ db 'rst_normal',0,0
+TXT230:
+ db 'jump start',0,0
+TXT236:
+ db 'mode_battle',0
+TXT242:
+ db 'rst_hard',0,0
+TXT247:
+ db 'jump end',0,0
+TXT252:
+ db 'rst_super_hard',0,0
+TXT260:
+ db 'btl_normal',0,0

@@ -1,0 +1,159 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 3
+  Addr: TR3
+Name: hb24_confine_3
+
+---
+; codeLabels: 
+; codeRevealer: -l 166
+ section .text
+TR3:
+ pushImm 61
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ pushImm 63
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ pushImm 1117782016
+ gosub 4, L39
+ pushImm 61
+ syscall 1, 36 ; trap_bg_hide (1 in, 0 out)
+ pushFromPWp W0
+ gosub 4, L61
+ ret 
+L39:
+ popToSp 0
+L41:
+ pushFromFSp 0
+ pushImm 0
+ subf 
+ supzf 
+ jnz L60
+ pushFromFSp 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 0
+ halt 
+ jmp L41
+L60:
+ ret 
+L61:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L140
+L67:
+ pushFromFSp 0
+ gosub 4, L153
+ jnz L76
+ halt 
+ jmp L67
+L76:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L87
+ jmp L93
+L87:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L136
+L93:
+ dup 
+ pushImm 2
+ sub 
+ jnz L102
+ jmp L108
+L102:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L136
+L108:
+ dup 
+ pushImm 3
+ sub 
+ jnz L117
+ jmp L121
+L117:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L136
+L121:
+ dup 
+ pushImm 4
+ sub 
+ jnz L130
+ jmp L136
+L130:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L136
+L136:
+ drop 
+ gosub 4, L163
+ ret 
+L140:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L153:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L163:
+ halt 
+ jmp L163
+D166:
+L166:
+ ret 
+TXT167:
+ db 'rvg_long',0,0
+TXT172:
+ db 'rst_normal',0,0
+TXT178:
+ db 'jump start',0,0
+TXT184:
+ db 'mode_battle',0
+TXT190:
+ db 'rst_hard',0,0
+TXT195:
+ db 'jump end',0,0
+TXT200:
+ db 'rst_super_hard',0,0
+TXT208:
+ db 'btl_normal',0,0
+TXT214:
+ db 'near',0,0
+TXT217:
+ db 'btl_hard',0,0
+TXT222:
+ db 'btl_super_hard',0,0
+TXT230:
+ db 'btl_attack',0,0
+TXT236:
+ db 'near_wait',0
+TXT241:
+ db 'btl_short',0
+TXT246:
+ db 'rvg_normal',0,0
+TXT252:
+ db 'leave',0
+TXT255:
+ db 'btl_long',0,0
+TXT260:
+ db 'rvg_hard',0,0
+TXT265:
+ db 'rvg_super_hard',0,0
+TXT273:
+ db 'rvg_short',0
+
+ section .bss
+W0:
+ resb 16

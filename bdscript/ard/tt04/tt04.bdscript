@@ -1,0 +1,108 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+Name: tt04_ms106
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushImm 1
+ syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
+ popToSp 8
+ pushFromFSp 4
+ dup 
+ pushImm 9
+ sub 
+ jnz L36
+ jmp L56
+L36:
+ pushImm 1
+ pushImm 384
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushFromFSp 8
+ pushImm 1
+ syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
+ jmp L114
+L56:
+ dup 
+ pushImm 10
+ sub 
+ jnz L65
+ jmp L85
+L65:
+ pushImm 1
+ pushImm 502
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushFromFSp 8
+ pushImm 1
+ syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)
+ jmp L114
+L85:
+ dup 
+ pushImm 11
+ sub 
+ jnz L94
+ jmp L114
+L94:
+ pushImm 1
+ pushImm 501
+ pushImm 0
+ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+ pushFromFSp 8
+ pushImm 1
+ syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
+ jmp L114
+L114:
+ drop 
+ ret 
+D116:
+TXT116:
+ db 'btl_normal',0,0
+TXT122:
+ db 'near',0,0
+TXT125:
+ db 'btl_hard',0,0
+TXT130:
+ db 'btl_super_hard',0,0
+TXT138:
+ db 'btl_attack',0,0
+TXT144:
+ db 'near_wait',0
+TXT149:
+ db 'btl_short',0
+TXT154:
+ db 'rvg_normal',0,0
+TXT160:
+ db 'leave',0
+TXT163:
+ db 'btl_long',0,0
+TXT168:
+ db 'rvg_hard',0,0
+TXT173:
+ db 'rvg_super_hard',0,0
+TXT181:
+ db 'rvg_short',0
+TXT186:
+ db 'rvg_long',0,0
+TXT191:
+ db 'rst_normal',0,0
+TXT197:
+ db 'jump start',0,0
+TXT203:
+ db 'mode_battle',0
+TXT209:
+ db 'rst_hard',0,0
+TXT214:
+ db 'jump end',0,0
+TXT219:
+ db 'rst_super_hard',0,0

@@ -1,0 +1,98 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+Name: al09_check
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 124
+ sub 
+ jnz L29
+ jmp L38
+L29:
+ pushImm 64
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ gosub 4, L58
+ jmp L56
+L38:
+ dup 
+ pushImm 125
+ sub 
+ jnz L47
+ jmp L56
+L47:
+ pushImm 65
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ gosub 4, L58
+ jmp L56
+L56:
+ drop 
+ ret 
+L58:
+ pushImm 64
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ dup 
+ jnz L72
+ pushImm 65
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqzv 
+L72:
+ jnz L84
+ pushImm 9
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ jmp L84
+L84:
+ ret 
+D85:
+TXT85:
+ db 'rvg_long',0,0
+TXT90:
+ db 'rst_normal',0,0
+TXT96:
+ db 'jump start',0,0
+TXT102:
+ db 'mode_battle',0
+TXT108:
+ db 'rst_hard',0,0
+TXT113:
+ db 'jump end',0,0
+TXT118:
+ db 'rst_super_hard',0,0
+TXT126:
+ db 'btl_normal',0,0
+TXT132:
+ db 'near',0,0
+TXT135:
+ db 'btl_hard',0,0
+TXT140:
+ db 'btl_super_hard',0,0
+TXT148:
+ db 'btl_attack',0,0
+TXT154:
+ db 'near_wait',0
+TXT159:
+ db 'btl_short',0
+TXT164:
+ db 'rvg_normal',0,0
+TXT170:
+ db 'leave',0
+TXT173:
+ db 'btl_long',0,0
+TXT178:
+ db 'rvg_hard',0,0
+TXT183:
+ db 'rvg_super_hard',0,0
+TXT191:
+ db 'rvg_short',0

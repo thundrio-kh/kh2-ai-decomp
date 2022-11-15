@@ -1,0 +1,74 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 3
+  Addr: TR3
+Name: tutorial-limit
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR3:
+ syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
+ pushImm 39
+ pushImm 17630
+ gosub 4, L25
+ ret 
+L25:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jnz L46
+ pushFromFSp 0
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ pushFromFSp 4
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ jmp L46
+L46:
+ ret 
+D47:
+TXT47:
+ db 'rvg_short',0
+TXT52:
+ db 'rvg_long',0,0
+TXT57:
+ db 'rst_normal',0,0
+TXT63:
+ db 'jump start',0,0
+TXT69:
+ db 'mode_battle',0
+TXT75:
+ db 'rst_hard',0,0
+TXT80:
+ db 'jump end',0,0
+TXT85:
+ db 'rst_super_hard',0,0
+TXT93:
+ db 'btl_normal',0,0
+TXT99:
+ db 'near',0,0
+TXT102:
+ db 'btl_hard',0,0
+TXT107:
+ db 'btl_super_hard',0,0
+TXT115:
+ db 'btl_attack',0,0
+TXT121:
+ db 'near_wait',0
+TXT126:
+ db 'btl_short',0
+TXT131:
+ db 'rvg_normal',0,0
+TXT137:
+ db 'leave',0
+TXT140:
+ db 'btl_long',0,0
+TXT145:
+ db 'rvg_hard',0,0
+TXT150:
+ db 'rvg_super_hard',0,0

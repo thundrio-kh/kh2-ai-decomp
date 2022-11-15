@@ -1,0 +1,271 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 6
+  Addr: TR6
+- Key: 3
+  Addr: TR3
+Name: ms_attackend
+
+---
+; codeLabels: 
+; codeRevealer: -l 359
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 123
+ sub 
+ jnz L51
+ dup 
+ pushImm 20
+ sub 
+ jnz L51
+ dup 
+ pushImm 74
+ sub 
+ jnz L51
+ jmp L60
+L51:
+ pushFromPWp W0
+ pushImm -1
+ gosub 4, L62
+ jmp L60
+L60:
+ drop 
+ ret 
+L62:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jnz L84
+ pushImm 4
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L84
+L84:
+ ret 
+TR6:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 0
+ gosub 4, L118
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ gosub 12, L138
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+ eqz 
+ jnz L117
+ pushImm 0
+ syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
+ jmp L117
+L117:
+ ret 
+L118:
+ popToSp 0
+ pushFromPSp 16
+ pushFromFSpVal 16
+ gosub 12, L129
+ pushFromPSp 16
+ ret 
+L129:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 4
+ ret 
+L138:
+ pushFromPSp 0
+ pushImm 4
+ add 
+ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+ memcpy 0
+ pushFromPSp 0
+ ret 
+TR3:
+ pushImm 566
+ pushImm 0
+ gosub 4, L163
+ pushFromPWp W0
+ gosub 4, L254
+ ret 
+L163:
+ popToSp 0
+ popToSp 4
+ pushFromPSp 16
+ pushFromFSp 4
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 16
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ syscall 0, 60 ; trap_assert (1 in, 0 out)
+ pushFromPSp 16
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ popToSp 32
+ pushFromFSp 32
+ pushImm 0
+ sub 
+ neqz 
+ syscall 0, 60 ; trap_assert (1 in, 0 out)
+ pushFromFSp 32
+ pushImm 0
+ syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
+ cfti 
+ pushFromFSp 0
+ syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
+ mulf 
+ citf 
+ popToSp 36
+ pushFromFSp 36
+ pushImm 0
+ sub 
+ info 
+ jnz L228
+ pushImm 1
+ popToSp 36
+ jmp L228
+L228:
+ pushFromFSp 36
+ pushFromPAi L374
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ pushFromFSp 32
+ pushFromFSp 36
+ pushImm 0
+ syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
+ pushFromPSp 16
+ pushImm 20
+ pushImm 0
+ syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
+ ret 
+L254:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L333
+L260:
+ pushFromFSp 0
+ gosub 4, L346
+ jnz L269
+ halt 
+ jmp L260
+L269:
+ pushFromFSpVal 0
+ dup 
+ pushImm 1
+ sub 
+ jnz L280
+ jmp L286
+L280:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L329
+L286:
+ dup 
+ pushImm 2
+ sub 
+ jnz L295
+ jmp L301
+L295:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L329
+L301:
+ dup 
+ pushImm 3
+ sub 
+ jnz L310
+ jmp L314
+L310:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L329
+L314:
+ dup 
+ pushImm 4
+ sub 
+ jnz L323
+ jmp L329
+L323:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L329
+L329:
+ drop 
+ gosub 4, L356
+ ret 
+L333:
+ popToSp 0
+ pushImm 0
+ popToSpVal 0
+ pushImm -1
+ popToSpVal 4
+ ret 
+L346:
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ ret 
+L356:
+ halt 
+ jmp L356
+D359:
+L359:
+ ret 
+TXT360:
+ db 'btl_normal',0,0
+TXT366:
+ db 'near',0,0
+TXT369:
+ db 'btl_hard',0,0
+L374:
+TXT374:
+ db 'INT',0
+TXT376:
+ db 'btl_super_hard',0,0
+TXT384:
+ db 'btl_attack',0,0
+TXT390:
+ db 'near_wait',0
+TXT395:
+ db 'btl_short',0
+TXT400:
+ db 'rvg_normal',0,0
+TXT406:
+ db 'leave',0
+TXT409:
+ db 'btl_long',0,0
+TXT414:
+ db 'rvg_hard',0,0
+TXT419:
+ db 'rvg_super_hard',0,0
+TXT427:
+ db 'rvg_short',0
+TXT432:
+ db 'rvg_long',0,0
+TXT437:
+ db 'rst_normal',0,0
+TXT443:
+ db 'jump start',0,0
+TXT449:
+ db 'mode_battle',0
+TXT455:
+ db 'rst_hard',0,0
+TXT460:
+ db 'jump end',0,0
+TXT465:
+ db 'rst_super_hard',0,0
+
+ section .bss
+W0:
+ resb 16

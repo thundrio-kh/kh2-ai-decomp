@@ -1,0 +1,109 @@
+---
+WorkSize: 16
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10
+  Addr: TR10
+- Key: 3
+  Addr: TR3
+Name: tutorial-moogle
+
+---
+; codeLabels: 
+; codeRevealer: 
+ section .text
+TR10:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ dup 
+ pushImm 82
+ sub 
+ jnz L33
+ jmp L40
+L33:
+ pushImm 1
+ popToWp W0
+ jmp L40
+L40:
+ drop 
+ ret 
+TR3:
+ pushImm 0
+ popToWp W0
+L47:
+ pushFromFWp W0
+ eqz 
+ jnz L55
+ halt 
+ jmp L47
+L55:
+ pushFromPSp 0
+ pushImm 1295
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 0
+ syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
+ pushImm 36
+ pushImm 17626
+ gosub 8, L75
+ ret 
+L75:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jnz L96
+ pushFromFSp 0
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ pushFromFSp 4
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ jmp L96
+L96:
+ ret 
+D97:
+TXT97:
+ db 'jump end',0,0
+TXT102:
+ db 'rst_super_hard',0,0
+TXT110:
+ db 'btl_normal',0,0
+TXT116:
+ db 'near',0,0
+TXT119:
+ db 'btl_hard',0,0
+TXT124:
+ db 'btl_super_hard',0,0
+TXT132:
+ db 'btl_attack',0,0
+TXT138:
+ db 'near_wait',0
+TXT143:
+ db 'btl_short',0
+TXT148:
+ db 'rvg_normal',0,0
+TXT154:
+ db 'leave',0
+TXT157:
+ db 'btl_long',0,0
+TXT162:
+ db 'rvg_hard',0,0
+TXT167:
+ db 'rvg_super_hard',0,0
+TXT175:
+ db 'rvg_short',0
+TXT180:
+ db 'rvg_long',0,0
+TXT185:
+ db 'rst_normal',0,0
+TXT191:
+ db 'jump start',0,0
+TXT197:
+ db 'mode_battle',0
+TXT203:
+ db 'rst_hard',0,0
+
+ section .bss
+W0:
+ resb 16
