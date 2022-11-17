@@ -1,6 +1,12 @@
 Decompilation of the AI related code in Kingodm Hearts 2, done using the OpenKH tooling
 
-Contains two directories.
+Contains two directories, and one script for adding informational comments to bdscripts
+
+add_txt_labels.py: idemptotently makes the following changes and comments to all of the bdscripts
+  ___ai - comment placed on lines indicating the ai txt command being referenced
+  ___ref - comment placed on lines that were originally not decompiled into a reference, but as a known argument we know it is a reference to a specific line
+  ___possible_ref - comment placed on lines that we think could be references based on the code-revealer line, but could also be values
+  ___unk_ref - comment placed on lines that are known arguments which should be references, but those references are not found in the code-revealer line
 
 bdscript: Disassembled AI for every file in the game, with the exception of the following 47 "obj" that fail to decode using OpenKh.Tools.Bdxio
 
