@@ -7,32 +7,56 @@
 # rewrite the file
 import os
 
+scanone = ""
+
 for root, dirs, files in os.walk(os.path.join("bdscript")):
     for ff in files:
         fn = os.path.join(root, ff)
         # try:
+        if scanone and scanone not in fn:
+            continue
         lines = open(fn).read().split("\n")
         txt_commands = {}
         # create a dict with {txtnum, name} for both the label and the txt
         aistart = 0
+
         for l in range(len(lines)):
             line = lines[l].strip()
-            if line.startswith("TXT") and ":" in lines[l-1] and lines[l+1].strip().startswith("db"):
+            # B_CA000 good case
+            if line.startswith("db"):
                 if not aistart:
                     aistart = l
-                labelline = lines[l-1].strip().split(":")[0]
-                txtline = line.split(":")[0]
-                aline = lines[l+1]
+                action = line.split("'")
+                if len(action) > 3:
+                    print("WARN: too many ',{}".format(line))
+                r = 1
+                while lines[l-r].strip().endswith(":"):
+                    labelline = lines[l-r].strip()
+                    label = labelline.split(":")[0]
+                    obj = {"txt": label, "action": action[1]}
+                    print(obj)
+                    txt_commands[label] = obj
+                    r += 1
+            #     if not aistart:
+            #         0/0
+            # if line.startswith("TXT") and ":" in lines[l-1] and lines[l+1].strip().startswith("db"):
+            #     if not aistart:
+            #         aistart = l
+            #     labelline = lines[l-1].strip().split(":")[0]
+            #     txtline = line.split(":")[0]
+            #     aline = lines[l+1]
 
-                aline = aline.strip().split("'")
-                if len(aline) > 3:
-                    print("WARN: too many ', {}".format(lines[l+1]))
-                aline = aline[1]
-                obj = {"txt": line.split(":")[0], "action": aline}
-                txt_commands[txtline] = obj
-                txt_commands[labelline] = obj
-
-
+            #     aline = aline.strip().split("'")
+            #     if len(aline) > 3:
+            #         print("WARN: too many ', {}".format(lines[l+1]))
+            #     aline = aline[1]
+            #     obj = {"txt": line.split(":")[0], "action": aline}
+            #     txt_commands[txtline] = obj
+            #     txt_commands[labelline] = obj
+#  db 'zexion_hp',0
+# TXT28504:
+# L28504:
+#  db 'Zexion',0,0
         # go back through the main part of the file, examine each word, if a line starts with an L or TXT look for it in the dict
         # if found, add a comment at the end "TXT: 'name'"
 
