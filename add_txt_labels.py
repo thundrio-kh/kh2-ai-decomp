@@ -6,6 +6,7 @@
 
 # rewrite the file
 import os
+import re
 
 scanone = ""
 
@@ -95,7 +96,7 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
 
                 # Look at last 9 lines, make them L as long as it's found in revealed codes, otherwise a __unk_ref
         
-        # check for possible references to line numbers
+        # check for possible references to line numbers (This script should be so much cleaner, probably could do with a ground up rewrite using regex)
         for l in range(len(lines)):
             line = lines[l]
             words = line.split(";")[0].split(" ")
@@ -106,10 +107,58 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
             if comment:
                 lines[l] = lines[l] + " ; " + comment
 
+        # look at act table adds, find lines with __ref and go to that label and add a comment __label for action: XYZ
+        found_references = {}
+        for l in range(len(lines)):
+            line = lines[l]
+            if "syscall 1, 6 ; trap_act_table_add (12 in, 0 out)" in line:
+                arguments = {}
+                for bi in range(1,13):
+                    backline = lines[l-bi]
+                    arguments[12-bi] = backline
+                action = re.findall(r'\'(.*)\'',arguments[1])[0] # I'm making it count starting at 0 
+                found_action_functions = []
+                for arg in arguments:
+                    ment = arguments[arg]
+                    if "___ref" in ment:
+                        words = ment.strip().split(";")[0].split(" ")
+                        found_action_functions.append(words[1])
+                found_references[action] = found_action_functions
+        mapped_references = {}
+        for a,refs in found_references.items():
+            for r in refs:
+                if r in mapped_references:
+                    raise Exception("I don't know what to do here")
+                mapped_references[r] = a
+        
+        for l in range(len(lines)):
+            line = lines[l]
+            if ":" in line:
+                label = line.split(":")[0]
+                if label in mapped_references and "___label" not in line:
+                    c = "" if ";" in line else " ;"
+                    c += "___label for action: {}".format(mapped_references[label])
+                    lines[l] = line + c
+
         with open(fn, "w") as f:
             f.write("\n".join(lines))
         # except:
         #     print("ERR: Failure for {}".format(fn))
+'''
+pushFromPWp W480
+ pushFromPAi L11318 ; ___ai: 'appear' (TXT11318)
+ pushImm 100
+ pushImm L6432 ; ___ref
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+'''
 
 #TODO
 # make sure all the known references actually exist as labels,
