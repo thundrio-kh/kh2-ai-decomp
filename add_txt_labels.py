@@ -10,6 +10,8 @@ import re
 
 scanone = ""
 
+scanone = ""
+
 for root, dirs, files in os.walk(os.path.join("bdscript")):
     for ff in files:
         fn = os.path.join(root, ff)
@@ -54,6 +56,17 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
             #     txt_commands[txtline] = obj
             #     txt_commands[labelline] = obj
 
+            #     aline = aline.strip().split("'")
+            #     if len(aline) > 3:
+            #         print("WARN: too many ', {}".format(lines[l+1]))
+            #     aline = aline[1]
+            #     obj = {"txt": line.split(":")[0], "action": aline}
+            #     txt_commands[txtline] = obj
+            #     txt_commands[labelline] = obj
+#  db 'zexion_hp',0
+# TXT28504:
+# L28504:
+#  db 'Zexion',0,0
         # go back through the main part of the file, examine each word, if a line starts with an L or TXT look for it in the dict
         # if found, add a comment at the end "TXT: 'name'"
 
