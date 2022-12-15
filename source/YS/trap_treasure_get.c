@@ -10,3 +10,4 @@ void __fastcall YS::trap_treasure_get(BD_VALUE_21 *args, __int64 a2, __int64 a3,
   dk::TREASURE_INFO::openEventInfo(v9);
 }
 
+//COMPLICATED YS::TREASURE::TABLE::GetEvent YS::TREASURE::TABLE::get_treasurebox YS::TREASURE::GetInfoNum dk::TREASURE_INFO::openEventInfo

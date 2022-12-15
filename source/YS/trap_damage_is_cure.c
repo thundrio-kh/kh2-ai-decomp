@@ -11,3 +11,4 @@ void __fastcall YS::trap_damage_is_cure(BD_VALUE_19 *args)
   *(_DWORD *)args = v1;
 }
 
+//BASIC

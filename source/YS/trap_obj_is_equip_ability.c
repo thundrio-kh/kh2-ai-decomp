@@ -71,3 +71,4 @@ void __fastcall YS::trap_obj_is_equip_ability(BD_VALUE_21 *args)
 }
 // 4FAFE0: variable 'back_chain' is possibly undefined
 
+//CHEAT YS::PARTY::get_ability

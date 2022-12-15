@@ -30,3 +30,4 @@ void __fastcall YS::trap_random_range(BD_VALUE_16 *args)
 // 4B7E6C: variable 'back_chain' is possibly undefined
 // 2AB06B0: using guessed type int YS::Random;
 
+//BASIC

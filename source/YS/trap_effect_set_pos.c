@@ -38,3 +38,4 @@ void __fastcall YS::trap_effect_set_pos(BD_VALUE_16 *args, __int64 a2, __int64 a
 // 4B85D8: variable 'v11' is possibly undefined
 // 4B85D8: variable 'v10' is possibly undefined
 
+//COMPLICATED ryj::EFFECT::is_valid ryj::EFFECT::pos

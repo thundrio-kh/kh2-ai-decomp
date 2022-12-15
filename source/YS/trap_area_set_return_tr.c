@@ -17,3 +17,4 @@ void __fastcall YS::trap_area_set_return_tr(BD_VALUE_21 *args)
   }
 }
 
+//BASIC

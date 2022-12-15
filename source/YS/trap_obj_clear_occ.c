@@ -42,3 +42,4 @@ void __fastcall YS::trap_obj_clear_occ(BD_VALUE_21 *args)
 }
 // 4FBC80: variable 'back_chain' is possibly undefined
 
+//BASIC

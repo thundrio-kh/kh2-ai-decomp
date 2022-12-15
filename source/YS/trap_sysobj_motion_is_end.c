@@ -24,3 +24,4 @@ void __fastcall YS::trap_sysobj_motion_is_end(BD_VALUE_21 *args)
 }
 // 4F7660: variable 'back_chain' is possibly undefined
 
+//CHEAT YS::OBJ::is_exist

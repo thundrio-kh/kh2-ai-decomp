@@ -52,3 +52,4 @@ void __fastcall YS::trap_player_get_rc(BD_VALUE_21 *args)
 }
 // 508064: variable 'back_chain' is possibly undefined
 
+//BASIC

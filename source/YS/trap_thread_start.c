@@ -45,3 +45,4 @@ void __fastcall YS::trap_thread_start(BD_VALUE_16 *args)
 // 4B7A7C: variable 'back_chain' is possibly undefined
 // 7FE85C: using guessed type void *__ptr32 YS::VM::Current;
 
+//COMPLICATED YS::VM::stop YS::VM::start 

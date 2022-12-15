@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_spec(BD_VALUE_21 *args)
 }
 // 506D5C: variable 'back_chain' is possibly undefined
 
+//BASIC

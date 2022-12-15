@@ -116,3 +116,4 @@ void __fastcall YS::trap_obj_reaction_callback(BD_VALUE_21 *args)
 // 4FAD20: variable 'v6' is possibly undefined
 // 4FAD20: variable 'v5' is possibly undefined
 
+//COMPLICATED YS::TARGET::clear YS::TARGET::set_obj YS::OBJ::reaction_callback

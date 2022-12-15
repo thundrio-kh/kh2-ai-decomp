@@ -63,3 +63,4 @@ void __fastcall YS::trap_obj_cmp(BD_VALUE_21 *args)
 }
 // 4F79B4: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -44,3 +44,4 @@ void __fastcall YS::trap_obj_set_cannon_camera_offset(BD_VALUE_21 *args)
 }
 // 4FAD7C: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -54,3 +54,4 @@ void __fastcall YS::trap_enemy_set_karma_limit(BD_VALUE_19 *args)
 }
 // 4F3B30: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -52,3 +52,4 @@ void __fastcall YS::trap_obj_pattern_reset(BD_VALUE_21 *args)
 }
 // 4F8D28: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -99,3 +99,4 @@ void __fastcall YS::trap_attack_strike(BD_VALUE_19 *args)
 }
 // 4F4A20: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::ATTACK::strike YS::DAMAGE::Free

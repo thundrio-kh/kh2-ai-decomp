@@ -54,3 +54,4 @@ void __fastcall YS::trap_obj_set_medal(BD_VALUE_21 *args)
 }
 // 5025C0: variable 'back_chain' is possibly undefined
 
+//BASIC

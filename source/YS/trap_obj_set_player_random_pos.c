@@ -43,3 +43,4 @@ void __fastcall YS::trap_obj_set_player_random_pos(BD_VALUE_21 *args)
 }
 // 500DD8: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_entry_id YS::UNIT_GROUP::RandomPosPlayer YS::OBJ::set_pos

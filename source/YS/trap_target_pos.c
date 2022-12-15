@@ -9,3 +9,4 @@ void __fastcall YS::trap_target_pos(BD_VALUE_21 *args)
 }
 // 2B75D50: using guessed type float ResultVector;
 
+//CHEAT YS::TARGET::get_pos

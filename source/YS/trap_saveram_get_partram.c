@@ -22,3 +22,4 @@ void __fastcall YS::trap_saveram_get_partram(BD_VALUE_16 *args)
 }
 // 4B82E4: variable 'back_chain' is possibly undefined
 
+//CHEAT YS::SAVERAM_BATTLE::get_partram

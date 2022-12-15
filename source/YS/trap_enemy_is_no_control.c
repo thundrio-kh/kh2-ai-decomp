@@ -52,3 +52,4 @@ void __fastcall YS::trap_enemy_is_no_control(BD_VALUE_19 *args)
 }
 // 4F3768: variable 'back_chain' is possibly undefined
 
+//BASIC

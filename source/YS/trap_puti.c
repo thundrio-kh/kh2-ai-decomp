@@ -50,3 +50,4 @@ void __fastcall YS::trap_puti(BD_VALUE_16 *args)
 // 7FE85C: using guessed type void *__ptr32 YS::VM::Current;
 // 817590: using guessed type int MainCounter;
 
+//BASIC

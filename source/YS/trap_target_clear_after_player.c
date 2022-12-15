@@ -50,3 +50,4 @@ void __fastcall YS::trap_target_clear_after_player(BD_VALUE_21 *args, __int64 a2
 // 5090C8: variable 'v23' is possibly undefined
 // 5090C8: variable 'v22' is possibly undefined
 
+//BASIC

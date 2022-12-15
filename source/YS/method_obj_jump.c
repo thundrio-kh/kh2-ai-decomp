@@ -51,3 +51,4 @@ void __fastcall YS::method_obj_jump(BD_VALUE_21 *args)
 }
 // 4FDE4C: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::prepare_jump YS::MOTION::start

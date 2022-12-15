@@ -31,3 +31,4 @@ void __fastcall YS::trap_vector_add(BD_VALUE_16 *args)
 }
 // 2AB07E8: using guessed type char LS_65_LV_5_0;
 
+//BASIC

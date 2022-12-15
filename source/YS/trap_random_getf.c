@@ -6,3 +6,4 @@ void __fastcall YS::trap_random_getf(BD_VALUE_16 *args)
 }
 // 2AB06B0: using guessed type int YS::Random;
 
+//BASIC

@@ -46,3 +46,4 @@ void __fastcall YS::trap_obj_levelup_unit(BD_VALUE_21 *args)
 }
 // 5016F0: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::UNIT_GROUP::levelup YS::UNIT_GROUP::activate

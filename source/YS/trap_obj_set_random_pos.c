@@ -48,3 +48,4 @@ void __fastcall YS::trap_obj_set_random_pos(BD_VALUE_21 *args)
 }
 // 500F10: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_entry_id YS::UNIT_GROUP::RandomPos YS::OBJ::set_pos

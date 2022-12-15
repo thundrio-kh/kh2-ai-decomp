@@ -23,3 +23,4 @@ void __fastcall YS::trap_command_slot_set_status(BD_VALUE_21 *args)
 }
 // 5089BC: variable 'back_chain' is possibly undefined
 
+//BASIC

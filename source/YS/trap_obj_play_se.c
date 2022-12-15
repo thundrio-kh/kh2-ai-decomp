@@ -109,3 +109,4 @@ void __fastcall YS::trap_obj_play_se(BD_VALUE_21 *args)
 // 4FAA90: variable 'v10' is possibly undefined
 // 4FAA90: variable 'v9' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_pos YS::STDOBJ::call_se

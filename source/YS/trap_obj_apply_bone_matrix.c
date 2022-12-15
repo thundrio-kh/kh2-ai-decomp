@@ -49,3 +49,4 @@ void __fastcall YS::trap_obj_apply_bone_matrix(BD_VALUE_21 *args)
 // 505E60: variable 'back_chain' is possibly undefined
 // 2B75D50: using guessed type float ResultVector;
 
+//COMPLICATED Axa::FMATRIX44::unit YS::OBJ::get_bone_matrix 

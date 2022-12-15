@@ -39,3 +39,4 @@ void __fastcall YS::trap_obj_set_team(BD_VALUE_21 *args)
 }
 // 4F9808: variable 'back_chain' is possibly undefined
 
+//BASIC

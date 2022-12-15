@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_motion_check_trigger(BD_VALUE_21 *args)
 }
 // 4FF018: variable 'back_chain' is possibly undefined
 
+//BASIC

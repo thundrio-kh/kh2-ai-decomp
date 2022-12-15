@@ -15,3 +15,4 @@ void __fastcall YS::trap_bg_set_uvscroll_speed_task(TASK_158 *task)
   }
 }
 
+//COMPLICATED dk::Map::getModelObj kn::ModelObj::setAnimationSpeedRatio TASK::suicide

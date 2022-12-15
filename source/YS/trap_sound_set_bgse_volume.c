@@ -7,3 +7,4 @@ void __fastcall YS::trap_sound_set_bgse_volume(BD_VALUE_16 *args)
     SOUND::silentBgSeOff();
 }
 
+//COMPLICATED SOUND::silentBgSeOn SOUND::silentBgSeOff

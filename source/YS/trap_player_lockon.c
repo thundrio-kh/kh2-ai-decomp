@@ -104,3 +104,4 @@ void __fastcall YS::trap_player_lockon(BD_VALUE_21 *args)
 // 508418: variable 'v8' is possibly undefined
 // 508418: variable 'v7' is possibly undefined
 
+//COMPLICATED YS::TARGET::clear YS::TARGET::set_obj YS::INDICATION::enable YS::LOCKON::start

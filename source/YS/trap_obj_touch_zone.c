@@ -52,3 +52,4 @@ void __fastcall YS::trap_obj_touch_zone(BD_VALUE_21 *args)
 }
 // 4F7E98: variable 'back_chain' is possibly undefined
 
+//BASIC

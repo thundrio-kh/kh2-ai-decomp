@@ -52,3 +52,4 @@ void __fastcall YS::trap_obj_dump(BD_VALUE_21 *args)
 // 509208: variable 'v5' is possibly undefined
 // 7FE85C: using guessed type void *__ptr32 YS::VM::Current;
 
+//CHEAT YS::OBJ::get_entry_name

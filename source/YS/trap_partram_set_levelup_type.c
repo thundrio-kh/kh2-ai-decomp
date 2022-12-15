@@ -19,3 +19,4 @@ void __fastcall YS::trap_partram_set_levelup_type(BD_VALUE_16 *args, __int64 a2,
 // 4B8F68: variable 'v10' is possibly undefined
 // 4B8F68: variable 'v9' is possibly undefined
 
+//BASIC

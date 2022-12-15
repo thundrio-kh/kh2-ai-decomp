@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_motion_get_time(BD_VALUE_21 *args)
 }
 // 504FA8: variable 'back_chain' is possibly undefined
 
+//BASIC

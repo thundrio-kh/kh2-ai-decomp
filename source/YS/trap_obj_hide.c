@@ -38,3 +38,4 @@ void __fastcall YS::trap_obj_hide(BD_VALUE_21 *args)
 }
 // 4F7B28: variable 'back_chain' is possibly undefined
 
+//BASIC

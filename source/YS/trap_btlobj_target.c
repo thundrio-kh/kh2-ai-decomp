@@ -103,3 +103,4 @@ void __fastcall YS::trap_btlobj_target(BD_VALUE_19 *args)
 }
 // 4F27D8: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::TARGET::is_exist YS::TARGET::search

@@ -43,3 +43,4 @@ void __fastcall YS::trap_obj_is_fly(BD_VALUE_21 *args)
 }
 // 5043B4: variable 'back_chain' is possibly undefined
 
+//BASIC

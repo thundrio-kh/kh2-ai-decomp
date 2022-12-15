@@ -51,3 +51,4 @@ void __fastcall YS::trap_obj_flyjump(BD_VALUE_21 *args)
 }
 // 4FE5BC: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::prepare_flyjump YS::MOTION::start

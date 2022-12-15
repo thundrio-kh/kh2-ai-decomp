@@ -52,3 +52,4 @@ void __fastcall YS::trap_party_get_weapon(BD_VALUE_21 *args)
 }
 // 50AAD0: variable 'back_chain' is possibly undefined
 
+//BASIC

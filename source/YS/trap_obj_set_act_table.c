@@ -42,3 +42,4 @@ void __fastcall YS::trap_obj_set_act_table(BD_VALUE_21 *args)
 }
 // 4FC120: variable 'back_chain' is possibly undefined
 
+//BASIC

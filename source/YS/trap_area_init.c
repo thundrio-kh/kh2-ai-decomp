@@ -9,3 +9,4 @@ void __fastcall YS::trap_area_init(BD_VALUE_21 *args)
 // 8F4D5D: using guessed type char byte_8F4D5D;
 // 8F4D5E: using guessed type char byte_8F4D5E;
 
+//BASIC

@@ -22,3 +22,4 @@ void __fastcall YS::trap_saveram_set_form_ability(BD_VALUE_16 *args)
 }
 // 4B8498: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::SAVERAM_BATTLE::get_formram YS::FORMRAM::set_ability

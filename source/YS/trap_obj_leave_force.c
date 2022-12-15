@@ -38,3 +38,4 @@ void __fastcall YS::trap_obj_leave_force(BD_VALUE_21 *args)
 }
 // 4FCA6C: variable 'back_chain' is possibly undefined
 
+//BASIC

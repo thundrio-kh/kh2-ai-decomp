@@ -52,3 +52,4 @@ void __fastcall YS::trap_obj_add_hp(BD_VALUE_21 *args)
 }
 // 501830: variable 'back_chain' is possibly undefined
 
+//BASIC

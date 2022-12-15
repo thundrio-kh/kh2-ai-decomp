@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_get_weight(BD_VALUE_21 *args)
 }
 // 4FA6F8: variable 'back_chain' is possibly undefined
 
+//BASIC

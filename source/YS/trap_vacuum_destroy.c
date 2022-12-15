@@ -11,3 +11,4 @@ void __fastcall YS::trap_vacuum_destroy(BD_VALUE_19 *args)
   }
 }
 
+//COMPLICATED YS::VACUUM::VACUUM AREA::Free

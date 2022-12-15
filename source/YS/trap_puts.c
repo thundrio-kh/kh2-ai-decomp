@@ -55,3 +55,4 @@ void __fastcall YS::trap_puts(BD_VALUE_16 *args)
 // 4B6D54: variable 'v13' is possibly undefined
 // 7FE85C: using guessed type void *__ptr32 YS::VM::Current;
 
+//BASIC

@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_motion_is_no_control(BD_VALUE_21 *args)
 }
 // 50591C: variable 'back_chain' is possibly undefined
 
+//BASIC

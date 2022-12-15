@@ -77,3 +77,4 @@ void __fastcall YS::trap_attack_set_radius(BD_VALUE_19 *args)
 // 4F4530: variable 'v23' is possibly undefined
 // 4F4530: variable 'v22' is possibly undefined
 
+//CHEAT YS::ATTACK_MAGIC::set_size

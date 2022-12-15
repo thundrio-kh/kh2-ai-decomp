@@ -5,3 +5,4 @@ void __fastcall YS::trap_status_no_gameover(BD_VALUE_21 *args)
 }
 // 2AAD548: using guessed type int YS::STATUS::Flag;
 
+//BASIC

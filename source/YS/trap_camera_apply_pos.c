@@ -68,3 +68,4 @@ void __fastcall YS::trap_camera_apply_pos(BD_VALUE_21 *args)
 }
 // 2B75D50: using guessed type float ResultVector;
 
+//BASIC

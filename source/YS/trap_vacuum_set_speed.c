@@ -13,3 +13,4 @@ void __fastcall YS::trap_vacuum_set_speed(BD_VALUE_19 *args)
   v1[8] = v3;
 }
 
+//BASIC

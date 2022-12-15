@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_shadow_move_end(BD_VALUE_21 *args)
 }
 // 507350: variable 'back_chain' is possibly undefined
 
+//BASIC

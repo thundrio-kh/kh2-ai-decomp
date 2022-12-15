@@ -24,3 +24,4 @@ void __fastcall YS::trap_message_open(BD_VALUE_21 *args)
   *(_DWORD *)args = (_DWORD)v2;
 }
 
+//COMPLICATED YS::WINDOW_BALLOON::WINDOW_BALLOON YS::WINDOW_OBJ2D::WINDOW_OBJ2D

@@ -51,3 +51,4 @@ void __fastcall YS::trap_obj_float_height(BD_VALUE_21 *args)
 }
 // 507088: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_step_height YS::OBJ::get_pos

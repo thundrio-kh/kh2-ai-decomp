@@ -47,3 +47,4 @@ void __fastcall YS::trap_obj_get_wish_movement(BD_VALUE_21 *args)
 // 5049FC: variable 'back_chain' is possibly undefined
 // 2B75EE0: using guessed type char LS_477_LV_57;
 
+//CHEAT kn::FVector::operator=

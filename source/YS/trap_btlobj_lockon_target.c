@@ -52,3 +52,4 @@ void __fastcall YS::trap_btlobj_lockon_target(BD_VALUE_19 *args)
 }
 // 4F2DDC: variable 'back_chain' is possibly undefined
 
+//BASIC

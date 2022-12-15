@@ -77,3 +77,4 @@ void __fastcall YS::trap_attack_set_effect(BD_VALUE_19 *args)
 // 4F492C: variable 'v23' is possibly undefined
 // 4F492C: variable 'v22' is possibly undefined
 
+//CHEAT YS::ATTACK_MAGIC::set_effect

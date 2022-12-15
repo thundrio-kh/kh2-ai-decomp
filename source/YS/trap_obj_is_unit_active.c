@@ -45,3 +45,4 @@ void __fastcall YS::trap_obj_is_unit_active(BD_VALUE_21 *args)
 }
 // 5015BC: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -98,3 +98,4 @@ LABEL_7:
 }
 // 505FD4: variable 'back_chain' is possibly undefined
 
+//BASIC

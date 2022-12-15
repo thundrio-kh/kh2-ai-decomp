@@ -37,3 +37,4 @@ void __fastcall YS::trap_attack_set_obj_pax(BD_VALUE_19 *args)
 }
 // 4F4EE8: variable 'back_chain' is possibly undefined
 
+//BASIC

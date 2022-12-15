@@ -64,3 +64,4 @@ void __fastcall YS::trap_obj_thread_start(BD_VALUE_21 *args)
 }
 // 505C88: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::VM::stop YS::VM::start

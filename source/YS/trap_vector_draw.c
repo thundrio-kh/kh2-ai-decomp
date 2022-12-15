@@ -39,3 +39,4 @@ void __fastcall YS::trap_vector_draw(BD_VALUE_16 *args)
   YS::MODEL::DrawSphere((const kn::FMatrix *)&v8, v3, 0);
 }
 
+//COMPLICATED Axa::FMATRIX44::unit kn::FMatrix::scaling YS::MODEL::DrawSphere

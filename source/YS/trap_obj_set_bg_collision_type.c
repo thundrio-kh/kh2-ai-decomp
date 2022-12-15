@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_set_bg_collision_type(BD_VALUE_21 *args)
 }
 // 50105C: variable 'back_chain' is possibly undefined
 
+//BASIC

@@ -11,3 +11,4 @@ void __fastcall YS::trap_attack_is_hit_bg(BD_VALUE_19 *args)
   *(_DWORD *)args = v1;
 }
 
+//BASIC

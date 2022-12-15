@@ -39,3 +39,4 @@ void __fastcall YS::trap_obj_scatter_prize_mu(BD_VALUE_21 *args)
 }
 // 4FCFE0: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_target_pos YS::PRIZE_MU::AppearGauge

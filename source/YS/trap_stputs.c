@@ -9,3 +9,4 @@ void __fastcall YS::trap_stputs(BD_VALUE_16 *args)
 }
 // 7FE85C: using guessed type void *__ptr32 YS::VM::Current;
 
+//BASIC

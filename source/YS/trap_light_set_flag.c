@@ -26,3 +26,4 @@ void __fastcall YS::trap_light_set_flag(BD_VALUE_21 *args)
 }
 // 509AFC: variable 'back_chain' is possibly undefined
 
+//BASIC

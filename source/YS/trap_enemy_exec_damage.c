@@ -52,3 +52,4 @@ void __fastcall YS::trap_enemy_exec_damage(BD_VALUE_19 *args)
 }
 // 4F2F5C: variable 'back_chain' is possibly undefined
 
+//BASIC

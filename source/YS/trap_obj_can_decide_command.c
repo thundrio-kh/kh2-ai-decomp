@@ -76,3 +76,4 @@ void __fastcall YS::trap_obj_can_decide_command(BD_VALUE_21 *args)
 }
 // 4F935C: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::COMMAND_ELEM::Get YS::TARGET::clear YS::TARGET::set_obj YS::COMMAND_ELEM::can_decide

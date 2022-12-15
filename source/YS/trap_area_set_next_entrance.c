@@ -7,3 +7,4 @@ void __fastcall YS::trap_area_set_next_entrance(BD_VALUE_21 *args)
   AREA::NextArea.Entrance = AREA::Current.Entrance + 1;
 }
 
+//BASIC

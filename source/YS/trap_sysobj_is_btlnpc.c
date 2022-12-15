@@ -22,3 +22,4 @@ void __fastcall YS::trap_sysobj_is_btlnpc(BD_VALUE_21 *args)
 }
 // 4F7468: variable 'back_chain' is possibly undefined
 
+//CHEAT YS::OBJ::is_exist

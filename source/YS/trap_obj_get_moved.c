@@ -47,3 +47,4 @@ void __fastcall YS::trap_obj_get_moved(BD_VALUE_21 *args)
 // 504768: variable 'back_chain' is possibly undefined
 // 2B75EC8: using guessed type char LS_475_LV_56;
 
+//BASIC

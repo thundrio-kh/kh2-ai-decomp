@@ -39,3 +39,4 @@ void __fastcall YS::trap_obj_scatter_prize_tr(BD_VALUE_21 *args)
 }
 // 4FD114: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_target_pos YS::PRIZE_TR::AppearNum

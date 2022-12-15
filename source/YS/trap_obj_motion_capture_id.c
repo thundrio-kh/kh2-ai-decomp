@@ -37,3 +37,4 @@ void __fastcall YS::trap_obj_motion_capture_id(BD_VALUE_21 *args)
 }
 // 4FF8B0: variable 'back_chain' is possibly undefined
 
+//BASIC

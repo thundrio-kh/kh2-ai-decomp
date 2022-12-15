@@ -5,3 +5,4 @@ void __fastcall YS::trap_status_show_shadow(BD_VALUE_21 *args)
 }
 // 2AAD548: using guessed type int YS::STATUS::Flag;
 
+//BASIC

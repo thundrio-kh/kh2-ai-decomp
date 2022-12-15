@@ -47,3 +47,4 @@ void __fastcall YS::trap_command_override(BD_VALUE_21 *args)
 // 5084C0: variable 'back_chain' is possibly undefined
 // 7FE80C: using guessed type void *__ptr32 YS::PLAYER::Player;
 
+//COMPLICATED YS::TARGET::clear YS::TARGET::set_obj YS::PLAYER_COMMAND::override

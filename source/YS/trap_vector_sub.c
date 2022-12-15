@@ -31,3 +31,4 @@ void __fastcall YS::trap_vector_sub(BD_VALUE_16 *args)
 }
 // 2AB0800: using guessed type char LS_66_LV_7_0;
 
+//BASIC

@@ -39,3 +39,4 @@ void __fastcall YS::trap_sheet_set_hp(BD_VALUE_21 *args)
 }
 // 50A7F8: variable 'back_chain' is possibly undefined
 
+//BASIC

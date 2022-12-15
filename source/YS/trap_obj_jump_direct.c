@@ -39,3 +39,4 @@ void __fastcall YS::trap_obj_jump_direct(BD_VALUE_21 *args)
 }
 // 4FDFB4: variable 'back_chain' is possibly undefined
 
+//BASIC

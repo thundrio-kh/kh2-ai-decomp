@@ -69,3 +69,4 @@ void __fastcall YS::trap_obj_can_see(BD_VALUE_21 *args)
 }
 // 4FB1F8: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::get_target_pos YS::OBJ::get_target_pos YS::BG::CanSee

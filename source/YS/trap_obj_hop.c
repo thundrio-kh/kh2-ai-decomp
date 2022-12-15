@@ -55,3 +55,4 @@ void __fastcall YS::trap_obj_hop(BD_VALUE_21 *args)
 }
 // 4FE444: variable 'back_chain' is possibly undefined
 
+//COMPLICATED YS::OBJ::prepare_hop YS::MOTION::start

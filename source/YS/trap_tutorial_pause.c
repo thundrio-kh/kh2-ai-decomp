@@ -17,3 +17,4 @@ void __fastcall YS::trap_tutorial_pause(BD_VALUE_21 *args)
   }
 }
 
+//COMPLICATED menu::Window::Window menu::TutorialWidget::TutorialWidget menu::Widget::link

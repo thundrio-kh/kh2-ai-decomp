@@ -19,3 +19,4 @@ void __fastcall YS::trap_assert(BD_VALUE_16 *args)
 }
 // 4B8E24: variable 'back_chain' is possibly undefined
 
+//BASIC

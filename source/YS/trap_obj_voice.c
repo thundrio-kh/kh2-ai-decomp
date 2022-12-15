@@ -52,3 +52,4 @@ void __fastcall YS::trap_obj_voice(BD_VALUE_21 *args)
 }
 // 4F9B50: variable 'back_chain' is possibly undefined
 
+//BASIC
