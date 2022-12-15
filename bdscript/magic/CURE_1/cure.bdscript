@@ -55,7 +55,7 @@ L100:
  pushFromFSp 8
  sub 
  info 
- jz L221
+ jnz L221
  pushFromFSp 8
  gosub 12, L305
  memcpyToSp 16, 48
@@ -64,12 +64,12 @@ L100:
  pushFromFSp 0
  pushFromPSp 16
  gosub 12, L321
- jnz L211
+ jz L211
  pushFromPSp 16
  pushFromPSpVal 44
  syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
  eqz 
- jnz L159
+ jz L159
  pushFromFSpVal 16
  pushImm 3
  pushFromPSp 16
@@ -114,7 +114,7 @@ L211:
 L221:
  drop 
  pushFromFSp 36
- jnz L230
+ jz L230
  syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
  jmp L230
 L230:
@@ -127,12 +127,12 @@ L231:
  sub 
  neqz 
  dup 
- jnz L250
+ jz L250
  pushFromFSpVal 28
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
  eqzv 
 L250:
- jnz L263
+ jz L263
  pushFromFSpVal 28
  syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
  pushImm 0
@@ -180,14 +180,14 @@ L321:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L347
+ jz L347
  pushFromFSp 4
  fetchValue 4
  syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
  eqz 
  eqzv 
 L347:
- jnz L394
+ jz L394
  pushFromFSp 4
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
  memcpyToSp 16, 32
@@ -250,7 +250,7 @@ L447:
  pushFromFSp 20
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L483
+ jz L483
  pushFromFSp 20
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  gosub 8, L543
@@ -266,14 +266,14 @@ L488:
  pushImm 114
  syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
  dup 
- jnz L506
+ jz L506
  pushFromFSp 20
  pushFromPSpVal 44
  syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
  eqz 
  eqzv 
 L506:
- jnz L528
+ jz L528
  pushFromFSp 20
  pushImmf 60
  syscall 1, 91 ; trap_obj_star (2 in, 0 out)
@@ -322,12 +322,12 @@ L578:
  sub 
  neqz 
  dup 
- jnz L595
+ jz L595
  pushFromFSpVal 16
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
  eqzv 
 L595:
- jnz L611
+ jz L611
  pushFromFSpVal 16
  syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
  memcpyToSp 16, 16
@@ -357,7 +357,7 @@ L648:
  pushImmf 0
  subf 
  supzf 
- jnz L680
+ jz L680
  pushFromFSp 4
  pushFromPSpVal 0
  syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
@@ -442,7 +442,7 @@ L771:
  pushImm 0
  sub 
  msbi 
- jnz L827
+ jz L827
  pushFromFSpVal 16
  pushFromFSp 4
  pushFromPSpVal 0
@@ -471,7 +471,7 @@ L847:
  pushFromFSpVal 40
  sub 
  eqz 
- jnz L862
+ jz L862
  halt 
  jmp L847
 L862:

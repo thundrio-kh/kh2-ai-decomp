@@ -313,11 +313,11 @@ L768:
  dup 
  pushImm 2
  sub 
- jnz L790
+ jz L790
  dup 
  pushImm -1
  sub 
- jnz L790
+ jz L790
  jmp L796
 L790:
  pushFromFSp 0
@@ -358,13 +358,13 @@ L802:
  pushFromFSp 0
  syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
  dup 
- jz L873
+ jnz L873
  pushFromFSp 0
  syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
  eqz 
  neqzv 
 L873:
- jnz L882
+ jz L882
  pushImm 0
  popToSp 32
  jmp L882
@@ -378,7 +378,7 @@ L890:
  fetchValue 4
  syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
  eqz 
- jnz L941
+ jz L941
  gosub 12, L953
  memcpyToSp 16, 48
  pushFromPSp 48
@@ -432,7 +432,7 @@ L993:
  gosub 4, L1012
 L997:
  syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
- jnz L1004
+ jz L1004
  halt 
  jmp L997
 L1004:
@@ -442,7 +442,7 @@ L1004:
  ret 
 L1012:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
- jnz L1019
+ jz L1019
  halt 
  jmp L1012
 L1019:
@@ -454,7 +454,7 @@ L1022:
  pushImmf 0
  subf 
  supzf 
- jnz L1041
+ jz L1041
  pushFromFSp 0
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
  subf 
@@ -505,7 +505,7 @@ L1109:
  pushImm 0
  sub 
  msbi 
- jnz L1128
+ jz L1128
  pushFromFSp 0
  pushFromFSpVal 28 ; ___possible_ref
  syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
@@ -583,7 +583,7 @@ L1249:
  pushImm 3
  sub 
  neqz 
- jnz L1276
+ jz L1276
  pushFromFSp 0
  gosub 8, L1375
  jmp L1276
@@ -600,19 +600,19 @@ L1290:
  fetchValue 4
  syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
  eqz 
- jnz L1323
+ jz L1323
  halt 
  pushFromFSp 0
  pushFromFSp 12
  gosub 8, L1476
- jnz L1312
+ jz L1312
  jmp L1323
 L1310:
  jmp L1312
 L1312:
  pushFromFSp 0
  syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
- jnz L1321
+ jz L1321
  halt 
  jmp L1312
 L1321:
@@ -622,7 +622,7 @@ L1323:
  pushImm 0
  sub 
  msbi 
- jnz L1345
+ jz L1345
  pushFromFSp 0
  fetchValue 4
  pushFromFSp 4
@@ -638,18 +638,18 @@ L1348:
  syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
  eqz 
  dup 
- jnz L1361
+ jz L1361
  pushFromFSp 0
  syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
  eqzv 
 L1361:
  dup 
- jz L1369
+ jnz L1369
  pushFromFSp 0
  syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
  neqzv 
 L1369:
- jnz L1374
+ jz L1374
  halt 
  jmp L1348
 L1374:
@@ -683,7 +683,7 @@ L1414:
  dup 
  pushImm 0
  sub 
- jnz L1435
+ jz L1435
  jmp L1472
 L1435:
  pushFromFSp 0
@@ -693,7 +693,7 @@ L1435:
  sub 
  neqz 
  dup 
- jnz L1461
+ jz L1461
  pushFromFSp 0
  fetchValue 4
  syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
@@ -702,7 +702,7 @@ L1435:
  neqz 
  eqzv 
 L1461:
- jnz L1470
+ jz L1470
  pushImmf 0
  popToSp 8
  jmp L1470
@@ -723,7 +723,7 @@ L1476:
  pushFromFSp 4
  sub 
  neqz 
- jnz L1504
+ jz L1504
  pushImm 1
  popToSp 8
  jmp L1504
@@ -752,7 +752,7 @@ L1543:
  pushImmf 0
  subf 
  supzf 
- jnz L1562
+ jz L1562
  pushFromFSp 4
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
  subf 
@@ -790,7 +790,7 @@ L1579:
  fetchValue 48
  subf 
  infzf 
- jnz L1626
+ jz L1626
  pushFromFSp 0
  pushFromPAi L7505 ; ___ai: 'btl_attack' (L7505)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -802,7 +802,7 @@ L1626:
  fetchValue 52
  subf 
  infzf 
- jnz L1646
+ jz L1646
  pushFromFSp 0
  pushFromPAi L7518 ; ___ai: 'btl_short' (L7518)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -817,7 +817,7 @@ L1653:
  popToSp 0
  pushFromFSp 0
  gosub 4, L1671
- jnz L1670
+ jz L1670
  pushFromFSp 0
  pushFromPAi L7683 ; ___ai: 'leave' (L7683)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -828,7 +828,7 @@ L1670:
 L1671:
  popToSp 0
  syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
- jnz L1686
+ jz L1686
  pushImm 1
  popToSp 8
  jmp L1741
@@ -836,7 +836,7 @@ L1684:
  jmp L1699
 L1686:
  syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
- jnz L1699
+ jz L1699
  pushImm 0
  popToSp 8
  jmp L1741
@@ -853,7 +853,7 @@ L1699:
  popToSp 4
  pushFromFSp 0
  syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
- jnz L1733
+ jz L1733
  pushFromFSp 4
  pushFromFSpVal 60
  subf 
@@ -930,7 +930,7 @@ L1842:
  fetchValue 52
  subf 
  infzf 
- jnz L1871
+ jz L1871
  pushFromFSp 0
  pushFromPAi L7546 ; ___ai: 'rvg_short' (L7546)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
@@ -954,7 +954,7 @@ L1884:
  dup 
  pushImm 0
  sub 
- jnz L1906
+ jz L1906
  jmp L1914
 L1906:
  pushFromFSp 0
@@ -965,7 +965,7 @@ L1914:
  dup 
  pushImm 1
  sub 
- jnz L1923
+ jz L1923
  jmp L1931
 L1923:
  pushFromFSp 0
@@ -976,7 +976,7 @@ L1931:
  dup 
  pushImm 2
  sub 
- jnz L1940
+ jz L1940
  jmp L1948
 L1940:
  pushFromFSp 0
@@ -996,7 +996,7 @@ L1950:
  dup 
  pushImm 0
  sub 
- jnz L1972
+ jz L1972
  jmp L1980
 L1972:
  pushFromFSp 0
@@ -1007,7 +1007,7 @@ L1980:
  dup 
  pushImm 1
  sub 
- jnz L1989
+ jz L1989
  jmp L1997
 L1989:
  pushFromFSp 0
@@ -1018,7 +1018,7 @@ L1997:
  dup 
  pushImm 2
  sub 
- jnz L2006
+ jz L2006
  jmp L2014
 L2006:
  pushFromFSp 0
@@ -1035,7 +1035,7 @@ L2016:
  dup 
  pushImm 0
  sub 
- jnz L2031
+ jz L2031
  jmp L2039
 L2031:
  pushFromFSp 0
@@ -1046,7 +1046,7 @@ L2039:
  dup 
  pushImm 1
  sub 
- jnz L2048
+ jz L2048
  jmp L2056
 L2048:
  pushFromFSp 0
@@ -1057,7 +1057,7 @@ L2056:
  dup 
  pushImm 2
  sub 
- jnz L2065
+ jz L2065
  jmp L2073
 L2065:
  pushFromFSp 0
@@ -1088,7 +1088,7 @@ L2082:
  gosub 4, L3400
 L2111:
  pushFromFSpVal 36
- jnz L2118
+ jz L2118
  halt 
  jmp L2111
 L2118:
@@ -1099,7 +1099,7 @@ L2119:
  pushImm 1
  pushImm -1
  gosub 52, L2548
- jnz L2542
+ jz L2542
  pushFromPSp 80
  gosub 52, L2630
  pushFromPSp 80
@@ -1175,16 +1175,16 @@ L2300:
  pushFromFSp 0
  gosub 52, L3362
  dup 
- jnz L2313
+ jz L2313
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L2313:
- jnz L2498
+ jz L2498
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
- jnz L2325
+ jz L2325
  jmp L2498
 L2323:
  jmp L2325
@@ -1215,7 +1215,7 @@ L2325:
  pushFromPSp 160
  pushImmf 10000
  syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
- jnz L2442
+ jz L2442
  pushFromPSp 32
  fetchValue 4
  pushFromPSp 160
@@ -1224,7 +1224,7 @@ L2325:
  subf 
  subf 
  supzf 
- jnz L2440
+ jz L2440
  pushFromPSp 32
  pushImm 4
  add 
@@ -1278,19 +1278,19 @@ L2498:
  pushFromFSp 0
  gosub 52, L3362
  dup 
- jnz L2510
+ jz L2510
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqzv 
 L2510:
  dup 
- jnz L2519
+ jz L2519
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L2519:
- jnz L2540
+ jz L2540
  pushFromFSp 0
  gosub 52, L3377
  pushFromPSp 4
@@ -1314,7 +1314,7 @@ L2548:
  pushImm 0
  sub 
  msb 
- jnz L2573
+ jz L2573
  pushFromFSp 0
  fetchValue 4
  syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
@@ -1325,7 +1325,7 @@ L2573:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L2593
+ jz L2593
  pushFromFSp 4
  pushFromFSp 0
  fetchValue 4
@@ -1335,14 +1335,14 @@ L2573:
  eqzv 
 L2593:
  dup 
- jnz L2604
+ jz L2604
  pushFromFSp 0
  pushFromFSp 8
  syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
  eqz 
  eqzv 
 L2604:
- jnz L2609
+ jz L2609
  halt 
  jmp L2573
 L2609:
@@ -1350,7 +1350,7 @@ L2609:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L2629
+ jz L2629
  pushFromFSp 4
  pushFromFSp 0
  fetchValue 4
@@ -1508,7 +1508,7 @@ L2855:
  gosub 16, L759
  pushFromPSp 28 ; ___possible_ref
  syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
- jnz L2906
+ jz L2906
  pushFromPSp 28 ; ___possible_ref
  syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
  jmp L2906
@@ -1516,7 +1516,7 @@ L2906:
  pushFromPSp 8
  pushFromPSp 28 ; ___possible_ref
  syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
- jnz L2922
+ jz L2922
  pushFromPSp 8
  pushFromPSp 28 ; ___possible_ref
  syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
@@ -1536,7 +1536,7 @@ L2936:
  popToSp 8
  popToSp 0
  pushFromFSpVal 52
- jnz L2950
+ jz L2950
  jmp L3129
 L2948:
  jmp L2950
@@ -1553,7 +1553,7 @@ L2950:
  pushFromPSp 64
  memcpyToSp 16, 16
  pushFromFSpVal 64
- jnz L2992
+ jz L2992
  pushFromPSp 16
  pushImm 4
  add 
@@ -1572,12 +1572,12 @@ L2992:
  syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
  drop 
  pushFromFSpVal 20
- jnz L3055
+ jz L3055
  pushFromFSpVal 12
  pushFromFSpVal 4
  subf 
  infoezf 
- jnz L3046
+ jz L3046
  pushFromFSpVal 0
  pushFromFSpVal 8
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
@@ -1598,12 +1598,12 @@ L3046:
  jmp L3055
 L3055:
  pushFromFSpVal 60
- jnz L3129
+ jz L3129
  pushFromFSp 0
  gosub 16, L3162
- jnz L3112
+ jz L3112
  pushFromFSpVal 64
- jnz L3102
+ jz L3102
  pushFromFSp 8
  memcpyToSp 16, 16
  pushFromPSp 16
@@ -1632,7 +1632,7 @@ L3112:
  pushFromFSpVal 56
  subf 
  infzf 
- jnz L3127
+ jz L3127
  pushImm 1
  popToSpVal 52
  jmp L3127
@@ -1645,7 +1645,7 @@ L3132:
  popToSp 0
  pushFromFSp 0
  gosub 12, L3162
- jnz L3154
+ jz L3154
  pushFromFSpVal 48
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
  memcpyToSp 16, 32
@@ -1664,7 +1664,7 @@ L3162:
  sub 
  neqz 
  dup 
- jnz L3179
+ jz L3179
  pushFromFSpVal 48
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
  eqzv 
@@ -1678,7 +1678,7 @@ L3180:
  pushFromFSp 4
  subf 
  infzf 
- jnz L3200
+ jz L3200
  pushFromFSp 4
  popToSp 8
  jmp L3214
@@ -1687,7 +1687,7 @@ L3200:
  pushFromFSp 8
  subf 
  infzf 
- jnz L3214
+ jz L3214
  pushFromFSp 0
  popToSp 8
  jmp L3214
@@ -1704,7 +1704,7 @@ L3222:
  pushImmf 0
  subf 
  infoezf 
- jnz L3239
+ jz L3239
  pushFromFSp 0
  gosub 4, L3247
  jmp L3246
@@ -1737,12 +1737,12 @@ L3263:
  pushImmf 0
  subf 
  infzf 
- jnz L3301
+ jz L3301
  pushFromFSp 8
  pushFromFSp 0
  subf 
  infzf 
- jnz L3299
+ jz L3299
  pushFromFSp 0
  popToSp 8
  jmp L3299
@@ -1753,7 +1753,7 @@ L3301:
  pushFromFSp 0
  subf 
  supzf 
- jnz L3315
+ jz L3315
  pushFromFSp 0
  popToSp 8
  jmp L3315
@@ -1768,7 +1768,7 @@ L3318:
  pushImmf 0
  subf 
  supzf 
- jnz L3349
+ jz L3349
  pushFromFSpVal 0
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
  subf 
@@ -1793,7 +1793,7 @@ L3362:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L3376
+ jz L3376
  pushFromFSpVal 36
  eqzv 
 L3376:
@@ -1804,7 +1804,7 @@ L3377:
  pushImm 0
  sub 
  neqz 
- jnz L3399
+ jz L3399
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  pushImm 0
@@ -1820,11 +1820,11 @@ L3400:
  pushImmf 0
  subf 
  neqzf 
- jnz L3580
+ jz L3580
  pushFromFSp 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L3455
+ jz L3455
  pushFromFSp 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
@@ -1977,7 +1977,7 @@ L3699:
  pushFromFSp 8
  syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
  eqz 
- jnz L3734
+ jz L3734
  pushFromPSp 12
  pushFromFSp 8
  syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
@@ -1986,7 +1986,7 @@ L3734:
  pushFromFSp 8
  syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
  eqz 
- jnz L3764
+ jz L3764
  pushFromFSp 8
  pushFromPSp 12
  pushFromPSp 12
@@ -2007,14 +2007,14 @@ L3765:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L3789
+ jz L3789
  pushFromPSpVal 0
  fetchValue 4
  syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
  eqz 
  eqzv 
 L3789:
- jnz L3800
+ jz L3800
  pushFromPSpVal 0
  pushImm 8
  syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
@@ -2031,7 +2031,7 @@ L3809:
  pushImm 0
  sub 
  neqz 
- jnz L3831
+ jz L3831
  pushFromFSpVal 24
  syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
  pushImm 0
@@ -2077,12 +2077,12 @@ L3873:
  fetchValue 4
  syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
  eqz 
- jnz L3927
+ jz L3927
  pushFromPSpVal 0
  pushImm 8
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  pushFromFSp 4
- jnz L3925
+ jz L3925
  pushFromPSpVal 0
  syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
  jmp L3925
@@ -2111,7 +2111,7 @@ L3935:
  gosub 4, L3400
 L3964:
  pushFromFSpVal 36
- jnz L3971
+ jz L3971
  halt 
  jmp L3964
 L3971:
@@ -2122,7 +2122,7 @@ L3972:
  pushImm 1
  pushImm -1
  gosub 24, L2548
- jnz L4377
+ jz L4377
  pushFromPSp 48
  pushImmf 60
  memcpy 0
@@ -2196,20 +2196,20 @@ L4145:
  pushFromFSp 0
  gosub 24, L4383
  dup 
- jnz L4158
+ jz L4158
  pushFromPSp 48
  gosub 24, L3352
  eqz 
  eqzv 
 L4158:
  dup 
- jnz L4167
+ jz L4167
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
  eqz 
  eqzv 
 L4167:
- jnz L4363
+ jz L4363
  pushFromPSpVal 0
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
  memcpyToSp 16, 96
@@ -2290,7 +2290,7 @@ L4167:
  pushImmf 250
  subf 
  infzf 
- jnz L4356
+ jz L4356
  pushFromFSp 84
  pushImmf 2
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
@@ -2301,7 +2301,7 @@ L4167:
  pushImmf 250
  subf 
  supzf 
- jnz L4354
+ jz L4354
  pushImmf 250
  popToSp 84
  jmp L4354
@@ -2329,7 +2329,7 @@ L4383:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L4397
+ jz L4397
  pushFromFSpVal 36
  eqzv 
 L4397:
@@ -2405,7 +2405,7 @@ L4502:
  gosub 4, L3400
 L4531:
  pushFromFSpVal 36
- jnz L4538
+ jz L4538
  halt 
  jmp L4531
 L4538:
@@ -2416,7 +2416,7 @@ L4539:
  pushImm 1
  pushImm -1
  gosub 52, L2548
- jnz L5322
+ jz L5322
  pushFromPSp 48
  pushImmf 20
  memcpy 0
@@ -2492,20 +2492,20 @@ L4720:
  pushFromFSp 0
  gosub 52, L5328
  dup 
- jnz L4733
+ jz L4733
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L4733:
  dup 
- jnz L4742
+ jz L4742
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqz 
  eqzv 
 L4742:
- jnz L4950
+ jz L4950
  pushFromPSp 4
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
  memcpyToSp 16, 192
@@ -2534,7 +2534,7 @@ L4742:
  pushImmf 100
  subf 
  infzf 
- jnz L4812
+ jz L4812
  jmp L4950
 L4810:
  jmp L4812
@@ -2550,7 +2550,7 @@ L4812:
  pushFromPSp 160
  pushImmf 10000
  syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
- jnz L4894
+ jz L4894
  pushFromPSp 32
  fetchValue 4
  pushFromPSp 160
@@ -2559,7 +2559,7 @@ L4812:
  subf 
  subf 
  supzf 
- jnz L4892
+ jz L4892
  pushFromPSp 32
  pushImm 4
  add 
@@ -2617,27 +2617,27 @@ L4956:
  pushFromFSp 0
  gosub 52, L5328
  dup 
- jnz L4969
+ jz L4969
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L4969:
  dup 
- jnz L4978
+ jz L4978
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqz 
  eqzv 
 L4978:
- jnz L5094
+ jz L5094
  pushFromPSp 160
  pushImmf 1
  gosub 52, L2675
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L5086
+ jz L5086
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
@@ -2648,7 +2648,7 @@ L4978:
  pushFromPSp 160
  pushImmf 10000
  syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
- jnz L5036
+ jz L5036
  pushFromPSp 160
  pushImm 4
  add 
@@ -2717,20 +2717,20 @@ L5151:
  pushFromFSp 0
  gosub 52, L5328
  dup 
- jnz L5164
+ jz L5164
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L5164:
  dup 
- jnz L5173
+ jz L5173
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqz 
  eqzv 
 L5173:
- jnz L5255
+ jz L5255
  pushFromPSp 80
  pushFromPSp 4
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
@@ -2773,19 +2773,19 @@ L5255:
  pushFromFSp 0
  gosub 52, L5328
  dup 
- jnz L5267
+ jz L5267
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqzv 
 L5267:
  dup 
- jnz L5276
+ jz L5276
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L5276:
- jnz L5320
+ jz L5320
  pushFromFSp 0
  gosub 52, L3377
  pushFromPSp 4
@@ -2798,13 +2798,13 @@ L5295:
  pushFromFSp 0
  gosub 52, L5328
  dup 
- jnz L5308
+ jz L5308
  pushFromPSp 48
  gosub 52, L3352
  eqz 
  eqzv 
 L5308:
- jnz L5318
+ jz L5318
  halt 
  pushFromPSp 48
  gosub 52, L3318
@@ -2824,7 +2824,7 @@ L5328:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L5342
+ jz L5342
  pushFromFSpVal 36
  eqzv 
 L5342:
@@ -2900,7 +2900,7 @@ L5447:
  gosub 4, L3400
 L5476:
  pushFromFSpVal 36
- jnz L5483
+ jz L5483
  halt 
  jmp L5476
 L5483:
@@ -2911,7 +2911,7 @@ L5484:
  pushImm 1
  pushImm -1
  gosub 24, L2548
- jnz L5926
+ jz L5926
  pushFromPSp 48
  pushImmf 60
  memcpy 0
@@ -2996,20 +2996,20 @@ L5678:
  pushFromFSp 0
  gosub 24, L5932
  dup 
- jnz L5691
+ jz L5691
  pushFromPSp 48
  gosub 24, L3352
  eqz 
  eqzv 
 L5691:
  dup 
- jnz L5700
+ jz L5700
  pushFromFSpVal 28 ; ___possible_ref
  syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
  eqz 
  eqzv 
 L5700:
- jnz L5912
+ jz L5912
  pushFromPSpVal 0
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
  memcpyToSp 16, 96
@@ -3097,7 +3097,7 @@ L5700:
  pushImmf 400
  subf 
  infzf 
- jnz L5901
+ jz L5901
  pushFromFSp 84
  pushImmf 6
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
@@ -3108,7 +3108,7 @@ L5700:
  pushImmf 400
  subf 
  supzf 
- jnz L5899
+ jz L5899
  pushImmf 400
  popToSp 84
  jmp L5899
@@ -3138,7 +3138,7 @@ L5932:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L5946
+ jz L5946
  pushFromFSpVal 36
  eqzv 
 L5946:
@@ -3226,7 +3226,7 @@ L6058:
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
 L6105:
  pushFromFSpVal 32
- jnz L6112
+ jz L6112
  halt 
  jmp L6105
 L6112:
@@ -3237,7 +3237,7 @@ L6113:
  pushImm 1
  pushImm -1
  gosub 44, L2548
- jnz L6527
+ jz L6527
  pushFromFSp 0
  gosub 44, L6533
  pushFromPSp 48
@@ -3318,16 +3318,16 @@ L6304:
  pushFromFSp 0
  gosub 44, L6706
  dup 
- jnz L6317
+ jz L6317
  pushFromPSp 20
  gosub 44, L3352
  eqz 
  eqzv 
 L6317:
- jnz L6460
+ jz L6460
  pushFromFSpVal 64
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
- jnz L6329
+ jz L6329
  jmp L6460
 L6327:
  jmp L6329
@@ -3354,13 +3354,13 @@ L6329:
  syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
  pushFromPSp 48
  fetchValue 52
- jnz L6404
+ jz L6404
  pushFromFSp 0
  gosub 44, L6617
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L6402
+ jz L6402
  pushFromPSp 48
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
@@ -3401,19 +3401,19 @@ L6460:
  pushFromFSp 0
  gosub 44, L6706
  dup 
- jnz L6472
+ jz L6472
  pushFromFSpVal 64
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  eqzv 
 L6472:
  dup 
- jnz L6481
+ jz L6481
  pushFromPSp 20
  gosub 44, L3352
  eqz 
  eqzv 
 L6481:
- jnz L6525
+ jz L6525
  pushFromFSp 0
  gosub 44, L6683
  pushFromPSp 4
@@ -3426,13 +3426,13 @@ L6500:
  pushFromFSp 0
  gosub 44, L6706
  dup 
- jnz L6513
+ jz L6513
  pushFromPSp 20
  gosub 44, L3352
  eqz 
  eqzv 
 L6513:
- jnz L6523
+ jz L6523
  halt 
  pushFromPSp 20
  gosub 44, L3318
@@ -3517,7 +3517,7 @@ L6617:
  pushFromFSpVal 136
  sub 
  info 
- jnz L6682
+ jz L6682
  pushFromPSpVal 68
  syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)
  pushImm 0
@@ -3531,7 +3531,7 @@ L6683:
  pushImm 0
  sub 
  neqz 
- jnz L6705
+ jz L6705
  pushFromFSpVal 64
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  pushImm 0
@@ -3545,7 +3545,7 @@ L6706:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  dup 
- jnz L6720
+ jz L6720
  pushFromFSpVal 32
  eqzv 
 L6720:
@@ -3627,7 +3627,7 @@ L6821:
  pushImm 1
  pushImm -1
  gosub 24, L2548
- jnz L7350
+ jz L7350
  pushFromPSpVal 0
  syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
  pushFromPSp 4
@@ -3643,11 +3643,11 @@ L6900:
  pushImm 0
  sub 
  ipos 
- jnz L7324
+ jz L7324
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L7014
+ jz L7014
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
@@ -3666,7 +3666,7 @@ L6900:
  pushImmf 300
  subf 
  infoezf 
- jnz L6974
+ jz L6974
  pushFromPSpVal 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
@@ -3716,12 +3716,12 @@ L7052:
  sub 
  eqz 
  dup 
- jz L7067
+ jnz L7067
  pushFromPSp 4
  gosub 24, L3352
  neqzv 
 L7067:
- jnz L7316
+ jz L7316
  pushFromPSp 4
  gosub 24, L7461
  pushFromFSp 68
@@ -3732,7 +3732,7 @@ L7067:
  pushFromFSp 72
  sub 
  neqz 
- jnz L7109
+ jz L7109
  pushFromPSp 16
  pushImmf 150
  pushImmf 300
@@ -3758,7 +3758,7 @@ L7109:
  pushFromPSp 32
  pushImmf 10000
  syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
- jnz L7169
+ jz L7169
  pushFromPSp 32
  fetchValue 4
  pushFromPSp 16
@@ -3767,7 +3767,7 @@ L7109:
  pushImmf 150
  subf 
  infoezf 
- jnz L7167
+ jz L7167
  pushImm 1
  popToSp 64
  jmp L7167
@@ -3775,7 +3775,7 @@ L7167:
  jmp L7169
 L7169:
  pushFromFSp 64
- jnz L7191
+ jz L7191
  pushFromPSpVal 0
  pushImm 0
  pushFromPSp 16
@@ -3855,7 +3855,7 @@ L7329:
  pushImmf 0
  subf 
  supzf 
- jnz L7348
+ jz L7348
  pushFromFSp 12
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
  subf 
@@ -3871,7 +3871,7 @@ L7351:
  pushFromFSp 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jnz L7399
+ jz L7399
  pushFromFSp 0
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 1, 120 ; trap_target_pos (1 in, 1 out)
@@ -3900,7 +3900,7 @@ L7400:
  subf 
  neqzf 
  dup 
- jz L7426
+ jnz L7426
  pushFromFSp 4
  fetchValue 8
  pushImmf 0
@@ -3908,7 +3908,7 @@ L7400:
  neqzf 
  neqzv 
 L7426:
- jnz L7436
+ jz L7436
  pushFromFSp 0
  pushFromFSp 4
  syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
