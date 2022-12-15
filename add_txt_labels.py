@@ -10,7 +10,7 @@ import re
 
 scanone = ""
 
-scanone = ""
+scanone = "B_AL020"
 
 for root, dirs, files in os.walk(os.path.join("bdscript")):
     for ff in files:

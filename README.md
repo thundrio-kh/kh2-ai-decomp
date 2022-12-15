@@ -63,6 +63,31 @@ Disassembled AI for every file in the game, with the exception of the following 
 - obj\P_MU010\p_mu.bdx
 - obj\WM_CHECKER\wm_c.bdx
 
+# syscall_docs
+Generated syscall documentation pulling together information from a number of different sources to make it possible to come up with an educated guess as to what the syscall does. Will be turned into more readable documentation after descriptions and categories ave been added everywhere
+
+###############################
+syscall name
+###############################
+category (unknown)
+###############################
+fully documented (stub, untested, yes)
+###############################
+args spec (examples of possible values, if total more than 50 characters ...)
+###############################
+description (NA)
+###############################
+decompiled trap function code
+->
+elf function header (if exists) (for each)
+->
+decompiled elf function code (if exists) (for each)
+
+###############################
+appears in (with english names where possible)
+###############################
+example usage from (XXX)
+(full label unless it's in the same place as the act table init, in which case just 10 lines prior/post and a ...)
 # source
 
 Contains some decompiled C for functions in the main ELF that seem related to the AI, in the hope that they can help with understanding the bdscript files.

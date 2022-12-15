@@ -1,0 +1,73 @@
+---
+---
+---
+name: trap_xemnas_get_obj
+---
+---
+---
+category: 
+---
+---
+---
+documentation level: stub
+---
+---
+---
+push unk1 ; (unknown) 
+syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
+pop unk ; (unknown) 
+---
+---
+---
+description: 
+---
+---
+---
+decompiled code:
+YS::OBJ_252 *__fastcall Ts::XEMNAS::Get(int type)
+/----- (000000000062782C) ----------------------------------------------------
+void __fastcall Ts::trap_xemnas_get_obj(BD_VALUE_25 *args)
+{
+  *(_DWORD *)args = (unsigned int)Ts::XEMNAS::Get(*(_DWORD *)args);
+}
+->
+/----- (000000000062A0C0) ----------------------------------------------------
+YS::OBJ_252 *__fastcall Ts::XEMNAS::Get(int type)
+{
+  YS::OBJ_132 *v1; // r29
+  YS::OBJ_125 *v3; // r3
+
+  v1 = 0LL;
+  while ( 1 )
+  {
+    v3 = YS::OBJ::Each(v1);
+    v1 = v3;
+    if ( !(_DWORD)v3 )
+      break;
+    if ( (unsigned int)YS::OBJ::get_part_num(v3) == 4007 )
+    {
+      if ( (unsigned int)YS::OBJ::get_unit_arg(v1, 1) == 1 )
+      {
+        if ( !type )
+          return v1;
+      }
+      else if ( type )
+      {
+        return v1;
+      }
+    }
+  }
+  return 0LL;
+}
+
+
+---
+---
+---
+appears in:
+
+---
+---
+---
+example usage from NA
+

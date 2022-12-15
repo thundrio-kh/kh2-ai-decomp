@@ -1,0 +1,44 @@
+---
+---
+---
+name: method_message_is_end
+---
+---
+---
+category: 
+---
+---
+---
+documentation level: stub
+---
+---
+---
+push unk1 ; (unknown) 
+syscall 1, 48 ; method_message_is_end (1 in, 1 out)
+pop unk ; (unknown) 
+---
+---
+---
+description: 
+---
+---
+---
+decompiled code:
+
+/----- (0000000000503264) ----------------------------------------------------
+void __fastcall YS::method_message_is_end(BD_VALUE_21 *args)
+{
+  *(_DWORD *)args = *(_DWORD *)(*(unsigned int *)args + 0x70LL) == 3;
+}
+
+//BASIC
+---
+---
+---
+appears in:
+
+---
+---
+---
+example usage from NA
+

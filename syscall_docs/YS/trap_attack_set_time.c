@@ -1,0 +1,134 @@
+---
+---
+---
+name: trap_attack_set_time
+---
+---
+---
+category: 
+---
+---
+---
+documentation level: stub
+---
+---
+---
+push unk1 ; (unknown) 
+push unk2 ; (unknown) 
+push unk3 ; (unknown) 
+push unk4 ; (unknown) 
+syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+---
+---
+---
+description: 
+---
+---
+---
+decompiled code:
+void __fastcall YS::ATTACK_MAGIC::set_time(YS::ATTACK_MAGIC_3 *const this, double time, double radius, double height)
+/----- (00000000004F494C) ----------------------------------------------------
+void __fastcall YS::trap_attack_set_time(BD_VALUE_19 *args)
+{
+  YS::ATTACK_MAGIC_3 *v2; // r30
+  __int64 v3; // r10
+  __int64 v4; // r9
+  __int64 v5; // r8
+  __int64 v6; // r7
+  __int64 v7; // r6
+  __int64 v8; // r10
+  __int64 v9; // r9
+  __int64 v10; // r8
+  __int64 v11; // r7
+  __int64 v12; // r6
+  __int64 v13; // r5
+  __int64 v14; // r4
+  __int64 v15; // r10
+  __int64 v16; // r9
+  __int64 v17; // r8
+  __int64 v18; // r7
+  __int64 v19; // r6
+  __int64 v20; // r5
+  __int64 v21; // r4
+  __int64 v22; // r10
+  __int64 v23; // r9
+  __int64 v24; // r8
+  __int64 v25; // r7
+  __int64 v26; // r6
+  __int64 v27; // r5
+  __int64 v28; // r4
+
+  v2 = (YS::ATTACK_MAGIC_3 *)(*args)[0];
+  if ( (unsigned int)YS::ATTACK::is_exist((YS::ATTACK_10 *const)v2) )
+  {
+    YS::ATTACK_MAGIC::set_time(v2, *(float *)&(*args)[4], *(float *)&(*args)[8], *(float *)&(*args)[12]);
+  }
+  else
+  {
+    printf(
+      (unsigned int)"[%s:%d]",
+      (__int64)"C:\\hd25\\kingdom2\\yasui\\libys\\trapbattle.cpp",
+      487LL,
+      v7,
+      v6,
+      v5,
+      v4,
+      v3);
+    printf((unsigned int)"\x1B[41m** CAUTION! ", v14, v13, v12, v11, v10, v9, v8);
+    printf((unsigned int)"no such attack", v21, v20, v19, v18, v17, v16, v15);
+    printf((unsigned int)" **\x1B[00m\n", v28, v27, v26, v25, v24, v23, v22);
+  }
+}
+// 4F49AC: variable 'v7' is possibly undefined
+// 4F49AC: variable 'v6' is possibly undefined
+// 4F49AC: variable 'v5' is possibly undefined
+// 4F49AC: variable 'v4' is possibly undefined
+// 4F49AC: variable 'v3' is possibly undefined
+// 4F49BC: variable 'v14' is possibly undefined
+// 4F49BC: variable 'v13' is possibly undefined
+// 4F49BC: variable 'v12' is possibly undefined
+// 4F49BC: variable 'v11' is possibly undefined
+// 4F49BC: variable 'v10' is possibly undefined
+// 4F49BC: variable 'v9' is possibly undefined
+// 4F49BC: variable 'v8' is possibly undefined
+// 4F49CC: variable 'v21' is possibly undefined
+// 4F49CC: variable 'v20' is possibly undefined
+// 4F49CC: variable 'v19' is possibly undefined
+// 4F49CC: variable 'v18' is possibly undefined
+// 4F49CC: variable 'v17' is possibly undefined
+// 4F49CC: variable 'v16' is possibly undefined
+// 4F49CC: variable 'v15' is possibly undefined
+// 4F49DC: variable 'v28' is possibly undefined
+// 4F49DC: variable 'v27' is possibly undefined
+// 4F49DC: variable 'v26' is possibly undefined
+// 4F49DC: variable 'v25' is possibly undefined
+// 4F49DC: variable 'v24' is possibly undefined
+// 4F49DC: variable 'v23' is possibly undefined
+// 4F49DC: variable 'v22' is possibly undefined
+
+//CHEAT YS::ATTACK_MAGIC::set_time
+->
+/----- (000000000050D0F8) ----------------------------------------------------
+void __fastcall YS::ATTACK_MAGIC::set_time(YS::ATTACK_MAGIC_3 *const this, double time, double radius, double height)
+{
+  *(_DWORD *)&(*this)[200] = 0;
+  *(float *)&(*this)[204] = time;
+  if ( radius <= 0.0 )
+    radius = *(float *)&(*this)[256];
+  *(float *)&(*this)[208] = radius;
+  if ( height <= 0.0 )
+    height = *(float *)&(*this)[260];
+  *(float *)&(*this)[212] = height;
+}
+
+
+---
+---
+---
+appears in:
+
+---
+---
+---
+example usage from NA
+

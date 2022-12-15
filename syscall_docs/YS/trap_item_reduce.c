@@ -1,0 +1,100 @@
+---
+---
+---
+name: trap_item_reduce
+---
+---
+---
+category: 
+---
+---
+---
+documentation level: stub
+---
+---
+---
+push unk1 ; (unknown) 
+push unk2 ; (unknown) 
+syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
+---
+---
+---
+description: 
+---
+---
+---
+decompiled code:
+__int64 __fastcall YS::ITEM::Reduce(__int64 item, __int64 part)
+/----- (00000000004B9160) ----------------------------------------------------
+void __fastcall YS::trap_item_reduce(BD_VALUE_16 *args)
+{
+  YS::ITEM::Reduce(*(int *)args, *(int *)&(*args)[4]);
+}
+->
+/----- (0000000000437400) ----------------------------------------------------
+__int64 __fastcall YS::ITEM::Reduce(__int64 item, __int64 part)
+{
+  int v2; // r31
+  __int64 result; // r3
+  unsigned __int64 v4; // r30
+  int v5; // r5
+  int v6; // r4
+  __int64 back_chain; // [sp+0h] [-90h]
+
+  v2 = item;
+  if ( (_DWORD)part == 100 )
+  {
+    YS::ITEM::ReduceBackyard(item, 1);
+    result = 1LL;
+  }
+  else
+  {
+    v4 = YS::SAVERAM_BATTLE::get_partram((YS::SAVERAM_BATTLE *const)((unsigned int)&SaveRam + 9456), part);
+    if ( !(_DWORD)v4 )
+    {
+      ErrorPrintf(
+        "#ASSERT(%s):%s/%s:%d:%s\nret=%p\n",
+        "partram != NULL",
+        "common",
+        "C:\\hd25\\kingdom2\\yasui\\libys\\item.cpp",
+        328LL,
+        "Reduce",
+        (const void *)(unsigned int)*(_QWORD *)(back_chain + 16));
+      ErrorRaise();
+      Axa::AxaAssert("C:\\hd25\\kingdom2\\yasui\\libys\\item.cpp", 328);
+    }
+    v5 = *(unsigned __int8 *)(v4 + 18) - 1;
+    if ( v5 < 0 )
+    {
+LABEL_10:
+      result = 0LL;
+    }
+    else
+    {
+      v6 = 2 * v5 + v4;
+      while ( *(unsigned __int16 *)(unsigned int)(v6 + 52) != v2 )
+      {
+        --v5;
+        v6 -= 2;
+        if ( v5 < 0 )
+          goto LABEL_10;
+      }
+      result = 1LL;
+      *(_WORD *)(unsigned int)(v4 + 2 * v5 + 52) = 0;
+    }
+  }
+  return result;
+}
+// 43745C: variable 'back_chain' is possibly undefined
+
+
+---
+---
+---
+appears in:
+
+---
+---
+---
+example usage from NA
+
