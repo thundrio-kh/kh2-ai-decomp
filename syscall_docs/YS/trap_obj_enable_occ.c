@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W576) (pushFromFSp: 0) (pushFromPSp: 16,32)
 syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
 ---
 ---
@@ -90,9 +90,18 @@ void __fastcall YS::OBJOCC::enable_all(YS::OBJOCC_133 *const this)
 ---
 ---
 appears in:
-
+obj\B_LK120\b_lk.bdscript ((B) Groundshaker)
+obj\B_MU120\b_mu.bdscript ((B) Storm Rider)
+obj\F_EH050\f_eh.bdscript ((F) Floating building 1 (EH))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_LK120\b_lk.bdscript
+TR14:
+ pushFromPWp W576
+ gosub 4, L4604
+ pushFromPWp W576
+ gosub 4, L4615
+ pushFromPWp W576
+ syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
+ ret 

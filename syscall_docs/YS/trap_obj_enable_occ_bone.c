@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: 100,101,102,103,127,130,131,132,133,157,160,161,162,163,164,188,191,192,193,194,195,222,223,224,225,226,227,30,33,34,35,36,37,64,65,66,67,68,69,96,99)
 syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
 ---
 ---
@@ -115,9 +115,134 @@ void __fastcall YS::OBJOCC::enable(YS::OBJOCC_133 *const this, int bone)
 ---
 ---
 appears in:
-
+obj\B_HE100\b_he.bdscript ((B) Hydra)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_HE100\b_he.bdscript
+L5637:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 133
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 103
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 37
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 69
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 164
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 195
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 227
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 132
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 102
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 36
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 68
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 163
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 194
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 226
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 131
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 101
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 35
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 67
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 162
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 193
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 225
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 130
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 100
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 34
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 66
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 161
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 192
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 224
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 127
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 99
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 33
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 65
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 160
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 191
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 223
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 96
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 30
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 64
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 157
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 188
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 222
+ syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+ ret 

@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)
 ---
 ---
@@ -160,9 +160,16 @@ void __fastcall ryj::PAX::kill_all(ryj::PAX_161 *const this, __int64 a2, __int64
 ---
 ---
 appears in:
-
+obj\F_HB020\f_hb.bdscript ((F) ??? (HB))
+obj\F_NM020\f_nm.bdscript ((F) Spitting fountain (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_HB020\f_hb.bdscript
+L9368:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
+ ret 

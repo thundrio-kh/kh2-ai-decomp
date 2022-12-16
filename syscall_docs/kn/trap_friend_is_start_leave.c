@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 60)
 syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -75,9 +75,15 @@ bool __fastcall kn::Friend::isStartLeave(kn::Friend_0 *const this)
 ---
 ---
 appears in:
-
+obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX360\p_ex.bdscript
+L1237:
+ dup 
+ jz L1246
+ pushFromPSpVal 60
+ syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
+ eqz 
+ eqzv 

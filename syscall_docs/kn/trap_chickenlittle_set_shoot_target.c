@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W0)
+push unk2 ; (unknown)  (pushFromPSp: 16)
 syscall 10, 59 ; trap_chickenlittle_set_shoot_target (2 in, 0 out)
 
 ---
@@ -89,9 +89,16 @@ void __fastcall kn::ChickenLittle::set_shoot_target(kn::ChickenLittle *const thi
 ---
 ---
 appears in:
-
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX350\p_ex.bdscript
+L409:
+ syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
+ jz L422
+ pushFromPWp W0
+ pushFromPSp 16
+ syscall 10, 59 ; trap_chickenlittle_set_shoot_target (2 in, 0 out)
+ halt 
+ jmp L409

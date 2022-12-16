@@ -1,0 +1,1 @@
+Contains attempts at rewriting simple bdscript files into a c like pseudo code, in order to make better sense of the program flow

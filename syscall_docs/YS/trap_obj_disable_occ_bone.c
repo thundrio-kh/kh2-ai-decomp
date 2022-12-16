@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: 100,101,102,103,127,130,131,132,133,157,160,161,162,163,164,188,191,192,193,194,195,222,223,224,225,226,227,30,33,34,35,36,37,64,65,66,67,68,69,96,99)
 syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
 ---
 ---
@@ -115,9 +115,76 @@ void __fastcall YS::OBJOCC::disable(YS::OBJOCC_133 *const this, int bone)
 ---
 ---
 appears in:
-
+obj\B_HE100\b_he.bdscript ((B) Hydra)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_HE100\b_he.bdscript
+L10872:
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 193
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromPSpVal 108
+ pushFromFSp 0
+ pushImm 100
+ pushImm 0
+ gosub 40, L11229
+ halt 
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 2
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 4
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 5
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 6
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 7
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromFWp W4584
+ pushImm 2
+ sub 
+ eqz 
+ jz L11068
+ pushFromFSp 0
+ pushImm 133
+ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 132
+ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 131
+ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 130
+ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 127
+ syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ gosub 40, L651
+ pushImm 8
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 194
+ pushFromFSp 0
+ fetchValue 36
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L12047 ; ___ai 'phil_appear' (L12047)
+ pushImmf 0
+ syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)

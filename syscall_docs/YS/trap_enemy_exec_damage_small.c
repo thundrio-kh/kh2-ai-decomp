@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSp: 4)
+push unk3 ; (unknown)  (pushImmf: 100)
 syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
 ---
 ---
@@ -114,9 +114,30 @@ void __fastcall YS::BTLOBJ::exec_damage_small(YS::BTLOBJ *const this, YS::DAMAGE
 ---
 ---
 appears in:
-
+obj\B_CA020\b_ca.bdscript ((M) Undead Pirate A)
+obj\B_CA030\b_ca.bdscript ((M) Undead Pirate B)
+obj\B_CA040\b_ca.bdscript ((M) Undead Pirate C)
+obj\B_CA040_PUB\b_ca.bdscript ()
+obj\M_EX050\m_ex.bdscript ((M) Large Body)
+obj\M_EX050_WI\m_ex.bdscript ((M) Large Body (WI))
+obj\M_EX060\m_ex.bdscript ((M) Fat Bandit)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_CA020\b_ca.bdscript
+L730:
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+ pushImm 0
+ sub 
+ eqz 
+ jz L761
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImmf 100
+ syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
+ jmp L938

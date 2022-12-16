@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (memcpyToSp: 16, 128) (pushFromPSpVal: 32,80) (pushFromPSp: 16,32)
+push unk2 ; (unknown)  (pushFromPSp: 128,16) (pushFromPSpVal: 64,80,96) (pushFromFSp: 8)
+push unk3 ; (unknown)  (pushFromFSp: 4,52,56,96) (pushImmf: 0.1,0.6,0.95)
 syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -100,9 +100,116 @@ void __fastcall Axa::InterVector(Axa::FVECTOR4 *v0_0, const Axa::FVECTOR4 *v1_0,
 ---
 ---
 appears in:
-
+obj\B_AL100_2ND\b_al.bdscript ((M) Blizzard Lord)
+obj\B_AL100_ICE\b_al.bdscript ((B) Blizzard Lord)
+obj\B_AL110\b_al.bdscript ((B) Volcanic Lord’s lava pool)
+obj\B_LK110\b_lk.bdscript ((B) Scar)
+obj\G_EX220\g_ex.bdscript ()
+obj\G_EX220_G\g_ex.bdscript ()
+obj\G_EX220_R\g_ex.bdscript ()
+obj\G_EX240\g_ex.bdscript ()
+obj\G_EX240_G\g_ex.bdscript ()
+obj\G_EX240_R\g_ex.bdscript ()
+obj\G_EX250_0\g_ex.bdscript ()
+obj\G_EX250_0_G\g_ex.bdscript ()
+obj\G_EX250_0_R\g_ex.bdscript ()
+obj\G_EX250_1\g_ex.bdscript ()
+obj\G_EX250_1_G\g_ex.bdscript ()
+obj\G_EX250_1_R\g_ex.bdscript ()
+obj\G_EX260\g_ex.bdscript ()
+obj\G_EX260_G\g_ex.bdscript ()
+obj\G_EX260_R\g_ex.bdscript ()
+obj\G_EX270\g_ex.bdscript ()
+obj\G_EX270_G\g_ex.bdscript ()
+obj\G_EX270_R\g_ex.bdscript ()
+obj\G_EX900_COMBAT\g_ex.bdscript ()
+obj\G_EX900_COMBAT_HARD\g_ex.bdscript ()
+obj\G_EX900_FINAL\g_ex.bdscript ()
+obj\G_EX900_FLIGHT\g_ex.bdscript ()
+obj\G_EX900_FLIGHT_HARD\g_ex.bdscript ()
+obj\M_EX890\m_ex.bdscript ((M) Dragoon)
+obj\P_EX100_KH1F\limi.bdscript ((P) Sora (Limit))
+obj\P_EX100_NM_KH1F\limi.bdscript ((P) Sora (NM) (Limit))
+obj\P_EX100_TR_KH1F\limi.bdscript ((P) Sora (TR) (Limit))
+obj\P_EX100_WI_KH1F\limi.bdscript ((P) Sora (WI) (Limit))
+obj\P_EX100_XM_KH1F\limi.bdscript ((P) Sora (XM) (Limit))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_AL100_2ND\b_al.bdscript
+L2480:
+ dup 
+ pushFromFSp 60
+ sub 
+ info 
+ jnz L2640
+ pushFromPSpVal 160
+ pushFromFSp 60
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ jz L2630
+ pushImm 0
+ popToSp 64
+ pushFromPSp 4
+ pushFromFSp 60
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ jz L2628
+ pushFromPSp 28
+ pushFromFSp 60
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ popToSp 96
+ pushFromFSp 96
+ pushImmf 0.04
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ mulf 
+ addf 
+ popToSp 96
+ pushFromPSp 28
+ pushFromFSp 60
+ pushImm 4
+ mul 
+ add 
+ pushFromFSp 96
+ memcpy 0
+ pushFromPSpVal 64
+ pushFromFSp 60
+ pushImm 16
+ mul 
+ add 
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ gosub 28, L149
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ gosub 36, L667
+ memcpyToSp 16, 128
+ pushFromPSp 128
+ pushFromFSp 96
+ syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
+ memcpyToSp 16, 144
+ pushFromPSp 144
+ memcpyToSp 16, 80
+ pushFromFSp 0
+ pushFromFSp 60
+ pushFromPSp 80
+ gosub 28, L2232
+ pushImmf 1
+ pushFromFSp 96
+ subf 
+ infoezf 
+ jz L2626
+ pushFromFSp 0
+ pushFromFSp 60
+ gosub 28, L2657
+ jmp L2626

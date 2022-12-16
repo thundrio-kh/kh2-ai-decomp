@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0)
 syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
 ---
 ---
@@ -102,9 +102,23 @@ kn::FVector *__fastcall kn::Friend::getInertia(kn::Friend_0 *const this)
 ---
 ---
 appears in:
-
+obj\P_LK020\p_lk.bdscript ((P) Donald (LK))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_LK020\p_lk.bdscript
+L2181:
+ pushFromPSpVal 0
+ pushFromPSpVal 0
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ eqz 
+ syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)
+ drop 
+ pushFromPSpVal 0
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L2207
+ pushFromPSpVal 0
+ syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
+ jmp L2207

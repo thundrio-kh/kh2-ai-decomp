@@ -40,9 +40,16 @@ void __cdecl dk::LockOn::hide()
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\sparrow\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L3650:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L3241
+ syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
+ ret 

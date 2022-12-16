@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 17,6)
 syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
 ---
 ---
@@ -56,9 +56,23 @@ void __fastcall YS::ENEMY::StopStartAll(int id)
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\beast\limi.bdscript
+limit\jack\limi.bdscript
+limit\mulan\limi.bdscript
+limit\riku\limi.bdscript
+limit\simba\limi.bdscript
+limit\sparrow\limi.bdscript
+limit\tron\limi.bdscript
+obj\B_TR000\b_tr.bdscript ((B) Hostile Program)
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
+obj\P_AL010\p_al.bdscript ((P) Genie)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L3400:
+ pushImm 17
+ syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
+ ret 

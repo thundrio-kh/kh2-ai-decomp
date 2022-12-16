@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 8)
 syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -58,9 +58,24 @@ YS::PAD *__fastcall YS::SOFTPAD::Get(int port)
 ---
 ---
 appears in:
-
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX170_LAST\b_ex.bdscript
+L2134:
+ jz L2167
+ pushImm 8
+ syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
+ eqz 
+ jz L2165
+ pushFromPSpVal 144
+ pushImmf 0
+ syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
+ pushFromPSpVal 144
+ pushImm 4
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushImm 1
+ popToSpVal 236
+ jmp L2165

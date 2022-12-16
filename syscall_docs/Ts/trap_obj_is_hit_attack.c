@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -88,9 +88,18 @@ __int64 __fastcall YS::OBJ::is_hit_attack(YS::OBJ_128 *const this)
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L4020:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
+ eqz 
+ dup 
+ jz L4035
+ pushFromFSp 0
+ syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
+ eqzv 

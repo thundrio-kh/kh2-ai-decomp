@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0,60)
+push unk2 ; (unknown)  (pushFromFSp: 52) (pushFromFSpVal: 56)
 syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -149,9 +149,17 @@ __int64 __fastcall kn::EffectObserver::getIndex(kn::EffectObserver_0 *const this
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
+obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L2908:
+ dup 
+ jz L2918
+ pushFromPSpVal 0
+ pushFromFSp 52
+ syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
+ eqzv 

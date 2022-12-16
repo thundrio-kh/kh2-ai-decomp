@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 32,38,39,41,64,65,66) (pushFromFSp: 4)
 syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -74,9 +74,28 @@ bool __fastcall YS::SAVEFLAG::Check(unsigned __int64 id)
 ---
 ---
 appears in:
-
+ard\al09\al09.bdscript
+ard\bb03\bb.bdscript
+ard\eh18\full.bdscript
+ard\hb10\moog.bdscript
+ard\hb13\magi.bdscript
+ard\mu00\chan.bdscript
+ard\mu07\limi.bdscript
+ard\tt06\camp.bdscript
+ard\tt14\jimi.bdscript
+ard\tt28\driv.bdscript
+ard\tt32\game.bdscript
+msn\TT02_MS201\save.bdscript
+obj\F_AL030\f_al.bdscript ((F) ??? (AL))
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\al09\al09.bdscript
+L58:
+ pushImm 64
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ dup 
+ jz L72
+ pushImm 65
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqzv 

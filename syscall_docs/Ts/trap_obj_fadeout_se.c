@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 0)
+push unk2 ; (unknown)  (pushImm: 0)
 syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
 ---
 ---
@@ -67,9 +67,22 @@ void __fastcall SOUND::destroySe(u_int id, int fadetime, __int64 a3, __int64 a4,
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L13066:
+ popToSp 0
+ pushFromFSp 0
+ fetchValue 0
+ pushImm 0
+ sub 
+ ipos 
+ jz L13093
+ pushFromFSpVal 0
+ pushImm 0
+ syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
+ pushImm -1
+ popToSpVal 0
+ jmp L13093

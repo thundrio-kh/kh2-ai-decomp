@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 6, 14 ; trap_friend_get (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -59,9 +59,22 @@ YS::FRIEND_13 *__fastcall YS::FRIEND::Get(int n)
 ---
 ---
 appears in:
-
+obj\B_EX260\b_ex.bdscript ((B) Xemnas (Armor))
+obj\B_EX270_SIDECAR\b_ex.bdscript ((F) Xemnas’s dragon sidecar)
+obj\F_EH050\f_eh.bdscript ((F) Floating building 1 (EH))
+obj\F_EH060\f_eh.bdscript ((F) Floating building 2 (EH))
+obj\F_EH070\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (right) (EH))
+obj\F_EH080\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (left) (EH))
+obj\F_NM130\f_nm.bdscript ((F) ??? (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX260\b_ex.bdscript
+L618:
+ popToSp 0
+ pushFromPSp 4
+ pushFromFSp 0
+ syscall 6, 14 ; trap_friend_get (1 in, 1 out)
+ gosub 8, L631
+ pushFromPSp 4
+ ret 

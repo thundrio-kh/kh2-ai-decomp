@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W0,W192)
 syscall 7, 21 ; trap_obj_limit_hover_set_spec (1 in, 0 out)
 ---
 ---
@@ -71,9 +71,14 @@ void __fastcall Ts::ACTION_LIMIT_HOVER::SetSpec(Ts::ACTION_LIMIT_HOVER_0::SPEC *
 ---
 ---
 appears in:
-
+limit\tron\limi.bdscript
+obj\P_AL010\p_al.bdscript ((P) Genie)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\tron\limi.bdscript
+L609:
+ gosub 4, L616
+ pushFromPWp W0
+ syscall 7, 21 ; trap_obj_limit_hover_set_spec (1 in, 0 out)
+ ret 

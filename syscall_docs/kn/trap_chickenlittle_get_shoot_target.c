@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -104,9 +104,35 @@ void __fastcall kn::ChickenLittle::get_shoot_target(kn::ChickenLittle *const thi
 ---
 ---
 appears in:
-
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX350\p_ex.bdscript
+L518:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 32
+ pushFromFSp 0
+ syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushFromPSp 32
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 16
+ pushImmf 1
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImmf 0.5
+ subf 
+ infzf 
+ jz L575
+ pushFromFSp 0
+ pushFromPSp 32
+ pushFromPSp 16
+ gosub 16, L584
+ jmp L583

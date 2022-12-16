@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W364) (pushFromFSp: 0)
 syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
 ---
 ---
@@ -139,9 +139,20 @@ kn::FVector *__fastcall kn::Friend::getInertia(kn::Friend_0 *const this)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L6080:
+ pushFromPWp W364
+ gosub 4, L6099
+ pushImm 0
+ sub 
+ eqz 
+ jz L6098
+ pushFromPWp W364
+ syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
+ halt 
+ jmp L6080

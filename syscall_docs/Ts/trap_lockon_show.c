@@ -40,9 +40,16 @@ void __cdecl dk::LockOn::show()
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\sparrow\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L3641:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L3420
+ syscall 6, 17 ; trap_lockon_show (0 in, 0 out)
+ ret 

@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 4)
 syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -54,9 +54,23 @@ YS::OBJ_132 *__fastcall YS::OBJ::Each(YS::OBJ_132 *obj)
 ---
 ---
 appears in:
-
+msn\TT04_MS301\tt04.bdscript
+msn\TT05_MS403\tt05.bdscript
+msn\TT05_MS404\tt05.bdscript
+obj\F_EH050\f_eh.bdscript ((F) Floating building 1 (EH))
+obj\F_EH060\f_eh.bdscript ((F) Floating building 2 (EH))
+obj\P_EH000_SIDECAR\p_eh.bdscript ((P) Riku riding sidecar)
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TT04_MS301\tt04.bdscript
+L214:
+ popToSp 0
+ pushFromFSpVal 4
+ syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
+ popToSpVal 4
+ pushFromFSpVal 4
+ pushImm 0
+ sub 
+ neqz 
+ ret 

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromPSp: 80)
 syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -142,9 +142,19 @@ bool __fastcall YS::BG::CanSee(const kn::FVector *eye, const kn::FVector *target
 ---
 ---
 appears in:
-
+obj\B_CA010\b_ca.bdscript ((B) Barbossa)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_CA010\b_ca.bdscript
+L6358:
+ pushFromFSp 64
+ pushImmf 500
+ subf 
+ infzf 
+ dup 
+ jz L6375
+ pushFromFSp 0
+ pushFromPSp 80
+ syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
+ eqzv 

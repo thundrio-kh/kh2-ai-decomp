@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 32)
 syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
 ---
 ---
@@ -42,9 +42,15 @@ void __fastcall dk::ScopeCamera::setTargetPos(RCFVector target_pos)
 ---
 ---
 appears in:
-
+obj\B_EX140\b_ex.bdscript ((B) Xigbar)
+obj\B_EX140_LV99\b_ex.bdscript ((B99) Xigbar (Limit Cut))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX140\b_ex.bdscript
+L21728:
+ pushFromPSpVal 32
+ syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
+ pushFromFSpVal 116
+ syscall 1, 312 ; trap_camera_set_scope_zoom (1 in, 0 out)
+ ret 

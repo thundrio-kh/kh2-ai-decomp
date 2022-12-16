@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
+push unk2 ; (unknown)  (pushFromPSpVal: 0)
+push unk3 ; (unknown)  (pushImm: 10)
 syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -199,9 +199,16 @@ __int64 __fastcall YS::PRIZE_CA::Return(YS::BTLOBJ_69 *player, YS::BTLOBJ_69 *ta
 ---
 ---
 appears in:
-
+obj\F_CA690_BTL\f_ca.bdscript ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_CA690_BTL\f_ca.bdscript
+L278:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ pushFromPSpVal 0
+ pushImm 10
+ syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
+ ret 

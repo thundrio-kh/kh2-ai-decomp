@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (add: ) (pushFromPSpVal: 0,4) (pushFromPSp: 0) (pushFromFSp: 0)
 syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -84,9 +84,45 @@ void __fastcall YS::trap_btlobj_lockon_target(BD_VALUE_19 *args)
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\beast\limi.bdscript
+limit\donald\limi.bdscript
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
+limit\donald_wi\limi.bdscript
+limit\goofy2\limi.bdscript
+limit\goofy2_wi\limi.bdscript
+limit\mulan\limi.bdscript
+limit\riku\limi.bdscript
+limit\simba\limi.bdscript
+limit\sparrow\limi.bdscript
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
+limit\trinity_zz\limi.bdscript
+obj\N_DC010_BTL\n_dc.bdscript ((N) Minnie (BTL) (DC))
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
+obj\P_EX100_KH1F\limi.bdscript ((P) Sora (Limit))
+obj\P_EX100_NM_KH1F\limi.bdscript ((P) Sora (NM) (Limit))
+obj\P_EX100_TR_KH1F\limi.bdscript ((P) Sora (TR) (Limit))
+obj\P_EX100_WI_KH1F\limi.bdscript ((P) Sora (WI) (Limit))
+obj\P_EX100_XM_KH1F\limi.bdscript ((P) Sora (XM) (Limit))
+obj\P_EX200\mick.bdscript ((P) Micky (hood))
+obj\P_EX220\mick.bdscript ((P) Mickey)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L468:
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ eqz 
+ jz L489
+ pushFromFSp 180
+ pushFromPWp W0
+ pushImm 4
+ add 
+ syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
+ gosub 52, L1675
+ jmp L489

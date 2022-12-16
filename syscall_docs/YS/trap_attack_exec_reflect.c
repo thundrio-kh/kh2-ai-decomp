@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
 syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
 ---
 ---
@@ -35,9 +35,13 @@ void __fastcall YS::trap_attack_exec_reflect(BD_VALUE_19 *args)
 ---
 ---
 appears in:
-
+obj\N_CM020_BTL\n_cm.bdscript ((N) Lexaeus (BTL) (CM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_CM020_BTL\n_cm.bdscript
+L75:
+ jz L83
+ pushFromFSp 4
+ syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
+ jmp L83

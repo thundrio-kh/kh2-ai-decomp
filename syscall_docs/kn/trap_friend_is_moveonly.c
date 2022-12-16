@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -69,9 +69,16 @@ void __fastcall kn::trap_friend_is_moveonly(BD_VALUE_22 *args)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L9007:
+ dup 
+ jz L9016
+ pushFromFSp 0
+ syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
+ eqz 
+ eqzv 

@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (gosub: 4, L2431,4, L4255,4, L91)
+push unk2 ; (unknown)  (memcpyToSp: 16, 16)
+push unk3 ; (unknown)  (pushFromPSp: 16)
+push unk4 ; (unknown)  (pushImm: 0)
 syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
 ---
 ---
@@ -120,9 +120,23 @@ void __fastcall kn::Friend::setCommandItem(kn::Friend_0 *const this, __int64 kin
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
+obj\P_HE000\p_he.bdscript ((P) Auron)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L7518:
+ popToSp 0
+ pushFromPSpVal 0
+ pushImm 2
+ pushFromPSpVal 0
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ gosub 4, L4255
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 0
+ syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
+ ret 

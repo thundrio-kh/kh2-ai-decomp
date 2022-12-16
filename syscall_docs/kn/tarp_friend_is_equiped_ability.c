@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W0)
+push unk2 ; (unknown)  (pushImm: 150,152)
 syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -112,9 +112,16 @@ __int64 __fastcall kn::Friend::equipedAbility(kn::Friend_0 *const this, int abil
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L378:
+ dup 
+ jz L389
+ pushFromPWp W0
+ pushImm 152
+ syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
+ eqzv 

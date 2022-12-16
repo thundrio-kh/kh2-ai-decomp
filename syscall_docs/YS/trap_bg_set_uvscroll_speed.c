@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
 ---
 ---
@@ -61,9 +61,24 @@ TASK_0 *__fastcall FIELD::CreateTask(int id, int priority, TASK_FUNC entry_func)
 ---
 ---
 appears in:
-
+obj\F_NM140\f_nm.bdscript ((F) ??? (NM))
+obj\F_NM150\f_nm.bdscript ((F) ??? (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_NM140\f_nm.bdscript
+L2162:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
+ pushFromPSp 16
+ pushImmf 4.35
+ pushFromFSp 0
+ mulf 
+ pushImmf 0
+ pushImmf 0
+ pushImmf 1
+ gosub 12, L2192
+ pushFromPSp 16
+ syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
+ ret 

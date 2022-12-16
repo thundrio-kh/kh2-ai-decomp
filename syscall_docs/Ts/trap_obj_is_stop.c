@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromPSp: 16,4)
 syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -86,9 +86,28 @@ __int64 __fastcall YS::OBJ::is_stop(YS::OBJ_128 *const this)
 ---
 ---
 appears in:
-
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
+obj\F_HB020\f_hb.bdscript ((F) ??? (HB))
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
+obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX170_LAST\b_ex.bdscript
+L19588:
+ jz L19615
+ halt 
+ pushFromPSpVal 0
+ syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
+ eqz 
+ jz L19613
+ pushFromFSp 0
+ pushImm 68
+ add 
+ dup 
+ fetchValue 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ memcpy 0
+ jmp L19613

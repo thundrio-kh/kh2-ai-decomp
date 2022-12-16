@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 16) (pushImm: 28,67,98)
 syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -74,9 +74,23 @@ bool __fastcall YS::MENUFLAG::Check(unsigned __int64 num)
 ---
 ---
 appears in:
-
+ard\he03\he_t.bdscript
+msn\TT04_MS00\tt04.bdscript
+msn\TT04_MS01\tt04.bdscript
+msn\TT04_MS02\tt04.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\he03\he_t.bdscript
+L100:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ pushFromFSp 16
+ syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
+ jz L122
+ pushFromFSp 8
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ jmp L122

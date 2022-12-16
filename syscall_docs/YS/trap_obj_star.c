@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0,20,4) (pushFromPSp: 32) (pushFromPSpVal: 0) (pushImm: -1)
+push unk2 ; (unknown)  (pushImmf: 0,30,60) (syscall: 0, 3 ; trap_frametime (0 in, 1 out),1, 67 ; trap_obj_motion_get_length (2 in, 1 out))
 syscall 1, 91 ; trap_obj_star (2 in, 0 out)
 ---
 ---
@@ -132,9 +132,34 @@ __int64 __fastcall YS::PARTY::star(__int64 result, double a2)
 ---
 ---
 appears in:
-
+magic\CURE_1\cure.bdscript
+magic\CURE_1lk\cure.bdscript
+magic\CURE_2\cure.bdscript
+magic\CURE_2lk\cure.bdscript
+magic\CURE_3\cure.bdscript
+magic\CURE_3lk\cure.bdscript
+obj\B_EX220_LV99\b_ex.bdscript ((F) Saix’s claymore limit cut (Usable))
+obj\F_EH050\f_eh.bdscript ((F) Floating building 1 (EH))
+obj\M_EX050\m_ex.bdscript ((M) Large Body)
+obj\M_EX050_WI\m_ex.bdscript ((M) Large Body (WI))
+obj\P_AL000\p_al.bdscript ((P) Aladdin)
+obj\P_EX030\p_ex.bdscript ((P) Goofy)
+obj\P_EX030_NM\p_ex.bdscript ((P) Goofy (NM))
+obj\P_EX030_TR\p_ex.bdscript ((N) Goofy (TR))
+obj\P_EX030_XM\p_ex.bdscript ((P) Goofy (XM))
+obj\P_WI030\p_ex.bdscript ((P) Goofy (WI))
 ---
 ---
 ---
-example usage from NA
-
+example usage from magic\CURE_1\cure.bdscript
+L506:
+ jz L528
+ pushFromFSp 20
+ pushImmf 60
+ syscall 1, 91 ; trap_obj_star (2 in, 0 out)
+ pushImm 64
+ pushImm L563
+ pushFromFSp 20
+ gosub 8, L696
+ drop 
+ jmp L528

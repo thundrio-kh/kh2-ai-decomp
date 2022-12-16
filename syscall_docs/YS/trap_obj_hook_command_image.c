@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromFSp: 0)
 syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
 ---
 ---
@@ -148,9 +148,28 @@ void __fastcall YS::STDOBJ::hook_command_image(YS::STDOBJ_112 *const this)
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L2290:
+ popToSp 0
+ pushImmf 30
+ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+ pushFromFSp 0
+ pushImm 144
+ add 
+ pushImm 1
+ memcpy 0
+ pushFromPSpVal 0
+ syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
+ pushImm L2328
+ pushFromFSp 0
+ syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+ drop 
+ pushImm L2511
+ pushFromFSp 0
+ syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+ drop 
+ ret 

@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 16) (pushFromFSp: 0) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out))
+push unk2 ; (unknown)  (pushImm: 1,2)
+push unk3 ; (unknown)  (pushImm: 1,100,2,20,3,30) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (add: ) (pushFromFSp: 76)
 syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
 ---
 ---
@@ -71,9 +71,30 @@ __int64 __fastcall YS::OBJ::get_unit_arg(YS::OBJ_125 *const this, int num)
 ---
 ---
 appears in:
-
+obj\B_EX400\b_ex.bdscript ((B) Larxene (Absent Silhouette))
+obj\B_LK130\b_lk.bdscript ((F) Path for Sora Lion’s groundshaker RC)
+obj\F_AL110\f_al.bdscript ((F) ??? (AL))
+obj\F_TR160\f_tr.bdscript ((F) WARNING message (TR))
+obj\F_TT070\f_tt.bdscript ((F) Skateboard Checkmark (TT))
+obj\M_EX130_AL\m_ex.bdscript ((M) Crimson Jazz (AL))
+obj\M_EX520_AL\m_ex.bdscript ((M) Hook Bat (AL))
+obj\M_EX620_AL\m_ex.bdscript ((M) Fortuneteller (AL))
+obj\M_EX660_AL\m_ex.bdscript ((M) Rapid Thruster (AL))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX400\b_ex.bdscript
+L3195:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 20
+ sub 
+ eqz 
+ jz L3223
+ pushFromPSp 16
+ pushImm 1
+ pushImm 30
+ syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
+ jmp L3233

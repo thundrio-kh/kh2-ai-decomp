@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 80) (pushFromPWp: W0)
 syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
 ---
 ---
@@ -75,9 +75,29 @@ void __fastcall kn::Friend::setLastAction(kn::Friend_0 *const this, kn::FriendAc
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L947:
+ pushFromPSpVal 80
+ pushImm 598051
+ syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
+ pushFromPSpVal 80
+ syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
+ pushImmf 60
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushImmf 60
+ gosub 4, L987
+ pushImmf 60
+ gosub 4, L987
+ pushFromFSp 0
+ gosub 4, L1009
+ pushImmf 0
+ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L1044
+ ret 

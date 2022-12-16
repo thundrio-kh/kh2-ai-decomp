@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 10 ; trap_genie_get_limit_command (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -102,9 +102,16 @@ __int64 __fastcall kn::Genie::getLimitCommand(kn::Genie *const this)
 ---
 ---
 appears in:
-
+obj\P_AL010\p_al.bdscript ((P) Genie)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_AL010\p_al.bdscript
+L4091:
+ pushFromFSp 0
+ pushFromFSp 0
+ syscall 10, 10 ; trap_genie_get_limit_command (1 in, 1 out)
+ gosub 4, L4216
+ drop 
+ halt 
+ jmp L4070

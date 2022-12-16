@@ -41,9 +41,19 @@ void __cdecl YS::BATTLE_REPORT::IncrementFriendRecov()
 ---
 ---
 appears in:
-
+magic\CURE_1\cure.bdscript
+magic\CURE_1lk\cure.bdscript
+magic\CURE_2\cure.bdscript
+magic\CURE_2lk\cure.bdscript
+magic\CURE_3\cure.bdscript
+magic\CURE_3lk\cure.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from magic\CURE_1\cure.bdscript
+L221:
+ drop 
+ pushFromFSp 36
+ jz L230
+ syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
+ jmp L230

@@ -13,11 +13,11 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 112,16,32,48,64,...) (pushImmf: 0.1) (pushFromPSpVal: 32,96) (gosub: 28, L21474,28, L4616)
+push unk2 ; (unknown)  (pushImmf: 0,100,20,200,250,300,350,400,50,500,700,75,800) (mulf: ) (pushFromFSp: 16,56)
+push unk3 ; (unknown)  (pushImmf: 0,100,1000,125,150,20,200,250,300,350,400,50,500,600,800) (pushFromFSp: 0,12,48,56)
+push unk4 ; (unknown)  (pushImmf: -100,-150,-200,-50,-500,0,0.1,100,1200,150,200,220,25,250,300,320,450,50,650,800) (fetchValue: 40) (pushFromFSp: 8)
+push unk5 ; (unknown)  (pushImmf: -100,-150,-200,0,100,1000,1300,150,200,220,300,320,350,400,450,50,500,650) (mulf: ) (gosub: 28, L21495,28, L4637) (pushFromFSp: 4)
 syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -70,9 +70,69 @@ void __fastcall YS::BG::RandomPosAir(const kn::FVector *center, const kn::FVecto
 ---
 ---
 appears in:
-
+limit\donald\limi.bdscript
+limit\donald_wi\limi.bdscript
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
+limit\tron\limi.bdscript
+magic\THUNDER_1\thun.bdscript
+magic\THUNDER_1lk\thun.bdscript
+magic\THUNDER_2\thun.bdscript
+magic\THUNDER_2lk\thun.bdscript
+magic\THUNDER_3\thun.bdscript
+magic\THUNDER_3lk\thun.bdscript
+obj\B_AL110\b_al.bdscript ((B) Volcanic Lord’s lava pool)
+obj\B_EX120\b_ex.bdscript ((B) Demyx (Only playing sitar?))
+obj\B_EX120_HB\b_ex.bdscript ((B) Demyx)
+obj\B_EX120_HB_LV99\b_ex.bdscript ((B99) Demyx (Limit Cut))
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\B_EX380\b_ex.bdscript ((F) Zexion’s book)
+obj\B_EX400\b_ex.bdscript ((B) Larxene (Absent Silhouette))
+obj\B_EX420\b_ex.bdscript ((B) Lingering Will)
+obj\B_LK120\b_lk.bdscript ((B) Groundshaker)
+obj\F_WI020\f_wi.bdscript ((F) Burning building (WI))
+obj\F_WI020_BOSS\f_wi.bdscript ((F) Burning building (BOSS) (WI))
+obj\F_WI020_BTL\f_wi.bdscript ()
+obj\M_EX130\m_ex.bdscript ((M) Crimson Jazz)
+obj\M_EX350_10\m_ex.bdscript ((M) Mushroom 10 (EX))
+obj\M_EX530\m_ex.bdscript ((M) Bookmaster)
+obj\M_EX530_HB\m_ex.bdscript ((M) Runemaster)
+obj\M_EX530_TR\m_ex.bdscript ((M) Bookmaster (TR))
+obj\N_CM000_BTL\n_cm.bdscript ((N) Marluxia (BTL) (CM))
+obj\N_HB630\n_hb.bdscript ((N) Sephiroth (HB))
+obj\P_EX100_KH1F\limi.bdscript ((P) Sora (Limit))
+obj\P_EX100_NM_KH1F\limi.bdscript ((P) Sora (NM) (Limit))
+obj\P_EX100_TR_KH1F\limi.bdscript ((P) Sora (TR) (Limit))
+obj\P_EX100_WI_KH1F\limi.bdscript ((P) Sora (WI) (Limit))
+obj\P_EX100_XM_KH1F\limi.bdscript ((P) Sora (XM) (Limit))
+obj\P_HE000\p_he.bdscript ((P) Auron)
+obj\P_LK020\p_lk.bdscript ((P) Donald (LK))
+obj\P_TR010\p_tr.bdscript ((P) ??? (TR))
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald\limi.bdscript
+L4039:
+ popToSp 0
+ gosub 12, L1148
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImmf 200
+ pushImmf 250
+ pushImmf -150
+ pushImmf -150
+ syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSp 0
+ gosub 12, L178
+ ret 

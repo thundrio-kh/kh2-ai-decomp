@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSpVal: 28,32)
 syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
 ---
 ---
@@ -84,9 +84,20 @@ void __fastcall kn::trap_obj_set_use_mp(BD_VALUE_22 *args)
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L4060:
+ popToSp 0
+ pushImm 1
+ popToSpVal 24
+ pushFromFSp 0
+ pushFromFSpVal 28
+ syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
+ pushFromPWp W4136
+ pushFromPWp W0
+ gosub 4, L4080
+ ret 

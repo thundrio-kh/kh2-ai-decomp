@@ -8,10 +8,9 @@
 import os
 import re
 
+
+
 scanone = ""
-
-scanone = "B_AL020"
-
 for root, dirs, files in os.walk(os.path.join("bdscript")):
     for ff in files:
         fn = os.path.join(root, ff)
@@ -78,7 +77,7 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
                 if word.startswith("TXT") or word.startswith("L"):
                     if not "___ai" in line:
                         if word in txt_commands:
-                            comment += "___ai: '{}' ({})".format(txt_commands[word]["action"].replace("'", ""), txt_commands[word]["txt"])
+                            comment += "___ai '{}' ({})".format(txt_commands[word]["action"].replace("'", ""), txt_commands[word]["txt"])
             if comment:
                 lines[l] = lines[l] + " ; " + comment
 
@@ -95,13 +94,10 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
                     line_reverse = lines[l-l_r]
                     lr_word = line_reverse.strip().split(" ")
                     if lr_word[1] != "0" and not lr_word[1].startswith("L"):
-                        if lr_word[1] in revealed_codes:
-                            if not "___ref" in line_reverse:
-                                lines[l-l_r] = line_reverse.replace(lr_word[1], "L{}".format(lr_word[1]))
-                                comment += "___ref"
-                        elif "___unk_ref" not in line_reverse:
-                            comment += "___unk_ref"
-                            print("Warn Unk Ref", fn)
+                        # if lr_word[1] in revealed_codes: NO longer need this check all instances where ___unk_ref would be used are actual refs
+                        if not "___ref" in line_reverse:
+                            lines[l-l_r] = line_reverse.replace(lr_word[1], "L{}".format(lr_word[1]))
+                            comment += "___ref"
                     if comment:
                         lines[l-l_r] += " ; " + comment
                         
@@ -123,7 +119,7 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
         # look at act table adds, find lines with __ref and go to that label and add a comment __label for action: XYZ
         found_references = {}
         for l in range(len(lines)):
-            line = lines[l]
+            line = lines[l] 
             if "syscall 1, 6 ; trap_act_table_add (12 in, 0 out)" in line:
                 arguments = {}
                 for bi in range(1,13):
@@ -135,23 +131,46 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
                     ment = arguments[arg]
                     if "___ref" in ment:
                         words = ment.strip().split(";")[0].split(" ")
-                        found_action_functions.append(words[1])
+                        found_action_functions.append((words[1], 'label'))
+                entry = arguments[3]
+                entry_words = entry.strip().split(";")[0].split(" ")
+                entry_value = entry_words[1]
+                if entry_value != "0":
+                    found_action_functions.append((entry_value,'label'))
+                callbacks = [arguments[4],
+                    arguments[5],
+                    arguments[6],
+                    arguments[7],
+                    arguments[8],
+                    arguments[9],
+                    arguments[10],
+                    arguments[11]]
+                for callback in callbacks:
+                    callback_words = callback.strip().split(";")[0].split(" ")
+                    callback_value = callback_words[1]
+                    if callback_value != "0":
+                        found_action_functions.append((callback_value, 'callback'))
                 found_references[action] = found_action_functions
         mapped_references = {}
         for a,refs in found_references.items():
             for r in refs:
-                if r in mapped_references:
-                    raise Exception("I don't know what to do here")
-                mapped_references[r] = a
-        
+                labelname = r[0]
+                labeltype = r[1]
+                if labelname not in mapped_references:
+                    mapped_references[labelname] = [a, [labeltype]]
+                else:
+                    mapped_references[labelname][1].append(labeltype)
         for l in range(len(lines)):
             line = lines[l]
             if ":" in line:
                 label = line.split(":")[0]
-                if label in mapped_references and "___label" not in line:
-                    c = "" if ";" in line else " ;"
-                    c += "___label for action: {}".format(mapped_references[label])
-                    lines[l] = line + c
+                if label in mapped_references:
+                    actionname = mapped_references[label][0]
+                    labeltypes = '_and_'.join(mapped_references[label][1])
+                    if "___{}".format(labeltypes) not in line:
+                        c = "" if ";" in line else " ;"
+                        c += "___{} for action {}".format(labeltypes, actionname)
+                        lines[l] = line + c
 
         with open(fn, "w") as f:
             f.write("\n".join(lines))

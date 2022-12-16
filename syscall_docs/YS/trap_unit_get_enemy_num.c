@@ -62,9 +62,26 @@ int __cdecl YS::UNIT_GROUP::GetEnemyNum()
 ---
 ---
 appears in:
-
+obj\F_MU080\f_mu.bdscript ((F) ??? (MU))
+obj\F_MU090\f_mu.bdscript ((F) ??? (MU))
+obj\F_MU100\f_mu.bdscript ((F) ??? (MU))
+obj\F_MU100_SHANG\f_mu.bdscript ((F) ??? (SHANG) (MU))
+obj\F_MU100_TOWER\f_mu.bdscript ((F) ??? (TOWER) (MU))
+obj\M_EX590\m_ex.bdscript ((M) Bulky Vendor)
+obj\M_EX590_NM\m_ex.bdscript ((M) Bulky Vendor (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_MU080\f_mu.bdscript
+L103:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L128
+ syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)
+ pushImm 0
+ sub 
+ eqz 
+ jz L124
+ pushFromFSp 0
+ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+ jmp L124

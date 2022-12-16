@@ -54,9 +54,18 @@ bool __cdecl YS::SUMMON::IsTinkExist()
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L5320:
+ pushFromFSpVal 44
+ syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+ jz L5653
+ syscall 2, 75 ; trap_summon_is_tink_exist (0 in, 1 out)
+ eqz 
+ jz L5339
+ pushFromFSpVal 44
+ syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
+ jmp L5653

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: 52,53,54,55,56)
 syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
 ---
 ---
@@ -357,9 +357,45 @@ void __fastcall YS::PARTY::partyattack(YS::PARTY_63 *const this, const YS::PARTY
 ---
 ---
 appears in:
-
+obj\P_EX100_KH1F\limi.bdscript ((P) Sora (Limit))
+obj\P_EX100_NM_KH1F\limi.bdscript ((P) Sora (NM) (Limit))
+obj\P_EX100_TR_KH1F\limi.bdscript ((P) Sora (TR) (Limit))
+obj\P_EX100_WI_KH1F\limi.bdscript ((P) Sora (WI) (Limit))
+obj\P_EX100_XM_KH1F\limi.bdscript ((P) Sora (XM) (Limit))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX100_KH1F\limi.bdscript
+L1683:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 241
+ pushImmf 0
+ gosub 4, L1994
+ pushFromFSp 0
+ gosub 4, L2015
+ jz L1754
+ pushFromFSp 0
+ pushImm 52
+ syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImmf 0
+ gosub 4, L1994
+ pushFromFSp 0
+ fetchValue 4
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImm 1
+ add 
+ pushImmf 0
+ syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 4
+ pushImmf 0
+ syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+ jmp L1756

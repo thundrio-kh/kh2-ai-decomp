@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: -1)
+push unk2 ; (unknown)  (pushImm: 0)
 syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
 ---
 ---
@@ -60,9 +60,15 @@ void __fastcall YS::MISSION::RestartTimer(int second, int id)
 ---
 ---
 appears in:
-
+msn\CA07_MS105\ca07.bdscript
+msn\EH26_MS108\eh26.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\CA07_MS105\ca07.bdscript
+L184:
+ pushImm -1
+ pushImm 0
+ syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
+ pushImm 17353
+ syscall 4, 4 ; trap_mission_information (1 in, 0 out)

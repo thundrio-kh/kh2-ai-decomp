@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -104,9 +104,43 @@ void __fastcall kn::Stitch::get_screen_position(kn::Stitch *const this, int a2)
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L3526:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromFSp 0
+ syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSp 8
+ syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
+ pushImm 1150
+ sub 
+ eqz 
+ jz L3660
+ pushFromPSp 16
+ fetchValue 12
+ syscall 0, 43 ; trap_fixrad (1 in, 1 out)
+ syscall 0, 23 ; trap_absf (1 in, 1 out)
+ pushImmf 1.570796
+ subf 
+ infoezf 
+ jz L3609
+ pushFromPSp 16
+ fetchValue 0
+ pushImmf 0
+ subf 
+ infoezf 
+ jz L3595
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 202
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ jmp L3607

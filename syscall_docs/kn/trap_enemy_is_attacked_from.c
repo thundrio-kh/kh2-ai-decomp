@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (memcpyToSp: 16, 144)
+push unk2 ; (unknown)  (pushFromPSp: 144)
 syscall 10, 23 ; trap_enemy_is_attacked_from (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -100,9 +100,20 @@ void __fastcall kn::trap_enemy_is_attacked_from(BD_VALUE_22 *args)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L6338:
+ dup 
+ jz L6360
+ pushFromFSp 0
+ gosub 12, L6383
+ memcpyToSp 108, 32
+ pushFromPSp 32
+ gosub 40, L928
+ memcpyToSp 16, 144
+ pushFromPSp 144
+ syscall 10, 23 ; trap_enemy_is_attacked_from (2 in, 1 out)
+ eqzv 

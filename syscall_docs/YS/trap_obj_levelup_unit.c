@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
 ---
 ---
@@ -170,9 +170,47 @@ __int64 __fastcall YS::UNIT_GROUP::activate(YS::UNIT_GROUP_8 *const this, const 
 ---
 ---
 appears in:
-
+obj\F_CA060\f_ca.bdscript ((F) ??? (CA))
+obj\F_CA060_MEDAL\f_ca.bdscript ((F) ??? - Attackable floor? (MEDAL) (CA))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_CA060\f_ca.bdscript
+L2170:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 24
+ add 
+ pushImm 1
+ memcpy 0
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 1
+ pushImm 0
+ syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+ drop 
+ pushFromFSp 0
+ pushImm 2
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 1
+ sub 
+ eqz 
+ jz L2249
+ pushFromFSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 1
+ add 
+ pushImm 1
+ pushImm 0
+ syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+ drop 
+ jmp L2249

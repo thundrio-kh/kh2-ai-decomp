@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: 0,1,2,3,4)
+push unk3 ; (unknown)  (pushImm: 0,1)
 syscall 5, 32 ; trap_eh22_path_play (3 in, 0 out)
 ---
 ---
@@ -65,9 +65,18 @@ void __fastcall Ti::MG_EHSidecar::PlayPath(int path_num, bool dir)
 ---
 ---
 appears in:
-
+obj\B_EX330\b_ex.bdscript ((F) Xemnas’s dragon (Flying))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX330\b_ex.bdscript
+L5141:
+ popToSp 0
+ pushImm 6
+ popToWp W4256
+ pushFromFSp 0
+ pushImm 4
+ pushImm 1
+ syscall 5, 32 ; trap_eh22_path_play (3 in, 0 out)
+ pushImmf 60
+ gosub 4, L193

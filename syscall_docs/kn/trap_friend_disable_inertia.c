@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W364)
 syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
 ---
 ---
@@ -77,9 +77,18 @@ void __fastcall kn::Friend::disableInertia(kn::Friend_0 *const this)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L7902:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImm 1
+ gosub 4, L6585
+ pushFromPWp W364
+ syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
+ ret 

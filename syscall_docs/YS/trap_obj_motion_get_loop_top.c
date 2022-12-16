@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: -1)
 syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -83,9 +83,39 @@ float __fastcall YS::MOTION::get_loop_top(YS::MOTION_289 *const this, int id)
 ---
 ---
 appears in:
-
+obj\M_EX020\m_ex.bdscript ((M) Shadow)
+obj\M_EX020_NM\m_ex.bdscript ((M) Shadow (NM))
+obj\M_EX020_NM_RAW\m_ex.bdscript ((M) Shadow (NM) (RAW))
+obj\M_EX020_RAW\m_ex.bdscript ((M) Shadow (RAW))
+obj\M_EX020_WI\m_ex.bdscript ((M) Shadow (WI))
+obj\M_EX020_WI_RAW\m_ex.bdscript ((M) Shadow (WI) (RAW))
+obj\M_EX420\m_ex.bdscript ((M) Neoshadow)
+obj\M_EX420_NM\m_ex.bdscript ((M) Neoshadow (NM))
+obj\M_EX990\m_ex.bdscript ((M) Dusk)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX020\m_ex.bdscript
+L2835:
+ popToSp 0
+ pushFromFSp 0
+ gosub 8, L1845
+ pushImm 1
+ popToWp W0
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 161
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)
+ popToSp 8
+ pushImmf 0
+ popToSp 4

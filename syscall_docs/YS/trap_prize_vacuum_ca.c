@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromPSpVal: 288) (pushFromFSp: 0)
+push unk3 ; (unknown)  (pushImm: 1,30)
 syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -165,9 +165,28 @@ __int64 __fastcall YS::PRIZE_CA::Vacuum(YS::BTLOBJ_69 *obj, YS::BTLOBJ_69 *targe
 ---
 ---
 appears in:
-
+obj\B_CA050\b_ca.bdscript ((B) Grim Reaper)
+obj\M_EX890\m_ex.bdscript ((M) Dragoon)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_CA050\b_ca.bdscript
+L6690:
+ jz L6758
+ pushFromFSp 36
+ pushImm 1
+ add 
+ popToSp 36
+ pushFromFSp 36
+ pushImm 3
+ mod 
+ pushImm 0
+ sub 
+ eqz 
+ jz L6725
+ pushFromFSp 0
+ pushFromPSpVal 288
+ pushImm 1
+ syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
+ drop 
+ jmp L6725

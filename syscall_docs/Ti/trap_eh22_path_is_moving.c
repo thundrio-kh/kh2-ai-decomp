@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -63,9 +63,27 @@ bool __cdecl Ti::MG_EHSidecar::IsPointMoving()
 ---
 ---
 appears in:
-
+obj\B_EX330\b_ex.bdscript ((F) Xemnas’s dragon (Flying))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX330\b_ex.bdscript
+L829:
+ pushFromFSpVal 124
+ pushImm 0
+ sub 
+ neqz 
+ jz L880
+ pushFromFSp 4
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ addf 
+ popToSp 4
+ pushFromFSp 4
+ pushImmf 360
+ subf 
+ supoezf 
+ dup 
+ jnz L860
+ pushFromFSp 0
+ syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
+ neqzv 

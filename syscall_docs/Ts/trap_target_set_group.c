@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 20)
+push unk2 ; (unknown)  (pushImm: 20,21,22,23,24,25,26,27,28,29)
 syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
 ---
 ---
@@ -65,9 +65,13 @@ void __fastcall YS::TARGET::set_obj(YS::TARGET_108 *const this, YS::OBJ_168 *obj
 ---
 ---
 appears in:
-
+obj\B_LK120\b_lk.bdscript ((B) Groundshaker)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_LK120\b_lk.bdscript
+L3502:
+ pushFromFSp 20
+ pushImm 20
+ syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
+ jmp L3673

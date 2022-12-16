@@ -41,9 +41,21 @@ void __fastcall dk::Timer::pauseOff(u_int mode)
 ---
 ---
 appears in:
-
+obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX950\m_ex.bdscript
+L1183:
+ syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
+ pushImm 16
+ syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
+ pushFromFSp 4
+ pushImm 0
+ sub 
+ neqz 
+ jz L1208
+ pushFromFSp 4
+ pushImmf 30
+ syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
+ jmp L1208

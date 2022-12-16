@@ -51,9 +51,17 @@ void __fastcall YS::MISSION::ResetComboCounter(int id)
 ---
 ---
 appears in:
-
+msn\HB09_SKATE_01\hb09.bdscript
+msn\TT06_LETTER_01\tt06.bdscript
+msn\TT06_LETTER_02\tt06.bdscript
+msn\TT06_PERFORM_01\tt06.bdscript
+msn\TT06_PERFORM_02\tt06.bdscript
+msn\TT06_WORK_LETTER\tt06.bdscript
+msn\TT06_WORK_PERFORM\tt06.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\HB09_SKATE_01\hb09.bdscript
+L58:
+ syscall 4, 27 ; trap_mission_stop_combo_counter (0 in, 0 out)
+ jmp L62

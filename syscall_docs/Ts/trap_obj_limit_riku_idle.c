@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 4)
 syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
 ---
 ---
@@ -81,9 +81,26 @@ void __fastcall YS::OBJ::change_action(YS::OBJ_125 *const this, YS::ACTION::ID i
 ---
 ---
 appears in:
-
+limit\riku\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\riku\limi.bdscript
+L7279:
+ pushFromFSp 0
+ gosub 4, L7785
+ pushFromPSpVal 272
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromPSpVal 272
+ pushFromPSpVal 4
+ pushImm 16386
+ pushImm 1
+ pushImm 0
+ pushImm 0
+ syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+ pushFromPSpVal 4
+ syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
+ ret 

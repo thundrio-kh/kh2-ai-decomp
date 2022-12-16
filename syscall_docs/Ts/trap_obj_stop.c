@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 0,48)
+push unk2 ; (unknown)  (pushImm: 15,17)
+push unk3 ; (unknown)  (pushImmf: 0)
 syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
 ---
 ---
@@ -77,9 +77,30 @@ void __fastcall YS::OBJ::stop(YS::OBJ_125 *const this, int id, double time)
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+msn\TT04_MS301\tt04.bdscript
+msn\TT05_MS403\tt05.bdscript
+msn\TT05_MS404\tt05.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L4096:
+ pushFromFSpVal 64
+ syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
+ jz L4154
+ pushFromFSpVal 48
+ gosub 12, L1699
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L4136
+ pushFromFSpVal 48
+ gosub 12, L1699
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushImm 17
+ pushImmf 0
+ syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
+ jmp L4136

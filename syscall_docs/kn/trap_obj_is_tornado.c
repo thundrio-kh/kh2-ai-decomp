@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 48)
 syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -69,9 +69,32 @@ void __fastcall kn::trap_obj_is_tornado(BD_VALUE_22 *args)
 ---
 ---
 appears in:
-
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX350\p_ex.bdscript
+L7335:
+ jz L7542
+ pushFromFSpVal 48
+ gosub 16, L7603
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
+ eqz 
+ jz L7384
+ pushFromFSpVal 68
+ pushFromFSpVal 48
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
+ pushFromFSpVal 68
+ pushFromFSpVal 48
+ gosub 16, L7603
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushImm 0
+ pushFromFSp 36
+ syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
+ jmp L7526

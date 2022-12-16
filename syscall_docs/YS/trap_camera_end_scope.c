@@ -61,9 +61,21 @@ void __cdecl dk::ScopeCamera::destroy()
 ---
 ---
 appears in:
-
+obj\B_EX140\b_ex.bdscript ((B) Xigbar)
+obj\B_EX140_LV99\b_ex.bdscript ((B99) Xigbar (Limit Cut))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX140\b_ex.bdscript
+L10848:
+ popToSp 0
+ pushImm 5
+ popToSpVal 16
+ syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)
+ pushFromFSpVal 88
+ pushImm 3
+ syscall 1, 290 ; trap_picture_change (2 in, 0 out)
+ pushFromPSpVal 0
+ pushImm 1
+ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+ ret 

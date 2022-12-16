@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 20)
+push unk2 ; (unknown)  (pushImm: 114)
 syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -131,9 +131,24 @@ const YS::ABILITY_106 *__fastcall YS::PARTY::get_ability(YS::PARTY_63 *const thi
 ---
 ---
 appears in:
-
+magic\CURE_1\cure.bdscript
+magic\CURE_1lk\cure.bdscript
+magic\CURE_2\cure.bdscript
+magic\CURE_2lk\cure.bdscript
+magic\CURE_3\cure.bdscript
+magic\CURE_3lk\cure.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from magic\CURE_1\cure.bdscript
+L488:
+ pushFromFSp 20
+ pushImm 114
+ syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
+ dup 
+ jz L506
+ pushFromFSp 20
+ pushFromPSpVal 44
+ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+ eqz 
+ eqzv 

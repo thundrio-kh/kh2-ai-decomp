@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 80)
 syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -46,9 +46,16 @@ void __fastcall Ts::trap_flare_get_pos(BD_VALUE_24 *args)
 ---
 ---
 appears in:
-
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald2\limi.bdscript
+L2440:
+ popToSp 0
+ pushFromFSpVal 80
+ syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ ret 

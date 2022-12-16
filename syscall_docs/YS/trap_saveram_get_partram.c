@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 1,12,6)
 syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -72,9 +72,43 @@ unsigned __int64 __fastcall YS::SAVERAM_BATTLE::get_partram(YS::SAVERAM_BATTLE *
 ---
 ---
 appears in:
-
+ard\mu07\mu_g.bdscript
+ard\tr03\tr_g.bdscript
+ard\tr05\tr_g.bdscript
+ard\tt04\tt04.bdscript
+ard\tt06\tt_a.bdscript
+ard\tt08\tt_a_0.bdscript
+ard\tt08\tt_a_1.bdscript
+ard\tt32\tt_l.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\mu07\mu_g.bdscript
+TR2:
+ pushImm 6
+ syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
+ popToSp 0
+ pushFromFSp 0
+ pushImm 8
+ syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 207
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 434
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 435
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 417
+ pushImm 1
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 408
+ pushImm 0
+ syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
+ ret 

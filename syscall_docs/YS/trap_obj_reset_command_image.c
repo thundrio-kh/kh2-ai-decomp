@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)
 ---
 ---
@@ -89,9 +89,12 @@ void __fastcall YS::STDOBJ::reset_command_image(YS::STDOBJ_112 *const this)
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L2350:
+ pushFromFSp 0
+ syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)
+ ret 

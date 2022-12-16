@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -75,9 +75,17 @@ bool __fastcall YS::OBJ::is_hover(YS::OBJ_193 *const this)
 ---
 ---
 appears in:
-
+obj\F_HB090\f_hb.bdscript ((F) CoR’s whirlwind (jumpable) (HB))
+obj\F_MU070\f_mu.bdscript ((F) Wind ride (Reaction Command) (MU))
+obj\F_MU070_BOSS\f_mu.bdscript ((F) Wind ride (Reaction Command) (BOSS) (MU))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_HB090\f_hb.bdscript
+L442:
+ pushFromFSp 0
+ syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
+ jz L454
+ pushFromFSp 0
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ jmp L454

@@ -161,9 +161,16 @@ void __cdecl Ts::FLARE::Init()
 ---
 ---
 appears in:
-
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald2\limi.bdscript
+L5986:
+ syscall 7, 3 ; trap_flare_init (0 in, 0 out)
+ pushImm 0
+ popToWp W64
+ pushImm 0
+ popToSp 0
+ pushImm 16

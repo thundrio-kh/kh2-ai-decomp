@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 32)
+push unk2 ; (unknown)  (pushImm: 1)
 syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
 ---
 ---
@@ -53,9 +53,25 @@ void __fastcall YS::PRIZE_XALDIN::Appear(const kn::FVector *pos, int num)
 ---
 ---
 appears in:
-
+obj\M_EX350_03\m_ex.bdscript ((M) Mushroom 3 (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX350_03\m_ex.bdscript
+L440:
+ jz L474
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushImm 1
+ syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
+ pushFromFSpVal 436
+ pushImm 1
+ sub 
+ popToSpVal 436
+ pushFromFSp 12
+ pushImm 1
+ sub 
+ popToSp 12
+ jmp L418

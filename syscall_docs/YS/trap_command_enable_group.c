@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0)
 syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)
 ---
 ---
@@ -71,9 +71,23 @@ void __fastcall YS::FIELD_COMMAND::enable_group(YS::FIELD_COMMAND_1 *const this,
 ---
 ---
 appears in:
-
+obj\B_EX420\b_ex.bdscript ((B) Lingering Will)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX420\b_ex.bdscript
+L5811:
+ pushImm 0
+ syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)
+ pushFromFSpVal 64
+ pushImmf -1
+ gosub32 4, L2268
+ pushFromPSpVal 0
+ pushImm 35
+ gosub32 4, L2256
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 0
+ pushImm 0
+ syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+ drop 

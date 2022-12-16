@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (syscall: 4, 36 ; trap_score_score (1 in, 1 out))
+push unk2 ; (unknown)  (pushImm: 1)
+push unk3 ; (unknown)  (add: )
+push unk4 ; (unknown)  (pushImm: 0)
 syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
 ---
 ---
@@ -59,9 +59,24 @@ void __fastcall YS::MISSION::SetComboCounterParam(int start, int max, int warnin
 ---
 ---
 appears in:
-
+msn\HB09_SKATE_01\hb09.bdscript
+msn\TT06_PERFORM_02\tt06.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\HB09_SKATE_01\hb09.bdscript
+L190:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSp 4
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushImm 0
+ pushImm 0
+ pushFromFSp 0
+ fetchValue 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushImm 1
+ add 
+ pushImm 0
+ syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)

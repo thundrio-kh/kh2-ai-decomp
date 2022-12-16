@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 64)
 syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -104,9 +104,31 @@ void __fastcall kn::RotTransPers(SCREENVECTOR *v0_0, const kn::FMatrix *m0, cons
 ---
 ---
 appears in:
-
+obj\B_EX140\b_ex.bdscript ((B) Xigbar)
+obj\B_EX140_LV99\b_ex.bdscript ((B99) Xigbar (Limit Cut))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX140\b_ex.bdscript
+L22781:
+ popToSp 0
+ pushImm 0
+ popToSp 4
+ pushFromPSpVal 64
+ syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushImmf -50
+ pushFromPSp 16
+ fetchValue 0
+ subf 
+ infoezf 
+ dup 
+ jz L22822
+ pushFromPSp 16
+ fetchValue 0
+ pushImmf 50
+ subf 
+ infoezf 
+ eqzv 

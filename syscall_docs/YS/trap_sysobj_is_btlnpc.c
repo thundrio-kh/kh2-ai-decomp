@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (fetchValue: 4)
 syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -72,9 +72,24 @@ __int64 __fastcall YS::OBJ::is_exist(YS::OBJ_128 *const this)
 ---
 ---
 appears in:
-
+msn\TT04_MS301\tt04.bdscript
+msn\TT05_MS403\tt05.bdscript
+msn\TT05_MS404\tt05.bdscript
+obj\F_NM180\f_nm.bdscript ((F) Present minigame (shooting machine) (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TT04_MS301\tt04.bdscript
+L177:
+ pushFromPSp 0
+ gosub 8, L214
+ jz L205
+ pushFromPSp 0
+ fetchValue 4
+ syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
+ jz L203
+ pushFromPSp 0
+ pushImm 15
+ pushImmf 0
+ syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
+ jmp L203

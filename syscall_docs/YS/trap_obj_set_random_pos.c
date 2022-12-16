@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 0)
+push unk2 ; (unknown)  (pushFromPSp: 16)
+push unk3 ; (unknown)  (pushImmf: 700)
+push unk4 ; (unknown)  (pushImmf: 150)
 syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
 ---
 ---
@@ -136,9 +136,40 @@ void __fastcall YS::OBJ::set_pos(YS::OBJ_125 *const this, const kn::FVector *pos
 ---
 ---
 appears in:
-
+ard\he05\f_he.bdscript
+ard\he07\f_he.bdscript
+ard\he11\f_he.bdscript
+ard\he15\f_he.bdscript
+ard\he16\f_he.bdscript
+ard\he17\f_he.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\he05\f_he.bdscript
+L56:
+ jz L112
+ pushFromPSp 0
+ pushImm 25
+ gosub 12, L255
+ gosub 12, L277
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf 100
+ subf 
+ memcpy 0
+ pushFromPSp 0
+ pushFromPSp 16
+ pushImmf 700
+ pushImmf 150
+ syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
+ gosub 12, L289
+ jmp L112

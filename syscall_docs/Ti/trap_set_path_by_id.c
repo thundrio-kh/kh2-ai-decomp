@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSpVal: 116)
 syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -99,9 +99,20 @@ __int64 __fastcall YS::OBJ::set_path_by_id(YS::OBJ_133 *const this, __int64 id)
 ---
 ---
 appears in:
-
+obj\F_TT110\f_tt.bdscript ((F) Dog’s sack (TT))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_TT110\f_tt.bdscript
+L4131:
+ pushFromFSpVal 120
+ popToSpVal 116
+ pushFromFSp 0
+ pushFromPAi L5026 ; ___ai 'toward' (L5026)
+ pushImmf 0
+ syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
+ pushFromFSp 0
+ pushFromFSpVal 116
+ syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
+ drop 
+ jmp L4236

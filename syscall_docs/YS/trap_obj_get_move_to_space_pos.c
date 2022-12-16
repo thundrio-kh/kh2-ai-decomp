@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImmf: 1200)
+push unk3 ; (unknown)  (pushImm: 0)
 syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -162,9 +162,57 @@ __int64 __fastcall YS::OBJ::get_move_to_space_pos(YS::OBJ_133 *const this, kn::F
 ---
 ---
 appears in:
-
+obj\B_EX420\b_ex.bdscript ((B) Lingering Will)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX420\b_ex.bdscript
+L15264:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 0
+ pushImm 2
+ gosub32 8, L15539
+ eqz 
+ jz L15538
+ pushFromFSp 0
+ pushImmf 1200
+ pushImm 0
+ syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 210
+ pushImmf 8
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromPSp 16
+ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+ pushImmf 50
+ subf 
+ supzf 
+ jz L15401
+ pushFromPSp 16
+ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+ pushImmf 100
+ subf 
+ supzf 
+ jz L15372
+ pushFromFSp 0
+ pushImmf 6
+ gosub32 16, L15068
+ pushImmf 6
+ gosub32 16, L1748
+ jmp L15372

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 32)
+push unk2 ; (unknown)  (pushFromPSp: 16)
 syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -52,9 +52,52 @@ float __fastcall YS::MATH::VectorAngle(const kn::FVector *v1_0, const kn::FVecto
 ---
 ---
 appears in:
-
+obj\F_EH060\f_eh.bdscript ((F) Floating building 2 (EH))
+obj\G_EX250_0\g_ex.bdscript ()
+obj\G_EX250_0_G\g_ex.bdscript ()
+obj\G_EX250_0_R\g_ex.bdscript ()
+obj\G_EX900_COMBAT\g_ex.bdscript ()
+obj\G_EX900_COMBAT_HARD\g_ex.bdscript ()
+obj\G_EX900_FINAL\g_ex.bdscript ()
+obj\G_EX900_FLIGHT\g_ex.bdscript ()
+obj\G_EX900_FLIGHT_HARD\g_ex.bdscript ()
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_EH060\f_eh.bdscript
+L3755:
+ popToSp 0
+ syscall 1, 306 ; trap_camera_at (0 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 1, 305 ; trap_camera_eye (0 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ drop 
+ pushFromFSp 0
+ gosub 16, L3430
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 1, 305 ; trap_camera_eye (0 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ drop 
+ pushFromPSp 32
+ pushFromPSp 16
+ syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
+ pushImmf 1.047198
+ subf 
+ infzf 
+ ret 

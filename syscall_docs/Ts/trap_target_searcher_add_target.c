@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (add: ) (pushFromPWp: W0,W108) (pushFromPSpVal: 0,72)
+push unk2 ; (unknown)  (pushFromFSp: 20,4) (syscall: 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)) (pushFromFSpVal: 48)
 syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
 ---
 ---
@@ -109,9 +109,35 @@ void __fastcall Ts::TARGET_SEARCHER::add(Ts::TARGET_SEARCHER_0 *const this, YS::
 ---
 ---
 appears in:
-
+limit\goofy2\limi.bdscript
+limit\goofy2_wi\limi.bdscript
+limit\mulan\limi.bdscript
+obj\F_HB020\f_hb.bdscript ((F) ??? (HB))
+obj\N_DC010_BTL\n_dc.bdscript ((N) Minnie (BTL) (DC))
+obj\P_EX200\mick.bdscript ((P) Micky (hood))
+obj\P_EX220\mick.bdscript ((P) Mickey)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\goofy2\limi.bdscript
+L2552:
+ popToSp 0
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 4, L605
+ popToSp 4
+ pushFromFSp 4
+ pushFromPWp W0
+ pushImm 4
+ add 
+ syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
+ gosub 4, L631
+ pushFromFSp 4
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L2592
+ pushFromPWp W0
+ pushImm 80
+ add 
+ pushFromFSp 4
+ syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
+ jmp L2629

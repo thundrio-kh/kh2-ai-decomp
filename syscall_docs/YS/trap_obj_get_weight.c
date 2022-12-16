@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 0)
 syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -69,9 +69,18 @@ void __fastcall YS::trap_obj_get_weight(BD_VALUE_21 *args)
 ---
 ---
 appears in:
-
+msn\TR07_MS203\tr07.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TR07_MS203\tr07.bdscript
+L240:
+ pushFromPSp 0
+ gosub 32, L268
+ jz L257
+ pushFromFSp 108
+ pushFromPSp 0
+ syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
+ addf 
+ popToSp 108
+ jmp L240

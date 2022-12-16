@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (syscall: 1, 147 ; trap_obj_pos (1 in, 1 out)) (pushFromFSpVal: 48)
+push unk2 ; (unknown)  (memcpyToSp: 16, 128,16, 16,16, 32,16, 48) (pushFromPSp: 16)
+push unk3 ; (unknown)  (pushFromPSp: 128,16,32,48)
 syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
 ---
 ---
@@ -128,9 +128,28 @@ void __fastcall Ts::TARGET_SEARCHER::Search(YS::TARGET_156 *target, YS::OBJ_248 
 ---
 ---
 appears in:
-
+limit\goofy2\limi.bdscript
+limit\goofy2_wi\limi.bdscript
+obj\B_EX260\b_ex.bdscript ((B) Xemnas (Armor))
+obj\B_EX390\b_ex.bdscript ((B) Hooded Roxas)
+obj\B_EX410\b_ex.bdscript ((P) Sora book)
+obj\B_EX420\b_ex.bdscript ((B) Lingering Will)
+obj\B_EX430\b_ex.bdscript ((?) Related to Lingering Will?)
+obj\B_MU120\b_mu.bdscript ((B) Storm Rider)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\goofy2\limi.bdscript
+L80:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 48
+ pushFromFSp 4
+ pushFromPSpVal 64
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
+ pushImm 1
+ popToSpVal 104
+ ret 

@@ -47,9 +47,11 @@ void __fastcall YS::trap_area_set_return_tr(BD_VALUE_21 *args)
 ---
 ---
 appears in:
-
+msn\TR02_MS102_FREE\tr02.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TR02_MS102_FREE\tr02.bdscript
+TR2:
+ syscall 1, 352 ; trap_area_set_return_tr (0 in, 0 out)
+ ret 

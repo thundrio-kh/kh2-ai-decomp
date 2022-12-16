@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W3152)
+push unk2 ; (unknown)  (pushImm: -1,0)
 syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
 ---
 ---
@@ -97,9 +97,24 @@ LABEL_7:
 ---
 ---
 appears in:
-
+obj\B_BB110\b_bb.bdscript ((B) Dark Thorn)
+obj\B_BB120\b_bb.bdscript ((B) Shadow Stalker)
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\B_LK120\b_lk.bdscript ((B) Groundshaker)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_BB110\b_bb.bdscript
+L11216:
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ gosub 4, L5355
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ ret 

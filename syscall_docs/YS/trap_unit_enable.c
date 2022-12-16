@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 100,101,102,103,104,117,148,152,173,24,244,245,246,247,25,26,27,36,417,452,453,454,455,461,462,463,464,465,50,52,82,83,88,89,90,92,97,98,99)
 syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
 ---
 ---
@@ -79,9 +79,28 @@ LABEL_6:
 ---
 ---
 appears in:
-
+msn\MU02_MS103B\mu02.bdscript
+msn\MU07_MS106\mu07.bdscript
+obj\B_EX180\b_ex.bdscript ((?) Xemnas’s dragon (Throne))
+obj\B_EX240\b_ex.bdscript ((?) Xemnas’s dragon (Anchored))
+obj\B_EX300\b_ex.bdscript ((?) Xemnas armor - ???)
+obj\B_EX330\b_ex.bdscript ((F) Xemnas’s dragon (Flying))
+obj\B_MU100\b_mu.bdscript ((B) Shan-Yu)
+obj\B_MU120\b_mu.bdscript ((B) Storm Rider)
+obj\F_CA050\f_ca.bdscript ((F) Explosive barrel (CA))
+obj\F_EH040\f_eh.bdscript ((F) White and green beam (EH))
+obj\F_EH100\f_eh.bdscript ((F) Xemnas’s dragon energy core (EH))
+obj\F_TR160\f_tr.bdscript ((F) WARNING message (TR))
+obj\F_WI390\f_wi.bdscript ((F) Steamboat’s hook (WI))
+obj\F_WI390_RTN\f_wi.bdscript ((F) Steamboat’s hook (RTN) (WI))
+obj\N_EX760_BTL\n_ex.bdscript ((B) Pete (BTL))
+obj\N_EX760_BTL_HERCULES\n_ex.bdscript ((N) Pete (BTL_HERCULES) (EX))
+obj\N_EX760_BTL_MEGARA\n_ex.bdscript ((N) Pete (BTL_MEGARA) (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\MU02_MS103B\mu02.bdscript
+L204:
+ pushImm 417
+ syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
+ jmp L229

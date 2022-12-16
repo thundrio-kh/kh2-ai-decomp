@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImmf: 0)
 syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
 ---
 ---
@@ -52,9 +52,14 @@ void __fastcall YS::MISSION::AddComboCounter(int add, double time, int id)
 ---
 ---
 appears in:
-
+msn\TT06_PERFORM_01\tt06.bdscript
+msn\TT06_PERFORM_02\tt06.bdscript
+msn\TT06_WORK_PERFORM\tt06.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TT06_PERFORM_01\tt06.bdscript
+L33:
+ pushImmf 0
+ syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
+ jmp L73

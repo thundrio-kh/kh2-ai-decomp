@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0,20,80) (pushFromPSp: 48) (pushFromPWp: W16560)
+push unk2 ; (unknown)  (pushImm: 2,308032,320050,320058,320059,335029,374067,384027,384028,388010,390049,390055,390056,390057,390058,391050,391051,391053,391054,391055,393084,395016,395017,409020,595042,595043,598050,598051)
 syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
 ---
 ---
@@ -222,9 +222,42 @@ __int64 __fastcall YS::STDOBJ::call_se(YS::STDOBJ_112 *const this, __int64 num, 
 ---
 ---
 appears in:
-
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
+obj\B_EX140\b_ex.bdscript ((B) Xigbar)
+obj\B_EX140_LV99\b_ex.bdscript ((B99) Xigbar (Limit Cut))
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\B_EX390\b_ex.bdscript ((B) Hooded Roxas)
+obj\F_HB050\f_hb.bdscript ((F) CoR’s pushing pillar (HB))
+obj\F_HB050_23\f_hb.bdscript ((F) CoR’s pushing pillar 2 (HB))
+obj\F_HB060\f_hb.bdscript ((F) CoR’s rising pillar (HB))
+obj\F_HB140\f_hb.bdscript ((F) Cavern of Remembrance big pushing block (HB))
+obj\F_TT020\f_tt.bdscript ((F) Juggling ball (TT))
+obj\M_EX350_10\m_ex.bdscript ((M) Mushroom 10 (EX))
+obj\M_EX350_11\m_ex.bdscript ((M) Mushroom 11 (EX))
+obj\N_CM000_BTL\n_cm.bdscript ((N) Marluxia (BTL) (CM))
+obj\N_CM040_BTL\n_cm.bdscript ((N) Vexen (BTL) (CM))
+obj\N_EX760_BTL\n_ex.bdscript ((B) Pete (BTL))
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\trinity\limi.bdscript
+L8150:
+ pushFromFSp 4
+ jz L8183
+ pushFromFSp 0
+ pushImm 409020
+ syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
+ pushImmf 60
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushImmf 60
+ gosub 4, L5452
+ pushImm 1
+ syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
+ pushImmf 30
+ gosub 4, L5452
+ jmp L8188

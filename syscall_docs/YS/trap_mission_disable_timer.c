@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0)
 syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
 ---
 ---
@@ -52,9 +52,15 @@ void __fastcall YS::MISSION::DisableTimer(int id)
 ---
 ---
 appears in:
-
+msn\CA07_MS105\ca07.bdscript
+msn\EH26_MS108\eh26.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\CA07_MS105\ca07.bdscript
+L204:
+ pushImm 0
+ syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
+ pushImm 17354
+ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+ jmp L176

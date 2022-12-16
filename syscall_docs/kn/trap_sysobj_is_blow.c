@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (fetchValue: 4)
 syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -80,9 +80,18 @@ __int64 __fastcall YS::OBJ::is_exist(YS::OBJ_128 *const this)
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\B_EX400\b_ex.bdscript ((B) Larxene (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L26146:
+ jz L26172
+ pushFromFSp 0
+ fetchValue 4
+ syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
+ jz L26162
+ pushFromFSp 0
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ jmp L26162

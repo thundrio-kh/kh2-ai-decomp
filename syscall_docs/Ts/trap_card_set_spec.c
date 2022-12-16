@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
-push unk6 ; (unknown) 
-push unk7 ; (unknown) 
+push unk1 ; (unknown)  (pushImmf: 2,4)
+push unk2 ; (unknown)  (pushImmf: 6,8)
+push unk3 ; (unknown)  (pushImmf: 0.069813)
+push unk4 ; (unknown)  (pushImmf: 0.95)
+push unk5 ; (unknown)  (pushImmf: 0.03)
+push unk6 ; (unknown)  (pushImmf: 50)
+push unk7 ; (unknown)  (pushImmf: 3)
 syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
 ---
 ---
@@ -71,9 +71,35 @@ void *__fastcall Ts::ACTION_CARD::SetSpec(double a1, double a2, double a3, doubl
 ---
 ---
 appears in:
-
+obj\B_EX150\b_ex.bdscript ((B) Luxord (WORKS! can’t be killed, or paused))
+obj\B_EX150_LV99\b_ex.bdscript ((B99) Luxord (Limit Cut))
+obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX150\b_ex.bdscript
+L15018:
+ popToSp 0
+ pushImmf 4
+ pushImmf 8
+ pushImmf 0.069813
+ pushImmf 0.95
+ pushImmf 0.03
+ pushImmf 50
+ pushImmf 3
+ syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
+ pushFromFSp 0
+ pushImm 16
+ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+ memcpyToSp 16, 4
+ pushFromPSp 4
+ pushImm 1
+ pushImm 0
+ syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+ drop 
+ pushImm 0
+ syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
+ syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
+ jz L15077
+ syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
+ jmp L15077

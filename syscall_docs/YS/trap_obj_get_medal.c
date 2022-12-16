@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 0,16,32,4) (pushFromPSpVal: 288) (pushFromFSp: 0)
 syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -125,9 +125,28 @@ void __fastcall YS::trap_obj_get_medal(BD_VALUE_21 *args)
 ---
 ---
 appears in:
-
+msn\CA01_MS204\ca01.bdscript
+msn\CA07_MS105\ca07.bdscript
+obj\B_CA050\b_ca.bdscript ((B) Grim Reaper)
+obj\F_CA690_BTL\f_ca.bdscript ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\CA01_MS204\ca01.bdscript
+L106:
+ gosub 12, L142
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+ pushImm 0
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushFromPSp 0
+ syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+ pushImm 1
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushFromPSp 16
+ syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+ pushImm 2
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ halt 
+ jmp L106

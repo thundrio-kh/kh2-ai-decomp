@@ -13,11 +13,11 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0)
+push unk2 ; (unknown)  (pushImm: 0)
+push unk3 ; (unknown)  (pushImm: L2119,L3217,L3476,L3506,L3972,L4539,L5303,L5484,L6113)
+push unk4 ; (unknown)  (pushImm: 0)
+push unk5 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -203,9 +203,34 @@ YS::VM_377 *__fastcall YS::VM::Start(unsigned int *code, YS::OBJ_175 *owner)
 ---
 ---
 appears in:
-
+obj\P_CA000\p_ca.bdscript ((P) Jack Sparrow)
+obj\P_CA000_HUMAN\p_ca.bdscript ((P) Jack Sparrow (human))
+obj\P_CA000_HUMAN_LOW\p_ca.bdscript ((P) Jack Sparrow (human) (LOW))
+obj\P_CA000_LOW\p_ca.bdscript ((P) Jack Sparrow (LOW))
+obj\P_EX030\p_ex.bdscript ((P) Goofy)
+obj\P_EX030_NM\p_ex.bdscript ((P) Goofy (NM))
+obj\P_EX030_TR\p_ex.bdscript ((N) Goofy (TR))
+obj\P_EX030_XM\p_ex.bdscript ((P) Goofy (XM))
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
+obj\P_TR000\p_tr.bdscript ((P) Tron)
+obj\P_WI030\p_ex.bdscript ((P) Goofy (WI))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_CA000\p_ca.bdscript
+L3109:
+ popToSp 0
+ pushImm 1
+ popToSpVal 104
+ pushFromPSpVal 0
+ pushImm 0
+ pushImm L3217
+ pushImm 0
+ pushFromFSp 0
+ syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
+ drop 
+ pushFromPSpVal 0
+ fetchValue 4
+ pushImm 192
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)

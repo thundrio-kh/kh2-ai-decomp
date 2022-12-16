@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
+push unk2 ; (unknown)  (pushImm: 391052)
 syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -223,9 +223,16 @@ __int64 __fastcall YS::STDOBJ::call_se(YS::STDOBJ_112 *const this, __int64 num, 
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L12374:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ pushImm 391052
+ syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
+ popToSpVal 0
+ ret 

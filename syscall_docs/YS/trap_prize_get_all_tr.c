@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
 ---
 ---
@@ -105,9 +105,29 @@ void __fastcall YS::PRIZE_TR::GetAll(YS::BTLOBJ *obj)
 ---
 ---
 appears in:
-
+obj\B_TR000\b_tr.bdscript ((B) Hostile Program)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_TR000\b_tr.bdscript
+L10470:
+ pushFromFSp 0
+ syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
+ pushFromFSp 0
+ pushImm 240
+ pushImmf 60
+ pushImm 3
+ pushImm 0
+ gosub 4, L9731
+ pushFromFSp 0
+ pushImm 240
+ pushImm 241
+ pushImmf 4
+ gosub 4, L8109
+ jz L10520
+ pushFromFSp 0
+ pushImm 241
+ pushImm 3
+ pushImm 0
+ gosub 4, L8154
+ jmp L10520

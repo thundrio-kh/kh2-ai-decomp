@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push unk2 ; (unknown)  (pushFromFSp: 0,4)
+push unk3 ; (unknown)  (pushImm: 0)
+push unk4 ; (unknown)  (pushImm: 0)
 syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
 ---
 ---
@@ -55,9 +55,42 @@ void __fastcall YS::MISSION::SetTimerParam(int start, int max, int warning, int 
 ---
 ---
 appears in:
-
+msn\HE_COLOSSEUM_2\he_c.bdscript
+msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
+msn\HE_COLOSSEUM_6\he_c.bdscript
+msn\HE_COLOSSEUM_6_FOG\he_c.bdscript
+msn\HE_COLOSSEUM_8_CEL\he_c.bdscript
+msn\HE_COL_2_10\he_c.bdscript
+msn\HE_COL_6_10\he_c.bdscript
+msn\HE_COL_8_31\he_c.bdscript
+msn\HE_COL_8_35\he_c.bdscript
+msn\HE_COL_8_40\he_c.bdscript
+obj\B_EX120\b_ex.bdscript ((B) Demyx (Only playing sitar?))
+obj\B_EX120_HB\b_ex.bdscript ((B) Demyx)
+obj\B_EX120_HB_LV99\b_ex.bdscript ((B99) Demyx (Limit Cut))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\HE_COLOSSEUM_2\he_c.bdscript
+TR3:
+ pushFromPWp W0
+ gosub 4, L400
+ pushFromPWp W0
+ fetchValue 8
+ fetchValue 24
+ popToSp 0
+ pushFromFSp 0
+ pushImm 0
+ sub 
+ neqz 
+ jz L395
+ pushFromFSp 0
+ pushImm 15
+ add 
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
+ jmp L395

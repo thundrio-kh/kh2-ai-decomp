@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 4) (pushFromFSp: 0,4)
+push unk2 ; (unknown)  (div: ) (pushImm: 1,10,150,20,30,50,80)
 syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
 ---
 ---
@@ -129,9 +129,21 @@ void __fastcall YS::PRIZE_CA::Appear(YS::BTLOBJ_69 *obj, int num)
 ---
 ---
 appears in:
-
+msn\CA01_MS204\ca01.bdscript
+msn\CA07_MS105\ca07.bdscript
+obj\B_CA050\b_ca.bdscript ((B) Grim Reaper)
+obj\F_CA690_BTL\f_ca.bdscript ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\CA01_MS204\ca01.bdscript
+L294:
+ pushFromFSp 4
+ gosub 4, L142
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+ pushImm 4
+ div 
+ syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
+ jmp L313

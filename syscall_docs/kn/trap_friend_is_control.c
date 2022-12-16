@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -75,9 +75,17 @@ void __fastcall kn::trap_friend_is_control(BD_VALUE_22 *args)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L8995:
+ popToSp 0
+ syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
+ dup 
+ jz L9007
+ pushFromFSp 0
+ syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
+ eqzv 

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4) (pushImmf: 0.5)
+push unk2 ; (unknown)  (pushFromFSp: 8) (mulf: )
 syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
 ---
 ---
@@ -136,9 +136,24 @@ void __fastcall YS::PRIZE_MU::AppearGauge(const kn::FVector *pos, double gauge)
 ---
 ---
 appears in:
-
+msn\MU01_MS102\mu01.bdscript
+msn\MU01_MS103C\mu01.bdscript
+msn\MU02_MS103A\mu02.bdscript
+msn\MU02_MS103B\mu02.bdscript
+msn\MU03_MS104\mu03.bdscript
+msn\MU09_MS108\mu09.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\MU01_MS102\mu01.bdscript
+L118:
+ jz L139
+ pushFromFSp 8
+ pushImmf -1
+ mulf 
+ pushImm 0
+ syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+ pushFromFSp 4
+ pushFromFSp 8
+ syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
+ jmp L139

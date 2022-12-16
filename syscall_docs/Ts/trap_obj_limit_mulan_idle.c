@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
 ---
 ---
@@ -81,9 +81,22 @@ void __fastcall YS::OBJ::change_action(YS::OBJ_125 *const this, YS::ACTION::ID i
 ---
 ---
 appears in:
-
+limit\mulan\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\mulan\limi.bdscript
+L5649:
+ popToSp 0
+ gosub 12, L5675
+ pushFromPSp 16
+ pushImmf 1
+ gosub 12, L3754
+ pushFromFSp 0
+ pushFromPSp 16
+ gosub 12, L1582
+ pushFromFSp 0
+ syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
+ pushFromFSp 0
+ gosub 12, L2011
+ ret 

@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPAi: L113 ; ___ai 'f01_' (L113),L133 ; ___ai 'g02_' (L133),L149 ; ___ai 'g01_' (L149),L180 ; ___ai 'c02_' (L180),L199 ; ___ai 'c00_' (L199),...)
 syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
 ---
 ---
@@ -94,9 +94,15 @@ void __fastcall YS::UNIT::Activate(const char *unit)
 ---
 ---
 appears in:
-
+ard\wi00\wi00.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\wi00\wi00.bdscript
+TR3:
+ pushImm 13318
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jz L27
+ pushFromPAi L180 ; ___ai 'c02_' (L180)
+ syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
+ jmp L31

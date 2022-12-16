@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0)
 syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
 ---
 ---
@@ -97,9 +97,26 @@ void __fastcall YS::MICKEY::recov_holylight(YS::MICKEY_0 *const this)
 ---
 ---
 appears in:
-
+obj\P_EX200\mick.bdscript ((P) Micky (hood))
+obj\P_EX220\mick.bdscript ((P) Mickey)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX200\mick.bdscript
+L1677:
+ popToSp 0
+ pushImmf 30
+ gosub 4, L1712
+ pushFromPSpVal 0
+ pushImm 7
+ pushFromFSpVal 48
+ gosub 4, L510
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 1
+ pushImm 0
+ syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+ drop 
+ pushFromPSpVal 0
+ syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
+ ret 

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 32,48,64,80,96) (pushFromFSp: 4)
+push unk2 ; (unknown)  (pushImmf: 0,100,200)
 syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
 ---
 ---
@@ -76,9 +76,49 @@ void __fastcall kn::Friend::invalidateWarpPoint(const kn::FVector *center, doubl
 ---
 ---
 appears in:
-
+obj\B_EX140\b_ex.bdscript ((B) Xigbar)
+obj\B_EX140_LV99\b_ex.bdscript ((B99) Xigbar (Limit Cut))
+obj\B_EX260\b_ex.bdscript ((B) Xemnas (Armor))
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\F_EH070\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (right) (EH))
+obj\F_EH080\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (left) (EH))
+obj\F_NM130\f_nm.bdscript ((F) ??? (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX140\b_ex.bdscript
+L17950:
+ pushFromPSp 80
+ pushImmf 100
+ syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToWp 16, W800
+ gosub 28, L608
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 128
+ pushFromPSp 128
+ gosub 40, L608
+ memcpyToSp 16, 144
+ pushFromPSp 144
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 160
+ pushFromPSp 160
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 176
+ pushFromPSp 176
+ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+ pushFromFSp 0
+ gosub 28, L18418
+ pushFromFSp 8
+ jz L18028
+ pushFromFSp 0
+ pushImm 1
+ pushImm 0
+ gosub 28, L13940
+ jmp L18038

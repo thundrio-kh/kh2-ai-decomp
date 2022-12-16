@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSpVal: 20)
 syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
 ---
 ---
@@ -106,9 +106,25 @@ void __fastcall kn::Stitch::killEffect(kn::Stitch *const this, int index)
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L3436:
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L3514
+ pushFromFSpVal 28
+ syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+ pushImm 0
+ popToSpVal 28
+ pushFromFSpVal 20
+ pushImm 0
+ sub 
+ msbi 
+ jz L3468
+ pushFromFSp 0
+ pushFromFSpVal 20
+ syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
+ jmp L3468

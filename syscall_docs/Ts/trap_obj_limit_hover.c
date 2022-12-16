@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 4)
+push unk2 ; (unknown)  (pushFromPSp: 16)
+push unk3 ; (unknown)  (pushFromFSp: 8) (pushImmf: 1)
+push unk4 ; (unknown)  (pushFromFSp: 4) (pushImmf: 1)
 syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
 ---
 ---
@@ -113,9 +113,27 @@ void __fastcall Ts::ACTION_LIMIT_HOVER::Start(YS::OBJ_244 *obj, RCFVector _v, do
 ---
 ---
 appears in:
-
+limit\tron\limi.bdscript
+obj\P_AL010\p_al.bdscript ((P) Genie)
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\tron\limi.bdscript
+L1340:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromPSpVal 4
+ fetchValue 4
+ pushImm 32
+ add 
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ drop 
+ pushFromPSpVal 4
+ pushFromPSp 16
+ pushFromFSp 8
+ pushFromFSp 4
+ syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
+ ret 

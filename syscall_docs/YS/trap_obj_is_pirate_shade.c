@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -80,9 +80,21 @@ __int64 __fastcall YS::OBJ::is_pirate_shade(YS::OBJ_128 *const this)
 ---
 ---
 appears in:
-
+obj\B_CA010\b_ca.bdscript ((B) Barbossa)
+obj\B_CA020\b_ca.bdscript ((M) Undead Pirate A)
+obj\B_CA030\b_ca.bdscript ((M) Undead Pirate B)
+obj\B_CA040\b_ca.bdscript ((M) Undead Pirate C)
+obj\B_CA040_PUB\b_ca.bdscript ()
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_CA010\b_ca.bdscript
+L1544:
+ pushFromFSp 0
+ fetchValue 132
+ eqz 
+ dup 
+ jz L1557
+ pushFromFSp 0
+ syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
+ eqzv 

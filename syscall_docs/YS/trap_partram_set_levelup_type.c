@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 8)
+push unk2 ; (unknown)  (pushImm: 0,1,2)
 syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
 ---
 ---
@@ -51,9 +51,13 @@ void __fastcall YS::trap_partram_set_levelup_type(BD_VALUE_16 *args, __int64 a2,
 ---
 ---
 appears in:
-
+ard\tt32\tt_l.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\tt32\tt_l.bdscript
+L40:
+ pushFromFSp 8
+ pushImm 0
+ syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
+ jmp L85

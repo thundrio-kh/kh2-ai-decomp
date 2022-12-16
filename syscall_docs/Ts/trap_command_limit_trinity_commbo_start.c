@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0,1,2)
 syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
 ---
 ---
@@ -49,9 +49,18 @@ void __fastcall YS::SPECIAL_COMMAND::LimitTrinityComboStart(int n)
 ---
 ---
 appears in:
-
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\trinity\limi.bdscript
+L962:
+ pushFromFSp 0
+ gosub 4, L1120
+ pushFromFSp 0
+ gosub 4, L7814
+ jz L979
+ pushImm 0
+ syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
+ jmp L979

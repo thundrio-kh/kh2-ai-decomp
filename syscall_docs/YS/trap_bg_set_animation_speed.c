@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImmf: 0,1)
 syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
 ---
 ---
@@ -45,9 +45,14 @@ void __fastcall dk::Map::setAnimationSpeedRatio(__int64 type, double ratio)
 ---
 ---
 appears in:
-
+obj\B_TR000\b_tr.bdscript ((B) Hostile Program)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_TR000\b_tr.bdscript
+L402:
+ gosub 12, L440
+ pushImm 6
+ syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
+ pushImmf 0
+ syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)

@@ -46,9 +46,19 @@ float __cdecl YS::EVENT::GetRestTime()
 ---
 ---
 appears in:
-
+obj\M_EX660_WI_RAW\m_ex.bdscript ()
+obj\M_EX760_NM_RAW\m_ex.bdscript ()
+obj\M_EX770_TR_RAW\m_ex.bdscript ()
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX660_WI_RAW\m_ex.bdscript
+L2592:
+ syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
+ pushFromFSp 4
+ subf 
+ supzf 
+ jz L2603
+ halt 
+ jmp L2592

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 80)
+push unk2 ; (unknown)  (pushImm: 525,526,527)
 syscall 7, 26 ; trap_friend_call (2 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -95,9 +95,21 @@ __int64 __fastcall kn::Friend::callFromScript(kn::Friend_0 *const this, __int64 
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L69:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 2, 60 ; trap_limit_time (1 in, 1 out)
+ pushImmf 0
+ subf 
+ supzf 
+ jz L92
+ pushFromPSpVal 80
+ pushImm 525
+ syscall 7, 26 ; trap_friend_call (2 in, 1 out)
+ drop 
+ jmp L92

@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSpVal: 96)
+push unk2 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,20,4,64) (pushFromPSp: 32)
+push unk3 ; (unknown)  (pushImm: 252,253,254,255,256,257,258,259,260,261) (pushFromFSp: 4,8)
+push unk4 ; (unknown)  (pushImmf: 0,8)
 syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -91,9 +91,40 @@ __int64 __fastcall YS::LIMIT::motion_start(YS::LIMIT_1 *const this, YS::OBJ_114 
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\beast\limi.bdscript
+limit\donald\limi.bdscript
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
+limit\donald_wi\limi.bdscript
+limit\goofy\limi.bdscript
+limit\goofy2\limi.bdscript
+limit\goofy2_wi\limi.bdscript
+limit\goofy_wi\limi.bdscript
+limit\jack\limi.bdscript
+limit\mulan\limi.bdscript
+limit\riku\limi.bdscript
+limit\simba\limi.bdscript
+limit\sparrow\limi.bdscript
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
+limit\trinity_zz\limi.bdscript
+limit\tron\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L758:
+ pushFromPSp 48
+ pushImm 64
+ add 
+ pushFromFSp 180
+ memcpy 0
+ pushFromPWp W0
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 254
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 

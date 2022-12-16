@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (add: )
 syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
 ---
 ---
@@ -81,9 +81,21 @@ void __fastcall YS::OBJ::change_action(YS::OBJ_125 *const this, YS::ACTION::ID i
 ---
 ---
 appears in:
-
+obj\B_AL020\b_al.bdscript ((B) Jafar (Djinn))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_AL020\b_al.bdscript
+L3396:
+ pushFromPWp W0
+ pushImm 176
+ add 
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromPWp W0
+ pushImm 176
+ add 
+ syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
+ ret 

@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (fetchValue: 0)
+push unk2 ; (unknown)  (pushFromPAi: L3167 ; ___ai '00' (L3167),L3182 ; ___ai '10' (L3182),L3379 ; ___ai '00' (L3379),L3411 ; ___ai '10' (L3411),L4499 ; ___ai '00' (L4499),...)
+push unk3 ; (unknown)  (pushImmf: 0,500)
+push unk4 ; (unknown)  (pushImm: 0,1)
 syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
 ---
 ---
@@ -104,9 +104,29 @@ void __fastcall YS::LIMIT::camera_start(YS::LIMIT_1 *const this, const char *lab
 ---
 ---
 appears in:
-
+limit\aladdin\limi.bdscript
+limit\auron\limi.bdscript
+limit\beast\limi.bdscript
+limit\jack\limi.bdscript
+limit\mulan\limi.bdscript
+limit\riku\limi.bdscript
+limit\simba\limi.bdscript
+limit\sparrow\limi.bdscript
+limit\trinity\limi.bdscript
+limit\trinity_wi\limi.bdscript
+limit\tron\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\aladdin\limi.bdscript
+L3043:
+ popToSp 0
+ pushFromFSpVal 152
+ jz L3065
+ pushFromFSp 0
+ fetchValue 0
+ pushFromPAi L6867 ; ___ai '10' (L6867)
+ pushImmf 500
+ pushImm 1
+ syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
+ jmp L3079

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 10)
+push unk2 ; (unknown)  (pushImm: 0)
 syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
 ---
 ---
@@ -49,9 +49,14 @@ void __fastcall YS::MISSION::SetComboCounterWarningSe(int num, int id)
 ---
 ---
 appears in:
-
+msn\HB09_SKATE_01\hb09.bdscript
+msn\TT06_PERFORM_02\tt06.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\HB09_SKATE_01\hb09.bdscript
+L221:
+ pushImm 10
+ pushImm 0
+ syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
+ ret 

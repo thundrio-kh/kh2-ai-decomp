@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0,4)
 syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
 ---
 ---
@@ -89,9 +89,27 @@ void __fastcall YS::OBJ::fly_to_jump(YS::OBJ_133 *const this)
 ---
 ---
 appears in:
-
+limit\riku\limi.bdscript
+limit\simba\limi.bdscript
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
+obj\M_EX670\m_ex.bdscript ((M) Living Bone)
+obj\N_EX600_BTL\n_ex.bdscript ((N) Setzer (BTL) (EX))
+obj\N_HB630\n_hb.bdscript ((N) Sephiroth (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\riku\limi.bdscript
+L3114:
+ pushFromFSp 4
+ syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
+ jz L3140
+ pushFromFSp 4
+ syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
+ pushFromFSp 4
+ pushImm 4
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 5
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+ jmp L3140

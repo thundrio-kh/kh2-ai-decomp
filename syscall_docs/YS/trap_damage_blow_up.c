@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
 syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -36,9 +36,17 @@ void __fastcall YS::trap_damage_blow_up(BD_VALUE_19 *args)
 ---
 ---
 appears in:
-
+obj\F_TT020\f_tt.bdscript ((F) Juggling ball (TT))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_TT020\f_tt.bdscript
+L116:
+ pushFromFSp 4
+ syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
+ pushImmf 0.1
+ mulf 
+ pushImmf 3
+ addf 
+ popToSp 8
+ jmp L165

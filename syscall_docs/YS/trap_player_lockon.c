@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 8)
+push unk2 ; (unknown)  (pushImm: 1)
+push unk3 ; (unknown)  (pushFromPWp: W16)
 syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
 ---
 ---
@@ -261,9 +261,16 @@ void __fastcall YS::LOCKON::start(YS::LOCKON_6 *const this, __int64 mode, YS::TA
 ---
 ---
 appears in:
-
+msn\TT04_MS107\tt04.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TT04_MS107\tt04.bdscript
+L63:
+ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+ memcpyToSp 16, 8
+ pushFromPSp 8
+ pushImm 1
+ pushFromPWp W16
+ syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
+ jmp L79

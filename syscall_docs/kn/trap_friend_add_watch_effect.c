@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 0,60)
+push unk2 ; (unknown)  (pushFromFSp: 52) (pushFromFSpVal: 56)
 syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
 ---
 ---
@@ -227,9 +227,26 @@ LABEL_13:
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
+obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L2856:
+ pushFromPSpVal 0
+ pushImmf 6
+ gosub 16, L3797
+ jz L3043
+ pushFromPSpVal 0
+ pushImm 5
+ pushImm 1
+ pushImm 0
+ syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
+ popToSp 52
+ pushFromPSpVal 0
+ pushFromFSp 52
+ syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
+ pushImmf 30
+ popToSp 48

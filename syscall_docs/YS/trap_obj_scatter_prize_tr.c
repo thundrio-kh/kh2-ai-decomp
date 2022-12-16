@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushImm: 10,4,5)
 syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
 ---
 ---
@@ -99,9 +99,20 @@ void __fastcall YS::PRIZE_TR::AppearNum(const kn::FVector *pos, int num)
 ---
 ---
 appears in:
-
+obj\F_TR020\f_tr.bdscript ((F) Energy core’s cube (TR))
+obj\M_EX610\m_ex.bdscript ((M) Strafer)
+obj\M_EX610_RAW\m_ex.bdscript ((M) Strafer (RAW))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_TR020\f_tr.bdscript
+L636:
+ gosub 4, L675
+ pushFromFSpVal 120
+ jz L656
+ pushImm 0
+ popToSpVal 120
+ pushFromFSp 0
+ pushImm 4
+ syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
+ jmp L656

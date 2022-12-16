@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 26 ; trap_peterpan_accept_notify_player_target (1 in, 0 out)
 ---
 ---
@@ -114,9 +114,17 @@ void __fastcall kn::Peterpan::acceptNotifyPlayerTarget(kn::Peterpan *const this)
 ---
 ---
 appears in:
-
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX330\p_ex.bdscript
+L6806:
+ popToSp 0
+ pushImm 0
+ popToSpVal 28
+ pushImm 0
+ popToSpVal 32
+ pushFromFSp 0
+ syscall 10, 26 ; trap_peterpan_accept_notify_player_target (1 in, 0 out)
+ ret 

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 7)
+push unk2 ; (unknown)  (pushImm: 525,526)
 syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
 ---
 ---
@@ -97,9 +97,14 @@ void __fastcall YS::FORMRAM::set_ability(YS::FORMRAM *const this, __int64 item)
 ---
 ---
 appears in:
-
+ard\lk02\lk_g.bdscript
+ard\lk03\lk_g.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\lk02\lk_g.bdscript
+TR2:
+ pushImm 7
+ pushImm 525
+ syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
+ ret 

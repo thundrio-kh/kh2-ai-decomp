@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 12)
+push unk2 ; (unknown)  (fetchValue: 48)
+push unk3 ; (unknown)  (pushImmf: 120)
+push unk4 ; (unknown)  (pushImmf: 60)
 syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
 ---
 ---
@@ -254,9 +254,34 @@ void __fastcall kn::ChickenLittle::get_nearest_target(kn::ChickenLittle *const t
 ---
 ---
 appears in:
-
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX350\p_ex.bdscript
+L584:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 8
+ pushFromFSp 4
+ pushFromFSp 0
+ pushImm 0
+ gosub 8, L636
+ popToSp 12
+ pushFromFSp 12
+ pushImm 256
+ add 
+ pushImm 1
+ memcpy 0
+ pushFromPSp 16
+ pushFromFSp 8
+ fetchValue 4
+ gosub 12, L2852
+ pushFromPSp 16
+ pushFromFSp 12
+ fetchValue 48
+ pushImmf 120
+ pushImmf 60
+ syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
+ ret 

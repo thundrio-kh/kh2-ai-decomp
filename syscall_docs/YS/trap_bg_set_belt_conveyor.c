@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 16)
 syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
 ---
 ---
@@ -50,9 +50,28 @@ TASK_0 *__fastcall FIELD::CreateTask(int id, int priority, TASK_FUNC entry_func)
 ---
 ---
 appears in:
-
+obj\F_HB110\f_hb.bdscript ((F) ??? (HB))
+obj\F_NM140\f_nm.bdscript ((F) ??? (NM))
+obj\F_NM150\f_nm.bdscript ((F) ??? (NM))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_HB110\f_hb.bdscript
+L2054:
+ popToSp 0
+ pushFromPSp 16
+ pushFromFSp 0
+ negf 
+ pushImmf 0
+ pushImmf 0
+ pushImmf 1
+ gosub 12, L2092
+ pushFromPSp 16
+ pushImmf 1.570796
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
+ ret 

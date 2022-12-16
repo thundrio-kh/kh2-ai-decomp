@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSp: 4)
 syscall 2, 0 ; trap_enemy_exec_damage (2 in, 0 out)
 ---
 ---
@@ -84,9 +84,15 @@ void __fastcall YS::trap_enemy_exec_damage(BD_VALUE_19 *args)
 ---
 ---
 appears in:
-
+obj\F_MU030\f_mu.bdscript ((F) ??? (MU))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_MU030\f_mu.bdscript
+L31:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ syscall 2, 0 ; trap_enemy_exec_damage (2 in, 0 out)
+ ret 

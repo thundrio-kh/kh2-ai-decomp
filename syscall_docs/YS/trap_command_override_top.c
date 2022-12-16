@@ -13,11 +13,11 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 152,80) (gosub: 4, L2473,4, L2481,4, L2736) (pushFromFSp: 20) (pushImm: 104,302,672)
+push unk2 ; (unknown)  (pushImm: 104,12,302,60,672) (pushFromPWp: W176,W288) (pushFromFSp: 16)
+push unk3 ; (unknown)  (add: ) (pushImm: 104,3,302,672) (pushFromFSp: 12)
+push unk4 ; (unknown)  (fetchValue: 0,4) (gosub: 4, L2473,4, L2481,4, L2736) (pushFromFSp: 8) (pushImm: 104,302,672)
+push unk5 ; (unknown)  (pushFromPSpVal: 0) (pushFromPWp: W0,W176,W288) (pushFromFSp: 0) (pushFromPSp: 16)
 syscall 1, 237 ; trap_command_override_top (5 in, 0 out)
 ---
 ---
@@ -140,9 +140,33 @@ void __fastcall YS::PLAYER_COMMAND::override_top(YS::PLAYER_COMMAND_12 *const th
 ---
 ---
 appears in:
-
+obj\B_EX150\b_ex.bdscript ((B) Luxord (WORKS! can’t be killed, or paused))
+obj\B_EX150_LV99\b_ex.bdscript ((B99) Luxord (Limit Cut))
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
+obj\B_EX390\b_ex.bdscript ((B) Hooded Roxas)
+obj\B_EX420\b_ex.bdscript ((B) Lingering Will)
+obj\M_EX910\m_ex.bdscript ((M) Samurai)
+obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX150\b_ex.bdscript
+L958:
+ popToSp 0
+ pushFromPSpVal 152
+ fetchValue 4
+ pushFromPSpVal 152
+ pushImm 20
+ add 
+ fetchValue 4
+ pushFromPSpVal 152
+ pushImm 40
+ add 
+ fetchValue 4
+ pushFromPSpVal 152
+ pushImm 60
+ add 
+ fetchValue 4
+ pushFromPSpVal 0
+ syscall 1, 237 ; trap_command_override_top (5 in, 0 out)
+ ret 

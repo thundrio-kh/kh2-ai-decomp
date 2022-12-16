@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0,1)
 syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
 ---
 ---
@@ -129,9 +129,13 @@ LABEL_5:
 ---
 ---
 appears in:
-
+obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX370\b_ex.bdscript
+L12020:
+ popToSp 0
+ pushImm 0
+ syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
+ ret 

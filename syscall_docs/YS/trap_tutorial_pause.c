@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 16121)
 syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
 ---
 ---
@@ -321,9 +321,17 @@ void __fastcall menu::Widget::link(menu::Widget_2 *const this, menu::Widget_2 *c
 ---
 ---
 appears in:
-
+msn\TT04_MS107\tt04.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\TT04_MS107\tt04.bdscript
+L81:
+ pushImmf 12
+ gosub 4, L99
+ pushImm 16121
+ syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
+ pushFromPWp W0
+ pushImm -1
+ gosub 4, L121
+ ret 

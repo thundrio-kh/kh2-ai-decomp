@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0)
+push unk2 ; (unknown)  (pushFromPSp: 16,48)
+push unk3 ; (unknown)  (pushImmf: 30)
+push unk4 ; (unknown)  (pushImmf: 0,0.98)
 syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
 ---
 ---
@@ -117,9 +117,27 @@ void __fastcall YS::OBJ::change_action(YS::OBJ_125 *const this, YS::ACTION::ID i
 ---
 ---
 appears in:
-
+obj\M_EX530\m_ex.bdscript ((M) Bookmaster)
+obj\M_EX530_HB\m_ex.bdscript ((M) Runemaster)
+obj\M_EX530_TR\m_ex.bdscript ((M) Bookmaster (TR))
+obj\P_LK030\p_lk.bdscript ((P) Goofy (LK))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX530\m_ex.bdscript
+L8286:
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushImmf 150
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImmf 30
+ pushImmf 0.98
+ syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+ pushImmf 40
+ gosub 12, L1505

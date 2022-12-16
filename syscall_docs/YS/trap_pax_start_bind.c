@@ -13,11 +13,11 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 16) (pushImm: 1) (fetchValue: 16)
+push unk2 ; (unknown)  (pushFromFSp: 0,16,20,4,8) (pushImm: 10,11,12,2,3,4,8,9) (add: )
+push unk3 ; (unknown)  (pushFromPSpVal: 0) (pushFromPSp: 16,32) (pushFromFSp: 4)
+push unk4 ; (unknown)  (pushImm: 0,1)
+push unk5 ; (unknown)  (pushImm: 0)
 syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -290,9 +290,58 @@ _noname_:
 ---
 ---
 appears in:
-
+magic\blizzard1\bliz.bdscript
+magic\BLIZZARD_1\bliz.bdscript
+magic\BLIZZARD_1lk\bliz.bdscript
+magic\BLIZZARD_2\bliz.bdscript
+magic\BLIZZARD_2lk\bliz.bdscript
+magic\BLIZZARD_3\bliz.bdscript
+magic\BLIZZARD_3lk\bliz.bdscript
+magic\cure1\cure.bdscript
+magic\CURE_1\cure.bdscript
+magic\CURE_1lk\cure.bdscript
+magic\CURE_2\cure.bdscript
+magic\CURE_2lk\cure.bdscript
+magic\CURE_3\cure.bdscript
+magic\CURE_3lk\cure.bdscript
+magic\fire1\fire.bdscript
+magic\FIRE_1\fire.bdscript
+magic\FIRE_1lk\fire.bdscript
+magic\FIRE_2\fire.bdscript
+magic\FIRE_2lk\fire.bdscript
+magic\FIRE_3\fire.bdscript
+magic\FIRE_3lk\fire.bdscript
+magic\LK_BLIZZARD_1\bliz.bdscript
+magic\magnet1\magn.bdscript
+magic\MAGNET_1\magn.bdscript
+magic\MAGNET_1lk\magn.bdscript
+magic\MAGNET_2\magn.bdscript
+magic\MAGNET_2lk\magn.bdscript
+magic\MAGNET_3\magn.bdscript
+magic\MAGNET_3lk\magn.bdscript
+magic\reflect1\refl.bdscript
+magic\REFLECT_1\refl.bdscript
+magic\REFLECT_1lk\refl.bdscript
+magic\REFLECT_2\refl.bdscript
+magic\REFLECT_2lk\refl.bdscript
+magic\REFLECT_3\refl.bdscript
+magic\REFLECT_3lk\refl.bdscript
+magic\thunder1\thun.bdscript
+magic\THUNDER_1\thun.bdscript
+magic\THUNDER_1lk\thun.bdscript
+magic\THUNDER_2\thun.bdscript
+magic\THUNDER_2lk\thun.bdscript
+magic\THUNDER_3\thun.bdscript
+magic\THUNDER_3lk\thun.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from magic\blizzard1\bliz.bdscript
+L362:
+ pushFromFSpVal 16
+ pushFromFSp 4
+ pushFromPSpVal 0
+ pushImm 1
+ pushImm 0
+ syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
+ ret 

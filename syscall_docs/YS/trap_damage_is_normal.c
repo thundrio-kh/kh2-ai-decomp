@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
 syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -50,9 +50,20 @@ bool __fastcall YS::DAMAGE::is_normal(const YS::DAMAGE_5 *const this)
 ---
 ---
 appears in:
-
+obj\F_CA060\f_ca.bdscript ((F) ??? (CA))
+obj\F_CA060_MEDAL\f_ca.bdscript ((F) ??? - Attackable floor? (MEDAL) (CA))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_CA060\f_ca.bdscript
+L31:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
+ eqz 
+ dup 
+ jnz L48
+ pushFromFSp 4
+ syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
+ neqzv 

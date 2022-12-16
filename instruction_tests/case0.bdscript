@@ -1,0 +1,982 @@
+---
+WorkSize: 0
+StackSize: 512
+TempSize: 512
+Triggers:
+- Key: 10001
+  Addr: test10001
+- Key: 10002
+  Addr: test10002
+- Key: 10003
+  Addr: test10003
+- Key: 10004
+  Addr: test10004
+- Key: 10005
+  Addr: test10005
+- Key: 10006
+  Addr: test10006
+- Key: 10007
+  Addr: test10007
+- Key: 10008
+  Addr: test10008
+- Key: 10009
+  Addr: test10009
+- Key: 10010
+  Addr: test10010
+- Key: 10011
+  Addr: test10011
+- Key: 10012
+  Addr: test10012
+- Key: 10013
+  Addr: test10013
+- Key: 10014
+  Addr: test10014
+- Key: 10015
+  Addr: test10015
+- Key: 10016
+  Addr: test10016
+- Key: 10017
+  Addr: test10017
+- Key: 10018
+  Addr: test10018
+- Key: 10019
+  Addr: test10019
+- Key: 10020
+  Addr: test10020
+- Key: 10021
+  Addr: test10021
+- Key: 10022
+  Addr: test10022
+- Key: 10023
+  Addr: test10023
+- Key: 10024
+  Addr: test10024
+- Key: 10025
+  Addr: test10025
+- Key: 10026
+  Addr: test10026
+- Key: 10027
+  Addr: test10027
+- Key: 10028
+  Addr: test10028
+- Key: 10029
+  Addr: test10029
+- Key: 10030
+  Addr: test10030
+- Key: 10031
+  Addr: test10031
+- Key: 10032
+  Addr: test10032
+- Key: 10033
+  Addr: test10033
+- Key: 10034
+  Addr: test10034
+- Key: 10035
+  Addr: test10035
+- Key: 10036
+  Addr: test10036
+- Key: 10037
+  Addr: test10037
+- Key: 10038
+  Addr: test10038
+- Key: 10039
+  Addr: test10039
+- Key: 10040
+  Addr: test10040
+- Key: 10041
+  Addr: test10041
+- Key: 10042
+  Addr: test10042
+- Key: 10043
+  Addr: test10043
+- Key: 10044
+  Addr: test10044
+- Key: 10045
+  Addr: test10045
+- Key: 10046
+  Addr: test10046
+- Key: 10047
+  Addr: test10047
+- Key: 10048
+  Addr: test10048
+- Key: 10049
+  Addr: test10049
+- Key: 10050
+  Addr: test10050
+- Key: 10051
+  Addr: test10051
+- Key: 10052
+  Addr: test10052
+- Key: 10053
+  Addr: test10053
+- Key: 10054
+  Addr: test10054
+- Key: 10055
+  Addr: test10055
+- Key: 10056
+  Addr: test10056
+- Key: 10057
+  Addr: test10057
+- Key: 10058
+  Addr: test10058
+- Key: 10059
+  Addr: test10059
+Name: case1
+
+---
+ section .text
+test10001:
+pass:
+ ret
+test10002:
+fail:
+ halt
+test10003:
+ exit
+
+test10004:
+ pushImm 1
+ jnz pass
+ jmp fail
+
+test10005:
+ pushImm 0
+ jz pass
+ jmp fail
+
+test10006:
+ pushImm 1
+ pushImm 1
+ sub ; 1 - 1 → 0
+ jz pass
+ jmp fail
+
+test10007:
+ pushImm 1
+ pushImm 2
+ sub ; 1 - 2 → -1
+ jnz pass
+ jmp fail
+
+test10008:
+ pushImm -1
+ ;     inv(x) = ~x
+ inv ; inv(-1) → 0
+ jz pass
+ jmp fail
+
+test10009:
+ pushImm 0
+ ;     inv(x) = ~x
+ inv ; inv(0) → -1
+ jnz pass
+ jmp fail
+
+test10010:
+ pushImm 1
+ ;     neg(x) = -x
+ neg ; neg(1) → -1
+ pushImm 1
+ add ; -1 + 1 → 0
+ jz pass
+ jmp fail
+
+test10011:
+ pushImm 0
+ ;     neg(x) = -x
+ neg ; neg(0) → 0
+ jz pass
+ jmp fail
+
+test10012:
+ pushImm 100
+ ;     neg(x) = -x
+ neg ; neg(100) → -100
+ pushImm 101
+ add ; -100 + 101 → 1
+ jnz pass
+ jmp fail
+
+test10013:
+ pushImm 2
+ cfti ; TODO this is citf
+ pushImmf 2
+ sub
+ jz pass
+ jmp fail
+
+test10014:
+ pushImmf 2
+ citf ; TODO this is cfti
+ pushImm 2
+ sub
+ jz pass
+ jmp fail
+
+test10015:
+ pushImm 12345
+ syscall 0, 0
+ jmp pass
+
+test10016:
+ pushImmf 124
+ syscall 0, 1
+ jmp pass
+
+test10017:
+ pushFromPAi Test
+ syscall 0, 2
+ jmp pass
+
+Test:
+ db 'test',0
+Space:
+ db ' ',0
+
+test10018:
+ pushImm 0
+ ;     eqz(x) = !x
+ eqz ; eqz(0) → 1
+ jz fail
+
+ pushImm 1
+ eqz ; eqz(1) → 0
+ jnz fail
+ 
+ pushImm 2
+ eqz ; eqz(2) → 0
+ jnz fail
+
+ pushImm -1
+ eqz ; eqz(-1) → 0
+ jnz fail
+
+ pushImm -2
+ eqz ; eqz(-2) → 0
+ jnz fail
+
+ jmp pass
+
+test10019:
+ pushImm 0
+ abs ; abs(0) → 0
+ jnz fail
+
+ pushImm 7
+ abs ; abs(7) → 7
+ pushImm 7
+ sub ; 7 - 7 → 0
+ jnz fail
+
+ pushImm -5
+ abs ; abs(-5) → 5
+ pushImm 5
+ sub ; 5 - 5 → 0
+ jnz fail
+
+ jmp pass
+
+test10020:
+ pushImm 0
+ ;     msb(x) = x < 0
+ msb ; msb(0) → 0
+ jnz fail
+
+ pushImm 1
+ msb ; msb(1) → 0
+ jnz fail
+
+ pushImm 2
+ msb ; msb(2) → 0
+ jnz fail
+
+ pushImm -1
+ msb ; msb(-1) → 1
+ jz fail
+
+ pushImm -2
+ msb ; msb(-2) → 1
+ jz fail
+
+ jmp pass
+
+test10021:
+ pushImm -2
+ ;      info(x) = x < 1
+ info ; info(-2) → 1
+ jz fail
+
+ pushImm -1
+ info ; info(-1) → 1
+ jz fail
+
+ pushImm 0
+ info ; info(0) → 1
+ jz fail
+
+ pushImm 1
+ info ; info(1) → 0
+ jnz fail
+
+ pushImm 2
+ info ; info(2) → 0
+ jnz fail
+
+ jmp pass
+
+test10022:
+ pushImm -2
+ ;      neqz(x) = !!x
+ neqz ; neqz(-2) → 1
+ jz fail
+
+ pushImm -1
+ neqz ; neqz(-1) → 1
+ jz fail
+
+ pushImm 2
+ neqz ; neqz(2) → 1
+ jz fail
+
+ pushImm 1
+ neqz ; neqz(1) → 1
+ jz fail
+
+ pushImm 0
+ neqz ; neqz(0) → 0
+ jnz fail
+
+ jmp pass
+
+test10023:
+ pushImm 0
+ ;      msbi(x) = 0 <= x
+ msbi ; msbi(0) → 1
+ jz fail
+
+ pushImm 1
+ msbi ; msbi(1) → 1
+ jz fail
+
+ pushImm 2
+ msbi ; msbi(2) → 1
+ jz fail
+
+ pushImm -1
+ msbi ; msbi(-1) → 0
+ jnz fail
+
+ pushImm -2
+ msbi ; msbi(-2) → 0
+ jnz fail
+
+ jmp pass
+
+test10024:
+ pushImm -2
+ ;      ipos(x) = 0 < x
+ ipos ; ipos(-2) → 0
+ jnz fail
+
+ pushImm -1
+ ipos ; ipos(-1) → 0
+ jnz fail
+
+ pushImm 0
+ ipos ; ipos(0) → 0
+ jnz fail
+
+ pushImm 1
+ ipos ; ipos(1) → 1
+ jz fail
+
+ pushImm 2
+ ipos ; ipos(2) → 1
+ jz fail
+
+ jmp pass
+
+test10025:
+ pushImmf -120.0
+ negf ; negf(-120.0) → 120.0
+ pushImmf 120.0
+ subf ; 120.0 - 120.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ pushImmf 120.0
+ negf ; negf(120.0) → -120.0
+ pushImmf 120.0
+ addf ; -120.0 + 120.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10026:
+ pushImmf -120.0
+ absf ; absf(-120.0) → 120.0
+ pushImmf 120.0
+ subf ; 120.0 - 120.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ pushImmf 120.0
+ absf ; absf(120.0) → 120.0
+ pushImmf 120.0
+ subf ; 120.0 - 120.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10027:
+ pushImmf -2.0
+ ;       infzf(x) = x < 0.0
+ infzf ; infzf(-2.0) → 1
+ jz fail
+
+ pushImmf -1.0
+ infzf ; infzf(-1.0) → 1
+ jz fail
+
+ pushImmf 0.0
+ infzf ; infzf(0.0) → 0
+ jnz fail
+
+ pushImmf 1.0
+ infzf ; infzf(1.0) → 0
+ jnz fail
+
+ pushImmf 2.0
+ infzf ; infzf(2.0) → 0
+ jnz fail
+
+ jmp pass
+
+test10028:
+ pushImmf -2.0
+ ;       infoezf(x) = x <= 0.0
+ infoezf ; infoezf(-2.0) → 1
+ jz fail
+
+ pushImmf -1.0
+ infoezf ; infoezf(-1.0) → 1
+ jz fail
+
+ pushImmf 0.0
+ infoezf ; infoezf(0.0) → 1
+ jz fail
+
+ pushImmf 1.0
+ infoezf ; infoezf(1.0) → 0
+ jnz fail
+
+ pushImmf 2.0
+ infoezf ; infoezf(2.0) → 0
+ jnz fail
+
+ jmp pass
+
+test10029:
+ pushImmf -1.0
+ ;      eqzf(x) = x == 0.0
+ eqzf ; eqzf(-1.0) → 0
+ jnz fail
+
+ pushImmf 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ pushImmf 1.0
+ eqzf ; eqzf(1.0) → 0
+ jnz fail
+
+ jmp pass
+
+test10030:
+ pushImmf -1.0
+ ;       neqzf(x) = x != 0.0
+ neqzf ; neqzf(-1.0) → 1
+ jz fail
+
+ pushImmf 0.0
+ neqzf ; neqzf(0.0) → 0
+ jnz fail
+
+ pushImmf 1.0
+ neqzf ; neqzf(1.0) → 1
+ jz fail
+
+ jmp pass
+
+test10031:
+ pushImmf -1.0
+ ;         supoezf(x) = 0 <= x
+ supoezf ; supoezf(-1.0) → 0
+ jnz fail
+
+ pushImmf 0.0
+ supoezf ; supoezf(0.0) → 1
+ jz fail
+
+ pushImmf 1.0
+ supoezf ; supoezf(1.0) → 1
+ jz fail
+
+ jmp pass
+
+test10032:
+ pushImmf -1.0
+ ;       supzf(x) = 0 < x
+ supzf ; supzf(-1.0) → 0
+ jnz fail
+
+ pushImmf 0.0
+ supzf ; supzf(0.0) → 0
+ jnz fail
+
+ pushImmf 1.0
+ supzf ; supzf(1.0) → 1
+ jz fail
+
+ jmp pass
+
+test10033:
+ pushImm 123
+ pushImm -123
+ add ; 123 + -123 → 0
+ jnz fail
+ jmp pass
+
+test10034:
+ pushImm 123
+ pushImm 123
+ sub ; 123 - 123 → 0
+ jnz fail
+ jmp pass
+
+test10035:
+ pushImm 12
+ pushImm 3
+ mul ; 12 x 3 → 36
+ pushImm 36
+ sub ; 36 - 36 → 0
+ jnz fail
+ jmp pass
+
+test10036:
+ pushImm 12
+ pushImm 3
+ div ; 12 ÷ 3 → 4
+ pushImm 4
+ sub ; 4 - 4 → 0
+ jnz fail
+ jmp pass
+
+test10037:
+ pushImm 1999
+ pushImm 123
+ mod ; 1999 ÷ 123 → 16 mod 31
+ pushImm 31
+ sub ; 31 - 31 → 0
+ jnz fail
+ jmp pass
+
+test10038:
+ pushImm 1
+ pushImm 2
+ and ; 1 and 2 → 0
+ jnz fail
+
+ pushImm 8
+ pushImm 8
+ and ; 8 and 8 → 8
+ jz fail
+
+ pushImm 0
+ pushImm 0
+ and ; 0 and 0 → 0
+ jnz fail
+
+ jmp pass
+
+test10039:
+ pushImm 1
+ pushImm 2
+ or ; 1 or 2 → 3
+ jz fail
+
+ pushImm 0
+ pushImm 0
+ or ; 0 or 0 → 0
+ jnz fail
+
+ jmp pass
+
+test10040:
+ pushImm 1
+ pushImm 1
+ xor ; 1 xor 1 → 0
+ jnz fail
+
+ pushImm 0
+ pushImm 0
+ xor ; 0 xor 0 → 0
+ jnz fail
+
+ pushImm 0
+ pushImm 1
+ xor ; 0 xor 1 → 1
+ jz fail
+
+ jmp pass
+
+test10041:
+ ;     sll(x, y) = x << y
+ pushImm 0
+ pushImm 0
+ sll ; sll(0, 0) → 0
+ jnz fail
+
+ pushImm 0
+ pushImm 1
+ sll ; sll(0, 1) → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 0
+ sll ; sll(1, 0) → 1
+ pushImm 1
+ sub ; 1 - 1 → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 1
+ sll ; sll(1, 1) → 2
+ pushImm 2
+ sub ; 2 - 2 → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 2
+ sll ; sll(1, 2) → 4
+ pushImm 4
+ sub ; 4 - 4 → 0
+ jnz fail
+
+ jmp pass
+
+test10042:
+ ;     sra(x, y) = x >> y
+ pushImm 0
+ pushImm 0
+ sra ; sra(0, 0) → 0
+ jnz fail
+
+ pushImm 0
+ pushImm 1
+ sra ; sra(0, 1) → 0
+ jnz fail
+
+ pushImm 256
+ pushImm 0
+ sra ; sra(256, 0) → 256
+ pushImm 256
+ sub ; 256 - 256 → 0
+ jnz fail
+
+ pushImm 256
+ pushImm 1
+ sra ; sra(256, 1) → 128
+ pushImm 128
+ sub ; 128 - 128 → 0
+ jnz fail
+
+ pushImm 256
+ pushImm 2
+ sra ; sra(256, 2) → 64
+ pushImm 64
+ sub ; 64 - 64 → 0
+ jnz fail
+
+ jmp pass
+
+test10043:
+ ;      eqzv(x, y) = x && y
+ pushImm 0
+ pushImm 0
+ eqzv ; eqzv(0, 0) → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 0
+ eqzv ; eqzv(1, 0) → 0
+ jnz fail
+
+ pushImm 0
+ pushImm 1
+ eqzv ; eqzv(0, 1) → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 1
+ eqzv ; eqzv(1, 1) → 1
+ jz fail
+
+ jmp pass
+
+test10044:
+ ;       neqzv(x, y) = x || y
+ pushImm 0
+ pushImm 0
+ neqzv ; neqzv(0, 0) → 0
+ jnz fail
+
+ pushImm 1
+ pushImm 0
+ neqzv ; neqzv(1, 0) → 1
+ jz fail
+
+ pushImm 0
+ pushImm 1
+ neqzv ; neqzv(0, 1) → 1
+ jz fail
+
+ pushImm 1
+ pushImm 1
+ neqzv ; neqzv(1, 1) → 1
+ jz fail
+
+ jmp pass
+
+test10045:
+ pushImmf 2.0
+ pushImmf 4.0
+ addf ; 2.0 + 4.0 → 6.0
+ pushImmf 6.0
+ subf ; 6.0 - 6.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10046:
+ pushImmf 2.0
+ pushImmf 4.0
+ mulf ; 2.0 x 4.0 → 8.0f
+ pushImmf 8.0
+ subf ; 8.0 - 8.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10047:
+ pushImmf 7.0
+ pushImmf 2.0
+ divf ; 7.0 ÷ 2.0 → 3.5
+ pushImmf 3.5
+ subf ; 3.5 - 3.5 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10048:
+ pushImmf 7.0
+ pushImmf 2.0
+ modf ; 7.0 ÷ 2.0 → 3.0 mod 1.0
+ pushImmf 1.0
+ subf ; 1.0 - 1.0 → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ jmp pass
+
+test10049:
+ pushImm 123
+ pushImm 444
+ drop
+ pushImm 123
+ sub ; 123 - 123 → 0
+ jnz fail
+
+ jmp pass
+
+test10050:
+ pushImm 12345
+ dup
+ sub ; 12345 - 12345 → 0
+ jnz fail
+
+ jmp pass
+
+test10051:
+ pushImmf 0
+ sin ; sin(0.0) → 0.0
+ eqzf ; eqzf(0.0) → 1
+ jz fail
+
+ pushImmf 1.5707963267948966192313216916398
+ sin ; sin(1.5707963267948966192313216916398) → near 1.0
+ pushImmf 1.0
+ subf ; near 1.0 - 1.0 → near 0.0±epsilon
+ absf ; near 0.0±epsilon → 0.0 ~ epsilon
+ pushImmf 0.00001
+ subf ; (0.0 ~ epsilon) - 0.00001 → around -0.00001
+ supoezf ; supoezf(around -0.00001) → 0
+ jnz fail
+
+ pushImmf 3.1415926535897932384626433832795
+ sin ; sin(3.1415926535897932384626433832795) → near 0.0
+ pushImmf 0.0
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ jmp pass
+
+test10052:
+ pushImmf 0
+ cos ; cos(0.0) → 1.0
+ pushImmf 1.0
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ pushImmf 1.5707963267948966192313216916398
+ cos ; cos(1.5707963267948966192313216916398) → near 0.0
+ pushImmf 0.0
+ subf ; near 0.0 - 0.0 → near 0.0±epsilon
+ absf ; near 0.0±epsilon → 0.0 ~ epsilon
+ pushImmf 0.00001
+ subf ; (0.0 ~ epsilon) - 0.00001 → around -0.00001
+ supoezf ; supoezf(around -0.00001) → 0
+ jnz fail
+
+ pushImmf 3.1415926535897932384626433832795
+ cos ; cos(3.1415926535897932384626433832795) → near -1.0
+ pushImmf -1.0
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ jmp pass
+
+test10053:
+ pushImmf 0
+ degr ; degr(0) → 0
+ pushImmf 0.0
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ pushImmf 90
+ degr ; degr(90) → pi * 0.5
+ dup
+ syscall 0,1
+ pushImmf 1.5707963267948966
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ pushImmf 180
+ degr ; degr(180) → -pi
+ pushImmf -3.141592653589793
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ pushImmf 270
+ degr ; degr(270) → -pi * 0.5
+ pushImmf -1.5707963267948966
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ pushImmf 360
+ degr ; degr(360) → 0
+ pushImmf 0
+ subf
+ absf
+ pushImmf 0.00001
+ subf
+ supoezf
+ jnz fail
+
+ jmp pass
+
+test10054:
+ pushImmf 3.141592653589793
+ radd ; radd(pi) → 180
+ pushImmf 180
+ subf
+ absf
+ pushImmf 0.01
+ subf
+ supoezf
+ jnz fail
+
+ jmp pass
+
+test10055:
+ pushImm 111 ; push to temp area
+ pushImm 222 ; push to temp area
+ gosub 4, adder ; allocate 16 bytes (8 bytes for system use) from stack area
+ ; gosub (currentRoutinesStackSize +2), subRoutine
+ ; test10055 uses no stack. So it can be 2. Less then 2 will cause buffer underflow.
+
+ pushImm 333
+ sub ; 333 - 333 → 0
+ jnz fail
+
+ jmp pass
+
+adder:
+ ; stackArea[-1] = return addr. 0 means call from outside of VM.
+ ; stackArea[-2] = allocated stack size
+
+ add ; operate upon temp area
+ ret ; move back allocated stack area and then return to caller
+
+test10056:
+ pushImm 111
+ pushImm 222
+ gosub32 4, subber
+
+ pushImm 111
+ add ; -111 +111  → 0
+ jnz fail
+
+ jmp pass
+
+subber:
+ sub
+ ret
+
+test10057:
+test10058:
+test10059:
+ jmp pass

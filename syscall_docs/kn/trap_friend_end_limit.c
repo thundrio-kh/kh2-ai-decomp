@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 20)
 syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
 ---
 ---
@@ -76,9 +76,28 @@ kn::FriendPersonality *__fastcall kn::Friend::getPersonality(kn::Friend_0 *const
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
+obj\P_AL010\p_al.bdscript ((P) Genie)
+obj\P_EX330\p_ex.bdscript ((P) Peter Pan)
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L1009:
+ popToSp 0
+ pushFromPSpVal 20
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ pushFromPSpVal 4
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ pushFromPSpVal 20
+ syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)
+ pushFromPSpVal 20
+ syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
+ ret 

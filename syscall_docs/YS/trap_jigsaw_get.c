@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0)
+push unk2 ; (unknown)  (pushImm: 4)
 syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
 ---
 ---
@@ -42,9 +42,13 @@ void __fastcall YS::JIGSAW::get(const YS::JIGSAW *const this)
 ---
 ---
 appears in:
-
+ard\tt28\jigs.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from ard\tt28\jigs.bdscript
+TR2:
+ pushImm 0
+ pushImm 4
+ syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
+ ret 

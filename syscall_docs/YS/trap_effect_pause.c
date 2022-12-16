@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 0,64)
+push unk2 ; (unknown)  (pushImm: 1) (pushFromFSp: 4)
 syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
 ---
 ---
@@ -117,9 +117,20 @@ void __fastcall ryj::EFFECT::stop(ryj::EFFECT_144 *const this, bool b, __int64 a
 ---
 ---
 appears in:
-
+obj\B_EX100\b_ex.bdscript ((B) Twilight Thorn)
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
+obj\F_HB020\f_hb.bdscript ((F) ??? (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX100\b_ex.bdscript
+L1827:
+ pushFromFSpVal 64
+ pushImm 1
+ syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
+ pushImmf 120
+ gosub 20, L1474
+ pushFromFSpVal 64
+ pushImmf 12
+ gosub 20, L1940

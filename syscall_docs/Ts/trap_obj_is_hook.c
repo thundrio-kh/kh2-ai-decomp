@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W0)
 syscall 6, 61 ; trap_obj_is_hook (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -84,9 +84,16 @@ void __fastcall Ts::trap_obj_is_hook(BD_VALUE_25 *args)
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L493:
+ dup 
+ jz L502
+ pushFromPWp W0
+ syscall 6, 61 ; trap_obj_is_hook (1 in, 1 out)
+ eqz 
+ eqzv 

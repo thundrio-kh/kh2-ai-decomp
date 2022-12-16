@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 80)
 syscall 7, 5 ; trap_flare_free (1 in, 0 out)
 ---
 ---
@@ -106,9 +106,16 @@ void __fastcall Ts::FLARE::Free(Ts::FLARE_0 *flare, __int64 a2, __int64 a3, __in
 ---
 ---
 appears in:
-
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald2\limi.bdscript
+L4019:
+ popToSp 0
+ pushFromFSpVal 80
+ syscall 7, 5 ; trap_flare_free (1 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L4008
+ ret 

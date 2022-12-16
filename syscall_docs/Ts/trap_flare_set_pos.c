@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSpVal: 80)
+push unk2 ; (unknown)  (pushFromFSp: 4)
 syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
 ---
 ---
@@ -91,9 +91,19 @@ void __fastcall Ts::FLARE::set_pos(Ts::FLARE_0 *const this, RCFVector pos)
 ---
 ---
 appears in:
-
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald2\limi.bdscript
+L3056:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L3073
+ pushFromFSpVal 80
+ pushFromFSp 4
+ syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
+ ret 

@@ -42,9 +42,15 @@ bool __cdecl Ts::FLARE::IsEmpty()
 ---
 ---
 appears in:
-
+limit\donald2\limi.bdscript
+limit\donald2_wi\limi.bdscript
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\donald2\limi.bdscript
+L7062:
+ syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
+ eqz 
+ jz L7070
+ halt 
+ jmp L7062

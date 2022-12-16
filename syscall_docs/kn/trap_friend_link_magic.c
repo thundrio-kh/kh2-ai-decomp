@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4)
+push unk2 ; (unknown)  (fetchValue: 52)
+push unk3 ; (unknown)  (pushFromFSp: 4)
 syscall 10, 58 ; trap_friend_link_magic (3 in, 0 out)
 ---
 ---
@@ -116,9 +116,18 @@ void __fastcall kn::Friend::linkMagic(kn::Friend_0 *const this, YS::MAGIC_7 *mag
 ---
 ---
 appears in:
-
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EH000\p_eh.bdscript
+L208:
+ popToSp 0
+ gosub 4, L228
+ popToSp 4
+ pushFromFSp 0
+ pushFromFSp 4
+ fetchValue 52
+ pushFromFSp 4
+ syscall 10, 58 ; trap_friend_link_magic (3 in, 0 out)

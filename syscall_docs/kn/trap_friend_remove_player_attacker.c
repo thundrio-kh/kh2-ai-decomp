@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (fetchValue: 4)
+push unk2 ; (unknown)  (pushImm: 1)
 syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
 ---
 ---
@@ -113,9 +113,23 @@ void __fastcall kn::Friend::removePlayerAttacker(YS::OBJ_28 *obj, bool remove_ol
 ---
 ---
 appears in:
-
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\P_EX350\p_ex.bdscript
+L8674:
+ popToSp 0
+ pushFromPSpVal 0
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L8704
+ pushFromPSpVal 0
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ gosub 4, L7603
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ fetchValue 4
+ pushImm 1
+ syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
+ jmp L8704

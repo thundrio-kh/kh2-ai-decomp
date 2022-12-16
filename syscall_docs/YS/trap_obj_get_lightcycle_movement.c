@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push unk1 ; (unknown)  (memcpyToSp: 16, 16)
+push unk2 ; (unknown)  (pushFromPSp: 16)
+push unk3 ; (unknown)  (pushImmf: 100)
 syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -332,9 +332,23 @@ void __fastcall YS::OBJ::get_lightcycle_movement(YS::OBJ_195 *const this, YS::OB
 ---
 ---
 appears in:
-
+obj\M_EX600_LC\m_ex.bdscript ((M) Magnum Loader (white))
+obj\M_EX600_LC_ATK\m_ex.bdscript ((M) Magnum Loader (blue))
+obj\M_EX600_LC_CHG\m_ex.bdscript ((M) Magnum Loader (yellow))
+obj\M_EX600_LC_GRD\m_ex.bdscript ((M) Magnum Loader (green))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX600_LC\m_ex.bdscript
+L62:
+ pushFromFSp 0
+ gosub 4, L88
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImmf 100
+ syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSpVal 16, 112
+ halt 
+ jmp L62

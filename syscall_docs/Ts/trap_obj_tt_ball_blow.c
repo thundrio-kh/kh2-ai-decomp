@@ -13,10 +13,10 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSpVal: 112)
+push unk2 ; (unknown)  (fetchValue: 4)
+push unk3 ; (unknown)  (pushFromPSpVal: 112)
+push unk4 ; (unknown)  (fetchValue: 12)
 syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
 ---
 ---
@@ -182,9 +182,47 @@ void __fastcall YS::OBJ::change_action(YS::OBJ_125 *const this, YS::ACTION::ID i
 ---
 ---
 appears in:
-
+obj\F_TT020\f_tt.bdscript ((F) Juggling ball (TT))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_TT020\f_tt.bdscript
+L165:
+ drop 
+ pushFromFSp 4
+ memcpyToSpVal 16, 112
+ pushFromPSpVal 112
+ pushImm 12
+ add 
+ pushImmf 0
+ memcpy 0
+ pushImm 153
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 20
+ add 
+ dup 
+ fetchValue 0
+ pushImm 1
+ add 
+ memcpy 0
+ pushFromFSp 0
+ gosub 8, L504
+ pushFromFSp 0
+ syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
+ eqz 
+ jz L240
+ pushFromPSpVal 112
+ pushImm 4
+ add 
+ pushImmf 60
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSpVal 112
+ pushFromPSpVal 112
+ fetchValue 4
+ pushFromPSpVal 112
+ fetchValue 12
+ syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
+ jmp L475

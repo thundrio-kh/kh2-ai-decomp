@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -75,9 +75,15 @@ void __fastcall YS::trap_obj_is_action_air(BD_VALUE_21 *args)
 ---
 ---
 appears in:
-
+obj\M_EX690\m_ex.bdscript ((M) Lance Soldier)
+obj\M_EX690_HB\m_ex.bdscript ((M) Lance Warrior)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\M_EX690\m_ex.bdscript
+L390:
+ pushFromFSp 0
+ syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
+ jz L399
+ halt 
+ jmp L390

@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
 syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
 ---
 ---
@@ -121,9 +121,23 @@ __int64 __fastcall YS::OBJ::get_part_num(YS::OBJ_125 *const this)
 ---
 ---
 appears in:
-
+obj\B_EX400\b_ex.bdscript ((B) Larxene (Absent Silhouette))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX400\b_ex.bdscript
+L28537:
+ pushFromFSp 0
+ syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
+ pushFromFSpVal 160
+ pushImm 16
+ add 
+ pushImm 1
+ memcpy 0
+ pushImm 1
+ popToSpVal 132
+ pushFromFSp 0
+ pushImm 0
+ pushImm 0
+ gosub 4, L28567
+ ret 

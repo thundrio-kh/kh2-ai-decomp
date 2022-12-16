@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 0,1)
 syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -65,9 +65,16 @@ YS::OBJ_252 *__fastcall Ts::XEMNAS::Get(int type)
 ---
 ---
 appears in:
-
+obj\B_EX170_LAST\b_ex.bdscript ((B) Xemnas (Final))
+obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX170_LAST\b_ex.bdscript
+L15077:
+ pushFromPSp 0
+ pushImm 1
+ syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
+ gosub 8, L302
+ pushFromPSp 0
+ ret 

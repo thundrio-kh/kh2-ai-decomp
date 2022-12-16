@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPWp: W108)
+push unk2 ; (unknown)  (pushFromFSp: 0)
 syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
 ---
 ---
@@ -296,9 +296,13 @@ _noname_:
 ---
 ---
 appears in:
-
+obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\N_HB040_BTL\n_hb.bdscript
+L1141:
+ pushFromPWp W108
+ pushFromFSp 0
+ syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
+ jmp L1149

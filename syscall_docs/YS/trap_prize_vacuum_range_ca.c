@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 0)
+push unk2 ; (unknown)  (pushFromFSp: 32,4) (pushImmf: 2000)
 syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
 ---
 ---
@@ -128,9 +128,26 @@ void __fastcall YS::PRIZE_CA::VacuumRange(YS::BTLOBJ_69 *obj, double range)
 ---
 ---
 appears in:
-
+obj\B_CA050\b_ca.bdscript ((B) Grim Reaper)
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_CA050\b_ca.bdscript
+L6370:
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+ eqz 
+ jz L6407
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
+ jz L6404
+ pushFromFSp 0
+ pushFromFSp 4
+ syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
+ pushFromFSp 4
+ pushImmf 50
+ addf 
+ popToSp 4
+ jmp L6404

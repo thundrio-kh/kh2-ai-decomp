@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFSpVal: 120,124,208,48) (fetchValue: 48,64) (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out))
 syscall 6, 16 ; trap_target_clear (1 in, 0 out)
 ---
 ---
@@ -43,9 +43,46 @@ void __fastcall YS::TARGET::clear(YS::TARGET_108 *const this)
 ---
 ---
 appears in:
-
+limit\mulan\limi.bdscript
+obj\B_CA020\b_ca.bdscript ((M) Undead Pirate A)
+obj\B_CA030\b_ca.bdscript ((M) Undead Pirate B)
+obj\B_CA040\b_ca.bdscript ((M) Undead Pirate C)
+obj\B_CA040_PUB\b_ca.bdscript ()
+obj\B_EX120\b_ex.bdscript ((B) Demyx (Only playing sitar?))
+obj\B_EX120_HB\b_ex.bdscript ((B) Demyx)
+obj\B_EX120_HB_LV99\b_ex.bdscript ((B99) Demyx (Limit Cut))
+obj\B_EX260\b_ex.bdscript ((B) Xemnas (Armor))
+obj\B_EX390\b_ex.bdscript ((B) Hooded Roxas)
+obj\B_EX430\b_ex.bdscript ((?) Related to Lingering Will?)
+obj\F_AL000\f_al.bdscript ((F) Water spitting statue (AL))
+obj\P_EH000\p_eh.bdscript ((P) Riku)
+obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
+obj\P_EX100_KH1F\limi.bdscript ((P) Sora (Limit))
+obj\P_EX100_NM_KH1F\limi.bdscript ((P) Sora (NM) (Limit))
+obj\P_EX100_TR_KH1F\limi.bdscript ((P) Sora (TR) (Limit))
+obj\P_EX100_WI_KH1F\limi.bdscript ((P) Sora (WI) (Limit))
+obj\P_EX100_XM_KH1F\limi.bdscript ((P) Sora (XM) (Limit))
+obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
+obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
+obj\P_LK020\p_lk.bdscript ((P) Donald (LK))
 ---
 ---
 ---
-example usage from NA
-
+example usage from limit\mulan\limi.bdscript
+L1061:
+ popToSp 0
+ pushFromPWp W16
+ pushFromFSp 0
+ gosub 4, L1097
+ popToSp 4
+ pushFromFSp 4
+ syscall 6, 16 ; trap_target_clear (1 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImmf 40
+ pushImmf 50
+ pushImmf -8
+ pushImmf -8
+ pushImmf 40
+ gosub 4, L1123
+ ret 

@@ -13,8 +13,8 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push unk1 ; (unknown)  (pushImmf: 0)
+push unk2 ; (unknown)  (pushImm: 0,2)
 syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
 ---
 ---
@@ -60,9 +60,15 @@ void __fastcall YS::MISSION::SetGaugeRatio(double ratio, int id)
 ---
 ---
 appears in:
-
+obj\B_EX270_SIDECAR\b_ex.bdscript ((F) Xemnas’s dragon sidecar)
+obj\F_EH070\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (right) (EH))
+obj\F_EH080\f_eh.bdscript ((F) Xemnas’s dragon core cylinder (left) (EH))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\B_EX270_SIDECAR\b_ex.bdscript
+L2536:
+ pushImmf 0
+ pushImm 0
+ syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
+ ret 

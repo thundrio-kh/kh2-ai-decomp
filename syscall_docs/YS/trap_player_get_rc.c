@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushFromPSp: 32)
 syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
 pop unk ; (unknown) 
 ---
@@ -84,9 +84,24 @@ void __fastcall YS::trap_player_get_rc(BD_VALUE_21 *args)
 ---
 ---
 appears in:
-
+obj\F_TR010\f_tr.bdscript ((F) A Terminal from Space Paranoids (TR))
 ---
 ---
 ---
-example usage from NA
-
+example usage from obj\F_TR010\f_tr.bdscript
+L25:
+ gosub 4, L99
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ dup 
+ jz L54
+ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
+ pushImm 246
+ sub 
+ eqz 
+ eqzv 

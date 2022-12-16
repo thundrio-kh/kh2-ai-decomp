@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown)  (pushImm: 100,101,102,103,104,148,152,24,244,245,246,247,25,26,417,452,453,454,455,461,462,463,464,465,489,490,491,492,493,494,495,496,50,52,61,700,701,702,710,711,712,88,89,90,91,97,98,99) (syscall: 1, 170 ; trap_obj_unit_group (1 in, 1 out))
 syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
 ---
 ---
@@ -79,9 +79,39 @@ LABEL_6:
 ---
 ---
 appears in:
-
+msn\MU02_MS103B\mu02.bdscript
+msn\MU03_MS104\mu03.bdscript
+msn\MU07_MS106\mu07.bdscript
+obj\B_EX180\b_ex.bdscript ((?) Xemnas’s dragon (Throne))
+obj\B_EX240\b_ex.bdscript ((?) Xemnas’s dragon (Anchored))
+obj\B_EX330\b_ex.bdscript ((F) Xemnas’s dragon (Flying))
+obj\B_MU100\b_mu.bdscript ((B) Shan-Yu)
+obj\B_MU120\b_mu.bdscript ((B) Storm Rider)
+obj\F_CA050\f_ca.bdscript ((F) Explosive barrel (CA))
+obj\F_PO030\f_po.bdscript ((F) ??? (PO))
+obj\F_TR160\f_tr.bdscript ((F) WARNING message (TR))
+obj\N_EX760_BTL\n_ex.bdscript ((B) Pete (BTL))
+obj\N_HB550_BOSS\n_hb.bdscript ((N) Cloud (BOSS) (HB))
+obj\N_HB550_BTL\n_hb.bdscript ((N) Cloud (BTL) (HB))
 ---
 ---
 ---
-example usage from NA
-
+example usage from msn\MU02_MS103B\mu02.bdscript
+TR3:
+ gosub 4, L329
+ pushImm 417
+ syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
+ pushImmf 50
+ pushImm 0
+ syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
+ pushImmf 1
+ syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)
+ pushImm 0
+ pushImm L337
+ pushImm 0
+ pushImm 0
+ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+ drop 
+ pushFromPWp W0
+ gosub 4, L341
+ ret 
