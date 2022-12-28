@@ -6,6 +6,6 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
         fn = os.path.join(root, ff)
         text = open(fn).read()
 
-        text = re.sub(r' ;.*(:)', '', text)
+        text = re.sub(r' ; __ai (').*('), '', text)
 
         open(fn, "w").write(text)

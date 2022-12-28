@@ -77,7 +77,7 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
                 if word.startswith("TXT") or word.startswith("L"):
                     if not "___ai" in line:
                         if word in txt_commands:
-                            comment += "___ai '{}' ({})".format(txt_commands[word]["action"].replace("'", ""), txt_commands[word]["txt"])
+                            comment += "___ai {} ({})".format(txt_commands[word]["action"].replace("'", ""), txt_commands[word]["txt"])
             if comment:
                 lines[l] = lines[l] + " ; " + comment
 
@@ -125,7 +125,7 @@ for root, dirs, files in os.walk(os.path.join("bdscript")):
                 for bi in range(1,13):
                     backline = lines[l-bi]
                     arguments[12-bi] = backline
-                action = re.findall(r'\'(.*)\'',arguments[1])[0] # I'm making it count starting at 0 
+                action = re.findall(r' (.*) ',arguments[1])[0] # I'm making it count starting at 0 
                 found_action_functions = []
                 for arg in arguments:
                     ment = arguments[arg]
