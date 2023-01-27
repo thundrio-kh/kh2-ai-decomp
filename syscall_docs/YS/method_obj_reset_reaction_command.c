@@ -5,22 +5,22 @@ name: method_obj_reset_reaction_command
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push obj ; (struct *) (Object with a reaction command flag)
+push command ; (int) (The command to be enabled)
+push group ; (int) (Unknown) 
 syscall 1, 51 ; method_obj_reset_reaction_command (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the reaction command state to starting state
 ---
 ---
 ---

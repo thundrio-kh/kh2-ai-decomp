@@ -5,20 +5,20 @@ name: func_screen_whiteout
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: tested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0,1,10,14,150,180,20,30,32,58,60,70) (pushFromFSp: 8)
+push frame ; (int)  (Number of frames to take for fade out)
 syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Fades the screen to white. On HD versions of the game, the spinning KH logo is present in the bottom right
 ---
 ---
 ---

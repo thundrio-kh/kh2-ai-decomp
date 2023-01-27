@@ -5,20 +5,20 @@ name: func_obj_control_off
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push type ; (int)  (Unknown purpose. Possible values 0 or 1)
 syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns off control of the object running this function.
 ---
 ---
 ---

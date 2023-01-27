@@ -5,21 +5,21 @@ name: method_obj_reset_collision
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPWp: W0,W208,W32,W4112,W480) (pushFromPSpVal: 0,144,20,96) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 0,1,10,11,12,13,14,16,17,18,19,2,20,22,23,3,30,4,5,6,7,8,9) (pushFromFSp: 4) (pushFromFSpVal: 108,112,116)
+push obj ; (struct *)  (Object who should have its collision disabled)
+push group ; (int)  (Probably which part of the collision to turn off. Range of values used between 0 and 30)
 syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the objects collision to its default state
 ---
 ---
 ---

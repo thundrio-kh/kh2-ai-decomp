@@ -5,20 +5,20 @@ name: method_blur_init
 ---
 ---
 ---
-category: 
+category: incomplete
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push blur ; (struct *) (Variable to store the blur object in?) 
 syscall 0, 28 ; method_blur_init (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Initialize a blur object. Unused in the vanilla game
 ---
 ---
 ---

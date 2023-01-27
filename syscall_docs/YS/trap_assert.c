@@ -5,20 +5,20 @@ name: trap_assert
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: tested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)) (neqz: ) (pushImm: 0) (eqz: ) (ipos: )
+push assertion ; (int)  (Value to be tested, should be 0 or 1)
 syscall 0, 60 ; trap_assert (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Checks if the passed assertion is true otherwise throws an error. However assertions are not thrown on the release version of the game, so this effectively does nothing.
 ---
 ---
 ---

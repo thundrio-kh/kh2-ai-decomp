@@ -5,21 +5,21 @@ name: method_message_is_end
 ---
 ---
 ---
-category: 
+category: Interface
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 48)
+push msg ; (unknown) (Some representation of the message playing at the top of the screen)
 syscall 1, 48 ; method_message_is_end (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_finished ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the message playing at the top of the screen is done being scrolled
 ---
 ---
 ---

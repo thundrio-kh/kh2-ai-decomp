@@ -5,20 +5,20 @@ name: func_area_activate_unit
 ---
 ---
 ---
-category: 
+category: spawns
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPAi: L113 ; ___ai 'f01_' (L113),L133 ; ___ai 'g02_' (L133),L149 ; ___ai 'g01_' (L149),L180 ; ___ai 'c02_' (L180),L199 ; ___ai 'c00_' (L199),...)
+push unit ; (string)  (name of spawn file to be activated (ie 'f01_'))
 syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Activates the spawn file with the passed in name.  
 ---
 ---
 ---

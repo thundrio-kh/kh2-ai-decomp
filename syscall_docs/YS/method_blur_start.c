@@ -5,20 +5,20 @@ name: method_blur_start
 ---
 ---
 ---
-category: 
+category: incomplete
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push blur ; (struct *) (blur object that has been initialized?)
 syscall 0, 29 ; method_blur_start (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts the blur effect. Unused in the vanilla game
 ---
 ---
 ---

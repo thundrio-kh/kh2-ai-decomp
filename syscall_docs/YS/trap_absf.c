@@ -5,7 +5,7 @@ name: trap_absf
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12,16,20,32,4,...) (fetchValue: 0,4,8) (subf: ) (syscall: 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out),0, 43 ; trap_fixrad (1 in, 1 out),3, 29 ; ?) (pushImmf: -0.261799,0.001745,200) (degr: ) (radd: ) (gosub: 16, L3377,20, L3176,20, L3198) (cfti: )
-syscall 0, 23 ; trap_absf (1 in, 1 out)
-pop unk ; (unknown) 
+push value ; (int)  (A positive or negative signed float)
+syscall 0, 22 ; trap_abs (1 in, 1 out)
+pop abs_value ; (int) (The absolute value of the passed parameter) 
 ---
 ---
 ---
-description: 
+description: Takes a float and returns the absolute value of that float
 ---
 ---
 ---

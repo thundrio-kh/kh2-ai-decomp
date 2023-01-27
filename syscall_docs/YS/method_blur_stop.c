@@ -5,20 +5,20 @@ name: method_blur_stop
 ---
 ---
 ---
-category: 
+category: incomplete
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push blur ; (struct *) (initialized and started blur object)
 syscall 0, 30 ; method_blur_stop (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stops an active blur. Unused in the vanilla game
 ---
 ---
 ---

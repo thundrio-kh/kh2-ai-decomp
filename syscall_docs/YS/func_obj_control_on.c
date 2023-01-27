@@ -5,20 +5,20 @@ name: func_obj_control_on
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push unit ; (int)  (Unknown purpose. Possible values 0 or 1)
 syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns on control of the object running this function.
 ---
 ---
 ---

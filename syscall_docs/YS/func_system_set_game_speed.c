@@ -5,20 +5,20 @@ name: func_system_set_game_speed
 ---
 ---
 ---
-category: 
+category: gameplay
 ---
 ---
 ---
-documentation level: stub
+documentation level: tested
 ---
 ---
 ---
-push scale ; (float) Set new game speed
+push scale ; (float) (Set new game speed)
 syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Changes the speed the game runs.
 ---
 ---
 ---

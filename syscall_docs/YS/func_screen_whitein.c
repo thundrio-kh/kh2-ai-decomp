@@ -5,20 +5,20 @@ name: func_screen_whitein
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: tested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0,1,10,12,120,14,2,20,24,30,60,8,90)
+push frame ; (float)  (Number of frames to take for fade in)
 syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Takes the screen from being all white and fades in.
 ---
 ---
 ---

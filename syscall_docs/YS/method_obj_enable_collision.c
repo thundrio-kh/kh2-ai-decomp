@@ -5,21 +5,21 @@ name: method_obj_enable_collision
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0,20,96) (pushFromPWp: W0,W32,W4112) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 0,1,10,11,12,13,14,16,17,18,19,2,3,4,5,6,7,8,9) (pushFromFSp: 8)
+push obj ; (struct *)  (Object who should have its collision disabled)
+push group ; (int)  (Probably which part of the collision to turn off. Range of values used between 0 and 30)
 syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns on part of an objects collision
 ---
 ---
 ---

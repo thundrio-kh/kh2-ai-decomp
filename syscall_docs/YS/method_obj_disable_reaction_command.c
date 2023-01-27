@@ -5,22 +5,22 @@ name: method_obj_disable_reaction_command
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push obj ; (struct *) (Object with a reaction command flag)
+push command ; (int) (The command to be disabled)
+push group ; (int) (Unknown)
 syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Disables a reaction command from being activated by the player. Unused in the vanilla game
 ---
 ---
 ---

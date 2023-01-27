@@ -5,21 +5,21 @@ name: trap_abs
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (sub: )
+push value ; (int)  (A positive or negative signed integer)
 syscall 0, 22 ; trap_abs (1 in, 1 out)
-pop unk ; (unknown) 
+pop abs_value ; (int) (The absolute value of the passed parameter) 
 ---
 ---
 ---
-description: 
+description: Takes a integer and returns the absolute value of that integer
 ---
 ---
 ---

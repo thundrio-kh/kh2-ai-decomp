@@ -5,11 +5,11 @@ name: func_bg_barrier_on
 ---
 ---
 ---
-category: 
+category: map
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 46 ; func_bg_barrier_on (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns on all barriers spawned in to the map.
 ---
 ---
 ---

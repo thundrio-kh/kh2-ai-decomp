@@ -5,21 +5,21 @@ name: method_obj_is_culling
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 32)
+push obj ; (struct *) (The object to be tested)
 syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_culling ; (bool) (True if the object is being culled) 
 ---
 ---
 ---
-description: 
+description: Determines if obj is currently being culled
 ---
 ---
 ---

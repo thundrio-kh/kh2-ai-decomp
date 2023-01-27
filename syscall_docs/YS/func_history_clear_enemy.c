@@ -5,11 +5,11 @@ name: func_history_clear_enemy
 ---
 ---
 ---
-category: 
+category: spawns
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Appears to clear out the history (cache?) of enemies in the current room.
 ---
 ---
 ---
