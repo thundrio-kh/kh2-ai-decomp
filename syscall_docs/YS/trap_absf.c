@@ -13,9 +13,9 @@ documentation level: stub
 ---
 ---
 ---
-push value ; (int)  (A positive or negative signed float)
+push value ; (float)  (A positive or negative signed float)
 syscall 0, 22 ; trap_abs (1 in, 1 out)
-pop abs_value ; (int) (The absolute value of the passed parameter) 
+pop abs_value ; (float) (The absolute value of the passed parameter) 
 ---
 ---
 ---

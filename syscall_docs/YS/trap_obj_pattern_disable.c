@@ -19,7 +19,7 @@ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: <check dis notes>
 ---
 ---
 ---

@@ -20,7 +20,7 @@ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description:  <check dis notes>
 ---
 ---
 ---

@@ -20,7 +20,7 @@ syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: <check dis notes>
 ---
 ---
 ---

@@ -18,7 +18,7 @@ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: <check dis notes>
 ---
 ---
 ---

@@ -20,7 +20,7 @@ syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: <check dis notes>
 ---
 ---
 ---

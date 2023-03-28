@@ -5,21 +5,21 @@ name: trap_act_shout
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push label ; (string) (name of action)
+push wait ; (float) (amount of time to wait before shouting action) 
 syscall 1, 241 ; trap_act_shout (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds the passed action into the ShoutBuff. Maybe this is a separate queue that has a higher priority, unknown since it is not used in the vanilla game.
 ---
 ---
 ---
