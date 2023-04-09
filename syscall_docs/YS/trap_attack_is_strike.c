@@ -5,22 +5,22 @@ name: trap_attack_is_strike
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16,16, 48,16, 64,16, 80,16, 96) (pushFromFSpVal: 5464,64,68) (fetchValue: 0) (pushFromFSp: 32,4)
-push unk2 ; (unknown)  (pushFromPSp: 16,48,64,8,80,...) (pushFromFSp: 4,8)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
+push btlobj ; (YS::BTLOBJ *)  (An battle object)
 syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an attack is striking an object
 ---
 ---
 ---

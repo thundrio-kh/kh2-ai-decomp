@@ -5,21 +5,21 @@ name: trap_attack_get_reflect_count
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 28,32)
+push attack ; (YS::ATTACK_MAGIC *)  (a reflect attack)
 syscall 2, 66 ; trap_attack_get_reflect_count (1 in, 1 out)
-pop unk ; (unknown) 
+pop count ; (int) (count for the reflect attack)
 ---
 ---
 ---
-description: 
+description: Returns the count for the current reflect attack
 ---
 ---
 ---

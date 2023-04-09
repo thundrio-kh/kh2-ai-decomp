@@ -5,20 +5,20 @@ name: trap_attack_free
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,100,108,128,160,...) (pushFromFSp: 12,176,180,20,24,...) (fetchValue: 0,16,4)
+push attack ; (YS::ATTACK_MAGIC *)  (attack to be destroyed)
 syscall 2, 13 ; trap_attack_free (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Destroy an attack object, freeing the memory.
 ---
 ---
 ---

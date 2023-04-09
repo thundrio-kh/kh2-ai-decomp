@@ -5,21 +5,21 @@ name: trap_attack_is_hit_floor
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 68)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an attack has hit the floor
 ---
 ---
 ---

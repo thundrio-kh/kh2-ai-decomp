@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (fetchValue: 0)
+push attack ; (YS::ATTACK_MAGIC *)  (an attack object)
 syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
-pop unk ; (unknown) 
+pop paramid ; (int) (a parameter id for an attack, in some cases this may reference a hitbox) 
 ---
 ---
 ---
-description: <check dis notes>
+description: returns the parameter id associated with an attack
 ---
 ---
 ---

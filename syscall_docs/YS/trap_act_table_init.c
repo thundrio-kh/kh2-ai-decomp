@@ -5,20 +5,20 @@ name: trap_act_table_init
 ---
 ---
 ---
-category: 
+category: actions
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromPWp: W0,W108,W112,W116,W120,...)
+push table ; (YS::ACT::TABLE *)  (Variable to store the action table in)
 syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Initializes an action table to be used by an object. Needs actions added to it afterward with trap_act_table_add
 ---
 ---
 ---

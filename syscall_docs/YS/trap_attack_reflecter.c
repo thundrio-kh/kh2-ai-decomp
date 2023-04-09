@@ -5,21 +5,21 @@ name: trap_attack_reflecter
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 68) (pushFromFSp: 8)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
-pop unk ; (unknown) 
+pop reflecter ; (YS::BTLOBJ *) 
 ---
 ---
 ---
-description: 
+description: Return the object that reflected this attack
 ---
 ---
 ---

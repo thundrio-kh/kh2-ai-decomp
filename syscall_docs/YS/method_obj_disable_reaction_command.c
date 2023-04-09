@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push obj ; (struct *) (Object with a reaction command flag)
+push obj ; (YS::OBJ *) (Object with a reaction command flag)
 push command ; (int) (The command to be disabled)
 push group ; (int) (Unknown)
 syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)

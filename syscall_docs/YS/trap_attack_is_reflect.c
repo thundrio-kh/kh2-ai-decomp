@@ -5,21 +5,21 @@ name: trap_attack_is_reflect
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 28,68) (pushFromFSp: 40) (fetchValue: 0)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an attack is reflected
 ---
 ---
 ---

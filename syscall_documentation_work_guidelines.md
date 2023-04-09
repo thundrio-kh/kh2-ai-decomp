@@ -16,6 +16,7 @@ Finally there is a label copied out of one of the examples, showing how that tra
 GUIDELINES FOR FILLING IN DOC PAGES
 
 category: Try using one of these existing categories, but if it doesn't fit make a new one. At the end it will be easier to see the different categories and figure out if another grouping makes sense.
+actions
 ai_action
 attack
 damage
@@ -46,3 +47,6 @@ Variable list: We want to replace the unknown names and types with known ones (f
 description: A readable explanation of what the function does
 
 Once every page has been filled in past being a stub, I will write a script to parse the useful information into markdown documentation for the OpenKH wiki. The decompiled code will not be put into the wiki, but the rest of the information will most likely make it. I would also like to put the descriptions as hover text in the VSCode bdscript plugin, but I don't know how easy that will be to do
+
+### Notes for when I'm done going through everything
+When making categories you most likely want to keep all of the similar named traps in the same spot (ie all trap_attack together), but you don't want to just use those names because a different grouping will be more developer friendly (ie trap_area and trap_worldflag can both go under mapinfo)

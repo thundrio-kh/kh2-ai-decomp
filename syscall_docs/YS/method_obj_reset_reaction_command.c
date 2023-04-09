@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push obj ; (struct *) (Object with a reaction command flag)
+push obj ; (YS::OBJ *) (Object with a reaction command flag)
 push command ; (int) (The command to be enabled)
 push group ; (int) (Unknown) 
 syscall 1, 51 ; method_obj_reset_reaction_command (3 in, 0 out)

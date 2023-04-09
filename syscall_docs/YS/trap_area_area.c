@@ -5,20 +5,20 @@ name: trap_area_area
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 24 ; trap_area_area (0 in, 1 out)
-pop unk ; (unknown) 
+pop area ; (int) (The index for the current map number) 
 ---
 ---
 ---
-description: 
+description: Returns the number representing the current map (ie for ca03 it would return 3)
 ---
 ---
 ---

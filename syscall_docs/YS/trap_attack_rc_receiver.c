@@ -5,21 +5,21 @@ name: trap_attack_rc_receiver
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 166 ; trap_target_attack (1 in, 1 out))
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)
-pop unk ; (unknown) 
+pop receiver ; (YS::BTLOBJ *) 
 ---
 ---
 ---
-description: 
+description: Return the receiver of the attack rc
 ---
 ---
 ---

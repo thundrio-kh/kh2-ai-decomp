@@ -5,22 +5,22 @@ name: trap_area_jump
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push area ; (int) (which room to jump to)
+push entrance ; (int) (which entrance to use) 
+push fadetype ; (what fade type to use) 
 syscall 1, 30 ; trap_area_jump (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Jumps to a new room, using no battle/event/map programs
 ---
 ---
 ---

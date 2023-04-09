@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push obj ; (struct *)  (Object who should have its collision disabled)
+push obj ; (YS::OBJ *)  (Object who should have its collision disabled)
 push group ; (int)  (Probably which part of the collision to turn off. Range of values used between 0 and 30)
 syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
 ---

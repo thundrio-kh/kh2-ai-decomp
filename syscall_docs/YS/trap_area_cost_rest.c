@@ -5,20 +5,20 @@ name: trap_area_cost_rest
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 197 ; trap_area_cost_rest (0 in, 1 out)
-pop unk ; (unknown) 
+pop cost_left ; (int) (amount of cost left in the room) 
 ---
 ---
 ---
-description: 
+description: Returns the amount of cost left in the room before the capacity is filled (YS::Capacity - YS::Cost)
 ---
 ---
 ---

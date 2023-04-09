@@ -5,21 +5,21 @@ name: trap_attack_set_effect
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12,32,36,40) (pushImm: 0)
-push unk2 ; (unknown)  (pushFromFSp: 0,4,40,44) (syscall: 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out),1, 87 ; trap_obj_effect_start_bind (4 in, 1 out))
+push attack ; (YS::ATTACK_MAGIC *)  (an attack object)
+push effect ; (ryj::EFFECT *) (an object effect to apply to an attack)
 syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Applies an object effect to an attack
 ---
 ---
 ---

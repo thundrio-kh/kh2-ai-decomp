@@ -5,20 +5,20 @@ name: trap_attack_exec_reflect
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push attack ; (YS::ATTACK_MAGIC *)  (attack object to be reflected)
 syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: reflects an attack. Unsure if it changes the direction of the attack, or changes it's attributes.
 ---
 ---
 ---

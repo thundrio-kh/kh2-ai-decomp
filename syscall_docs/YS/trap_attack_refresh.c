@@ -5,20 +5,20 @@ name: trap_attack_refresh
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push attack ; (YS::ATTACK_MAGIC *) (an attack object)
 syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Refresh all the hits on the attack
 ---
 ---
 ---

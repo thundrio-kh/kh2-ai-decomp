@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push obj ; (struct *) (The object to be tested)
+push obj ; (YS::OBJ *) (The object to be tested)
 syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
 pop is_culling ; (bool) (True if the object is being culled) 
 ---

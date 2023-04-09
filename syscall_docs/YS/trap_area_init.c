@@ -5,11 +5,11 @@ name: trap_area_init
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -20,7 +20,7 @@ syscall 1, 35 ; trap_area_init (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unknown
 ---
 ---
 ---

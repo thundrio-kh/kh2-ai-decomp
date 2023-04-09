@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push blur ; (struct *) (blur object that has been initialized?)
+push blur ; (YS::BLUR *) (blur object that has been initialized?)
 syscall 0, 29 ; method_blur_start (1 in, 0 out)
 ---
 ---

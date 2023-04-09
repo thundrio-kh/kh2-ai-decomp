@@ -5,22 +5,22 @@ name: trap_attack_set_hit_callback
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 28 ; ___possible_ref,68) (fetchValue: 0) (pushFromFSp: 48)
-push unk2 ; (unknown)  (pushFromFSpVal: 276) (pushImm: L1003,L10120,L10200,L10839,L11369,L11478,L1245,L1253,L12713,L14070,L1494,L1510,L15270,L15626,L2284,L2354,L374,L3852,L4343,L4373,L4738,L4756,L5019,L5034,L6288,L6305,L6420,L6645,L6932,L7030,L7144,L7239,L7245,L7394,L7524,L7604,L7913,L8221,L8385,L8499,L8594,L8600,L8845,L8871,L894,L9024,L9138,L9233,L9239,L965,L9663,L9777,L9872,L9878)
-push unk3 ; (unknown)  (pushFromPSpVal: 280) (pushFromFSp: 0)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
+push callback ; (label) (label of the callback function to the attack that will run)
+push unk ; (unknown)  (unknown)
 syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds a callback function to an attack that will run on hit
 ---
 ---
 ---

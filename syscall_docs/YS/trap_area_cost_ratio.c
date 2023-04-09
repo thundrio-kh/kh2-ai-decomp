@@ -5,20 +5,20 @@ name: trap_area_cost_ratio
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 303 ; trap_area_cost_ratio (0 in, 1 out)
-pop unk ; (unknown) 
+pop percentage ; (percentage of rooms capacity that is currently used) 
 ---
 ---
 ---
-description: 
+description: Divides the total cost of all objects currently spawned by the capacity of the room (YS::Cost / YS::Capacity) 
 ---
 ---
 ---

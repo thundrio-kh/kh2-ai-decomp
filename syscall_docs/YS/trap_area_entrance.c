@@ -5,20 +5,20 @@ name: trap_area_entrance
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
-pop unk ; (unknown) 
+pop entnum ; (int) (number for entrance used to enter room) 
 ---
 ---
 ---
-description: 
+description: Returns the number for the entrance used to enter the room
 ---
 ---
 ---

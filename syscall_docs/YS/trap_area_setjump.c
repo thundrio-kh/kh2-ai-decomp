@@ -5,21 +5,21 @@ name: trap_area_setjump
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push area ; (int) (number of the room to jump to) 
+push fadetype ; (int) (fade type to use) 
 syscall 1, 31 ; trap_area_setjump (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Jumps to a new area, without a program. Unclear how this is different from trap_area_jump
 ---
 ---
 ---

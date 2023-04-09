@@ -5,21 +5,21 @@ name: trap_attack_get_owner
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push attack ; (YS::ATTACK_MAGIC *)  (an attack object)
 syscall 2, 24 ; trap_attack_get_owner (1 in, 1 out)
-pop unk ; (unknown) 
+pop owner ; (YS::BTLOBJ *) (object of the attack owner) 
 ---
 ---
 ---
-description: 
+description: returns the owner of an attack
 ---
 ---
 ---

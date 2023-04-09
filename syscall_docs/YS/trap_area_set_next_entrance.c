@@ -5,11 +5,11 @@ name: trap_area_set_next_entrance
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Increments the AREA::NextArea.Entrance value by 1. Only used by the Olympus Cups.
 ---
 ---
 ---

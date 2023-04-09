@@ -5,22 +5,22 @@ name: trap_attack_dup
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 28,32,68) (pushFromFSp: 68,76)
-push unk2 ; (unknown)  (pushImm: 1165,1181,249,502)
+push attack ; (YS::ATTACK_MAGIC *)  (attack magic object to be duplicated)
+push param_id ; (unknown)  (pushImm: 1165,1181,249,502)
 syscall 2, 31 ; trap_attack_dup (2 in, 1 out)
-pop unk ; (unknown) 
+pop attack_dup ; (struct *) (duplicate of passed in attack)
 ---
 ---
 ---
-description: 
+description: Duplicates a magic attack
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_area_world
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 23 ; trap_area_world (0 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) (number representing the current world) 
 ---
 ---
 ---
-description: 
+description: Returns the number for the current world
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_attack_set_line
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,192,68) (pushFromFSp: 104,8) (syscall: 0, 53 ; trap_effect_pos (1 in, 1 out)) (fetchValue: 68)
-push unk2 ; (unknown)  (pushFromPSpVal: 32) (pushFromFSp: 4,8) (pushFromPSp: 32,80) (memcpyToSp: 16, 48,16, 64)
-push unk3 ; (unknown)  (pushFromPSp: 16,32,48,64,80) (pushFromFSp: 4) (pushFromPSpVal: 80)
+push attack ;(YS::ATTACK_MAGIC *) (An attack object)
+push p1 ; (vector)  (The position of one end of the line to be set )
+push p2 ; (vector)  (The position of the other end of the line to be set)
 syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a line for an attack that needs a line set
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_attack_get_type
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push attack ; (YS::ATTACK_MAGIC *) (an attack object) 
 syscall 2, 34 ; trap_attack_get_type (1 in, 1 out)
-pop unk ; (unknown) 
+pop type ; (int) (type of attack)
 ---
 ---
 ---
-description: 
+description: returns the type of the passed in attack
 ---
 ---
 ---

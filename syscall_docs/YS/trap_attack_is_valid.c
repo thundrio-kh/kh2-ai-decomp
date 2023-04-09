@@ -5,21 +5,21 @@ name: trap_attack_is_valid
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an attack is valid
 ---
 ---
 ---

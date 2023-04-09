@@ -5,21 +5,21 @@ name: trap_attack_set_hitmark_pos
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32,48)
-push unk2 ; (unknown)  (pushFromPSp: 16,32)
+push pos ; (Vector *)  (Position vector)
+push dir ; (Vector *)  (Direction vector)
 syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a hitmark pos
 ---
 ---
 ---

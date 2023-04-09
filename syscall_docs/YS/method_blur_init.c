@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push blur ; (struct *) (Variable to store the blur object in?) 
+push blur ; (YS::BLUR *) (Variable to store the blur object in?) 
 syscall 0, 28 ; method_blur_init (1 in, 0 out)
 ---
 ---

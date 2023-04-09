@@ -5,21 +5,21 @@ name: trap_attack_is_hit_wall
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 176,180) (pushFromFSpVal: 128,28 ; ___possible_ref,64,68)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an attack has hit the wall
 ---
 ---
 ---

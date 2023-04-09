@@ -5,21 +5,21 @@ name: trap_attack_is_hit_bg
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 28,28 ; ___possible_ref,68) (fetchValue: 0)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
-pop unk ; (unknown) 
+pop ishit ; (bool) (result of if the attack hit the background)
 ---
 ---
 ---
-description: 
+description: Checks if an attack hit the background (OOB?).
 ---
 ---
 ---

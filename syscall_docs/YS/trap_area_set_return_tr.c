@@ -5,11 +5,11 @@ name: trap_area_set_return_tr
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 352 ; trap_area_set_return_tr (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the return point when quitting the light cycle minigame in Tron
 ---
 ---
 ---

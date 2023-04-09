@@ -5,20 +5,20 @@ name: trap_area_map_set
 ---
 ---
 ---
-category: 
+category: mapinfo
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 25 ; trap_area_map_set (0 in, 1 out)
-pop unk ; (unknown) 
+pop mapnum ; (The number representing the map program being executed) 
 ---
 ---
 ---
-description: 
+description: Returns the number for the battle program being executed
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_attack_new_combo_group
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
-pop unk ; (unknown) 
+pop combogroup ; (int) 
 ---
 ---
 ---
-description: 
+description: Associates a number with a new combo group, for a series of attacks that are in the same combo.
 ---
 ---
 ---
