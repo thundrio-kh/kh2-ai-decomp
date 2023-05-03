@@ -5,11 +5,11 @@ name: trap_bg_set_belt_conveyor
 ---
 ---
 ---
-category: 
+category: unknown
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -18,7 +18,7 @@ syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unknown. Used by conveyor belts in Oogie Boogie boss room
 ---
 ---
 ---

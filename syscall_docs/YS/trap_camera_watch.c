@@ -5,7 +5,7 @@ name: trap_camera_watch
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---

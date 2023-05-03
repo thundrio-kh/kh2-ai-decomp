@@ -5,24 +5,24 @@ name: trap_attack_set_rc
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4,68) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromFSp: 0,8) (pushFromPSpVal: 0)
-push unk3 ; (unknown)  (pushImm: 112,314,318,345,367,420,432,436,463,492,495,597,598,666,667) (pushFromFSp: 8) (pushFromFSpVal: 116,80)
-push unk4 ; (unknown)  (pushImmf: 100,1000,150,200,300,3000,500,5000,600,800) (pushFromFSp: 4)
-push unk5 ; (unknown)  (pushImmf: 0,100,300,500)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push receiver ; (int)  (value representing the object being attacked?)
+push command ; (int)  (value of reaction command to use, based on the CMD table in 03system)
+push radius ; (int)  (value to use for the radius for the reaction command activation zone)
+push height ; (int)  (value to use for the height for the reaction command activation zone)
 syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attaches a reaction command to an attack for the player to use
 ---
 ---
 ---

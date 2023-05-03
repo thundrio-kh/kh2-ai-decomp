@@ -5,11 +5,11 @@ name: trap_command_enable_item
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 322 ; trap_command_enable_item (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enable the item row on the command menu
 ---
 ---
 ---

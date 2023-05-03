@@ -5,24 +5,24 @@ name: trap_bg_cross_pos
 ---
 ---
 ---
-category: 
+category: vector
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32,48)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,48)
-push unk3 ; (unknown)  (pushFromPSp: 16) (pushFromPSpVal: 112)
-push unk4 ; (unknown)  (pushImm: 1,4)
+push from ; (kn::FVector *)  (pushFromPSp: 32,48)
+push to ; (kn::FVector *)  (pushFromPSp: 16,32,48)
+push cross ; (kn::FVector *)  (pushFromPSp: 16) (pushFromPSpVal: 112)
+push type ; (int)  (Also passed as 'collbcharacter'. Used values are either 1 or 4)
 syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)
-pop unk ; (unknown) 
+pop res_y ; (int) (y position of the resulting vector) 
 ---
 ---
 ---
-description: 
+description: Checks if the cross vector hits the line drawn between from and to. Unknown what type does.
 ---
 ---
 ---

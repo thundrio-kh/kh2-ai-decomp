@@ -5,20 +5,20 @@ name: trap_bonuslevel_up
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push id ; (int) (id of the bonus to give)
 syscall 2, 73 ; trap_bonuslevel_up (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Activates a bonus get (Normally the things acquired by finishing missions ). Unused in the game itself
 ---
 ---
 ---

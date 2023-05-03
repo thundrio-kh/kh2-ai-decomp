@@ -5,25 +5,25 @@ name: trap_bg_get_random_pos_air
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,32,48,64,...) (pushImmf: 0.1) (pushFromPSpVal: 32,96) (gosub: 28, L21474,28, L4616)
-push unk2 ; (unknown)  (pushImmf: 0,100,20,200,250,300,350,400,50,500,700,75,800) (mulf: ) (pushFromFSp: 16,56)
-push unk3 ; (unknown)  (pushImmf: 0,100,1000,125,150,20,200,250,300,350,400,50,500,600,800) (pushFromFSp: 0,12,48,56)
-push unk4 ; (unknown)  (pushImmf: -100,-150,-200,-50,-500,0,0.1,100,1200,150,200,220,25,250,300,320,450,50,650,800) (fetchValue: 40) (pushFromFSp: 8)
-push unk5 ; (unknown)  (pushImmf: -100,-150,-200,0,100,1000,1300,150,200,220,300,320,350,400,450,50,500,650) (mulf: ) (gosub: 28, L21495,28, L4637) (pushFromFSp: 4)
+push center ; (kn::FVector *)  (center value to use)
+push near ; (float)  (how near to the center to look)
+push far ; (float)  (how far from the center to look)
+push low ; (float)  (how low from the center to look)
+push high ; (float)  (how high from the center to look)
 syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) (random position in the air) 
 ---
 ---
 ---
-description: 
+description: Gets a random open position in the air
 ---
 ---
 ---
@@ -35,14 +35,14 @@ void __fastcall YS::trap_bg_get_random_pos_air(BD_VALUE_21 *args, __int64 a2, __
   kn::FVector v7; // [sp+70h] [-30h] BYREF
 
   YS::BG::RandomPosAir(
-    &v7,
-    (const kn::FVector *)(*args)[0],
-    *(float *)&(*args)[4],
-    *(float *)&(*args)[8],
-    *(float *)&(*args)[12],
+    &v7, 
+    (const kn::FVector *)(*args)[0], // a2 vector
+    *(float *)&(*args)[4], // near
+    *(float *)&(*args)[8], // far
+    *(float *)&(*args)[12], // low
     a6,
     2,
-    *(float *)&(*args)[16]);
+    *(float *)&(*args)[16]); // high
   kn::FVector::operator=((kn::FVector *const)&ResultVector, &v7);
   *(_DWORD *)args = (unsigned int)&ResultVector;
 }

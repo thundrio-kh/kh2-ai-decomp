@@ -5,21 +5,21 @@ name: trap_attack_set_pax
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8)
-push unk2 ; (unknown)  (pushFromFSpVal: 16)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
+push pax ; (struct *)  (A PAX effect. Exact object type unknown)
 syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attaches a PAX effect to an attack
 ---
 ---
 ---

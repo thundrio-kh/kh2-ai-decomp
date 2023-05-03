@@ -5,20 +5,20 @@ name: trap_camera_at
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 306 ; trap_camera_at (0 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) (position of the camera) 
 ---
 ---
 ---
-description: 
+description: returns the position of the camera
 ---
 ---
 ---

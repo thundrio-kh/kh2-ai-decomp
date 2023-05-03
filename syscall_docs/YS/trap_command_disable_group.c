@@ -5,20 +5,20 @@ name: trap_command_disable_group
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,2)
+push group ; (int) (Values used by Lingering Will are 1 and 2)  (pushImm: 1,2)
 syscall 1, 365 ; trap_command_disable_group (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Disables a numbered command group
 ---
 ---
 ---

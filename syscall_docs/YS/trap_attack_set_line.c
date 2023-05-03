@@ -14,8 +14,8 @@ documentation level: untested
 ---
 ---
 push attack ;(YS::ATTACK_MAGIC *) (An attack object)
-push p1 ; (vector)  (The position of one end of the line to be set )
-push p2 ; (vector)  (The position of the other end of the line to be set)
+push p1 ; (kn::FVector *)  (The position of one end of the line to be set )
+push p2 ; (kn::FVector *)  (The position of the other end of the line to be set)
 syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
 ---
 ---

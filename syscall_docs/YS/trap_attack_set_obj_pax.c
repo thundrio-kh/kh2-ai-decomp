@@ -5,21 +5,21 @@ name: trap_attack_set_obj_pax
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 104,12,16,176,180,...) (pushFromFSpVal: 128,28,28 ; ___possible_ref,64,68) (memcpyToSp: 16, 156,16, 16,16, 4) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPSpVal: 0,112,64) (pushFromPSp: 156,16,4,48) (pushFromFSp: 0,12,8) (pushFromPWp: W0)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
+push pax ; (struct *)  (The pax effect to attach. Unknown what type of object this is)
 syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attaches an PAX effect during an attack. Unknown how this is different from trap_attack_set_pax
 ---
 ---
 ---

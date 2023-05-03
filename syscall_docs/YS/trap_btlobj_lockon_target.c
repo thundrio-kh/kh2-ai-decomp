@@ -5,15 +5,15 @@ name: trap_btlobj_lockon_target
 ---
 ---
 ---
-category: 
+category: btlobj
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromPSpVal: 0,4) (pushFromPSp: 0) (pushFromFSp: 0)
+push btlobj ; (YS::TARGET_108 *)  (Object to lock on to)
 syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
 pop unk ; (unknown) 
 ---

@@ -5,11 +5,11 @@ name: trap_camera_warp
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 193 ; trap_camera_warp (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Warps the camera (to another object?)
 ---
 ---
 ---

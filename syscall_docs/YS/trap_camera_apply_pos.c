@@ -5,21 +5,21 @@ name: trap_camera_apply_pos
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32,48) (pushFromPSpVal: 112)
+push pos ; (kn::FVector *)  (position vector to apply to the camera)
 syscall 1, 252 ; trap_camera_apply_pos (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Apply a position vector to the camera
 ---
 ---
 ---

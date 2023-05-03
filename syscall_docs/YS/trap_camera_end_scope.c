@@ -5,11 +5,11 @@ name: trap_camera_end_scope
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Returns the camera to the normal mode from scope mode.
 ---
 ---
 ---

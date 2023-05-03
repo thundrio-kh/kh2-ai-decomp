@@ -5,11 +5,11 @@ name: trap_bg_set_uvscroll_speed
 ---
 ---
 ---
-category: 
+category: unknown
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -18,7 +18,7 @@ syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: UNknown. Used only by Oogie Boogie conveyor belts
 ---
 ---
 ---

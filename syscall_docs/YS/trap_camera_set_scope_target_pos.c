@@ -5,20 +5,20 @@ name: trap_camera_set_scope_target_pos
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 32)
+push target_pos; (RCFVector target_pos)  (position of target)
 syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the target for the scope mode camera
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_attack_set_reflect_callback
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSpVal: 28,68)
-push unk2 ; (unknown)  (pushImm: L10142,L11391,L12735,L14092,L1790,L3526,L420,L6667,L8893)
+push obj ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push label ; (int) (line number of callback to use) (pushImm: L10142,L11391,L12735,L14092,L1790,L3526,L420,L6667,L8893)
 push unk3 ; (unknown)  (pushFromFSp: 0)
 syscall 2, 74 ; trap_attack_set_reflect_callback (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attaches a callback to be used when an attack is reflected
 ---
 ---
 ---

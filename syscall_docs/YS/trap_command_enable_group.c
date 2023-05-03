@@ -5,20 +5,20 @@ name: trap_command_enable_group
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push group ; (int)  (Enables a numbered command group. Only value used ingame is 0)
 syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enables a numbered command group. 0 enables everything.
 ---
 ---
 ---

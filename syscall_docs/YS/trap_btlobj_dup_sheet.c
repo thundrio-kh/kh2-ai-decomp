@@ -5,21 +5,21 @@ name: trap_btlobj_dup_sheet
 ---
 ---
 ---
-category: 
+category: btlobj
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 216)
+push btlobj ; (YS::PIERROT_6)  (the btl object to copy)
+push param ; (int)  (Unknown purpose, only used value is 216 (Larxene Datas enmp entry))
 syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Duplicates a battle object 
 ---
 ---
 ---

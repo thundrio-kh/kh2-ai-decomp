@@ -5,23 +5,23 @@ name: trap_bg_ground_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,160,32,48,64,...) (pushFromFSp: 4,72) (pushFromPSpVal: 32,96) (pushImm: 32)
-push unk2 ; (unknown)  (pushFromPSp: 16,160,32,48,64,...) (pushFromFSp: 4) (pushImmf: 2) (pushFromPSpVal: 32,96) (add: )
-push unk3 ; (unknown)  (pushImmf: 10000,10000 ; ___possible_ref,180,200,220,250,3000) (pushFromFSp: 4) (mulf: )
+push pos ; (current position to use when calculated nearest ground)
+push result ; (kn::FVector *)  (vector that the result will be stored in)
+push height ; (float)  (Value to add to the result of the nearest ground)
 syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
-pop unk ; (unknown) 
+pop returnval ; (int) (unknown)
 ---
 ---
 ---
-description: 
+description: Gets the position of the nearest ground
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_attack_set_radius
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
@@ -13,14 +13,14 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,104,12,144,16,...) (pushFromFSpVal: 0,100,108,128,160,...) (fetchValue: 0,16,24,28,4,...) (pushImmf: 0.5,1.2,450) (pushFromPWp: W0) (add: )
-push unk2 ; (unknown)  (pushImmf: 0,10,100,1000,10000,110,1150,120,130,140,15,150,1500,160,180,1800,187.30328,190,20,200,2000,220,230,240,25,250,260,280,30,300,3000,320,330,380,40,400,45,450,480,50,500,5000,510,530,55,550,60,60 ; ___possible_ref,600,70,700,75,80,800,90,950) (pushFromFSp: 24,28,4,68,8) (fetchValue: 24,36,76,80) (pushFromFSpVal: 24) (mulf: ) (cfti: )
-push unk3 ; (unknown)  (pushImmf: 0,10,100,1000,10000,120,150,1500,175,180,20,200,2000,220,230,250,30,300,3000,320,35,350,375,40,400,420,450,50,500,5000,520,60,600,70,700,75,80,800) (pushFromFSp: 20,24,4,64) (fetchValue: 4,40) (subf: ) (addf: ) (mulf: )
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push radius ; (float) (Radius to set for attack)
+push unk3 ; (height)  (Height to set for attack)
 syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the radius and height for a [circular] attack
 ---
 ---
 ---

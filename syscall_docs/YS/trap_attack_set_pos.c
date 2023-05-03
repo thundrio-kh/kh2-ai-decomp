@@ -5,21 +5,21 @@ name: trap_attack_set_pos
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 104,12,144,16,176,...) (pushFromFSpVal: 0,100,108,128,180,...) (memcpyToSp: 16, 112,16, 128,16, 16,16, 160,16, 192,...) (pushImm: 32) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPSpVal: 32,80,96) (pushFromPSp: 112,128,16,160,192,...) (pushFromFSp: 0,4) (add: )
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push pos ; (kn::FVector *)  (A Vector representing where the attack should occur)
 syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a position for an attack to happen.
 ---
 ---
 ---

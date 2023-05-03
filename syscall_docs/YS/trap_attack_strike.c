@@ -5,7 +5,7 @@ name: trap_attack_strike
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---

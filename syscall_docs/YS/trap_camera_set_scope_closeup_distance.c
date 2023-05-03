@@ -5,20 +5,20 @@ name: trap_camera_set_scope_closeup_distance
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 150)
+push distance ; (float)  (Distance to zoom in for closeup. Value of 150 used by Xigbar)
 syscall 1, 313 ; trap_camera_set_scope_closeup_distance (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the closeup distance to be used by the scope
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_attack_set_team
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 64,68) (pushFromFSp: 12,40,44)
-push unk2 ; (unknown)  (pushFromFSpVal: 64) (pushImm: 1,2) (pushFromFSp: 8)
+push attack ; (YS::ATTACK_MAGIC_3 *) (An attack object)
+push team ; (int)  (Value to represent which team this attack belongs to)
 syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a team for an attack (most likely so that objects on the same team cannot be damaged by this attack)
 ---
 ---
 ---

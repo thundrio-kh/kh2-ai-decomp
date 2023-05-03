@@ -5,23 +5,23 @@ name: trap_bg_get_random_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,176,32,48,...) (add: ) (pushFromFSp: 12,4) (pushFromPSpVal: 224,32) (fetchValue: 48,52) (pushFromPWp: W16,W4240,W800)
-push unk2 ; (unknown)  (pushImmf: 0,1.5,10,100,1000,120,150,180,2,200,250,280,300,400,450,50,500,550,600,700,800,90,900) (pushFromFSp: 0,12,32,40,8) (pushFromFSpVal: 72 ; ___possible_ref)
-push unk3 ; (unknown)  (pushImmf: 0,100,1000,1200,150,1500,160,180,200,2000,250,280,300,350,400,450,50,500,600,700,800,90,900) (subf: ) (fetchValue: 52) (pushFromFSp: 36,4,40,8) (pushFromFSpVal: 76) (mulf: )
+push center ; (kn::FVector *)  (center value to use)
+push near ; (float)  (how near to the center to look)
+push far ; (float)  (how far from the center to look)
 syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) (random position in the air)
 ---
 ---
 ---
-description: 
+description: Gets a random open position
 ---
 ---
 ---

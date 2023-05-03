@@ -5,23 +5,23 @@ name: trap_attack_set_time
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,104,12,144,16,...) (pushFromFSpVal: 5464,68,80) (fetchValue: 0,68) (pushImmf: 30)
-push unk2 ; (unknown)  (pushImmf: 10,100,12,120,14,15,16,180,20,200,25,28,3,30,34,350,36,4,40,45,50,55,56,6,60,8,80,90) (gosub: 12, L1670,12, L898) (pushFromFSp: 36,4) (subf: )
-push unk3 ; (unknown)  (pushImmf: 0,10,100,120,150,160,20,200,25,30,300,320,40,400,450,50,500,60,70,700,80)
-push unk4 ; (unknown)  (pushImmf: 0,100,120,150,300,320,350,50,520,70,700)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push time ; (float)  (Amount of time (in seconds?) for an attack to go on)
+push radius ; (float)  (Radius to set for attack)
+push height ; (float)  (Height to set for attack)
 syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an amount of time for an attack to go on. Looks like it is a more powerful version of trap_attack_set_radius
 ---
 ---
 ---

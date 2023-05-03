@@ -5,21 +5,21 @@ name: trap_camera_begin_scope
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImmf: 200)
+push obj ; (YS::OBJ_8 *)  (Object to center the camera on)
+push heightOffset ; (int) (height offset for the camera, value of 200 is used by Xigbar)
 syscall 1, 281 ; trap_camera_begin_scope (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Switch the camera mode to the inverse scope used in the Xigbar fight.
 ---
 ---
 ---

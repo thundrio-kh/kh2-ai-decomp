@@ -5,20 +5,20 @@ name: trap_camera_eye
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 305 ; trap_camera_eye (0 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) (A position vector) 
 ---
 ---
 ---
-description: 
+description: Returns the passed in position with height + 80 to account for being at eye level 
 ---
 ---
 ---

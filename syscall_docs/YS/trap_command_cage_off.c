@@ -5,7 +5,7 @@ name: trap_command_cage_off
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns off temporary barriers, like those used during the escape from Hades sequence.
 ---
 ---
 ---

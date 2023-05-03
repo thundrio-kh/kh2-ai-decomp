@@ -17,7 +17,7 @@ syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns off temporary barriers, like those used during the escape from Hades sequence.
 ---
 ---
 ---

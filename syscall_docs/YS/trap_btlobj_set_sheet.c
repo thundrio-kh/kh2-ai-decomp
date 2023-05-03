@@ -5,22 +5,22 @@ name: trap_btlobj_set_sheet
 ---
 ---
 ---
-category: 
+category: btlobj
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W3152)
-push unk2 ; (unknown)  (pushImm: 100,102,106,107,109,110,111,112,113,114,115,119,121,122,123,127,128,129,130,131,135,136,137,138,139,140,141,142,143,144,145,146,147,149,150,152,153,155,157,158,160,161,162,168,169,170,172,177,178,179,18,180,181,182,183,184,185,186,187,188,189,19,190,191,192,193,194,195,196,197,198,199,2,20,217,22,223,23,239,24,25,26,27,28,29,30,31,32,36,37,38,4,5,56,6,62,7,71,72,73,74,79,90,91,94,98) (pushFromFSp: 16,32)
-push unk3 ; (unknown)  (pushImm: 0)
+push btlobj ; (YS::PIERROT_6 *)  (A btlobj)
+push id ; (int)  (enmp entry to use)
+push param ; (int)  (unknown, always 0 in game)
 syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a batleobj to use a specific enmp entry.
 ---
 ---
 ---

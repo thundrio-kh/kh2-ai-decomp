@@ -5,20 +5,20 @@ name: trap_camera_set_scope_zoom
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 116)
+push value ; (float)  (Amount of zoom to use)
 syscall 1, 312 ; trap_camera_set_scope_zoom (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Amount of zoom for the scope mode camera
 ---
 ---
 ---

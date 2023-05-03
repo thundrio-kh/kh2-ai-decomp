@@ -5,20 +5,20 @@ name: trap_bg_set_animation_speed
 ---
 ---
 ---
-category: 
+category: map
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0,1)
+push ratio ; (float)  (ratio to set for animation speed. Used values are 0 and 1)
 syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the background animation speed of the map. Only used by Hostile Program to stop the animation of the walls when Hostile Program has been frozen.
 ---
 ---
 ---

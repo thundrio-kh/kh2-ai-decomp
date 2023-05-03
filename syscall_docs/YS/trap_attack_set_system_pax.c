@@ -5,20 +5,20 @@ name: trap_attack_set_system_pax
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
 syscall 2, 94 ; trap_attack_set_system_pax (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attach a system PAX effect to an attack
 ---
 ---
 ---

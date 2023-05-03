@@ -5,20 +5,20 @@ name: trap_bg_hide
 ---
 ---
 ---
-category: 
+category: map
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushImm: 0,1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,32,33,34,35,36,38,4,40,41,42,44,46,48,5,51,52,6,61,62,7,8,9) (pushFromFWp: W788) (gosub: 12, L20671) (pushFromFSpVal: 120,124,128) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (pushFromFSp: 4,8) (sub: )
+push groupNumber ; (int)  (groupNumber to hide)
 syscall 1, 36 ; trap_bg_hide (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hides a specific part of the map
 ---
 ---
 ---

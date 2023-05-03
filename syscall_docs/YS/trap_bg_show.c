@@ -5,20 +5,20 @@ name: trap_bg_show
 ---
 ---
 ---
-category: 
+category: map
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4,8) (add: ) (pushImm: 0,1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,39,4,41,42,43,45,47,49,5,51,6,61,62,63,7,8,9) (pushFromFWp: W4256,W788) (gosub: 12, L20671) (pushFromFSpVal: 132,136,140) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out))
+push groupNumber ; (int)  (groupNumber to hide)
 syscall 1, 37 ; trap_bg_show (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shows a group for the map.
 ---
 ---
 ---
