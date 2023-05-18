@@ -15,7 +15,7 @@ documentation level: stub
 ---
 push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
 push radius ; (float) (Radius to set for attack)
-push unk3 ; (height)  (Height to set for attack)
+push height ; (height)  (Height to set for attack)
 syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
 ---
 ---
