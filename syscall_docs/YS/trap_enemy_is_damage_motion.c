@@ -5,7 +5,7 @@ name: trap_enemy_is_damage_motion
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 16,32,8)
+push obj ; (YS::BTLOBJ *)  (an battle object for an enemy)
 syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
-pop unk ; (unknown) 
+pop ismotion ; (bool) 
 ---
 ---
 ---
-description: 
+description: returns if the damage is happening while the enemy is in an animation
 ---
 ---
 ---

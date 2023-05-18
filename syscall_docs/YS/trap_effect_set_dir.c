@@ -5,21 +5,21 @@ name: trap_effect_set_dir
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,108,132,32,44,...) (pushImm: 16) (pushFromFSp: 184,32,36,4,48,...) (memcpyToSp: 16, 112,16, 16,16, 160,16, 192,16, 32,...) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPSp: 112,16,160,192,32,...) (add: ) (pushFromPSpVal: 128,160,192,64,80,...) (pushFromFSp: 4)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
+push dir ; (kn::FVector *) (a vector object representing a position/direction)
 syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the effects direction to be pointing to dir
 ---
 ---
 ---

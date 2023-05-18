@@ -5,20 +5,20 @@ name: trap_frametime
 ---
 ---
 ---
-category: 
+category: timing
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 0, 3 ; trap_frametime (0 in, 1 out)
-pop unk ; (unknown) 
+pop numframes ; (int) (time represented as a number of frames)
 ---
 ---
 ---
-description:  <check dis notes>
+description: Returns the time (since the VM started?) as a number of frames.
 ---
 ---
 ---
@@ -30,6 +30,7 @@ void __fastcall YS::trap_frametime(BD_VALUE_16 *args)
   *(float *)&(*args)[0] = dk::Vsync::s_frameTime;
 }
 // A0AD74: using guessed type float dk::Vsync::s_frameTime;
+
 
 //BASIC
 ---

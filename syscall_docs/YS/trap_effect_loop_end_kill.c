@@ -5,20 +5,20 @@ name: trap_effect_loop_end_kill
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSpVal: 0,1072,108,116,128,...) (pushFromFSp: 4,8)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
 syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ends an effect loop and kills it.
 ---
 ---
 ---

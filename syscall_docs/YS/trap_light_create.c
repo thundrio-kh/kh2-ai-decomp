@@ -5,21 +5,21 @@ name: trap_light_create
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push type ; (int)  (type or index of light to create. Valid values are 0 and 1)
 syscall 1, 181 ; trap_light_create (1 in, 1 out)
-pop unk ; (unknown) 
+pop light object ; (YS::LIGHT_0 *) 
 ---
 ---
 ---
-description:  <check dis notes>
+description: Initializes a light object.
 ---
 ---
 ---

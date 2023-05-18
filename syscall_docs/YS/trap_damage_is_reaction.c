@@ -5,21 +5,21 @@ name: trap_damage_is_reaction
 ---
 ---
 ---
-category: 
+category: damage
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4,8)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
-pop unk ; (unknown) 
+pop shouldreact ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if damage from an attack should be reacted to.
 ---
 ---
 ---

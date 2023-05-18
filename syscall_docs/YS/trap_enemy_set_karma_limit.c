@@ -5,21 +5,21 @@ name: trap_enemy_set_karma_limit
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImmf: 100,125,150,200,30,40,5,50,55,60,70,75,80,85,90,92,95) (pushFromFSp: 4)
+push obj ; (YS::BTLOBJ *)  (an enemy battle object)
+push karma ; (float)  (value to set for karma. Is 100 normally)
 syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an enemies karma value (revenge limit) to the specified number.
 ---
 ---
 ---

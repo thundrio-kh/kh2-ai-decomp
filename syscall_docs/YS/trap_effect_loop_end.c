@@ -5,20 +5,20 @@ name: trap_effect_loop_end
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0,108,112,116,120,...) (pushFromFSp: 0,12,176,184,4,...) (pushFromFSpVal: 108,112,116,132,148,...)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
 syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ends an effect loop
 ---
 ---
 ---

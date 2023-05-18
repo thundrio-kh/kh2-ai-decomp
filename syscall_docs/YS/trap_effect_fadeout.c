@@ -5,22 +5,22 @@ name: trap_effect_fadeout
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,48) (pushFromFSpVal: 0,16,164,32,44,...) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImmf: 0,1,10,12,16,30,5,6,8)
-push unk3 ; (unknown)  (pushImm: 0,1)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
+push frame ; (float)  (which frame to fade the effect out? Game uses values between 0 and 10)
+push shouldfade ; (int)  (A boolean value. If 0 then this trap does nothing.)
 syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Fades out an effect
 ---
 ---
 ---

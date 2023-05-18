@@ -5,21 +5,21 @@ name: trap_enemy_is_no_control
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::BTLOBJ *)  (A battle object for an enemy)
 syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
-pop unk ; (unknown) 
+pop iscontrol ; (bool) 
 ---
 ---
 ---
-description: 
+description: is the enemy control on?
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_event_is_exec
 ---
 ---
 ---
-category: 
+category: event
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 4, 2 ; trap_event_is_exec (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_exec ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if an event is executing
 ---
 ---
 ---

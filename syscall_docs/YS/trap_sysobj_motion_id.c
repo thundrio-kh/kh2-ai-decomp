@@ -5,25 +5,26 @@ name: trap_sysobj_motion_id
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push sysobj ; (YS::MOTION_289 *)  (A motion object)
 syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
-pop unk ; (unknown) 
+pop mid ; (int) (the motion ID)
 ---
 ---
 ---
-description: 
+description: Gets the motion ID of a motion object
 ---
 ---
 ---
 decompiled code:
+
 
 /----- (00000000004F7710) ----------------------------------------------------
 void __fastcall YS::trap_sysobj_motion_id(BD_VALUE_21 *args)

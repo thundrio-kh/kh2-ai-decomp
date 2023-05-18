@@ -5,21 +5,21 @@ name: trap_effect_set_pos
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 2, 57 ; trap_limit_effect_start (3 in, 1 out)) (pushFromFSpVal: 0,112,132,20,32,...) (memcpyToSp: 16, 112,16, 128,16, 192,16, 48,16, 64,...) (pushFromFSp: 184,20,32,36,4,...) (fetchValue: 0,144) (pushImm: 144)
-push unk2 ; (unknown)  (pushFromPSp: 112,128,16,192,32,...) (pushFromFSp: 4) (pushFromPSpVal: 32,48,64,96) (add: )
+push effect ; (ryj::EFFECT_144 *)  (an effect object)
+push pos ; (kn::FVector *)  (a position vector)
 syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the position of an effect to pos
 ---
 ---
 ---

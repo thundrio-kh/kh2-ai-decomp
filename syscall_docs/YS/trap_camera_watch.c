@@ -9,16 +9,16 @@ category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,48) (pushFromPSpVal: 0,192,20,4) (pushFromFSp: 0,4) (pushFromPWp: W4)
+push target ; (YS::TARGET_3 *) (target for the camera to watch)
 syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a "reaction" view camera to watch a target
 ---
 ---
 ---

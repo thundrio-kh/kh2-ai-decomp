@@ -5,20 +5,20 @@ name: trap_effect_kill
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,108,112,16,24,...) (fetchValue: 0,144,24,4) (pushFromFSp: 4,48,52,8)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
 syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: ends an effect and frees the associated memory
 ---
 ---
 ---

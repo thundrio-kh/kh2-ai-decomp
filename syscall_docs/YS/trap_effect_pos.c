@@ -5,21 +5,21 @@ name: trap_effect_pos
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 16,24,32,36,56,...) (pushFromFSp: 12,16,20,28,32,...) (fetchValue: 0,144,64)
+push effect ; (ryj::EFFECT_144)
 syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Returns the position of an effect
 ---
 ---
 ---
