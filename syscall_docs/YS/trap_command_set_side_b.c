@@ -5,11 +5,11 @@ name: trap_command_set_side_b
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the command cage to the back side
 ---
 ---
 ---

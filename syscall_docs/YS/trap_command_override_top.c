@@ -5,24 +5,24 @@ name: trap_command_override_top
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 152,80) (gosub: 4, L2473,4, L2481,4, L2736) (pushFromFSp: 20) (pushImm: 104,302,672)
-push unk2 ; (unknown)  (pushImm: 104,12,302,60,672) (pushFromPWp: W176,W288) (pushFromFSp: 16)
-push unk3 ; (unknown)  (add: ) (pushImm: 104,3,302,672) (pushFromFSp: 12)
-push unk4 ; (unknown)  (fetchValue: 0,4) (gosub: 4, L2473,4, L2481,4, L2736) (pushFromFSp: 8) (pushImm: 104,302,672)
-push unk5 ; (unknown)  (pushFromPSpVal: 0) (pushFromPWp: W0,W176,W288) (pushFromFSp: 0) (pushFromPSp: 16)
+push command ; (int) (Line number to command) 
+push command2 ; (int) (Optional line number to command)
+push command3 ; (int) (Optional line number to command)
+push command4 ; (int) (Optional line number to command)
+push unk5 ; (unknown) (unknown, possibly battle object?)
 syscall 1, 237 ; trap_command_override_top (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Overrides the command for all of the slots on the command cage with priority 100
 ---
 ---
 ---

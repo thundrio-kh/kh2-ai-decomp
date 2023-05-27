@@ -5,23 +5,23 @@ name: trap_command_override
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,16) (pushImm: 0,1,2) (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromFSp: 12,4,8) (pushImm: 113,146,147,20,270,271,276,321,335,346,397,4,434,466,507,508,561,646,647,650,651,655,682,714) (fetchValue: 164)
-push unk3 ; (unknown)  (pushFromPSpVal: 0,112,20) (pushFromFSp: 0,8) (pushFromPWp: W0,W4) (add: ) (pushFromPSp: 16)
-push unk4 ; (unknown)  (pushImm: 1,2) (gosub: 4, L2828,4, L788)
+push slot ; (int) (slot on the command cage to override, value must be within 0-7)
+push command ; (int) (command to override)// command
+push unk ; (unknown) (unknown) 
+push num ; (int) (unknown)
 syscall 1, 165 ; trap_command_override (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Overrides the specified slot on the command cage with priority 100
 ---
 ---
 ---

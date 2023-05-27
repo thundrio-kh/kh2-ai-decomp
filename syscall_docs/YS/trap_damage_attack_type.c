@@ -5,7 +5,7 @@ name: trap_damage_attack_type
 ---
 ---
 ---
-category: 
+category: damage
 ---
 ---
 ---
@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
 pop unk ; (unknown) 
 ---

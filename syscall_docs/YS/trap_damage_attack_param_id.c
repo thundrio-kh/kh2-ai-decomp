@@ -5,21 +5,21 @@ name: trap_damage_attack_param_id
 ---
 ---
 ---
-category: 
+category: damage
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
-pop unk ; (unknown) 
+pop param_id ; (int) (attack param id)
 ---
 ---
 ---
-description: 
+description: returns the Id of the attack, defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---

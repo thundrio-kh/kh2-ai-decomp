@@ -5,24 +5,24 @@ name: trap_command_override_slot
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push slot ; (int) (slot on the command cage to override, value must be within 0-7)
+push command ; (int) (command to override)// command
+push unk ; (unknown) (unknown) 
+push num ; (int) (unknown)
 syscall 1, 345 ; trap_command_override_slot (4 in, 1 out)
-pop unk ; (unknown) 
+pop commandslot ; (YS::COMMAND_SLOT_14 *) ()
 ---
 ---
 ---
-description: 
+description: Overrides the specified slot on the command cage with priority 100, and returns the slot
 ---
 ---
 ---

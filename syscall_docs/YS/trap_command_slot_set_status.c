@@ -5,21 +5,21 @@ name: trap_command_slot_set_status
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push slot ; (int) (slot to set)
+push status ; (int) (the status to set)
 syscall 1, 346 ; trap_command_slot_set_status (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the status for a command slot
 ---
 ---
 ---
