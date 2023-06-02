@@ -5,22 +5,22 @@ name: trap_enemy_exec_damage_hitback
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
-push unk2 ; (unknown)  (pushFromFSp: 4)
-push unk3 ; (unknown)  (pushImmf: 0,10,100,180,250) (syscall: 2, 86 ; trap_damage_get_hitback (1 in, 1 out))
+push enemy_obj ; (YS::BTLOBJ *)  (A battle object)
+push damage ; (YS::DAMAGE_4 *)  (A damage object)
+push power ; (float)  (amount of power for the damage)
 syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes hitback damage against an enemy
 ---
 ---
 ---

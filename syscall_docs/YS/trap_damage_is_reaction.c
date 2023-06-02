@@ -19,7 +19,7 @@ pop shouldreact ; (bool)
 ---
 ---
 ---
-description: Checks if damage from an attack should be reacted to, which it is as long as the reaction type is not 0 or 1
+description: Checks if damage from an attack should be reacted to, which it is as long as the reaction type is not 0 or 1. The reaction type is the "Enemy Reaction" value defined in the ATKP table
 ---
 ---
 ---

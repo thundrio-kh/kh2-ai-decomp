@@ -5,21 +5,21 @@ name: trap_damage_blow_speed
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 33 ; trap_damage_blow_speed (1 in, 1 out)
-pop unk ; (unknown) 
+pop blow_speed ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Returns the blow speed value for the attack, documented in openkh as ???
 ---
 ---
 ---

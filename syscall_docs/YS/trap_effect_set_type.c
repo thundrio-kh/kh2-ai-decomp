@@ -5,21 +5,21 @@ name: trap_effect_set_type
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push effect ; (ryj::EFFECT_144 *)  (An effect object)
+push effect_type ; (int) (type of the effect)
 syscall 0, 86 ; trap_effect_set_type (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the type of an effect.
 ---
 ---
 ---

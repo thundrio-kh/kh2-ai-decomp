@@ -5,20 +5,20 @@ name: trap_enemy_count_damager
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 2, 65 ; trap_enemy_count_damager (0 in, 1 out)
-pop unk ; (unknown) 
+pop count ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns a count of all the enemies currently being damaged
 ---
 ---
 ---

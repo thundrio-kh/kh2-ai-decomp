@@ -5,20 +5,20 @@ name: trap_effect_add_dead_block
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 32,4,8)
+push effectobj ; (ryj::EFFECT_278 *)  (A created effect object
 syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Start the "dead" effect
 ---
 ---
 ---

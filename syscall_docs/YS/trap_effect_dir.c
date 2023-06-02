@@ -5,21 +5,21 @@ name: trap_effect_dir
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 16)
+push effect ; (ryj::EFFECT_144 *)  (pushFromFSpVal: 16)
 syscall 0, 54 ; trap_effect_dir (1 in, 1 out)
-pop unk ; (unknown) 
+pop eff_dir ; (kn::FVector *) (vector describing the direction the effect is pointing)
 ---
 ---
 ---
-description: 
+description: returns the direction of an effect as a vector
 ---
 ---
 ---

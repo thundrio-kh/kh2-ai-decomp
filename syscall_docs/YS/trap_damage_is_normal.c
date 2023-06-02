@@ -5,21 +5,21 @@ name: trap_damage_is_normal
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Returns if the damage from an attack is normal type
 ---
 ---
 ---

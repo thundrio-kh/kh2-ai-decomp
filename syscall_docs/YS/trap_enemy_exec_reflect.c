@@ -5,24 +5,24 @@ name: trap_enemy_exec_reflect
 ---
 ---
 ---
-category: 
+category: enemy 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
-push unk5 ; (unknown) 
+push enemy_obj ; (YS::BTLOBJ *) (A battle object)
+push self ; (YS::ATTACK_13 *) (An attack object) 
+push other ; (YS::ATTACK_13 *) (An attack object)
+push motion ; (int) (motion slot for the reflect)
+push hitback ; (float) (amount of hitback for the damage) 
 syscall 2, 27 ; trap_enemy_exec_reflect (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes reflect
 ---
 ---
 ---

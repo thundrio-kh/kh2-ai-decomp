@@ -5,21 +5,21 @@ name: trap_effect_is_alive
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,16,20,24,32,...) (pushFromFSp: 0,8) (fetchValue: 0)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
 syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: checks if an effect is still alive
 ---
 ---
 ---

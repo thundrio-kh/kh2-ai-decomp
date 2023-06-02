@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: returns the type of the attack, as defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---

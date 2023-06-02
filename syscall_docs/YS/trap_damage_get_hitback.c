@@ -5,7 +5,7 @@ name: trap_damage_get_hitback
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
 pop unk ; (unknown) 
 ---

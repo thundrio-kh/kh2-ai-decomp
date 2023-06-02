@@ -5,22 +5,22 @@ name: trap_enemy_exec_damage_small
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4)
-push unk3 ; (unknown)  (pushImmf: 100)
+push enemy_obj ; (YS::BTLOBJ *)  (A battle object)
+push damage ; (YS::DAMAGE_4 *)  (A damage object)
+push power ; (float)  (amount of power for the damage, value of 100 is the only one used in game)
 syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes a small amount of damage
 ---
 ---
 ---

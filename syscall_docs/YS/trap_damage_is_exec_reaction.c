@@ -5,21 +5,21 @@ name: trap_damage_is_exec_reaction
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 16 ; trap_damage_is_exec_reaction (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_exec_reaction ; (bool) 
 ---
 ---
 ---
-description: 
+description: Unused. 
 ---
 ---
 ---
