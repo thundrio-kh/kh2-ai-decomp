@@ -5,22 +5,22 @@ name: trap_enemy_exec_damage_large
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4)
-push unk3 ; (unknown)  (pushImmf: 0)
+push enemy_obj ; (YS::BTLOBJ *)  (pushFromFSp: 0)
+push damage ; (YS::DAMAGE_4 *)  (pushFromFSp: 4)
+push power ; (float)  (pushImmf: 0)
 syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes a large amount of damage
 ---
 ---
 ---

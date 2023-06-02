@@ -5,7 +5,7 @@ name: trap_damage_attack_param_id
 ---
 ---
 ---
-category: damage
+category: attack
 ---
 ---
 ---
@@ -19,7 +19,7 @@ pop param_id ; (int) (attack param id)
 ---
 ---
 ---
-description: returns the Id of the attack, defined in its Atkp entry found in 00battle.bin
+description: returns the SubId of the attack, as defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---

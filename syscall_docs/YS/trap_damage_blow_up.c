@@ -5,21 +5,21 @@ name: trap_damage_blow_up
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
-pop unk ; (unknown) 
+pop blow_up ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the blow up value for the attack, documented in openkh as Knockback Strength 2
 ---
 ---
 ---

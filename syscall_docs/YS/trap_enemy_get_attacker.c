@@ -5,21 +5,21 @@ name: trap_enemy_get_attacker
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push enemy_obj ; (YS::BTLOBJ *)  (A battle object)
 syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
-pop unk ; (unknown) 
+pop attacker ; (YS::OBJ_128 *) 
 ---
 ---
 ---
-description: 
+description: Returns the object that last attacked the passed in object
 ---
 ---
 ---

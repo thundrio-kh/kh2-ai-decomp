@@ -5,21 +5,21 @@ name: trap_effect_pause
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,64)
-push unk2 ; (unknown)  (pushImm: 1) (pushFromFSp: 4)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
+push unk ; (int)  (Only known used value is 1)
 syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: pause an effect under certain condictions
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_damage_damage
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
-pop unk ; (unknown) 
+pop damage_to ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the Team value of the attack, as documented in the Openkh ATKP page (Deal damage to: 0/1/2 Enemies, 3/4/5 Enemies and allies…)
 ---
 ---
 ---

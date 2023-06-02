@@ -5,21 +5,21 @@ name: trap_enemy_exec_damage
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4)
+push enemy_obj ; (YS::BTLOBJ *)  (A battle object)
+push damage ; (YS::DAMAGE_4 *)  (A damage object)
 syscall 2, 0 ; trap_enemy_exec_damage (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes damage
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_damage_element
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 85 ; trap_damage_element (1 in, 1 out)
-pop unk ; (unknown) 
+pop element ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the element of the attack, according to openkh documentation
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_effect_set_scale
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,160,20,32,36,...) (pushFromFSp: 48,52,68) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,80) (pushFromFSp: 4,8)
+push effect ; (ryj::EFFECT_144 *)  (An effect object)
+push scale ; (kn::FVector *)  (vector to scale the effect by)
 syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Scales an effect object
 ---
 ---
 ---

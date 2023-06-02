@@ -5,15 +5,15 @@ name: trap_damage_exec_reaction
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
 ---
 ---

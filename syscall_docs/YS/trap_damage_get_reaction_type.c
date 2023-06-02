@@ -5,21 +5,40 @@ name: trap_damage_get_reaction_type
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 2, 64 ; trap_damage_orig_reaction (1 in, 1 out))
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
-pop unk ; (unknown) 
+pop reaction_type ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the type of reaction the attack causes, according to this pseudocode function
+
+/* Note the following is a python rewrite of GetReactionType
+
+def YS::DAMAGE::GetReactionType(reaction):
+  if reaction < 0 or reaction > 18:
+    raiseError()
+  if reaction in [1, 12]:
+    return 1
+  if reaction in [3, 6, 8, 10, 13, 16, 18]:
+    return 3
+  if reaction in [4, 9]:
+    return 4
+
+  // 0 2 5 7 11 14 15 17 all return the input 
+  return reaction;
+}
+
+*/
+
 ---
 ---
 ---

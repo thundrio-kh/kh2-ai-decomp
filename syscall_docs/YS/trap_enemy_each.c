@@ -5,21 +5,21 @@ name: trap_enemy_each
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4) (fetchValue: 4)
+push enemy ; (YS::ENEMY_0 *)  (A type of enemy)
 syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
-pop unk ; (unknown) 
+pop enemy_array ; (an array of all instances of this enemy) 
 ---
 ---
 ---
-description: 
+description: seems to return an array of all instances of an enemy
 ---
 ---
 ---

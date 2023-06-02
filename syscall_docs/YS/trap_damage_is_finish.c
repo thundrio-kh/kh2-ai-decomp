@@ -5,21 +5,21 @@ name: trap_damage_is_finish
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_finish ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the damage from an attack is a finisher type
 ---
 ---
 ---

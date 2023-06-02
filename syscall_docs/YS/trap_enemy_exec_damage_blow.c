@@ -5,25 +5,25 @@ name: trap_enemy_exec_damage_blow
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushImmf: 60)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImmf: 12)
-push unk3 ; (unknown)  (pushImm: 16) (pushFromFSp: 0)
-push unk4 ; (unknown)  (pushImm: 18) (fetchValue: 16)
-push unk5 ; (unknown)  (pushImmf: -300,10,15,20,25,30,40,50) (cfti: )
-push unk6 ; (unknown)  (pushImmf: 0,100,20,50,80) (mulf: )
+push enemy_obj ; (YS::BTLOBJ *)  (a battle object)
+push damage ; (YS::DAMAGE_4 *) (a damage object)
+push motion_front ; (int)  (animation slot to use for front motion)
+push motion_back ; (int)  (animation slot to use for back motion)
+push up ; (float)  (amount to blow up)
+push speed ; (float)  (speed to blow)
 syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
 ---
 ---
 ---
-description: 
+description: executes blow damage against an enemy.
 ---
 ---
 ---

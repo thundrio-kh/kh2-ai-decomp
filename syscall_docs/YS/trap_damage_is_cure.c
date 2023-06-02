@@ -5,21 +5,21 @@ name: trap_damage_is_cure
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
-pop unk ; (unknown) 
+pop isheal ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the type of damage is healing (if the value is 5 or 6)
 ---
 ---
 ---

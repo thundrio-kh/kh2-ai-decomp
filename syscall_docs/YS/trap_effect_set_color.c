@@ -5,21 +5,21 @@ name: trap_effect_set_color
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,64)
-push unk2 ; (unknown)  (pushFromPSp: 16,32) (pushFromFSp: 4)
+push effect ; (ryj::EFFECT_144 *) (an effect object)
+push color_vector ; (kn::FVector *)  (probably r,g,b,a color vector)
 syscall 0, 67 ; trap_effect_set_color (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the color of an effect
 ---
 ---
 ---

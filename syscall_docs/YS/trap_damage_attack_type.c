@@ -5,21 +5,21 @@ name: trap_damage_attack_type
 ---
 ---
 ---
-category: damage
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
-pop unk ; (unknown) 
+pop damage_type ; (int) 
 ---
 ---
 ---
-description: 
+description: returns the type of the attack, as defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---
