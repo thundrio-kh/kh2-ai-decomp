@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push type ; (int)  (type or index of light to create. Valid values are 0 and 1)
 syscall 1, 181 ; trap_light_create (1 in, 1 out)
-pop light object ; (YS::LIGHT_0 *) 
+pop light_object ; (YS::LIGHT_0 *) 
 ---
 ---
 ---

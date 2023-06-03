@@ -5,11 +5,11 @@ name: trap_obj_set_detach_callback
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -20,7 +20,7 @@ syscall 1, 103 ; trap_obj_set_detach_callback (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: probably does nothing, is unused
 ---
 ---
 ---

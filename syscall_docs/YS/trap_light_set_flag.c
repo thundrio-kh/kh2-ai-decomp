@@ -5,21 +5,21 @@ name: trap_light_set_flag
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 100,112,168,20,200,...) (pushFromFSp: 0,32,36,4) (pushFromFWp: W0,W12,W140,W144,W16,...) (fetchValue: 160)
-push unk2 ; (unknown)  (pushImm: 1)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push flag_number ; (int)  (which flag to set, only a value of 1 is used in game)
 syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: flag to set.
 ---
 ---
 ---

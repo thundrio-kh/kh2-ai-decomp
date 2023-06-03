@@ -5,11 +5,11 @@ name: trap_event_layer_on
 ---
 ---
 ---
-category: 
+category: event
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 356 ; trap_event_layer_on (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: enables the event HUD
 ---
 ---
 ---

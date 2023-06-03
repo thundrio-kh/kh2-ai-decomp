@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
-push unk2 ; (unknown)  (pushImm: 4)
+push picture ; (int)  (puzzle that the piece is a part of)
+push piece ; (int)  (number piece in the puzzle)
 syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Gives a jigsaw piece
 ---
 ---
 ---

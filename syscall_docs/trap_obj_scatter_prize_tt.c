@@ -5,11 +5,11 @@ name: trap_obj_scatter_prize_tt
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -20,7 +20,7 @@ syscall 1, 240 ; trap_obj_scatter_prize_tt (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: probably does nothing, is not used
 ---
 ---
 ---

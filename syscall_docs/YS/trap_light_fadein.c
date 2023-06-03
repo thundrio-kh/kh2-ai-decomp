@@ -5,21 +5,21 @@ name: trap_light_fadein
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFWp: W420,W4468)
-push unk2 ; (unknown)  (pushImmf: 40)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push time ; (int)  (time to take to fade light in)
 syscall 1, 251 ; trap_light_fadein (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Fades light in
 ---
 ---
 ---

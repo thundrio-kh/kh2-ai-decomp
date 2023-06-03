@@ -5,24 +5,24 @@ name: trap_light_set_color
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 2, 55 ; trap_limit_light (1 in, 1 out)) (pushFromFSpVal: 100,112,168,20,200,...) (pushFromFSp: 0,32,36,4) (pushFromFWp: W0,W12,W140,W144,W16,...) (fetchValue: 160)
-push unk2 ; (unknown)  (pushImm: 0,128,16,48,64,80,96) (pushFromFSp: 16)
-push unk3 ; (unknown)  (pushImm: 0,128,16,48,64,80,96) (pushFromFSp: 12)
-push unk4 ; (unknown)  (pushImm: 0,128,16,48,64,80,96) (pushFromFSp: 8)
-push unk5 ; (unknown)  (pushFromFSp: 4) (pushImmf: 0,10,20,30,40,60)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push r ; (int)  (red value)
+push g ; (int)  (green value)
+push b ; (int)  (blue value)
+push time ; (int)  (time to take to set the color)
 syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets a color for a light, "a" value is always 128
 ---
 ---
 ---

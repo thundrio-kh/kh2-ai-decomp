@@ -5,24 +5,24 @@ name: trap_limit_effect_start_bind
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushImm: 0,10,11,12,13,14,15,2,3,4,5,6,7,8,9) (add: ) (pushFromFSp: 4,8)
-push unk3 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSpVal: 0,112,20,4) (pushFromPSp: 12,4)
-push unk4 ; (unknown)  (pushImm: 0,1)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
+push id ; (int) (id of the effect to start)
+push obj ; (YS::OBJ_114 *)  (Object to bind the limit to)
+push flag ; (int)  (set the flag to 0 or 1)
 syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_145 *) (an efect object)
 ---
 ---
 ---
-description: 
+description: starts an limit effect bound to an object
 ---
 ---
 ---

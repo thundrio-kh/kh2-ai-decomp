@@ -5,11 +5,11 @@ name: trap_event_control_off
 ---
 ---
 ---
-category: 
+category: event
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 293 ; trap_event_control_off (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns off player control for an event
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_light_fadeout
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 100,112,168,20,200,...) (pushFromFWp: W0,W12,W140,W144,W16,...) (pushFromFSp: 32,36,4) (fetchValue: 160)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImmf: 0,10,16,20,30,40,60)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push time ; (int)  (time to take to fade light out)
 syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: fades light out
 ---
 ---
 ---

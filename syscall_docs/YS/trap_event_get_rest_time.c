@@ -5,20 +5,29 @@ name: trap_event_get_rest_time
 ---
 ---
 ---
-category: 
+category: event
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
-pop unk ; (unknown) 
+pop rest_time ; (float) 
 ---
 ---
 ---
-description: 
+description: Gets the amount of time that the event should rest
+
+/* Pseudopython version of GetRestTime()
+def GetRestTime:
+  if YS::Current:
+    return 0
+  if *YS::Current + 12 == 8:
+    return sa::EVENT::getRestFrame()
+  return 3600
+*/
 ---
 ---
 ---

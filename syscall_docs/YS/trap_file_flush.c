@@ -5,11 +5,11 @@ name: trap_file_flush
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 0, 12 ; trap_file_flush (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a file flush
 ---
 ---
 ---

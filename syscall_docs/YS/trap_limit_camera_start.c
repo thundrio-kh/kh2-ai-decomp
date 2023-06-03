@@ -5,23 +5,23 @@ name: trap_limit_camera_start
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPAi: L3167 ; ___ai '00' (L3167),L3182 ; ___ai '10' (L3182),L3379 ; ___ai '00' (L3379),L3411 ; ___ai '10' (L3411),L4499 ; ___ai '00' (L4499),...)
-push unk3 ; (unknown)  (pushImmf: 0,500)
-push unk4 ; (unknown)  (pushImm: 0,1)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object)
+push label ; (int)  (Line number to label for limit camera routine)
+push objspace_range ; (float)  (pushImmf: 0,500)
+push is_air ; (bool)  (pushImm: 0,1)
 syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: starts the specialized limit camera
 ---
 ---
 ---

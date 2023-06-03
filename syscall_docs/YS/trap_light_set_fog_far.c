@@ -5,21 +5,21 @@ name: trap_light_set_fog_far
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFWp: W420,W4468)
-push unk2 ; (unknown)  (pushImmf: 1000)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push distance ; (int)  (far distance for the fog, only value of 1000 is used in game scripts)
 syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the distance that the fog becomes fully opaque
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_empty_func
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 10, 0 ; trap_empty_func (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Does nothing
 ---
 ---
 ---

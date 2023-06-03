@@ -5,20 +5,20 @@ name: trap_limit_close_gauge
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 90 ; trap_limit_close_gauge (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Closes the limit gauge
 ---
 ---
 ---

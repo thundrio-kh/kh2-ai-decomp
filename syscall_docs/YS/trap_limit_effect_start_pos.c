@@ -5,24 +5,24 @@ name: trap_limit_effect_start_pos
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,1,2,24,3,6) (pushFromFSp: 4)
-push unk3 ; (unknown)  (pushFromFSp: 4) (pushFromPSp: 16,32)
-push unk4 ; (unknown)  (pushImm: 1)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
+push id ; (int) (id of the effect to start)
+push pos ; (kn::FVector *)  (position to start the effect)
+push flag ; (int)  (set the flag to 0 or 1)
 syscall 2, 58 ; trap_limit_effect_start_pos (4 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_145 *) (an effect object)
 ---
 ---
 ---
-description: 
+description: Starts a limit effect at a specified position
 ---
 ---
 ---

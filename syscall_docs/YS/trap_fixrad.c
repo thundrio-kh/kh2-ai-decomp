@@ -5,21 +5,21 @@ name: trap_fixrad
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (subf: ) (pushFromFSp: 24,48,52,64,72,...) (fetchValue: 0,12,4,8) (pushFromFSpVal: 8) (addf: ) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 21 ; trap_vector_get_rot_xz (2 in, 1 out),0, 42 ; trap_vector_atan_xz (1 in, 1 out)) (degr: )
+push radian ; (float)  (radian value in degrees that needs to be constrained)
 syscall 0, 43 ; trap_fixrad (1 in, 1 out)
-pop unk ; (unknown) 
+pop radian_out ; (constrained radians) 
 ---
 ---
 ---
-description: 
+description: Constrain a radian value to a certain range
 ---
 ---
 ---

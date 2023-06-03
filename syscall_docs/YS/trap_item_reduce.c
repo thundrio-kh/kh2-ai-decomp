@@ -5,21 +5,21 @@ name: trap_item_reduce
 ---
 ---
 ---
-category: 
+category: inventory
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 362,364,368,370,371,372,373,374,524,538)
-push unk2 ; (unknown)  (pushImm: 100)
+push item ; (int)  (Item number)
+push part ; (int)  (Unknown, game only uses value of 100)
 syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Removes/reduces an item from inventory.
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_light_set_fog_min
 ---
 ---
 ---
-category: 
+category: light
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFWp: W420,W4468)
-push unk2 ; (unknown)  (pushImmf: 0,20)
+push light_object ; (YS::LIGHT_0 *) (a light object)
+push max_density ; (int)  (maximum light density. Value of 255 is used in game scripts)
 syscall 1, 259 ; trap_light_set_fog_min (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the minimum density for fog
 ---
 ---
 ---

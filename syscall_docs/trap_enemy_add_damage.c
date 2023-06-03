@@ -5,21 +5,21 @@ name: trap_enemy_add_damage
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4)
+push unk1 ; (unknown)  (probably an enemy object)
+push unk2 ; (unknown)  (probably an amount of damage)
 syscall 2, 36 ; trap_enemy_add_damage (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unknown
 ---
 ---
 ---

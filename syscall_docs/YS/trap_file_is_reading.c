@@ -5,20 +5,20 @@ name: trap_file_is_reading
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 0, 11 ; trap_file_is_reading (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_reading ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if a file is being read
 ---
 ---
 ---

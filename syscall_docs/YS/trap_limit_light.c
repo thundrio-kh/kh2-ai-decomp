@@ -5,11 +5,11 @@ name: trap_limit_light
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---

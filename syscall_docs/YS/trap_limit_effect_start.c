@@ -13,15 +13,15 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0,64,72) (pushFromFSpVal: 112,280,64,72,76,...) (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushImm: 0,1,13,14,15,17,18,2,3,39,4,41,5,6,7,73,78,8) (pushFromFSpVal: 100,76) (pushFromFSp: 8)
-push unk3 ; (unknown)  (pushImm: 0,1)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
+push id ; (int) (id of the effect to start)
+push flag ; (int)  (set the flag to 0 or 1)
 syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_145 *) (an effect object)
 ---
 ---
 ---
-description: 
+description: Starts a limit effect
 ---
 ---
 ---

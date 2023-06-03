@@ -5,22 +5,22 @@ name: trap_item_get
 ---
 ---
 ---
-category: 
+category: inventory
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push item ; (int) (value of the item to give)
+push part ; (int) (unknown)
 syscall 0, 63 ; trap_item_get (2 in, 1 out)
-pop unk ; (unknown) 
+pop unk ; (int) (possibly the number of that item the player has?)
 ---
 ---
 ---
-description: 
+description: Give an item to the player
 ---
 ---
 ---
