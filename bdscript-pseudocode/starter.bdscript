@@ -24,7 +24,7 @@ ON_DAMAGE:
  popToSp 0
  pushFromFSp 4
  syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
- jz L67
+ jz RET
  pushFromFSp 0
  pushImm 20
  add 
@@ -36,9 +36,10 @@ ON_DAMAGE:
  pushFromFSp 0
  pushFromPAi text_mode_revenge ; ___ai 'mode_revenge' (text_mode_revenge)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L67
-L67:
+RET:
  ret 
+
+
 ON_FALL:
  pushFromPWp this
  pushImmf 0
@@ -51,6 +52,8 @@ ON_FALL:
  pushFromPWp this
  syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
  ret 
+
+
 ON_MAIN:
  pushFromPWp this
  gosub 4, L97
@@ -110,6 +113,9 @@ L151:
  jmp L151
 L170:
  ret 
+
+
+
 ON_INIT:
  popToSp 0
  pushFromPWp this
@@ -145,46 +151,22 @@ L180:
  pushImm ActionAppear
  gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_leave ; ___ai 'leave' (text_leave)
+ pushFromPAi text_leave
  pushImm 196908
  pushImm ActionLeave
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_dead ; ___ai 'dead' (text_dead)
+ pushFromPAi text_dead
  pushImm 196908
  pushImm ActionDead
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_freeze ; ___ai 'freeze' (text_freeze)
+ pushFromPAi text_freeze
  pushImm 100
  pushImm ActionFreeze
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_event ; ___ai 'event' (text_event)
+ pushFromPAi text_event
  pushImm 196908
  pushImm ActionEvent
  pushImm 0
@@ -197,304 +179,120 @@ L180:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp act_table
- pushFromPAi text_idle ; ___ai 'idle' (text_idle)
+ pushFromPAi text_idle
  pushImm 100
  pushImm ActionIdle
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_idle_time ; ___ai 'idle_time' (text_idle_time)
+ pushFromPAi text_idle_time
  pushImm 100
  pushImm ActionIdleTime
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_footwork ; ___ai 'footwork' (text_footwork)
+ pushFromPAi text_footwork
  pushImm 100
  pushImm ActionFootwork
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_mode_revenge ; ___ai 'mode_revenge' (text_mode_revenge)
+ pushFromPAi text_mode_revenge
  pushImm 100
  pushImm ActionModeRevenge
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_mode_battle_boss ; ___ai 'mode_battle_boss' (text_mode_battle_boss)
+ pushFromPAi text_mode_battle_boss
  pushImm 100
  pushImm ActionModeBattleBoss
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_mode_revenge_boss ; ___ai 'mode_revenge_boss' (text_mode_revenge_boss)
+ pushFromPAi text_mode_revenge_boss
  pushImm 100
  pushImm ActionModeRevengeBoss
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_idle_short ; ___ai 'idle_short' (text_idle_short)
+ pushFromPAi text_idle_short
  pushImm 100
  pushImm L2407
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_idle_long ; ___ai 'idle_long' (text_idle_long)
+ pushFromPAi text_idle_long
  pushImm 100
  pushImm L2606
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_move_forward ; ___ai 'move_forward' (text_move_forward)
+ pushFromPAi text_move_forward
  pushImm 100
  pushImm L2634
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_cut_down ; ___ai 'atk_cut_down' (text_atk_cut_down)
+ pushFromPAi text_atk_cut_down
  pushImm 200
  pushImm L3142
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_cut_slide ; ___ai 'atk_cut_slide' (text_atk_cut_slide)
+ pushFromPAi text_atk_cut_slide
  pushImm 200
  pushImm L3158
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_thrust ; ___ai 'atk_thrust' (text_atk_thrust)
+ pushFromPAi text_atk_thrust
  pushImm 200
  pushImm L3174
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_spin ; ___ai 'atk_spin' (text_atk_spin)
+ pushFromPAi text_atk_spin
  pushImm 200
  pushImm ActionAttackSpin
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_combo ; ___ai 'atk_combo' (text_atk_combo)
+ pushFromPAi text_atk_combo
  pushImm 200
  pushImm L3216
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_atk_revenge_combo ; ___ai 'atk_revenge_combo' (text_atk_revenge_combo)
+ pushFromPAi text_atk_revenge_combo
  pushImm 200
  pushImm L3296
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_mode_changer ; ___ai 'mode_changer' (text_mode_changer)
+ pushFromPAi text_mode_changer
  pushImm 100
  pushImm L3353
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_btl_attack ; ___ai 'btl_attack' (text_btl_attack)
+ pushFromPAi text_btl_attack
  pushImm 100
  pushImm L3401
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_btl_short ; ___ai 'btl_short' (text_btl_short)
+ pushFromPAi text_btl_short
  pushImm 100
  pushImm L3506
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_btl_long ; ___ai 'btl_long' (text_btl_long)
+ pushFromPAi text_btl_long
  pushImm 100
  pushImm L3581
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_mode_battle ; ___ai 'mode_battle' (text_mode_battle)
+ pushFromPAi text_mode_battle
  pushImm 100
  pushImm L3596
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_rvg_short ; ___ai 'rvg_short' (text_rvg_short)
+ pushFromPAi text_rvg_short
  pushImm 100
  pushImm L3666
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_rvg_long ; ___ai 'rvg_long' (text_rvg_long)
+ pushFromPAi text_rvg_long
  pushImm 100
  pushImm L3825
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromPWp act_table
- pushFromPAi text_revenge ; ___ai 'revenge' (text_revenge)
+ pushFromPAi text_revenge
  pushImm 65836
  pushImm L3951
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+ gosub 16, AddActionToTable
  pushFromFSp 0
  pushImmf 8
  gosub 4, L4105
