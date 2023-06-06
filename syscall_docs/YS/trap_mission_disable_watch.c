@@ -5,20 +5,20 @@ name: trap_mission_disable_watch
 ---
 ---
 ---
-category: 
+category: mission_watch
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4)
+push timer_id ; (int)  (id of counter)
 syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: turns off the hud for a given watch
 ---
 ---
 ---

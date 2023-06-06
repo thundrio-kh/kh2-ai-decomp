@@ -5,20 +5,20 @@ name: trap_mission_decrement_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1,2)
+push counter_id ; (int)  (id of counter)
 syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: subtracts one from the value of an on screen counter
 ---
 ---
 ---

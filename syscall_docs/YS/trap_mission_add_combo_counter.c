@@ -5,21 +5,21 @@ name: trap_mission_add_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushImm: 1)
-push unk2 ; (unknown)  (pushImmf: 0,600)
+push amount ; (int)  (amount to add)
+push time ; (int) (Time to set to timer associated with counter. Value of 0 or 600 used in game)
 syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds a value to the combo counter
 ---
 ---
 ---

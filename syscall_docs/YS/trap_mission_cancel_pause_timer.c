@@ -5,11 +5,11 @@ name: trap_mission_cancel_pause_timer
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Pauses/stops the onscreen timer
 ---
 ---
 ---

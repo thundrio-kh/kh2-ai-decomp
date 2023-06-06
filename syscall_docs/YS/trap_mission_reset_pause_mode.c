@@ -5,11 +5,11 @@ name: trap_mission_reset_pause_mode
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 23 ; trap_mission_reset_pause_mode (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset the pause mode
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_menuflag_set
 ---
 ---
 ---
-category: 
+category: menuflag
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 20,21,28,60,61,62,67,98)
+push flag ; (int)  (a number representing a specific menuflag)
 syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: activates a menuflag
 ---
 ---
 ---

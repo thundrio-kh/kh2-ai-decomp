@@ -5,11 +5,11 @@ name: trap_mission_is_lock
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Is there another mission going on already?
 ---
 ---
 ---

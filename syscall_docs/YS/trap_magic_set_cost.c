@@ -5,11 +5,11 @@ name: trap_magic_set_cost
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -19,7 +19,7 @@ syscall 2, 68 ; trap_magic_set_cost (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets the cost for this magic object
 ---
 ---
 ---

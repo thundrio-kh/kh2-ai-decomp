@@ -5,21 +5,21 @@ name: trap_mission_get_timer
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0) (pushImm: 0)
+push timer_id ; (int)  (id of a timer)
 syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (float) 
 ---
 ---
 ---
-description: 
+description: return the number of minutes on the specified timer
 ---
 ---
 ---

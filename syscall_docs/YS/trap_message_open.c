@@ -5,22 +5,22 @@ name: trap_message_open
 ---
 ---
 ---
-category: 
+category: hud
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushImm: 0)
+push message_id ; (int)  (id of a message, looked up in the associated msg file)
+push priority ; (int)  (only a value of 0 is used in the game)
 syscall 1, 32 ; trap_message_open (2 in, 1 out)
-pop unk ; (unknown) 
+pop window ; (YS::WINDOW_8 *) (a window object)
 ---
 ---
 ---
-description: 
+description: Opens a scrolling text window in the top left of the screen
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_mission_set_combo_counter_warning_se
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 10)
-push unk2 ; (unknown)  (pushImm: 0)
+push num ; (int)  (id of sound effect to play. ID of 10 is used in game)
+push id ; (int)  (id of a combo counter)
 syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the sound effect that will play when the combo counter reaches the warning value
 ---
 ---
 ---

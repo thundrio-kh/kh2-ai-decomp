@@ -5,20 +5,20 @@ name: trap_mission_exit
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4)
+push signal_arg ; (int) (signal to send when exiting the mission)
 syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: exits a mission
 ---
 ---
 ---

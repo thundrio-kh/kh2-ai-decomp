@@ -5,20 +5,20 @@ name: trap_memory_free
 ---
 ---
 ---
-category: 
+category: system_memory
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push amt ; (int)  (amount of memory to free)
 syscall 0, 48 ; trap_memory_free (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Frees an amount of memory
 ---
 ---
 ---

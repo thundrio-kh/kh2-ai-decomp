@@ -5,21 +5,21 @@ name: trap_menuflag_check
 ---
 ---
 ---
-category: 
+category: menuflag
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 16) (pushImm: 28,67,98)
+push flag ; (int)  (a number representing a specific menuflag)
 syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_checked ; (bool) 
 ---
 ---
 ---
-description: 
+description: checks if a menuflag is activated
 ---
 ---
 ---

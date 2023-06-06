@@ -22,7 +22,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Starts an animation associated with a limit
 ---
 ---
 ---

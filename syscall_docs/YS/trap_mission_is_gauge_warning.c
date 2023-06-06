@@ -5,21 +5,21 @@ name: trap_mission_is_gauge_warning
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push gauge_id ; (int)  (id of a gauge)
 syscall 4, 34 ; trap_mission_is_gauge_warning (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_warning ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the specified gauge at the warning level
 ---
 ---
 ---

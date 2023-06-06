@@ -5,21 +5,21 @@ name: trap_mission_get_timer_second
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push timer_id ; (int)  (id of a timer)
 syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (int) 
 ---
 ---
 ---
-description: 
+description: returns the number of seconds remaining on the specified timer
 ---
 ---
 ---

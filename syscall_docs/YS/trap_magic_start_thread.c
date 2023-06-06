@@ -5,22 +5,22 @@ name: trap_magic_start_thread
 ---
 ---
 ---
-category: 
+category: system_threading
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushImm: L1002,L1038,L10387,L10508,L10667,L11398,L1155,L1173,L1198,L12140,L122,L129,L13305,L13600,L13899,L15260,L15593,L1595,L16062,L16210,L16493,L16687,L17621,L1817,L18215,L1851,L1934,L19504,L1989,L2165,L2328,L2445,L251,L2511,L27871,L2916,L303,L3081,L3152,L3239,L3305,L3317,L3426,L3483,L3518,L3599,L3668,L3713,L3715,L3818,L39373,L418,L4180,L4243,L4276,L4373,L4381,L4449,L4453,L4507,L4519,L4530,L4556,L4575,L4615,L4795,L4821,L4823,L486,L4906,L4928,L4999,L5062,L5142,L5435,L5541,L5663,L5794,L5843,L5854,L5864,L5957,L601,L609,L6307,L6469,L7412,L7786,L790,L832,L901,L9499) (fetchValue: 4)
-push unk2 ; (unknown)  (pushFromFSp: 0,12) (fetchValue: 4) (pushImm: 0) (pushFromPWp: W0,W144,W192,W208,W528,...)
+push label ; (int)  (Line number/label to start thread execution at)
+push arg ; (BD_VALUE_8 *)  (An argument to start as the top of the stack in the new thread)
 syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
-pop unk ; (unknown) 
+pop thread ; (YS::MAGIC_85 *) (A magic thread)
 ---
 ---
 ---
-description: 
+description: Starts a new magic thread
 ---
 ---
 ---

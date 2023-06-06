@@ -5,11 +5,11 @@ name: trap_limit_effect_start
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

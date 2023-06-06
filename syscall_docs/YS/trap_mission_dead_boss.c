@@ -5,20 +5,20 @@ name: trap_mission_dead_boss
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4)
+push signal_arg ; (int)  (Signal to send when marking the mission as complete)
 syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Marks the mission as complete because the boss is dead
 ---
 ---
 ---

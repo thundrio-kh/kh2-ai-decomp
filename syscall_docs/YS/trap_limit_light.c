@@ -9,17 +9,17 @@ category: limit
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 55 ; trap_limit_light (1 in, 1 out)
-pop unk ; (unknown) 
+pop light_object ; (YS::LIGHT_0 *) 
 ---
 ---
 ---
-description: 
+description: Creates a light object associated with the limit
 ---
 ---
 ---

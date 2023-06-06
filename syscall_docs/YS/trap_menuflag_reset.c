@@ -5,20 +5,20 @@ name: trap_menuflag_reset
 ---
 ---
 ---
-category: 
+category: menuflag
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 60,61,62)
+push flag ; (int)  (a number representing a specific menuflag)
 syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: resets a menu flag to the default state
 ---
 ---
 ---

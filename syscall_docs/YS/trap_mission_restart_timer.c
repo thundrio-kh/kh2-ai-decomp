@@ -5,21 +5,21 @@ name: trap_mission_restart_timer
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: -1)
-push unk2 ; (unknown)  (pushImm: 0)
+push time ; (int)  (Value the timer should be set to?)
+push timer_id ; (int)  (id of a timer)
 syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Restarts a paused timer. if time parameter is < 1, timer counts up instead of down
 ---
 ---
 ---

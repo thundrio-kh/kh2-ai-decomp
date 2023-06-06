@@ -5,11 +5,11 @@ name: trap_mission_set_count_param
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -21,7 +21,7 @@ syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set parameters for the specified counter
 ---
 ---
 ---

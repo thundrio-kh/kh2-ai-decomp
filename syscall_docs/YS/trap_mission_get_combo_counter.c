@@ -5,20 +5,20 @@ name: trap_mission_get_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 4, 31 ; trap_mission_get_combo_counter (0 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (int) 
 ---
 ---
 ---
-description: 
+description: returns the current value of the combo counter
 ---
 ---
 ---

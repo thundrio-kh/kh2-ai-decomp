@@ -5,20 +5,20 @@ name: trap_message_close
 ---
 ---
 ---
-category: 
+category: hud
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 48)
+pop window ; (YS::WINDOW_8 *) (a window object)
 syscall 1, 33 ; trap_message_close (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: closes the scrolling message window in the top left of the screen
 ---
 ---
 ---

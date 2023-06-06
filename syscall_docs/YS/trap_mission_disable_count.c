@@ -5,20 +5,20 @@ name: trap_mission_disable_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push counter_id ; (int)  (id of counter)
 syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: turns off the display of an on screen counter
 ---
 ---
 ---

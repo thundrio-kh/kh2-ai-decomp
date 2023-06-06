@@ -5,23 +5,23 @@ name: trap_mission_set_combo_counter_param
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 4, 36 ; trap_score_score (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 1)
-push unk3 ; (unknown)  (add: )
-push unk4 ; (unknown)  (pushImm: 0)
+push start ; (int)  (start value for the combo counter)
+push max ; (int)  (max value for the combo counter)
+push warning ; (int)  (value that will be the warning for the combo counter)
+push id ; (int)  (id of a combo counter)
 syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set parameters for the combo counter
 ---
 ---
 ---

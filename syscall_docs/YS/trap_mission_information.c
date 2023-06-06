@@ -5,20 +5,20 @@ name: trap_mission_information
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 12935,12936,14073,14074,14144,14155,14278,14422,14423,15191,15192,15193,16135,16136,16137,16138,16139,16750,16838,17056,17057,17058,17059,17062,17323,17324,17353,17354,18108,18109,18199,18200,18688,18689,18956,18957,19210,19303,19348,19349,19393,19404,19405,19544,19545,19546,19569,19570,19571,19572,19586,19587,19589,19590,19592,19593,19601,19602,19603,19604,20541,20693,20697,21365,21366,21367,21368,21369,21370,21371,21372,21373,21565,21566,21623,21625,21626,21627,21628,48003,48004,52174,7746,7747,7748,7749,7750,7751,8037,8077,8079,8081,8133,8305,9927,L19571) (pushFromFSp: 12,4)
+push message_id ; (int)  (id of a message)
 syscall 4, 4 ; trap_mission_information (1 in, 0 out)
 ---
 ---
 ---
-description: <check dis notes>
+description: Shows a message from a msg.bar file. Game assumes it is from the world one currently in RAM, or sys.bar. Pops up with a failsafe (FAKE) otherwise.
 ---
 ---
 ---

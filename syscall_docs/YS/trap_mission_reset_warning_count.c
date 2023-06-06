@@ -5,20 +5,20 @@ name: trap_mission_reset_warning_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push counter_id ; (int)  (id of a counter)
 syscall 4, 58 ; trap_mission_reset_warning_count (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset the warning flag for a counter
 ---
 ---
 ---

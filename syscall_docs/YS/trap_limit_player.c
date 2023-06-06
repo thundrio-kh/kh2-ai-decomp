@@ -5,21 +5,21 @@ name: trap_limit_player
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 48 ; trap_limit_player (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Return a player reference associated with a limit
 ---
 ---
 ---

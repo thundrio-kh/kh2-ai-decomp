@@ -5,20 +5,20 @@ name: trap_mission_is_activate2d
 ---
 ---
 ---
-category: 
+category: mission_hud
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 4, 21 ; trap_mission_is_activate2d (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_activated ; (bool) 
 ---
 ---
 ---
-description: 
+description: checks if the mission custom hud is activated
 ---
 ---
 ---

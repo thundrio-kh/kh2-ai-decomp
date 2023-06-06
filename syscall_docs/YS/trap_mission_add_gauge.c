@@ -5,21 +5,21 @@ name: trap_mission_add_gauge
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (negf: ) (mulf: ) (addf: ) (pushImmf: -0.00463,-0.05,-0.2,-0.333333,-1,-10,-100,-5,0.05,0.08,0.16,0.24,1,100,12.5,2,2.5,20,3,3.333333,3.571429,5) (pushFromFSp: 4,84) (gosub: 4, L908,8, L908)
-push unk2 ; (unknown)  (pushImm: 0,1,2)
+push amount ; (float)  (amount to add to gauge)
+push gauge_id ; (int)  (id of gauge to add to)
 syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds to a gauge on the screen
 ---
 ---
 ---

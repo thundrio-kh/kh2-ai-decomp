@@ -5,22 +5,22 @@ name: trap_mission_set_count_figure_num
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (mul: ) (pushFromFSpVal: 124) (pushImm: 0,1,2)
-push unk2 ; (unknown)  (sub: ) (pushImm: 1,2,3,4,5,6)
-push unk3 ; (unknown)  (pushImm: 0)
+push figure ; (int)  (digit to set)
+push num ; (int)  (number to set it to)
+push id ; (int)  (id of a counter)
 syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a specific digit in the counter to a value
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_mission_deactivate2d
 ---
 ---
 ---
-category: 
+category: mission_hud
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: deactiates custom HUD, such as Demyx timer or hud used by Mushrooms
 ---
 ---
 ---

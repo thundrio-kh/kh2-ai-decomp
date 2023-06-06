@@ -5,20 +5,20 @@ name: trap_mission_increment_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push counter_id ; (int)  (id of a counter)
 syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds one to a counter
 ---
 ---
 ---

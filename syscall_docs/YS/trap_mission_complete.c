@@ -5,20 +5,20 @@ name: trap_mission_complete
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4) (pushImm: -1)
+push signal_arg ; (int)  (Signal to send when marking the mission as complete)
 syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Runs the function to complete a mission, unsure what the signal_arg is used for
 ---
 ---
 ---

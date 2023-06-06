@@ -5,11 +5,11 @@ name: trap_mission_activate2d
 ---
 ---
 ---
-category: 
+category: mission_hud
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns on custom HUD, such as Demyx timer or hud used by Mushrooms
 ---
 ---
 ---

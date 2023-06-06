@@ -5,21 +5,21 @@ name: trap_memory_alloc
 ---
 ---
 ---
-category: 
+category: system_memory
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8) (pushImm: 16)
+push amount ; (int)  (amount of memory to allocate)
 syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
-pop unk ; (unknown) 
+pop memory_loc ; (int *) (location of the allocated memory) 
 ---
 ---
 ---
-description: 
+description: allocates an amount of memory
 ---
 ---
 ---

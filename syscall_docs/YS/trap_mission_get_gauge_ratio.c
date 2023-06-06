@@ -5,21 +5,21 @@ name: trap_mission_get_gauge_ratio
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushImm: 0,1,2) (gosub: 4, L1379)
+push gauge_id ; (int)  (id of a gauge)
 syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (float) 
 ---
 ---
 ---
-description: 
+description: Returns the a value from 0.0 to 1.0 representing the current progress of the specified gauge
 ---
 ---
 ---

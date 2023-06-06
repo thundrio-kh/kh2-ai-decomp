@@ -5,20 +5,20 @@ name: trap_mission_get_max_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)
-pop unk ; (unknown) 
+pop max ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the max value the combo counter has gotten to
 ---
 ---
 ---

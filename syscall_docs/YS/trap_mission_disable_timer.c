@@ -5,20 +5,20 @@ name: trap_mission_disable_timer
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push timer_id ; (int)  (id of counter)
 syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: turns off the display of an on screen timer
 ---
 ---
 ---

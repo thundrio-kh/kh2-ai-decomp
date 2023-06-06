@@ -5,21 +5,21 @@ name: trap_mission_add_count
 ---
 ---
 ---
-category: 
+category: mission_count
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (neg: ) (pushFromFSp: 0,4) (pushImm: 1)
-push unk2 ; (unknown)  (pushImm: 0,2) (pushFromFSpVal: 64)
+push value ; (int)  (value to add)
+push counter_id ; (int)  (id of counter)
 syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds to a on screen counter
 ---
 ---
 ---

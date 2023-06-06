@@ -5,21 +5,21 @@ name: trap_limit_time
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSpVal: 0)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 60 ; trap_limit_time (1 in, 1 out)
-pop unk ; (unknown) 
+pop time ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the time limit for the limit?
 ---
 ---
 ---

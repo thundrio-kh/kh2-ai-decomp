@@ -5,21 +5,21 @@ name: trap_mission_get_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4,64) (pushImm: 0,1,2)
+push counter_id ; (int)  (id of counter)
 syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the value of the specified counter
 ---
 ---
 ---

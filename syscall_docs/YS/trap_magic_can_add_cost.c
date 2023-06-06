@@ -5,21 +5,21 @@ name: trap_magic_can_add_cost
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push magic ; (YS::MAGIC_85 *) (A magic object) 
 syscall 2, 69 ; trap_magic_can_add_cost (1 in, 1 out)
-pop unk ; (unknown) 
+pop allowed ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if the cost for this magic object can be added to the areas current cost
 ---
 ---
 ---

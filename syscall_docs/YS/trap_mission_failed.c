@@ -5,11 +5,11 @@ name: trap_mission_failed
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: ends a mission in failure
 ---
 ---
 ---

@@ -116,12 +116,7 @@ L170:
 
 
 
-ON_INIT:
- popToSp 0
- pushFromPWp this
- pushFromFSp 0
- gosub 4, L180
- ret 
+
 AddActionToTable:
  pushImm 0
 AddActionToTableWithCallback:
@@ -133,7 +128,14 @@ AddActionToTableWithCallback:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  ret
-L180:
+
+ON_INIT:
+ popToSp 0
+ pushFromPWp this
+ pushFromFSp 0
+;  gosub 4, INIT_ACTS
+;  ret 
+INIT_ACTS:
  popToSp 4
  popToSp 0
  pushFromFSp 0
@@ -175,7 +177,7 @@ L180:
  pushImm 0
  pushImm 0
  pushImm 0
- pushImm L1806
+ pushImm ActionEventCallbacks
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp act_table
@@ -211,32 +213,32 @@ L180:
  pushFromPWp act_table
  pushFromPAi text_idle_short
  pushImm 100
- pushImm L2407
+ pushImm ActionIdleShort
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_idle_long
  pushImm 100
- pushImm L2606
+ pushImm ActionIdleLong
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_move_forward
  pushImm 100
- pushImm L2634
+ pushImm ActionMoveForward
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_atk_cut_down
  pushImm 200
- pushImm L3142
+ pushImm ActionAtkCutDown
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_atk_cut_slide
  pushImm 200
- pushImm L3158
+ pushImm ActionAtkCutSlide
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_atk_thrust
  pushImm 200
- pushImm L3174
+ pushImm ActionAtkThrust
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_atk_spin
@@ -246,52 +248,52 @@ L180:
  pushFromPWp act_table
  pushFromPAi text_atk_combo
  pushImm 200
- pushImm L3216
+ pushImm ActionAtkCombo
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_atk_revenge_combo
  pushImm 200
- pushImm L3296
+ pushImm ActionAtkRevengeCombo
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_mode_changer
  pushImm 100
- pushImm L3353
+ pushImm ActionModeChanger
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_btl_attack
  pushImm 100
- pushImm L3401
+ pushImm ActionBtlAttack
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_btl_short
  pushImm 100
- pushImm L3506
+ pushImm ActionBtlShort
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_btl_long
  pushImm 100
- pushImm L3581
+ pushImm ActionBtlLong
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_mode_battle
  pushImm 100
- pushImm L3596
+ pushImm ActionModeBattle
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_rvg_short
  pushImm 100
- pushImm L3666
+ pushImm ActionRvgShort
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_rvg_long
  pushImm 100
- pushImm L3825
+ pushImm ActionRvgLong
  gosub 16, AddActionToTable
  pushFromPWp act_table
  pushFromPAi text_revenge
  pushImm 65836
- pushImm L3951
+ pushImm ActionRevenge
  gosub 16, AddActionToTable
  pushFromFSp 0
  pushImmf 8
@@ -388,8 +390,7 @@ L1396:
  pushFromFSp 4
  syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
  ret 
-D1405:
-ActionAppear: ;___label for action appear
+ActionAppear:
  popToSp 0
  pushFromFSp 0
  syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
@@ -510,7 +511,7 @@ L1602:
  pushFromFSp 0
  gosub 4, L122
  ret 
-ActionLeave: ;___label for action leave
+ActionLeave:
  popToSp 0
  pushFromFSp 0
  fetchValue 4
@@ -534,14 +535,12 @@ ActionLeave: ;___label for action leave
  gosub 4, L149
  pushFromFSp 0
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- gosub 4, L1686
+ gosub 4, HALT
  ret 
-L1686:
+HALT:
  halt 
- jmp L1686
-L1689:
- ret 
-ActionDead: ;___label for action dead
+ jmp HALT
+ActionDead:
  popToSp 0
  pushFromFSp 0
  gosub 4, L1697
@@ -588,22 +587,22 @@ L1716:
  gosub 4, L149
  pushFromFSp 0
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- gosub 4, L1686
+ gosub 4, HALT
  ret 
-ActionFreeze: ;___label for action freeze
+ActionFreeze:
  popToSp 0
  pushFromFSp 0
  fetchValue 4
  pushImm 0
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
- gosub 4, L1686
+ gosub 4, HALT
  ret 
-ActionEvent: ;___label for action event
+ActionEvent:
  popToSp 0
- gosub 4, L1686
+ gosub 4, HALT
  ret 
-L1806: ;___callback for action event
+ActionEventCallbacks:
  popToSp 0
  pushFromFSp 0
  fetchValue 4
@@ -611,7 +610,7 @@ L1806: ;___callback for action event
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
  ret 
-ActionIdle: ;___label for action idle
+ActionIdle: 
  popToSp 0
  pushFromFSp 0
  pushImm 0
@@ -777,7 +776,7 @@ L2064:
 L2092:
  pushFromFSp 8
  ret 
-ActionIdleTime: ;___label for action idle_time
+ActionIdleTime:
  popToSp 0
  pushImmf 15
  pushImmf 45
@@ -808,7 +807,7 @@ L2131:
  jmp L2131
 L2150:
  ret 
-ActionFootwork: ;___label for action footwork
+ActionFootwork:
  popToSp 0
  pushFromFSp 0
  pushImm 47
@@ -816,7 +815,7 @@ ActionFootwork: ;___label for action footwork
  pushImm -1
  gosub 4, L1837
  ret 
-ActionModeRevenge: ;___label for action mode_revenge
+ActionModeRevenge:
  popToSp 0
  pushFromFSp 0
  pushImm 1
@@ -848,7 +847,7 @@ L2209:
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  pushFromFSp 0
  pushFromFSp 4
- syscall 1, 121 ; trap_target_search (3 in, 0 out) ; ___possible_ref
+ syscall 1, 121 ; trap_target_search (3 in, 0 out) 
  ret 
 L2224:
  popToSp 0
@@ -959,7 +958,7 @@ L2397:
 L2405:
  drop 
  ret 
-L2407: ;___label for action idle_short
+ActionIdleShort: ;___label for action idle_short
  popToSp 0
  pushImmf 20
  pushImmf 30
@@ -1085,7 +1084,7 @@ L2595:
  jmp L2466
 L2605:
  ret 
-L2606: ;___label for action idle_long
+ActionIdleLong: ;___label for action idle_long
  popToSp 0
  pushImmf 80
  pushImmf 120
@@ -1098,7 +1097,7 @@ L2606: ;___label for action idle_long
  pushImm 0
  gosub 4, L2435
  ret 
-L2634: ;___label for action move_forward
+ActionMoveForward: ;___label for action move_forward
  popToSp 0
  pushFromFSp 0
  gosub 4, L2666
@@ -1382,7 +1381,7 @@ L3137:
 L3139:
  pushFromFSp 48
  ret 
-L3142: ;___label for action atk_cut_down
+ActionAtkCutDown: ;___label for action atk_cut_down
  popToSp 0
  pushFromFSp 0
  pushImm 201
@@ -1390,7 +1389,7 @@ L3142: ;___label for action atk_cut_down
  pushImm -1
  gosub 4, L1837
  ret 
-L3158: ;___label for action atk_cut_slide
+ActionAtkCutSlide: ;___label for action atk_cut_slide
  popToSp 0
  pushFromFSp 0
  pushImm 202
@@ -1398,7 +1397,7 @@ L3158: ;___label for action atk_cut_slide
  pushImm -1
  gosub 4, L1837
  ret 
-L3174: ;___label for action atk_thrust
+ActionAtkThrust: ;___label for action atk_thrust
  popToSp 0
  pushFromFSp 0
  pushImm 203
@@ -1419,7 +1418,7 @@ ActionAttackSpin: ;___label for action atk_spin
  pushImm -1
  gosub 4, L1837
  ret 
-L3216: ;___label for action atk_combo
+ActionAtkCombo: ;___label for action atk_combo
  popToSp 0
  pushFromFSp 0
  pushImm 202
@@ -1466,7 +1465,7 @@ L3292:
  jmp L3280
 L3295:
  ret 
-L3296: ;___label for action atk_revenge_combo
+ActionAtkRevengeCombo: ;___label for action atk_revenge_combo
  popToSp 0
  pushFromFSp 0
  pushImm 16
@@ -1496,7 +1495,7 @@ L3340:
  jmp L3340
 L3352:
  ret 
-L3353: ;___label for action mode_changer
+ActionModeChanger: ;___label for action mode_changer
  popToSp 0
  pushImmf 0.6
  pushFromFSp 0
@@ -1525,7 +1524,7 @@ L3389:
  pushImm 0
  syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
  ret 
-L3401: ;___label for action btl_attack
+ActionBtlAttack: ;___label for action btl_attack
  popToSp 0
  pushFromFSp 0
  pushFromPAi text_mode_changer ; ___ai 'mode_changer' (text_mode_changer)
@@ -1584,7 +1583,7 @@ L3494:
  popToSp 4
  pushFromFSp 4
  ret 
-L3506: ;___label for action btl_short
+ActionBtlShort: ;___label for action btl_short
  popToSp 0
  pushFromFSp 0
  pushFromPAi text_mode_changer ; ___ai 'mode_changer' (text_mode_changer)
@@ -1627,7 +1626,7 @@ L3574:
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
 L3580:
  ret 
-L3581: ;___label for action btl_long
+ActionBtlLong: ;___label for action btl_long
  popToSp 0
  pushFromFSp 0
  pushFromPAi text_mode_changer ; ___ai 'mode_changer' (text_mode_changer)
@@ -1636,7 +1635,7 @@ L3581: ;___label for action btl_long
  pushFromPAi text_move_forward ; ___ai 'move_forward' (text_move_forward)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  ret 
-L3596: ;___label for action mode_battle
+ActionModeBattle: ;___label for action mode_battle
  popToSp 0
  pushFromFSp 0
  gosub 4, L3656
@@ -1679,7 +1678,7 @@ L3656:
  syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
  ret 
 D3666:
-L3666: ;___label for action rvg_short
+ActionRvgShort: ;___label for action rvg_short
  popToSp 0
  pushFromFSp 0
  gosub 4, L3815
@@ -1771,7 +1770,7 @@ L3815:
  pushImm 1
  syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
  ret 
-L3825: ;___label for action rvg_long
+ActionRvgLong: ;___label for action rvg_long
  popToSp 0
  pushFromFSp 0
  gosub 4, L3815
@@ -1841,7 +1840,7 @@ L3932:
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
 L3950:
  ret 
-L3951: ;___label for action revenge
+ActionRevenge: ;___label for action revenge
  popToSp 0
  pushFromFSp 0
  pushFromPAi text_mode_changer ; ___ai 'mode_changer' (text_mode_changer)

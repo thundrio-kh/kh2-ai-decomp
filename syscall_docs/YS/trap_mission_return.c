@@ -5,11 +5,11 @@ name: trap_mission_return
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 32 ; trap_mission_return (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unlocks a mission and returns control/settings to normal
 ---
 ---
 ---

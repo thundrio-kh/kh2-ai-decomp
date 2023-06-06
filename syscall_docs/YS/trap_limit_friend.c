@@ -5,22 +5,22 @@ name: trap_limit_friend
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,4,8)
-push unk2 ; (unknown)  (pushImm: 0,1)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
+push flag ; (int)  (values are 0 and 1, probably a bool)
 syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Something to do with enabling/disabling team member limits
 ---
 ---
 ---

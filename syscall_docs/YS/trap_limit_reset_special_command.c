@@ -5,20 +5,20 @@ name: trap_limit_reset_special_command
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 89 ; trap_limit_reset_special_command (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Related to trinity limit functionality, probably resets the custom command menu
 ---
 ---
 ---

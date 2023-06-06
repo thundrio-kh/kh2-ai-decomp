@@ -5,11 +5,11 @@ name: trap_mission_lock
 ---
 ---
 ---
-category: 
+category: mission
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the mutex lock for the mission, to inform other threads it is running
 ---
 ---
 ---

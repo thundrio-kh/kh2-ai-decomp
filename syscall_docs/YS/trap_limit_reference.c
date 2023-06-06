@@ -5,21 +5,21 @@ name: trap_limit_reference
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Return some reference associated with the limit
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_limit_start_thread
 ---
 ---
 ---
-category: 
+category: threading
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushImm: L3357,L3951,L663,L96)
-push unk2 ; (unknown)  (pushFromFSp: 0,12,4) (fetchValue: 4)
+push label ; (int)  (line number/label for the new thread to start executing at)
+push limit_obj ; (YS::LIMIT_1 *)  (A limit object) 
 syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Limit version of starting a separate thread
 ---
 ---
 ---
