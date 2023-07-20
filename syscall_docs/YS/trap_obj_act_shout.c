@@ -5,22 +5,22 @@ name: trap_obj_act_shout
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromFSp: 0,8) (pushFromPWp: W0,W160,W164,W176,W208,...) (pushFromPSpVal: 0) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushFromPAi: L10262 ; ___ai 'atk_brush_rush' (L10262),L10329 ; ___ai 'atk_shot_b' (L10329),L10362 ; ___ai 'footwork' (L10362),L10390 ; ___ai 'shuffle_move_start' (L10390),L10415 ; ___ai 'shuffle_move' (L10415),...) (pushFromFSp: 4)
-push unk3 ; (unknown)  (pushImmf: 0,10,30,40,45,60,8)
+push act ; (YS::ACT_86 *)  (An action object)
+push unk2 ; (string)  (A label for an action)
+push wait ; (float)  (time to wait before shouting the action)
 syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shouts an action after an amount of time
 ---
 ---
 ---

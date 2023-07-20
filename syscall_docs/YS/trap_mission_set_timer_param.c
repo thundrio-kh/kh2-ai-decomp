@@ -5,23 +5,23 @@ name: trap_mission_set_timer_param
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
-push unk2 ; (unknown)  (pushFromFSp: 0,4)
-push unk3 ; (unknown)  (pushImm: 0)
-push unk4 ; (unknown)  (pushImm: 0)
+push start ; (int)  (start value for the timer)
+push max ; (int)  (max value for the timer)
+push warning ; (int)  (threshold for the timers warning state)
+push id ; (int)  (id of a timer)
 syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets parameters for a timer
 ---
 ---
 ---

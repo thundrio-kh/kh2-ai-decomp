@@ -5,21 +5,21 @@ name: trap_mission_set_gauge
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (mulf: ) (pushImmf: 0,100,50,80) (pushFromFSp: 16)
-push unk2 ; (unknown)  (pushImm: 0)
+push value ; (float)  (value to set the gauge to)
+push id ; (int)  (id of a gauge)
 syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets a gauge to a specified value
 ---
 ---
 ---

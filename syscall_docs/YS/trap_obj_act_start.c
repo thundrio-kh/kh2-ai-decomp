@@ -5,21 +5,21 @@ name: trap_obj_act_start
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPWp: W0,W144,W152,W156,W16,...) (pushFromPSpVal: 0,112,128,144,16,...) (pushFromPSp: 16,32,48,64) (add: )
-push unk2 ; (unknown)  (pushFromPAi: L10091 ; ___ai 'near_wait' (L10091),L10099 ; ___ai 'btl_attack' (L10099),L10105 ; ___ai 'btl_short' (L10105),L10110 ; ___ai 'btl_long' (L10110),L10115 ; ___ai 'cookie' (L10115),...) (pushFromFSp: 0,16,4,8)
+push act ; (YS::ACT_86 *)  (An action object)
+push unk2 ; (string)  (A label for an action)
 syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: starts an action
 ---
 ---
 ---

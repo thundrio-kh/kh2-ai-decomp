@@ -5,20 +5,20 @@ name: trap_mission_warning_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push id ; (int)  (id of a combo counter)
 syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets a warning state for the specified combo counter
 ---
 ---
 ---

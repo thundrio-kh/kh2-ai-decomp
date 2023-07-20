@@ -5,21 +5,21 @@ name: trap_mission_set_warning_se
 ---
 ---
 ---
-category: 
+category: mission_widget
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 10)
-push unk2 ; (unknown)  (pushImm: 0)
+push num ; (int)  (number indicating a sound effect)
+push id ; (int)  (id of a widget (gauge, timer, counter, etc))
 syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets a sound effect for when the specified widget gets to a warning state
 ---
 ---
 ---

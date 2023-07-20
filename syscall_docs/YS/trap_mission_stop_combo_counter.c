@@ -5,11 +5,11 @@ name: trap_mission_stop_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 4, 27 ; trap_mission_stop_combo_counter (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: stops a combo counter with id 0
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_obj_can_look_pos
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_128) (An object) 
+push pos ; (kn::FVector) (A position vector)
 syscall 1, 173 ; trap_obj_can_look_pos (2 in, 1 out)
-pop unk ; (unknown) 
+pop can_look ; (bool) 
 ---
 ---
 ---
-description: 
+description: checks if an object can look? Unclear how this is different than trap_obj_can_look
 ---
 ---
 ---

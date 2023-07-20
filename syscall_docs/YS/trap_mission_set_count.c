@@ -5,21 +5,21 @@ name: trap_mission_set_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 266 ; trap_obj_get_medal (1 in, 1 out),4, 36 ; trap_score_score (1 in, 1 out)) (gosub: 4, L250) (fetchValue: 24,4) (citf: )
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImm: 0,1,2)
+push counter ; (int) (Value to set the counter to)
+push id ; (int)  (id of a counter)
 syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the counter to a specific value.
 ---
 ---
 ---

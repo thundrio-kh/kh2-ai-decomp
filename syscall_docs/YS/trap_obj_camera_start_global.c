@@ -5,21 +5,21 @@ name: trap_obj_camera_start_global
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W176) (pushFromPSpVal: 0) (pushFromPSp: 16,32,48)
-push unk2 ; (unknown)  (pushFromPAi: L13847 ; ___ai '00' (L13847),L13898 ; ___ai '10' (L13898),L14425 ; ___ai '00' (L14425),L14476 ; ___ai '10' (L14476),L18490 ; ___ai '20' (L18490),...)
+push obj ; (YS::STDOBJ_112 *)  (An object)
+push label ; (string)  (A label for a camera routine, usually called '00' or '10' etc)
 syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts running a label to change the camera to a global target, usually for a special big attack
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_mission_set_max_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 12)
-push unk2 ; (unknown)  (pushImm: 0)
+push value ; (int)  (value to set the combo counter max to)
+push id ; (int)  (id of a combo counter)
 syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets the max limit for a combo counter
 ---
 ---
 ---

@@ -5,23 +5,23 @@ name: trap_obj_apply_bone_matrix
 ---
 ---
 ---
-category: 
+category: bones 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,112,144,160,44,...) (add: ) (pushFromPSp: 112,16,192,32,4,...) (pushFromPWp: W0,W156,W32,W4,W4496) (pushImm: 16)
-push unk2 ; (unknown)  (pushImm: -1,103,106,11,118,12,127,130,140,150,162,16384,16385,16386,16387,16389,17,174,176,178,188,2,23,235,237,239,24,240,242,265,3,379,41,5,50,51,52,55,6,60,62,67,68,7,73,8,84,85,86,89,9,93,95,97) (pushFromFSpVal: 104,216,68) (pushFromFSp: 0,12,32,4,48,...) (mul: ) (fetchValue: 144)
-push unk3 ; (unknown)  (pushFromPSp: 128,16,160,32,48,...) (pushFromPSpVal: 0,112,128,16,192,...) (pushFromFSp: 4) (add: )
+push obj ; (YS::OBJ_125 *)  (Representation of an obj/mdlx)
+push bone ; (int)  (Bone number)
+push matrix ; (A matrix to apply to the bone)
 syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
-pop unk ; (unknown) 
+pop matrix_out ; (float) (the resulting matrix?)
 ---
 ---
 ---
-description: 
+description: Applies a matrix to a bone
 ---
 ---
 ---

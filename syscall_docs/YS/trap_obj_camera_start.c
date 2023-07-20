@@ -5,22 +5,22 @@ name: trap_obj_camera_start
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (gosub: 12, L3999,12, L928,16, L1882,16, L931,20, L427,...) (pushFromPWp: W0,W16,W32,W4,W4208,...) (pushFromPSp: 16,32,64) (gosub32: 12, L4250,4, L4250) (pushFromPSpVal: 0,20)
-push unk2 ; (unknown)  (pushFromPAi: L10968 ; ___ai '00' (L10968),L11155 ; ___ai '00' (L11155),L11162 ; ___ai '10' (L11162),L11168 ; ___ai '10' (L11168),L11267 ; ___ai '10' (L11267),...) (memcpyToSp: 16, 16,16, 32,16, 48,16, 64) (pushFromFSp: 20,8) (pushImm: 144)
-push unk3 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,4) (pushFromPSp: 16,32,48,64) (pushFromPWp: W0,W16,W32) (add: )
+push obj ; (YS::STDOBJ_112 *)  (An object)
+push label ; (string)  (A label for a camera routine, usually called '00' or '10' etc)
+push target ; (YS::OBJ_164 *)  (An object, probably for the camera to be focused on)
 syscall 1, 219 ; trap_obj_camera_start (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Changes the camera similar to trab_obj_camera_start_gloal, but setting a target as well
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_mission_set_watch
 ---
 ---
 ---
-category: 
+category: mission_widget
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 4, 36 ; trap_score_score (1 in, 1 out))
-push unk2 ; (unknown)  (pushFromFSpVal: 4)
+push value ; (int)  (value to watch for the widget)
+push id ; (int)  (id of a widget)
 syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets a value to watch on the specified widget
 ---
 ---
 ---

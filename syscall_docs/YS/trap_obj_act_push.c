@@ -5,21 +5,22 @@ name: trap_obj_act_push
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W0,W152,W300,W32,W76) (pushFromPSp: 16) (pushFromPSpVal: 0,128)
-push unk2 ; (unknown)  (pushFromPAi: L10146 ; ___ai 'jump_random' (L10146),L10158 ; ___ai 'footwork_smile' (L10158),L10170 ; ___ai 'atk_toy' (L10170),L10171 ; ___ai 'atk_toy' (L10171),L10175 ; ___ai 'jump_back' (L10175),...)
+push act ; (YS::ACT_86 *)  (An action object)
+push unk2 ; (string)  (A label for an action)
 syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: pushes an action so that it starts next
+
 ---
 ---
 ---

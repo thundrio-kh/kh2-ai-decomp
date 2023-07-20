@@ -5,21 +5,21 @@ name: trap_mission_set_gauge_ratio
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0)
-push unk2 ; (unknown)  (pushImm: 0,2)
+push ratio ; (float)  (proportion of gauge that should be filled)
+push id ; (int)  (id of a gauge)
 syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a filled in ratio for the specified gauge
 ---
 ---
 ---

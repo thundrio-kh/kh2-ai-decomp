@@ -5,20 +5,20 @@ name: trap_obj_act_clear
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 20) (pushFromFSp: 0) (pushFromPWp: W0) (pushFromPSp: 8)
+push act ; (YS::ACT_86 *)  (An action object)
 syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: clears an action
 ---
 ---
 ---

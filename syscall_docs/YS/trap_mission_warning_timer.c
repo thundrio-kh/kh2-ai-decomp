@@ -5,20 +5,20 @@ name: trap_mission_warning_timer
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0)
+push id ; (int)  (id of a timer)
 syscall 4, 47 ; trap_mission_warning_timer (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: sets the timer into a warning state
 ---
 ---
 ---

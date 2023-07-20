@@ -5,21 +5,21 @@ name: trap_obj_act_start_pri
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W4)
-push unk2 ; (unknown)  (pushFromPAi: L10931 ; ___ai 'rc_dice_success' (L10931),L10953 ; ___ai 'rc_card_success' (L10953),L11045 ; ___ai 'mode_revenge' (L11045),L3414 ; ___ai 'attach_sora' (L3414),L4337 ; ___ai 'atk_kick' (L4337),...)
+push act ; (YS::ACT_86 *)  (An action object)
+push unk2 ; (string)  (A label for an action)
 syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts an action (with priority?)
 ---
 ---
 ---

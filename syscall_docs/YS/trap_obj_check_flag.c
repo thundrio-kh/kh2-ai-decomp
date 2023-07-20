@@ -5,22 +5,22 @@ name: trap_obj_check_flag
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_128) (An object) 
+push flag ; (int) (a flag?)
 syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_set ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an object flag is set. Unused normally
 ---
 ---
 ---

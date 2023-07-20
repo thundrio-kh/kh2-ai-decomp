@@ -13,10 +13,10 @@ documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 4, 36 ; trap_score_score (1 in, 1 out)) (pushFromFSp: 8)
-push unk2 ; (unknown)  (pushImm: 1) (pushFromFSp: 8)
-push unk3 ; (unknown)  (add: ) (pushImm: 0)
-push unk4 ; (unknown)  (pushFromFSpVal: 4) (pushImm: 0)
+push start ; (int) (start value of the counter)
+push max ; (int) (max value of the counter)
+push warning ; (int) (warning amount for the counter)
+push id ; (int)  (id of a counter)
 syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
 ---
 ---

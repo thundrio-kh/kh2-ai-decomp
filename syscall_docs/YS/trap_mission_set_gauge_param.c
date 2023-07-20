@@ -5,23 +5,23 @@ name: trap_mission_set_gauge_param
 ---
 ---
 ---
-category: 
+category: mission_gauge
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push start ; (int) (start value of the gauge)
+push max ; (int) (max value of the gauge)
+push warning ; (int) (threshold for warning mode of the gauge)
+push id ; (int) (id of the gauge)
 syscall 4, 19 ; trap_mission_set_gauge_param (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set parameters for a gauge
 ---
 ---
 ---

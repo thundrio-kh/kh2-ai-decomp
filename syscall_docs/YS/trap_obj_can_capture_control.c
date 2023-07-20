@@ -5,21 +5,21 @@ name: trap_obj_can_capture_control
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_128) (An object) 
 syscall 1, 253 ; trap_obj_can_capture_control (1 in, 1 out)
-pop unk ; (unknown) 
+pop can_control ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the objects control can be captured
 ---
 ---
 ---

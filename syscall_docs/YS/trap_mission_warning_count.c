@@ -5,11 +5,11 @@ name: trap_mission_warning_count
 ---
 ---
 ---
-category: 
+category: mission_counter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,7 @@ syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: mission_counter
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_obj_can_see
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSp: 80)
+push obj ; (YS::OBJ_128) (An object) 
+push target_obj ; (YS::OBJ_128) (A target object)
 syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
-pop unk ; (unknown) 
+pop can_see ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if object can see target object
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_mission_start_combo_counter
 ---
 ---
 ---
-category: 
+category: mission_combocounter
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0)
+push time ; (float)  (time to start the combo counter at)
 syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: adds and starts a combo counter that is id 0
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_act_wedge
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push act ; (YS::ACT_86 *)  (An action object)
+push unk2 ; (string)  (A label for an action)
 syscall 1, 81 ; trap_obj_act_wedge (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: wedges an action, unclear what this means (it is unused in the vanilla game)
 ---
 ---
 ---

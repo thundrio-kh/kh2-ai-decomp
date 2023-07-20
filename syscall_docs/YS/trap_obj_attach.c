@@ -12,18 +12,18 @@ category:
 documentation level: stub
 ---
 ---
----
-push unk1 ; (unknown)  (pushFromPSpVal: 112,144,16,160,176,...) (pushFromPSp: 112,12,16,32,36,...) (pushImm: 144,20,4) (add: ) (pushFromFSp: 0,4) (memcpyToSp: 16, 16,16, 32,16, 48,16, 64,16, 96) (pushFromPWp: W0,W204,W4496)
-push unk2 ; (unknown)  (pushFromPSpVal: 0,112,128,144,4,...) (pushFromFSp: 0,4,8) (add: ) (pushImm: 0) (pushFromPSp: 16,32,48,64,96) (pushFromPWp: W0,W32,W384,W4,W4208,...)
-push unk3 ; (unknown)  (pushImm: 101,12,140,146,16384,16386,17,23,4,49,57,62,7,71,8) (syscall: 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)) (fetchValue: 144)
-push unk4 ; (unknown)  (pushImm: 0,1,4,5)
-push unk5 ; (unknown)  (pushImm: 0,15845,L10754,L1151,L1273,L1343,L17117,L2402,L3007,L4816,L527,L580,L743)
+---YS::OBJ_126
+push obj ; (int)  (An object)
+push parent ; (unknown)  (pushFromPSpVal: 0,112,128,144,4,...) (pushFromFSp: 0,4,8) (add: ) (pushImm: 0) (pushFromPSp: 16,32,48,64,96) (pushFromPWp: W0,W32,W384,W4,W4208,...)
+push bone ; (unknown)  (pushImm: 101,12,140,146,16384,16386,17,23,4,49,57,62,7,71,8) (syscall: 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)) (fetchValue: 144)
+push flag ; (unknown)  (pushImm: 0,1,4,5)
+push label ; (int)  (Line number, a callback?)
 push unk6 ; (unknown)  (pushImm: 0) (pushFromFSp: 0) (pushFromPWp: W0,W384)
 syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attaches a bone between two objects
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_blow
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
 push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSp: 16,32)
+push dir_v ; (kn::FVector)  (Direction vector?)
 syscall 1, 129 ; trap_obj_blow (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a blow in the direction specified by the vector
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_obj_action_lightcycle
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
@@ -13,12 +13,12 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Does a lightcycle specific action
 ---
 ---
 ---
