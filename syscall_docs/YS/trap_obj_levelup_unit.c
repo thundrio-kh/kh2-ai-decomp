@@ -5,20 +5,20 @@ name: trap_obj_levelup_unit
 ---
 ---
 ---
-category: 
+category: spawn
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push unit ; (YS::UNIT_GROUP_8 *)  (A unit group)
 syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Levels up the specified unit group of spawns
 ---
 ---
 ---

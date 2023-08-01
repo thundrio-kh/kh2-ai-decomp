@@ -5,21 +5,21 @@ name: trap_obj_disable_occ_bone
 ---
 ---
 ---
-category: 
+category: culling
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 100,101,102,103,127,130,131,132,133,157,160,161,162,163,164,188,191,192,193,194,195,222,223,224,225,226,227,30,33,34,35,36,37,64,65,66,67,68,69,96,99)
+push objocc ; (YS::OBJOCC_133 *)  (an occlusion culling object)
+push boneid ; (ID of a bone)
 syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Disable occlusion culling for a specific bone
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_is_star
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSp: 112,16,160,32,4,...) (pushFromPSpVal: 112)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_star ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is currently invulnerable
 ---
 ---
 ---

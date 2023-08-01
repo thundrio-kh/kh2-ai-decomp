@@ -5,21 +5,21 @@ name: trap_obj_look_end
 ---
 ---
 ---
-category: 
+category: npc
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImmf: 20)
+push lookat ; (YS::LOOKAT_116 *)  (A lookat object)
+push time ; (float)  (Amount of frames before the lookat is ended)
 syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Removes a created lookat object in the specified time
 ---
 ---
 ---

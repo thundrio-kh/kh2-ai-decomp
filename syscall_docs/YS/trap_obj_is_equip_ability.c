@@ -5,22 +5,22 @@ name: trap_obj_is_equip_ability
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 20)
-push unk2 ; (unknown)  (pushImm: 114)
+push obj ; (YS::OBJ_125 *)  (An object)
+push ability_id ; (int)  (ID of an ability)
 syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_equip_ability ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object has the specified ability equipped
 ---
 ---
 ---

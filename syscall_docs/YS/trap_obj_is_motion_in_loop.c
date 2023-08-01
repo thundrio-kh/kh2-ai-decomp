@@ -5,21 +5,21 @@ name: trap_obj_is_motion_in_loop
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSpVal: 0) (pushFromPSp: 80) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_motion_in_loop ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is looping a motion
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_hook_command_image
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromFSp: 0)
+push stdobj ; (YS::STDOBJ_112)  (An std object)
 syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: hooks the command image
 ---
 ---
 ---

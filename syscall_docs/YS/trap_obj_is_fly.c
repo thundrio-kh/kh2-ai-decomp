@@ -5,21 +5,21 @@ name: trap_obj_is_fly
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push unk1 ; (unknown)  (pushFromFSp: 0,4)
 syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_fly ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is flying
 ---
 ---
 ---

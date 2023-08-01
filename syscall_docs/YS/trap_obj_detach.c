@@ -5,20 +5,20 @@ name: trap_obj_detach
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSp: 28,28 ; ___possible_ref,8) (add: ) (pushFromPSpVal: 112,160,32) (pushFromPWp: W48)
+push object ; (YS::OBJ_126)  (An object)
 syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: removes a connection between two bones
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_obj_attach
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---

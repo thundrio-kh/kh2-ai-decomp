@@ -5,7 +5,7 @@ name: trap_obj_effect_kill_all
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
@@ -13,12 +13,12 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push pax ; (ryj::PAX_161 *)  (A PAX effect)
 syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Kills all effects for an object PAX
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_history_mark
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::FIELDOBJ *)  (A field object)
 syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the history flag for an field object
 ---
 ---
 ---

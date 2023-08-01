@@ -5,21 +5,21 @@ name: trap_obj_jump_height_to_uptime
 ---
 ---
 ---
-category: 
+category: Math
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 32,36,4,48,56) (pushImmf: 130,150,200,220,300) (fetchValue: 4) (subf: )
+push height ; (float)  (Height Value)
 syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Converts jump height to uptime using the following formula: `math.sqrt(math.abs(height * 2.0) / 0.40816328)`
 ---
 ---
 ---
@@ -35,6 +35,7 @@ void __fastcall YS::trap_obj_jump_height_to_uptime(BD_VALUE_21 *args)
 float __fastcall YS::MATH::JumpHeightToUpTime(double height)
 {
   return __fsqrts(__fabs((float)((float)((float)height * (float)2.0) / (float)0.40816328)));
+    
 }
 
 

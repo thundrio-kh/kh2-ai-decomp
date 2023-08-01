@@ -5,21 +5,21 @@ name: trap_obj_count_entry
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 119,1535,1573,1600,1601,1602,1765,1834,2345) (syscall: 1, 222 ; trap_obj_get_entry_id (1 in, 1 out))
+push obj_id ; (int)  (An object ID)
 syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the number of instances of an object
 ---
 ---
 ---

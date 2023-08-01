@@ -5,26 +5,26 @@ name: trap_obj_hop
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16) (pushFromFSp: 0) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImmf: 24) (pushFromPSp: 144,16,32,48,64)
-push unk3 ; (unknown)  (pushImmf: 0.98,10,12,15,16,20,30) (pushFromFSp: 12)
-push unk4 ; (unknown)  (pushImm: 3) (pushImmf: 0,0.01,0.9,0.95,0.99)
-push unk5 ; (unknown)  (pushFromFSp: 0,88) (pushImm: 201,202,203,3)
-push unk6 ; (unknown)  (fetchValue: 36) (pushImmf: 0,8)
-push unk7 ; (unknown)  (pushImm: 0,1)
+push obj ; (YS::OBJ_88)  (An object)
+push velocity ; (float)  (A velocity value)
+push time ; (float)  (Time for the hop to last)
+push accel ; (float)  (Acceleration value)
+push mot ; (YS::BINARC_62 *)  (A motion file)
+push blend_time ; (float)  (Blend time value)
+push start_with_vel ; (bool)  (If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here)
 syscall 1, 156 ; trap_obj_hop (7 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to do a hop
 ---
 ---
 ---

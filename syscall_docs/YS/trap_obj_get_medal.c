@@ -5,21 +5,21 @@ name: trap_obj_get_medal
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,4) (pushFromPSpVal: 288) (pushFromFSp: 0)
+push obj ; (YS::OBJ_195 *)  (An object)
 syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
-pop unk ; (unknown) 
+pop num_medals ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the current number of medals an object has
 ---
 ---
 ---

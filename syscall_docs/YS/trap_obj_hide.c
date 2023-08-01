@@ -5,20 +5,20 @@ name: trap_obj_hide
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 160,176,20,4,64) (add: ) (pushFromPSp: 112,128,28,32,4,...) (pushFromFSp: 0)
+push obj ; (YS::OBJ_130 *)  (An object)
 syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hides all parts of an object
 ---
 ---
 ---

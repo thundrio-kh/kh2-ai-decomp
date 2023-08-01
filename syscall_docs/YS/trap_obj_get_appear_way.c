@@ -5,7 +5,7 @@ name: trap_obj_get_appear_way
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
 pop unk ; (unknown) 
 ---

@@ -9,7 +9,7 @@ category:
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -18,7 +18,7 @@ syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stops the hook
 ---
 ---
 ---

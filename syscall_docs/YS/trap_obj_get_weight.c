@@ -5,21 +5,21 @@ name: trap_obj_get_weight
 ---
 ---
 ---
-category: 
+category: object_details
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0)
+push obj ; (YS::OBJ_133 *)  (An object)
 syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
-pop unk ; (unknown) 
+pop weight ; (float) 
 ---
 ---
 ---
-description: 
+description: Returns the defined weight of an object
 ---
 ---
 ---

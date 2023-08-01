@@ -5,21 +5,21 @@ name: trap_obj_is_dead
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,48,96) (pushFromFSp: 0) (pushFromPSpVal: 112) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_dead ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is dead
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_leave_force
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Forces an object to leave
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_float_height
 ---
 ---
 ---
-category: 
+category: object_movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0,64) (pushFromPSp: 144,32)
+push obj ; (YS::OBJ_133 *)  (An object)
 syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
-pop unk ; (unknown) 
+pop height ; (float) 
 ---
 ---
 ---
-description: 
+description: Returns the height the object is floating above the ground.
 ---
 ---
 ---

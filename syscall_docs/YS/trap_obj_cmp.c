@@ -5,22 +5,22 @@ name: trap_obj_cmp
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,20,4,8) (pushImm: 20,4) (pushFromPSp: 16,32,80) (add: ) (pushFromPSpVal: 16,176,4) (memcpyToSp: 16, 16,16, 32,16, 48,16, 64,16, 80) (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromPSpVal: 0,4,44,80) (add: ) (pushFromPSp: 16,32,4,48,64,...) (pushFromFSp: 0,4,8) (pushFromPWp: W0,W16,W204,W364,W4112,...)
+push num1 ; (int) (A number)
+push num2 ; (int)  (A number)
 syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Compares two numbers, and returns the difference
 ---
 ---
 ---

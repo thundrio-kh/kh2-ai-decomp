@@ -5,22 +5,22 @@ name: trap_obj_fly
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 160,20,4) (pushImm: 16) (pushFromFSp: 0,4,8) (pushFromPSp: 112) (memcpyToSp: 16, 48)
-push unk2 ; (unknown)  (pushFromPSp: 16,176,32,48) (add: )
-push unk3 ; (unknown)  (pushImmf: 0,0.1,0.4,0.5,0.7,0.75,0.8,0.85,0.9,0.92,0.94,0.95) (pushFromFSp: 12,16,4)
+push obj ; (YS::OBJ_187 *)  (An object)
+push vel ; (int) (Velocity value)
+push accel ; (float)  (Acceleration value)
 syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Tells an object to fly with a specific velocity and acceleration
 ---
 ---
 ---

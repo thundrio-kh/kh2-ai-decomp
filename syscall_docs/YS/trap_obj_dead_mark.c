@@ -5,20 +5,20 @@ name: trap_obj_dead_mark
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::BTLOBJ)  (An object)
 syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Marks an object as dead
 ---
 ---
 ---

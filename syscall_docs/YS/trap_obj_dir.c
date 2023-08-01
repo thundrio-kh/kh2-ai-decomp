@@ -5,21 +5,21 @@ name: trap_obj_dir
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,16,20,24,...) (pushFromPSp: 0,112,12,128,144,...) (pushFromPSpVal: 0,112,144,16,4,...) (add: ) (pushFromPWp: W0,W112,W144,W16,W364,...)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
-pop unk ; (unknown) 
+pop dir ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Returns the direction of the object
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_clear_occ
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push objocc ; (YS::OBJOCC_133 *)  (an occlusion culling object)
 syscall 1, 344 ; trap_obj_clear_occ (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: clears the OCC
 ---
 ---
 ---

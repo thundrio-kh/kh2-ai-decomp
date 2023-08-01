@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_entry_fly ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the "fly" flag is checked for the obj in its objentry
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_is_history_mark
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_history_mark ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the history flag is set for the object
 ---
 ---
 ---

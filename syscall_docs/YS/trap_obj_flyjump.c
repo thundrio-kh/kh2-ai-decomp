@@ -5,24 +5,24 @@ name: trap_obj_flyjump
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushFromPSp: 16)
-push unk3 ; (unknown)  (fetchValue: 20) (pushImm: 155,3)
-push unk4 ; (unknown)  (pushImmf: 0)
-push unk5 ; (unknown)  (pushImm: 1)
+push obj ; (YS::OBJ_189)  (An object)
+push vel ; (int)  (A velocity value)
+push mot ; (YS::BINARC_62 *)  (A motion file)
+push blend_time ; (float)  (Blend time value)
+push start_with_vel ; (bool)  (If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here)
 syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Prepares and starts a flyjump for an object
 ---
 ---
 ---

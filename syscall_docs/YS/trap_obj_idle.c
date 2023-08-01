@@ -5,20 +5,20 @@ name: trap_obj_idle
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,112,160,20,32,...) (pushFromPSp: 112,16,32,48) (pushFromPWp: W0,W152,W160,W4,W4400)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the current action for the object to idle.
 ---
 ---
 ---

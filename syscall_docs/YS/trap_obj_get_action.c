@@ -5,21 +5,21 @@ name: trap_obj_get_action
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_189)  (An object)
 syscall 1, 96 ; trap_obj_get_action (1 in, 1 out)
-pop unk ; (unknown) 
+pop label ; (string) 
 ---
 ---
 ---
-description: 
+description: Gets the current action for an object
 ---
 ---
 ---

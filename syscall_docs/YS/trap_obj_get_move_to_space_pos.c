@@ -5,23 +5,23 @@ name: trap_obj_get_move_to_space_pos
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImmf: 1200)
-push unk3 ; (unknown)  (pushImm: 0)
+push obj ; (YS::OBJ_133 *)  (An object)
+push radius ; (float)  (Radius to look for the move)
+push is_air ; (bool)  (should the position be in the air)
 syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Return a position within a space that the object can move to
 ---
 ---
 ---

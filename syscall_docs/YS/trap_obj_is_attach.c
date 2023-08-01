@@ -5,21 +5,21 @@ name: trap_obj_is_attach
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromFSp: 0,4,8) (pushFromPSp: 112,16,28,28 ; ___possible_ref,32,...) (pushFromPSpVal: 112,160,32) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_attach ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is attached to another object
 ---
 ---
 ---

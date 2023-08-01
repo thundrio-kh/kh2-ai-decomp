@@ -5,21 +5,21 @@ name: trap_obj_is_motion_cancel
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 144) (pushFromFSp: 0,8)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 192 ; trap_obj_is_motion_cancel (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_motion_cancel ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is cancelling a motion
 ---
 ---
 ---

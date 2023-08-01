@@ -5,22 +5,22 @@ name: trap_obj_look_start_pos
 ---
 ---
 ---
-category: 
+category: npc
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push lookat ; (YS::LOOKAT_116) (A lookat object)
+push pos ; (kn::FVector) (A position vector)
+push time ; (float) (time for the lookat to last)
 syscall 1, 175 ; trap_obj_look_start_pos (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Create a lookat object using a lookat as a base
 ---
 ---
 ---

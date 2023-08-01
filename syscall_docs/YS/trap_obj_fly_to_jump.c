@@ -5,20 +5,20 @@ name: trap_obj_fly_to_jump
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push obj ; (YS::OBJ_133)  (An object)
 syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to go from a fly animation to a jump animation
 ---
 ---
 ---

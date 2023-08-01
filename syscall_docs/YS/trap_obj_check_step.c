@@ -9,20 +9,20 @@ category:
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4,8)
-push unk2 ; (unknown)  (fetchValue: 0)
-push unk3 ; (unknown)  (pushFromFSp: 4,8)
-push unk4 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_133)  (An object)
+push dir ; (kn::FVector)  (A direction vector)
+push len ; (float)  (Length of the step?)
+push jump_height ; (float)  (How high the step goes)
 syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
-pop unk ; (unknown) 
+pop is_step ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if a step is interesecting with a given line?
 ---
 ---
 ---

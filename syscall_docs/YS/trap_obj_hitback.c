@@ -5,22 +5,22 @@ name: trap_obj_hitback
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16,16, 32,16, 96) (pushFromPSp: 64)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,96) (pushFromFSpVal: 24)
-push unk3 ; (unknown)  (pushFromFSp: 68) (fetchValue: 28) (pushImmf: 100,200,50)
+push btlobj ; (YS::BTLOBJ *)  (A battle object)
+push dir ; (kn::FVector *)  (A direction vector)
+push dist ; (float)  (A distance value (game uses range of 50-200))
 syscall 1, 146 ; trap_obj_hitback (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a hitback in a given direction
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_is_ride
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32) (pushFromFSp: 4)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_ride ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the ride flag is checked on the object
 ---
 ---
 ---

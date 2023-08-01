@@ -2,7 +2,6 @@ Decompilation of the AI related code in Kingdom Hearts 2, done using the OpenKH 
 
 Contains two directories, and one script for adding informational comments to bdscripts
 
-# KNOWN ISSUE the behavior of cfti and citf are swapped right now, once it is fixed in Bdxio these files will be updated
 # add_txt_labels.py
 
 Idemptotently makes the following changes and comments to all of the bdscripts

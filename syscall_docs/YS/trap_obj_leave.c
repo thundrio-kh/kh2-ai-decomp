@@ -5,20 +5,20 @@ name: trap_obj_leave
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,32,80) (pushFromPSpVal: 112,144,160,176,272,...) (add: ) (pushFromFSp: 0) (pushFromPWp: W0,W4224)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Makes an object leave
 ---
 ---
 ---

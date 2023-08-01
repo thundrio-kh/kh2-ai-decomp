@@ -5,7 +5,7 @@ name: trap_obj_get_lightcycle_movement
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
@@ -13,15 +13,15 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushImmf: 100)
+push obj ; (YS::OBJ_195 *)  (An object)
+push target ; (YS::OBJ_126 *)  (An object)
+push range ; (float)  (Range to try and target the target)
 syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
-pop unk ; (unknown) 
+pop movement ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Get the movement for the light cycle to head to a target
 ---
 ---
 ---

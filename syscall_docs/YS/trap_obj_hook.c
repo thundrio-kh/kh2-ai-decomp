@@ -5,11 +5,11 @@ name: trap_obj_hook
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
@@ -20,7 +20,7 @@ syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Forks the current VM and hooks the new fork
 ---
 ---
 ---

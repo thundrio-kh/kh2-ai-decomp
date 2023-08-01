@@ -5,20 +5,20 @@ name: trap_obj_dead
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 64) (pushFromPWp: W0,W4128,W4132) (pushFromPSp: 16)
+push obj ; (YS::BTLOBJ)  (An object)
 syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs required cleanup when an object dies
 ---
 ---
 ---

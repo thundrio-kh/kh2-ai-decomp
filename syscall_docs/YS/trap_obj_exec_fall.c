@@ -5,20 +5,20 @@ name: trap_obj_exec_fall
 ---
 ---
 ---
-category: 
+category: object_movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0,W144,W148,W152,W156,...) (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An Object)
 syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Tells the object to fall
 ---
 ---
 ---

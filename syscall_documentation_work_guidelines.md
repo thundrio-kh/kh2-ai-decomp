@@ -50,3 +50,6 @@ Once every page has been filled in past being a stub, I will write a script to p
 
 ### Notes for when I'm done going through everything
 When making categories you most likely want to keep all of the similar named traps in the same spot (ie all trap_attack together), but you don't want to just use those names because a different grouping will be more developer friendly (ie trap_area and trap_worldflag can both go under mapinfo)
+Similarly check all of the different variable types, a lot of them (like object_38289) can be combined, and I can probably leave off the pointer...
+make sure to do some basic cleanup of formatting for everything (capitalize first letter of sentence, period at end).
+go through the "incompletes" and make sure there is nothing stupid I need to find

@@ -5,20 +5,20 @@ name: trap_obj_dump
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,192,32) (pushFromFSp: 4) (pushFromPSpVal: 0,144)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: likely printed the name of an object, but does nothing in the production versions of the game
 ---
 ---
 ---

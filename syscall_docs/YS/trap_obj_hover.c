@@ -5,22 +5,22 @@ name: trap_obj_hover
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,8) (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromPSp: 0,16)
-push unk3 ; (unknown)  (pushImmf: 0.6,0.7,0.75,0.8,0.85,0.88,0.9,0.95,0.98)
+push obj ; (YS::OBJ_193)  (An object)
+push velocity ; (float)  (Velocity value)
+push accel ; (float)  (Acceleration value)
 syscall 1, 73 ; trap_obj_hover (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Has the object hover at a given velocity and acceleration
 ---
 ---
 ---

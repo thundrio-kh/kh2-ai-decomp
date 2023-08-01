@@ -5,21 +5,21 @@ name: trap_obj_is_action_air
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_action_air ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is currently in the air performing an action
 ---
 ---
 ---

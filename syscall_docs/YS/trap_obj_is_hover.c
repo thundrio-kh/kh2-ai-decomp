@@ -19,7 +19,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Returns if the object is hovering
 ---
 ---
 ---

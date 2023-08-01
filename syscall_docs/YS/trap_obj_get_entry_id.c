@@ -5,7 +5,7 @@ name: trap_obj_get_entry_id
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32,80) (pushFromFSp: 0,4) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
-pop unk ; (unknown) 
+pop entry_id ; (int) 
 ---
 ---
 ---
-description: 
+description: returns the ID for an object (according to 00objentry.bin)
 ---
 ---
 ---

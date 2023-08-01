@@ -5,21 +5,21 @@ name: trap_obj_is_unit_active
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_unit_active ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object's unit is active
 ---
 ---
 ---

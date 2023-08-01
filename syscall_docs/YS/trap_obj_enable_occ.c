@@ -5,20 +5,20 @@ name: trap_obj_enable_occ
 ---
 ---
 ---
-category: 
+category: culling
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W576) (pushFromFSp: 0) (pushFromPSp: 16,32)
+push objocc ; (YS::OBJOCC_133 *)  (an occlusion culling object)
 syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: enable occlusion culling for all bones in an culling object
 ---
 ---
 ---

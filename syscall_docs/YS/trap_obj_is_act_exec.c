@@ -5,7 +5,7 @@ name: trap_obj_is_act_exec
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_act_exec ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is currently executing and action
 ---
 ---
 ---

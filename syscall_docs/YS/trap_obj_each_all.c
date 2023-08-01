@@ -5,21 +5,21 @@ name: trap_obj_each_all
 ---
 ---
 ---
-category: 
+category: object 
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 4)
+push obj ; (YS::OBJ_132 *)  (An object?)
 syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
-pop unk ; (unknown) 
+pop obj_list ; (list of objects) 
 ---
 ---
 ---
-description: 
+description: returns each instance of an object to the top of the stack?
 ---
 ---
 ---

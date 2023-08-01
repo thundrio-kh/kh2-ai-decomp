@@ -5,21 +5,21 @@ name: trap_obj_hide_part
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W152,W176,W3152,W384) (pushFromFSp: 0) (pushFromPSp: 16) (pushImm: 24)
-push unk2 ; (unknown)  (pushImm: -1,0,1,10,11,12,13,14,15,16,17,18,2,22,23,24,3,4,5,6,7,8,9) (pushFromFSp: 12,16,20,24,32,...) (mod: )
+push obj ; (YS::OBJ_130 *)  (An object)
+push part ; (int)  (A part number)
 syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hides a specific bone/part of an object
 ---
 ---
 ---

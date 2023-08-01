@@ -5,21 +5,21 @@ name: trap_obj_lockon_target
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSp: 16,208,32,48,64,...)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 191 ; trap_obj_lockon_target (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Locks the player onto the target object
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_exec_land
 ---
 ---
 ---
-category: 
+category: object_movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W0,W152,W160,W4)
+push obj ; (YS::OBJ_125) (An Object)
 syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Tells the object to land
 ---
 ---
 ---

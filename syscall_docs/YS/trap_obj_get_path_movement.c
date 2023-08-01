@@ -5,21 +5,21 @@ name: trap_obj_get_path_movement
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_133 *)  (An object)
 syscall 1, 178 ; trap_obj_get_path_movement (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Gets a movement vector along a specific path
 ---
 ---
 ---

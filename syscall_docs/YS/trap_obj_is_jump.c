@@ -5,21 +5,21 @@ name: trap_obj_is_jump
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromFSp: 0,4)
+push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_jump ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is jumping.
 ---
 ---
 ---
