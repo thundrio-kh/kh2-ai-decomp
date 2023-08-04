@@ -5,21 +5,21 @@ name: trap_obj_set_land_motion
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 20) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: -1,204,212,222,243,254,259,5) (pushFromFSp: 4)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to go into a landing animation
 ---
 ---
 ---

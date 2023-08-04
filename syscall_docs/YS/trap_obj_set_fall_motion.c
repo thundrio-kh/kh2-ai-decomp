@@ -5,21 +5,21 @@ name: trap_obj_set_fall_motion
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,144,20) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: -1,154,253,258,4) (pushFromFSp: 88)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to go into a falling animation
 ---
 ---
 ---

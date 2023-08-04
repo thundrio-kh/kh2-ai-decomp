@@ -5,21 +5,21 @@ name: trap_obj_reset_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16,16, 32,16, 48) (pushFromFSp: 0,4) (pushFromPSp: 16,32,48,64,80)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,48,64) (pushFromFSp: 4) (pushFromPSpVal: 16)
+push obj ; (YS::OBJ_125) (An object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 1, 153 ; trap_obj_reset_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the position of an object, either to 0,0,0 or to the vector passed in
 ---
 ---
 ---

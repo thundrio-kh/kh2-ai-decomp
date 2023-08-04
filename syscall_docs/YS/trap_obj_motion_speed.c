@@ -5,21 +5,21 @@ name: trap_obj_motion_speed
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W0,W292,W4)
-push unk2 ; (unknown)  (pushImmf: 0,0.05,0.2,0.3,0.5,1)
+push motion ; (YS::MOTION_289)  (A motion set)
+push speed ; (float)  (Speed to set)
 syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the speed of a motion set
 ---
 ---
 ---

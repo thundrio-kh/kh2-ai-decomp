@@ -5,20 +5,20 @@ name: trap_obj_set_player_random_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 198 ; trap_obj_set_player_random_pos (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Moves the player to a random open position, using the passed in object as a base position?
 ---
 ---
 ---

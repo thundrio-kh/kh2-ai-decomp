@@ -5,21 +5,21 @@ name: trap_obj_reset_stealth
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W3152)
-push unk2 ; (unknown)  (pushImm: -1,0)
+push obj ; (YS::OBJ_125) (An object)
+push partnum ; (int)  (Part number)
 syscall 1, 195 ; trap_obj_reset_stealth (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the stealth value of an object back to default
 ---
 ---
 ---

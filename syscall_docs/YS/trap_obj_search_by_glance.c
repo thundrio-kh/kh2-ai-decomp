@@ -5,21 +5,21 @@ name: trap_obj_search_by_glance
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 1886)
+push data ; (memory) (variable/stack location where the object will be stored)
+push entry_id ; (int) (ID of the object to look up)
 syscall 1, 304 ; trap_obj_search_by_glance (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Looks up an object by ID and then returns the copy of the object that is closest to the camera? looks very similar to trap_obj_search_by_entry but is actually used in game
 ---
 ---
 ---

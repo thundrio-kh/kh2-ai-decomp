@@ -5,21 +5,21 @@ name: trap_obj_set_medal
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 288)
-push unk2 ; (unknown)  (pushImm: 107,652)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number of medals)
 syscall 1, 265 ; trap_obj_set_medal (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the number of CA medals an object has
 ---
 ---
 ---

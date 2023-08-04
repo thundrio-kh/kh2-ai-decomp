@@ -5,21 +5,21 @@ name: trap_obj_serial
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSp: 16) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
-pop unk ; (unknown) 
+pop serial ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the serial value for an object
 ---
 ---
 ---

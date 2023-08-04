@@ -5,21 +5,46 @@ name: trap_obj_pattern_disable
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 112,16,32) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 1,10,12,14,2,20,3,4,5,6,7,8,9)
+push obj ; (YS::OBJ_125) (An object)
+push value ; (int)  (Pattern number to disable. See table in description)
 syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
 ---
 ---
 ---
-description: <check dis notes>
+description: Disable resistances/sturdy frames for an object
+
+| Pattern Type | Value |
+|--------------|-------|
+| REACTION_NULL | 0     |
+| REACTION_HITBACK | 1   |
+| REACTION_SPOT | 2      |
+| REACTION_SMALL | 3     |
+| REACTION_BLOW | 4      |
+| REACTION_TORNADO | 5   |
+| REACTION_F_SMALL | 6   |
+| REACTION_F_BLOW | 7    |
+| REACTION_S_SMALL | 8   |
+| REACTION_S_BLOW | 9    |
+| REACTION_X_SMALL | 10  |
+| REACTION_X_BLOW | 11   |
+| REACTION_HALF_HITBACK | 12 |
+| REACTION_HALF_SMALL | 13 |
+| REACTION_LARGE | 14    |
+| REACTION_P_BLOW | 15   |
+| REACTION_P_SMALL | 16  |
+| REACTION_PS_BLOW | 17  |
+| REACTION_PS_SMALL | 18 |
+| REACTION_MAX | 19     |
+| REACTION_IGNORE | 255 |
+
 ---
 ---
 ---

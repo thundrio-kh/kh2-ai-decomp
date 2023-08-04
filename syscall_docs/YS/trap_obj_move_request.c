@@ -5,22 +5,22 @@ name: trap_obj_move_request
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,32,4,80) (pushFromPSp: 144,16,176,32,4,...) (add: ) (fetchValue: 12) (memcpyToSp: 16, 112,16, 48,16, 64,16, 80,16, 96) (pushFromPSpVal: 160,48,64) (syscall: 0, 6 ; trap_vector_len (1 in, 1 out)) (mulf: ) (pushImm: 12,16)
-push unk2 ; (unknown)  (pushFromPSp: 112,12,128,16,160,...) (pushFromPWp: W0,W4) (fetchValue: 4) (pushFromPSpVal: 112,144,4) (pushFromFSp: 0) (pushImmf: 0.2,0.5) (syscall: 0, 3 ; trap_frametime (0 in, 1 out)) (add: )
-push unk3 ; (unknown)  (pushFromFSp: 116,120,16,184,32,...) (gosub: 12, L1004,12, L1108,12, L2488,12, L2850,12, L959,...) (fetchValue: 100,104,12,132,148,...) (syscall: 0, 23 ; trap_absf (1 in, 1 out)) (pushImmf: 0,0.18,10,12,15,2,20,3,3.5,30,4,40,5,50,6,60,7) (mulf: ) (divf: ) (pushFromFSpVal: 176,184,192,80)
+push obj ; (YS::OBJ_125) (An object)
+push dir ; (kn::FVector)  (A direction vector)
+push speed ; (float)  (Speed to travel)
 syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Requests the object to move in a direction
 ---
 ---
 ---

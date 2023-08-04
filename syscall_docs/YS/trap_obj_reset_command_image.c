@@ -5,20 +5,20 @@ name: trap_obj_reset_command_image
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push stdobj ; (YS::STDOBJ_112 *)  (An stdobj)
 syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the image on the command menu
 ---
 ---
 ---

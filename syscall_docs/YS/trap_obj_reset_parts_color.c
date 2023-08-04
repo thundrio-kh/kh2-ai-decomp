@@ -5,7 +5,7 @@ name: trap_obj_reset_parts_color
 ---
 ---
 ---
-category: 
+category: parts
 ---
 ---
 ---
@@ -13,14 +13,14 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 128,16,2,256,3072,3145756,32,32764,4,64,8)
-push unk3 ; (unknown)  (pushImmf: 10,16,20,30,60)
+push obj ; (YS::OBJ_125) (An object)
+push partnum ; (int)  (Part number)
+push time ; (float)  (Time in frames for the color transition to happen)
 syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the color of an object part
 ---
 ---
 ---

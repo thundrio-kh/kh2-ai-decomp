@@ -5,24 +5,24 @@ name: trap_obj_motion_capture
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,20,48,64) (pushFromFSp: 0,4,8) (pushFromPSp: 16,32,48) (memcpyToSp: 16, 112,16, 16,16, 32,16, 48,16, 64,...) (pushFromPWp: W0,W16,W76) (add: )
-push unk2 ; (unknown)  (pushFromPSp: 112,16,32,4,48,...) (pushFromFSp: 0,12,4,8) (pushFromPSpVal: 0,112,144,32,4,...)
-push unk3 ; (unknown)  (pushImm: 252,253,254,255,256,257,258,259) (pushFromFSp: 12,24,4,52,76,...)
-push unk4 ; (unknown)  (pushImmf: 0,8) (pushFromFSp: 4,8)
+push motion ; (YS::MOTION_289)  (A motion set)
+push target_obj ; (YS::OBJ_124) (Target object to capture)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (time to blend between two motion entries)
 syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
-pop unk ; (unknown) 
+pop motion_capture_id ; (int) 
 ---
 ---
 ---
-description: 
+description: starts a motion set id that captures an object, returning the id of the capture
 ---
 ---
 ---

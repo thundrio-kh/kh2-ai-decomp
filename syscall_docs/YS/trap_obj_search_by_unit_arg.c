@@ -13,14 +13,14 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16) (pushFromFSp: 0) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 1,2)
-push unk3 ; (unknown)  (pushImm: 1,100,2,20,3,30) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (add: ) (pushFromFSp: 76)
+push data ; (memory) (variable/stack location where the object will be stored)
+push unitnum ; (int)  (Unit number)
+push argnum ; (int)  (Argument to search for)
 syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Searches for an object with a specific unit argument
 ---
 ---
 ---

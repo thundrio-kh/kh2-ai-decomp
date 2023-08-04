@@ -5,22 +5,22 @@ name: trap_obj_motion_check_range
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
----
-push unk1 ; (unknown)  (pushFromPSpVal: 0,112,144,160,20,...) (pushFromFSp: 0,4,8) (pushFromPWp: W160) (pushFromPSp: 16) (add: )
-push unk2 ; (unknown)  (pushImm: 1,2,3,4) (pushFromFSpVal: 64,80)
+--- 
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
-pop unk ; (unknown) 
+pop range ; (int) 
 ---
 ---
 ---
-description: 
+description: returns the range trigger count (Happens during X frames) of a motion entry
 ---
 ---
 ---

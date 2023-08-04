@@ -5,22 +5,22 @@ name: trap_obj_set_path
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: -1)
+push obj ; (YS::OBJ_133 *)  (An object)
+push serial ; (int)  (Serial number, value of -1 is always used in game)
 syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Sets the movement path for an NPC object
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_show_part
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W152,W176,W3152,W384) (pushFromFSp: 0) (pushImm: 1,24) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 0,1,10,11,12,13,14,15,16,17,18,2,23,24,3,4,5,6,7,8,9) (pushFromFSp: 32,4,8) (sub: ) (pushFromFWp: W212) (add: ) (mod: )
+push obj ; (YS::OBJ_130 *)  (An object)
+push part ; (int)  (A part number)
 syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shows a specific part of an object
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_set_stealth
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W3152)
-push unk2 ; (unknown)  (pushImm: -1,0)
+push obj ; (YS::OBJ_125) (An object)
+push set_stealth ; (bool)  (If stealth should be set to on (1) or off (0))
 syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns stealth on or off for an object
 ---
 ---
 ---

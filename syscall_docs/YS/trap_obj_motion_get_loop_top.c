@@ -5,22 +5,22 @@ name: trap_obj_motion_get_loop_top
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: -1)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)
-pop unk ; (unknown) 
+pop position_matrix_offset ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the position matrix offset value of a motion set entry, this value is taken from the raw motion header
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_obj_move_to_space
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,20,4) (pushImmf: 500) (pushFromFSp: 0,4) (pushFromPSp: 32)
-push unk2 ; (unknown)  (pushImmf: 1000,110,250,300,400,500,700,800) (pushFromPSpVal: 4)
-push unk3 ; (unknown)  (pushImm: 0,1) (syscall: 1, 60 ; trap_obj_is_air (1 in, 1 out))
+push obj ; (YS::OBJ_133)  (An object)
+push radius ; (float)  (Radius value)
+push is_air ; (bool)  (Is the space to move in the air)
 syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Moves to a random space within the given radius
 ---
 ---
 ---

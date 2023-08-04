@@ -5,21 +5,21 @@ name: trap_obj_set_team
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W152,W348)
-push unk2 ; (unknown)  (pushImm: 1,2,3)
+push obj ; (YS::OBJ_125) (An object)
+push team ; (int)  (team to set)
 syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the object to a team (IE player, enemy, or npc)
 ---
 ---
 ---

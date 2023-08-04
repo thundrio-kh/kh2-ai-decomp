@@ -5,21 +5,21 @@ name: trap_obj_reset_flag
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,32,4,80) (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,112,160,64) (add: ) (pushFromPWp: W0,W144,W160,W176,W4368)
-push unk2 ; (unknown)  (pushImm: 0,1,11,12,13,15,2,3,4,5,6,7,8,9)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of a flag)
 syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset a specific flag on an object
 ---
 ---
 ---

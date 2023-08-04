@@ -5,21 +5,21 @@ name: trap_obj_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,100,112,128,144,...) (pushFromFSp: 0,12,16,20,24,...) (pushFromPSpVal: 0,108,112,128,144,...) (pushFromPWp: W0,W144,W148,W156,W16,...) (add: )
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Return a position vector for the objects current position.
 ---
 ---
 ---

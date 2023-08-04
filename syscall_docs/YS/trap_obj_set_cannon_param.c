@@ -5,24 +5,24 @@ name: trap_obj_set_cannon_param
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushImmf: 1)
-push unk3 ; (unknown)  (pushImmf: 60)
-push unk4 ; (unknown)  (pushImmf: 0)
-push unk5 ; (unknown)  (pushImmf: 0)
+push obj ; (YS::OBJ_125) (An object)
+push h_speed ; (int)  (Horizontal speed)
+push h_limit ; (int)  (Horizontal speed limit)
+push v_speed ; (int)  (Vertical speed)
+push v_limit ; (int)  (Vertical speed limit)
 syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Parameters for the present cannon
 ---
 ---
 ---

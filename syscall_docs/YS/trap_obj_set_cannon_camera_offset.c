@@ -5,22 +5,22 @@ name: trap_obj_set_cannon_camera_offset
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushFromPSp: 32)
+push obj ; (YS::OBJ_125) (An object)
+push offset1 ; (kn::FVector *)  (First offset)
+push offset2 ; (kn::FVector *)  (Second offset)
 syscall 1, 330 ; trap_obj_set_cannon_camera_offset (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the present cannon camera offset
 ---
 ---
 ---

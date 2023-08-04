@@ -5,21 +5,21 @@ name: trap_obj_play_se
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0,20,80) (pushFromPSp: 48) (pushFromPWp: W16560)
-push unk2 ; (unknown)  (pushImm: 2,308032,320050,320058,320059,335029,374067,384027,384028,388010,390049,390055,390056,390057,390058,391050,391051,391053,391054,391055,393084,395016,395017,409020,595042,595043,598050,598051)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Sound effect number to play)
 syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Plays a sound effect
 ---
 ---
 ---

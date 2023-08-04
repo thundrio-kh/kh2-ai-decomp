@@ -5,11 +5,11 @@ name: trap_obj_shadow_move_start
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,7 @@ syscall 1, 104 ; trap_obj_shadow_move_start (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts the kind of movement shadows do where they sink into the floor
 ---
 ---
 ---

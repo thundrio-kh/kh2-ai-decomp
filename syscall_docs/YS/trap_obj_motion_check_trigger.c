@@ -5,22 +5,22 @@ name: trap_obj_motion_check_trigger
 ---
 ---
 ---
-category: 
+category: mset 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (add: ) (pushFromPSpVal: 0,112,144,192,20,...) (pushFromPSp: 16,192,32,48) (pushFromPWp: W0,W152,W16,W4)
-push unk2 ; (unknown)  (pushImm: 0,1,2,3,4) (pushFromFSp: 12,4,8)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: returns the frame trigger count (Triggered on X frame) of a motion entry
 ---
 ---
 ---

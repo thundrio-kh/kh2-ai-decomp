@@ -5,21 +5,21 @@ name: trap_obj_set_dir
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 16,160,32) (memcpyToSp: 16, 112,16, 128,16, 144,16, 16,16, 160,...) (pushFromFSp: 0,4,8) (add: ) (pushFromPWp: W0) (pushFromPSpVal: 0,112,144,160,192,...) (pushFromPSp: 112,128,16,32,4,...)
-push unk2 ; (unknown)  (add: ) (pushFromPSp: 112,128,144,16,160,...) (pushFromFSp: 16,4,8) (pushFromPSpVal: 112,128,160,192,224) (pushFromPWp: W4208,W4240)
+push obj ; (YS::OBJ_125) (An object)
+push dir ; (kn::FVector *)  (A direction vector)
 syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the direction an object is facing
 ---
 ---
 ---

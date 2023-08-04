@@ -5,21 +5,21 @@ name: trap_obj_set_act_table
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untestd
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPWp: W0,W104,W1056,W1072,W108,...)
+push obj ; (YS::OBJ_125) (An object)
+push act_table ; (memory)  (Variable/stack location to store the act table)
 syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Initializes an action table for an object
 ---
 ---
 ---

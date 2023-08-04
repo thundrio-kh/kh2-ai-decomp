@@ -5,20 +5,20 @@ name: trap_obj_shadow_move_end
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 105 ; trap_obj_shadow_move_end (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ends the kind of movement shadows do where they sink into the floor
 ---
 ---
 ---

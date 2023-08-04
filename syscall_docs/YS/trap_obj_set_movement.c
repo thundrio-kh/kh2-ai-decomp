@@ -5,7 +5,7 @@ name: trap_obj_set_movement
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
@@ -13,14 +13,14 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromPSp: 16,192,32,48,64,...) (pushFromFSp: 0,16,4,52,8) (gosub: 28, L1957) (fetchValue: 12,44) (memcpyToSp: 16, 16,16, 32,16, 48,16, 64,16, 80,...) (pushFromFSpVal: 108,112,40) (syscall: 0, 6 ; trap_vector_len (1 in, 1 out),0, 7 ; trap_vector_normalize (1 in, 1 out)) (pushFromPSpVal: 0,144,208) (pushImm: 144,16,32) (pushImmf: 10,100) (cfti: )
-push unk2 ; (unknown)  (pushFromPSp: 112,144,16,160,28,...) (pushFromFSp: 0,12,16,20,4,...) (pushFromPWp: W0,W4368) (pushImmf: 0.5,0.8,10,1000,1200,16,2,80) (syscall: 0, 3 ; trap_frametime (0 in, 1 out)) (pushFromPSpVal: 144,148,208,48) (add: ) (mulf: )
-push unk3 ; (unknown)  (gosub: 12, L2571,12, L3758,16, L2571,16, L3126,16, L3134,...) (mulf: ) (pushFromFSp: 116,12,120,144,148,...) (pushImmf: 0,1,1.5,1.8,10,10.5,100,11,12,14,15,16,18,180,2,20,200,22,24,25,25.5,250,3,3.5,3.8,30,300,32,4,4.5,40,400,45,450,450 ; ___possible_ref,480,5,50,6,60,7,7.8,70,75,8,8.1,80,9,9.5) (fetchValue: 104,12,24,276,44,...) (pushFromFSpVal: 0,108,112,132,148,...) (divf: ) (gosub32: 60, L2958) (syscall: 0, 6 ; trap_vector_len (1 in, 1 out)) (addf: ) (pushFromFWp: W4360)
+push obj ; (YS::OBJ_125) (An object)
+push dir ; (kn::FVector *)  (Direction to move)
+push speed ; (int)  (Speed to move, must be between 0 and 500)
 syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Has an object start moving in the specified direction at the given speed
 ---
 ---
 ---

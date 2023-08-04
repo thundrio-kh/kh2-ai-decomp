@@ -5,22 +5,22 @@ name: trap_obj_set_unit_arg
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,112,128,16,32,...) (add: ) (pushFromPSpVal: 112,128,144,256,272,...) (pushFromFSp: 0,4) (pushFromPWp: W0,W4400,W4416,W4432) (pushImm: 1,10) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0,1,2) (pushFromPSp: 32) (syscall: 0, 16 ; trap_random_get (1 in, 1 out))
-push unk3 ; (unknown)  (pushImm: -1,0,1,10,100,11,12,13,2,20,3,30,4,5,98,99) (pushFromFSp: 12,32,36,4,48,...) (syscall: 1, 213 ; trap_obj_part (1 in, 1 out),4, 29 ; trap_mission_get_count (1 in, 1 out)) (add: )
+push obj ; (YS::OBJ_125) (An object)
+push unitnum ; (int)  (Unit number)
+push argnum ; (int)  (Argument to set)
 syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a unit argument for an object
 ---
 ---
 ---

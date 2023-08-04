@@ -5,21 +5,21 @@ name: trap_obj_search_by_serial
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,4) (pushFromPSpVal: 192,208,224) (pushFromFWp: W0,W152,W288) (gosub: 16, L1314)
-push unk2 ; (unknown)  (pushFromFSp: 0,36) (pushImm: 161,162,163,19,20,31,32,34,39,94,95) (fetchValue: 32,48) (pushFromFSpVal: 108,112)
+push data ; (memory) (variable/stack location where the object will be stored)
+push serial ; (int)  (Serial number to search)
 syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Searches for an existing object with the given serial number (a value set in a spawn)
 ---
 ---
 ---

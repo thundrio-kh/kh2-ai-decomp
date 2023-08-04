@@ -5,20 +5,20 @@ name: trap_obj_reraise
 ---
 ---
 ---
-category: 
+category: summon
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
+push player ; (YS::PLAYER_44 *)  (Player object)
 syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Revives the player (ala Tinker Bells ability)
 ---
 ---
 ---

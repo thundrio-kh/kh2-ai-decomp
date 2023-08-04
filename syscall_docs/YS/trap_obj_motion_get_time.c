@@ -5,21 +5,21 @@ name: trap_obj_motion_get_time
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 80)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Get the time of a motion set entry
 ---
 ---
 ---

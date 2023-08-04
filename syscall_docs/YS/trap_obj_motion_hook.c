@@ -5,21 +5,21 @@ name: trap_obj_motion_hook
 ---
 ---
 ---
-category: 
+category: mnset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 144) (pushFromPSp: 32)
-push unk2 ; (unknown)  (pushImm: 161,251)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hooks a motion set entry
 ---
 ---
 ---

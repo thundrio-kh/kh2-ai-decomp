@@ -5,21 +5,21 @@ name: trap_obj_scatter_prize
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0,W120,W128,W320) (pushFromFSp: 0) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 102,103,115,116,118,122,123,125,126,131,132,133,134,137,146,147,150,152,16,166,167,168,169,170,183,184,185,187,188,189,190,191,192,193,194,195,196,197,198,53,54,56,60,61,62,71,77,82,85,86,91,92,93) (pushFromFSpVal: 108,28,28 ; ___possible_ref) (pushFromFSp: 12,16,20,24,4,...)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number to scatter)
 syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Scatter a number of prize orbs from an enemy
 ---
 ---
 ---

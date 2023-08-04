@@ -5,21 +5,21 @@ name: trap_obj_part
 ---
 ---
 ---
-category: 
+category: parts
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSp: 128,16,32,48) (pushFromPSpVal: 112)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 213 ; trap_obj_part (1 in, 1 out)
-pop unk ; (unknown) 
+pop num_parts ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the number of parts of an object
 ---
 ---
 ---

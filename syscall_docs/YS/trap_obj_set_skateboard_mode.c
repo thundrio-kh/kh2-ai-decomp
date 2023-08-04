@@ -5,21 +5,21 @@ name: trap_obj_set_skateboard_mode
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 0,1)
+push obj ; (YS::OBJ_125) (An object)
+push mode ; (int)  (Skateboard mode, values of 0 and 1 are used in game)
 syscall 1, 302 ; trap_obj_set_skateboard_mode (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the skateboard mode
 ---
 ---
 ---

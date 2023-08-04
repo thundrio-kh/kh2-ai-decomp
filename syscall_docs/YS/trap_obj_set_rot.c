@@ -5,7 +5,7 @@ name: trap_obj_set_rot
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---

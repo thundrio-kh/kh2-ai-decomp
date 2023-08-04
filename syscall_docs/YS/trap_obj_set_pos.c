@@ -5,21 +5,21 @@ name: trap_obj_set_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 128,16,32,80) (memcpyToSp: 16, 112,16, 128,16, 144,16, 16,16, 192,...) (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,144,160,20,256,...) (pushFromPSp: 0,112,16,32,36,...) (add: ) (pushFromPWp: W0,W4352)
-push unk2 ; (unknown)  (add: ) (pushFromPSp: 112,128,144,16,176,...) (pushFromPSpVal: 112,128,16,160,176,...) (pushFromFSp: 4,8) (pushFromPWp: W144,W16,W32,W4208,W4224,...)
+push obj ; (YS::OBJ_125) (An object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the position for an object
 ---
 ---
 ---

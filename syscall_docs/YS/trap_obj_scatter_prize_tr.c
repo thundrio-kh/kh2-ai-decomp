@@ -5,21 +5,21 @@ name: trap_obj_scatter_prize_tr
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 10,4,5)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number to scatter)
 syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Scatter a number of tron orbs from an enemy
 ---
 ---
 ---

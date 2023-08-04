@@ -5,21 +5,21 @@ name: trap_obj_scatter_prize_mu
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushImmf: 0.5)
-push unk2 ; (unknown)  (pushFromFSp: 8) (mulf: )
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number to scatter)
 syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Scatter Mulan orbs from an enemy
 ---
 ---
 ---

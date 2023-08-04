@@ -5,21 +5,21 @@ name: trap_obj_search_by_part
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 144,160,20,304,80) (pushFromPSp: 0,16,32,48,64) (pushImm: 1)
-push unk2 ; (unknown)  (pushImm: 12,13,2,3,4002,4006,4009,4011,4014,5000,5046,5050,5067,5068,8,L5000) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (pushFromFSp: 0,4)
+push data ; (memory) (variable/stack location where the object will be stored)
+push partnum ; (int)  (A part number)
 syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Return an object with a specific part number
 ---
 ---
 ---

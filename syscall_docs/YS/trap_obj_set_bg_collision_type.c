@@ -5,21 +5,21 @@ name: trap_obj_set_bg_collision_type
 ---
 ---
 ---
-category: 
+category: map
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 2)
+push obj ; (YS::OBJ_125) (An object)
+push coll_type ; (int)  (Collision type. Only a value of 2 is used in game)
 syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets how an object will collide with the map
 ---
 ---
 ---

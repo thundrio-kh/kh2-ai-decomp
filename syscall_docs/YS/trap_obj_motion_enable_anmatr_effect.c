@@ -5,21 +5,21 @@ name: trap_obj_motion_enable_anmatr_effect
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested-
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 11,12,13,14,15,16,18,19,21,22,23,3,34,7)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 271 ; trap_obj_motion_enable_anmatr_effect (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enables the anmatr effect for a given motion set entry
 ---
 ---
 ---

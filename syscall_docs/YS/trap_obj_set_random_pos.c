@@ -5,23 +5,23 @@ name: trap_obj_set_random_pos
 ---
 ---
 ---
-category: 
+category:position 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushImmf: 700)
-push unk4 ; (unknown)  (pushImmf: 150)
+push obj ; (YS::OBJ_125) (An object)
+push pos ; (kn::FVector )  (Base position to randomize from)
+push range ; (float)  (Determines radius of random positions to choose from)
+push height ; (float)  (Determines height of random positions to choose from)
 syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to a random in bounds position (if the random location found is out of bounds, it will be moved to the closest in bounds location)
 ---
 ---
 ---

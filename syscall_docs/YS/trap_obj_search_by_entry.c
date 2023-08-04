@@ -5,21 +5,21 @@ name: trap_obj_search_by_entry
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,48,64) (pushFromPWp: W16,W4112,W4208,W4224,W4240,...) (pushFromPSpVal: 0,112,128,144,16,...)
-push unk2 ; (unknown)  (pushImm: 100,1003,1015,1035,1036,1060,1061,1062,1063,1184,126,127,128,129,1295,1361,1362,1486,1488,1528,1543,1596,1604,1610,1655,1656,1659,1673,1674,1720,1722,1724,1730,1731,1732,1733,1736,1738,1740,1755,1762,1786,1808,1809,1810,1822,1895,19,2079,2096,2140,2173,2180,2181,2189,2203,2224,2257,2258,2356,2509,2554,2556,2557,297,298,30,31,314,318,32,33,330,348,352,354,357,358,359,360,362,363,364,365,366,644,645,646,695,714,715,716,717,718,724,727,729,730,731,75,758,762,795,799,800,801,85,86,863,864,87,88,92,928,93,956,957,964,98,987,992,993,994) (pushFromFSp: 20,4,8) (pushFromFSpVal: 0,108,112,116,152)
+push data ; (memory) (variable/stack location where the object will be stored)
+push entry_id ; (int) (ID of the object to look up)
 syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Looks up an object by objentry ID and puts the object in the data object. If this object does not exist, will throw an error (which is ignored by the VM on PS2, but will crash on PC)
 ---
 ---
 ---

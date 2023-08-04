@@ -5,7 +5,7 @@ name: trap_obj_set_flag
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,32,4,48,...) (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,112,160,176,64,...) (pushFromPWp: W0,W372,W4128,W4224,W4368,...) (add: )
-push unk2 ; (unknown)  (pushImm: 0,1,11,12,13,14,15,2,3,4,5,6,7,8,9)
+push obj ; (YS::OBJ_125) (An object)
+push flagnum ; (int)  (Flag number)
 syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a specific flag on an object to true
 ---
 ---
 ---

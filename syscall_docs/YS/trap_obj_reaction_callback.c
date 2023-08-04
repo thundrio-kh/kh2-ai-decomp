@@ -5,7 +5,7 @@ name: trap_obj_reaction_callback
 ---
 ---
 ---
-category: 
+category: reaction
 ---
 ---
 ---
@@ -13,15 +13,15 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushImm: 327)
+push obj ; (YS::OBJ_125 *)  (An object)
+push group ; (unknown)  (pushFromPSp: 16)
+push group ; (int)  (pushImm: 327)
 push unk4 ; (unknown)  (pushFromPSp: 0)
 syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a reaction callback for an object
 ---
 ---
 ---
@@ -45,7 +45,7 @@ void __fastcall YS::trap_obj_reaction_callback(BD_VALUE_21 *args)
   __int64 back_chain; // [sp+0h] [-D0h]
   YS::TARGET_108 v13; // [sp+70h] [-60h] BYREF
 
-  v2 = *(unsigned int *)&(*args)[12];
+  v2 = *(unsigned int *)&(*args)[12]; // arg 4
   v3 = (unsigned int)*(_QWORD *)(back_chain + 16);
   if ( !(_DWORD)v2 )
   {
@@ -134,7 +134,7 @@ void __fastcall YS::trap_obj_reaction_callback(BD_VALUE_21 *args)
   YS::OBJ::reaction_callback(
     v10,
     (YS::OBJ_125 *)*(unsigned int *)(v11 + 4),
-    *(int *)&(*args)[8],
+    *(int *)&(*args)[8], // arg 3
     (YS::TARGET_78 *)v13,
     v8,
     v7,

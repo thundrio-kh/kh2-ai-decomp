@@ -5,21 +5,21 @@ name: trap_obj_motion_sync
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 12) (pushFromPSpVal: 0) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 0,8) (pushFromPSpVal: 160,64) (pushFromPSp: 16,4)
+push parent ; (YS::MOTION_289)  (A motion set)
+push child ; (YS::MOTION_289)  (A motion set)
 syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Syncs two motion sets
 ---
 ---
 ---

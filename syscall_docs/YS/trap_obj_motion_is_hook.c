@@ -5,21 +5,21 @@ name: trap_obj_motion_is_hook
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_hook ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the motion set is a hook
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_show
 ---
 ---
 ---
-category: 
+category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,20,4,64) (pushFromPSp: 4) (pushFromFSp: 0,8) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 134 ; trap_obj_show (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shows all parts of an object
 ---
 ---
 ---

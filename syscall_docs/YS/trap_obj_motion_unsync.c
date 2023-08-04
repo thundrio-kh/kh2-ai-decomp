@@ -5,21 +5,21 @@ name: trap_obj_motion_unsync
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromPSpVal: 0) (pushFromPSp: 8)
-push unk2 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 160) (pushFromPSp: 28,28 ; ___possible_ref)
+push parent ; (YS::MOTION_289)  (A motion set)
+push child ; (YS::MOTION_289)  (A motion set)
 syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unsyncs two motion sets
 ---
 ---
 ---

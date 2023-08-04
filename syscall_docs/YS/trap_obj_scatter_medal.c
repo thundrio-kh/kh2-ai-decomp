@@ -5,21 +5,21 @@ name: trap_obj_scatter_medal
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 4) (pushFromFSp: 0,4)
-push unk2 ; (unknown)  (div: ) (pushImm: 1,10,150,20,30,50,80)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number to scatter)
 syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Scatters a number of Pirates of the Caribbean coins from an object
 ---
 ---
 ---

@@ -5,23 +5,23 @@ name: trap_obj_set_parts_color
 ---
 ---
 ---
-category: 
+category: parts
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 1,128,16,2,256,3072,3145756,32,32764,4,64,8)
-push unk3 ; (unknown)  (pushImm: 0,8421504)
-push unk4 ; (unknown)  (pushImmf: 0,10,16,20,60,8)
+push obj ; (YS::OBJ_125) (An object)
+push partnum ; (int)  (Part number)
+push color ; (int)  (Color value to set, should be RGBA values all in one int)
+push time ; (unknown)  (Time to take to blend to this color)
 syscall 1, 185 ; trap_obj_set_parts_color (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a part of an object to a color
 ---
 ---
 ---

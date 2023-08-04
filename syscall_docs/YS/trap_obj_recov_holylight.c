@@ -5,7 +5,7 @@ name: trap_obj_recov_holylight
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
@@ -13,12 +13,12 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
+push mickey_obj ; (YS::MICKEY_0 *)  (Object for mickey)
 syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: activate mickeys recovery holy light
 ---
 ---
 ---

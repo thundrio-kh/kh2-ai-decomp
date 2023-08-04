@@ -5,20 +5,20 @@ name: trap_obj_motion_unhook
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 4)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unhooks a motion set
 ---
 ---
 ---

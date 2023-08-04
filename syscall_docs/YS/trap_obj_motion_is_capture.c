@@ -5,21 +5,21 @@ name: trap_obj_motion_is_capture
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (add: ) (pushFromPSpVal: 20,4,80) (pushFromPSp: 128,16,32,36,4,...) (pushFromPWp: W0)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_capture ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the motion set is a capture
 ---
 ---
 ---

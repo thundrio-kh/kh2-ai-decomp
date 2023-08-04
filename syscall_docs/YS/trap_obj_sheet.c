@@ -5,21 +5,21 @@ name: trap_obj_sheet
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,128,16,32,64) (pushFromPSpVal: 0,16) (pushFromFSp: 0,4) (pushFromPWp: W0,W16,W3152,W4240,W448,...)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
-pop unk ; (unknown) 
+pop sheet ; (YS::SHEET_44 *) 
 ---
 ---
 ---
-description: 
+description: returns the objects stat sheet
 ---
 ---
 ---

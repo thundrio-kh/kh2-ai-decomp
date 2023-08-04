@@ -5,21 +5,21 @@ name: trap_obj_motion_is_no_control
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_no_control ; (bool) 
 ---
 ---
 ---
-description: 
+description: returns if the is_no_control flag is set for the motion set
 ---
 ---
 ---

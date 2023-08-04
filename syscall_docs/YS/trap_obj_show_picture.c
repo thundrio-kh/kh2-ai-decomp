@@ -5,22 +5,22 @@ name: trap_obj_show_picture
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 0,1,4) (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Number picture)
 syscall 1, 285 ; trap_obj_show_picture (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Show a numbered picture associated with an object
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_motion_capture_id
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,16,160,240,32,...) (pushFromPSp: 0,16,192,32,48,...)
+push motion ; (YS::MOTION_289 *)  (A motion set)
 syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
-pop unk ; (unknown) 
+pop id ; (int) 
 ---
 ---
 ---
-description: 
+description: return the id of a motion capture 
 ---
 ---
 ---

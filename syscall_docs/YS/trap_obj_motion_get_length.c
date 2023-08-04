@@ -5,22 +5,22 @@ name: trap_obj_motion_get_length
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0) (fetchValue: 4) (pushImm: 1) (pushFromPWp: W364)
-push unk2 ; (unknown)  (pushImm: -1,0,1,2,201,202,203,205,208,238,243) (pushFromFSp: 24,36,4,40,52,...) (syscall: 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)) (add: )
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
-pop unk ; (unknown) 
+pop length ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the length of a given motion set entry
 ---
 ---
 ---
