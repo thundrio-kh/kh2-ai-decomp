@@ -5,11 +5,11 @@ name: trap_player_can_capture_form
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Returns whether the players form can be captured, which is determined by if the player has a summon going.
 ---
 ---
 ---

@@ -5,17 +5,20 @@ name: trap_saveram_set_weapon
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,10,11,12,13,2,3,4,5,6,7,8,9)
-push unk2 ; (unknown)  (pushImm: 384,41,49,501,502,54,55,59,60,61,62,72,73,74,75,81)
-push unk3 ; (unknown)  (pushImm: 0,80)
+push part ; (int)  (ID of the character to give the weapon to?)
+push right ; (int)  (Right hand weapon ID)
+push left ; (int)  (Left hand weapon ID, 0 for none)
+
+push form_id ; (int)  (ID of the form to grant the ability to)
+push ability_id ; (int)  (ID of the ability to grant)
 syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
 ---
 ---

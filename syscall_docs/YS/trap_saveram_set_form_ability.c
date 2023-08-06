@@ -5,21 +5,21 @@ name: trap_saveram_set_form_ability
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 7)
-push unk2 ; (unknown)  (pushImm: 525,526)
+push form_id ; (int)  (ID of the form to grant the ability to)
+push ability_id ; (int)  (ID of the ability to grant)
 syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds an ability to a specific form of sora (IE lion sora)
 ---
 ---
 ---

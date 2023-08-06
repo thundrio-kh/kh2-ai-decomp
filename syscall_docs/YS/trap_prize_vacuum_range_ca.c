@@ -5,21 +5,21 @@ name: trap_prize_vacuum_range_ca
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 32,4) (pushImmf: 2000)
+push obj ; (YS::BTLOBJ *)  (A battle object)
+push range ; (float)  (A range value)
 syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Vacuums all medals within a designated range of the object
 ---
 ---
 ---

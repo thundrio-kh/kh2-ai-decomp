@@ -5,21 +5,21 @@ name: trap_player_set_exec_rc
 ---
 ---
 ---
-category: 
+category: rc
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 8) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImm: 224)
+push player ; (YS::PLAYER_44 *)  (Player object)
+push command ; (int)  (Reaction command ID)
 syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the player to be executing a reaction command
 ---
 ---
 ---

@@ -5,23 +5,23 @@ name: trap_prize_return_ca
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushFromPSpVal: 0)
-push unk3 ; (unknown)  (pushImm: 10)
+push player ; (YS::PLAYER_44 *)  (Player object)
+push btlobj ; (YS::BTLOBJ *)  (A battle object)
+push num ; (int)  (number of prizes)
 syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
-pop unk ; (unknown) 
+pop all_returned ; (bool) 
 ---
 ---
 ---
-description: 
+description: Moves a number of medals from the player to the target battle object
 ---
 ---
 ---

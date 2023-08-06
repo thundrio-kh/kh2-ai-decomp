@@ -5,20 +5,20 @@ name: trap_prize_get_all_tr
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push btlobj ; (YS::BTLOBJ *)  (A battle object)
 syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Make all the hostile program orbs that are out disappear?
 ---
 ---
 ---

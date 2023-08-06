@@ -5,11 +5,11 @@ name: trap_player_capture_form_end
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 243 ; trap_player_capture_form_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ends capturing the players form, returning the form to what it was before.
 ---
 ---
 ---

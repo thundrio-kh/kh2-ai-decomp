@@ -5,22 +5,22 @@ name: trap_prize_appear_num
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 6)
-push unk3 ; (unknown)  (pushImm: 2,5)
+push pos ; (kn::FVector *)  (A position vector)
+push type ; (int)  (Prize type)
+push num ; (int)  (number of prizes)
 syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Makes a number of prizes appear at a position
 ---
 ---
 ---

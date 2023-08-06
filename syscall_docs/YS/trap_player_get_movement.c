@@ -5,21 +5,21 @@ name: trap_player_get_movement
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 36,4,64,8,88,...) (pushFromFSp: 0)
+push player ; (YS::PLAYER_44 *)  (Player object)
 syscall 1, 113 ; trap_player_get_movement (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; ( kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Get the position that the player is moving to
 ---
 ---
 ---

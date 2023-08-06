@@ -5,21 +5,21 @@ name: trap_puti
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push value ; (int)  (pushFromFSp: 0,12,124,128,132,...) (pushImm: 255,30,6) (pushFromFWp: W0,W280,W4212,W4216,W4220,...) (syscall: 0, 16 ; trap_random_get (1 in, 1 out),1, 144 ; trap_obj_serial (1 in, 1 out),1, 15 ; trap_sysobj_motion_id (1 in, 1 out),1, 213 ; trap_obj_part (1 in, 1 out),1, 228 ; trap_sheet_hp (2 in, 1 out),...) (fetchValue: 132,16,20,24,36,...) (gosub: 12, L1019,4, L13582,4, L2396,4, L2409,4, L2938,...) (pushFromFSpVal: 0,108,112,116,136,...) (add: )
-push value of what ; (string)  (pushFromPAi: L10331 ; ___ai 'StunDamage' (L10331),L10442 ; ___ai 'sheet.hp' (L10442),L10445 ; ___ai 'MISSION.get_timer_second' (L10445),L10514 ; ___ai 'TW_M_EX350_10.get.hit_count' (L10514),L10690 ; ___ai 'INT' (L10690),...)
+push value ; (int)  (An integer)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 0 ; trap_puti (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a int to the console that can be opened with F2, of the form "description: value"
 ---
 ---
 ---

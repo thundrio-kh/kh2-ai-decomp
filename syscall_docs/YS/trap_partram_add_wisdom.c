@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push amt ; (int)  (Amount of magic to add)
 syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
 ---

@@ -5,20 +5,20 @@ name: trap_player_capture_form
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1537,1538)
+push entry_id ; (int)  (entry_id of a form)
 syscall 1, 242 ; trap_player_capture_form (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Changes a players form
 ---
 ---
 ---

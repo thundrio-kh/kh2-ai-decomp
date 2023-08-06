@@ -5,20 +5,20 @@ name: trap_progress_set_flag
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 13325,13326,13327,13328,13354,14399,16484,18515,2048,2260,2263,2269,2271,2272,2273,2274,2293,4260,4291,4292,5165,6262,7249,8242,8280) (pushFromFSpVal: 12)
+push flag_num ; (int)  (Flag number)
 syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the value of a flag to true
 ---
 ---
 ---

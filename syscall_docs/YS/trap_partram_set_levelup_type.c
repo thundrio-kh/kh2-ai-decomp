@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push type ; (int)  (0, 1, or 2)
 syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
 ---

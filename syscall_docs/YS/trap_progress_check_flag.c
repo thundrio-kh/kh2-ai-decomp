@@ -5,21 +5,21 @@ name: trap_progress_check_flag
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1033,13318,13320,13322,13324,13325,13326,13327,16434,16436,16438,16440,16442,16444,17414,17415,17426,17427,17430,17433,18487,18504,18510,18511,18512,18513,18514,2091,2101,2122,2159,2160,2161,2250,2256,2267,2268,2269,2272,2273,2274,4139,4251,4252,4253,4254,4255,4272,4273,4274,4277,4279,4280,4286,4287,4288,5159,5160,8236,8240,8270) (pushFromFSp: 12) (pushFromFSpVal: 12)
+push flag_num ; (int)  (Flag number)
 syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks value of a progress flag
 ---
 ---
 ---

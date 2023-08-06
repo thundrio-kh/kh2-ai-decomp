@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push amt ; (int)  (Amount of AP to give to the player)
 syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
 ---

@@ -5,21 +5,21 @@ name: trap_prize_appear_tr
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 10,3,30,4)
+push pos ; (kn::FVector *)  (A position vector)
+push num ; (int)  (number of prizes)
 syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Makes a number of Hostile Program orbs appear at a position
 ---
 ---
 ---

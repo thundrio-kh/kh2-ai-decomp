@@ -5,20 +5,20 @@ name: trap_prize_num
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 300 ; trap_prize_num (0 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the number of prizes currently spawned
 ---
 ---
 ---

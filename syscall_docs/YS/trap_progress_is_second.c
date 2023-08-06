@@ -5,20 +5,20 @@ name: trap_progress_is_second
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks the value of the 0x102B flag
 ---
 ---
 ---

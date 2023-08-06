@@ -5,20 +5,20 @@ name: trap_prize_num_ca
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 341 ; trap_prize_num_ca (0 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the number of port royal medals that are currently spawned
 ---
 ---
 ---

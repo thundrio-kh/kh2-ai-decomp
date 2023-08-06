@@ -5,21 +5,21 @@ name: trap_score_score
 ---
 ---
 ---
-category: 
+category: score
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0) (fetchValue: 0,8) (pushFromFSp: 8)
+push id ; (int)  (ID of the score to get)
 syscall 4, 36 ; trap_score_score (1 in, 1 out)
-pop unk ; (unknown) 
+pop score ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the high score?
 ---
 ---
 ---

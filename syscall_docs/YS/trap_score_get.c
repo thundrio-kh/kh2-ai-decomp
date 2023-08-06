@@ -5,21 +5,21 @@ name: trap_score_get
 ---
 ---
 ---
-category: 
+category: minigame
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12,8)
+push id ; (int)  (ID of the score to get)
 syscall 4, 38 ; trap_score_get (1 in, 1 out)
-pop unk ; (unknown) 
+pop score ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the score of the current minigame
 ---
 ---
 ---

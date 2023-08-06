@@ -5,11 +5,11 @@ name: trap_progress_is_secret_movie
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Checks if the secret movie is unlocked
 ---
 ---
 ---

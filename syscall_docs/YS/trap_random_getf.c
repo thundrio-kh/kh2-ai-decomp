@@ -5,21 +5,21 @@ name: trap_random_getf
 ---
 ---
 ---
-category: 
+category: utility
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: -0.5,0.017453,0.1,0.3,0.785398,1,1.570796,10,100,12.566371,2,20,200,3,30,30 ; ___possible_ref,300,360,50,6.283185,60,83.333336,90,90 ; ___possible_ref) (syscall: 1, 67 ; trap_obj_motion_get_length (2 in, 1 out),1, 67 ; trap_obj_motion_get_length (2 in, 1 out) ; ___possible_ref) (divf: ) (pushFromFSp: 0)
+push range ; (float)  (A number)
 syscall 0, 17 ; trap_random_getf (1 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description:  <check dis notes>
+description:  Return a random float between 0 and range
 ---
 ---
 ---

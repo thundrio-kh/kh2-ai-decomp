@@ -5,22 +5,22 @@ name: trap_player_lockon
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 8)
-push unk2 ; (unknown)  (pushImm: 1)
-push unk3 ; (unknown)  (pushFromPWp: W16)
+push player ; (YS::PLAYER_44 *)  (Player object)
+push mode ; (int)  (lock on mode)
+push target ; (YS::OBJ_168 *)  (Target object)
 syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Locks the player onto an object
 ---
 ---
 ---

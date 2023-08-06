@@ -5,20 +5,20 @@ name: trap_saveflag_set
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 32,38,39,41,64,65,66) (pushFromFSp: 4)
+push flag_num ; (int)  (A flag number)
 syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets a flag value to true
 ---
 ---
 ---

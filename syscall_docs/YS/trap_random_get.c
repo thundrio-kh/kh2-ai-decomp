@@ -5,21 +5,21 @@ name: trap_random_get
 ---
 ---
 ---
-category: 
+category: utility
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,10,100,2,20,3,4,5,500,6,8,9) (pushFromFSp: 0,12,128,16,20,...) (sub: ) (pushFromFSpVal: 44,64) (add: )
+push range ; (int)  (A number)
 syscall 0, 16 ; trap_random_get (1 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description: 
+description: Return a random integer between 0 and range
 ---
 ---
 ---

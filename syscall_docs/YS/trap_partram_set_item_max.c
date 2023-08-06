@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push num ; (int) (number of consumables to allow)
 syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)
 ---

@@ -5,21 +5,21 @@ name: trap_player_get_rc
 ---
 ---
 ---
-category: 
+category: rc
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32)
+push player ; (YS::PLAYER_44 *)  (Player object)
 syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
-pop unk ; (unknown) 
+pop rc ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the value of the players current rc
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_saveram_increment_friend_recov
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Increments the "Healed Party Members" value on the battle report at the end of the game
 ---
 ---
 ---

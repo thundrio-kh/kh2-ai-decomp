@@ -5,21 +5,21 @@ name: trap_score_type
 ---
 ---
 ---
-category: 
+category: minigame
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0,8) (pushFromFSp: 8)
+push id ; (int)  (ID of the score to get)
 syscall 4, 35 ; trap_score_type (1 in, 1 out)
-pop unk ; (unknown) 
+pop type ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the score type
 ---
 ---
 ---

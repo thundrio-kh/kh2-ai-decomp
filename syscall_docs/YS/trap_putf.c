@@ -5,21 +5,21 @@ name: trap_putf
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (gosub: 12, L2327,12, L355,12, L4827,12, L6312,16, L2327,...) (fetchValue: 0,100,12,132,148,...) (pushFromFSp: 0,12,32,36,4,...) (divf: ) (syscall: 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out),0, 6 ; trap_vector_len (1 in, 1 out),0, 7 ; trap_vector_normalize (1 in, 1 out),0, 91 ; trap_vector_inner_prodcut (2 in, 1 out),1, 230 ; trap_sheet_hp_rate (2 in, 1 out),...) (subf: ) (radd: ) (pushFromFSpVal: 100,132,140,144,204,...) (mulf: ) (pushFromFWp: W148,W4248,W4392)
-push unk2 ; (unknown)  (pushFromPAi: L10218 ; ___ai 'dist2' (L10218),L10313 ; ___ai 'absf.y' (L10313),L10419 ; ___ai 'hp_rate' (L10419),L10480 ; ___ai 'dist' (L10480),L10696 ; ___ai 'self.float_height' (L10696),...)
+push value ; (float)  (A float)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 1 ; trap_putf (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a float to the console that can be opened with F2, of the form "description: value"
 ---
 ---
 ---

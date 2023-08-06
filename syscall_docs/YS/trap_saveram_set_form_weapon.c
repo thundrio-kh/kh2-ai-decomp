@@ -5,21 +5,21 @@ name: trap_saveram_set_form_weapon
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,10,2,3,4,5,6)
-push unk2 ; (unknown)  (pushImm: 0,42,71)
+push form_id ; (int)  (ID of the form to grant the ability to)
+push weapon_id ; (int)  (ID of the weapon to set)
 syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the weapon for a specific form
 ---
 ---
 ---

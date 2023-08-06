@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push id ; (int)  (ID of an ability)
 push equip ; (bool)  (Whether or not to start the ability equipped)
 syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)

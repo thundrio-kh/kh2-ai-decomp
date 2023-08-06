@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,12,6)
+push part ; (int)  (Part to get)
 syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
-pop unk ; (unknown) 
+push partram ; (YS::PARTRAM *)
 ---
 ---
 ---
-description: 
+description: Gets a specific part of the saveram
 ---
 ---
 ---

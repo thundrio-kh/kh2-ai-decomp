@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push partram ; (YS::PARTRAM *)  (Partram object)
 push amt ; (int)  (Amount of attack to add)
 syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
 ---

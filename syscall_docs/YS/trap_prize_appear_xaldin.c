@@ -5,21 +5,21 @@ name: trap_prize_appear_xaldin
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32)
-push unk2 ; (unknown)  (pushImm: 1)
+push pos ; (kn::FVector *)  (A position vector)
+push num ; (int)  (number of prizes)
 syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Makes a number of prizes for mushroom 3 appear at a position
 ---
 ---
 ---

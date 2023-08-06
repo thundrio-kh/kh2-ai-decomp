@@ -5,20 +5,20 @@ name: trap_progress_is_fm_secret_movie
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 0, 103 ; trap_progress_is_fm_secret_movie (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_unlocked ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the Final Mix Secret Movie is unlocked
 ---
 ---
 ---

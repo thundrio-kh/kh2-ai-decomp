@@ -5,21 +5,21 @@ name: trap_saveflag_check
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 32,38,39,41,64,65,66) (pushFromFSp: 4)
+push flag_num ; (int)  (A flag number)
 syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns the value of a save flag
 ---
 ---
 ---

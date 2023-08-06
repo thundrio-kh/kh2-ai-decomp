@@ -5,20 +5,20 @@ name: trap_saveflag_reset
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push flag_num ; (int)  (A flag number) 
 syscall 0, 58 ; trap_saveflag_reset (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Resets the value of the save flag to 0
 ---
 ---
 ---
