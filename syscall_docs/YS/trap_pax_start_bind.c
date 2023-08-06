@@ -5,25 +5,25 @@ name: trap_pax_start_bind
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 16) (pushImm: 1) (fetchValue: 16)
-push unk2 ; (unknown)  (pushFromFSp: 0,16,20,4,8) (pushImm: 10,11,12,2,3,4,8,9) (add: )
-push unk3 ; (unknown)  (pushFromPSpVal: 0) (pushFromPSp: 16,32) (pushFromFSp: 4)
-push unk4 ; (unknown)  (pushImm: 0,1)
-push unk5 ; (unknown)  (pushImm: 0)
+push pax ; (ryj::PAX_161 *)  (A PAX effect object)
+push id ; (int)  (ID of the animation to start)
+push obj ; (YS::OBJ_125)  (Object to bind to)
+push flag ; (int)  (Flag to set, possibly a boolean as 0 and 1 are only values used in game)
+push priority ; (int)  (Priority for the animation)
 syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_145 *) 
 ---
 ---
 ---
-description: 
+description: Starts and binds a PAX effect
 ---
 ---
 ---
@@ -40,11 +40,11 @@ void __fastcall YS::trap_pax_start_bind(BD_VALUE_21 *args, __int64 a2, __int64 a
   unsigned __int64 v14; // r30
   __int64 back_chain; // [sp+0h] [-B0h]
 
-  v9 = (ryj::PAX_161 *)(*args)[0];
-  v10 = *(int *)&(*args)[4];
-  v11 = *(unsigned int *)&(*args)[8];
-  v12 = *(_DWORD *)&(*args)[12];
-  v13 = *(int *)&(*args)[16];
+  v9 = (ryj::PAX_161 *)(*args)[0]; // 1
+  v10 = *(int *)&(*args)[4]; // 2
+  v11 = *(unsigned int *)&(*args)[8];//6
+  v12 = *(_DWORD *)&(*args)[12]; //3
+  v13 = *(int *)&(*args)[16]; //5
   v14 = (unsigned int)*(_QWORD *)(back_chain + 16);
   if ( !(_DWORD)v11 )
   {

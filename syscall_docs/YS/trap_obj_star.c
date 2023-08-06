@@ -5,21 +5,21 @@ name: trap_obj_star
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,20,4) (pushFromPSp: 32) (pushFromPSpVal: 0) (pushImm: -1)
-push unk2 ; (unknown)  (pushImmf: 0,30,60) (syscall: 0, 3 ; trap_frametime (0 in, 1 out),1, 67 ; trap_obj_motion_get_length (2 in, 1 out))
+push obj ; (YS::OBJ_125) (An object)
+push numframes ; (float)  (Number of frames?)
 syscall 1, 91 ; trap_obj_star (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Grants Iframes?
 ---
 ---
 ---

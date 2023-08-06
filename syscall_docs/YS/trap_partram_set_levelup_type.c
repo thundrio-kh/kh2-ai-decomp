@@ -5,21 +5,21 @@ name: trap_partram_set_levelup_type
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8)
-push unk2 ; (unknown)  (pushImm: 0,1,2)
+push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push type ; (int)  (0, 1, or 2)
 syscall 0, 95 ; trap_partram_set_levelup_type (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the level up path to sword/shield/staff.
 ---
 ---
 ---

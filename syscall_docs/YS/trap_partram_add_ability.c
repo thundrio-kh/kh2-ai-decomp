@@ -5,22 +5,22 @@ name: trap_partram_add_ability
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 207,211,215,408,410,413,417,434,435,444)
-push unk3 ; (unknown)  (pushImm: 0,1)
+push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push id ; (int)  (ID of an ability)
+push equip ; (bool)  (Whether or not to start the ability equipped)
 syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Gives the player/party an ability.
 ---
 ---
 ---

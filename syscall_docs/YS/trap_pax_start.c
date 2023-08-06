@@ -5,24 +5,24 @@ name: trap_pax_start
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 16) (fetchValue: 16)
-push unk2 ; (unknown)  (pushImm: 2,3,4) (pushFromFSp: 64,8)
-push unk3 ; (unknown)  (pushImm: 1)
-push unk4 ; (unknown)  (pushImm: 0)
+push pax ; (ryj::PAX_161 *)  (A PAX effect object)
+push id ; (int)  (ID of the animation to start)
+push flag ; (int)  (Flag to set, possibly a boolean as 0 and 1 are only values used in game)
+push priority ; (int)  (Priority for the animation)
 syscall 1, 138 ; trap_pax_start (4 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_145 *) 
 ---
 ---
 ---
-description: 
+description: Starts a PAX effect
 ---
 ---
 ---

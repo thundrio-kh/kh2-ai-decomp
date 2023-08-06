@@ -5,21 +5,21 @@ name: trap_obj_unit_group
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
-pop unk ; (unknown) 
+pop num ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the unit group the object belongs to
 ---
 ---
 ---

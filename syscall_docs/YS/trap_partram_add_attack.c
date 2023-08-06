@@ -5,21 +5,21 @@ name: trap_partram_add_attack
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8)
-push unk2 ; (unknown)  (pushImm: 1)
+push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push amt ; (int)  (Amount of attack to add)
 syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Gives attack to the player
 ---
 ---
 ---

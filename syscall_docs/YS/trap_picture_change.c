@@ -5,21 +5,21 @@ name: trap_picture_change
 ---
 ---
 ---
-category: 
+category: layout
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 88)
-push unk2 ; (unknown)  (pushImm: 1,2,3)
+push layout ; (Tz::Layout_36 *)  (A layout object)
+push num ; (int)  (Number to change picture to)
 syscall 1, 290 ; trap_picture_change (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Change a picture attached to a layout
 ---
 ---
 ---

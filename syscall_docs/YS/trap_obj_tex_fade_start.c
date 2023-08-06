@@ -5,23 +5,23 @@ name: trap_obj_tex_fade_start
 ---
 ---
 ---
-category: 
+category: texture
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImmf: 0,1)
-push unk3 ; (unknown)  (pushImmf: 0,1)
-push unk4 ; (unknown)  (pushImmf: 10,16,2,20,30,300,48,60,8)
+push fade ; (YS::FADE *)  (pushFromFSp: 0)
+push from ; (float)  (Unknown, values of 0 or 1 used in game)
+push to ; (float)  (Unknown, values of 0 or 1 used in game)
+push time ; (float)  (Number of frames for the fade)
 syscall 1, 125 ; trap_obj_tex_fade_start (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts a texture fade
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_use_mp
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromFSp: 8)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Use up the mp for a party member
 ---
 ---
 ---

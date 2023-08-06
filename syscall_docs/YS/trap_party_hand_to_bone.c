@@ -5,22 +5,22 @@ name: trap_party_hand_to_bone
 ---
 ---
 ---
-category: 
+category: party
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 12,8) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 4) (pushImm: 0)
+push party (YS::PARTY_63 *) (Party object)
+push hand ; (int)  (Hand to check)
 syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
-pop unk ; (unknown) 
+pop bone_id ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the bone ID of the hand of the party member
 ---
 ---
 ---

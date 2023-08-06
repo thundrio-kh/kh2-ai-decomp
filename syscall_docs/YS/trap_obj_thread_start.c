@@ -5,31 +5,31 @@ name: trap_obj_thread_start
 ---
 ---
 ---
-category: 
+category: threading
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 0)
-push unk3 ; (unknown)  (pushImm: L2119,L3217,L3476,L3506,L3972,L4539,L5303,L5484,L6113)
-push unk4 ; (unknown)  (pushImm: 0)
-push unk5 ; (unknown)  (pushFromFSp: 0)
+push oldvm ; (YS::VM_377)  (A VM object)
+push shouldstop ; (bool)  (If true, stop execution in the oldvm)
+push pc ; (label)  (pushImm: L2119,L3217,L3476,L3506,L3972,L4539,L5303,L5484,L6113)
+push args ; (BD_VALUE_0 *)  (Pointer to all the arguments to send to the thread)
+push argc ; (int)  (Number of arguments)
 syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
-pop unk ; (unknown) 
+pop vm ; (YS::VM_377 *) 
 ---
 ---
 ---
-description: 
+description: Starts a new VM thread and begins execution at the label
 ---
 ---
 ---
 decompiled code:
 void __fastcall YS::VM::stop(YS::VM_377 *const this, int mask, int match)
-YS::VM_377 *__fastcall YS::VM::Start(unsigned int *code, YS::OBJ_175 *owner)
+YS::VM_377 *YS::VM::start(YS::VM_377 *const this, int group, int pc, BD_VALUE_0 *args, int argc); // idb
 /----- (0000000000505C64) ----------------------------------------------------
 void __fastcall YS::trap_obj_thread_start(BD_VALUE_21 *args)
 {

@@ -5,21 +5,21 @@ name: trap_obj_texanm_start
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushImm: 10)
-push unk2 ; (unknown)  (pushImm: 33,65,66,67,68,69,70,71,72,73,74,75,76,77) (pushFromFWp: W4244) (add: )
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of the animation)
 syscall 1, 85 ; trap_obj_texanm_start (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts a specific animation
 ---
 ---
 ---

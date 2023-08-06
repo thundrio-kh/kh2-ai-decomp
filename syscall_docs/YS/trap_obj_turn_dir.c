@@ -5,23 +5,23 @@ name: trap_obj_turn_dir
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (memcpyToSp: 16, 112,16, 16,16, 32,16, 48,16, 64,...) (pushImm: 16) (pushFromPSp: 32) (pushImmf: 0.02618) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushFromPSp: 112,16,32,48,64,...) (add: ) (pushFromFSp: 12,4,8) (syscall: 0, 3 ; trap_frametime (0 in, 1 out))
-push unk3 ; (unknown)  (pushImmf: 0,0.01,0.013963,0.017453,0.02,0.02618,0.03,0.034907,0.04,0.05,0.05236,0.069813,0.08,0.087266,0.1,0.10472,0.174533,0.2,0.261799,0.392699,0.5,3.141593) (fetchValue: 8) (pushFromFSp: 32,64,72,8) (mulf: )
+push obj ; (YS::OBJ_125) (An object)
+push dir ; (kn::FVector *)  (A direction vector)
+push limit ; (float)  (Maximum turn amount)
 syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (bool) 
 ---
 ---
 ---
-description: 
+description: Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 if it does not (if this is an xyz rotation, then it will not do the rotation)
 ---
 ---
 ---

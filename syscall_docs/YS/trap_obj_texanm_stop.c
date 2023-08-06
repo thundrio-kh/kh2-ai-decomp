@@ -5,21 +5,21 @@ name: trap_obj_texanm_stop
 ---
 ---
 ---
-category: 
+category: animation
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 33)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of the animation)
 syscall 1, 86 ; trap_obj_texanm_stop (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stops a specific animation
 ---
 ---
 ---

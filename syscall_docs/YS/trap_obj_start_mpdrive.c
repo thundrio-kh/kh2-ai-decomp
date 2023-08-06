@@ -5,21 +5,21 @@ name: trap_obj_start_mpdrive
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImmf: 1)
+push obj ; (YS::OBJ_125) (An object)
+push ratio ; (float)  (Ratio mpdrive should start at)
 syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts mpdrive for an object
 ---
 ---
 ---

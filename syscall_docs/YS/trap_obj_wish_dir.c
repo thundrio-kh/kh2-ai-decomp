@@ -5,21 +5,21 @@ name: trap_obj_wish_dir
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,16,4,8) (memcpyToSp: 16, 112,16, 128,16, 144,16, 16,16, 224,...) (pushImm: 16) (pushFromPSp: 32) (pushFromPWp: W160) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushFromPSp: 112,128,144,16,224,...) (pushFromFSp: 12,16,20,24,4) (pushFromPSpVal: 112,144) (add: )
+push obj ; (YS::OBJ_125) (An object)
+push dir ; (kn::FVector)  (A direction vector)
 syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the direction an object wishes to face
 ---
 ---
 ---

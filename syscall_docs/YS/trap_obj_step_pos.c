@@ -5,21 +5,21 @@ name: trap_obj_step_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,160,4,64) (pushFromPSp: 0,112,128,16,160,...) (pushFromFSp: 0,8) (pushFromPWp: W364)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector) 
 ---
 ---
 ---
-description:  <check dis notes>
+description: Returns the position of the floor under an object
 ---
 ---
 ---

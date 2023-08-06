@@ -5,22 +5,30 @@ name: trap_obj_voice
 ---
 ---
 ---
-category: 
+category: sound 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W0,W160,W192,W292) (pushFromPSpVal: 0,144,160,176) (pushImm: 0,11,12,15,23,4,8) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 0,1,10,11,12,13,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,47,48,49,5,50,51,54,55,56,59,6,7,8,9) (pushFromFSp: 104,4,52,8) (add: ) (pushFromFSpVal: 120,124,128)
-push unk3 ; (unknown)  (pushImm: 0,1,10,2,3,4,5,6)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of voice clip to play)
+push priority ; (int)  (Priority for playing the voice clip)
 syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
 ---
 ---
 ---
-description: <check dis notes>
+description: Plays a voice clip belonging to an object
+
+
+;Play voice clip
+ pushFromFSp 0 ; actor
+ pushImm 9 ; voice clip to play
+ pushImm 3 ; priority
+ syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
+ ret 
 ---
 ---
 ---

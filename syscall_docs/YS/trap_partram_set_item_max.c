@@ -5,21 +5,21 @@ name: trap_partram_set_item_max
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push num ; (int) (number of consumables to allow)
 syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the maximum number of consumables the player can equip
 ---
 ---
 ---

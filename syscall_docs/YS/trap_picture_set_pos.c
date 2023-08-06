@@ -5,22 +5,22 @@ name: trap_picture_set_pos
 ---
 ---
 ---
-category: 
+category: layout
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (gosub: 8, L21364,8, L21980)
-push unk2 ; (unknown)  (pushFromPSpVal: 104)
-push unk3 ; (unknown)  (gosub: 8, L21364,8, L21980)
+push layout ; (dk::Layout *)  (A layout object)
+push x ; (float)  (X coordinate)
+push y ; (float)  (Y coordinate)
 syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the position of a picture for a layout object
 ---
 ---
 ---

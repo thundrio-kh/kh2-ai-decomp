@@ -5,21 +5,21 @@ name: trap_obj_tex_fade_set
 ---
 ---
 ---
-category: 
+category: texture
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push fade ; (YS::FADE *) (A fade object)
+push fromto ; (float) (Unknown, but used as both the from and to arguments)
 syscall 1, 123 ; trap_obj_tex_fade_set (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the time for a texture fade
 ---
 ---
 ---

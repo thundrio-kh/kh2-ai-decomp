@@ -5,21 +5,21 @@ name: trap_obj_touch_zone
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16,32,48,80) (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_touch ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is touching a Zone
 ---
 ---
 ---

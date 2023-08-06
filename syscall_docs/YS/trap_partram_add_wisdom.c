@@ -5,21 +5,21 @@ name: trap_partram_add_wisdom
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 8)
-push unk2 ; (unknown)  (pushImm: 1)
+push partram ; (YS::PARTRAM *)  (pointer to the partram)
+push amt ; (int)  (Amount of magic to add)
 syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Gives magic to the player
 ---
 ---
 ---

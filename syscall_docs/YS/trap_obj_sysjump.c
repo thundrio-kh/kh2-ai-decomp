@@ -5,21 +5,21 @@ name: trap_obj_sysjump
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPWp: W0,W144,W148,W152,W156,...) (pushFromPSpVal: 0,144) (pushFromPSp: 16,32)
-push unk2 ; (unknown)  (pushImmf: -200,0,10,30,300,50) (fetchValue: 132) (pushFromFSp: 16,4,48)
+push obj ; (YS::OBJ_125) (An object)
+push unk ; (Unknown, game uses values between -200 and 300: )
 syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unknown
 ---
 ---
 ---

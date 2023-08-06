@@ -5,21 +5,36 @@ name: trap_pad_is_button
 ---
 ---
 ---
-category: 
+category: controls
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 8)
+push button ; (int)  (ID of button to check, see description)
 syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_pressed ; (bool) 
 ---
 ---
 ---
-description:  <check dis notes>
+description:  Checks if a button is pressed on the controller.
+
+| Button | Value |
+|--------|-------|
+| Start  | 1     |
+| Circle | 2     |
+| Up     | 4     |
+| Down   | 5     |
+| Left   | 6     |
+| Right  | 7     |
+| X      | 8     |
+| Square | 9     |
+| Triangle | 10  |
+| R1     | 11    |
+| Select | 22    |
+
 ---
 ---
 ---

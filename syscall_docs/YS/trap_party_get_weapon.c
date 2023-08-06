@@ -5,22 +5,22 @@ name: trap_party_get_weapon
 ---
 ---
 ---
-category: 
+category: party
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 24,28,28 ; ___possible_ref,8)
-push unk2 ; (unknown)  (pushImm: 0) (pushFromFSp: 0,4)
+push party (YS::PARTY_63 *) (Party object)
+push member_index ; (int) (Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html))
 syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
-pop unk ; (unknown) 
+pop id ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the ID of the weapon the party member has equipped
 ---
 ---
 ---

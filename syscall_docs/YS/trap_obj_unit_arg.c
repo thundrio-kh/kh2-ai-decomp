@@ -5,22 +5,22 @@ name: trap_obj_unit_arg
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSpVal: 0,64,96) (pushFromPWp: W0,W144,W176,W292,W4368,...) (pushFromPSp: 16,32)
-push unk2 ; (unknown)  (pushImm: 1,2)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (Which argument to return)
 syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Return the value of a unit argument
 ---
 ---
 ---
