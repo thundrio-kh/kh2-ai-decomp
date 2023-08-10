@@ -5,21 +5,21 @@ name: trap_sheet_get_mp
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
 syscall 10, 50 ; trap_sheet_get_mp (1 in, 1 out)
-pop unk ; (unknown) 
+pop mp ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the amount of MP left
 ---
 ---
 ---

@@ -5,24 +5,37 @@ name: trap_thread_start
 ---
 ---
 ---
-category: 
+category: threading
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
 push unk1 ; (unknown)  (pushImm: 0,1) (pushFromFSpVal: 80)
-push unk2 ; (unknown)  (pushImm: L10444,L10747,L108,L11616,L118,L11899,L119,L124,L12692,L13116,L13156,L13283,L13393,L135,L13509,L13625,L13654,L13675,L13687,L137,L13950,L13988,L141,L143,L14334,L14686,L15416,L1706,L176,L18105,L182,L18258,L18498,L18651,L1933,L194,L195,L207,L209,L23762,L247,L257,L278,L2827,L287,L299,L300,L30936,L3096,L32047,L322,L337,L3500,L36295,L363,L364,L415,L4569,L4896,L59,L598,L6334,L642,L652,L665,L784,L81,L823,L87,L88,L8969,L91,L93,L9397,L98) (pushFromFSp: 4)
+push code ; (label)  (Line number for label to execute)
 push unk3 ; (unknown)  (pushImm: 0)
-push unk4 ; (unknown)  (pushFromFSp: 0) (pushImm: 0) (pushFromPWp: W0,W4228)
+push owner ; (YS::OBJ_175)  (Object that spawns the thread)
 syscall 0, 9 ; trap_thread_start (4 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description:  <check dis notes>
+description:  Starts a new thread of execution
+
+Example:
+
+;START THREAD
+;This thread will flash the screen white after a 200 frame countdown ends
+startThread:
+ pushImm 0
+ pushImm thread ; code
+ pushImm 0
+ pushFromFSp 0
+ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+ ret
+
 ---
 ---
 ---

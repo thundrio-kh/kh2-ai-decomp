@@ -22,7 +22,7 @@ syscall 0, 90 ; trap_vector_draw (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Draws a sphere around a vector
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_status_is_battle
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_battle ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if a battle is going on
 ---
 ---
 ---

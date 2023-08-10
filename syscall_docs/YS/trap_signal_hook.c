@@ -5,21 +5,21 @@ name: trap_signal_hook
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push signal ; (int) (Signal to hook)
+push arg ; (int) (Argument to hook signal with)
 syscall 1, 273 ; trap_signal_hook (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a signal hook
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_sysobj_motion_id
 ---
 ---
 ---
-category: animation
+category: mset
 ---
 ---
 ---
@@ -13,9 +13,9 @@ documentation level: untested
 ---
 ---
 ---
-push sysobj ; (YS::MOTION_289 *)  (A motion object)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
-pop mid ; (int) (the motion ID)
+pop id ; (int) (the motion ID)
 ---
 ---
 ---

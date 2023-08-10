@@ -5,22 +5,22 @@ name: trap_sysobj_motion_change
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,24,32,4,...) (fetchValue: 12,36,4) (pushFromPSpVal: 16,72) (pushImm: 0,1,152,153,154,155,156,164,165,192,2,201,202,203,204,205,206,207,213,232,236) (gosub: 4, L3845)
-push unk2 ; (unknown)  (pushFromFSp: 0,104,12,16,20,...) (pushImm: 0,1,10,151,152,153,154,157,158,16,161,162,163,164,165,171,182,183,191,192,193,194,196,2,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,221,223,224,225,226,231,232,233,234,235,236,238,240,241,242,243,246,247,248,249,250,3,4,44,45,47,5,L151,L152,L202,L207,L209) (fetchValue: 12,8) (pushImmf: 0.5,1.5,2,3) (add: ) (pushFromFSpVal: 108,112,132,416)
-push unk3 ; (unknown)  (gosub: 12, L1913,12, L2185,12, L2268,12, L2511,12, L2570,...) (pushImmf: 0,10,12,16,2,20,200,30,4,8) (fetchValue: 16,36) (pushFromFSp: 12,4) (gosub32: 4, L14109,4, L4607,8, L14109,8, L4607) (mulf: )
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (Time to take to blend the animations)
 syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
 ---
 ---
 ---
-description:  <check dis notes>
+description: Changes the object to use a different motion set entry
 ---
 ---
 ---

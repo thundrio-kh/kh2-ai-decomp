@@ -5,21 +5,21 @@ name: trap_genie_change_form
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W312)
-push unk2 ; (unknown)  (pushFromFSp: 4)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push formCommand ; (int)  (Which form to change to)
 syscall 10, 9 ; trap_genie_change_form (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Changes the genies form
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_target_clear_after_player
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 246 ; trap_target_clear_after_player (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Doesnt appear to do anything except print some debug warnings
 ---
 ---
 ---

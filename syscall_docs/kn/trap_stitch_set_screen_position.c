@@ -5,21 +5,21 @@ name: trap_stitch_set_screen_position
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 10, 1 ; trap_stitch_set_screen_position (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the position of stitch on the screen
 ---
 ---
 ---

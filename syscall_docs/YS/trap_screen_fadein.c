@@ -5,20 +5,20 @@ name: trap_screen_fadein
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 80)
+push frame ; (float)  (Number of frames)
 syscall 0, 88 ; trap_screen_fadein (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a fadein on the screen
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_friend_link_magic
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
-push unk2 ; (unknown)  (fetchValue: 52)
-push unk3 ; (unknown)  (pushFromFSp: 4)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push magic ; (YS::MAGIC_7 *)  (A magic object)
+push buffer ; (data)  (Uninitialized data)
 syscall 10, 58 ; trap_friend_link_magic (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Links magic to a friend
 ---
 ---
 ---

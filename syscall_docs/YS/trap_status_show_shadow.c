@@ -5,11 +5,11 @@ name: trap_status_show_shadow
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 287 ; trap_status_show_shadow (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shows shadows displayed by objects
 ---
 ---
 ---

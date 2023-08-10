@@ -5,21 +5,21 @@ name: trap_stitch_move_request
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push move_target ; (int)  (Target number stitch should move to)
 syscall 10, 32 ; trap_stitch_move_request (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Request stitch move (to the target)
 ---
 ---
 ---

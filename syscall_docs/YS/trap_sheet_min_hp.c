@@ -5,22 +5,22 @@ name: trap_sheet_min_hp
 ---
 ---
 ---
-category: 
+category: min_hp
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push index ; (int)  (HP index to use)
 syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
-pop unk ; (unknown) 
+pop min_hp ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the min HP of an object
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_vacuum_set_pos
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,120)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the position of a vacuum
 ---
 ---
 ---

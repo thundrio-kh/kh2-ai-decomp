@@ -5,22 +5,22 @@ name: trap_sheet_hp
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out)) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,1,2,3,4,5) (gosub32: 4, L7201,8, L7201)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push index ; (int)  (HP index to use)
 syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
-pop unk ; (unknown) 
+pop hp ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the amount of HP an object has
 ---
 ---
 ---

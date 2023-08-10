@@ -5,7 +5,7 @@ name: trap_vector_mul
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
@@ -13,14 +13,14 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0.3,0.5,0.9,1200,15,150,300,400,500,60,600,650,800,900) (pushFromPSp: 0,108,112,128,144,...) (pushFromPWp: W0) (add: ) (fetchValue: 12) (pushFromFSp: 0,12,16,4,48,...) (pushFromFSpVal: 24,8,96) (pushFromPSpVal: 112,1184,128,144,16,...) (mulf: ) (cos: ) (sub: ) (syscall: 1, 99 ; trap_obj_float_height (1 in, 1 out))
-push unk2 ; (unknown)  (mulf: ) (pushFromFSp: 0,112,12,152,16,...) (pushImmf: -0.5,-1,-1.5,-10,-100,-120,-130,-150,-2,-200,-26,-30,-300,-40,-450,-50,-500,-70,-80,-800,0,0.2,0.3,0.45,0.47,0.5,0.7,0.78,0.8,0.87,0.9,1,1.5,10,100,1000,10000,100000,120,125,150,160,170,180,1800,2,20,200,2000,220,225,25,250,3,300,35,350,35000,4,400,5,50,500,500 ; ___possible_ref,6,60,600,670,700,75,800,850,900) (fetchValue: 0,104,12,36,48,...) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out),0, 3 ; trap_frametime (0 in, 1 out),0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)) (divf: ) (negf: ) (subf: ) (addf: ) (pushFromFSpVal: 112,132,144,160,172,...) (gosub32: 60, L2958) (cfti: ) (gosub: 32, L3814)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
-pop unk ; (unknown) 
+pop vec ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Multiplies two vectors together
 ---
 ---
 ---

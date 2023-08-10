@@ -5,21 +5,21 @@ name: trap_sysobj_is_zako
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 17 ; trap_sysobj_is_zako (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_zako ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if the object is a non-boss enemy
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_friend_is_effect_exist
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,60)
-push unk2 ; (unknown)  (pushFromFSp: 52) (pushFromFSpVal: 56)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push effect ; (yj::EFFECT_55)  (An effect object)
 syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_effect_exist ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the effect still exists
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_obj_set_use_mp
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSpVal: 28,32)
+push obj ; (YS::OBJ_125) (An object)
+push mp ; (float)  (Value to set MP to)
 syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets an object to use its MP
 ---
 ---
 ---

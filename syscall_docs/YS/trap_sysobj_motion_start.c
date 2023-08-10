@@ -5,22 +5,22 @@ name: trap_sysobj_motion_start
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 36,4) (pushFromFSp: 0,4,40,8) (pushImm: 0,1,152,153,154,161,192,194,2,201,202,203,204,205,206,207,208,209,213,231,232,233,234,235,4,45,47)
-push unk2 ; (unknown)  (pushImm: 0,1,10,131,132,14,141,142,151,152,153,154,155,157,16,161,162,163,164,165,167,168,169,171,172,173,174,18,181,182,185,186,187,191,192,193,194,195,196,197,198,199,2,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,231,232,233,234,235,237,238,241,242,243,244,245,246,247,249,250,3,30,4,44,45,47,5,50,51,L152,L153,L198) (syscall: 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)) (pushFromFSp: 0,100,104,12,16,...) (add: ) (pushFromFSpVal: 120,232) (pushImmf: 0.5,2) (pushFromFWp: W4208) (fetchValue: 4)
-push unk3 ; (unknown)  (pushImmf: 0,10,12,16,2,30,4,6,8) (gosub: 12, L10059,12, L3127,12, L4532,12, L4615,12, L5616,...) (fetchValue: 36) (pushFromFSp: 0,32,4,8) (mulf: )
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (Time to take to blend the animations)
 syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts playing a motion set entry
 ---
 ---
 ---

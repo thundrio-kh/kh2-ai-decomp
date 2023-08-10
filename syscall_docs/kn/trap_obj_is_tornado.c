@@ -5,21 +5,21 @@ name: trap_obj_is_tornado
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 48)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_tornado ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the object is a tornado object
 ---
 ---
 ---

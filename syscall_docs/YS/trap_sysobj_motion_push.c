@@ -5,22 +5,22 @@ name: trap_sysobj_motion_push
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 36,4) (pushImm: 0,1) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,1,191,193,202,208,210,212,213,214,221,222,228,229,234,235,238,242,246,248,4,5) (pushFromFSp: 0,4,8) (pushImmf: 1) (add: )
-push unk3 ; (unknown)  (pushImmf: 0,16,24,8) (fetchValue: 36) (mulf: ) (gosub: 12, L4205,16, L4205,24, L4205)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (Time to take to blend the animations)
 syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Push a motion set entry to be played after the current queue is empty
 ---
 ---
 ---

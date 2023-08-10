@@ -5,22 +5,22 @@ name: trap_vector_sub
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 112,16, 128,16, 144,16, 16,16, 160,...) (pushFromPSp: 112,128,16,160,176,...) (pushImm: 144,16,160,32,64,80,96) (add: ) (pushFromFSp: 0,12,4,8) (pushFromPSpVal: 0,112,128,16,32,...) (pushFromPWp: W16,W4240,W4256,W4448)
-push unk2 ; (unknown)  (pushFromPSp: 112,128,144,16,160,...) (pushFromFSp: 0,12,16,32,4,...) (add: ) (pushFromPSpVal: 0,128,144,16,160,...) (pushFromPWp: W128,W160,W32,W4224,W4256,...)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Performs vector subtraction (vec1 - vec2)
 ---
 ---
 ---

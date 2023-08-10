@@ -5,21 +5,21 @@ name: trap_sysobj_appear
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push id ; (int)  (Object entry ID)
 syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
-pop unk ; (unknown) 
+pop crowd_event ; (YS::CROWD_EVENT_4) 
 ---
 ---
 ---
-description: 
+description: Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 ---
 ---
 ---

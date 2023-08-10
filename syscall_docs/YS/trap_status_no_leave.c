@@ -5,20 +5,20 @@ name: trap_status_no_leave
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
-pop unk ; (unknown) 
+pop no_leave ; (status) 
 ---
 ---
 ---
-description: 
+description: Returns the value of the no_leave flag
 ---
 ---
 ---

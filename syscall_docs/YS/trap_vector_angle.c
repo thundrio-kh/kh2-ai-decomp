@@ -5,22 +5,22 @@ name: trap_vector_angle
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
-pop unk ; (unknown) 
+pop angle ; (float) 
 ---
 ---
 ---
-description: 
+description: Computes the angle between two vectors
 ---
 ---
 ---

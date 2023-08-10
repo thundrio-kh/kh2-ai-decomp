@@ -5,7 +5,7 @@ name: trap_picture_set_pos
 ---
 ---
 ---
-category: layout
+category: visual
 ---
 ---
 ---

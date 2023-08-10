@@ -5,21 +5,21 @@ name: trap_friend_get_player_attacker
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0)
+push should_remove_player_attacker ; (bool)  (If the player attacker should be removed)
 syscall 10, 33 ; trap_friend_get_player_attacker (1 in, 1 out)
-pop unk ; (unknown) 
+pop obj ; (YS::OBJ_125) 
 ---
 ---
 ---
-description: 
+description: Get a enemy attacking the player and if the argument is true also stop the enemy attacking the player
 ---
 ---
 ---

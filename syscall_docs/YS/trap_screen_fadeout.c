@@ -5,20 +5,20 @@ name: trap_screen_fadeout
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push frame ; (float)  (Number of frames)
 syscall 0, 87 ; trap_screen_fadeout (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a fadeout on the screen
 ---
 ---
 ---

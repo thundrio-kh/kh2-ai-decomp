@@ -5,28 +5,28 @@ name: trap_stitch_effect_start
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,8,9)
-push unk3 ; (unknown)  (pushFromFSp: 0)
-push unk4 ; (unknown)  (pushImm: 16384,19)
-push unk5 ; (unknown)  (pushImm: -1)
-push unk6 ; (unknown)  (pushImm: 0)
-push unk7 ; (unknown)  (pushImm: 1)
-push unk8 ; (unknown)  (pushImm: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push id ; (int)  (ID of effect to start)
+push obj ; (YS::OBJ_125) (An object)
+push bone ; (int)  (Bone ID)
+push motion ; (int)  (Motion set ID. -1 is used in game AI)
+push use_bone_rotation ; (bool)  (Should bone rotation be used)
+push flag ; (int)  (Flag argument for effect)
+push priority ; (int)  (Priority of effectt)
 syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Start a stitch effect
 ---
 ---
 ---

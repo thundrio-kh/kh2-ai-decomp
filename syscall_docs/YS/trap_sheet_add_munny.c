@@ -5,21 +5,21 @@ name: trap_sheet_add_munny
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untestesd
 ---
 ---
 ---
-push unk1 ; (unknown)  (neg: ) (pushFromFSp: 0)
+push num ; (int)  (Amount of munny to add)
 syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
-pop unk ; (unknown) 
+pop total_munny ; (int) 
 ---
 ---
 ---
-description: 
+description: Adds an amount of money to the player
 ---
 ---
 ---

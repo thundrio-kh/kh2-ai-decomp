@@ -5,21 +5,21 @@ name: trap_sysobj_fadein
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untestd
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4) (pushImmf: 0.5)
-push unk2 ; (unknown)  (pushImmf: 0,1,10,12,14,15,16,2,20,28,3,30,4,40,5,6,60,8) (pushFromFSpVal: 32) (mulf: ) (pushFromFSp: 16,4)
+push fade_amt ; (float)  (Amount to fade in, 0.0 to 1.0)
+push time ; (float)  (Number of frames for the fade in)
 syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a fade in effect
 ---
 ---
 ---

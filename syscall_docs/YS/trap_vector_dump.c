@@ -5,21 +5,21 @@ name: trap_vector_dump
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32,48,64,80,...) (pushFromPSpVal: 112,128,160,176)
-push unk2 ; (unknown)  (pushFromPAi: L10692 ; ___ai 'pos' (L10692),L11227 ; ___ai '2' (L11227),L11299 ; ___ai 'target pos' (L11299),L11481 ; ___ai 'jafar' (L11481),L11554 ; ___ai '1' (L11554),...)
+push vec ; (kn::FVector *)  (A vector)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 8 ; trap_vector_dump (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints each component of the vector to the screen, one per line
 ---
 ---
 ---

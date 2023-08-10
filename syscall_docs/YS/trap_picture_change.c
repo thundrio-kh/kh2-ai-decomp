@@ -5,7 +5,7 @@ name: trap_picture_change
 ---
 ---
 ---
-category: layout
+category: visual
 ---
 ---
 ---

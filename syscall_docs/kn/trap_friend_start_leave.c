@@ -5,20 +5,20 @@ name: trap_friend_start_leave
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 41 ; trap_friend_start_leave (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have the friend start the leave action
 ---
 ---
 ---

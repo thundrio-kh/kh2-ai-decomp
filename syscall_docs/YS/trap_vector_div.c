@@ -5,22 +5,22 @@ name: trap_vector_div
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 192,32,80)
-push unk2 ; (unknown)  (syscall: 0, 3 ; trap_frametime (0 in, 1 out)) (pushImmf: 3)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 37 ; trap_vector_div (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Divides the values of two vectors
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_vector_rotx
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0.017453,0.349066,0.785398,6.283185) (syscall: 0, 18 ; trap_random_range (2 in, 1 out)) (pushFromPSp: 16,32,64) (pushFromFSp: 4) (pushFromPSpVal: 1184,1200,80)
-push unk2 ; (unknown)  (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out)) (degr: ) (pushImmf: -0.174533,-0.785398,-1.047198,0.087266,0.349066,0.436332,0.785398,1.047198,1.22173,1.396263,1.570796,2.094395,3.141593) (pushFromFSp: 100,104,4)
+push vec ; (kn::FVector *) (A vector)
+push rad ; (float) (Amount to rotate)
 syscall 0, 68 ; trap_vector_rotx (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Rotates a vector along the X axis
 ---
 ---
 ---

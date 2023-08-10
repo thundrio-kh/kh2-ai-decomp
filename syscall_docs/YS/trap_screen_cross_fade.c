@@ -5,20 +5,20 @@ name: trap_screen_cross_fade
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push frame ; (float) (number of frames to take)
 syscall 0, 77 ; trap_screen_cross_fade (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a crossfade on the screen
 ---
 ---
 ---

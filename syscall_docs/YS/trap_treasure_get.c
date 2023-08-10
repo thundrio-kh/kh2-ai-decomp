@@ -5,20 +5,20 @@ name: trap_treasure_get
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 588,589)
+push id ; (int)  (Treasure location ID)
 syscall 1, 362 ; trap_treasure_get (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Get a treasure
 ---
 ---
 ---

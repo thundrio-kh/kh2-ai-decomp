@@ -5,21 +5,21 @@ name: trap_genie_get_limit_command
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 10 ; trap_genie_get_limit_command (1 in, 1 out)
-pop unk ; (unknown) 
+pop command_id ; (int) 
 ---
 ---
 ---
-description: 
+description: Have genie get the limit command
 ---
 ---
 ---

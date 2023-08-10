@@ -5,22 +5,22 @@ name: trap_vacuum_create
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32) (add: ) (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushFromFSp: 4,72) (pushImmf: -15,12,20,3,30,5,6,60,7.5)
+push result ; (int)  (Unknown)
+push a2 ; (float)  (Unknown)
 syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
-pop unk ; (unknown) 
+pop vacuum ; (YS::VACUUM::VACUUM) 
 ---
 ---
 ---
-description: 
+description: Create a vacuum object
 ---
 ---
 ---

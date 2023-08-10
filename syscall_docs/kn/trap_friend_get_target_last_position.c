@@ -5,21 +5,21 @@ name: trap_friend_get_target_last_position
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 8 ; trap_friend_get_target_last_position (1 in, 1 out)
-pop unk ; (unknown) 
+pop last_pos ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Get the last position of the friends target
 ---
 ---
 ---

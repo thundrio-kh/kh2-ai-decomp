@@ -5,21 +5,21 @@ name: trap_friend_add_watch_effect
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,60)
-push unk2 ; (unknown)  (pushFromFSp: 52) (pushFromFSpVal: 56)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push effect ; (ryj::EFFECT_55 *)  (An effect object)
 syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have a friend watch an effect object
 ---
 ---
 ---

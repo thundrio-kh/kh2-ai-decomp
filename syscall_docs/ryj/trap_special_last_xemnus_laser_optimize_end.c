@@ -5,11 +5,11 @@ name: trap_special_last_xemnus_laser_optimize_end
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Removes the dome (dark globe) effect at the end of the Final Xemnas attack
 ---
 ---
 ---

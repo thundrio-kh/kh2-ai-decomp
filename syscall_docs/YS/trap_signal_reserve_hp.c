@@ -5,23 +5,23 @@ name: trap_signal_reserve_hp
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push rate ; (float) (Rate value) 
+push signal ; (int) (Signal to call)
+push arg ; (int) (Argument to call signal with)
 syscall 1, 106 ; trap_signal_reserve_hp (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Signal an object to reserve an HP value
 ---
 ---
 ---

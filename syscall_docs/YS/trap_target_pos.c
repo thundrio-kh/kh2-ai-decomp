@@ -5,21 +5,21 @@ name: trap_target_pos
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,172,180,20,...) (pushFromFSpVal: 0,120,124,16,180,...) (fetchValue: 32,48,64) (syscall: 1, 191 ; trap_obj_lockon_target (1 in, 1 out),2, 23 ; trap_btlobj_target (1 in, 1 out),2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)) (gosub: 16, L13205)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 1, 120 ; trap_target_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Return the position of the target
 ---
 ---
 ---

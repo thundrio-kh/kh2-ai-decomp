@@ -5,21 +5,21 @@ name: trap_vacuum_set_near_range
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,112,156,164,168,...)
-push unk2 ; (unknown)  (pushImmf: 0,100,200,250)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push near_range ; (float)  (A range, game AI uses values between 0-250)
 syscall 2, 83 ; trap_vacuum_set_near_range (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the near range value for a vacuum
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_sheet_set_prize_range
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImmf: 0,300)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push range ; (float)  (Range value to set)
 syscall 1, 329 ; trap_sheet_set_prize_range (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the prize range value for an object
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_status_is_force_leave
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_force_leave ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the force leave flag is true
 ---
 ---
 ---

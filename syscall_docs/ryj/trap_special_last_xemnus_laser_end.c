@@ -5,11 +5,11 @@ name: trap_special_last_xemnus_laser_end
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 8, 5 ; trap_special_last_xemnus_laser_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ends the Final Xemnas dome laser attack
 ---
 ---
 ---

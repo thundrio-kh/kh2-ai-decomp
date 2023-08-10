@@ -5,21 +5,21 @@ name: trap_obj_set_xyzrot
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 112)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,64,96)
+push obj ; (YS::OBJ_125) (An object)
+push rot ; (kn::FVector *)  (A rotation vector)
 syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the xyz rotation of an object
 ---
 ---
 ---

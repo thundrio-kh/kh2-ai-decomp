@@ -5,22 +5,22 @@ name: trap_obj_set_stop_timer
 ---
 ---
 ---
-category: 
+category: unused
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int) (Timer ID) 
+push time ; (float) (Time to stop at)
 syscall 10, 11 ; trap_obj_set_stop_timer (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stops the timer
 ---
 ---
 ---

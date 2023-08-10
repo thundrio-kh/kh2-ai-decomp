@@ -5,22 +5,22 @@ name: trap_teamwork_alloc
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 1,10,11,12,16,18,2,20,21,22,23,24,25,27,28,29,3,30,31,32,33,34,35,36,37,38,4,40,41,42,43,44,45,46,48,49,5,50,51,52,53,54,55,58,59,6,65538,7,8,9) (pushFromFSp: 0,4)
-push unk2 ; (unknown)  (pushImm: 12,16,160,164,176,20,208,24,28,32,368,40,48,52,56,64,8,80)
+push id ; (int)  (ID of memory allocator)
+push size ; (Amount of memory to allocate)
 syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Allocates an amount of work memory
 ---
 ---
 ---

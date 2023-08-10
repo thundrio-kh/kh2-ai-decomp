@@ -14,7 +14,7 @@ documentation level: untested
 ---
 ---
 push btlobj ; (YS::BTLOBJ *) (The owner of the attack)
-push paramid ; (int)  (The param id for the attack)
+push paramid ; (int)  (The param id for the attack, usually referencing the hitbox to use)
 push combogroup ; (int)  (The combo group for the attack to be a part of. Pass -1 if not part of a combo group)
 push level ; (int)  (The level of the attack)
 syscall 2, 10 ; trap_attack_new (4 in, 1 out)

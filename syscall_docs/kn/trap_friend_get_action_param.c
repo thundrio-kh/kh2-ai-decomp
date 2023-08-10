@@ -5,22 +5,22 @@ name: trap_friend_get_action_param
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 111,113,120,121,40,41)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push id ; (int)  (ID of an action)
 syscall 10, 35 ; trap_friend_get_action_param (2 in, 1 out)
-pop unk ; (unknown) 
+pop param ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the parameter of a friends action
 ---
 ---
 ---

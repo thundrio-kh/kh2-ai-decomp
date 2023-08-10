@@ -5,21 +5,21 @@ name: trap_friend_is_start_leave
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 60)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_start_leave ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the friend has started the leave action
 ---
 ---
 ---

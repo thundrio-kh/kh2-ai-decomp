@@ -5,20 +5,20 @@ name: trap_friend_enable_follow_enemy
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 47 ; trap_friend_enable_follow_enemy (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enables a friend following an enemy
 ---
 ---
 ---

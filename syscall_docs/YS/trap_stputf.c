@@ -5,21 +5,21 @@ name: trap_stputf
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 152,4) (gosub: 4, L118)
-push unk2 ; (unknown)  (pushFromPAi: L2384 ; ___ai 'pos y' (L2384),L2665 ; ___ai 'dist' (L2665),L8472 ; ___ai 'rc rush guard time' (L8472))
+push value ; (float)  (A float)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 25 ; trap_stputf (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a float to the console that can be opened with F2, of the form "description: value"
 ---
 ---
 ---

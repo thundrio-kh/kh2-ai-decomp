@@ -5,11 +5,11 @@ name: trap_status_hide_shadow
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 286 ; trap_status_hide_shadow (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turns off all shadows displayed by objects
 ---
 ---
 ---

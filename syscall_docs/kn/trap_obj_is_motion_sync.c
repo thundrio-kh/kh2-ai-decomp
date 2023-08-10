@@ -5,22 +5,22 @@ name: trap_obj_is_motion_sync
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 12,8)
-push unk2 ; (unknown)  (pushFromPSp: 28,28 ; ___possible_ref) (pushFromFSp: 8)
+push obj ; (YS::OBJ_125) (An object)
+push child ; (YS::OBJ_125) (An object)
 syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Checks if the motion of an object is synced with the child object
 ---
 ---
 ---

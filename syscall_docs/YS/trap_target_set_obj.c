@@ -5,21 +5,21 @@ name: trap_target_set_obj
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 180,20,32,36,4) (memcpyToSp: 16, 16,16, 48) (fetchValue: 48) (pushFromFSpVal: 124,180,48) (pushImm: 160,4) (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out))
-push unk2 ; (unknown)  (pushFromPSp: 16,32,4,48) (pushFromPSpVal: 0,192) (add: ) (pushFromFSp: 0,4,8) (pushFromPWp: W4368)
+push target ; (YS::TARGET_108 *)  (A target object)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the target to an object
 ---
 ---
 ---

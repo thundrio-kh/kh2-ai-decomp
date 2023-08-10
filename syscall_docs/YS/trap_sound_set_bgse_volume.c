@@ -5,20 +5,20 @@ name: trap_sound_set_bgse_volume
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push sound_on ; (bool)  (If background sound effects should be on or off)
 syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turn background sound effects on or off
 ---
 ---
 ---

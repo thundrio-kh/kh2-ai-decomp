@@ -5,20 +5,20 @@ name: trap_summon_is_tink_exist
 ---
 ---
 ---
-category: 
+category: summon
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 2, 75 ; trap_summon_is_tink_exist (0 in, 1 out)
-pop unk ; (unknown) 
+pop tink_exist ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns true if Peter Pan can revive the player using Tinker Bell
 ---
 ---
 ---

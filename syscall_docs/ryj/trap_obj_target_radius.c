@@ -5,21 +5,21 @@ name: trap_obj_target_radius
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromPSp: 16)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 8, 0 ; trap_obj_target_radius (1 in, 1 out)
-pop unk ; (unknown) 
+pop radius ; (float) 
 ---
 ---
 ---
-description: 
+description: Get the radius of a target
 ---
 ---
 ---

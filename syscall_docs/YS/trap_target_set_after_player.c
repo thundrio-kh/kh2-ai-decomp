@@ -5,11 +5,11 @@ name: trap_target_set_after_player
 ---
 ---
 ---
-category: 
+category: unsed
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -19,7 +19,7 @@ syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Doesnt appear to do anything except print some debug warnings
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_target_dup
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 191 ; trap_obj_lockon_target (1 in, 1 out),2, 23 ; trap_btlobj_target (1 in, 1 out),2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)) (pushFromFSp: 0,4)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 1, 131 ; trap_target_dup (1 in, 1 out)
-pop unk ; (unknown) 
+pop dup ; (YS::TARGET_108 *) 
 ---
 ---
 ---
-description: 
+description: Duplicates a target object
 ---
 ---
 ---

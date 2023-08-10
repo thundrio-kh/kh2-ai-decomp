@@ -5,23 +5,23 @@ name: trap_sysobj_motion_frame_start
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0) (fetchValue: 4) (pushFromFSp: 64)
-push unk2 ; (unknown)  (syscall: 1, 67 ; trap_obj_motion_get_length (2 in, 1 out),1, 67 ; trap_obj_motion_get_length (2 in, 1 out) ; ___possible_ref) (pushFromFSp: 8) (pushImm: 161,211,238,4) (pushImmf: 4)
-push unk3 ; (unknown)  (syscall: 0, 17 ; trap_random_getf (1 in, 1 out)) (pushFromFSp: 12) (pushImmf: 10,20,22,48) (addf: )
-push unk4 ; (unknown)  (pushImmf: 0,8)
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (Time to take to blend the animations)
+push start_time ; (float)  (Frame number to start the animation at)
 syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have an object start a motion set entry at a specific frame number
 ---
 ---
 ---

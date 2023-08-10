@@ -5,11 +5,11 @@ name: trap_status_secure_mode_end
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 264 ; trap_status_secure_mode_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turn off the secure mode flag
 ---
 ---
 ---

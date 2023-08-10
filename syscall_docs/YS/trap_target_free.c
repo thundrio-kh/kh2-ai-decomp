@@ -5,20 +5,20 @@ name: trap_target_free
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 120,124,148,180,208,...) (pushFromFSp: 20,24,32,4,48,...)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 1, 132 ; trap_target_free (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Free a target object
 ---
 ---
 ---

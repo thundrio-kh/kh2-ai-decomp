@@ -5,7 +5,7 @@ name: trap_sheet_attack_level
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
 syscall 1, 357 ; trap_sheet_attack_level (1 in, 1 out)
-pop unk ; (unknown) 
+pop attack_level ; (int) 
 ---
 ---
 ---
-description: 
+description: Gets the attack level of an object
 ---
 ---
 ---

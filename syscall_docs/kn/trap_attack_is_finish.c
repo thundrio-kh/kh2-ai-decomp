@@ -5,21 +5,21 @@ name: trap_attack_is_finish
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push attack ; (YS::ATTACK_10 *)  (An attack object)
 syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_finish ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if an attack is a finisher
 ---
 ---
 ---

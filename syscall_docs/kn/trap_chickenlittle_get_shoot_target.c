@@ -5,21 +5,21 @@ name: trap_chickenlittle_get_shoot_target
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
-pop unk ; (unknown) 
+pop shoot_dir ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Have Chicken Little shoot in the direction of the target
 ---
 ---
 ---

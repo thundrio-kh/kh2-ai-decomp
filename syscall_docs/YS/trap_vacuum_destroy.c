@@ -5,20 +5,20 @@ name: trap_vacuum_destroy
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFWp: W4244,W4264,W4316) (pushFromFSpVal: 108,112,120,156,164,...)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
 syscall 2, 78 ; trap_vacuum_destroy (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Destroy a vacuum object
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_status_no_gameover
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets the no_gameover flag to true, so if the player dies, the game over screen does not appear
 ---
 ---
 ---

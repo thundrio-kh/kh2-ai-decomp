@@ -5,20 +5,20 @@ name: trap_peterpan_accept_notify_player_target
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 26 ; trap_peterpan_accept_notify_player_target (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Accept a notify player target
 ---
 ---
 ---

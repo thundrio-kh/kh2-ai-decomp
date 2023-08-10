@@ -5,21 +5,21 @@ name: trap_vacuum_set_ignore_type
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,112,120,156,164,...)
-push unk2 ; (unknown)  (pushImm: 0,3,4)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push type ; (int)  (Type that should be ignored)
 syscall 2, 79 ; trap_vacuum_set_ignore_type (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the types of object that the vacuum should ignore
 ---
 ---
 ---

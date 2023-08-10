@@ -5,20 +5,20 @@ name: trap_unit_get_enemy_num
 ---
 ---
 ---
-category: 
+category: spawn
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)
-pop unk ; (unknown) 
+pop num_enemies ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the number of enemies currently spawned
 ---
 ---
 ---

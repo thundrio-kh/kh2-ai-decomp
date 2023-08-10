@@ -5,20 +5,20 @@ name: trap_unit_disable
 ---
 ---
 ---
-category: 
+category: spawn
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 100,101,102,103,104,148,152,24,244,245,246,247,25,26,417,452,453,454,455,461,462,463,464,465,489,490,491,492,493,494,495,496,50,52,61,700,701,702,710,711,712,88,89,90,91,97,98,99) (syscall: 1, 170 ; trap_obj_unit_group (1 in, 1 out))
+push id ; (id)  (Unit group ID)
 syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Disable a unit group from being able to spawn
 ---
 ---
 ---

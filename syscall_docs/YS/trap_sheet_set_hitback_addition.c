@@ -5,21 +5,21 @@ name: trap_sheet_set_hitback_addition
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImmf: 0,200)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push hitback_addition ; (float)  (The new hitback addition value)
 syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the hitback addition value for an object
 ---
 ---
 ---

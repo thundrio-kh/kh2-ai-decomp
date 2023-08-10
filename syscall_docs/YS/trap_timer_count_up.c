@@ -5,20 +5,20 @@ name: trap_timer_count_up
 ---
 ---
 ---
-category: 
+category: mission_timer
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push start_value ; (int) (Value to start the timer at) 
 syscall 0, 56 ; trap_timer_count_up (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts a countup timer
 ---
 ---
 ---

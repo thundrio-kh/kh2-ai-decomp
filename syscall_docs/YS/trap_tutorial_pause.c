@@ -5,20 +5,20 @@ name: trap_tutorial_pause
 ---
 ---
 ---
-category: 
+category: menu
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 16121)
+push message_id ; (int)  (Message ID)
 syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a menu pause?
 ---
 ---
 ---

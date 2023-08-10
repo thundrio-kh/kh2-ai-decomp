@@ -5,20 +5,20 @@ name: trap_worldwork_get
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
-pop unk ; (unknown) 
+pop worldwork ; (YS::WORLDWORK ) 
 ---
 ---
 ---
-description: 
+description: Get a YS::WORLDWORK object
 ---
 ---
 ---

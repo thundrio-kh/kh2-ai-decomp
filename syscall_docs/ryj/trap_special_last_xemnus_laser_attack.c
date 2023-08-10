@@ -5,11 +5,11 @@ name: trap_special_last_xemnus_laser_attack
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 8, 4 ; trap_special_last_xemnus_laser_attack (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Involved in performing Final Xemnas Dome Laser attack
 ---
 ---
 ---

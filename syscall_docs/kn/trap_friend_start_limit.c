@@ -5,20 +5,20 @@ name: trap_friend_start_limit
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 20) (add: )
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have the friend start their limit
 ---
 ---
 ---

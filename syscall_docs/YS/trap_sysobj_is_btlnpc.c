@@ -5,21 +5,21 @@ name: trap_sysobj_is_btlnpc
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_npc ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns true if the object is a NPC
 ---
 ---
 ---

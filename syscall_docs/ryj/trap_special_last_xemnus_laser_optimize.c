@@ -5,11 +5,11 @@ name: trap_special_last_xemnus_laser_optimize
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds the dome effect (dark globe) during the final xemnas laser attack
 ---
 ---
 ---

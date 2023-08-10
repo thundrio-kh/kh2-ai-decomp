@@ -5,23 +5,23 @@ name: trap_vector_rot
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,48,64,80) (pushImmf: -0.523599,-0.785398,-1.047198,-1.570796,-3.141593,0.010472,0.087266,0.174533,360,45) (pushFromPSpVal: 80) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out)) (memcpyToSp: 16, 64) (pushImm: 16) (pushFromFSpVal: 84) (cfti: ) (pushFromFSp: 48)
-push unk2 ; (unknown)  (pushImmf: -0.523599,-1,0.523599,0.785398,1.570796,3.141593,6.283185) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out),0, 3 ; trap_frametime (0 in, 1 out)) (pushFromPSp: 16,32,48,64,80) (subf: ) (pushFromPSpVal: 64,96) (add: ) (divf: ) (cfti: )
-push unk3 ; (unknown)  (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out)) (mulf: ) (fetchValue: 8) (pushImmf: 0.174533,1.256637,2.094395,3.141593) (pushFromFSp: 124,4) (degr: ) (pushFromFSpVal: 112) (divf: )
+push vec ; (kn::FVector *) (A vector)
+push axis ; (kn::FVector *) (A vector defining the axis to rotate on)
+push rad ; (float) (Amount to rotate)
 syscall 0, 83 ; trap_vector_rot (3 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Rotates a vector along an axis by a given angle
 ---
 ---
 ---

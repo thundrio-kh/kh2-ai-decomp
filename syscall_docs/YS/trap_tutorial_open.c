@@ -5,20 +5,20 @@ name: trap_tutorial_open
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 15740,15741,16038,16040,16078,16079,16115,16119,16125,16126,16130,16132,17625,17627,17628,17820,17822,19155,20540) (pushFromFSp: 0)
+push message_id ; (int)  (Message ID)
 syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Open a tutorial window displaying a message
 ---
 ---
 ---

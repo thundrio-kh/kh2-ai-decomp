@@ -5,21 +5,21 @@ name: trap_sysobj_is_summon
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_summon ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if the object is a summon
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_sysobj_is_exist
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4) (syscall: 2, 4 ; trap_enemy_each (1 in, 1 out))
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_exist ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns True if the object is still spawned
 ---
 ---
 ---

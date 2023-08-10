@@ -5,21 +5,21 @@ name: trap_target_searcher_set_check_hide_from_friend
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 32,36,68,76,84)
-push unk2 ; (unknown)  (pushImm: 1)
+push target_searcher ; (Ts::TARGET_SEARCHER_0 *)  (A target searcher object)
+push check ; (bool)  (A flag of some sort)
 syscall 10, 55 ; trap_target_searcher_set_check_hide_from_friend (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the flag to hide from friends target_searcher
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_status_set_lockon_ratio
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0.1,0.2,0.3,0.6,0.8,0.9,1,100000000,3)
+push range ; (float)  (Range to set)
 syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the range at which the player is allowed to lockon from
 ---
 ---
 ---

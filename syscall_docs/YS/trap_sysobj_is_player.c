@@ -5,21 +5,21 @@ name: trap_sysobj_is_player
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4) (pushFromFSpVal: 0) (syscall: 2, 88 ; trap_enemy_get_attacker (1 in, 1 out))
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_player ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns true if the object is the player
 ---
 ---
 ---

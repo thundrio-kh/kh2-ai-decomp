@@ -5,22 +5,22 @@ name: trap_struggle_increment
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 8)
-push unk2 ; (unknown)  (pushImm: 0,1)
+push stage ; (int)  (Stage of the struggle tournament the player is at)
+push won_match ; (bool)  (If the player won the last match)
 syscall 4, 42 ; trap_struggle_increment (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Increments the struggle value
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_friend_is_control
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
-pop unk ; (unknown) 
+pop has_control ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the friend has control
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_vector_roty
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,128,16,64,80,...) (pushImmf: -0.5,-1.570796,0,0.1,0.2,0.261799,0.349066,0.436332,0.523599,0.785398,1.047198,1.570796,12.566371,2,6.283185) (pushFromPSp: 112,128,144,16,176,...) (pushFromPWp: W0,W112,W4272) (mulf: ) (pushFromFSp: 0,100,112,12,144,...) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out),0, 3 ; trap_frametime (0 in, 1 out),1, 69 ; trap_obj_motion_get_time (1 in, 1 out)) (add: ) (gosub: 12, L4557,12, L5111,16, L2919,16, L3678,16, L8095,...) (addf: ) (cfti: ) (fetchValue: 160) (degr: ) (pushFromFWp: W4208,W4212) (subf: ) (pushFromFSpVal: 108,136,204)
-push unk2 ; (unknown)  (pushFromFSpVal: 164,180,196,48,68,...) (pushFromFSp: 104,108,12,16,20,...) (syscall: 0, 17 ; trap_random_getf (1 in, 1 out),0, 18 ; trap_random_range (2 in, 1 out),0, 21 ; trap_vector_get_rot_xz (2 in, 1 out),0, 42 ; trap_vector_atan_xz (1 in, 1 out),0, 43 ; trap_fixrad (1 in, 1 out)) (pushImmf: -0.069813,-0.174533,-0.261799,-0.349066,-0.436332,-0.523599,-0.610865,-0.785398,-0.872665,-1.047198,-1.22173,-1.570796,-1.832596,-1.919862,-2.094395,-3.141593,-4.712389,0,0.069813,0.174533,0.20944,0.261799,0.349066,0.436332,0.523599,0.610865,0.698132,0.785398,0.872665,1.014243,1.047198,1.22173,1.308997,1.396263,1.53589,1.570796,1.919862,180,2.094395,2.356194,3.141593,4.18879,4.712389) (fetchValue: 0,108,12,4,44,...) (addf: ) (mulf: ) (degr: ) (negf: ) (gosub: 12, L4900,12, L4909,12, L4918,12, L4927,12, L4936,...) (subf: ) (pushFromFWp: W0,W16396) (divf: )
+push vec ; (kn::FVector *) (A vector)
+push rad ; (float) (Amount to rotate)
 syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Rotates a vector along the Y axis
 ---
 ---
 ---

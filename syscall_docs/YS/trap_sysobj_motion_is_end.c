@@ -5,21 +5,21 @@ name: trap_sysobj_motion_is_end
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4) (pushFromFSp: 0)
+push motion ; (YS::MOTION_289)  (A motion set)
 syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_end ; (bool) 
 ---
 ---
 ---
-description: <check dis notes>
+description: Returns true if the current motion set has ended
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_vector_add
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,128,16,160,208,...) (pushFromPSpVal: 0,112,16,32,48,...) (memcpyToSp: 16, 112,16, 128,16, 144,16, 16,16, 160,...) (pushImm: 32,64,80) (add: ) (pushFromFSp: 12,20,4,8) (dup: )
-push unk2 ; (unknown)  (pushFromPSpVal: 112,144,16,160,32,...) (pushFromPSp: 112,128,144,16,160,...) (add: ) (pushFromPWp: W384) (pushFromFSp: 16,4,8)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 4 ; trap_vector_add (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Adds two vectors together
 ---
 ---
 ---

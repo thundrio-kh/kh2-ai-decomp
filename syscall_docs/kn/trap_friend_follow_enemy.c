@@ -5,20 +5,20 @@ name: trap_friend_follow_enemy
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have a friend follow an enemy
 ---
 ---
 ---

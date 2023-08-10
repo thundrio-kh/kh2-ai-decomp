@@ -5,22 +5,22 @@ name: trap_target_search
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 4) (pushFromFSp: 172,8) (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out)) (memcpyToSp: 16, 48,16, 80) (pushFromFSpVal: 148,48)
-push unk2 ; (unknown)  (add: ) (pushFromFSp: 0,4) (pushFromPSp: 16,48,80)
-push unk3 ; (unknown)  (pushImm: 3,4,5) (pushFromFSp: 4)
+push target ; (YS::TARGET_108 *)  (A target object)
+push obj ; (YS::OBJ_125) (An object)
+push type ; (int)  (Target type)
 syscall 1, 121 ; trap_target_search (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Searches for a target of a given type
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_vector_inner_prodcut
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 144,16,32,48,64,...) (pushFromPSpVal: 144,80,96) (add: ) (memcpyToSp: 16, 128,16, 48,16, 80,16, 96) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSp: 128,16,160,32,48,...) (pushFromPSpVal: 80)
+push a ; (Axa::FVECTOR4)  (A vector)
+push b ; (Axa::FVECTOR4)  (A vector)
 syscall 0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (float) 
 ---
 ---
 ---
-description: 
+description: Calculates the inner product of two vectors
 ---
 ---
 ---

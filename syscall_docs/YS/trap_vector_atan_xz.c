@@ -5,21 +5,21 @@ name: trap_vector_atan_xz
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,32,48,64,...) (pushFromFSp: 12) (pushFromPSpVal: 160,176,80)
+push vec ; (kn::FVector *)  (A vector)
 syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (float) 
 ---
 ---
 ---
-description: 
+description: Computes the arctangent of the ratio of the x and z components of the vector
 ---
 ---
 ---

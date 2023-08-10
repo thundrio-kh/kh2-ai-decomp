@@ -5,11 +5,11 @@ name: trap_target_clear_before_player
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Clear the target before the player
 ---
 ---
 ---

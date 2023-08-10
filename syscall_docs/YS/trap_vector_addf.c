@@ -5,22 +5,22 @@ name: trap_vector_addf
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromPSpVal: 112,128,32,64,80,...) (pushFromPSp: 128,144,16,176,32,...) (pushFromPWp: W0) (memcpyToSp: 16, 16,16, 32) (pushImm: 16,80) (pushImmf: 100,60) (pushFromFSp: 4) (gosub: 28, L7429,28, L7543,28, L7638,28, L7644,28, L9244,...)
-push unk2 ; (unknown)  (pushFromPSp: 112,12,128,128 ; ___possible_ref,136,...) (pushFromPSpVal: 116,128,144,16,176,...) (pushFromPWp: W0) (fetchValue: 24) (pushFromFSp: 0,16,4,8,96) (add: ) (divf: ) (syscall: 0, 3 ; trap_frametime (0 in, 1 out)) (pushImmf: 0.13,1)
-push unk3 ; (unknown)  (gosub: 12, L11181,12, L1271,12, L2382,12, L3828,12, L6338,...) (pushFromFSp: 12,16,32,36,4,...) (fetchValue: 12,132,20,40,8,...) (pushImmf: 0,1,10,1000,12,16,20,22,25,3,30,40,50,6,60,65,80) (pushFromFSpVal: 128,132,76,84,96) (mulf: ) (gosub32: 16, L2958,24, L6437,4, L2958,4, L6437,40, L2958,...) (divf: ) (syscall: 0, 6 ; trap_vector_len (1 in, 1 out))
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
+push unk ; (float)  (unk)
 syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Adds two vectors of floats together, Third parameter has an unknown purpose
 ---
 ---
 ---

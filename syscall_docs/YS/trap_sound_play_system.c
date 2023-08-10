@@ -5,20 +5,20 @@ name: trap_sound_play_system
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 10)
+push id ; (int)  (ID of sound to play)
 syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Play a system sound by ID
 ---
 ---
 ---

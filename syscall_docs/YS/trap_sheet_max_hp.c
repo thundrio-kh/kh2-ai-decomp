@@ -5,22 +5,22 @@ name: trap_sheet_max_hp
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 32) (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0,1,2,3)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push index ; (int)  (HP index to use)
 syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
-pop unk ; (unknown) 
+pop max_hp ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the max HP of an object
 ---
 ---
 ---

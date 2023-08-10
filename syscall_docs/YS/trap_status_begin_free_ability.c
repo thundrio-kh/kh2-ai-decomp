@@ -5,11 +5,11 @@ name: trap_status_begin_free_ability
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 288 ; trap_status_begin_free_ability (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Gives Sora the ability to Jump infinitely like is done in the Armor Xemnas II fight
 ---
 ---
 ---

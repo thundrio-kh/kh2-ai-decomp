@@ -5,22 +5,22 @@ name: trap_vector_outer_product
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32,48,96) (pushFromFSp: 0) (pushFromPSpVal: 80) (memcpyToSp: 16, 48,16, 64)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,48,64,80) (pushFromPSpVal: 80)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
 syscall 0, 82 ; trap_vector_outer_product (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (float) 
 ---
 ---
 ---
-description: 
+description: Calulates the outer product of two vectors
 ---
 ---
 ---

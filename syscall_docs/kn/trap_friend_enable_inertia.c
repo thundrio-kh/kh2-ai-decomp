@@ -5,20 +5,20 @@ name: trap_friend_enable_inertia
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W364)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 27 ; trap_friend_enable_inertia (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enable the inertia action for a friend
 ---
 ---
 ---

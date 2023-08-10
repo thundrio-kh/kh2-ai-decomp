@@ -5,20 +5,20 @@ name: trap_obj_reset_special_command
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 7 ; trap_obj_reset_special_command (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset an objects special command
 ---
 ---
 ---

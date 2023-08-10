@@ -5,22 +5,22 @@ name: trap_signal_reserve_min_hp
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,16)
-push unk2 ; (unknown)  (pushImm: 20,82)
-push unk3 ; (unknown)  (pushImm: 0)
+push obj ; (YS::OBJ_125) (An object)
+push signal ; (int) (Signal to call)
+push arg ; (int) (Argument to call signal with)
 syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Signal an object to reserve an minimum HP value
 ---
 ---
 ---

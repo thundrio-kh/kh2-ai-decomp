@@ -5,21 +5,21 @@ name: trap_sheet_set_attack_level
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0,1,2,3)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push level ; (int)  (The new attack level)
 syscall 1, 358 ; trap_sheet_set_attack_level (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the attack level of an object
 ---
 ---
 ---

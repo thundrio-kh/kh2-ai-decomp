@@ -5,20 +5,20 @@ name: trap_unit_enable
 ---
 ---
 ---
-category: 
+category: spawn
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 100,101,102,103,104,117,148,152,173,24,244,245,246,247,25,26,27,36,417,452,453,454,455,461,462,463,464,465,50,52,82,83,88,89,90,92,97,98,99)
+push id ; (id)  (Unit group ID)
 syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enable a unit group so it can spawn
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_stitch_shot_effect
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W108)
-push unk2 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push a ; (int)  (unknown, maybe number of shots to fire?)
 syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Activate the shot effect for stitch
 ---
 ---
 ---

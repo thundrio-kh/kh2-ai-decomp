@@ -49,7 +49,12 @@ description: A readable explanation of what the function does
 Once every page has been filled in past being a stub, I will write a script to parse the useful information into markdown documentation for the OpenKH wiki. The decompiled code will not be put into the wiki, but the rest of the information will most likely make it. I would also like to put the descriptions as hover text in the VSCode bdscript plugin, but I don't know how easy that will be to do
 
 ### Notes for when I'm done going through everything
-When making categories you most likely want to keep all of the similar named traps in the same spot (ie all trap_attack together), but you don't want to just use those names because a different grouping will be more developer friendly (ie trap_area and trap_worldflag can both go under mapinfo)
-Similarly check all of the different variable types, a lot of them (like object_38289) can be combined, and I can probably leave off the pointer...
-make sure to do some basic cleanup of formatting for everything (capitalize first letter of sentence, period at end).
-go through the "incompletes" and make sure there is nothing stupid I need to find
+- Go back through I left a number of things as stub that need more careful analysis
+- Check all the incompletes too
+- Make the script check that the types are either 'untested' or 'complete' for everything
+- print out the categories, and move them around until they are how you like (focus on being developer friendly), then make a script rename them
+- create a draft of the wiki docs, and message people asking for opinions on categories
+- Make alphabetized list of all the different variable types, and see what can be combined, and decide if you want to leave off the pointer
+- Make sure basic cleanup of everything is being done (capitalize first letter of sentence, period at end)
+- do a pass on everything and see what I can obviously change from untested to complete
+- add some introductory text/page to explain what is going on

@@ -5,22 +5,22 @@ name: trap_chickenlittle_set_shoot_target
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push target_pos ; (kn::FVector *)  (pushFromPSp: 16)
 syscall 10, 59 ; trap_chickenlittle_set_shoot_target (2 in, 0 out)
 
 ---
 ---
 ---
-description: 
+description: Have chicken little set the destination to shoot
 ---
 ---
 ---

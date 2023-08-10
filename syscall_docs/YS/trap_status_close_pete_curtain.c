@@ -5,11 +5,11 @@ name: trap_status_close_pete_curtain
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 350 ; trap_status_close_pete_curtain (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Show the screen effect of the Pete curtain closing
 ---
 ---
 ---

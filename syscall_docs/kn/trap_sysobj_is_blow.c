@@ -5,21 +5,21 @@ name: trap_sysobj_is_blow
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_blow ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if the object is in a blow state
 ---
 ---
 ---

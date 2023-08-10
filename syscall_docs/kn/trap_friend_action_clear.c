@@ -5,20 +5,20 @@ name: trap_friend_action_clear
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 80) (pushFromPWp: W0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Clear the friends action queue
 ---
 ---
 ---

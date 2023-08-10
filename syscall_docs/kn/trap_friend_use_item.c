@@ -5,23 +5,23 @@ name: trap_friend_use_item
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (gosub: 4, L2431,4, L4255,4, L91)
-push unk2 ; (unknown)  (memcpyToSp: 16, 16)
-push unk3 ; (unknown)  (pushFromPSp: 16)
-push unk4 ; (unknown)  (pushImm: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push kind ; (int)  (ID of item to use)
+push target ; (YS::OBJ_28)  (An object)
+push num ; (int)  (How many of the item to use? 0 is the only value used by game scripts)
 syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have a friend use an item
 ---
 ---
 ---

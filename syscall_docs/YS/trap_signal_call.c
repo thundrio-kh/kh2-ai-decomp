@@ -5,7 +5,7 @@ name: trap_signal_call
 ---
 ---
 ---
-category: 
+category: system
 ---
 ---
 ---
@@ -13,13 +13,13 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 10,11,12,130,15,152,153,154,155,159,160,174,4,7,75,8,82,83,9,92,93,94,96) (pushFromFSp: 0,4) (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushImm: -1,0) (syscall: 1, 144 ; trap_obj_serial (1 in, 1 out))
+push signal ; (int) (Signal to call)
+push arg ; (int) (Argument to call signal with)
 syscall 1, 41 ; trap_signal_call (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a signal call.
 ---
 ---
 ---

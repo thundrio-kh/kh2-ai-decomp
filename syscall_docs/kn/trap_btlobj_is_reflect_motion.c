@@ -5,21 +5,21 @@ name: trap_btlobj_is_reflect_motion
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 52 ; trap_btlobj_is_reflect_motion (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_reflect_motion ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if an object is performing a reflect animation
 ---
 ---
 ---

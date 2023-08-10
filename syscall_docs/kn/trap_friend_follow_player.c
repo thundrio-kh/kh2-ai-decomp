@@ -5,20 +5,20 @@ name: trap_friend_follow_player
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W364) (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have a friend follow the player
 ---
 ---
 ---

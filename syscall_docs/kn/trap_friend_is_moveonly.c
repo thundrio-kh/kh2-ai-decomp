@@ -5,21 +5,21 @@ name: trap_friend_is_moveonly
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_moveonly ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if the friend is moveonly
 ---
 ---
 ---

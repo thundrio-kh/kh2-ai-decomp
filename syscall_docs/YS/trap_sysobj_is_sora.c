@@ -5,21 +5,21 @@ name: trap_sysobj_is_sora
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 319 ; trap_sysobj_is_sora (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_sora ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns true if the object is Sora
 ---
 ---
 ---

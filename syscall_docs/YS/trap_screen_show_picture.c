@@ -5,21 +5,21 @@ name: trap_screen_show_picture
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push datafile ; (string) (filename?) 
+push number ; (int) (ID of picture to show) 
 syscall 0, 74 ; trap_screen_show_picture (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Shows a picture on the screen
 ---
 ---
 ---

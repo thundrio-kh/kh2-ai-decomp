@@ -5,22 +5,34 @@ name: trap_sheet_set_element_rate
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0,1,2,3,4,5,6)
-push unk3 ; (unknown)  (pushImm: 0,1,100,50,L100) (pushFromFSp: 4)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push element ; (int)  (Type of element to set resistance for, reference table in description)
+push percent ; (int)  (Percentage damage taken)
 syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
 ---
 ---
 ---
-description: <check dis notes>
+description: Set resistances for an object
+
+| Value | Element |
+|-------|---------|
+| 0     | Physical|
+| 1     | Fire    |
+| 2     | Blizzard|
+| 3     | Thunder |
+| 4     | Darkness|
+| 5     | Light   |
+| 6     | All     |
+
+
 ---
 ---
 ---

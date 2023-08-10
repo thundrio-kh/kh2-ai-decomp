@@ -5,20 +5,20 @@ name: trap_status_is_mission
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 152 ; trap_status_is_mission (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_mission ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if a mission is going on
 ---
 ---
 ---

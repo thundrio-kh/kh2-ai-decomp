@@ -5,22 +5,22 @@ name: trap_sheet_set_hp
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1,2,3) (pushFromFSp: 4,8) (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out)) (gosub: 4, L457)
-push unk2 ; (unknown)  (syscall: 1, 229 ; trap_sheet_max_hp (2 in, 1 out)) (sub: ) (pushFromFSpVal: 204) (citf: ) (fetchValue: 60)
-push unk3 ; (unknown)  (pushImm: 0,1,2,3)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push hp ; (int) (HP value to set)
+push index ; (int)  (HP index to use)
 syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set an objects HP
 ---
 ---
 ---

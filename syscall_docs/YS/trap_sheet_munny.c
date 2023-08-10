@@ -5,20 +5,20 @@ name: trap_sheet_munny
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
-pop unk ; (unknown) 
+pop amt ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the amount of munny the player has
 ---
 ---
 ---

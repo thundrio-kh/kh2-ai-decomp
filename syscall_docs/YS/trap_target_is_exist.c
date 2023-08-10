@@ -5,21 +5,21 @@ name: trap_target_is_exist
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12,16,172,180,20,...) (pushFromFSpVal: 0,120,124,148,16,...) (syscall: 1, 191 ; trap_obj_lockon_target (1 in, 1 out),2, 23 ; trap_btlobj_target (1 in, 1 out),2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)) (fetchValue: 48,64) (gosub: 12, L13205,16, L1097)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_exist ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns true if the target exists
 ---
 ---
 ---

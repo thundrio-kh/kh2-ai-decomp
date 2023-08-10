@@ -5,21 +5,21 @@ name: trap_sysobj_is_limit
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_limit ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if an object is a limit
 ---
 ---
 ---

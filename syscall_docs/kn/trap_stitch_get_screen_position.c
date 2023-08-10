@@ -5,21 +5,21 @@ name: trap_stitch_get_screen_position
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Get the position of stitch on the screen
 ---
 ---
 ---

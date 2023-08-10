@@ -5,21 +5,21 @@ name: trap_worldflag_check
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push id ; (int) (Worldflag ID) 
 syscall 0, 20 ; trap_worldflag_check (1 in, 1 out)
-pop unk ; (unknown) 
+pop status ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check the status of a worldflag
 ---
 ---
 ---

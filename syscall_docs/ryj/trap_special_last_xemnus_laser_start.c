@@ -5,11 +5,11 @@ name: trap_special_last_xemnus_laser_start
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -18,7 +18,8 @@ syscall 8, 3 ; trap_special_last_xemnus_laser_start (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Starts the Final Xemnas Dome Laser attack
+
 ---
 ---
 ---

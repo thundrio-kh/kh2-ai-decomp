@@ -5,21 +5,21 @@ name: trap_obj_set_special_command
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W688)
-push unk2 ; (unknown)  (pushImm: 12)
+push obj ; (YS::OBJ_125) (An object)
+push type ; (int)  (Type of command to set)
 syscall 10, 6 ; trap_obj_set_special_command (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the special command for an object
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_stputs
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPAi: L10345 ; ___ai 'shock_down!!!' (L10345),L10382 ; ___ai 'lock_down!!!' (L10382),L10808 ; ___ai 'barrel_down!!!' (L10808),L11025 ; ___ai 'cap donald' (L11025),L11040 ; ___ai 'cap goofy' (L11040),...)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 26 ; trap_stputs (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a string to the console that can be opened with F2
 ---
 ---
 ---

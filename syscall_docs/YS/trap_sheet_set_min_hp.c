@@ -5,22 +5,22 @@ name: trap_sheet_set_min_hp
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12,32) (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out)) (pushImm: 0,5,8) (mulf: )
-push unk2 ; (unknown)  (pushFromFSp: 36) (pushImm: 0,1,2) (pushFromFSpVal: 128,132,136,148,152,...) (syscall: 1, 228 ; trap_sheet_hp (2 in, 1 out),1, 229 ; trap_sheet_max_hp (2 in, 1 out)) (pushFromFWp: W184,W188,W192,W220,W224,...) (mul: ) (citf: )
-push unk3 ; (unknown)  (pushImm: 0,1,2)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push HP ; (int) (HP value to set)
+push index ; (int) (HP index to use)
 syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set an objects minimum HP
 ---
 ---
 ---

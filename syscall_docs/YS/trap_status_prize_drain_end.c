@@ -5,11 +5,11 @@ name: trap_status_prize_drain_end
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: End the prize drain effect
 ---
 ---
 ---

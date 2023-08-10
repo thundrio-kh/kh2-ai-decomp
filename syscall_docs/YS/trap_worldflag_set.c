@@ -5,20 +5,20 @@ name: trap_worldflag_set
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 212,213,214,215,216,217,218,219)
+push id ; (int) (Worldflag ID) 
 syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a worldflag to true
 ---
 ---
 ---

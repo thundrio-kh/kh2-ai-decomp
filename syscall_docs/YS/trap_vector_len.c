@@ -5,21 +5,21 @@ name: trap_vector_len
 ---
 ---
 ---
-category: 
+category: vector
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,112,128,144,16,...) (pushFromFSp: 0,4) (pushFromPSpVal: 80)
+push vec ; (Axa::FVECTOR4)  (A vector object)
 syscall 0, 6 ; trap_vector_len (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Returns the number of components in a vector
 ---
 ---
 ---

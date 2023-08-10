@@ -5,11 +5,11 @@ name: trap_sound_disable
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 0, 64 ; trap_sound_disable (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turn off the game sound
 ---
 ---
 ---

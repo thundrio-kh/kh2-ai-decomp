@@ -5,7 +5,7 @@ name: trap_vector_homing
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---

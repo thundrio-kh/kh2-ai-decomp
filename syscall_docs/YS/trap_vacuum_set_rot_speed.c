@@ -5,11 +5,11 @@ name: trap_vacuum_set_rot_speed
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -19,7 +19,7 @@ syscall 2, 82 ; trap_vacuum_set_rot_speed (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the rotation speed of a vacuum
 ---
 ---
 ---

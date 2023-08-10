@@ -5,21 +5,21 @@ name: trap_sheet_level
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
 syscall 1, 361 ; trap_sheet_level (1 in, 1 out)
-pop unk ; (unknown) 
+pop level ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the level of an object
 ---
 ---
 ---

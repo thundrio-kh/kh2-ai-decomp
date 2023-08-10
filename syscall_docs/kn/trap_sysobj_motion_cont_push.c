@@ -5,22 +5,22 @@ name: trap_sysobj_motion_cont_push
 ---
 ---
 ---
-category: 
+category: mset
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push motion ; (YS::MOTION_289)  (A motion set)
+push id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float) (time to blend two animations) 
 syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Push a motion entry onto the motion queue
 ---
 ---
 ---

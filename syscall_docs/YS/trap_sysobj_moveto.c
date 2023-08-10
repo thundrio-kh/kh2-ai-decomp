@@ -5,23 +5,23 @@ name: trap_sysobj_moveto
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
-push unk2 ; (unknown)  (pushFromPSp: 32)
-push unk3 ; (unknown)  (pushImmf: 20)
+push obj ; (YS::OBJ_125) (An object)
+push pos ; (kn::FVector *)  (A position vector)
+push speed ; (float)  (Speed value)
 syscall 1, 2 ; trap_sysobj_moveto (3 in, 1 out)
-pop unk ; (unknown) 
+pop unk ; (float) 
 ---
 ---
 ---
-description: 
+description: Moves an object to a position
 ---
 ---
 ---

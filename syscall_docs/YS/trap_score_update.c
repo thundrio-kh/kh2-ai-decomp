@@ -5,23 +5,23 @@ name: trap_score_update
 ---
 ---
 ---
-category: 
+category: minigame
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFSpVal: 0,8) (pushImm: 4) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromFSpVal: 0,4) (pushImm: 1,2) (pushFromFSp: 4)
-push unk3 ; (unknown)  (syscall: 1, 196 ; trap_area_entrance (0 in, 1 out),4, 26 ; trap_mission_get_timer (1 in, 1 out),4, 29 ; trap_mission_get_count (1 in, 1 out),4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)) (pushImm: 0)
+push score_object ; (YS::SCORE *)  (A score object)
+push type ; (int)  (Type of score)
+push score ; (int)  (Value of new score)
 syscall 4, 37 ; trap_score_update (3 in, 1 out)
-pop unk ; (unknown) 
+pop new_score ; (int) 
 ---
 ---
 ---
-description: 
+description: Updates a score object
 ---
 ---
 ---

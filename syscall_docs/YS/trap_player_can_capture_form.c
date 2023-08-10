@@ -14,7 +14,7 @@ documentation level: untested
 ---
 ---
 syscall 1, 355 ; trap_player_can_capture_form (0 in, 1 out)
-pop unk ; (unknown) 
+pop can_capture_form ; (bool) 
 ---
 ---
 ---

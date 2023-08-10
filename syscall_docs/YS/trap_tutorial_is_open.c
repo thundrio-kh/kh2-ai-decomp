@@ -5,20 +5,20 @@ name: trap_tutorial_is_open
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_open ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if a tutorial window is open
 ---
 ---
 ---

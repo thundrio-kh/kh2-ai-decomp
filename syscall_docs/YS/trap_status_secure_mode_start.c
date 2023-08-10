@@ -5,11 +5,11 @@ name: trap_status_secure_mode_start
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Turn on the secure mode flag
 ---
 ---
 ---

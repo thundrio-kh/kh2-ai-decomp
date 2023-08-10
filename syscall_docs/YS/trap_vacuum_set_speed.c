@@ -5,23 +5,23 @@ name: trap_vacuum_set_speed
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFWp: W4244,W4264,W4316)
-push unk2 ; (unknown)  (pushFromFSp: 4,72)
-push unk3 ; (unknown)  (pushFromFSp: 4,72)
-push unk4 ; (unknown)  (pushFromFSp: 4,72)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push unk2 ; (float)  (Unknown)
+push unk3 ; (float)  (Unknown)
+push unk4 ; (float)  (Unknown)
 syscall 2, 81 ; trap_vacuum_set_speed (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the speed of a vacuum
 ---
 ---
 ---

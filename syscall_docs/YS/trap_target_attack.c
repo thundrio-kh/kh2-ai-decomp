@@ -5,21 +5,21 @@ name: trap_target_attack
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push attack ; (YS::ATTACK_MAGIC *)  (An attack object)
 syscall 1, 166 ; trap_target_attack (1 in, 1 out)
-pop unk ; (unknown) 
+pop target ; (YS::OBJ_125) 
 ---
 ---
 ---
-description: 
+description: Get the target of an attack
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_chickenlittle_get_nearest_target
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
@@ -13,15 +13,15 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 12)
-push unk2 ; (unknown)  (fetchValue: 48)
-push unk3 ; (unknown)  (pushImmf: 120)
-push unk4 ; (unknown)  (pushImmf: 60)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push target ; (YS::TARGET_18 *)  (Target object)
+push w ; (float)  (Width to look for targets)
+push h ; (float)  (Height to look for targets)
 syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have chicken little target the nearest enemy
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_sysobj_player
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
 syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
-pop unk ; (unknown) 
+pop player ; (YS::OBJ_125) 
 ---
 ---
 ---
-description: 
+description: Get the player object
 ---
 ---
 ---

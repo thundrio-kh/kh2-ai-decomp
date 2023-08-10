@@ -5,22 +5,22 @@ name: tarp_friend_is_equiped_ability
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushImm: 150,152)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push id ; (int)  (Ability ID)
 syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_equipped ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if a party member has an equipped ability. "tarp" typo comes directly from the games source code
 ---
 ---
 ---

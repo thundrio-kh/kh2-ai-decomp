@@ -5,20 +5,20 @@ name: trap_friend_end_limit
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 20)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: End a friends limit
 ---
 ---
 ---

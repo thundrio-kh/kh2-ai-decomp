@@ -5,21 +5,21 @@ name: trap_stputi
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (gosub: 4, L143,4, L2053,4, L2063,4, L2097,4, L3034,...) (pushFromFSp: 48,8) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (fetchValue: 24,52,56)
-push unk2 ; (unknown)  (pushFromPAi: L10336 ; ___ai 'shock_down_count' (L10336),L10389 ; ___ai 'lock_down_count' (L10389),L10403 ; ___ai 'capture_count' (L10403),L10968 ; ___ai 'barrel_down_count' (L10968),L18699 ; ___ai 'phase' (L18699),...)
+push value ; (int)  (An integer)
+push description ; (string)  (A string, should be pushed to the stack using pushFromPAi)
 syscall 0, 24 ; trap_stputi (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a int to the console that can be opened with F2, of the form "description: value"
 ---
 ---
 ---

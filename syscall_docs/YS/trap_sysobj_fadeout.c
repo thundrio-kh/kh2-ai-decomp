@@ -5,21 +5,21 @@ name: trap_sysobj_fadeout
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4) (pushImmf: 0.5,0.9) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImmf: 0,0.1,1,10,12,14,16,2,20,3,30,30 ; ___possible_ref,4,40,5,6,60,8,80) (mulf: ) (pushFromFSp: 36,4,8) (pushFromFSpVal: 116,32) (fetchValue: 32)
+push fade_amt ; (float)  (Amount to fade out, 0.0 to 1.0)
+push time ; (float)  (Number of frames for the fade out)
 syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a fade out effect
 ---
 ---
 ---

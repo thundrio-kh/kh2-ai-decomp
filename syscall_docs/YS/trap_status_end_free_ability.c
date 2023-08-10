@@ -5,11 +5,11 @@ name: trap_status_end_free_ability
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 289 ; trap_status_end_free_ability (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Takes away Soras ability to jump infinitely
 ---
 ---
 ---

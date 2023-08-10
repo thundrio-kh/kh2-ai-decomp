@@ -5,21 +5,21 @@ name: trap_friend_invalidate_warp_point
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32,48,64,80,96) (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushImmf: 0,100,200)
+push center ; (kn::FVector *)  (A position vector)
+push range ; (float)  (A range value)
 syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Invalidates a warp point within range of the friend
 ---
 ---
 ---

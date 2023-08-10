@@ -5,21 +5,21 @@ name: trap_target_set_before_player
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0) (pushFromPSpVal: 304) (pushFromFSp: 0) (add: ) (pushFromPWp: W4416)
-push unk2 ; (unknown)  (pushImm: 0,1,2,3,4)
+push obj ; (YS::OBJ_125) (An object)
+push priority ; (int)  (Priority of the target)
 syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the target of an object to be before the player
 ---
 ---
 ---

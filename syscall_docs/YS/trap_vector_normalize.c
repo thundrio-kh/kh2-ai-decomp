@@ -5,21 +5,21 @@ name: trap_vector_normalize
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,112,128,144,16,...) (pushFromPSpVal: 0,112,144,16,160,...) (pushFromFSp: 4) (pushFromPWp: W4528)
+push vec ; (Axa::FVECTOR4)  (A vector object)
 syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (float) 
 ---
 ---
 ---
-description: 
+description: Calculate the euclidean norm of a vector
 ---
 ---
 ---

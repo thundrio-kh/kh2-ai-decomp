@@ -5,22 +5,22 @@ name: trap_sheet_hp_rate
 ---
 ---
 ---
-category: 
+category: sheet
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 84 ; trap_obj_sheet (1 in, 1 out))
-push unk2 ; (unknown)  (pushImm: 0)
+push sheet ; (YS::SHEET_44 *) (An object stat sheet)
+push index ; (int)  (HP index to use. Only a value of 0 is used in game)
 syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
-pop unk ; (unknown) 
+pop rate ; (float) 
 ---
 ---
 ---
-description: 
+description: Return the HP rate of an object
 ---
 ---
 ---

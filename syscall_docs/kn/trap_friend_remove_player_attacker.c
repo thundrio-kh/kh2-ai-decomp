@@ -5,21 +5,21 @@ name: trap_friend_remove_player_attacker
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 4)
-push unk2 ; (unknown)  (pushImm: 1)
+push obj ; (YS::OBJ_125) (An object)
+push remove_old ; (bool)  (Should the old attacker also be removed)
 syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Remove the player attacker
 ---
 ---
 ---

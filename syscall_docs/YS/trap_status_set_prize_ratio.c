@@ -5,20 +5,20 @@ name: trap_status_set_prize_ratio
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 1,2,3,5)
+push range ; (float)  (The new prize range value)
 syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the range the player has to be from a prize to pick it up
 ---
 ---
 ---

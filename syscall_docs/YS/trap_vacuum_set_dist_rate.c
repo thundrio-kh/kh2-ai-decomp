@@ -5,21 +5,21 @@ name: trap_vacuum_set_dist_rate
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,112,156,164,168,...) (pushFromFWp: W4316)
-push unk2 ; (unknown)  (pushImmf: 0.01,0.1)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push rate ; (float)  (Rate amount, from 0 to 1)
 syscall 2, 84 ; trap_vacuum_set_dist_rate (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the distance rate for an object
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_vector_get_rot_xz
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
@@ -20,7 +20,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Calculates the rotation of a vector in the XZ plane
 ---
 ---
 ---

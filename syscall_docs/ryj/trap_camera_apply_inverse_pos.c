@@ -5,21 +5,21 @@ name: trap_camera_apply_inverse_pos
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 32) (pushFromPSpVal: 32)
+push dir ; (float)  (Direction to invert?)
 syscall 8, 8 ; trap_camera_apply_inverse_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop pos ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Inverse the position of the camera and apply it
 ---
 ---
 ---

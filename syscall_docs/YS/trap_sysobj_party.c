@@ -5,21 +5,21 @@ name: trap_sysobj_party
 ---
 ---
 ---
-category: 
+category: party
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push n ; (int)  (Which number party member to get, the Player is 0)
 syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
-pop unk ; (unknown) 
+pop party_member ; (YS::OBJ_125) 
 ---
 ---
 ---
-description: 
+description: Get the nth party member
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_stitch_effect_kill
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSpVal: 20)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push index ; (int)  (Index of effect to kill)
 syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Kill a stitch effect
 ---
 ---
 ---

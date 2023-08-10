@@ -5,11 +5,11 @@ name: trap_status_force_leave_start
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the force leave flag to true
 ---
 ---
 ---

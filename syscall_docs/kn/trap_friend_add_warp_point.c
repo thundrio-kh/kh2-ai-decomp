@@ -5,20 +5,20 @@ name: trap_friend_add_warp_point
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 48,80)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Add a friend warp point at a position
 ---
 ---
 ---
