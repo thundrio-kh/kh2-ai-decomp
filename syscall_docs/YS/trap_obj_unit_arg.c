@@ -9,14 +9,14 @@ category: object
 ---
 ---
 ---
-documentation level: untested
+documentation level: complete
 ---
 ---
 ---
 push obj ; (YS::OBJ_125) (An object)
-push num ; (int)  (Which argument to return)
+push num ; (int)  (Which argument to return (1 or 2 are the valid inputs here))
 syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
-pop unk ; (unknown) 
+pop unit_arg ; (int) 
 ---
 ---
 ---
