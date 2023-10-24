@@ -5,21 +5,21 @@ name: trap_enemy_summon_entry
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_254 *)  (An object)
 syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)
-pop unk ; (unknown) 
+pop new_obj ; (YS::OBJ_254 *) 
 ---
 ---
 ---
-description: 
+description: Summon a new instance of an object
 ---
 ---
 ---

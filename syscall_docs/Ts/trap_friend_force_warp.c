@@ -5,20 +5,20 @@ name: trap_friend_force_warp
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,36,4)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 6, 13 ; trap_friend_force_warp (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Forces a friend to perform a warp
 ---
 ---
 ---

@@ -9,7 +9,7 @@ category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

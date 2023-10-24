@@ -5,21 +5,21 @@ name: trap_get_path_current_dir
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
 syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)
-pop unk ; (unknown) 
+push dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---
-description: 
+description: Get the current direction of the path
 ---
 ---
 ---

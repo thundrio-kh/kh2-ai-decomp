@@ -9,7 +9,7 @@ category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---

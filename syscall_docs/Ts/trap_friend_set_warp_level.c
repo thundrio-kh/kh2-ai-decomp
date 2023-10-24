@@ -5,20 +5,20 @@ name: trap_friend_set_warp_level
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push level ; (kn::Friend_0::WARP_LEVEL) (level to set)
 syscall 6, 15 ; trap_friend_set_warp_level (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the warp level of a friend
 ---
 ---
 ---

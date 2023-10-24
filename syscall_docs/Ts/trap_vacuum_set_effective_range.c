@@ -5,21 +5,21 @@ name: trap_vacuum_set_effective_range
 ---
 ---
 ---
-category: 
+category: vacuum
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 108,112,156,164,168,...)
-push unk2 ; (unknown)  (pushImmf: 1000,1200,2000,600)
+push vacuum ; (YS::VACUUM::VACUUM) (A vacuum object)
+push range ; (float)  (Range value to set)
 syscall 7, 32 ; trap_vacuum_set_effective_range (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the effective range of a vacuum object
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_attack_hit_mark_pos
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
 syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---
-description: 
+description: Get the position of an attacks hit marker
 ---
 ---
 ---

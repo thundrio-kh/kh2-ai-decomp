@@ -5,20 +5,20 @@ name: trap_player_get_form
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
-pop unk ; (unknown) 
+pop form_id ; (int) 
 ---
 ---
 ---
-description:  <check dis notes>
+description:  Return the id of the form the player is currently in
 ---
 ---
 ---

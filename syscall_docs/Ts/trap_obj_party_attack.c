@@ -5,21 +5,21 @@ name: trap_obj_party_attack
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 52,53,54,55,56)
+push target ; (YS::TARGET_108 *)  (A target object)
+push id ; (int)  (id of the attack to activate)
 syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Activate a party attack
 ---
 ---
 ---

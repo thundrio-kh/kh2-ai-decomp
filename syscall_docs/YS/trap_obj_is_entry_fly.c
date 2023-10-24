@@ -5,11 +5,11 @@ name: trap_obj_is_entry_fly
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

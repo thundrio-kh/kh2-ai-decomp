@@ -5,21 +5,21 @@ name: trap_reset_leave_way
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 48)
-push unk2 ; (unknown)  (pushFromPSp: 48)
+push path ; (Ti::Path_3) (Path object)
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset the leave way action
 ---
 ---
 ---

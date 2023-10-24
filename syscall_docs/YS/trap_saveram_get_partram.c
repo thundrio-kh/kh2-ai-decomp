@@ -5,11 +5,11 @@ name: trap_saveram_get_partram
 ---
 ---
 ---
-category: 
+category: save
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

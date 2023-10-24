@@ -5,20 +5,20 @@ name: trap_larxene_dead
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Mark all copies of larxene as dead
 ---
 ---
 ---

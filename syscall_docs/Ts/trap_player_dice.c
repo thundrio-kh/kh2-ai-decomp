@@ -5,11 +5,11 @@ name: trap_player_dice
 ---
 ---
 ---
-category: 
+category: player
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 27 ; trap_player_dice (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Change the player into a die
 ---
 ---
 ---

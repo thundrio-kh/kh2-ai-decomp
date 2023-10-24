@@ -5,21 +5,21 @@ name: trap_obj_get_bg_press
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSp: 96)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: get the press position of an object
 ---
 ---
 ---

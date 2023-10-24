@@ -5,21 +5,21 @@ name: trap_create_active_path
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 12)
+push obj ; (YS::OBJ_125) (An object)
+push target_obj ; (YS::OBJ_125) (An target object to path to)
 syscall 5, 8 ; trap_create_active_path (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Creates an active path from one object to another
 ---
 ---
 ---

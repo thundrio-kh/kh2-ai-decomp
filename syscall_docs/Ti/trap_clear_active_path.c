@@ -5,20 +5,20 @@ name: trap_clear_active_path
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
 syscall 5, 15 ; trap_clear_active_path (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Clears the active path
 ---
 ---
 ---

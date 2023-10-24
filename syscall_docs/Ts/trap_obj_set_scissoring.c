@@ -5,21 +5,21 @@ name: trap_obj_set_scissoring
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 36)
-push unk2 ; (unknown)  (pushImm: 0,1)
+push obj ; (YS::OBJ_125) (An object)
+push value ; (bool)  (Value to set)
 syscall 6, 65 ; trap_obj_set_scissoring (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the scissoring flag for an object
 ---
 ---
 ---

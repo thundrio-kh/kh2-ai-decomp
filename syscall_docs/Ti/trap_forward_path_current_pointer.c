@@ -5,21 +5,21 @@ name: trap_forward_path_current_pointer
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
+push dist ; (float) (Distance to move forward)
 syscall 5, 10 ; trap_forward_path_current_pointer (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Go forward on the current path a distance
 ---
 ---
 ---

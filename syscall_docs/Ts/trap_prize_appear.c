@@ -5,21 +5,21 @@ name: trap_prize_appear
 ---
 ---
 ---
-category: 
+category: prize
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32,48,64,80,...) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 100,108,109,127,128,129,144,155,97,98,99) (fetchValue: 28)
+push pos ; (kn::FVector *)  (A position vector)
+push prize_id ; (int)  (ID of the prize to appear)
 syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Make a prize appear
 ---
 ---
 ---

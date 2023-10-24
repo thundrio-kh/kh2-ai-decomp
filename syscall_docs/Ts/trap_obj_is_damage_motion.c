@@ -5,21 +5,21 @@ name: trap_obj_is_damage_motion
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 112,16,4,48,96) (pushFromPSpVal: 0,112)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_damage_motion ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an object is playing a damage animation
 ---
 ---
 ---

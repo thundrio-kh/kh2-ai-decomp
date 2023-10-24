@@ -5,16 +5,16 @@ name: trap_target_searcher_init
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 1,10,2,20,3,4,5,9)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push num ; (int)  (Number of targets the target searcher is allowed to have)
 syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
 ---
 ---

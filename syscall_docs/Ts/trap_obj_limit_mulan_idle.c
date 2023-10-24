@@ -5,20 +5,20 @@ name: trap_obj_limit_mulan_idle
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Change the mulan limit action to idle
 ---
 ---
 ---

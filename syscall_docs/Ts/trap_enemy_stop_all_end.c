@@ -5,20 +5,20 @@ name: trap_enemy_stop_all_end
 ---
 ---
 ---
-category: 
+category: end
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 6)
+push id ; (int)  (ID of an enemy)
 syscall 7, 1 ; trap_enemy_stop_all_end (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Lets all instances of the object start doing things again
 ---
 ---
 ---

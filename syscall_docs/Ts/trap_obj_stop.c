@@ -5,22 +5,22 @@ name: trap_obj_stop
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,48)
-push unk2 ; (unknown)  (pushImm: 15,17)
-push unk3 ; (unknown)  (pushImmf: 0)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (unknown)
+push time ; (float)  (Time to stop for, 0 is indefinite time)
 syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stop an object
 ---
 ---
 ---

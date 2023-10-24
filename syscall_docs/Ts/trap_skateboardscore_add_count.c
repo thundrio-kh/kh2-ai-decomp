@@ -5,21 +5,21 @@ name: trap_skateboardscore_add_count
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,10,20,200,30,40,5,50)
-push unk2 ; (unknown)  (pushImmf: 24,60)
+push points ; (int)  (Number of points to add)
+push time ; (float)  (Time to take (in frames) to add to the score)
 syscall 6, 48 ; trap_skateboardscore_add_count (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Add to the skateboard count score
 ---
 ---
 ---

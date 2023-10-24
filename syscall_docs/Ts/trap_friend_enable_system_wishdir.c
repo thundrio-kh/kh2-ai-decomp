@@ -5,20 +5,20 @@ name: trap_friend_enable_system_wishdir
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromPWp: W364)
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 7, 24 ; trap_friend_enable_system_wishdir (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Enables a friend's system wishdir used for summons
 ---
 ---
 ---

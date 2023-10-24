@@ -5,7 +5,7 @@ name: trap_obj_tt_ball_blow
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
@@ -13,7 +13,7 @@ documentation level: stub
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 112)
+push obj ; (YS::OBJ_125) (An object)
 push unk2 ; (unknown)  (fetchValue: 4)
 push unk3 ; (unknown)  (pushFromPSpVal: 112)
 push unk4 ; (unknown)  (fetchValue: 12)
@@ -21,7 +21,7 @@ syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Make the twilight town minigame ball perform a blow
 ---
 ---
 ---

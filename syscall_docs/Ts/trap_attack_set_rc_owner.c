@@ -5,21 +5,21 @@ name: trap_attack_set_rc_owner
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 68)
-push unk2 ; (unknown)  (pushFromPSpVal: 0)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push obj ; (YS::OBJ_125) (An object to set as the owner)
 syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the owner of an RC
 ---
 ---
 ---

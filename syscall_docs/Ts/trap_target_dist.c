@@ -5,22 +5,22 @@ name: trap_target_dist
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 180,4) (pushFromFSpVal: 16,48,64) (fetchValue: 48) (memcpyToSp: 16, 128,16, 16,16, 160,16, 32,16, 48,...) (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out)) (pushImm: 64)
-push unk2 ; (unknown)  (pushFromPSp: 128,16,160,32,48,...) (pushFromFSp: 8) (pushFromPSpVal: 32) (add: )
+push target ; (YS::TARGET_108 *)  (A target object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 6, 9 ; trap_target_dist (2 in, 1 out)
-pop unk ; (unknown) 
+pop distance ; (float) 
 ---
 ---
 ---
-description: 
+description: Get the distance to a target from the position
 ---
 ---
 ---

@@ -5,23 +5,23 @@ name: trap_obj_set_stealth_color
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 140)
-push unk3 ; (unknown)  (pushImm: 145)
-push unk4 ; (unknown)  (pushImm: 155)
+push obj ; (YS::OBJ_125) (An object)
+push r ; (int)  (Red value, 0-255)
+push g ; (int)  (Green value, 0-255)
+push b ; (int)  (Blue value, 0-255)
 syscall 6, 60 ; trap_obj_set_stealth_color (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the stealth color for an object
 ---
 ---
 ---

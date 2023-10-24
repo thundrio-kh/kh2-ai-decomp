@@ -5,20 +5,20 @@ name: trap_obj_hide_shadow
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16) (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hide the shadow of an object
 ---
 ---
 ---

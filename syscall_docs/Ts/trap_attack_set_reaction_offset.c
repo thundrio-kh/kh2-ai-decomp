@@ -5,21 +5,21 @@ name: trap_attack_set_reaction_offset
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 32) (fetchValue: 0) (pushFromFSpVal: 68)
-push unk2 ; (unknown)  (pushFromPSp: 16,32)
+push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a position offset for being able to perform a reaction command
 ---
 ---
 ---

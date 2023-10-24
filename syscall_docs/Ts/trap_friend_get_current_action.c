@@ -5,21 +5,21 @@ name: trap_friend_get_current_action
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 7, 16 ; trap_friend_get_current_action (1 in, 1 out)
-pop unk ; (unknown) 
+pop action ; (char *) 
 ---
 ---
 ---
-description: 
+description: Gets the current action of a friend
 ---
 ---
 ---

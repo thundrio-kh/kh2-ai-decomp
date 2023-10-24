@@ -5,21 +5,21 @@ name: trap_friend_get_main_status
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 7, 18 ; trap_friend_get_main_status (1 in, 1 out)
-pop unk ; (unknown) 
+pop status ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Get the main status of a friend
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_friend_call
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 80)
-push unk2 ; (unknown)  (pushImm: 525,526,527)
+push friend ; (kn::Friend_0 *)  (A friend object)
+push no ; (int)  (A line number?)
 syscall 7, 26 ; trap_friend_call (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: make a call to a friend script
 ---
 ---
 ---

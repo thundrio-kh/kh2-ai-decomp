@@ -5,20 +5,20 @@ name: trap_skateboard_ride_edge
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the skateboard to be riding an edge
 ---
 ---
 ---

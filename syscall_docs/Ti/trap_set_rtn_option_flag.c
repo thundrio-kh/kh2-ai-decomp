@@ -5,21 +5,21 @@ name: trap_set_rtn_option_flag
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W4112,W4160)
-push unk2 ; (unknown)  (pushImm: 0,3,4,5,6)
+push npc ; (YS::NPC_0 *)  (An npc object)
+push flag_num ; (int)  (Flag number to turn on)
 syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the RTN option flag
 ---
 ---
 ---

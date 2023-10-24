@@ -5,11 +5,11 @@ name: trap_lockon_hide
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hide the lockon reticle
 ---
 ---
 ---

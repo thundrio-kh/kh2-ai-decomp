@@ -5,21 +5,21 @@ name: trap_target_searcher_add
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 128,136,148,152) (pushImm: 160) (add: ) (memcpyToSp: 16, 112)
-push unk2 ; (unknown)  (pushFromFSp: 0,4) (add: ) (pushFromPSpVal: 0) (pushFromPSp: 112)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Add an object to a target searcher
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_strike_raid_calc_xyzrot
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -20,7 +20,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Calculate an xyzrot value for strike raid
 ---
 ---
 ---

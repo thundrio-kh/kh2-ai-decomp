@@ -5,21 +5,21 @@ name: trap_bghit_get_normal
 ---
 ---
 ---
-category: 
+category: bghit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32,48,64,80,...) (add: ) (pushFromPSpVal: 64)
+push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
 syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
-pop unk ; (unknown) 
+pop normal ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Get the normal vector of a bghit
 ---
 ---
 ---

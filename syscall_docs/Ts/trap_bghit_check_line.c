@@ -5,24 +5,26 @@ name: trap_bghit_check_line
 ---
 ---
 ---
-category: 
+category: collision
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,160,192,208,32,...) (pushFromPSpVal: 112,144,64) (memcpyToSp: 16, 112,16, 16,16, 96) (add: ) (pushImm: 64) (syscall: 0, 4 ; trap_vector_add (2 in, 1 out))
-push unk2 ; (unknown)  (pushFromPSp: 112,128,16,224,32,...) (pushFromFSp: 12) (pushFromPSpVal: 0,32,80) (add: ) (memcpyToSp: 16, 288)
+push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
+push from ; (unknown)  (pushFromPSp: 112,128,16,224,32,...) (pushFromFSp: 12) (pushFromPSpVal: 0,32,80) (add: ) (memcpyToSp: 16, 288)
 push unk3 ; (unknown)  (pushFromPSp: 112,16,208,288,32,...) (pushFromFSp: 4,8) (pushFromPSpVal: 32,80,96)
-push unk4 ; (unknown)  (pushImm: 0,1,4,65536,65537,65538,65540)
+push from ; (kn::FVector *)  (A position vector specifying the from point)
+push to ; (kn::FVector *)  (A position vector specifying the to point)
+push type ; (int)  (Type of hit to check)
 syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
-pop unk ; (unknown) 
+pop is_collision ; (bool) 
 ---
 ---
 ---
-description: 
+description: Collision check along a line
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_eh22_path_move_before
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 29 ; trap_eh22_path_move_before (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Moves the sidecar to the before point in the Dragon Xemnas fight
 ---
 ---
 ---

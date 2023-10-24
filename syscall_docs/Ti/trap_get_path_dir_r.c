@@ -5,23 +5,23 @@ name: trap_get_path_dir_r
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push path ; (Ti::Path_3) (Path object)
+push a5 ; (float) (unknown) 
 syscall 5, 25 ; trap_get_path_dir_r (3 in, 1 out)
-pop unk ; (unknown) 
+push dir_r ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---
-description: 
+description: Get the reverse direction of a path
 ---
 ---
 ---

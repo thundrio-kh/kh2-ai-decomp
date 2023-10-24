@@ -5,21 +5,21 @@ name: trap_obj_is_stop
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0) (pushFromPSp: 16,4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_stop ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an object is stopped
 ---
 ---
 ---

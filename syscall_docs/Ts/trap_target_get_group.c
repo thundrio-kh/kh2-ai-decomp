@@ -5,21 +5,21 @@ name: trap_target_get_group
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
-pop unk ; (unknown) 
+pop group_id ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the group ID a target belongs to
 ---
 ---
 ---

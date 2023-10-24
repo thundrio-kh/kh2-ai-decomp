@@ -9,11 +9,11 @@ category: bones
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
----YS::OBJ_126
-push obj ; (int)  (An object)
+---
+push obj ; (YS::OBJ_126)  (An object)
 push parent ; (unknown)  (pushFromPSpVal: 0,112,128,144,4,...) (pushFromFSp: 0,4,8) (add: ) (pushImm: 0) (pushFromPSp: 16,32,48,64,96) (pushFromPWp: W0,W32,W384,W4,W4208,...)
 push bone ; (unknown)  (pushImm: 101,12,140,146,16384,16386,17,23,4,49,57,62,7,71,8) (syscall: 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)) (fetchValue: 144)
 push flag ; (unknown)  (pushImm: 0,1,4,5)

@@ -5,21 +5,21 @@ name: trap_bg_get_normal
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 48,64)
+push camera ; (int)  (Value designating the camera)
 syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)
-pop unk ; (unknown) 
+pop normal ; (kn::FVector) 
 ---
 ---
 ---
-description: 
+description: Return the normal of the background position from the given camera
 ---
 ---
 ---

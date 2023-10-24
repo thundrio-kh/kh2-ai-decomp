@@ -5,23 +5,23 @@ name: trap_obj_limit_hover
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 4)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushFromFSp: 8) (pushImmf: 1)
-push unk4 ; (unknown)  (pushFromFSp: 4) (pushImmf: 1)
+push obj ; (YS::OBJ_125) (An object)
+push v ; (RCFVector)  (A velocity vector)
+push brake ; (float)  (Brake speed)
+push brake_slow ; (float)  (Slow brake speed)
 syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Hover an object as part of a limit
 ---
 ---
 ---

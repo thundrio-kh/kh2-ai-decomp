@@ -5,21 +5,21 @@ name: trap_set_rtn_time_param
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSpVal: 28)
+push npc ; (YS::NPC_0 *)  (An npc object)
+push time_param ; (float)  (Time parameter to set)
 syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the time parameter for an RTN
 ---
 ---
 ---

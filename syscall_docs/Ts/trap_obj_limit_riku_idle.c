@@ -5,20 +5,20 @@ name: trap_obj_limit_riku_idle
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the riku limit action to idle
 ---
 ---
 ---

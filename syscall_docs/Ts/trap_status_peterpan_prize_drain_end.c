@@ -5,11 +5,11 @@ name: trap_status_peterpan_prize_drain_end
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 20 ; trap_status_peterpan_prize_drain_end (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: End Peter Pan prize drain
 ---
 ---
 ---

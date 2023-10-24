@@ -9,7 +9,7 @@ category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

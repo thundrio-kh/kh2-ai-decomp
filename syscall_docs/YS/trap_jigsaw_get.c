@@ -5,11 +5,11 @@ name: trap_jigsaw_get
 ---
 ---
 ---
-category: 
+category: treasure
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_is_rtn_change_dir
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push npc ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_rtn_change_dir ; (bool) 
 ---
 ---
 ---
-description: 
+description: Return if the RTN is changing direction
 ---
 ---
 ---

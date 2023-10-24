@@ -5,22 +5,22 @@ name: trap_obj_play_se_loop
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushImm: 391052)
+push obj ; (YS::OBJ_125) (An object)
+push num ; (int)  (ID number of sound effect to play)
 syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Play a object sound effect on loop
 ---
 ---
 ---

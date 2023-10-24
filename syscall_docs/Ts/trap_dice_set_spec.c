@@ -5,23 +5,23 @@ name: trap_dice_set_spec
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 0)
-push unk2 ; (unknown)  (pushImmf: 0.087266)
-push unk3 ; (unknown)  (pushImmf: 40)
-push unk4 ; (unknown)  (pushImmf: 3.5)
+push unk1 ; (float)  (Value of 0 used in game AI)
+push unk2 ; (float)  (Value of 0.087266 used in game AI)
+push unk3 ; (float)  (Value of 40 used in game AI)
+push unk4 ; (float)  (Value of 3.5 used in game AI)
 syscall 6, 28 ; trap_dice_set_spec (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the parameters of dice actions based on a number of parameters
 ---
 ---
 ---

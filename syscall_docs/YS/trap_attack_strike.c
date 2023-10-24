@@ -9,24 +9,24 @@ category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 112,16, 16,16, 32,16, 48,16, 64,...) (pushFromFSpVal: 5464,64,68) (pushFromFSp: 12,32,4,48,52,...) (pushImm: 144) (fetchValue: 0)
-push unk2 ; (unknown)  (pushFromPSp: 112,16,32,48,64,...) (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,112) (pushFromPWp: W144,W16404,W528) (add: )
-push unk3 ; (unknown)  (pushImm: 0,1)
-push unk4 ; (unknown)  (pushImm: 0) (pushFromFSp: 36,4)
+push owner ; (YS::ATTACK_10) (An attack object) 
+push target ; (YS::BTLOBJ *) (object of the attack target) 
+push hitpart ; (int)  (Which part to hit)
+push parts ; (int)  (Perhaps the number of parts)
 syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Sets up an attack to strike a specific part of an object
 ---
 ---
 ---
 decompiled code:
-__int64 __fastcall YS::ATTACK::Strike(YS::BTLOBJ *owner, __int64 param_id, YS::BTLOBJ *target, const kn::FVector *dir, bool is_force)
+YS::DAMAGE_3 *YS::ATTACK::strike(YS::ATTACK_10 *const this, YS::BTLOBJ *obj, int hitpart, int parts); // idb
 void __fastcall YS::DAMAGE::Free(YS::DAMAGE_5 *damage)
 /----- (00000000004F49FC) ----------------------------------------------------
 void __fastcall YS::trap_attack_strike(BD_VALUE_19 *args)

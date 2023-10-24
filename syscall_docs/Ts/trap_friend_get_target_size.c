@@ -5,21 +5,21 @@ name: trap_friend_get_target_size
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 7, 15 ; trap_friend_get_target_size (1 in, 1 out)
-pop unk ; (unknown) 
+pop size ; (float) 
 ---
 ---
 ---
-description: 
+description: Get the collision size of a friends target
 ---
 ---
 ---

@@ -5,11 +5,11 @@ name: trap_player_card
 ---
 ---
 ---
-category: 
+category: status
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 29 ; trap_player_card (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Change the player into a card 
 ---
 ---
 ---

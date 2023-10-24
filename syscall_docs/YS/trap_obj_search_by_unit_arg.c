@@ -5,11 +5,11 @@ name: trap_obj_search_by_unit_arg
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

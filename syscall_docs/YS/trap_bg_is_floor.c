@@ -5,21 +5,21 @@ name: trap_bg_is_floor
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push camera ; (int)  (Value designating the camera)
 syscall 1, 136 ; trap_bg_is_floor (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_floor ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns if the background the camera is looking at is the floor
 ---
 ---
 ---

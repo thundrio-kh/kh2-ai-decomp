@@ -5,21 +5,21 @@ name: trap_bghit_is_hit
 ---
 ---
 ---
-category: 
+category: collision
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 112,64) (pushFromFSp: 0) (pushFromPSp: 16,64) (add: )
+push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
 syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_hit ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if a bghit has hit something
 ---
 ---
 ---

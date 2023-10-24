@@ -5,21 +5,21 @@ name: trap_get_rtn_action_dir
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push npc ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
-pop unk ; (unknown) 
+push dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---
-description: 
+description: Get the direction of a RTN action
 ---
 ---
 ---

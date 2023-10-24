@@ -5,20 +5,20 @@ name: trap_summon_is_exec
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 7, 35 ; trap_summon_is_exec (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_summon ; (bool) 
 ---
 ---
 ---
-description: 
+description: Is there currently a summon
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_show_shadow
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 64 ; trap_obj_show_shadow (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Show the shadows for an object
 ---
 ---
 ---

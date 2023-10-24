@@ -5,20 +5,20 @@ name: trap_target_searcher_reset
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromPSpVal: 0,144,32,64,68,...)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
 syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset a target searcher counter to 0
 ---
 ---
 ---

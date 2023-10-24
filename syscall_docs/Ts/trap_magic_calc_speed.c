@@ -5,7 +5,7 @@ name: trap_magic_calc_speed
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
@@ -22,7 +22,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Calculate the speed of magic
 ---
 ---
 ---

@@ -5,20 +5,20 @@ name: trap_obj_detach_camera
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 20)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 36 ; trap_obj_detach_camera (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Detatch the camera from an object
 ---
 ---
 ---

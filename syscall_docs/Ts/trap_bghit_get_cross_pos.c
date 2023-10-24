@@ -5,21 +5,21 @@ name: trap_bghit_get_cross_pos
 ---
 ---
 ---
-category: 
+category: collision
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,160,192,208,32,...) (pushFromPSpVal: 112,64) (add: )
+push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
 syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop cross_pos ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Get the interesection point of a collision
 ---
 ---
 ---

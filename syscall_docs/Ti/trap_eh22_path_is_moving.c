@@ -5,21 +5,21 @@ name: trap_eh22_path_is_moving
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_moving ; (bool) 
 ---
 ---
 ---
-description: 
+description: Return if the path is moving during the dragon xemnas fight
 ---
 ---
 ---

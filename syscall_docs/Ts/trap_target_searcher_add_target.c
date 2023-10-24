@@ -5,21 +5,21 @@ name: trap_target_searcher_add_target
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: ) (pushFromPWp: W0,W108) (pushFromPSpVal: 0,72)
-push unk2 ; (unknown)  (pushFromFSp: 20,4) (syscall: 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)) (pushFromFSpVal: 48)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Add a target to a target searcher
 ---
 ---
 ---

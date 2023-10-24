@@ -5,22 +5,22 @@ name: trap_skateboard_edge_jump
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
-push unk2 ; (unknown)  (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushImm: 255)
+push obj ; (YS::OBJ_125) (An object)
+push v ; (kn::FVector)  (A velocity vector)
+push motion_id ; (int)  (Animation id to play)
 syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Have the skateboard perform an edge jump
 ---
 ---
 ---

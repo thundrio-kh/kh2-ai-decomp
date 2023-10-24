@@ -5,22 +5,22 @@ name: trap_set_path_by_id
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSpVal: 116)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID number of a path)
 syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
-pop unk ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
 ---
 ---
 ---
-description: 
+description: Set a path for an object by ID
 ---
 ---
 ---

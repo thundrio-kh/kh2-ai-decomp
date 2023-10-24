@@ -5,21 +5,21 @@ name: trap_obj_act_child_push
 ---
 ---
 ---
-category: 
+category: action
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPAi: L27696 ; ___ai 'atk_dance1' (L27696),L27720 ; ___ai 'atk_dance8' (L27720),L28259 ; ___ai 'atk_dance2' (L28259),L28986 ; ___ai 'atk_dance2' (L28986),L29039 ; ___ai 'atk_dance1' (L29039),...)
+push act ; (YS::ACT_86 *)  (An action object)
+push act ; (label)  (Label of action to push)
 syscall 6, 58 ; trap_obj_act_child_push (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Push the action of a child object to the action table
 ---
 ---
 ---

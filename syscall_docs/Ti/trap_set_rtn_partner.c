@@ -5,21 +5,21 @@ name: trap_set_rtn_partner
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromPSpVal: 80)
+push npc ; (YS::NPC_0 *)  (An npc object)
+push npc_partner ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a partner for an RTN action
 ---
 ---
 ---

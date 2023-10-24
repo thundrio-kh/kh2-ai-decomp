@@ -5,26 +5,26 @@ name: trap_camera_shake
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 10,240,30,60,90) (pushFromFSp: 0,28)
-push unk2 ; (unknown)  (pushImmf: 10,2,4,6,8) (pushFromFSp: 24)
-push unk3 ; (unknown)  (pushImmf: 10,12,3,4) (pushFromFSp: 20)
-push unk4 ; (unknown)  (pushImmf: 10,2,4,6) (pushFromFSp: 16)
-push unk5 ; (unknown)  (pushImmf: 10,12,16,3,30,6,8) (pushFromFSp: 12)
-push unk6 ; (unknown)  (pushImmf: -0.03,-0.05,-0.066667,-0.1,-0.111111,0) (pushFromFSp: 8)
-push unk7 ; (unknown)  (pushImmf: -0.05,-0.1,-0.133333,-0.2,-0.3,-0.5,2) (pushFromFSp: 4)
+push unk1 ; (float)  (Values of 10,240,30,60,90 used in game AI) 
+push unk2 ; (float)  (Values of 10,2,4,6,8 used in game AI)
+push unk3 ; (float)  (Values of 10,12,3,4 used in game AI)
+push unk4 ; (float)  (Values of 10,2,4,6 used in game AI)
+push unk5 ; (float)  (Values of 10,12,16,3,30,6,8 used in game AI)
+push unk6 ; (float)  (Values of -0.03,-0.05,-0.066667,-0.1,-0.111111,0 used in game AI)
+push unk7 ; (float)  (Values of -0.05,-0.1,-0.133333,-0.2,-0.3,-0.5,2 used in game AI)
 syscall 6, 0 ; trap_camera_shake (7 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Make the camera shake according to a lot of parameters
 ---
 ---
 ---

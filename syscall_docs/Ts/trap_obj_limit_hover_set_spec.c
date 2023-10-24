@@ -5,20 +5,20 @@ name: trap_obj_limit_hover_set_spec
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0,W192)
+push spec ; (Ts::ACTION_LIMIT_HOVER_0::SPEC *)  (A limit hover spec)
 syscall 7, 21 ; trap_obj_limit_hover_set_spec (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the spec for a limit hover
 ---
 ---
 ---

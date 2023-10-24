@@ -5,21 +5,21 @@ name: trap_set_path_way
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
+push dir ; (bool) (bool indicating direction?)
 syscall 5, 1 ; trap_set_path_way (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the way on a path that an object is going
 ---
 ---
 ---

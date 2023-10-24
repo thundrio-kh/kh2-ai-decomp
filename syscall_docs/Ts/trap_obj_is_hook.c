@@ -5,21 +5,21 @@ name: trap_obj_is_hook
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 61 ; trap_obj_is_hook (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_hook ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks if an object script execution is a hook?
 ---
 ---
 ---

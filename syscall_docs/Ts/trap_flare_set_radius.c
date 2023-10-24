@@ -5,22 +5,22 @@ name: trap_flare_set_radius
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 80)
-push unk2 ; (unknown)  (pushImmf: 60)
-push unk3 ; (unknown)  (pushImmf: 60)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
+push radius ; (float)  (Radius value to set)
+push height ; (float)  (Height value to set)
 syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the radius of Flare Force
 ---
 ---
 ---

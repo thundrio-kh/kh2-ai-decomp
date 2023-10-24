@@ -5,20 +5,20 @@ name: trap_command_limit_trinity_commbo_start
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1,2)
+push n ; (int)  (number, 0 1 or 2)
 syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Start one of the three parts of the trinity limit combo
 ---
 ---
 ---

@@ -5,22 +5,22 @@ name: trap_get_path_point_pos
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromFSpVal: 108) (pushImm: 111)
-push unk2 ; (unknown)  (pushFromFSp: 12,4) (gosub: 12, L2665,12, L3439)
+push path ; (Ti::Path_3) (Path object)
+push point_index ; (label)  (ID of a call label)
 syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---
-description: 
+description: Get the position of a point on a path.
 ---
 ---
 ---

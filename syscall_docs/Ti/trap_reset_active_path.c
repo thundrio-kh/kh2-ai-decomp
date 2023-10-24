@@ -5,20 +5,20 @@ name: trap_reset_active_path
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 12 ; trap_reset_active_path (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset the active path for an object
 ---
 ---
 ---

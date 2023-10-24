@@ -5,20 +5,20 @@ name: trap_limit_start_command
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Start the limit command
 ---
 ---
 ---

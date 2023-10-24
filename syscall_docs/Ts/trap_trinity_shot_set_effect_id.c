@@ -5,21 +5,21 @@ name: trap_trinity_shot_set_effect_id
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push effect_id ; (int) (ID of an effect)
 syscall 7, 31 ; trap_trinity_shot_set_effect_id (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the effect ID of a trinity limit shot
 ---
 ---
 ---

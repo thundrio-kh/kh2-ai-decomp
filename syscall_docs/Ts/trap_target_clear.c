@@ -5,20 +5,20 @@ name: trap_target_clear
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromFSpVal: 120,124,208,48) (fetchValue: 48,64) (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out))
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 6, 16 ; trap_target_clear (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Clear a target
 ---
 ---
 ---

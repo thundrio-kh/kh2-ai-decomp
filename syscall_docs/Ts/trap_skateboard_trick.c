@@ -5,22 +5,22 @@ name: trap_skateboard_trick
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4,8)
-push unk2 ; (unknown)  (pushImm: 263,264,265,266,267,268,270,L268)
-push unk3 ; (unknown)  (pushImmf: 0,8)
+push obj ; (YS::OBJ_125) (An object)
+push motion_id ; (int)  (ID of a animation to play)
+push blend_time ; (float)  (Time to blend animations)
 syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Perform a skateboard trick
 ---
 ---
 ---

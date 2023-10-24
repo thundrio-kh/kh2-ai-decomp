@@ -5,23 +5,23 @@ name: trap_obj_rc_stop_all
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSp: 16)
-push unk2 ; (unknown)  (pushImm: 14,16,5)
-push unk3 ; (unknown)  (pushImmf: 0)
-push unk4 ; (unknown)  (pushFromPSpVal: 0) (pushFromFSp: 0) (pushFromPWp: W0)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (unknown)
+push time ; (float)  (Time that object should remain stopped)
+push force ; (bool)  (If the stop should be forced?)
 syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stop the object from doing anything else due to an RC
 ---
 ---
 ---

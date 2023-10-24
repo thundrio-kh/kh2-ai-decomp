@@ -5,21 +5,21 @@ name: trap_get_path_last_point_pos
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
 syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---
-description: 
+description: Get the position of the last point on a path
 ---
 ---
 ---

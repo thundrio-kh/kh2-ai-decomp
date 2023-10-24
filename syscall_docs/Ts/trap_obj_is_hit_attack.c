@@ -5,21 +5,21 @@ name: trap_obj_is_hit_attack
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_hit_attack ; (bool) 
 ---
 ---
 ---
-description: <check dis notes> 
+description: Checks if the object is hitting something with an attack
 ---
 ---
 ---

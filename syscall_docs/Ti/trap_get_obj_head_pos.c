@@ -5,21 +5,21 @@ name: trap_get_obj_head_pos
 ---
 ---
 ---
-category: 
+category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 48) (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---
-description: 
+description: Get the position of an objects head
 ---
 ---
 ---

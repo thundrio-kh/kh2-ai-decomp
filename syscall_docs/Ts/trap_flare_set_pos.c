@@ -5,21 +5,21 @@ name: trap_flare_set_pos
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 80)
-push unk2 ; (unknown)  (pushFromFSp: 4)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the position of Flare Force
 ---
 ---
 ---

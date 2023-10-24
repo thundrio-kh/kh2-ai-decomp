@@ -5,20 +5,20 @@ name: trap_obj_clear_hitback
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4)
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 66 ; trap_obj_clear_hitback (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Clear the hitback flag for an object
 ---
 ---
 ---

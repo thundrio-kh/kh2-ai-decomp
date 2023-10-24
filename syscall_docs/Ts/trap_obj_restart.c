@@ -5,21 +5,21 @@ name: trap_obj_restart
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (unknown)
 syscall 6, 7 ; trap_obj_restart (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Restart an object so it is no longer stopped
 ---
 ---
 ---

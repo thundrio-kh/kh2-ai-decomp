@@ -5,20 +5,20 @@ name: trap_obj_attach_camera
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 35 ; trap_obj_attach_camera (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: attach the camera to an object
 ---
 ---
 ---

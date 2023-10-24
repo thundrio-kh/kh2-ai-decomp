@@ -5,21 +5,21 @@ name: trap_flare_get_pos
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 80)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
 syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: Get the position of Flare Force
 ---
 ---
 ---

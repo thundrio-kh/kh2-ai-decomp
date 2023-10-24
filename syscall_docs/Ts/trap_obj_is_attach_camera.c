@@ -5,21 +5,21 @@ name: trap_obj_is_attach_camera
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 37 ; trap_obj_is_attach_camera (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_attach ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if an object is attached to a camera
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_limit_aladdin_exclamation_mark_pos
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16)
+push obj ; (YS::OBJ_125) (An object)
 syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)
-pop unk ; (unknown) 
+push pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---
-description: 
+description: Get the position of the exclamation mark in the Aladdin limit
 ---
 ---
 ---

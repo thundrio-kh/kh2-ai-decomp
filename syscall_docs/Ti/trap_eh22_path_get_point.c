@@ -5,21 +5,21 @@ name: trap_eh22_path_get_point
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 31 ; trap_eh22_path_get_point (1 in, 1 out)
-pop unk ; (unknown) 
+pop point ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the current point of the path during the Dragon Xemnas fight
 ---
 ---
 ---

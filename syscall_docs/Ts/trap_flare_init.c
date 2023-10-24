@@ -5,11 +5,11 @@ name: trap_flare_init
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 7, 3 ; trap_flare_init (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Initialize Flare Force
 ---
 ---
 ---

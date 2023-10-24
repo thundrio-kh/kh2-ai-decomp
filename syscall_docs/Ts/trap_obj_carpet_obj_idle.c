@@ -5,20 +5,20 @@ name: trap_obj_carpet_obj_idle
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (add: )
+push obj ; (YS::OBJ_125) (An object)
 syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Change the carpet action to idle
 ---
 ---
 ---

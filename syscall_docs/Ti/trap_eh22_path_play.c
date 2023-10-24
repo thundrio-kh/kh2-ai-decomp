@@ -5,22 +5,22 @@ name: trap_eh22_path_play
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,1,2,3,4)
-push unk3 ; (unknown)  (pushImm: 0,1)
+push obj ; (YS::OBJ_125) (An object)
+push path_num ; (int)  (Number ID of the path to play)
+push dir ; (bool)  (Boolean that indicates directon)
 syscall 5, 32 ; trap_eh22_path_play (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Play the specified path in the Dragon Xemnas fight
 ---
 ---
 ---

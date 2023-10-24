@@ -5,11 +5,11 @@ name: trap_limit_aladdin_prize_drain
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 31 ; trap_limit_aladdin_prize_drain (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set Aladdin prize drain
 ---
 ---
 ---

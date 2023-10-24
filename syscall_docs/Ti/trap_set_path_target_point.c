@@ -5,21 +5,21 @@ name: trap_set_path_target_point
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 16) (pushImm: 0,111) (pushFromFSpVal: 108) (pushFromFSp: 0)
-push unk2 ; (unknown)  (gosub: 12, L2665,12, L3439,4, L1500) (pushImm: -1)
+push path ; (Ti::Path_3) (Path object)
+push point_index ; (label)  (call label for point index)
 syscall 5, 13 ; trap_set_path_target_point (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a target point on a path
 ---
 ---
 ---

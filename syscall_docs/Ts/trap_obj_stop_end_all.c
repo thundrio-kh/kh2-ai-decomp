@@ -5,20 +5,20 @@ name: trap_obj_stop_end_all
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 14,16,17,5)
+push id ; (int)  (unknown)
 syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Stop an object from ending all actions
 ---
 ---
 ---

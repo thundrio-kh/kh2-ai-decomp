@@ -5,20 +5,20 @@ name: trap_eh22_path_move_next
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push obj ; (YS::OBJ_125) (An object)
 syscall 5, 28 ; trap_eh22_path_move_next (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Move to the next point on the path in the Dragon Xemnas fight
 ---
 ---
 ---

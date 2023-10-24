@@ -5,22 +5,22 @@ name: trap_set_path_by_group
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int) (Group ID)
 syscall 5, 24 ; trap_set_path_by_group (2 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Set an path for an object by group ID
 ---
 ---
 ---

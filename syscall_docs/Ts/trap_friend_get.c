@@ -5,21 +5,21 @@ name: trap_friend_get
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push n ; (int)  (Slot index)
 syscall 6, 14 ; trap_friend_get (1 in, 1 out)
-pop unk ; (unknown) 
+pop friend ; (kn::Friend_0 *) 
 ---
 ---
 ---
-description: 
+description: get a friend object for the friend in slot n
 ---
 ---
 ---

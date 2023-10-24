@@ -5,20 +5,20 @@ name: trap_flare_is_empty
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
-pop unk ; (unknown) 
+pop is_empty ; (bool) 
 ---
 ---
 ---
-description: 
+description: Check if the Flare Force gauge is empty
 ---
 ---
 ---

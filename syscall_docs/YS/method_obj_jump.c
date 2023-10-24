@@ -5,24 +5,24 @@ name: method_obj_jump
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,16,4,8) (pushFromPSp: 16,32) (pushFromPSpVal: 0,144)
-push unk2 ; (unknown)  (pushFromPSp: 16,32,48) (pushFromFSp: 4,8) (pushFromPSpVal: 144) (pushImm: 3)
-push unk3 ; (unknown)  (pushImm: 0,181,191,201,202,203,206,208,209,241,3) (fetchValue: 20) (pushFromFSp: 0,16,4,8)
-push unk4 ; (unknown)  (pushImmf: 0,8) (fetchValue: 36)
-push unk5 ; (unknown)  (pushImm: 0,1)
+push obj ; (YS::OBJ_125) (An object)
+push v ; (kn::FVector *)  (Position vectors)
+push motion_id ; (int)  (ID of a specific motion set entry)
+push blend_time ; (float)  (Time to blend between animations)
+push force ; (bool)  (Probably whether or not to force the animation to switch)
 syscall 1, 55 ; method_obj_jump (5 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Jumps an object to the vector
 ---
 ---
 ---

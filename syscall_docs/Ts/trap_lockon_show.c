@@ -5,11 +5,11 @@ name: trap_lockon_show
 ---
 ---
 ---
-category: 
+category: visual
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 6, 17 ; trap_lockon_show (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Show the lockon reticle
 ---
 ---
 ---

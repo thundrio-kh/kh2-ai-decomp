@@ -5,20 +5,20 @@ name: trap_reset_path_current_pointer
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push path ; (Ti::Path_3) (Path object)
 syscall 5, 18 ; trap_reset_path_current_pointer (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Reset the current pointer of the path
 ---
 ---
 ---

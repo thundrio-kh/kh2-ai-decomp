@@ -5,22 +5,22 @@ name: trap_friend_update_target
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPWp: W364) (syscall: 1, 140 ; trap_target_is_exist (1 in, 1 out)) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 1) (eqz: )
+push friend ; (kn::Friend_0 *)  (A friend object)
+push force ; (bool)  (Whether to force the target update immediately)
 syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_updated ; (bool) 
 ---
 ---
 ---
-description: 
+description: Updates the target of a friend
 ---
 ---
 ---

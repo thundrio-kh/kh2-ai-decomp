@@ -5,21 +5,21 @@ name: trap_flare_set_effect
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 80)
-push unk2 ; (unknown)  (pushFromFSpVal: 64)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
+push effect ; (ryj::EFFECT_144 *)  (an effect object)
 syscall 7, 8 ; trap_flare_set_effect (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set a Flare Force effect
 ---
 ---
 ---

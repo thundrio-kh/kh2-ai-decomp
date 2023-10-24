@@ -5,22 +5,22 @@ name: trap_check_rtn_option_flag
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 0,5)
+push npc ; (YS::NPC_0 *)  (An npc object)
+push n ; (int)  (A flag number to check)
 syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (bool) 
 ---
 ---
 ---
-description: 
+description: Checks the option of an rtn flag
 ---
 ---
 ---

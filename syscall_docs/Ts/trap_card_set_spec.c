@@ -5,26 +5,26 @@ name: trap_card_set_spec
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: 2,4)
-push unk2 ; (unknown)  (pushImmf: 6,8)
-push unk3 ; (unknown)  (pushImmf: 0.069813)
-push unk4 ; (unknown)  (pushImmf: 0.95)
-push unk5 ; (unknown)  (pushImmf: 0.03)
-push unk6 ; (unknown)  (pushImmf: 50)
-push unk7 ; (unknown)  (pushImmf: 3)
+push unk1 ; (float)  (Values of 2,4 used in game AI)
+push unk2 ; (float)  (Values of 6,8 used in game AI)
+push unk3 ; (float)  (Values of 0.069813 used in game AI)
+push unk4 ; (float)  (Values of 0.95 used in game AI)
+push unk5 ; (float)  (Values of 0.03 used in game AI)
+push unk6 ; (float)  (Values of 50 used in game AI)
+push unk7 ; (float)  (Values of 3 used in game AI)
 syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the parameters of card actions based on a number of parameters
 ---
 ---
 ---

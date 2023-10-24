@@ -5,21 +5,21 @@ name: trap_attack_get_reflect_vector
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 68)
+push attack ; (YS::ATTACK_MAGIC *)  (a reflect attack)
 syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
-pop unk ; (unknown) 
+pop vec ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Returns the direction vector of the reflected attack
 ---
 ---
 ---

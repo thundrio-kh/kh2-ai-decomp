@@ -5,22 +5,22 @@ name: trap_friend_set_script_status
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push friend ; (kn::Friend_0 *)  (A friend object)
+push value ; (int) (Value to set)
 syscall 7, 17 ; trap_friend_set_script_status (2 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Set the script status of a friend
 ---
 ---
 ---

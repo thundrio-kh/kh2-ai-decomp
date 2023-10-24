@@ -5,22 +5,22 @@ name: trap_get_path_dir
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSpVal: 68) (pushImmf: 10,20,5)
+push obj ; (YS::OBJ_125) (An object)
+push a5 ; (float) (unknown) 
 syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
-pop unk ; (unknown) 
+push dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---
-description: 
+description: Get the direction of a path
 ---
 ---
 ---

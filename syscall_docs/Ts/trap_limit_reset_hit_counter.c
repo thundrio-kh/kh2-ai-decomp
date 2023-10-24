@@ -5,21 +5,21 @@ name: trap_limit_reset_hit_counter
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0)
+push limit ; (YS::LIMIT_1 *)  (A limit object)
 syscall 7, 36 ; trap_limit_reset_hit_counter (1 in, 1 out)
-pop unk ; (unknown) 
+pop value ; (int) 
 ---
 ---
 ---
-description: 
+description: Reset the hit counter for a limit
 ---
 ---
 ---

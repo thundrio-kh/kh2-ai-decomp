@@ -5,23 +5,23 @@ name: trap_get_path_dir_from_obj
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push path ; (Ti::Path_3) (Path object)
+push a5 ; (float) (unknown) 
 syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)
-pop unk ; (unknown) 
+push dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---
-description: 
+description: Get the direction for a path from an object
 ---
 ---
 ---

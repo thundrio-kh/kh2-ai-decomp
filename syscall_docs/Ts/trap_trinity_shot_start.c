@@ -5,24 +5,24 @@ name: trap_trinity_shot_start
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushImm: 32)
-push unk3 ; (unknown)  (add: )
-push unk4 ; (unknown)  (pushFromPSp: 16)
+push caster ; (YS::OBJ_125) (An object)
+push target ; (YS::TARGET_108 *)  (A target object)
+push pos ; (kn::FVector *)  (A position vector)
+push dir ; (kn::FVector *)  (A direction vector)
 syscall 7, 29 ; trap_trinity_shot_start (4 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Start a trinity limit shot
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_flare_set_target
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
+push obj ; (YS::OBJ_125) (An object)
 syscall 7, 9 ; trap_flare_set_target (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the target of Flare Force
 ---
 ---
 ---

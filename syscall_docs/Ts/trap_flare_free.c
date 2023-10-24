@@ -5,20 +5,20 @@ name: trap_flare_free
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 80)
+push flare ; (Ts::FLARE_0 *)  (Flare Force object)
 syscall 7, 5 ; trap_flare_free (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Free memory associated with Flare Force
 ---
 ---
 ---

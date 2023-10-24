@@ -5,21 +5,21 @@ name: trap_obj_stop_start
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push id ; (int)  (unknown)
+push mask ; (int) (unknown)
 syscall 6, 50 ; trap_obj_stop_start (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Either start the stop action or stop the start action
 ---
 ---
 ---

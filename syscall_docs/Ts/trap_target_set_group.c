@@ -5,21 +5,21 @@ name: trap_target_set_group
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 20)
-push unk2 ; (unknown)  (pushImm: 20,21,22,23,24,25,26,27,28,29)
+push target ; (YS::TARGET_108 *)  (A target object)
+push group_id ; (int) (ID of a group)
 syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the group ID that a target belongs to
 ---
 ---
 ---

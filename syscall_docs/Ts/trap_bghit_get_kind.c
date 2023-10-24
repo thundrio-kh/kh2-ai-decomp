@@ -5,21 +5,21 @@ name: trap_bghit_get_kind
 ---
 ---
 ---
-category: 
+category: bghit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 16)
+push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
 syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
-pop unk ; (unknown) 
+pop kind ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the kind of bghit
 ---
 ---
 ---

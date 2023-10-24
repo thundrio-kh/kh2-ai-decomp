@@ -5,11 +5,11 @@ name: trap_command_cage_on
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

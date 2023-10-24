@@ -5,20 +5,20 @@ name: trap_end_rtn_action
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push npc ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: End an RTN action
 ---
 ---
 ---

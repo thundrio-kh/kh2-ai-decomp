@@ -5,11 +5,11 @@ name: trap_attack_get_param_id
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---

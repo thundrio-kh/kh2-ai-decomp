@@ -5,20 +5,20 @@ name: trap_flare_new
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 7, 4 ; trap_flare_new (0 in, 1 out)
-pop unk ; (unknown) 
+push flare ; (Ts::FLARE_0 *)
 ---
 ---
 ---
-description: 
+description: Create and allocate a new Flare Force Object
 ---
 ---
 ---

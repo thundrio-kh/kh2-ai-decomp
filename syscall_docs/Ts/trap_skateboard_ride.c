@@ -5,21 +5,21 @@ name: trap_skateboard_ride
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPWp: W48)
-push unk2 ; (unknown)  (pushFromFSp: 8)
+push obj ; (YS::OBJ_125) (An object)
+push board ; (YS::OBJ_125) (An board object)
 syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Attach an object to a board
 ---
 ---
 ---

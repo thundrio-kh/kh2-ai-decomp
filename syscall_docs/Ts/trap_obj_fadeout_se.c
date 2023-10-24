@@ -5,21 +5,21 @@ name: trap_obj_fadeout_se
 ---
 ---
 ---
-category: 
+category: sound
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSpVal: 0)
-push unk2 ; (unknown)  (pushImm: 0)
+push id ; (int)  (ID of the sound effect)
+push fadetime ; (int)  (Time to take to fade out)
 syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Fadeout a sound effect
 ---
 ---
 ---

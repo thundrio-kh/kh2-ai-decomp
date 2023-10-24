@@ -5,21 +5,21 @@ name: trap_reverse_path_way
 ---
 ---
 ---
-category: 
+category: path
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push path ; (Ti::Path_3) (Path object)
 syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
 pop unk ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Reverse the way the object associated with this path is going
 ---
 ---
 ---

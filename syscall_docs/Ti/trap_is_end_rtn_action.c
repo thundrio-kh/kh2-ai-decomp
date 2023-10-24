@@ -5,21 +5,21 @@ name: trap_is_end_rtn_action
 ---
 ---
 ---
-category: 
+category: field
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0)
+push npc ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
-pop unk ; (unknown) 
+pop is_end ; (bool) 
 ---
 ---
 ---
-description: 
+description: Return if the current RTN action is end
 ---
 ---
 ---

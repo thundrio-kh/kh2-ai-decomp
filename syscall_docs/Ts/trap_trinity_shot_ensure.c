@@ -5,11 +5,11 @@ name: trap_trinity_shot_ensure
 ---
 ---
 ---
-category: 
+category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -17,7 +17,7 @@ syscall 7, 30 ; trap_trinity_shot_ensure (0 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Ensure a trinity limit shot
 ---
 ---
 ---

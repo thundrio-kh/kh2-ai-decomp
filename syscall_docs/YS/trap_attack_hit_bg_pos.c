@@ -5,21 +5,21 @@ name: trap_attack_hit_bg_pos
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push unk1 ; (unknown)  (pushFromFSp: 176,180) (pushFromFSpVal: 68)
 syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop vec ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Returns the position of when the attack hit the background 
 ---
 ---
 ---
