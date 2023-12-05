@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-pop window ; (YS::WINDOW_8 *) (a window object)
+push window ; (YS::WINDOW_8 *) (a window object)
 syscall 1, 33 ; trap_message_close (1 in, 0 out)
 ---
 ---

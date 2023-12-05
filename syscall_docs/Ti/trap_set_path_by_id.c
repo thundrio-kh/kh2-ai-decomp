@@ -16,7 +16,7 @@ documentation level: untested
 push obj ; (YS::OBJ_125) (An object)
 push id ; (int)  (ID number of a path)
 syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
-push path ; (Ti::Path_3) (Path object)
+pop path ; (Ti::Path_3) (Path object)
 ---
 ---
 ---

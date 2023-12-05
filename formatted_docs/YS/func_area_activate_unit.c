@@ -1,0 +1,33 @@
+## func_area_activate_unit* (spawns)
+
+syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
+
+Activates the spawn file with the passed in name.
+
+#### Input parameters
+| Name | Type | Description
+|------|------|------------
+| unit   | string   | name of spawn file to be activated (ie 'f01_'
+
+
+
+
+<details>
+	<summary>Appears in:</summary>
+| filename | Entity (obj)
+|----------|-------------
+| ard\wi00\wi00.bdscript       |           
+
+</details>
+
+<details>
+	<summary>Example Usage From ard\wi00\wi00.bdscript</summary>
+TR3:
+ pushImm 13318
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ jz L27
+ pushFromPAi L180 ; ___ai 'c02_' (L180)
+ syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
+ jmp L31
+</details>
+

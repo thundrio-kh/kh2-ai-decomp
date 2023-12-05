@@ -14,8 +14,8 @@ documentation level: untested
 ---
 ---
 push friend ; (kn::Friend_0 *)  (A friend object)
-push unk2 ; (unknown)  (pushFromPSp: 4) (pushFromPSpVal: 0)
-push unk3 ; (unknown)  (syscall: 2, 23 ; trap_btlobj_target (1 in, 1 out))
+push unk2 ; (unknown)  (Unknown)
+push unk3 ; (unknown)  (Unknown)
 syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
 ---
 ---

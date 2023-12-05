@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push target_pos; (RCFVector target_pos)  (position of target)
+push target_pos ; (RCFVector target_pos)  (position of target)
 syscall 1, 314 ; trap_camera_set_scope_target_pos (1 in, 0 out)
 ---
 ---

@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push type ; (int)  (Whether or not to get the clone or actual xemnas object?)
 syscall 6, 59 ; trap_xemnas_get_obj (1 in, 1 out)
-push xemnas ; (YS::OBJ_125)
+pop xemnas ; (YS::OBJ_125)
 ---
 ---
 ---

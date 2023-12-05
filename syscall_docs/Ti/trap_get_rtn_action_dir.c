@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push npc ; (YS::NPC_0 *)  (An npc object)
 syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
-push dir ; (kn::FVector *)  (A direction vector)
+pop dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---

@@ -17,7 +17,7 @@ push obj ; (YS::OBJ_125) (An object)
 push path ; (Ti::Path_3) (Path object)
 push a5 ; (float) (unknown) 
 syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)
-push dir ; (kn::FVector *)  (A direction vector)
+pop dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---

@@ -16,7 +16,7 @@ documentation level: untested
 push path ; (Ti::Path_3) (Path object)
 push point_index ; (label)  (ID of a call label)
 syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)
-push pos ; (kn::FVector *)  (A position vector)
+pop pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---

@@ -16,8 +16,6 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         if ".DS_Store" in fn:
             continue
 
-        fn = 'syscall_docs/Ti/trap_get_path_last_point_pos.c' # DEBUG ONLY DELETE ME
-
         out_fn = fn.replace('syscall_docs', 'formatted_docs')
         if not (os.path.exists(os.path.dirname(out_fn))):
             os.makedirs(os.path.dirname(out_fn))
@@ -52,7 +50,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += '*' if doc_level == 'untested' else ''
         page += ' ({})'.format(category)
         page += '\n\n'
-        page += re.findall(r'(syscall.*)\n', arguments)[0]
+        page += re.findall(r'(syscall.*)\b', arguments)[0] + ')'
         page += '\n\n'
         page += description
         page += '\n\n'
@@ -64,7 +62,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             parens = re.findall(r'.*?\((.*?)\)',arg)
             arg_name = re.findall(r'push (.*) ;', arg)[0]
             arg_type = parens[0]
-            arg_description = parens[1]
+            arg_description = parens[1] if len(parens) > 1 else ''
             page += '| {}   | {}   | {}\n'.format(arg_name, arg_type, arg_description)
         page += '\n\n'
         output_args = re.findall(r'syscall.*\n(.*)', arguments)
@@ -83,7 +81,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         # obj\M_EX910\m_ex.bdscript ((M) Samurai)
         for obj in appears_in:
             obj_fn = obj.strip().split(" ")[0]
-            obj_entity = re.findall(r'\(.*\)', obj)[0]
+            obj_entity = re.findall(r'\(.*\)', obj)[0] if '(' in obj else ''
             appears_table += '| {}       | {}          \n'.format(obj_fn, obj_entity)
         if not appears_in:
             appears_table = ''
@@ -92,7 +90,8 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += """<details>\n\t<summary>Example Usage From {}</summary>\n{}\n</details>\n\n""".format(example_usage_from, example_usage)
 
     
-        0/0
+        with open(out_fn, 'w') as f:
+            f.write(page)
 
         try:
             doc_level = re.findall(r'documentation level:(.*)\b', doc)[0].strip()

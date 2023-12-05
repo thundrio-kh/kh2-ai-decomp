@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push flare ; (Ts::FLARE_0 *)  (Flare Force object)
 syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
-push pos ; (kn::FVector *) 
+pop pos ; (kn::FVector *) 
 ---
 ---
 ---

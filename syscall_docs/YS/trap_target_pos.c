@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push target ; (YS::TARGET_108 *)  (A target object)
 syscall 1, 120 ; trap_target_pos (1 in, 1 out)
-push pos ; (kn::FVector *)
+pop pos ; (kn::FVector *)
 ---
 ---
 ---

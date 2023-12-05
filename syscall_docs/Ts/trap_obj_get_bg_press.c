@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push obj ; (YS::OBJ_125) (An object)
 syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)
-push pos ; (kn::FVector *)
+pop pos ; (kn::FVector *)
 ---
 ---
 ---

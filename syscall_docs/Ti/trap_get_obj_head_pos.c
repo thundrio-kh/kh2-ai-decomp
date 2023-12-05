@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push obj ; (YS::OBJ_125) (An object)
 syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
-push pos ; (kn::FVector *)  (A position vector)
+pop pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---

@@ -9,16 +9,15 @@ category: bones
 ---
 ---
 ---
-documentation level: untested
+documentation level: incomplete
 ---
 ---
 ---
 push obj ; (YS::OBJ_126)  (An object)
-push parent ; (unknown)  (pushFromPSpVal: 0,112,128,144,4,...) (pushFromFSp: 0,4,8) (add: ) (pushImm: 0) (pushFromPSp: 16,32,48,64,96) (pushFromPWp: W0,W32,W384,W4,W4208,...)
-push bone ; (unknown)  (pushImm: 101,12,140,146,16384,16386,17,23,4,49,57,62,7,71,8) (syscall: 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)) (fetchValue: 144)
-push flag ; (unknown)  (pushImm: 0,1,4,5)
+push parent ; (unknown)  (Unknown)
+push bone ; (unknown)  (Unknown)
 push label ; (int)  (Line number, a callback?)
-push unk6 ; (unknown)  (pushImm: 0) (pushFromFSp: 0) (pushFromPWp: W0,W384)
+push unk6 ; (unknown)  (Unknown)
 syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
 ---
 ---

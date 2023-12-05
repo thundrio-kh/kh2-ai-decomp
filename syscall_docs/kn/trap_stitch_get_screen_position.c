@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push friend ; (kn::Friend_0 *)  (A friend object)
 syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
-push pos ; (kn::FVector *)
+pop pos ; (kn::FVector *)
 ---
 ---
 ---

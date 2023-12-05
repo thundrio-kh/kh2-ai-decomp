@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push attack ; (YS::ATTACK_MAGIC_3 *)  (An attack object)
 syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
-push pos ; (kn::FVector *)  (A position vector)
+pop pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---

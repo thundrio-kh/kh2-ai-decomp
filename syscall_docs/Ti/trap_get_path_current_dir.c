@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push path ; (Ti::Path_3) (Path object)
 syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)
-push dir ; (kn::FVector *)  (A direction vector)
+pop dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---

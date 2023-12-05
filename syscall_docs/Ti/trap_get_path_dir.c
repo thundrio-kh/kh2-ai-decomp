@@ -16,7 +16,7 @@ documentation level: untested
 push obj ; (YS::OBJ_125) (An object)
 push a5 ; (float) (unknown) 
 syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
-push dir ; (kn::FVector *)  (A direction vector)
+pop dir ; (kn::FVector *)  (A direction vector)
 ---
 ---
 ---

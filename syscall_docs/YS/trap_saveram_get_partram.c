@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push part ; (int)  (Part to get)
 syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
-push partram ; (YS::PARTRAM *)
+pop partram ; (YS::PARTRAM *)
 ---
 ---
 ---

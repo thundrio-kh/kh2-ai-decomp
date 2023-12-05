@@ -13,8 +13,8 @@ documentation level: untested
 ---
 ---
 ---
-push vector ; (vector * or float ) (Either a vector of numbers, or a single float) (pushFromPSp: 112,144,16,176,32,...) (pushImmf: 0.95,120,1200,500,600,700,80) (pushFromFSp: 4,56) (syscall: 0, 3 ; trap_frametime (0 in, 1 out))
-push amount ; (float) (The amount to scale the first argument by) (pushFromFSp: 32,36,4,44,48,...) (pushImmf: -150,-2000,-250,-300,-7000,0.8,1.5,100,1000,120,130,1300,1400,1600,200,2000,2150,2400,2450,250,2500,30,300,3000,380,400,4500,5,6,60,600,700,80,800,860) (subf: ) (syscall: 0, 18 ; trap_random_range (2 in, 1 out),6, 9 ; trap_target_dist (2 in, 1 out),8, 0 ; trap_obj_target_radius (1 in, 1 out)) (addf: ) (pushFromFSpVal: 132,292,52) (mulf: ) (pushFromFWp: W4512) (fetchValue: 12) (cos: ) (gosub: 68, L2731) (divf: )
+push vector ; (vector * or float ) (Either a vector of numbers, or a single float)
+push amount ; (float) (The amount to scale the first argument by)
 syscall 0, 35 ; method_vector_scale (2 in, 0 out)
 ---
 ---

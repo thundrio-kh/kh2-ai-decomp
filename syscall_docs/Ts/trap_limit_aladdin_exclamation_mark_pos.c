@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push obj ; (YS::OBJ_125) (An object)
 syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)
-push pos ; (kn::FVector *)  (A position vector)
+pop pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---

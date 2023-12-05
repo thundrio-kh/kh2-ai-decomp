@@ -14,7 +14,7 @@ documentation level: untested
 ---
 ---
 syscall 7, 4 ; trap_flare_new (0 in, 1 out)
-push flare ; (Ts::FLARE_0 *)
+pop flare ; (Ts::FLARE_0 *)
 ---
 ---
 ---
