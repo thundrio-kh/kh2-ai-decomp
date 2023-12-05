@@ -5,17 +5,17 @@ name: trap_damage_orig_reaction
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
-pop unk ; (unknown) 
+pop attack_type ; (int) 
 ---
 ---
 ---

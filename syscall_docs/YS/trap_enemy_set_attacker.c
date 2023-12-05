@@ -5,21 +5,21 @@ name: trap_enemy_set_attacker
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 16)
-push unk2 ; (unknown)  (pushFromPSp: 16)
+push enemy ; (YS::PIERROT_6)  (Enemy btl object)
+push attacker ; (YS::OBJ_138)  (Object of the attacker)
 syscall 2, 97 ; trap_enemy_set_attacker (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the attacker for an enemy.
 ---
 ---
 ---

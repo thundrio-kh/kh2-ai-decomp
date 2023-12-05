@@ -5,23 +5,23 @@ name: trap_obj_can_decide_command
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 4) (pushFromPSp: 32) (pushFromFSp: 0)
-push unk2 ; (unknown)  (pushFromFSp: 12,8) (pushImm: 313,321,672)
-push unk3 ; (unknown)  (pushFromPSpVal: 20) (pushFromFSp: 8) (pushFromPSp: 16) (pushFromPWp: W0)
+push obj ; (YS::OBJ_96)  (An object)
+push command_id ; (int)  (ID of a command)
+push element ; (YS::COMMAND_ELEM)  (Command element value)
 syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
-pop unk ; (unknown) 
+pop can_decide ; (bool) 
 ---
 ---
 ---
-description: 
+description: Returns  if the object can decide command.
 ---
 ---
 ---

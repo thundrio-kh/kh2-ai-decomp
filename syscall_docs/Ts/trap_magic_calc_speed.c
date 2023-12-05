@@ -9,16 +9,16 @@ category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImmf: -10,-2)
-push unk2 ; (unknown)  (pushImmf: 100,200,500)
-push unk3 ; (unknown)  (pushFromPSp: 16,32,48)
-push unk4 ; (unknown)  (fetchValue: 12)
+push unk1 ; (float)  (Values of -10, -2 used in game)
+push unk2 ; (float)  (Values of 100, 200, 500 used in game)
+push unk3 ; (float)  (Unknown)
+push unk4 ; (float)  (Unkown)
 syscall 7, 13 ; trap_magic_calc_speed (4 in, 1 out)
-pop unk ; (unknown) 
+pop speed ; (float) 
 ---
 ---
 ---
@@ -41,6 +41,28 @@ void __fastcall Ts::trap_magic_calc_speed(BD_VALUE_24 *args)
     v1 = (float)((float)((float)(*(float *)&(*args)[0] * (float)2.0) * (float)(*(float *)&(*args)[0] * (float)2.0))
                - (float)((float)(*(float *)&(*args)[4]
                                * (float)((float)(*(float *)&(*args)[8] - *(float *)&(*args)[12]) * (float)-2.0))
+                       * 4.0));
+    if ( v1 > 0.0 )
+    {
+      v2 = __fsqrts(v1);
+      _FP1 = (float)((float)((float)-(float)(*(float *)&(*args)[0] * (float)2.0) - (float)v2) / *(float *)&(*args)[4])
+           - (float)((float)((float)v2 - (float)(*(float *)&(*args)[0] * (float)2.0)) / *(float *)&(*args)[4]);
+      __asm { fsel      f1, f1, f5, f3 }
+      *(float *)&(*args)[0] = *(float *)&(*args)[0] + (float)_FP1;
+    }
+  }
+}
+
+// Smpler version
+
+void __fastcall Ts::trap_magic_calc_speed(BD_VALUE_24 *args)
+{
+  double v1; // fp1
+  double v2; // fp1
+
+  if ( !((float)arg_2 == 0.0) | (float)arg_3 - (float)arg_4) * -2.0) < 0.0) )
+  {
+    v1 = ((float)arg_1 * 2.0 * (float)arg_1 * 2.0) - (float)arg_2 * (float)arg_3 - (float)arg_4 * -2.0))
                        * 4.0));
     if ( v1 > 0.0 )
     {

@@ -9,14 +9,14 @@ category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 144,16,160,176) (memcpyToSp: 16, 112,16, 16,16, 32,16, 48,16, 64,...) (pushFromPSp: 128,16,32,48,64,...) (pushFromFSp: 12,28,4) (pushImm: 16) (add: )
-push unk2 ; (unknown)  (pushFromFSp: 0,12,4,8) (pushFromPSp: 112,144,16,32,48,...) (pushFromPSpVal: 80) (add: )
+push vec ; (kn::FVector *)  (A vector)
+push flt ; (float)  (An offset amount?)
 syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (kn::FVector *)
 ---
 ---
 ---

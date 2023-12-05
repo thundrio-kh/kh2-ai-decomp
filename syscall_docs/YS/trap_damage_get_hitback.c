@@ -9,17 +9,17 @@ category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
-pop unk ; (unknown) 
+pop hitback ; (float) 
 ---
 ---
 ---
-description: 
+description: Get the hitback value of damage
 ---
 ---
 ---

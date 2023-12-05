@@ -5,20 +5,20 @@ name: trap_enemy_last_dead
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 syscall 2, 53 ; trap_enemy_last_dead (0 in, 1 out)
-pop unk ; (unknown) 
+pop obj ; (YS::OBJ_103) 
 ---
 ---
 ---
-description: 
+description: Returns the object of the last enemy attacker.
 ---
 ---
 ---

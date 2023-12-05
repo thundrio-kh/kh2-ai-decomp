@@ -9,17 +9,17 @@ category: untested
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,20) (pushFromPSpVal: 0,108,144,16,20,...) (pushFromPSp: 16,28,32,4,8) (pushFromPWp: W0,W32,W364)
+push target ; (YS::TARGET_108 *)  (A target object)
 syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
-pop unk ; (unknown) 
+pop btlobj ; (YS::BTLOBJ *)
 ---
 ---
 ---
-description: 
+description: Retrieves the btlobj of the subject of a target object
 ---
 ---
 ---

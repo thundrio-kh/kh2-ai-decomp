@@ -5,11 +5,11 @@ name: trap_player_push_ability_button
 ---
 ---
 ---
-category: 
+category: input 
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -19,7 +19,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Chcks if the player is pushing the reaction command button
 ---
 ---
 ---

@@ -9,17 +9,17 @@ category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push obj ; (YS::OBJ_125 *)  (An object)
 syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
-pop unk ; (unknown) 
+pop result ; (int) 
 ---
 ---
 ---
-description: 
+description: Returns the appear way value of an object, or -1. It seems like just about every object script calls this.
 ---
 ---
 ---

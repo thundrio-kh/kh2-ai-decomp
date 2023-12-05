@@ -5,25 +5,25 @@ name: trap_obj_effect_start_bind_other
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (gosub: 12, L735,16, L777,28, L608,4, L1075,4, L2182,...) (pushFromPWp: W0,W160,W16560,W4) (pushFromFSp: 0,16,4) (syscall: 1, 3 ; trap_sysobj_player (0 in, 1 out)) (gosub32: 4, L2256,4, L299) (pushFromPSp: 16) (pushFromPSpVal: 0) (add: )
-push unk2 ; (unknown)  (memcpyToSp: 16, 112,16, 16,16, 32,16, 4,16, 48,...) (pushImm: 16,17,2,27,28,4,7,70,8,9) (pushFromFSp: 48,8)
-push unk3 ; (unknown)  (pushFromPSp: 112,16,32,4,48,...) (pushFromFSp: 0,12,4,8) (pushFromPSpVal: 64)
-push unk4 ; (unknown)  (pushImm: 0,1)
-push unk5 ; (unknown)  (pushImm: 0) (pushFromFSp: 4)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of effect)
+push flag ; (bool)  (value to set flag)
+push priority ; (int)  (Priority value for effect)
+push other_object ; (YS::OBJ_125) (Other object for the effect to be binded to)
 syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_310) 
 ---
 ---
 ---
-description: 
+description: Starts an effect associated with an object and binds it to another object
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_obj_hook_stop
 ---
 ---
 ---
-category: 
+category: friend
 ---
 ---
 ---

@@ -5,26 +5,26 @@ name: trap_target_seracher_search
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 0,192,32,48,64) (pushFromFSp: 0,20,24,4,8) (add: ) (pushFromPSpVal: 0,100,32,4,64,...) (syscall: 1, 147 ; trap_obj_pos (1 in, 1 out))
-push unk2 ; (unknown)  (syscall: 1, 201 ; trap_obj_dir (1 in, 1 out)) (pushFromFSpVal: 48) (pushFromPSp: 64) (memcpyToSp: 16, 16,16, 48) (pushFromFSp: 12)
-push unk3 ; (unknown)  (memcpyToSp: 16, 112,16, 128,16, 16,16, 176,16, 224,...) (pushFromPSpVal: 32) (pushImm: 16) (pushFromPSp: 16,48) (pushFromFSp: 8)
-push unk4 ; (unknown)  (pushFromPSp: 112,128,16,176,224,...) (pushFromPSpVal: 192,32,80) (add: ) (pushFromFSp: 4)
-push unk5 ; (unknown)  (pushImm: 0,1) (pushFromFSp: 12)
-push unk6 ; (unknown)  (pushImm: 0,1) (pushFromFSp: 4)
-push unk7 ; (unknown)  (pushImm: 1)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push target ; (YS::TARGET_108 *)  (A target object)
+push pos ; (kn::FVector *)  (A position vector)
+push dir ; (kn::FVector *)  (A direction vector)
+push is_as ; (bool)  (Unknown purpose)
+push is_xz ; (bool)  (Unknown purpose)
+push is_history ; (bool)  (Unknown purpose, only value used in game is 1)
 syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Searches for a target based on a number of parameters
 ---
 ---
 ---

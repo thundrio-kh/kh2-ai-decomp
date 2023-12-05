@@ -5,24 +5,24 @@ name: trap_obj_effect_start_bind
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,4,8) (pushFromPSpVal: 0,128,144,16,20) (pushFromPWp: W0,W160,W176,W32,W576,...) (pushFromPSp: 16,32) (pushFromFSpVal: 64) (pushImm: 1)
-push unk2 ; (unknown)  (pushFromFSp: 12,16,20,4,8) (pushImm: 0,1,10,100,101,105,106,11,112,113,114,115,116,117,118,119,12,13,14,15,16,17,18,19,2,20,21,22,227,23,239,24,25,26,27,28,29,3,30,31,32,33,34,35,36,37,38,39,4,40,41,42,43,44,45,46,47,48,49,5,50,51,52,53,54,55,56,57,58,59,6,60,61,62,63,64,65,66,67,68,69,7,8,80,81,84,9,91,92,93,94,95,96,97,98,99) (add: ) (pushFromFSpVal: 108) (gosub: 4, L2622) (syscall: 1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (sub: ) (fetchValue: 132)
-push unk3 ; (unknown)  (pushImm: 0,1)
-push unk4 ; (unknown)  (pushFromFSp: 4) (pushImm: 0)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of effect)
+push flag ; (bool)  (value to set flag)
+push priority ; (int)  (Priority value for effect)
 syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_310) 
 ---
 ---
 ---
-description: 
+description: Starts an effect associated with an object and binds it to that object
 ---
 ---
 ---

@@ -9,18 +9,18 @@ category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 4) (pushFromPSp: 112,16,32,48) (pushFromPSpVal: 192,80,96) (pushImm: 128) (memcpyToSp: 16, 16)
-push unk2 ; (unknown)  (pushFromFSp: 0,64) (pushFromPSp: 128,16,32,48,56,...) (add: ) (pushFromPSpVal: 96)
-push unk3 ; (unknown)  (gosub: 8, L1077,8, L1343,8, L1359,8, L1494,8, L1564,...) (pushImmf: 0,0.017453,0.034907,0.05236,0.069813,0.087266,0.139626,0.174533,0.523599,1.047198,3.141593) (fetchValue: 8,96) (pushFromFSp: 20,36,4,48,52,...) (pushFromFSpVal: 0) (gosub32: 8, L2898,8, L6894) (degr: )
+push dir ; (kn::FVector *)  (Direction to home)
+push target ; (kn::FVector *)  (Target vector to home to)
+push limit ; (float)  (Distance limit for the homing calculation)
 syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Performs a homing calculation between two objects.
 ---
 ---
 ---

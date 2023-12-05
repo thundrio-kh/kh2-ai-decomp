@@ -5,23 +5,23 @@ name: trap_vector_inter
 ---
 ---
 ---
-category: 
+category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 128) (pushFromPSpVal: 32,80) (pushFromPSp: 16,32)
-push unk2 ; (unknown)  (pushFromPSp: 128,16) (pushFromPSpVal: 64,80,96) (pushFromFSp: 8)
-push unk3 ; (unknown)  (pushFromFSp: 4,52,56,96) (pushImmf: 0.1,0.6,0.95)
+push vec1 ; (kn::FVector *)  (A vector)
+push vec2 ; (kn::FVector *)  (A vector)
+push r ; (float)  (A rotation value?)
 syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
-pop unk ; (unknown) 
+pop result ;  (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Calculates the intersection point between two vectors
 ---
 ---
 ---

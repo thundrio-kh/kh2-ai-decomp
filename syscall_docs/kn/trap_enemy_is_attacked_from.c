@@ -5,22 +5,22 @@ name: trap_enemy_is_attacked_from
 ---
 ---
 ---
-category: 
+category: enemy
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 144)
-push unk2 ; (unknown)  (pushFromPSp: 144)
+push enemy ; (YS::OBJ_125) (An enemy object)
+push obj ; (YS::OBJ_125) (An object)
 syscall 10, 23 ; trap_enemy_is_attacked_from (2 in, 1 out)
-pop unk ; (unknown) 
+pop is_attacked_from ; (unknown) 
 ---
 ---
 ---
-description: 
+description: Checks if an enemy is being attacked by the passed in object
 ---
 ---
 ---

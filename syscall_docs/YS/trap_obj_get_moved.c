@@ -5,21 +5,21 @@ name: trap_obj_get_moved
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4,8) (add: ) (pushFromPSpVal: 256) (pushFromPSp: 176,32,48,64) (pushFromPWp: W364)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
-pop unk ; (unknown) 
+pop dir ; (kn::FVector *)
 ---
 ---
 ---
-description: 
+description: Get a vector indicating the direction the object moved.
 ---
 ---
 ---

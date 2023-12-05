@@ -5,11 +5,11 @@ name: trap_damage_reaction
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
@@ -19,7 +19,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description: 
+description: Gets the reaction type value of an attack, which is the "Enemy Reaction" value defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---

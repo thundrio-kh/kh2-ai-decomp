@@ -9,14 +9,14 @@ category: reaction
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
 push obj ; (YS::OBJ_125 *)  (An object)
-push group ; (unknown)  (pushFromPSp: 16)
-push group ; (int)  (pushImm: 327)
-push unk4 ; (unknown)  (pushFromPSp: 0)
+push obj2 ; (YS::OBJ_125 *)  (A second object to receive the RC?)
+push command ; (int)  (pushImm: 327)
+push target_obj ; (YS::OBJ_125 *)  (Object for the reaction to target)
 syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
 ---
 ---

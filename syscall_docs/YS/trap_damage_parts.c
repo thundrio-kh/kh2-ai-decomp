@@ -5,21 +5,21 @@ name: trap_damage_parts
 ---
 ---
 ---
-category: 
+category: attack
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
 push damage ; (YS::DAMAGE_5 *)  (An object representing damage)
 syscall 2, 70 ; trap_damage_parts (1 in, 1 out)
-pop unk ; (unknown) 
+pop parts ; (int) 
 ---
 ---
 ---
-description: 
+description: Get the parts value of the attack, which is the "Element" value defined in its Atkp entry found in 00battle.bin
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_get_wish_movement
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSp: 48)
+push obj ; (YS::OBJ_125) (An object)
 syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
-pop unk ; (unknown) 
+pop dir ; (kn::FVector *) 
 ---
 ---
 ---
-description: 
+description: get the direction that a summon object has moved
 ---
 ---
 ---

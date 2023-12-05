@@ -5,20 +5,20 @@ name: trap_limit_motion_start
 ---
 ---
 ---
-category: 
+category: limit
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (fetchValue: 0) (pushFromFSpVal: 96)
-push unk2 ; (unknown)  (pushFromFSp: 0,4,8) (pushFromPSpVal: 0,20,4,64) (pushFromPSp: 32)
-push unk3 ; (unknown)  (pushImm: 252,253,254,255,256,257,258,259,260,261) (pushFromFSp: 4,8)
-push unk4 ; (unknown)  (pushImmf: 0,8)
+push limit ; (YS::LIMIT_1)  (An limit object)
+push obj ; (YS::OBJ_114)  (Object that will be performing the limit animation)
+push motion_id ; (int)  (A motionset ID value)
+push blend ; (float)  (Blend value)
 syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
-pop unk ; (unknown) 
+pop res ; (int) 
 ---
 ---
 ---

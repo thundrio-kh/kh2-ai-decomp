@@ -5,21 +5,21 @@ name: trap_obj_effect_unbind
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,16,68,76) (pushFromPWp: W12) (pushFromPSp: 20)
-push unk2 ; (unknown)  (fetchValue: 0) (pushFromFSp: 4) (pushFromFSpVal: 64)
+push obj ; (YS::OBJ_125) (An object)
+push effect ; (ryj::EFFECT_310) (An effect object)
 syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Unbinds the effect from the object
 ---
 ---
 ---

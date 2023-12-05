@@ -15,7 +15,7 @@ documentation level: complete
 ---
 push height ; (float)  (Height Value)
 syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
-pop unk ; (unknown) 
+pop uptime ; (float) 
 ---
 ---
 ---

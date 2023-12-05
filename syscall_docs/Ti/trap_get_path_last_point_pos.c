@@ -15,7 +15,7 @@ documentation level: untested
 ---
 push path ; (Ti::Path_3) (Path object)
 syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)
-push pos ; (kn::FVector *)  (A position vector)
+pop pos ; (kn::FVector *)  (A position vector)
 ---
 ---
 ---

@@ -5,21 +5,21 @@ name: trap_obj_capture_command
 ---
 ---
 ---
-category: 
+category: command
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
+push obj ; (YS::OBJ_125) (An object)
+push type ; (int) (type of command)
 syscall 1, 308 ; trap_obj_capture_command (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Captures a command
 ---
 ---
 ---

@@ -5,17 +5,17 @@ name: trap_camera_get_projection_pos
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 64)
+push camera_pos ; (kn::FVector)  (A position vector)
 syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
-pop unk ; (unknown) 
+pop projection_pos ; (kn::FMatrix) 
 ---
 ---
 ---

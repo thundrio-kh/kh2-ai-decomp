@@ -9,14 +9,14 @@ category: special
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
 push obj ; (YS::OBJ_125) (An object)
-push unk2 ; (unknown)  (fetchValue: 4)
-push unk3 ; (unknown)  (pushFromPSpVal: 112)
-push unk4 ; (unknown)  (fetchValue: 12)
+push vec ; (kn::FVector)  (A vector)
+push unk1 ; (unknown)  (Unknown)
+push unk2 ; (unknown)  (UNknown)
 syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
 ---
 ---

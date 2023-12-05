@@ -5,23 +5,23 @@ name: trap_obj_hop_direct
 ---
 ---
 ---
-category: 
+category: movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0) (pushFromPSpVal: 0)
-push unk2 ; (unknown)  (pushFromPSp: 16,48)
-push unk3 ; (unknown)  (pushImmf: 30)
-push unk4 ; (unknown)  (pushImmf: 0,0.98)
+push obj ; (YS::OBJ_88)  (An object)
+push velocity ; (float)  (A velocity value)
+push time ; (float)  (Time for the hop to last)
+push accel ; (float)  (Acceleration value)
 syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Similar to trap_obj_hop, but does not set an animation for the object, just performs the hop
 ---
 ---
 ---

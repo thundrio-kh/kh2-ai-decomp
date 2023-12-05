@@ -5,21 +5,21 @@ name: trap_obj_jump_direct
 ---
 ---
 ---
-category: 
+category: Movement
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (pushFromPSpVal: 20) (pushFromPSp: 4) (pushFromPWp: W0)
-push unk2 ; (unknown)  (pushFromPSp: 0,16,32,48) (pushFromPSpVal: 112)
+push obj ; (YS::OBJ_125) (An object)
+push unk ; (unknown)  (Unknown what this is used for)
 syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Makes an object jump probably 10 units. 
 ---
 ---
 ---

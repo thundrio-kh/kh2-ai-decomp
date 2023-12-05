@@ -5,24 +5,24 @@ name: trap_vector_draw
 ---
 ---
 ---
-category: 
+category: debug
 ---
 ---
 ---
-documentation level: stub
+documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown) 
-push unk2 ; (unknown) 
-push unk3 ; (unknown) 
-push unk4 ; (unknown) 
+push unk1 ; (unknown)
+push unk2 ; (unknown)
+push unk3 ; (unknown)
+push unk4 ; (unknown)
 push unk5 ; (unknown) 
 syscall 0, 90 ; trap_vector_draw (5 in, 0 out)
 ---
 ---
 ---
-description: Draws a sphere around a vector
+description: Draws a sphere around a vector.
 ---
 ---
 ---

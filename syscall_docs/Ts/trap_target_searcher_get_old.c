@@ -5,22 +5,22 @@ name: trap_target_searcher_get_old
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 20,36) (pushFromFSpVal: 48) (pushFromPWp: W0,W108)
-push unk2 ; (unknown)  (pushFromFSp: 16,20,52,56,68)
-push unk3 ; (unknown)  (syscall: 0, 16 ; trap_random_get (1 in, 1 out)) (pushFromFSp: 8)
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push target ; (YS::TARGET_108 *)  (A target object)
+push n ; (int)  (An index value for the list of targets)
 syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Return the nth oldest target in the searcher
 ---
 ---
 ---

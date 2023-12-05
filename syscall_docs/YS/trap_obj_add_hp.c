@@ -5,24 +5,24 @@ name: trap_obj_add_hp
 ---
 ---
 ---
-category: 
+category: object
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1,2) (pushFromFSp: 0,4,8) (syscall: 1, 228 ; trap_sheet_hp (2 in, 1 out),1, 229 ; trap_sheet_max_hp (2 in, 1 out)) (sub: ) (pushFromFSpVal: 116) (pushFromPSp: 16)
-push unk2 ; (unknown)  (syscall: 1, 229 ; trap_sheet_max_hp (2 in, 1 out)) (sub: ) (neg: ) (mul: ) (pushFromFSp: 8) (pushImm: 1,3,5)
-push unk3 ; (unknown)  (pushImm: 0,1,2)
-push unk4 ; (unknown)  (pushImm: 0)
+push obj_sheet ; (YS::OBJ_103)  (Object to add HP to)
+push amount ; (int)  (Amount of HP to add)
+push unk ; (int)  (Value used in game scripts is 0, 1, or 2)
+push unk1 ; (int)  (Value used in game scripts is always 0)
 syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
-pop unk ; (unknown) 
+pop new_hp ; (int) 
 ---
 ---
 ---
-description: 
+description: Adds an amount of HP to an object
 ---
 ---
 ---

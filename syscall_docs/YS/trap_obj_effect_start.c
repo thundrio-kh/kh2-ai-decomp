@@ -5,24 +5,24 @@ name: trap_obj_effect_start
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 0,64) (pushFromFSp: 0,4) (pushImm: 1,4) (pushFromPSp: 16,24,8)
-push unk2 ; (unknown)  (pushImm: 0,1,10,101,104,105,106,11,12,13,138,14,15,16,17,18,19,2,20,21,22,23,24,25,26,27,3,31,32,33,36,37,38,39,4,41,42,43,44,47,48,49,5,51,52,57,6,61,62,63,7,73,78,8,82,87,9) (sub: ) (pushFromFSp: 4,52,8) (syscall: 0, 16 ; trap_random_get (1 in, 1 out),1, 39 ; trap_obj_unit_arg (2 in, 1 out)) (pushFromFSpVal: 108,112,120,124)
-push unk3 ; (unknown)  (pushImm: 0,1)
-push unk4 ; (unknown)  (pushImm: 0)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of effect)
+push flag ; (bool)  (value to set flag)
+push priority ; (int)  (Priority value for effect)
 syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_310) 
 ---
 ---
 ---
-description: 
+description: Starts an effect associated with an object
 ---
 ---
 ---

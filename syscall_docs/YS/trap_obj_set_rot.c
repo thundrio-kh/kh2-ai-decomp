@@ -9,17 +9,17 @@ category: position
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,4) (divf: ) (pushFromPSpVal: 64)
-push unk2 ; (unknown)  (addf: ) (pushFromFWp: W4464) (pushFromFSp: 20) (pushImmf: -2.094395,0,2.443461,3.141593,3.403392) (fetchValue: 112,128) (pushFromFSpVal: 128)
+push obj ; (YS::OBJ_125) (An object)
+push rot ; (float)  (Rotation value)
 syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Set the rotation value of an object.
 ---
 ---
 ---

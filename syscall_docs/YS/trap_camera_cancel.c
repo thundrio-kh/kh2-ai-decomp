@@ -5,20 +5,20 @@ name: trap_camera_cancel
 ---
 ---
 ---
-category: 
+category: camera
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushImm: 0,1)
+push should_interpolate ; (bool)  (Flag for if the screen should be interpolated as the camera is canceled)
 syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Cancel the currecnt camera event
 ---
 ---
 ---

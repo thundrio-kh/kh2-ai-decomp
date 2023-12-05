@@ -9,17 +9,17 @@ category: math
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSp: 16,32)
+push dir ; (kn::FVector *)  (A direction vector)
 syscall 0, 102 ; trap_vector_to_angle (1 in, 1 out)
-pop unk ; (unknown) 
+pop angle ; (float) 
 ---
 ---
 ---
-description: 
+description: Converts the passed in vector to an angle
 ---
 ---
 ---

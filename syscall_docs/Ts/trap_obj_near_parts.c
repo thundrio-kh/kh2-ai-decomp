@@ -5,22 +5,22 @@ name: trap_obj_near_parts
 ---
 ---
 ---
-category:
+category: parts
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (memcpyToSp: 16, 32,16, 80)
-push unk2 ; (unknown)  (pushFromPSp: 32,80)
+push obj1 ; (YS::OBJ_125) (An object)
+push obj2 ; (YS::OBJ_125) (An object)
 syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)
-pop unk ; (unknown) 
+pop parts_colliding ; (YS::COLLISION_ELEM_0 *) 
 ---
 ---
 ---
-description: 
+description: Finds the parts of obj1 that are colliding with obj2?
 ---
 ---
 ---

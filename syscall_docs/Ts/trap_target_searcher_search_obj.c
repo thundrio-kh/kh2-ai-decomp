@@ -5,22 +5,22 @@ name: trap_target_searcher_search_obj
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 147 ; trap_obj_pos (1 in, 1 out)) (pushFromFSpVal: 48)
-push unk2 ; (unknown)  (memcpyToSp: 16, 128,16, 16,16, 32,16, 48) (pushFromPSp: 16)
-push unk3 ; (unknown)  (pushFromPSp: 128,16,32,48)
+push target ; (YS::TARGET_108 *)  (A target object)
+push obj ; (YS::OBJ_125) (An object)
+push pos ; (kn::FVector *)  (A position vector)
 syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
 ---
 ---
 ---
-description: 
+description: Has a target searcher search for a specific object.
 ---
 ---
 ---

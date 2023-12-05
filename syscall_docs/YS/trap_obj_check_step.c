@@ -5,7 +5,7 @@ name: trap_obj_check_step
 ---
 ---
 ---
-category: 
+category: collision
 ---
 ---
 ---

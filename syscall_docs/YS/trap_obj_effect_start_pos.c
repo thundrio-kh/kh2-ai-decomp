@@ -5,25 +5,25 @@ name: trap_obj_effect_start_pos
 ---
 ---
 ---
-category: 
+category: effect
 ---
 ---
 ---
-documentation level: stub
+documentation level: complete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromFSp: 0,12,4,8) (pushFromPSpVal: 0,252) (syscall: 0, 4 ; trap_vector_add (2 in, 1 out),0, 53 ; trap_effect_pos (1 in, 1 out),1, 147 ; trap_obj_pos (1 in, 1 out),1, 88 ; trap_obj_target_pos (1 in, 1 out),1, 98 ; trap_obj_step_pos (1 in, 1 out),...) (pushFromPWp: W0,W32) (gosub: 12, L1034,12, L1895,12, L5983,16, L1578,16, L1588,...) (add: )
-push unk2 ; (unknown)  (pushImm: -1,0,1,10,12,13,14,144,15,16,17,18,19,2,20,21,22,23,24,3,32,33,34,35,38,39,4,41,42,43,45,5,50,6,7,72,76,77,8,81,83,88,9,90) (memcpyToSp: 16, 112,16, 144,16, 16,16, 32,16, 48,...) (pushFromFSp: 4,52) (fetchValue: 20) (add: )
-push unk3 ; (unknown)  (pushFromFSp: 0,4,8) (add: ) (pushFromPSp: 112,144,16,32,48,...) (pushFromPSpVal: 128,176,32,96) (pushFromPWp: W0)
-push unk4 ; (unknown)  (pushImm: 0,1)
-push unk5 ; (unknown)  (pushImm: 0)
+push obj ; (YS::OBJ_125) (An object)
+push id ; (int)  (ID of effect)
+push pos ; (kn::FVector *)  (A position vector)
+push flag ; (bool)  (value to set flag)
+push priority ; (int)  (Priority value for effect)
 syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
-pop unk ; (unknown) 
+pop effect ; (ryj::EFFECT_310) 
 ---
 ---
 ---
-description: 
+description: Starts an effect associated with an object at the specified position
 ---
 ---
 ---

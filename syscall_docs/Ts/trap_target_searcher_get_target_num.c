@@ -5,24 +5,25 @@ name: trap_target_searcher_get_target_num
 ---
 ---
 ---
-category: 
+category: target
 ---
 ---
 ---
-documentation level: stub
+documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown)  (syscall: 1, 201 ; trap_obj_dir (1 in, 1 out))
-push unk2 ; (unknown)  (memcpyToSp: 16, 32)
-push unk3 ; (unknown)  (pushFromPSp: 32)
-push unk4 ; (unknown)  (pushImm: 0)
+
+push searcher ; (Ts::TARGET_SEARCHER_0)  (A target searcher object)
+push pos ; (kn::FVector *)  (A position vector)
+push dir ; (kn::FVector *)  (A direction vector)
+push is_history ; (bool)  (Unknown purpose, only value used in game is 0)
 syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)
-pop unk ; (unknown) 
+pop target_num ; (int) 
 ---
 ---
 ---
-description: 
+description: Return the index number of a target within a position and a direction
 ---
 ---
 ---
