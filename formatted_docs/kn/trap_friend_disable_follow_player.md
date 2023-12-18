@@ -1,6 +1,6 @@
 ## trap_friend_disable_follow_player* (friend)
 
-syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)
+`syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)`
 
 Stop the friend from following the player
 
@@ -22,6 +22,7 @@ Stop the friend from following the player
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+```
 L5725:
  popToSp 0
  pushImm 0
@@ -40,5 +41,6 @@ L5725:
  pushFromPSp 4
  syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)
  jmp L5762
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_mission_warning_gauge* (mission_gauge)
 
-syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)
+`syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)`
 
 sets a warning flag for the specified gauge
 
@@ -22,11 +22,13 @@ sets a warning flag for the specified gauge
 
 <details>
 	<summary>Example Usage From obj\N_CM040_BTL\n_cm.bdscript</summary>
+```
 L20248:
  pushFromPAi L24325 ; ___ai 'change_gauge' (L24325)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushImm 1
  pushImm 0
  syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)
+```
 </details>
 

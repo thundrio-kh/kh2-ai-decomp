@@ -1,6 +1,6 @@
 ## trap_obj_motion_check_range* (mset)
 
-syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
+`syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)`
 
 returns the range trigger count (Happens during X frames) of a motion entry
 
@@ -153,6 +153,7 @@ returns the range trigger count (Happens during X frames) of a motion entry
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6675:
  jz L6688
  pushFromPSpVal 20
@@ -160,5 +161,6 @@ L6675:
  syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
  popToSp 4
  jmp L6688
+```
 </details>
 

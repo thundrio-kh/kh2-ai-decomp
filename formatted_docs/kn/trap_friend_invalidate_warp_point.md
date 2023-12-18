@@ -1,6 +1,6 @@
 ## trap_friend_invalidate_warp_point* (friend)
 
-syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)
+`syscall 10, 56 ; trap_friend_invalidate_warp_point (2 in, 0 out)`
 
 Invalidates a warp point within range of the friend
 
@@ -28,6 +28,7 @@ Invalidates a warp point within range of the friend
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L17950:
  pushFromPSp 80
  pushImmf 100
@@ -63,5 +64,6 @@ L17950:
  pushImm 0
  gosub 28, L13940
  jmp L18038
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_skateboard_edge_jump* (special)
 
-syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)
+`syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)`
 
 Have the skateboard perform an edge jump
 
@@ -34,6 +34,7 @@ Have the skateboard perform an edge jump
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L970:
  popToSp 4
  popToSp 0
@@ -63,5 +64,6 @@ L970:
  pushImm 255
  syscall 6, 41 ; trap_skateboard_edge_jump (3 in, 0 out)
  ret
+```
 </details>
 

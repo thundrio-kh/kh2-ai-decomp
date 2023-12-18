@@ -1,6 +1,6 @@
 ## trap_vector_to_angle* (math)
 
-syscall 0, 102 ; trap_vector_to_angle (1 in, 1 out)
+`syscall 0, 102 ; trap_vector_to_angle (1 in, 1 out)`
 
 Converts the passed in vector to an angle
 
@@ -27,6 +27,7 @@ Converts the passed in vector to an angle
 
 <details>
 	<summary>Example Usage From obj\EH_G_EX120\g_ex.bdscript</summary>
+```
 L2751:
  popToSp 0
  pushFromPSpVal 128
@@ -58,5 +59,6 @@ L2751:
  pushFromPSp 16
  syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
  ret
+```
 </details>
 

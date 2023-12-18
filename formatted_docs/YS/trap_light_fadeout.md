@@ -1,6 +1,6 @@
 ## trap_light_fadeout* (light)
 
-syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
+`syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)`
 
 fades light out
 
@@ -60,6 +60,7 @@ fades light out
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L2462:
  popToSp 4
  popToSp 0
@@ -74,5 +75,6 @@ L2462:
  pushImm 0
  popToSpVal 100
  jmp L2488
+```
 </details>
 

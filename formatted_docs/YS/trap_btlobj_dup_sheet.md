@@ -1,6 +1,6 @@
 ## trap_btlobj_dup_sheet* (btlobj)
 
-syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)
+`syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)`
 
 Duplicates a battle object
 
@@ -22,6 +22,7 @@ Duplicates a battle object
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+```
 L3817:
  popToSp 4
  popToSp 0
@@ -1433,5 +1434,6 @@ L3817:
  pushImm 1
  memcpy 0
  jmp L7694
+```
 </details>
 

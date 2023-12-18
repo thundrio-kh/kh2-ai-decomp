@@ -1,6 +1,6 @@
 ## trap_friend_update_target* (friend)
 
-syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)
+`syscall 7, 19 ; trap_friend_update_target (2 in, 1 out)`
 
 Updates the target of a friend
 
@@ -27,6 +27,7 @@ Updates the target of a friend
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L6099:
  popToSp 0
  pushFromFSp 0
@@ -48,5 +49,6 @@ L6099:
  syscall 6, 9 ; trap_target_dist (2 in, 1 out)
  popToSpVal 40
  jmp L6141
+```
 </details>
 

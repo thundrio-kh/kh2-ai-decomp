@@ -1,6 +1,6 @@
 ## trap_obj_motion_hook* (mset)
 
-syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
+`syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)`
 
 Hooks a motion set entry
 
@@ -43,6 +43,7 @@ Hooks a motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
+```
 L5073:
  pushFromFSp 0
  pushImm 161
@@ -53,5 +54,6 @@ L5073:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## func_obj_control_on* (object)
 
-syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
+`syscall 1, 43 ; func_obj_control_on (1 in, 0 out)`
 
 Turns on control of the object running this function.
 
@@ -33,6 +33,7 @@ Turns on control of the object running this function.
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L18089:
  pushFromFSp 0
  pushImm 51
@@ -73,5 +74,6 @@ L18089:
  eqz 
  jz L18179
  jmp L18179
+```
 </details>
 

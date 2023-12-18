@@ -1,6 +1,6 @@
 ## trap_event_get_rest_time* (event)
 
-syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
+`syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)`
 
 Gets the amount of time that the event should rest
 
@@ -37,6 +37,7 @@ def GetRestTime:
 
 <details>
 	<summary>Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript</summary>
+```
 L2592:
  syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
  pushFromFSp 4
@@ -45,5 +46,6 @@ L2592:
  jz L2603
  halt 
  jmp L2592
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_friend_get_player_attacker* (friend)
 
-syscall 10, 33 ; trap_friend_get_player_attacker (1 in, 1 out)
+`syscall 10, 33 ; trap_friend_get_player_attacker (1 in, 1 out)`
 
 Get a enemy attacking the player and if the argument is true also stop the enemy attacking the player
 
@@ -26,6 +26,7 @@ Get a enemy attacking the player and if the argument is true also stop the enemy
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L8205:
  popToSp 4
  popToSp 0
@@ -40,5 +41,6 @@ L8205:
  gosub 4, L7732
  popToSp 4
  jmp L8232
+```
 </details>
 

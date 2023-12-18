@@ -1,6 +1,6 @@
 ## trap_attack_set_reflect_callback (attack)
 
-syscall 2, 74 ; trap_attack_set_reflect_callback (3 in, 0 out)
+`syscall 2, 74 ; trap_attack_set_reflect_callback (3 in, 0 out)`
 
 Attaches a callback to be used when an attack is reflected
 
@@ -25,6 +25,7 @@ Attaches a callback to be used when an attack is reflected
 
 <details>
 	<summary>Example Usage From obj\B_EX430\b_ex.bdscript</summary>
+```
 L205:
  popToSp 4
  popToSp 0
@@ -64,5 +65,6 @@ L205:
  pushFromPSp 16
  syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
  ret
+```
 </details>
 

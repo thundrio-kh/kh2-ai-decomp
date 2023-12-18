@@ -1,6 +1,6 @@
 ## trap_friend_get* (friend)
 
-syscall 6, 14 ; trap_friend_get (1 in, 1 out)
+`syscall 6, 14 ; trap_friend_get (1 in, 1 out)`
 
 get a friend object for the friend in slot n
 
@@ -32,6 +32,7 @@ get a friend object for the friend in slot n
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+```
 L618:
  popToSp 0
  pushFromPSp 4
@@ -40,5 +41,6 @@ L618:
  gosub 8, L631
  pushFromPSp 4
  ret
+```
 </details>
 

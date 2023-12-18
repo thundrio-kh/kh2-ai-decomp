@@ -1,6 +1,6 @@
 ## trap_special_last_xemnus_laser_start* (special)
 
-syscall 8, 3 ; trap_special_last_xemnus_laser_start (1 in, 0 out)
+`syscall 8, 3 ; trap_special_last_xemnus_laser_start (1 in, 0 out)`
 
 Starts the Final Xemnas Dome Laser attack
 
@@ -23,6 +23,7 @@ Starts the Final Xemnas Dome Laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L14922:
  popToSp 0
  pushFromPSp 16
@@ -64,5 +65,6 @@ L14922:
  pushFromPAi L27807 ; ___ai 'stop' (L27807)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L15024
+```
 </details>
 

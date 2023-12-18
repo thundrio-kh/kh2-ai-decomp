@@ -1,6 +1,6 @@
 ## trap_obj_set_rot* (position)
 
-syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
+`syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)`
 
 Set the rotation value of an object.
 
@@ -164,6 +164,7 @@ Set the rotation value of an object.
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3322:
  popToSp 4
  popToSp 8
@@ -184,5 +185,6 @@ L3322:
  addf 
  syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
  ret
+```
 </details>
 

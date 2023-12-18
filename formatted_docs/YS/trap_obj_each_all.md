@@ -1,6 +1,6 @@
 ## trap_obj_each_all* (object)
 
-syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
+`syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)`
 
 returns each instance of an object to the top of the stack?
 
@@ -31,6 +31,7 @@ returns each instance of an object to the top of the stack?
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
+```
 L214:
  popToSp 0
  pushFromFSpVal 4
@@ -41,5 +42,6 @@ L214:
  sub 
  neqz 
  ret
+```
 </details>
 

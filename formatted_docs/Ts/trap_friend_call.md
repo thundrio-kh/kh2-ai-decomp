@@ -1,6 +1,6 @@
 ## trap_friend_call* (friend)
 
-syscall 7, 26 ; trap_friend_call (2 in, 1 out)
+`syscall 7, 26 ; trap_friend_call (2 in, 1 out)`
 
 make a call to a friend script
 
@@ -26,6 +26,7 @@ make a call to a friend script
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L69:
  pushFromFSp 0
  fetchValue 0
@@ -39,5 +40,6 @@ L69:
  syscall 7, 26 ; trap_friend_call (2 in, 1 out)
  drop 
  jmp L92
+```
 </details>
 

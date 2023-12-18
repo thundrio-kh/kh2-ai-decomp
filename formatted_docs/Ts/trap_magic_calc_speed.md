@@ -1,6 +1,6 @@
 ## trap_magic_calc_speed* (limit)
 
-syscall 7, 13 ; trap_magic_calc_speed (4 in, 1 out)
+`syscall 7, 13 ; trap_magic_calc_speed (4 in, 1 out)`
 
 Calculate the speed of magic
 
@@ -27,6 +27,7 @@ Calculate the speed of magic
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L592:
  pushImmf 0
  popToSp 184
@@ -81,5 +82,6 @@ L592:
  pushImmf 0
  gosub 52, L2458
  jmp L722
+```
 </details>
 

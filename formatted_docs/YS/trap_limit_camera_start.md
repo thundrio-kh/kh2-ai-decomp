@@ -1,6 +1,6 @@
 ## trap_limit_camera_start* (limit)
 
-syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
+`syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)`
 
 starts the specialized limit camera
 
@@ -32,6 +32,7 @@ starts the specialized limit camera
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3043:
  popToSp 0
  pushFromFSpVal 152
@@ -43,5 +44,6 @@ L3043:
  pushImm 1
  syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
  jmp L3079
+```
 </details>
 

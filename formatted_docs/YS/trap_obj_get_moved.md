@@ -1,6 +1,6 @@
 ## trap_obj_get_moved* (object)
 
-syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
+`syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)`
 
 Get a vector indicating the direction the object moved.
 
@@ -104,6 +104,7 @@ Get a vector indicating the direction the object moved.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -160,5 +161,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

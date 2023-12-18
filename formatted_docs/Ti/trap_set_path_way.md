@@ -1,6 +1,6 @@
 ## trap_set_path_way* (path)
 
-syscall 5, 1 ; trap_set_path_way (2 in, 0 out)
+`syscall 5, 1 ; trap_set_path_way (2 in, 0 out)`
 
 Set the way on a path that an object is going
 
@@ -19,6 +19,8 @@ Set the way on a path that an object is going
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

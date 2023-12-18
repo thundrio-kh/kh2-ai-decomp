@@ -1,6 +1,6 @@
 ## trap_effect_add_dead_block* (effect)
 
-syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
+`syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)`
 
 Start the "dead" effect
 
@@ -454,6 +454,7 @@ Start the "dead" effect
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L5649:
  pushFromFSp 0
  pushImm 2
@@ -487,5 +488,6 @@ L5649:
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  gosub 4, L4719
  ret
+```
 </details>
 

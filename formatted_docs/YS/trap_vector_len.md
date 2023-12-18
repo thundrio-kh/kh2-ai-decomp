@@ -1,6 +1,6 @@
 ## trap_vector_len* (math)
 
-syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+`syscall 0, 6 ; trap_vector_len (1 in, 1 out)`
 
 Returns the number of components in a vector
 
@@ -786,6 +786,7 @@ Returns the number of components in a vector
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -842,5 +843,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

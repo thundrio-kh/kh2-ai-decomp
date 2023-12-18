@@ -1,6 +1,6 @@
 ## method_blur_init* (visual)
 
-syscall 0, 28 ; method_blur_init (1 in, 0 out)
+`syscall 0, 28 ; method_blur_init (1 in, 0 out)`
 
 Initialize a blur object. Unused in the vanilla game
 
@@ -19,6 +19,8 @@ Initialize a blur object. Unused in the vanilla game
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

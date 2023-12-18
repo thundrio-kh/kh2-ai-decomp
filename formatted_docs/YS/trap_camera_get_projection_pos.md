@@ -1,6 +1,6 @@
 ## trap_camera_get_projection_pos* (camera)
 
-syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)
+`syscall 1, 316 ; trap_camera_get_projection_pos (1 in, 1 out)`
 
 Gets the projection pos of the camera
 
@@ -27,6 +27,7 @@ Gets the projection pos of the camera
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L22781:
  popToSp 0
  pushImm 0
@@ -49,5 +50,6 @@ L22781:
  subf 
  infoezf 
  eqzv
+```
 </details>
 

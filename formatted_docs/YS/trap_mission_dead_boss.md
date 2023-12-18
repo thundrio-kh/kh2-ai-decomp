@@ -1,6 +1,6 @@
 ## trap_mission_dead_boss* (mission)
 
-syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+`syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)`
 
 Marks the mission as complete because the boss is dead
 
@@ -306,9 +306,11 @@ Marks the mission as complete because the boss is dead
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
+```
 L113:
  pushFromFSpVal 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
  jmp L147
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_unit_enable* (spawn)
 
-syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
+`syscall 1, 203 ; trap_unit_enable (1 in, 0 out)`
 
 Enable a unit group so it can spawn
 
@@ -38,9 +38,11 @@ Enable a unit group so it can spawn
 
 <details>
 	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
+```
 L204:
  pushImm 417
  syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
  jmp L229
+```
 </details>
 

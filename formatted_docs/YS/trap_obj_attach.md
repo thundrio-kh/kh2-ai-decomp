@@ -1,6 +1,6 @@
 ## trap_obj_attach (bones)
 
-syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+`syscall 1, 18 ; trap_obj_attach (6 in, 0 out)`
 
 Attaches a bone between two objects
 
@@ -391,6 +391,7 @@ Attaches a bone between two objects
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2833:
  popToSp 0
  pushImm 0
@@ -441,5 +442,6 @@ L2833:
  pushImm L3043
  gosub 4, L5063
  ret
+```
 </details>
 

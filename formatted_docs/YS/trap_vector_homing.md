@@ -1,6 +1,6 @@
 ## trap_vector_homing* (math)
 
-syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
+`syscall 0, 46 ; trap_vector_homing (3 in, 0 out)`
 
 Performs a homing calculation between two objects.
 
@@ -170,11 +170,13 @@ Performs a homing calculation between two objects.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2209:
  pushFromPSpVal 16
  pushFromFSp 4
  pushFromFSp 0
  gosub 8, L2389
  syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
+```
 </details>
 

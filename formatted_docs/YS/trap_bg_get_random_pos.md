@@ -1,6 +1,6 @@
 ## trap_bg_get_random_pos* (position)
 
-syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
+`syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)`
 
 Gets a random open position
 
@@ -86,6 +86,7 @@ Gets a random open position
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L7019:
  pushFromPSp 16
  pushFromPSp 96
@@ -124,5 +125,6 @@ L7019:
  pushFromPSp 128
  memcpyToSp 16, 64
  jmp L7109
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_stputs* (debug)
 
-syscall 0, 26 ; trap_stputs (1 in, 0 out)
+`syscall 0, 26 ; trap_stputs (1 in, 0 out)`
 
 Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a string to the console that can be opened with F2
 
@@ -33,11 +33,13 @@ Normally does nothing in production game. When running the PC version of the gam
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L1205:
  pushFromFSpVal 16
  jz L1215
  pushFromPAi L28319 ; ___ai 'cap donald' (L28319)
  syscall 0, 26 ; trap_stputs (1 in, 0 out)
  jmp L1215
+```
 </details>
 

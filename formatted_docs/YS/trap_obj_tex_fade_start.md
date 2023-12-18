@@ -1,6 +1,6 @@
 ## trap_obj_tex_fade_start* (texture)
 
-syscall 1, 125 ; trap_obj_tex_fade_start (4 in, 0 out)
+`syscall 1, 125 ; trap_obj_tex_fade_start (4 in, 0 out)`
 
 Starts a texture fade
 
@@ -34,6 +34,7 @@ Starts a texture fade
 
 <details>
 	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
+```
 L3724:
  popToSp 0
  pushFromFSp 0
@@ -81,5 +82,6 @@ L3724:
  gosub 4, L2701
  gosub 4, L2779
  ret
+```
 </details>
 

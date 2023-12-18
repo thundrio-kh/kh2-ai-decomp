@@ -1,6 +1,6 @@
 ## trap_obj_look_start_pos* (object)
 
-syscall 1, 175 ; trap_obj_look_start_pos (3 in, 0 out)
+`syscall 1, 175 ; trap_obj_look_start_pos (3 in, 0 out)`
 
 Create a lookat object using a lookat as a base
 
@@ -19,6 +19,8 @@ Create a lookat object using a lookat as a base
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

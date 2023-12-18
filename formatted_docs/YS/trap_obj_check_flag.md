@@ -1,6 +1,6 @@
 ## trap_obj_check_flag* (object)
 
-syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)
+`syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)`
 
 Checks if an object flag is set. Unused normally
 
@@ -23,6 +23,8 @@ Checks if an object flag is set. Unused normally
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

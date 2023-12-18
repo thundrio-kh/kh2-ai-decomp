@@ -1,6 +1,6 @@
 ## trap_obj_set_unit_arg* (object)
 
-syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
+`syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)`
 
 Sets a unit argument for an object
 
@@ -72,6 +72,7 @@ Sets a unit argument for an object
 
 <details>
 	<summary>Example Usage From msn\HE00_MS104B\he00.bdscript</summary>
+```
 L725:
  pushFromFWp W12
  pushImm 0
@@ -128,5 +129,6 @@ L725:
  sub 
  popToWp W12
  jmp L725
+```
 </details>
 

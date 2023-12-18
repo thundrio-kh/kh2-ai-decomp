@@ -1,6 +1,6 @@
 ## trap_player_can_capture_form* (status)
 
-syscall 1, 355 ; trap_player_can_capture_form (0 in, 1 out)
+`syscall 1, 355 ; trap_player_can_capture_form (0 in, 1 out)`
 
 Returns whether the players form can be captured, which is determined by if the player has a summon going.
 
@@ -25,6 +25,7 @@ Returns whether the players form can be captured, which is determined by if the 
 
 <details>
 	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
+```
 L9331:
  popToSp 0
  pushFromFSp 0
@@ -62,5 +63,6 @@ L9331:
  pushFromFSp 4
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  jmp L9564
+```
 </details>
 

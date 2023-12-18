@@ -1,6 +1,6 @@
 ## trap_obj_wish_dir* (movement)
 
-syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
+`syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)`
 
 Sets the direction an object wishes to face
 
@@ -829,6 +829,7 @@ Sets the direction an object wishes to face
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1092:
  pushFromPSp 176
  gosub 52, L2499
@@ -861,5 +862,6 @@ L1092:
  pushFromPSp 16
  syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
  jmp L1211
+```
 </details>
 

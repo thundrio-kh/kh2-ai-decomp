@@ -1,6 +1,6 @@
 ## trap_obj_reset_stealth* (object)
 
-syscall 1, 195 ; trap_obj_reset_stealth (2 in, 0 out)
+`syscall 1, 195 ; trap_obj_reset_stealth (2 in, 0 out)`
 
 Resets the stealth value of an object back to default
 
@@ -25,6 +25,7 @@ Resets the stealth value of an object back to default
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L1144:
  pushFromFSp 4
  syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
@@ -102,5 +103,6 @@ L1144:
  pushImm 9
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  jmp L1315
+```
 </details>
 

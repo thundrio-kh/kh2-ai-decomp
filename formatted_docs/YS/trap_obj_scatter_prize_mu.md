@@ -1,6 +1,6 @@
 ## trap_obj_scatter_prize_mu* (prize)
 
-syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
+`syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)`
 
 Scatter Mulan orbs from an enemy
 
@@ -27,6 +27,7 @@ Scatter Mulan orbs from an enemy
 
 <details>
 	<summary>Example Usage From msn\MU01_MS102\mu01.bdscript</summary>
+```
 L118:
  jz L139
  pushFromFSp 8
@@ -38,5 +39,6 @@ L118:
  pushFromFSp 8
  syscall 1, 226 ; trap_obj_scatter_prize_mu (2 in, 0 out)
  jmp L139
+```
 </details>
 

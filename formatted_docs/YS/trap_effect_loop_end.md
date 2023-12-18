@@ -1,6 +1,6 @@
 ## trap_effect_loop_end* (effect)
 
-syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
+`syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)`
 
 Ends an effect loop
 
@@ -217,6 +217,7 @@ Ends an effect loop
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2691:
  dup 
  pushFromFSp 4
@@ -235,5 +236,6 @@ L2691:
  add 
  popToSp 4
  jmp L2691
+```
 </details>
 

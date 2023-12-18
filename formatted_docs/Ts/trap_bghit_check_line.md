@@ -1,6 +1,6 @@
 ## trap_bghit_check_line* (collision)
 
-syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+`syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)`
 
 Collision check along a line
 
@@ -91,6 +91,7 @@ Collision check along a line
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2954:
  popToSp 0
  pushFromPSpVal 4
@@ -128,5 +129,6 @@ L2954:
  pushFromPSp 96
  memcpyToSp 16, 48
  jmp L3040
+```
 </details>
 

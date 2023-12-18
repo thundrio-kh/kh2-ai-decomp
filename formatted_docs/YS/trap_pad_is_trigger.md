@@ -1,6 +1,6 @@
 ## *trap_pad_is_trigger* (input)
 
-syscall 0, 81 ; trap_pad_is_trigger (1 in, 1 out)
+`syscall 0, 81 ; trap_pad_is_trigger (1 in, 1 out)`
 
 Checks if a button is held down on the controller.
 
@@ -46,6 +46,7 @@ Checks if a button is held down on the controller.
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L1794:
  popToSp 0
  pushFromFSp 0
@@ -71,5 +72,6 @@ L1794:
  pushFromPSp 16
  gosub 12, L2013
  jmp L1854
+```
 </details>
 

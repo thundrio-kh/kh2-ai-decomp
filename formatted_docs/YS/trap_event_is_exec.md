@@ -1,6 +1,6 @@
 ## trap_event_is_exec* (event)
 
-syscall 4, 2 ; trap_event_is_exec (0 in, 1 out)
+`syscall 4, 2 ; trap_event_is_exec (0 in, 1 out)`
 
 Returns if an event is executing
 
@@ -601,10 +601,12 @@ Returns if an event is executing
 
 <details>
 	<summary>Example Usage From ard\es00\es_s.bdscript</summary>
+```
 L39:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
  jz L46
  halt 
  jmp L39
+```
 </details>
 

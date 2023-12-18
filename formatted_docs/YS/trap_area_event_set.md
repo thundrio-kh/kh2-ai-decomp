@@ -1,6 +1,6 @@
 ## trap_area_event_set* (mapinfo)
 
-syscall 1, 27 ; trap_area_event_set (0 in, 1 out)
+`syscall 1, 27 ; trap_area_event_set (0 in, 1 out)`
 
 Returns the number for the event program being executed
 
@@ -22,6 +22,8 @@ Returns the number for the event program being executed
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

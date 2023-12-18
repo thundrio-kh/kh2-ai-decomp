@@ -1,6 +1,6 @@
 ## trap_attack_hit_mark_pos* (attack)
 
-syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
+`syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)`
 
 Get the position of an attacks hit marker
 
@@ -32,6 +32,7 @@ Get the position of an attacks hit marker
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L45:
  pushFromFSp 0
  syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
@@ -40,5 +41,6 @@ L45:
  pushImm 97
  syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
  jmp L158
+```
 </details>
 

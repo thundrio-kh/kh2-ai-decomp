@@ -1,6 +1,6 @@
 ## *trap_attack_set_radius* (attack)
 
-syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+`syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)`
 
 Sets the radius and height for a [circular] attack
 
@@ -305,6 +305,7 @@ Sets the radius and height for a [circular] attack
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3275:
  popToSp 0
  pushFromPSpVal 32
@@ -349,5 +350,6 @@ L3275:
  gosub 4, L3406
  gosub 4, L3414
  jmp L3377
+```
 </details>
 

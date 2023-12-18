@@ -1,6 +1,6 @@
 ## trap_reverse_path_way* (path)
 
-syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
+`syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)`
 
 Reverse the way the object associated with this path is going
 
@@ -256,6 +256,7 @@ Reverse the way the object associated with this path is going
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2432:
  pushFromFSp 0
  syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
@@ -263,5 +264,6 @@ L2432:
  pushFromFSp 0
  syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
  jmp L2518
+```
 </details>
 

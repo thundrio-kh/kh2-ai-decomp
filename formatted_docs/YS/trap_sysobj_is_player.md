@@ -1,6 +1,6 @@
 ## trap_sysobj_is_player* (player)
 
-syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
+`syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)`
 
 Returns true if the object is the player
 
@@ -131,6 +131,7 @@ Returns true if the object is the player
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
+```
 TR6:
  popToSp 0
  popToSp 4
@@ -143,5 +144,6 @@ TR6:
  syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

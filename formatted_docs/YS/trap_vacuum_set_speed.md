@@ -1,6 +1,6 @@
 ## trap_vacuum_set_speed (vacuum)
 
-syscall 2, 81 ; trap_vacuum_set_speed (4 in, 0 out)
+`syscall 2, 81 ; trap_vacuum_set_speed (4 in, 0 out)`
 
 Set the speed of a vacuum
 
@@ -24,6 +24,7 @@ Set the speed of a vacuum
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
+```
 L5602:
  pushFromFWp W4264
  pushFromFSp 72
@@ -37,5 +38,6 @@ L5602:
  jz L5627
  syscall 1, 295 ; trap_camera_reset (0 in, 0 out)
  jmp L5627
+```
 </details>
 

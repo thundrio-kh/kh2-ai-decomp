@@ -1,6 +1,6 @@
 ## trap_obj_stop_start* (object)
 
-syscall 6, 50 ; trap_obj_stop_start (2 in, 0 out)
+`syscall 6, 50 ; trap_obj_stop_start (2 in, 0 out)`
 
 Either start the stop action or stop the start action
 
@@ -19,6 +19,8 @@ Either start the stop action or stop the start action
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

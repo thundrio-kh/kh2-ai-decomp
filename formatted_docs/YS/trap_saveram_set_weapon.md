@@ -1,6 +1,6 @@
 ## trap_saveram_set_weapon* (save)
 
-syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
+`syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)`
 
 
 
@@ -24,6 +24,7 @@ syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
 
 <details>
 	<summary>Example Usage From 00common</summary>
+```
 L193:
  pushImm 1
  pushImm 41
@@ -99,5 +100,6 @@ L193:
  pushImm 42
  syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
  ret
+```
 </details>
 

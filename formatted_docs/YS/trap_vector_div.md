@@ -1,6 +1,6 @@
 ## trap_vector_div* (math)
 
-syscall 0, 37 ; trap_vector_div (2 in, 1 out)
+`syscall 0, 37 ; trap_vector_div (2 in, 1 out)`
 
 Divides the values of two vectors
 
@@ -26,6 +26,7 @@ Divides the values of two vectors
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L7250:
  pushFromFSp 0
  gosub 48, L7443
@@ -66,5 +67,6 @@ L7250:
  subf 
  popToSpVal 12
  jmp L7348
+```
 </details>
 

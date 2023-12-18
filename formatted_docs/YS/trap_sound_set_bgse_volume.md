@@ -1,6 +1,6 @@
 ## *trap_sound_set_bgse_volume* (sound)
 
-syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
+`syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)`
 
 Turn background sound effects on or off
 
@@ -22,10 +22,12 @@ Turn background sound effects on or off
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L12020:
  popToSp 0
  pushImm 0
  syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)
  ret
+```
 </details>
 

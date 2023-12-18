@@ -1,6 +1,6 @@
 ## trap_attack_set_hitmark_pos* (attack)
 
-syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)
+`syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)`
 
 Sets a hitmark pos
 
@@ -23,6 +23,7 @@ Sets a hitmark pos
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
+```
 L11772:
  pushFromFSp 4
  jz L11891
@@ -74,5 +75,6 @@ L11772:
  pushFromFSp 64
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  jmp L11891
+```
 </details>
 

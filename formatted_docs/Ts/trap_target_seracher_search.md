@@ -1,6 +1,6 @@
 ## trap_target_seracher_search* (target)
 
-syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
+`syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)`
 
 Searches for a target based on a number of parameters
 
@@ -81,6 +81,7 @@ Searches for a target based on a number of parameters
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3839:
  pushFromFSp 20
  pushImm 20
@@ -120,5 +121,6 @@ L3839:
  pushFromFSp 16
  gosub 8, L3957
  jmp L3925
+```
 </details>
 

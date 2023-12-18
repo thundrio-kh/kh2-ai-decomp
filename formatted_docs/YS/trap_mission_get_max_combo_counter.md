@@ -1,6 +1,6 @@
 ## trap_mission_get_max_combo_counter* (mission_combocounter)
 
-syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)
+`syscall 4, 30 ; trap_mission_get_max_combo_counter (0 in, 1 out)`
 
 Get the max value the combo counter has gotten to
 
@@ -71,6 +71,7 @@ Get the max value the combo counter has gotten to
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+```
 L64:
  popToSp 4
  popToSp 0
@@ -82,5 +83,6 @@ L64:
  pushImm 0
  syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
  jmp L85
+```
 </details>
 

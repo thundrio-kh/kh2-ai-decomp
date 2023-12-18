@@ -1,6 +1,6 @@
 ## trap_get_path_dir_from_obj* (path)
 
-syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)
+`syscall 5, 9 ; trap_get_path_dir_from_obj (3 in, 1 out)`
 
 Get the direction for a path from an object
 
@@ -23,6 +23,8 @@ Get the direction for a path from an object
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

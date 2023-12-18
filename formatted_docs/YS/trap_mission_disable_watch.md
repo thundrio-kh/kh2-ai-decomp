@@ -1,6 +1,6 @@
 ## trap_mission_disable_watch* (mission_watch)
 
-syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
+`syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)`
 
 turns off the hud for a given watch
 
@@ -32,6 +32,7 @@ turns off the hud for a given watch
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+```
 L159:
  popToSp 4
  popToSp 8
@@ -58,5 +59,6 @@ L159:
  pushFromFSpVal 4
  syscall 4, 45 ; trap_mission_disable_watch (1 in, 0 out)
  jmp L219
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_is_motion_sync* (object)
 
-syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
+`syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)`
 
 Checks if the motion of an object is synced with the child object
 
@@ -35,6 +35,7 @@ Checks if the motion of an object is synced with the child object
 
 <details>
 	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
+```
 L4032:
  pushFromPSp 8
  pushFromPSp 28
@@ -44,5 +45,6 @@ L4032:
  pushFromPSp 28
  syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
  jmp L4048
+```
 </details>
 

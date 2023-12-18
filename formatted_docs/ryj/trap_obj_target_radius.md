@@ -1,6 +1,6 @@
 ## trap_obj_target_radius* (target)
 
-syscall 8, 0 ; trap_obj_target_radius (1 in, 1 out)
+`syscall 8, 0 ; trap_obj_target_radius (1 in, 1 out)`
 
 Get the radius of a target
 
@@ -28,6 +28,7 @@ Get the radius of a target
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L8788:
  pushFromPSpVal 5468
  gosub 12, L5578
@@ -72,5 +73,6 @@ L8788:
  pushFromPSpVal 5468
  gosub 12, L7805
  jmp L8881
+```
 </details>
 

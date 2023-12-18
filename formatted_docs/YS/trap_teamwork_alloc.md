@@ -1,6 +1,6 @@
 ## trap_teamwork_alloc* (system)
 
-syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
+`syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)`
 
 Allocates an amount of work memory
 
@@ -191,6 +191,7 @@ Allocates an amount of work memory
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L116:
  pushImm 3
  pushImm 12
@@ -211,5 +212,6 @@ L116:
  pushImmf 60
  memcpy 0
  jmp L155
+```
 </details>
 

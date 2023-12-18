@@ -1,6 +1,6 @@
 ## trap_get_path_dir* (path)
 
-syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
+`syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)`
 
 Get the direction of a path
 
@@ -262,6 +262,7 @@ Get the direction of a path
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2613:
  pushFromFSp 0
  pushFromFSpVal 68
@@ -294,5 +295,6 @@ L2613:
  subf 
  infzf 
  neqzv
+```
 </details>
 

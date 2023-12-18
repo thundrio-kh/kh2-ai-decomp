@@ -1,6 +1,6 @@
 ## trap_prize_vacuum_range_ca* (prize)
 
-syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)
+`syscall 1, 340 ; trap_prize_vacuum_range_ca (2 in, 0 out)`
 
 Vacuums all medals within a designated range of the object
 
@@ -22,6 +22,7 @@ Vacuums all medals within a designated range of the object
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L6370:
  pushFromFSp 0
  fetchValue 4
@@ -40,5 +41,6 @@ L6370:
  addf 
  popToSp 4
  jmp L6404
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_vector_rot* (math)
 
-syscall 0, 83 ; trap_vector_rot (3 in, 1 out)
+`syscall 0, 83 ; trap_vector_rot (3 in, 1 out)`
 
 Rotates a vector along an axis by a given angle
 
@@ -67,6 +67,7 @@ Rotates a vector along an axis by a given angle
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L4165:
  pushFromFSp 4
  pushFromFSp 72
@@ -131,5 +132,6 @@ L4165:
  pushFromPSp 64
  gosub 24, L6798
  jmp L4303
+```
 </details>
 

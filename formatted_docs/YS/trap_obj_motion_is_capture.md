@@ -1,6 +1,6 @@
 ## trap_obj_motion_is_capture* (mset)
 
-syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
+`syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)`
 
 Returns if the motion set is a capture
 
@@ -99,6 +99,7 @@ Returns if the motion set is a capture
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1176:
  pushFromPWp W72
  fetchValue 44
@@ -107,5 +108,6 @@ L1176:
  pushFromFSp 0
  syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
  eqzv
+```
 </details>
 

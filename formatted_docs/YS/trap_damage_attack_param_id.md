@@ -1,6 +1,6 @@
 ## trap_damage_attack_param_id* (attack)
 
-syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
+`syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)`
 
 returns the SubId of the attack, as defined in its Atkp entry found in 00battle.bin
 
@@ -117,6 +117,7 @@ returns the SubId of the attack, as defined in its Atkp entry found in 00battle.
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
+```
 L279:
  jz L316
  pushFromFSp 0
@@ -126,5 +127,6 @@ L279:
  sub 
  jz L294
  jmp L313
+```
 </details>
 

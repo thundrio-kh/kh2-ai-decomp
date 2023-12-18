@@ -1,6 +1,6 @@
 ## trap_obj_limit_riku_idle* (special)
 
-syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
+`syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)`
 
 Set the riku limit action to idle
 
@@ -22,6 +22,7 @@ Set the riku limit action to idle
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L7279:
  pushFromFSp 0
  gosub 4, L7785
@@ -40,5 +41,6 @@ L7279:
  pushFromPSpVal 4
  syscall 6, 44 ; trap_obj_limit_riku_idle (1 in, 0 out)
  ret
+```
 </details>
 

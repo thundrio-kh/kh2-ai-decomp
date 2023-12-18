@@ -1,6 +1,6 @@
 ## trap_obj_set_flag* (object)
 
-syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+`syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)`
 
 Sets a specific flag on an object to true
 
@@ -578,6 +578,7 @@ Sets a specific flag on an object to true
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L5471:
  popToSp 0
  pushFromPSp 16
@@ -605,5 +606,6 @@ L5471:
  pushFromPSp 4
  pushImmf 226
  gosub 12, L1832
+```
 </details>
 

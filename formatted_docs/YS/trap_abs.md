@@ -1,6 +1,6 @@
 ## trap_abs* (math)
 
-syscall 0, 22 ; trap_abs (1 in, 1 out)
+`syscall 0, 22 ; trap_abs (1 in, 1 out)`
 
 Takes a integer and returns the absolute value of that integer
 
@@ -26,6 +26,7 @@ Takes a integer and returns the absolute value of that integer
 
 <details>
 	<summary>Example Usage From obj\F_TR150\f_tr.bdscript</summary>
+```
 L2016:
  jz L2056
  pushFromFSpVal 136
@@ -48,5 +49,6 @@ L2016:
  msb 
  popToSp 4
  jmp L2056
+```
 </details>
 

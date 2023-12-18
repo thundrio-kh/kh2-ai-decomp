@@ -1,6 +1,6 @@
 ## trap_unit_get_enemy_num* (spawn)
 
-syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)
+`syscall 1, 320 ; trap_unit_get_enemy_num (0 in, 1 out)`
 
 Get the number of enemies currently spawned
 
@@ -31,6 +31,7 @@ Get the number of enemies currently spawned
 
 <details>
 	<summary>Example Usage From obj\F_MU080\f_mu.bdscript</summary>
+```
 L103:
  popToSp 0
  pushFromFSp 0
@@ -43,5 +44,6 @@ L103:
  pushFromFSp 0
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  jmp L124
+```
 </details>
 

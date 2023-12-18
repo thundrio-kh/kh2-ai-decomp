@@ -1,6 +1,6 @@
 ## trap_prize_appear_num* (prize)
 
-syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
+`syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)`
 
 Makes a number of prizes appear at a position
 
@@ -22,6 +22,7 @@ Makes a number of prizes appear at a position
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L1121:
  pushFromFSp 4
  syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
@@ -36,5 +37,6 @@ L1121:
  pushImm 5
  syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
  jmp L1150
+```
 </details>
 

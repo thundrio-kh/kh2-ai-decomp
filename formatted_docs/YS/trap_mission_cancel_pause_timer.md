@@ -1,6 +1,6 @@
 ## trap_mission_cancel_pause_timer* (mission_timer)
 
-syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
+`syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)`
 
 Pauses/stops the onscreen timer
 
@@ -21,6 +21,7 @@ Pauses/stops the onscreen timer
 
 <details>
 	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
+```
 L1183:
  syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
  pushImm 16
@@ -34,5 +35,6 @@ L1183:
  pushImmf 30
  syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
  jmp L1208
+```
 </details>
 

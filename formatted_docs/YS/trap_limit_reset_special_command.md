@@ -1,6 +1,6 @@
 ## trap_limit_reset_special_command* (limit)
 
-syscall 2, 89 ; trap_limit_reset_special_command (1 in, 0 out)
+`syscall 2, 89 ; trap_limit_reset_special_command (1 in, 0 out)`
 
 Related to trinity limit functionality, probably resets the custom command menu
 
@@ -24,6 +24,7 @@ Related to trinity limit functionality, probably resets the custom command menu
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L8991:
  pushFromFSp 0
  fetchValue 0
@@ -42,5 +43,6 @@ L8991:
  pushFromFSpVal 96
  syscall 1, 132 ; trap_target_free (1 in, 0 out)
  jmp L9025
+```
 </details>
 

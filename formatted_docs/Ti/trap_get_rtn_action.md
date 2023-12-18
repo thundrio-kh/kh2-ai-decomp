@@ -1,6 +1,6 @@
 ## trap_get_rtn_action* (field)
 
-syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)
+`syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)`
 
 Get the parameter for an RTN action
 
@@ -256,6 +256,7 @@ Get the parameter for an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2305:
  popToSp 0
  pushFromFSp 0
@@ -270,5 +271,6 @@ L2305:
  sub 
  jz L2332
  jmp L2340
+```
 </details>
 

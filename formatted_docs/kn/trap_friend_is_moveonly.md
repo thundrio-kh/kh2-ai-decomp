@@ -1,6 +1,6 @@
 ## trap_friend_is_moveonly* (friend)
 
-syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
+`syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)`
 
 Checks if the friend is moveonly
 
@@ -27,6 +27,7 @@ Checks if the friend is moveonly
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L9007:
  dup 
  jz L9016
@@ -34,5 +35,6 @@ L9007:
  syscall 10, 37 ; trap_friend_is_moveonly (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

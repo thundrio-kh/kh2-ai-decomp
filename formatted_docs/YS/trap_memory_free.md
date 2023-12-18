@@ -1,6 +1,6 @@
 ## trap_memory_free* (system)
 
-syscall 0, 48 ; trap_memory_free (1 in, 0 out)
+`syscall 0, 48 ; trap_memory_free (1 in, 0 out)`
 
 Frees an amount of memory
 
@@ -264,6 +264,7 @@ Frees an amount of memory
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3420:
  popToSp 0
  pushFromFSpVal 48
@@ -271,5 +272,6 @@ L3420:
  pushFromFSp 0
  syscall 0, 48 ; trap_memory_free (1 in, 0 out)
  ret
+```
 </details>
 

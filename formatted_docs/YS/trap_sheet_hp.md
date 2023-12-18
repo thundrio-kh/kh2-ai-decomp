@@ -1,6 +1,6 @@
 ## trap_sheet_hp* (sheet)
 
-syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+`syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)`
 
 Return the amount of HP an object has
 
@@ -122,6 +122,7 @@ Return the amount of HP an object has
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3693:
  drop 
  pushFromFSp 0
@@ -159,5 +160,6 @@ L3693:
  pushImm 10000
  memcpy 0
  jmp L3812
+```
 </details>
 

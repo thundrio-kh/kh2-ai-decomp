@@ -1,6 +1,6 @@
 ## trap_item_reduce* (player)
 
-syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
+`syscall 0, 97 ; trap_item_reduce (2 in, 0 out)`
 
 Removes/reduces an item from inventory.
 
@@ -31,10 +31,12 @@ Removes/reduces an item from inventory.
 
 <details>
 	<summary>Example Usage From ard\ca01\ca_d.bdscript</summary>
+```
 TR2:
  pushImm 372
  pushImm 100
  syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
  ret
+```
 </details>
 

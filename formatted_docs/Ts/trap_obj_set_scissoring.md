@@ -1,6 +1,6 @@
 ## trap_obj_set_scissoring* (visual)
 
-syscall 6, 65 ; trap_obj_set_scissoring (2 in, 0 out)
+`syscall 6, 65 ; trap_obj_set_scissoring (2 in, 0 out)`
 
 Set the scissoring flag for an object
 
@@ -23,6 +23,7 @@ Set the scissoring flag for an object
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L7475:
  popToSp 0
  pushFromFSp 0
@@ -62,5 +63,6 @@ L7475:
  pushFromPAi L27887 ; ___ai '71' (L27887)
  syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
  jmp L7558
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_bg_set_belt_conveyor (special)
 
-syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
+`syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)`
 
 Unknown. Used by conveyor belts in Oogie Boogie boss room
 
@@ -24,6 +24,7 @@ Unknown. Used by conveyor belts in Oogie Boogie boss room
 
 <details>
 	<summary>Example Usage From obj\F_HB110\f_hb.bdscript</summary>
+```
 L2054:
  popToSp 0
  pushFromPSp 16
@@ -42,5 +43,6 @@ L2054:
  pushFromPSp 16
  syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
  ret
+```
 </details>
 

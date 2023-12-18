@@ -64,7 +64,9 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += '*' if doc_level == 'untested' else ''
         page += ' ({})'.format(category)
         page += '\n\n'
+        page += "`"
         page += re.findall(r'(syscall.*)\b', arguments)[0] + ')'
+        page += "`"
         page += '\n\n'
         page += description
         page += '\n\n'
@@ -103,7 +105,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             appears_table = ''
         page += """\n\n<details>\n\t<summary>Appears in:</summary>\n{}\n</details>\n\n""".format(appears_table)
 
-        page += """<details>\n\t<summary>Example Usage From {}</summary>\n{}\n</details>\n\n""".format(example_usage_from, example_usage)
+        page += """<details>\n\t<summary>Example Usage From {}</summary>\n```\n{}\n```\n</details>\n\n""".format(example_usage_from, example_usage)
 
     
         with open(out_fn, 'w') as f:

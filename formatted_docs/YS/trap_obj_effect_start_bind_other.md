@@ -1,6 +1,6 @@
 ## trap_obj_effect_start_bind_other* (effect)
 
-syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+`syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)`
 
 Starts an effect associated with an object and binds it to another object
 
@@ -76,6 +76,7 @@ Starts an effect associated with an object and binds it to another object
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L15416:
  popToSp 0
  gosub 4, L1075
@@ -120,5 +121,6 @@ L15416:
  pushFromPWp W976
  gosub 4, L15517
  ret
+```
 </details>
 

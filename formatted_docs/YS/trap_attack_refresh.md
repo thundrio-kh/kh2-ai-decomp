@@ -1,6 +1,6 @@
 ## trap_attack_refresh* (attack)
 
-syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)
+`syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)`
 
 Refresh all the hits on the attack
 
@@ -19,6 +19,8 @@ Refresh all the hits on the attack
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

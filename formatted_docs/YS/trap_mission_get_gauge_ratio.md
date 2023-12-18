@@ -1,6 +1,6 @@
 ## trap_mission_get_gauge_ratio* (mission_gauge)
 
-syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
+`syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)`
 
 Returns the a value from 0.0 to 1.0 representing the current progress of the specified gauge
 
@@ -84,6 +84,7 @@ Returns the a value from 0.0 to 1.0 representing the current progress of the spe
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L163:
  popToSp 0
  popToSp 4
@@ -119,5 +120,6 @@ L163:
  pushImm 1
  popToSp 36
  jmp L228
+```
 </details>
 

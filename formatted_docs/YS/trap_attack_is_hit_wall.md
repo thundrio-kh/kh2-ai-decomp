@@ -1,6 +1,6 @@
 ## trap_attack_is_hit_wall* (attack)
 
-syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
+`syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)`
 
 Checks if an attack has hit the wall
 
@@ -44,11 +44,13 @@ Checks if an attack has hit the wall
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L1057:
  jz L1263
  pushFromFSp 180
  syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
  jz L1069
  jmp L1263
+```
 </details>
 

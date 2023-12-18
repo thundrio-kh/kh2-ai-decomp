@@ -1,6 +1,6 @@
 ## trap_obj_near_parts* (bones)
 
-syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)
+`syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)`
 
 Finds the parts of obj1 that are colliding with obj2?
 
@@ -28,6 +28,7 @@ Finds the parts of obj1 that are colliding with obj2?
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L1426:
  popToSp 0
  pushFromFSpVal 48
@@ -62,5 +63,6 @@ L1426:
  pushFromPSp 16
  syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
  eqzv
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_move_to_space* (movement)
 
-syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
+`syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)`
 
 Moves to a random space within the given radius
 
@@ -42,6 +42,7 @@ Moves to a random space within the given radius
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3079:
  pushFromPSpVal 4
  gosub 12, L3189
@@ -94,5 +95,6 @@ L3079:
  pushFromPSpVal 20
  gosub 12, L5024
  ret
+```
 </details>
 

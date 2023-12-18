@@ -1,6 +1,6 @@
 ## trap_obj_set_pos_trans* (position)
 
-syscall 1, 217 ; trap_obj_set_pos_trans (2 in, 0 out)
+`syscall 1, 217 ; trap_obj_set_pos_trans (2 in, 0 out)`
 
 Set the position for an object. This is identical to trap_obj_set_pos but it also performs this transform to the position
 
@@ -53,6 +53,7 @@ Set the position for an object. This is identical to trap_obj_set_pos but it als
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+```
 L1483:
  popToSp 0
  pushFromPSpVal 4
@@ -97,5 +98,6 @@ L1483:
  pushImm 0
  syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
  ret
+```
 </details>
 

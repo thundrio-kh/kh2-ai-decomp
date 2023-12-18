@@ -1,6 +1,6 @@
 ## trap_obj_party_attack* (attack)
 
-syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)
+`syscall 6, 67 ; trap_obj_party_attack (2 in, 0 out)`
 
 Activate a party attack
 
@@ -26,6 +26,7 @@ Activate a party attack
 
 <details>
 	<summary>Example Usage From obj\P_EX100_KH1F\limi.bdscript</summary>
+```
 L1683:
  popToSp 0
  pushFromFSp 0
@@ -59,5 +60,6 @@ L1683:
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  jmp L1756
+```
 </details>
 

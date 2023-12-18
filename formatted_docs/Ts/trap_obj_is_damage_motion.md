@@ -1,6 +1,6 @@
 ## trap_obj_is_damage_motion* (object)
 
-syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
+`syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)`
 
 Checks if an object is playing a damage animation
 
@@ -37,6 +37,7 @@ Checks if an object is playing a damage animation
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L2783:
  pushFromPSp 4
  syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
@@ -48,5 +49,6 @@ L2783:
  pushFromPSp 32
  syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
  jmp L2804
+```
 </details>
 

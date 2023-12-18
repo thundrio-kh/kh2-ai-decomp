@@ -1,6 +1,6 @@
 ## trap_mission_set_gauge* (mission_gauge)
 
-syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
+`syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)`
 
 sets a gauge to a specified value
 
@@ -43,6 +43,7 @@ sets a gauge to a specified value
 
 <details>
 	<summary>Example Usage From msn\DC00_MS101\dc_m.bdscript</summary>
+```
 L152:
  pushFromPSpVal 16
  fetchValue 4
@@ -60,5 +61,6 @@ L152:
  syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
  halt 
  jmp L152
+```
 </details>
 

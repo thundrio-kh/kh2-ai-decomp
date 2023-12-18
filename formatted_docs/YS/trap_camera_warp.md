@@ -1,6 +1,6 @@
 ## trap_camera_warp* (camera)
 
-syscall 1, 193 ; trap_camera_warp (0 in, 0 out)
+`syscall 1, 193 ; trap_camera_warp (0 in, 0 out)`
 
 Warps the camera (to another object?)
 
@@ -27,6 +27,7 @@ Warps the camera (to another object?)
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
+```
 L3109:
  pushFromFSp 0
  pushFromFSp 0
@@ -63,5 +64,6 @@ L3109:
  pushImmf 8
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  ret
+```
 </details>
 

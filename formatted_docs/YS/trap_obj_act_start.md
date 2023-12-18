@@ -1,6 +1,6 @@
 ## trap_obj_act_start* (action)
 
-syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+`syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)`
 
 starts an action
 
@@ -812,6 +812,7 @@ starts an action
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3114:
  popToSp 4
  popToSp 8
@@ -893,5 +894,6 @@ L3114:
  pushFromFSp 8
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  ret
+```
 </details>
 

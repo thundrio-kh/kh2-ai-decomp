@@ -1,6 +1,6 @@
 ## trap_bghit_get_cross_pos* (collision)
 
-syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
+`syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)`
 
 Get the interesection point of a collision
 
@@ -80,6 +80,7 @@ Get the interesection point of a collision
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2954:
  popToSp 0
  pushFromPSpVal 4
@@ -117,5 +118,6 @@ L2954:
  pushFromPSp 96
  memcpyToSp 16, 48
  jmp L3040
+```
 </details>
 

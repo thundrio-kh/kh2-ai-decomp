@@ -1,6 +1,6 @@
 ## trap_obj_can_look_pos* (unused)
 
-syscall 1, 173 ; trap_obj_can_look_pos (2 in, 1 out)
+`syscall 1, 173 ; trap_obj_can_look_pos (2 in, 1 out)`
 
 checks if an object can look? Unclear how this is different than trap_obj_can_look
 
@@ -23,6 +23,8 @@ checks if an object can look? Unclear how this is different than trap_obj_can_lo
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_limit_effect_start* (limit)
 
-syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+`syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)`
 
 Starts a limit effect
 
@@ -55,6 +55,7 @@ Starts a limit effect
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3079:
  pushFromPSpVal 4
  gosub 12, L3189
@@ -107,5 +108,6 @@ L3079:
  pushFromPSpVal 20
  gosub 12, L5024
  ret
+```
 </details>
 

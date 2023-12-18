@@ -1,6 +1,6 @@
 ## trap_limit_light* (limit)
 
-syscall 2, 55 ; trap_limit_light (1 in, 1 out)
+`syscall 2, 55 ; trap_limit_light (1 in, 1 out)`
 
 Creates a light object associated with the limit
 
@@ -48,6 +48,7 @@ Creates a light object associated with the limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6541:
  popToSp 4
  popToSp 8
@@ -68,5 +69,6 @@ L6541:
  pushFromFSp 4
  syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
  jmp L6597
+```
 </details>
 

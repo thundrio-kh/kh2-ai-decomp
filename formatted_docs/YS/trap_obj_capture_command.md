@@ -1,6 +1,6 @@
 ## trap_obj_capture_command* (command)
 
-syscall 1, 308 ; trap_obj_capture_command (2 in, 0 out)
+`syscall 1, 308 ; trap_obj_capture_command (2 in, 0 out)`
 
 Captures a command
 
@@ -19,6 +19,8 @@ Captures a command
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

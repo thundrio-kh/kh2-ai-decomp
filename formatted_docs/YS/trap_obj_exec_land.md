@@ -1,6 +1,6 @@
 ## trap_obj_exec_land* (object)
 
-syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
+`syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)`
 
 Tells the object to land
 
@@ -123,6 +123,7 @@ Tells the object to land
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L8976:
  popToSp 0
  pushFromFSp 0
@@ -130,5 +131,6 @@ L8976:
  pushFromFSp 0
  syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
  ret
+```
 </details>
 

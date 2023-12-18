@@ -1,6 +1,6 @@
 ## trap_friend_get_action_param* (friend)
 
-syscall 10, 35 ; trap_friend_get_action_param (2 in, 1 out)
+`syscall 10, 35 ; trap_friend_get_action_param (2 in, 1 out)`
 
 Get the parameter of a friends action
 
@@ -28,6 +28,7 @@ Get the parameter of a friends action
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L803:
  popToSp 4
  popToSp 0
@@ -275,5 +276,6 @@ L803:
  pushImm 9
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
  jmp L1459
+```
 </details>
 

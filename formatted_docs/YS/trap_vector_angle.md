@@ -1,6 +1,6 @@
 ## *trap_vector_angle* (math)
 
-syscall 0, 84 ; trap_vector_angle (2 in, 1 out)
+`syscall 0, 84 ; trap_vector_angle (2 in, 1 out)`
 
 Computes the angle between two vectors
 
@@ -34,6 +34,7 @@ Computes the angle between two vectors
 
 <details>
 	<summary>Example Usage From obj\F_EH060\f_eh.bdscript</summary>
+```
 L3755:
  popToSp 0
  syscall 1, 306 ; trap_camera_at (0 in, 1 out)
@@ -70,5 +71,6 @@ L3755:
  subf 
  infzf 
  ret
+```
 </details>
 

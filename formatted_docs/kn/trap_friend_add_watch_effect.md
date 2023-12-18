@@ -1,6 +1,6 @@
 ## trap_friend_add_watch_effect* (friend)
 
-syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
+`syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)`
 
 Have a friend watch an effect object
 
@@ -24,6 +24,7 @@ Have a friend watch an effect object
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L2856:
  pushFromPSpVal 0
  pushImmf 6
@@ -40,5 +41,6 @@ L2856:
  syscall 10, 53 ; trap_friend_add_watch_effect (2 in, 0 out)
  pushImmf 30
  popToSp 48
+```
 </details>
 

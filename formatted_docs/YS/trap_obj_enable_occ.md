@@ -1,6 +1,6 @@
 ## trap_obj_enable_occ* (culling)
 
-syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
+`syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)`
 
 enable occlusion culling for all bones in an culling object
 
@@ -24,6 +24,7 @@ enable occlusion culling for all bones in an culling object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+```
 TR14:
  pushFromPWp W576
  gosub 4, L4604
@@ -32,5 +33,6 @@ TR14:
  pushFromPWp W576
  syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
  ret
+```
 </details>
 

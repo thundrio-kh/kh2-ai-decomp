@@ -1,6 +1,6 @@
 ## *trap_status_close_pete_curtain* (special)
 
-syscall 1, 350 ; trap_status_close_pete_curtain (0 in, 0 out)
+`syscall 1, 350 ; trap_status_close_pete_curtain (0 in, 0 out)`
 
 Show the screen effect of the Pete curtain closing
 
@@ -21,6 +21,7 @@ Show the screen effect of the Pete curtain closing
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
+```
 L6309:
  pushFromFSp 4
  jz L6708
@@ -57,5 +58,6 @@ L6309:
  pushFromFSp 0
  fetchValue 36
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_vector_draw (debug)
 
-syscall 0, 90 ; trap_vector_draw (5 in, 0 out)
+`syscall 0, 90 ; trap_vector_draw (5 in, 0 out)`
 
 Draws a sphere around a vector.
 
@@ -19,6 +19,8 @@ Draws a sphere around a vector.
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

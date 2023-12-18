@@ -1,6 +1,6 @@
 ## trap_obj_is_history_mark* (object)
 
-syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
+`syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)`
 
 Returns if the history flag is set for the object
 
@@ -49,6 +49,7 @@ Returns if the history flag is set for the object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
+```
 L187:
  popToSp 0
  pushFromFSp 0
@@ -58,5 +59,6 @@ L187:
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  gosub 4, L204
  jmp L203
+```
 </details>
 

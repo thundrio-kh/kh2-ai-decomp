@@ -1,6 +1,6 @@
 ## trap_sysobj_is_exist* (object)
 
-syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+`syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)`
 
 Returns True if the object is still spawned
 
@@ -658,6 +658,7 @@ Returns True if the object is still spawned
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+```
 L134:
  pushFromPSp 32
  pushFromFSp 0
@@ -669,5 +670,6 @@ L134:
  pushFromPSp 32
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  jmp L154
+```
 </details>
 

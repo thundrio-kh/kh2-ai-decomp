@@ -1,6 +1,6 @@
 ## trap_obj_look_start* (object)
 
-syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
+`syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)`
 
 Create a lookat object using an object as a base
 
@@ -252,6 +252,7 @@ Create a lookat object using an object as a base
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1138:
  popToSp 0
  pushFromPAi L2833before_check' (L2833)
@@ -268,5 +269,6 @@ L1138:
  syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
  pushImmf 20
  popToSp 32
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_enemy_exec_damage_large* (enemy)
 
-syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
+`syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)`
 
 executes a large amount of damage
 
@@ -22,6 +22,7 @@ executes a large amount of damage
 
 <details>
 	<summary>Example Usage From obj\B_HE030\b_he.bdscript</summary>
+```
 L81:
  pushFromFWp W4212
  eqz 
@@ -61,5 +62,6 @@ L81:
  pushImmf 0
  syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
  exit
+```
 </details>
 

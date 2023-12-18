@@ -1,6 +1,6 @@
 ## *trap_assert* (unused)
 
-syscall 0, 60 ; trap_assert (1 in, 0 out)
+`syscall 0, 60 ; trap_assert (1 in, 0 out)`
 
 Checks if the passed assertion is true otherwise throws an error. However assertions are not thrown on the release version of the game, so this effectively does nothing.
 
@@ -111,6 +111,7 @@ Checks if the passed assertion is true otherwise throws an error. However assert
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L163:
  popToSp 0
  popToSp 4
@@ -146,5 +147,6 @@ L163:
  pushImm 1
  popToSp 36
  jmp L228
+```
 </details>
 

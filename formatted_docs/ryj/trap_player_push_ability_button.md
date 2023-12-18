@@ -1,6 +1,6 @@
 ## trap_player_push_ability_button* (input)
 
-syscall 8, 1 ; trap_player_push_ability_button (1 in, 1 out)
+`syscall 8, 1 ; trap_player_push_ability_button (1 in, 1 out)`
 
 Chcks if the player is pushing the reaction command button
 
@@ -23,6 +23,8 @@ Chcks if the player is pushing the reaction command button
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

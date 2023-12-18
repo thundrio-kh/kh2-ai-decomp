@@ -1,6 +1,6 @@
 ## trap_friend_enable_follow_player* (friend)
 
-syscall 10, 49 ; trap_friend_enable_follow_player (1 in, 0 out)
+`syscall 10, 49 ; trap_friend_enable_follow_player (1 in, 0 out)`
 
 Enable a friend to follow the player
 
@@ -19,6 +19,8 @@ Enable a friend to follow the player
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_is_tornado* (vacuum)
 
-syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)
+`syscall 10, 44 ; trap_obj_is_tornado (1 in, 1 out)`
 
 Returns if the object is a tornado object
 
@@ -26,6 +26,7 @@ Returns if the object is a tornado object
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L7335:
  jz L7542
  pushFromFSpVal 48
@@ -50,5 +51,6 @@ L7335:
  pushFromFSp 36
  syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
  jmp L7526
+```
 </details>
 

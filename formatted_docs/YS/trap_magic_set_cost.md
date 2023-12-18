@@ -1,6 +1,6 @@
 ## trap_magic_set_cost* (unused)
 
-syscall 2, 68 ; trap_magic_set_cost (2 in, 0 out)
+`syscall 2, 68 ; trap_magic_set_cost (2 in, 0 out)`
 
 sets the cost for this magic object
 
@@ -19,6 +19,8 @@ sets the cost for this magic object
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

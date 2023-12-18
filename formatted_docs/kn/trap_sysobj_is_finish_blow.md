@@ -1,6 +1,6 @@
 ## trap_sysobj_is_finish_blow* (object)
 
-syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)
+`syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)`
 
 Check if the object is in a finish blow state
 
@@ -26,6 +26,7 @@ Check if the object is in a finish blow state
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L6309:
  popToSp 4
  popToSp 0
@@ -42,5 +43,6 @@ L6309:
  fetchValue 4
  syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)
  eqzv
+```
 </details>
 

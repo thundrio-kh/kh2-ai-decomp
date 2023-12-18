@@ -1,6 +1,6 @@
 ## *trap_pad_is_button* (input)
 
-syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
+`syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)`
 
 Checks if a button is pressed on the controller.
 
@@ -41,6 +41,7 @@ Checks if a button is pressed on the controller.
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L2134:
  jz L2167
  pushImm 8
@@ -56,5 +57,6 @@ L2134:
  pushImm 1
  popToSpVal 236
  jmp L2165
+```
 </details>
 

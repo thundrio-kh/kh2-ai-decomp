@@ -1,6 +1,6 @@
 ## trap_trinity_shot_init* (special)
 
-syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)
+`syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)`
 
 Initialize a trinity limit shot
 
@@ -22,6 +22,7 @@ Initialize a trinity limit shot
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L9026:
  popToSp 4
  popToSp 0
@@ -53,5 +54,6 @@ L9026:
  popToSpVal 108
  syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)
  ret
+```
 </details>
 

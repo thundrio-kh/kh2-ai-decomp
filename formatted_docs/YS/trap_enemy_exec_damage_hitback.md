@@ -1,6 +1,6 @@
 ## trap_enemy_exec_damage_hitback* (enemy)
 
-syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
+`syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)`
 
 executes hitback damage against an enemy
 
@@ -47,6 +47,7 @@ executes hitback damage against an enemy
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L2116:
  pushFromFSp 0
  pushFromFSp 4
@@ -59,5 +60,6 @@ L2116:
  pushFromPAi L10676 ; ___ai 'move_back' (L10676)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  jmp L2167
+```
 </details>
 

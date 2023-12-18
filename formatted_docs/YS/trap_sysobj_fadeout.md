@@ -1,6 +1,6 @@
 ## trap_sysobj_fadeout* (visual)
 
-syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+`syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)`
 
 Perform a fade out effect
 
@@ -580,6 +580,7 @@ Perform a fade out effect
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L4073:
  pushFromPWp W72
  fetchValue 0
@@ -626,5 +627,6 @@ L4073:
  fetchValue 4
  pushImmf 20
  syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+```
 </details>
 

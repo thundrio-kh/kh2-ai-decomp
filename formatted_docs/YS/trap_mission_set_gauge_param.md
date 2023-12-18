@@ -1,6 +1,6 @@
 ## trap_mission_set_gauge_param* (mission_gauge)
 
-syscall 4, 19 ; trap_mission_set_gauge_param (4 in, 0 out)
+`syscall 4, 19 ; trap_mission_set_gauge_param (4 in, 0 out)`
 
 Set parameters for a gauge
 
@@ -19,6 +19,8 @@ Set parameters for a gauge
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_reset_path_current_pointer* (path)
 
-syscall 5, 18 ; trap_reset_path_current_pointer (1 in, 0 out)
+`syscall 5, 18 ; trap_reset_path_current_pointer (1 in, 0 out)`
 
 Reset the current pointer of the path
 
@@ -19,6 +19,8 @@ Reset the current pointer of the path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

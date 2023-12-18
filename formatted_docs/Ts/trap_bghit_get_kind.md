@@ -1,6 +1,6 @@
 ## trap_bghit_get_kind* (collision)
 
-syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
+`syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)`
 
 Get the kind of bghit
 
@@ -49,6 +49,7 @@ Get the kind of bghit
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L2524:
  popToSp 0
  pushFromFSp 0
@@ -61,5 +62,6 @@ L2524:
  sub 
  eqz 
  eqzv
+```
 </details>
 

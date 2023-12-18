@@ -1,6 +1,6 @@
 ## trap_target_clear_before_player* (target)
 
-syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)
+`syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)`
 
 Clear the target before the player
 
@@ -21,6 +21,7 @@ Clear the target before the player
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript</summary>
+```
 L5513:
  popToSp 0
  pushFromPAi L11211 ; ___ai 'target_player' (L11211)
@@ -48,5 +49,6 @@ L5513:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_blow (object)
 
-syscall 1, 129 ; trap_obj_blow (2 in, 0 out)
+`syscall 1, 129 ; trap_obj_blow (2 in, 0 out)`
 
 Performs a blow in the direction specified by the vector
 
@@ -52,6 +52,7 @@ Performs a blow in the direction specified by the vector
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L10262:
  pushImm 1
  popToWp W4512
@@ -96,5 +97,6 @@ L10262:
  pushFromPSp 16
  syscall 1, 129 ; trap_obj_blow (2 in, 0 out)
  ret
+```
 </details>
 

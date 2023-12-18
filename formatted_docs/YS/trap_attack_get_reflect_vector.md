@@ -1,6 +1,6 @@
 ## trap_attack_get_reflect_vector* (attack)
 
-syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
+`syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)`
 
 Returns the direction vector of the reflected attack
 
@@ -96,6 +96,7 @@ Returns the direction vector of the reflected attack
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L5227:
  pushFromFSpVal 68
  syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
@@ -108,5 +109,6 @@ L5227:
  popToSpVal 68
  pushFromPSp 16
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_is_unit_active* (object)
 
-syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)
+`syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)`
 
 Returns if the object's unit is active
 
@@ -33,6 +33,7 @@ Returns if the object's unit is active
 
 <details>
 	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
+```
 L143:
  pushFromFSp 0
  syscall 1, 239 ; trap_obj_is_unit_active (1 in, 1 out)
@@ -44,5 +45,6 @@ L143:
  sub 
  eqz 
  eqzv
+```
 </details>
 

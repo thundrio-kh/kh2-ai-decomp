@@ -1,6 +1,6 @@
 ## trap_enemy_is_no_control* (enemy)
 
-syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
+`syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)`
 
 is the enemy control on?
 
@@ -581,11 +581,13 @@ is the enemy control on?
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6860:
  pushFromFSp 0
  syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
  jz L6869
  halt 
  jmp L6860
+```
 </details>
 

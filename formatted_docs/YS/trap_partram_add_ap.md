@@ -1,6 +1,6 @@
 ## trap_partram_add_ap* (save)
 
-syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)
+`syscall 0, 96 ; trap_partram_add_ap (2 in, 0 out)`
 
 Gives AP to the player
 
@@ -26,6 +26,7 @@ Gives AP to the player
 
 <details>
 	<summary>Example Usage From ard\mu07\mu_g.bdscript</summary>
+```
 TR2:
  pushImm 6
  syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)
@@ -54,5 +55,6 @@ TR2:
  pushImm 0
  syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
  ret
+```
 </details>
 

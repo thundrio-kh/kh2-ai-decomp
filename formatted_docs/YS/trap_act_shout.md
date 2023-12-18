@@ -1,6 +1,6 @@
 ## trap_act_shout* (unused)
 
-syscall 1, 241 ; trap_act_shout (2 in, 0 out)
+`syscall 1, 241 ; trap_act_shout (2 in, 0 out)`
 
 Adds the passed action into the ShoutBuff. Maybe this is a separate queue that has a higher priority, unknown since it is not used in the vanilla game.
 
@@ -19,6 +19,8 @@ Adds the passed action into the ShoutBuff. Maybe this is a separate queue that h
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

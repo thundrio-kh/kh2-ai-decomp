@@ -1,6 +1,6 @@
 ## trap_check_rtn_option_flag* (field)
 
-syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
+`syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)`
 
 Checks the option of an rtn flag
 
@@ -256,6 +256,7 @@ Checks the option of an rtn flag
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L179:
  pushFromFSp 0
  pushImm 5
@@ -272,5 +273,6 @@ L179:
  pushImmf 0
  syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
  jmp L215
+```
 </details>
 

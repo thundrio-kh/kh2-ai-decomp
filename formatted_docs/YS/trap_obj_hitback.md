@@ -1,6 +1,6 @@
 ## trap_obj_hitback* (object)
 
-syscall 1, 146 ; trap_obj_hitback (3 in, 0 out)
+`syscall 1, 146 ; trap_obj_hitback (3 in, 0 out)`
 
 Sets a hitback in a given direction
 
@@ -35,6 +35,7 @@ Sets a hitback in a given direction
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+```
 L60:
  pushFromPSpVal 0
  pushFromPSpVal 0
@@ -108,5 +109,6 @@ L60:
  popToSp 64
  pushImm 0
  popToSp 72
+```
 </details>
 

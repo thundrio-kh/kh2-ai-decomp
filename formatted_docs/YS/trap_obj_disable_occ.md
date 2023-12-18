@@ -1,6 +1,6 @@
 ## trap_obj_disable_occ* (culling)
 
-syscall 1, 255 ; trap_obj_disable_occ (1 in, 0 out)
+`syscall 1, 255 ; trap_obj_disable_occ (1 in, 0 out)`
 
 disable occlusion culling for all bones in an culling object
 
@@ -25,6 +25,7 @@ disable occlusion culling for all bones in an culling object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+```
 L5615:
  popToSp 4
  popToSp 0
@@ -814,5 +815,6 @@ L5615:
  pushImmf 0
  syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
  jmp L7758
+```
 </details>
 

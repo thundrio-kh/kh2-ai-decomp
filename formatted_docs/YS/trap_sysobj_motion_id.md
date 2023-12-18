@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_id* (mset)
 
-syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+`syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)`
 
 Gets the motion ID of a motion object
 
@@ -835,6 +835,7 @@ Gets the motion ID of a motion object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6642:
  popToSp 0
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
@@ -855,5 +856,6 @@ L6642:
  sub 
  eqz 
  neqzv
+```
 </details>
 

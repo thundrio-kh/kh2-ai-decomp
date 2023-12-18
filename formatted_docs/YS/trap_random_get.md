@@ -1,6 +1,6 @@
 ## *trap_random_get* (utility)
 
-syscall 0, 16 ; trap_random_get (1 in, 1 out)
+`syscall 0, 16 ; trap_random_get (1 in, 1 out)`
 
 Return a random integer between 0 and range
 
@@ -219,6 +219,7 @@ Return a random integer between 0 and range
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L1160:
  popToSp 0
  popToSp 4
@@ -236,5 +237,6 @@ L1160:
  pushFromFSp 0
  gosub 8, L1192
  ret
+```
 </details>
 

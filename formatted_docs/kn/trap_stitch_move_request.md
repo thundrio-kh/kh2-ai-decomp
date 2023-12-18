@@ -1,6 +1,6 @@
 ## trap_stitch_move_request* (special)
 
-syscall 10, 32 ; trap_stitch_move_request (2 in, 0 out)
+`syscall 10, 32 ; trap_stitch_move_request (2 in, 0 out)`
 
 Request stitch move (to the target)
 
@@ -22,6 +22,7 @@ Request stitch move (to the target)
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L3314:
  popToSp 0
  gosub 12, L1348
@@ -73,5 +74,6 @@ L3314:
  pushImm 0
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
  ret
+```
 </details>
 

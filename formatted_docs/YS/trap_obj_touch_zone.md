@@ -1,6 +1,6 @@
 ## trap_obj_touch_zone* (object)
 
-syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
+`syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)`
 
 Returns if the object is touching a Zone
 
@@ -403,6 +403,7 @@ Returns if the object is touching a Zone
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L4766:
  popToSp 0
  gosub 4, L664
@@ -414,5 +415,6 @@ L4766:
  sub 
  eqz 
  ret
+```
 </details>
 

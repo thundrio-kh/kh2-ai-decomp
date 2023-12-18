@@ -1,6 +1,6 @@
 ## trap_obj_attach_camera* (camera)
 
-syscall 6, 35 ; trap_obj_attach_camera (1 in, 0 out)
+`syscall 6, 35 ; trap_obj_attach_camera (1 in, 0 out)`
 
 attach the camera to an object
 
@@ -19,6 +19,8 @@ attach the camera to an object
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

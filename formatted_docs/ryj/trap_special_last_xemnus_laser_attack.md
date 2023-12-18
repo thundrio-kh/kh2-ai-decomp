@@ -1,6 +1,6 @@
 ## *trap_special_last_xemnus_laser_attack* (special)
 
-syscall 8, 4 ; trap_special_last_xemnus_laser_attack (0 in, 0 out)
+`syscall 8, 4 ; trap_special_last_xemnus_laser_attack (0 in, 0 out)`
 
 Involved in performing Final Xemnas Dome Laser attack
 
@@ -22,6 +22,7 @@ Involved in performing Final Xemnas Dome Laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L16062:
  popToSp 0
  gosub 4, L10254
@@ -37,5 +38,6 @@ L16062:
  pushFromPSpVal 160
  syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
  jmp L16091
+```
 </details>
 

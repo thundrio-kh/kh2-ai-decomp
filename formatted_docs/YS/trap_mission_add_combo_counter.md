@@ -1,6 +1,6 @@
 ## trap_mission_add_combo_counter* (mission_combocounter)
 
-syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
+`syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)`
 
 Adds a value to the combo counter
 
@@ -67,6 +67,7 @@ Adds a value to the combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+```
 L33:
  pushFromFSp 0
  pushImmf 0
@@ -75,5 +76,6 @@ L33:
  pushImm 3
  gosub 4, L64
  jmp L62
+```
 </details>
 

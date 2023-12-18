@@ -1,6 +1,6 @@
 ## trap_sheet_set_element_rate* (sheet)
 
-syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
+`syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)`
 
 Set resistances for an object
 
@@ -110,6 +110,7 @@ Set resistances for an object
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L4269:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
@@ -132,5 +133,6 @@ L4269:
  syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
  drop 
  ret
+```
 </details>
 

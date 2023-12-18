@@ -1,6 +1,6 @@
 ## trap_vacuum_set_near_range* (vacuum)
 
-syscall 2, 83 ; trap_vacuum_set_near_range (2 in, 0 out)
+`syscall 2, 83 ; trap_vacuum_set_near_range (2 in, 0 out)`
 
 Set the near range value for a vacuum
 
@@ -32,6 +32,7 @@ Set the near range value for a vacuum
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L15007:
  popToSp 0
  pushFromFSpVal 68
@@ -61,5 +62,6 @@ L15007:
  pushImmf 2000
  syscall 7, 32 ; trap_vacuum_set_effective_range (2 in, 0 out)
  jmp L15068
+```
 </details>
 

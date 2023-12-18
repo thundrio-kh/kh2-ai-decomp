@@ -1,6 +1,6 @@
 ## trap_vector_outer_product* (math)
 
-syscall 0, 82 ; trap_vector_outer_product (2 in, 1 out)
+`syscall 0, 82 ; trap_vector_outer_product (2 in, 1 out)`
 
 Calulates the outer product of two vectors
 
@@ -54,6 +54,7 @@ Calulates the outer product of two vectors
 
 <details>
 	<summary>Example Usage From obj\B_CA000\b_ca.bdscript</summary>
+```
 L2000:
  popToSp 0
  pushImmf 30
@@ -112,5 +113,6 @@ L2000:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  jmp L2138
+```
 </details>
 

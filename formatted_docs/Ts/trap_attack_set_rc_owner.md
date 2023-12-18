@@ -1,6 +1,6 @@
 ## trap_attack_set_rc_owner* (attack)
 
-syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
+`syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)`
 
 Set the owner of an RC
 
@@ -24,6 +24,7 @@ Set the owner of an RC
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L5260:
  jz L5404
  pushFromPSpVal 32
@@ -87,5 +88,6 @@ L5260:
  pushFromPSpVal 0
  syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
  jmp L5397
+```
 </details>
 

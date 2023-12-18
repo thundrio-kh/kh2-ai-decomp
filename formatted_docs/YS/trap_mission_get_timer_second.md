@@ -1,6 +1,6 @@
 ## trap_mission_get_timer_second* (mission_timer)
 
-syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
+`syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)`
 
 returns the number of seconds remaining on the specified timer
 
@@ -65,6 +65,7 @@ returns the number of seconds remaining on the specified timer
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
+```
 L363:
  pushFromFWp W8
  pushImm 5
@@ -85,5 +86,6 @@ L363:
  sub 
  info 
  eqzv
+```
 </details>
 

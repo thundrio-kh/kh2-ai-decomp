@@ -1,6 +1,6 @@
 ## trap_obj_sheet* (object)
 
-syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+`syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)`
 
 returns the objects stat sheet
 
@@ -258,6 +258,7 @@ returns the objects stat sheet
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L163:
  popToSp 0
  popToSp 4
@@ -293,5 +294,6 @@ L163:
  pushImm 1
  popToSp 36
  jmp L228
+```
 </details>
 

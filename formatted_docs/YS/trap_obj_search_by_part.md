@@ -1,6 +1,6 @@
 ## trap_obj_search_by_part* (object)
 
-syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
+`syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)`
 
 Return an object with a specific part number
 
@@ -61,6 +61,7 @@ Return an object with a specific part number
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L9026:
  popToSp 4
  popToSp 0
@@ -92,5 +93,6 @@ L9026:
  popToSpVal 108
  syscall 7, 28 ; trap_trinity_shot_init (0 in, 0 out)
  ret
+```
 </details>
 

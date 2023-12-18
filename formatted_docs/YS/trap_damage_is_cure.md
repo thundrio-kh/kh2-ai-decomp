@@ -1,6 +1,6 @@
 ## trap_damage_is_cure* (attack)
 
-syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
+`syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)`
 
 Returns if the type of damage is healing (if the value is 5 or 6)
 
@@ -38,6 +38,7 @@ Returns if the type of damage is healing (if the value is 5 or 6)
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
+```
 TR6:
  popToSp 0
  popToSp 4
@@ -57,5 +58,6 @@ TR6:
  pushImm 0
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L86
+```
 </details>
 

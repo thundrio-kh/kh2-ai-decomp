@@ -1,6 +1,6 @@
 ## trap_frametime* (system)
 
-syscall 0, 3 ; trap_frametime (0 in, 1 out)
+`syscall 0, 3 ; trap_frametime (0 in, 1 out)`
 
 Returns the time (since the VM started?) as a number of frames.
 
@@ -1036,6 +1036,7 @@ Returns the time (since the VM started?) as a number of frames.
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L158:
  pushFromFSp 0
  pushImmf 0
@@ -1048,5 +1049,6 @@ L158:
  popToSp 0
  halt 
  jmp L158
+```
 </details>
 

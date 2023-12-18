@@ -1,6 +1,6 @@
 ## trap_worldflag_check* (save)
 
-syscall 0, 20 ; trap_worldflag_check (1 in, 1 out)
+`syscall 0, 20 ; trap_worldflag_check (1 in, 1 out)`
 
 Check the status of a worldflag
 
@@ -23,6 +23,8 @@ Check the status of a worldflag
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

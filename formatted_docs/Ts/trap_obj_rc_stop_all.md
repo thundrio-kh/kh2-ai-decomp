@@ -1,6 +1,6 @@
 ## trap_obj_rc_stop_all* (object)
 
-syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)
+`syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)`
 
 Stop the object from doing anything else due to an RC
 
@@ -26,6 +26,7 @@ Stop the object from doing anything else due to an RC
 
 <details>
 	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
+```
 L9190:
  popToSp 4
  popToSp 0
@@ -77,5 +78,6 @@ L9190:
  pushImm 8
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  ret
+```
 </details>
 

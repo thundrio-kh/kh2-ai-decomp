@@ -1,6 +1,6 @@
 ## trap_obj_part* (bones)
 
-syscall 1, 213 ; trap_obj_part (1 in, 1 out)
+`syscall 1, 213 ; trap_obj_part (1 in, 1 out)`
 
 Returns the number of parts of an object
 
@@ -55,6 +55,7 @@ Returns the number of parts of an object
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
+```
 L58:
  pushFromFSp 4
  syscall 1, 213 ; trap_obj_part (1 in, 1 out)
@@ -70,5 +71,6 @@ L58:
  pushImm 1
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L86
+```
 </details>
 

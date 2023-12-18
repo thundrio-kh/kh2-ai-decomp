@@ -1,6 +1,6 @@
 ## trap_obj_is_motion_cancel* (object)
 
-syscall 1, 192 ; trap_obj_is_motion_cancel (1 in, 1 out)
+`syscall 1, 192 ; trap_obj_is_motion_cancel (1 in, 1 out)`
 
 Returns if the object is cancelling a motion
 
@@ -30,6 +30,7 @@ Returns if the object is cancelling a motion
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L1937:
  popToSp 0
  pushImm 0
@@ -43,5 +44,6 @@ L1937:
  pushImm 1
  popToSp 4
  jmp L2000
+```
 </details>
 

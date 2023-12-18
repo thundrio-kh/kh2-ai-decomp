@@ -1,6 +1,6 @@
 ## trap_obj_camera_start_global* (camera)
 
-syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
+`syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)`
 
 Starts running a label to change the camera to a global target, usually for a special big attack
 
@@ -34,6 +34,7 @@ Starts running a label to change the camera to a global target, usually for a sp
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
+```
 L140:
  popToSp 4
  popToSp 0
@@ -74,5 +75,6 @@ L140:
  syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
  drop 
  ret
+```
 </details>
 

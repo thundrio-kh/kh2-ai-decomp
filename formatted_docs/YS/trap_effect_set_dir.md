@@ -1,6 +1,6 @@
 ## trap_effect_set_dir* (effect)
 
-syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
+`syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)`
 
 Sets the effects direction to be pointing to dir
 
@@ -171,6 +171,7 @@ Sets the effects direction to be pointing to dir
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1717:
  pushImm 0
  popToSp 160
@@ -246,5 +247,6 @@ L1717:
  memcpyToSp 16, 176
  pushFromPSp 176
  memcpy 16
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_enemy_summon_entry* (object)
 
-syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)
+`syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)`
 
 Summon a new instance of an object
 
@@ -26,6 +26,7 @@ Summon a new instance of an object
 
 <details>
 	<summary>Example Usage From obj\M_EX740\m_ex.bdscript</summary>
+```
 L1922:
  popToSp 0
  pushFromFSp 0
@@ -69,5 +70,6 @@ L1922:
  pushFromPSp 16
  syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
  jmp L2010
+```
 </details>
 

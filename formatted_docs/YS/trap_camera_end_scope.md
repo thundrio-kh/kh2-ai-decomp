@@ -1,6 +1,6 @@
 ## *trap_camera_end_scope* (camera)
 
-syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)
+`syscall 1, 283 ; trap_camera_end_scope (0 in, 0 out)`
 
 Returns the camera to the normal mode from scope mode.
 
@@ -22,6 +22,7 @@ Returns the camera to the normal mode from scope mode.
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L10848:
  popToSp 0
  pushImm 5
@@ -34,5 +35,6 @@ L10848:
  pushImm 1
  syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
  ret
+```
 </details>
 

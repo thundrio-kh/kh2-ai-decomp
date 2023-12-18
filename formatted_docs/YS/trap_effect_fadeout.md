@@ -1,6 +1,6 @@
 ## trap_effect_fadeout* (effect)
 
-syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
+`syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)`
 
 Fades out an effect
 
@@ -168,6 +168,7 @@ Fades out an effect
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4451:
  popToSp 4
  popToSp 0
@@ -181,5 +182,6 @@ L4451:
  pushImm 0
  syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
  jmp L4479
+```
 </details>
 

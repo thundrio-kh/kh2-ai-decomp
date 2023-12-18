@@ -1,6 +1,6 @@
 ## trap_sheet_level* (sheet)
 
-syscall 1, 361 ; trap_sheet_level (1 in, 1 out)
+`syscall 1, 361 ; trap_sheet_level (1 in, 1 out)`
 
 Return the level of an object
 
@@ -26,6 +26,7 @@ Return the level of an object
 
 <details>
 	<summary>Example Usage From obj\N_CM000_BTL\n_cm.bdscript</summary>
+```
 L16905:
  popToSp 0
  gosub 4, L398
@@ -122,5 +123,6 @@ L16905:
  gosub 4, L791
  pushFromFSp 0
  gosub 4, L7141
+```
 </details>
 

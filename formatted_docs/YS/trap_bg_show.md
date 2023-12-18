@@ -1,6 +1,6 @@
 ## trap_bg_show* (map)
 
-syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+`syscall 1, 37 ; trap_bg_show (1 in, 0 out)`
 
 Shows a group for the map.
 
@@ -83,6 +83,7 @@ Shows a group for the map.
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+```
 L100:
  popToSp 0
  popToSp 4
@@ -95,5 +96,6 @@ L100:
  pushFromFSp 8
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
  jmp L122
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_stop* (object)
 
-syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
+`syscall 6, 6 ; trap_obj_stop (3 in, 0 out)`
 
 Stop an object
 
@@ -25,6 +25,7 @@ Stop an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4096:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
@@ -44,5 +45,6 @@ L4096:
  pushImmf 0
  syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
  jmp L4136
+```
 </details>
 

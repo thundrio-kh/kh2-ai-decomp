@@ -1,6 +1,6 @@
 ## *trap_status_is_mission* (status)
 
-syscall 1, 152 ; trap_status_is_mission (0 in, 1 out)
+`syscall 1, 152 ; trap_status_is_mission (0 in, 1 out)`
 
 Returns if a mission is going on
 
@@ -22,6 +22,8 @@ Returns if a mission is going on
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

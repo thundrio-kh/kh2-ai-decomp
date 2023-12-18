@@ -1,6 +1,6 @@
 ## trap_damage_attack_type* (attack)
 
-syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
+`syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)`
 
 returns the type of the attack, as defined in its Atkp entry found in 00battle.bin
 
@@ -28,6 +28,7 @@ returns the type of the attack, as defined in its Atkp entry found in 00battle.b
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
+```
 L108:
  pushFromFSp 4
  syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)
@@ -41,5 +42,6 @@ L108:
  pushFromPAi L3059 ; ___ai 'break' (L3059)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L131
+```
 </details>
 

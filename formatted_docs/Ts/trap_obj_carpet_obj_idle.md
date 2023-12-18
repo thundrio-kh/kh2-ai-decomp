@@ -1,6 +1,6 @@
 ## trap_obj_carpet_obj_idle* (special)
 
-syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
+`syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)`
 
 Change the carpet action to idle
 
@@ -22,6 +22,7 @@ Change the carpet action to idle
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3396:
  pushFromPWp W0
  pushImm 176
@@ -35,5 +36,6 @@ L3396:
  add 
  syscall 6, 62 ; trap_obj_carpet_obj_idle (1 in, 0 out)
  ret
+```
 </details>
 

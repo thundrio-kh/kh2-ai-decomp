@@ -1,6 +1,6 @@
 ## trap_reset_active_path* (path)
 
-syscall 5, 12 ; trap_reset_active_path (1 in, 0 out)
+`syscall 5, 12 ; trap_reset_active_path (1 in, 0 out)`
 
 Reset the active path for an object
 
@@ -19,6 +19,8 @@ Reset the active path for an object
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

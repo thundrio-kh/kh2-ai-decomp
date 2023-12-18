@@ -1,6 +1,6 @@
 ## trap_attack_set_pax* (attack)
 
-syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
+`syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)`
 
 Attaches a PAX effect to an attack
 
@@ -64,6 +64,7 @@ Attaches a PAX effect to an attack
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+```
 L377:
  popToSp 4
  popToSp 0
@@ -78,5 +79,6 @@ L377:
  syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
  pushFromFSp 8
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_limit_aladdin_exclamation_mark_pos* (special)
 
-syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)
+`syscall 7, 12 ; trap_limit_aladdin_exclamation_mark_pos (1 in, 1 out)`
 
 Get the position of the exclamation mark in the Aladdin limit
 
@@ -26,6 +26,7 @@ Get the position of the exclamation mark in the Aladdin limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3957:
  popToSp 0
  popToSp 4
@@ -56,5 +57,6 @@ L3957:
  pushFromFSp 0
  gosub 8, L1675
  jmp L4019
+```
 </details>
 

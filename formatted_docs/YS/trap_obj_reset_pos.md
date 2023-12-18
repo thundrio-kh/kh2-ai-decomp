@@ -1,6 +1,6 @@
 ## trap_obj_reset_pos* (position)
 
-syscall 1, 153 ; trap_obj_reset_pos (2 in, 0 out)
+`syscall 1, 153 ; trap_obj_reset_pos (2 in, 0 out)`
 
 Resets the position of an object, either to 0,0,0 or to the vector passed in
 
@@ -34,6 +34,7 @@ Resets the position of an object, either to 0,0,0 or to the vector passed in
 
 <details>
 	<summary>Example Usage From obj\B_BB130\b_bb.bdscript</summary>
+```
 L4066:
  popToSp 0
  pushFromFSp 0
@@ -68,5 +69,6 @@ L4066:
  syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
  gosub 12, L1593
  ret
+```
 </details>
 

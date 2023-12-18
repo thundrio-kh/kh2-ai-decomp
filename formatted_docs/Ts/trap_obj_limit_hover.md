@@ -1,6 +1,6 @@
 ## trap_obj_limit_hover* (object)
 
-syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
+`syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)`
 
 Hover an object as part of a limit
 
@@ -23,6 +23,7 @@ Hover an object as part of a limit
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L1340:
  popToSp 4
  popToSp 8
@@ -41,5 +42,6 @@ L1340:
  pushFromFSp 4
  syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
  ret
+```
 </details>
 

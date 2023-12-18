@@ -1,6 +1,6 @@
 ## trap_obj_get_action* (action)
 
-syscall 1, 96 ; trap_obj_get_action (1 in, 1 out)
+`syscall 1, 96 ; trap_obj_get_action (1 in, 1 out)`
 
 Gets the current action for an object
 
@@ -23,6 +23,8 @@ Gets the current action for an object
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

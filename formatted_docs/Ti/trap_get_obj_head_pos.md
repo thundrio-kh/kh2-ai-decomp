@@ -1,6 +1,6 @@
 ## trap_get_obj_head_pos* (position)
 
-syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
+`syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)`
 
 Get the position of an objects head
 
@@ -255,6 +255,7 @@ Get the position of an objects head
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1173:
  pushFromFSp 32
  pushImmf 0
@@ -298,5 +299,6 @@ L1173:
  subf 
  supzf 
  neqzv
+```
 </details>
 

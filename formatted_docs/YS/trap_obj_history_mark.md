@@ -1,6 +1,6 @@
 ## trap_obj_history_mark* (object)
 
-syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
+`syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)`
 
 Set the history flag for an field object
 
@@ -45,6 +45,7 @@ Set the history flag for an field object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
+```
 L2368:
  popToSp 0
  pushFromFSpVal 164
@@ -55,5 +56,6 @@ L2368:
  pushImm -1
  gosub 4, L2386
  ret
+```
 </details>
 

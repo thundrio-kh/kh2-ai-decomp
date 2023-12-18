@@ -1,6 +1,6 @@
 ## *trap_puts* (debug)
 
-syscall 0, 2 ; trap_puts (1 in, 0 out)
+`syscall 0, 2 ; trap_puts (1 in, 0 out)`
 
 Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a string to the console that can be opened with F2
 
@@ -549,6 +549,7 @@ Normally does nothing in production game. When running the PC version of the gam
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+```
 L19:
  popToSp 0
  pushFromFSp 0
@@ -563,5 +564,6 @@ L19:
  popToSp 4
  pushFromPAi L2470 ; ___ai 'main' (L2470)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_hop* (movement)
 
-syscall 1, 156 ; trap_obj_hop (7 in, 0 out)
+`syscall 1, 156 ; trap_obj_hop (7 in, 0 out)`
 
 Sets an object to do a hop
 
@@ -40,6 +40,7 @@ Sets an object to do a hop
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L5368:
  popToSp 0
  pushFromFSp 0
@@ -67,5 +68,6 @@ L5368:
  fetchValue 36
  pushImm 1
  syscall 1, 156 ; trap_obj_hop (7 in, 0 out)
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_is_act_exec* (object)
 
-syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
+`syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)`
 
 Returns if the object is currently executing and action
 
@@ -447,6 +447,7 @@ Returns if the object is currently executing and action
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L4091:
  pushFromFSp 0
  gosub 4, L4126
@@ -464,5 +465,6 @@ L4091:
  pushFromPAi L11456 ; ___ai 'mode_battle_boss' (L11456)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L4122
+```
 </details>
 

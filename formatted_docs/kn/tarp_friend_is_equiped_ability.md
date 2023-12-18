@@ -1,6 +1,6 @@
 ## tarp_friend_is_equiped_ability* (friend)
 
-syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
+`syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)`
 
 Returns if a party member has an equipped ability. "tarp" typo comes directly from the games source code
 
@@ -27,6 +27,7 @@ Returns if a party member has an equipped ability. "tarp" typo comes directly fr
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L378:
  dup 
  jz L389
@@ -34,5 +35,6 @@ L378:
  pushImm 152
  syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
  eqzv
+```
 </details>
 

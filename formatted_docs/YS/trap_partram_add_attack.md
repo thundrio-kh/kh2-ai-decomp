@@ -1,6 +1,6 @@
 ## trap_partram_add_attack* (save)
 
-syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
+`syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)`
 
 Gives attack to the player
 
@@ -22,6 +22,7 @@ Gives attack to the player
 
 <details>
 	<summary>Example Usage From ard\tt04\tt04.bdscript</summary>
+```
 L36:
  pushImm 1
  pushImm 384
@@ -31,5 +32,6 @@ L36:
  pushImm 1
  syscall 0, 92 ; trap_partram_add_attack (2 in, 0 out)
  jmp L114
+```
 </details>
 

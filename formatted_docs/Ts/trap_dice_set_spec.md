@@ -1,6 +1,6 @@
 ## trap_dice_set_spec* (special)
 
-syscall 6, 28 ; trap_dice_set_spec (4 in, 0 out)
+`syscall 6, 28 ; trap_dice_set_spec (4 in, 0 out)`
 
 Set the parameters of dice actions based on a number of parameters
 
@@ -24,6 +24,7 @@ Set the parameters of dice actions based on a number of parameters
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+```
 L10397:
  gosub 4, L946
  memcpyToSp 16, 16
@@ -71,5 +72,6 @@ L10397:
  pushImm 0
  syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
  ret
+```
 </details>
 

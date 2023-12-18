@@ -1,6 +1,6 @@
 ## trap_trinity_shot_start* (special)
 
-syscall 7, 29 ; trap_trinity_shot_start (4 in, 1 out)
+`syscall 7, 29 ; trap_trinity_shot_start (4 in, 1 out)`
 
 Start a trinity limit shot
 
@@ -27,6 +27,7 @@ Start a trinity limit shot
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L7618:
  pushFromFSp 36
  pushImm 0
@@ -108,5 +109,6 @@ L7618:
  sub 
  popToSp 36
  jmp L7618
+```
 </details>
 

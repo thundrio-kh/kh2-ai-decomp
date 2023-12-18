@@ -1,6 +1,6 @@
 ## trap_obj_is_air* (object)
 
-syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
+`syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)`
 
 returns if the object is currently in the air
 
@@ -600,6 +600,7 @@ returns if the object is currently in the air
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2833:
  popToSp 0
  pushImm 0
@@ -650,5 +651,6 @@ L2833:
  pushImm L3043
  gosub 4, L5063
  ret
+```
 </details>
 

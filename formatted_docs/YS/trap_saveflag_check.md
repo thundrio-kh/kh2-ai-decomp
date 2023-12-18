@@ -1,6 +1,6 @@
 ## trap_saveflag_check* (save)
 
-syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+`syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)`
 
 Returns the value of a save flag
 
@@ -38,6 +38,7 @@ Returns the value of a save flag
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
+```
 L58:
  pushImm 64
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
@@ -46,5 +47,6 @@ L58:
  pushImm 65
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
  eqzv
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_camera_shake* (camera)
 
-syscall 6, 0 ; trap_camera_shake (7 in, 0 out)
+`syscall 6, 0 ; trap_camera_shake (7 in, 0 out)`
 
 Make the camera shake according to a lot of parameters
 
@@ -30,6 +30,7 @@ Make the camera shake according to a lot of parameters
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L4703:
  jz L4735
  pushImmf 240
@@ -43,5 +44,6 @@ L4703:
  pushImm 1
  popToWp W4
  jmp L4735
+```
 </details>
 

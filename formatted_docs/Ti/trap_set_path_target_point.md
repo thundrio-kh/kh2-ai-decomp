@@ -1,6 +1,6 @@
 ## trap_set_path_target_point* (path)
 
-syscall 5, 13 ; trap_set_path_target_point (2 in, 0 out)
+`syscall 5, 13 ; trap_set_path_target_point (2 in, 0 out)`
 
 Set a target point on a path
 
@@ -24,6 +24,7 @@ Set a target point on a path
 
 <details>
 	<summary>Example Usage From obj\N_AL070_BTL\n_al.bdscript</summary>
+```
 L1140:
  pushFromFSp 0
  gosub 4, L1376
@@ -43,5 +44,6 @@ L1140:
  fetchValue 44
  syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
  jmp L1178
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_motion_enable_anmatr_effect* (mset)
 
-syscall 1, 271 ; trap_obj_motion_enable_anmatr_effect (2 in, 0 out)
+`syscall 1, 271 ; trap_obj_motion_enable_anmatr_effect (2 in, 0 out)`
 
 Enables the anmatr effect for a given motion set entry
 
@@ -28,6 +28,7 @@ Enables the anmatr effect for a given motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_LK110\b_lk.bdscript</summary>
+```
 L8820:
  popToSp 0
  pushImm 0
@@ -58,5 +59,6 @@ L8820:
  pushImm 24
  pushImm 2
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
+```
 </details>
 

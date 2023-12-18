@@ -1,6 +1,6 @@
 ## trap_effect_is_active* (effect)
 
-syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
+`syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)`
 
 checks if an effect is still active
 
@@ -285,6 +285,7 @@ checks if an effect is still active
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3241:
  popToSp 0
  pushFromFSpVal 16
@@ -296,5 +297,6 @@ L3241:
  pushFromFSpVal 16
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
  eqzv
+```
 </details>
 

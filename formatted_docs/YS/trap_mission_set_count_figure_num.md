@@ -1,6 +1,6 @@
 ## trap_mission_set_count_figure_num* (mission_counter)
 
-syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
+`syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)`
 
 Sets a specific digit in the counter to a value
 
@@ -29,6 +29,7 @@ Sets a specific digit in the counter to a value
 
 <details>
 	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
+```
 L8060:
  popToSp 0
  pushFromFSp 0
@@ -53,5 +54,6 @@ L8060:
  pushImm 0
  syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
  jmp L8109
+```
 </details>
 

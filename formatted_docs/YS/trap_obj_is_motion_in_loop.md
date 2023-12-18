@@ -1,6 +1,6 @@
 ## trap_obj_is_motion_in_loop* (object)
 
-syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
+`syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)`
 
 Returns if the object is looping a motion
 
@@ -137,6 +137,7 @@ Returns if the object is looping a motion
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L8249:
  jz L8343
  pushFromFSp 0
@@ -181,5 +182,6 @@ L8249:
  syscall 0, 16 ; trap_random_get (1 in, 1 out)
  popToSp 4
  jmp L8336
+```
 </details>
 

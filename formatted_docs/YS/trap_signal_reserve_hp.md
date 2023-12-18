@@ -1,6 +1,6 @@
 ## trap_signal_reserve_hp* (system)
 
-syscall 1, 106 ; trap_signal_reserve_hp (4 in, 0 out)
+`syscall 1, 106 ; trap_signal_reserve_hp (4 in, 0 out)`
 
 Signal an object to reserve an HP value
 
@@ -19,6 +19,8 @@ Signal an object to reserve an HP value
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

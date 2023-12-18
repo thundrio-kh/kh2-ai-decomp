@@ -1,6 +1,6 @@
 ## trap_damage_is_reaction* (damage)
 
-syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
+`syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)`
 
 Checks if damage from an attack should be reacted to, which it is as long as the reaction type is not 0 or 1. The reaction type is the "Enemy Reaction" value defined in the ATKP table
 
@@ -267,6 +267,7 @@ Checks if damage from an attack should be reacted to, which it is as long as the
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L2139:
  pushFromFSp 4
  syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
@@ -283,5 +284,6 @@ L2139:
  pushFromPAi L10834 ; ___ai 'mode_revenge_boss' (L10834)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L2167
+```
 </details>
 

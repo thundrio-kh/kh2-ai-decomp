@@ -1,6 +1,6 @@
 ## method_blur_stop* (visual)
 
-syscall 0, 30 ; method_blur_stop (1 in, 0 out)
+`syscall 0, 30 ; method_blur_stop (1 in, 0 out)`
 
 Stops an active blur. Unused in the vanilla game
 
@@ -19,6 +19,8 @@ Stops an active blur. Unused in the vanilla game
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

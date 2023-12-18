@@ -1,6 +1,6 @@
 ## trap_obj_fadeout_se* (sound)
 
-syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)
+`syscall 6, 71 ; trap_obj_fadeout_se (2 in, 0 out)`
 
 Fadeout a sound effect
 
@@ -22,6 +22,7 @@ Fadeout a sound effect
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L13066:
  popToSp 0
  pushFromFSp 0
@@ -36,5 +37,6 @@ L13066:
  pushImm -1
  popToSpVal 0
  jmp L13093
+```
 </details>
 

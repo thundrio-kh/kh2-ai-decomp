@@ -1,6 +1,6 @@
 ## trap_obj_pattern_enable* (object)
 
-syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+`syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)`
 
 Enable resistances/sturdy frames for an object
 
@@ -294,6 +294,7 @@ Enable resistances/sturdy frames for an object
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
+```
 TR3:
  gosub 4, L172
  pushFromPSp 0
@@ -308,5 +309,6 @@ TR3:
  pushFromPWp W0
  gosub 8, L321
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## method_obj_disable_collision* (object)
 
-syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
+`syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)`
 
 Turns off part of an objects collision
 
@@ -154,6 +154,7 @@ Turns off part of an objects collision
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+```
 L1904:
  popToSp 4
  popToSp 0
@@ -171,5 +172,6 @@ L1904:
  pushImm 16
  syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
  jmp L1951
+```
 </details>
 

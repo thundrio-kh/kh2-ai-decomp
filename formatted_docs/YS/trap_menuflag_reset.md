@@ -1,6 +1,6 @@
 ## trap_menuflag_reset* (menu)
 
-syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
+`syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)`
 
 resets a menu flag to the default state
 
@@ -24,6 +24,7 @@ resets a menu flag to the default state
 
 <details>
 	<summary>Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript</summary>
+```
 L3817:
  popToSp 0
  pushFromFSp 0
@@ -92,5 +93,6 @@ L3817:
  pushImm 60
  syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
  jmp L4004
+```
 </details>
 

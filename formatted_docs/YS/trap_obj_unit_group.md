@@ -1,6 +1,6 @@
 ## trap_obj_unit_group* (object)
 
-syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
+`syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)`
 
 Returns the unit group the object belongs to
 
@@ -391,6 +391,7 @@ Returns the unit group the object belongs to
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L4766:
  popToSp 0
  gosub 4, L664
@@ -402,5 +403,6 @@ L4766:
  sub 
  eqz 
  ret
+```
 </details>
 

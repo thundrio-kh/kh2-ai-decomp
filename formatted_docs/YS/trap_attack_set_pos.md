@@ -1,6 +1,6 @@
 ## trap_attack_set_pos* (attack)
 
-syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
+`syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)`
 
 Sets a position for an attack to happen.
 
@@ -298,6 +298,7 @@ Sets a position for an attack to happen.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3275:
  popToSp 0
  pushFromPSpVal 32
@@ -342,5 +343,6 @@ L3275:
  gosub 4, L3406
  gosub 4, L3414
  jmp L3377
+```
 </details>
 

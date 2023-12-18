@@ -1,6 +1,6 @@
 ## trap_obj_set_dir* (position)
 
-syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+`syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)`
 
 Set the direction an object is facing
 
@@ -805,6 +805,7 @@ Set the direction an object is facing
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -861,5 +862,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

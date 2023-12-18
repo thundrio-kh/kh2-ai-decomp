@@ -1,6 +1,6 @@
 ## *trap_status_open_pete_curtain* (special)
 
-syscall 1, 351 ; trap_status_open_pete_curtain (0 in, 0 out)
+`syscall 1, 351 ; trap_status_open_pete_curtain (0 in, 0 out)`
 
 Show the screen effect of the Pete curtain opening
 
@@ -21,6 +21,7 @@ Show the screen effect of the Pete curtain opening
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
+```
 L6577:
  pushFromFSp 0
  gosub 4, L7439
@@ -73,5 +74,6 @@ L6577:
  pushImm 2
  memcpy 0
  jmp L6700
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_scatter_prize* (prize)
 
-syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
+`syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)`
 
 Scatter a number of prize orbs from an enemy
 
@@ -477,10 +477,12 @@ Scatter a number of prize orbs from an enemy
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L185:
  pushFromPWp W320
  pushImm 137
  syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
  jmp L194
+```
 </details>
 

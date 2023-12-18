@@ -1,6 +1,6 @@
 ## trap_skateboard_ride_edge* (special)
 
-syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
+`syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)`
 
 Set the skateboard to be riding an edge
 
@@ -34,11 +34,13 @@ Set the skateboard to be riding an edge
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L474:
  popToSp 4
  popToSp 0
  pushFromFSp 4
  syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
  ret
+```
 </details>
 

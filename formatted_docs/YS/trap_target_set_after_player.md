@@ -1,6 +1,6 @@
 ## trap_target_set_after_player* (unused)
 
-syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)
+`syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)`
 
 Doesnt appear to do anything except print some debug warnings
 
@@ -19,6 +19,8 @@ Doesnt appear to do anything except print some debug warnings
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

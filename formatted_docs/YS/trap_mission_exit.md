@@ -1,6 +1,6 @@
 ## trap_mission_exit* (mission)
 
-syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+`syscall 4, 22 ; trap_mission_exit (1 in, 0 out)`
 
 exits a mission
 
@@ -306,9 +306,11 @@ exits a mission
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
+```
 L141:
  pushFromFSpVal 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
  jmp L147
+```
 </details>
 

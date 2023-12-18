@@ -1,6 +1,6 @@
 ## trap_enemy_set_attacker* (enemy)
 
-syscall 2, 97 ; trap_enemy_set_attacker (2 in, 0 out)
+`syscall 2, 97 ; trap_enemy_set_attacker (2 in, 0 out)`
 
 Set the attacker for an enemy.
 
@@ -23,6 +23,7 @@ Set the attacker for an enemy.
 
 <details>
 	<summary>Example Usage From obj\M_EX590\m_ex.bdscript</summary>
+```
 L5246:
  popToSp 0
  pushFromFSp 0
@@ -72,5 +73,6 @@ L5246:
  pushFromFSp 0
  syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
  ret
+```
 </details>
 

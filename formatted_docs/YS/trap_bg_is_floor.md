@@ -1,6 +1,6 @@
 ## trap_bg_is_floor* (camera)
 
-syscall 1, 136 ; trap_bg_is_floor (1 in, 1 out)
+`syscall 1, 136 ; trap_bg_is_floor (1 in, 1 out)`
 
 Returns if the background the camera is looking at is the floor
 
@@ -23,6 +23,8 @@ Returns if the background the camera is looking at is the floor
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

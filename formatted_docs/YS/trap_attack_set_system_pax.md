@@ -1,6 +1,6 @@
 ## trap_attack_set_system_pax* (attack)
 
-syscall 2, 94 ; trap_attack_set_system_pax (1 in, 0 out)
+`syscall 2, 94 ; trap_attack_set_system_pax (1 in, 0 out)`
 
 Attach a system PAX effect to an attack
 
@@ -27,6 +27,7 @@ Attach a system PAX effect to an attack
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+```
 L612:
  popToSp 0
  pushFromPSpVal 0
@@ -43,5 +44,6 @@ L612:
  syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
  pushImmf 60
  popToSp 8
+```
 </details>
 

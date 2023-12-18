@@ -1,6 +1,6 @@
 ## trap_target_searcher_get_target_num* (target)
 
-syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)
+`syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)`
 
 Return the index number of a target within a position and a direction
 
@@ -26,6 +26,7 @@ Return the index number of a target within a position and a direction
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L921:
  popToSp 0
  pushFromPWp W16
@@ -70,5 +71,6 @@ L921:
  pushFromFSp 0
  gosub 4, L1061
  jmp L1031
+```
 </details>
 

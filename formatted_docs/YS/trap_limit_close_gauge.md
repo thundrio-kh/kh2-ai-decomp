@@ -1,6 +1,6 @@
 ## trap_limit_close_gauge* (limit)
 
-syscall 2, 90 ; trap_limit_close_gauge (1 in, 0 out)
+`syscall 2, 90 ; trap_limit_close_gauge (1 in, 0 out)`
 
 Closes the limit gauge
 
@@ -19,6 +19,8 @@ Closes the limit gauge
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

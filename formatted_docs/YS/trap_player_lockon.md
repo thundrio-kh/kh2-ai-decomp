@@ -1,6 +1,6 @@
 ## trap_player_lockon* (player)
 
-syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
+`syscall 1, 321 ; trap_player_lockon (3 in, 0 out)`
 
 Locks the player onto an object
 
@@ -22,6 +22,7 @@ Locks the player onto an object
 
 <details>
 	<summary>Example Usage From msn\TT04_MS107\tt04.bdscript</summary>
+```
 L63:
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
  memcpyToSp 16, 8
@@ -30,5 +31,6 @@ L63:
  pushFromPWp W16
  syscall 1, 321 ; trap_player_lockon (3 in, 0 out)
  jmp L79
+```
 </details>
 

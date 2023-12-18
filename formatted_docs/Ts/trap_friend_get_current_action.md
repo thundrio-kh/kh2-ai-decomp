@@ -1,6 +1,6 @@
 ## trap_friend_get_current_action* (debug)
 
-syscall 7, 16 ; trap_friend_get_current_action (1 in, 1 out)
+`syscall 7, 16 ; trap_friend_get_current_action (1 in, 1 out)`
 
 Gets the current action of a friend
 
@@ -23,6 +23,8 @@ Gets the current action of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

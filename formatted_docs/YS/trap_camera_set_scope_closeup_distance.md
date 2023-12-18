@@ -1,6 +1,6 @@
 ## *trap_camera_set_scope_closeup_distance* (camera)
 
-syscall 1, 313 ; trap_camera_set_scope_closeup_distance (1 in, 0 out)
+`syscall 1, 313 ; trap_camera_set_scope_closeup_distance (1 in, 0 out)`
 
 Sets the closeup distance to be used by the scope
 
@@ -23,6 +23,7 @@ Sets the closeup distance to be used by the scope
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L20862:
  popToSp 4
  popToSp 0
@@ -95,5 +96,6 @@ L20862:
  pushImm 0
  popToSpVal 224
  ret
+```
 </details>
 

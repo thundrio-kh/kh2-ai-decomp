@@ -1,6 +1,6 @@
 ## trap_enemy_is_damage_motion* (enemy)
 
-syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
+`syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)`
 
 returns if the damage is happening while the enemy is in an animation
 
@@ -51,6 +51,7 @@ returns if the damage is happening while the enemy is in an animation
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L4913:
  pushFromFSp 0
  syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
@@ -63,5 +64,6 @@ L4913:
  sub 
  eqz 
  neqzv
+```
 </details>
 

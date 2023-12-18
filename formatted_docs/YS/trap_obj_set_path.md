@@ -1,6 +1,6 @@
 ## trap_obj_set_path (movement)
 
-syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
+`syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)`
 
 Sets the movement path for an NPC object
 
@@ -266,6 +266,7 @@ Sets the movement path for an NPC object
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L232:
  pushFromFSp 0
  pushImm -1
@@ -277,5 +278,6 @@ L232:
  pushFromPAi L2943 ; ___ai 'path_move' (L2943)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L260
+```
 </details>
 

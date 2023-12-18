@@ -1,6 +1,6 @@
 ## *trap_act_table_add* (action)
 
-syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
+`syscall 1, 6 ; trap_act_table_add (12 in, 0 out)`
 
 Adds an label to an action table, as an action that can be performed
 
@@ -811,6 +811,7 @@ Adds an label to an action table, as an action that can be performed
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L4649:
  popToSp 4
  popToSp 0
@@ -1437,5 +1438,6 @@ L4649:
  pushImmf 0.8
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
+```
 </details>
 

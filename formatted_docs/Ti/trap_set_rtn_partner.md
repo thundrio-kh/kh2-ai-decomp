@@ -1,6 +1,6 @@
 ## trap_set_rtn_partner* (field)
 
-syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
+`syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)`
 
 Set a partner for an RTN action
 
@@ -251,6 +251,7 @@ Set a partner for an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L125:
  drop 
  pushFromFSp 8
@@ -276,5 +277,6 @@ L125:
  pushFromPSpVal 80
  syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
  jmp L175
+```
 </details>
 

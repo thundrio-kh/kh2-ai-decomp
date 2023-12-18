@@ -1,6 +1,6 @@
 ## trap_obj_motion_is_no_control* (mset)
 
-syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
+`syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)`
 
 returns if the is_no_control flag is set for the motion set
 
@@ -151,6 +151,7 @@ returns if the is_no_control flag is set for the motion set
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L4282:
  popToSp 4
  popToSp 8
@@ -189,5 +190,6 @@ L4282:
  fetchValue 24
  syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
  jmp L4528
+```
 </details>
 

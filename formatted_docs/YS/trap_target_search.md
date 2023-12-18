@@ -1,6 +1,6 @@
 ## trap_target_search* (target)
 
-syscall 1, 121 ; trap_target_search (3 in, 0 out)
+`syscall 1, 121 ; trap_target_search (3 in, 0 out)`
 
 Searches for a target of a given type
 
@@ -581,6 +581,7 @@ Searches for a target of a given type
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L489:
  pushFromFSp 180
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
@@ -593,5 +594,6 @@ L489:
  pushImm 4
  syscall 1, 121 ; trap_target_search (3 in, 0 out)
  jmp L511
+```
 </details>
 

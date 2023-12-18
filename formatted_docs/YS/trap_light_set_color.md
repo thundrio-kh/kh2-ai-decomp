@@ -1,6 +1,6 @@
 ## trap_light_set_color* (light)
 
-syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
+`syscall 1, 183 ; trap_light_set_color (5 in, 0 out)`
 
 sets a color for a light, "a" value is always 128
 
@@ -90,6 +90,7 @@ sets a color for a light, "a" value is always 128
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6541:
  popToSp 4
  popToSp 8
@@ -110,5 +111,6 @@ L6541:
  pushFromFSp 4
  syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
  jmp L6597
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_detach* (bones)
 
-syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
+`syscall 1, 102 ; trap_obj_detach (1 in, 0 out)`
 
 removes a connection between two bones
 
@@ -97,6 +97,7 @@ removes a connection between two bones
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L4061:
  pushFromFSp 0
  syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
@@ -104,5 +105,6 @@ L4061:
  pushFromFSp 0
  syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
  jmp L4073
+```
 </details>
 

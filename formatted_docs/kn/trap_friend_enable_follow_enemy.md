@@ -1,6 +1,6 @@
 ## trap_friend_enable_follow_enemy* (friend)
 
-syscall 10, 47 ; trap_friend_enable_follow_enemy (1 in, 0 out)
+`syscall 10, 47 ; trap_friend_enable_follow_enemy (1 in, 0 out)`
 
 Enables a friend following an enemy
 
@@ -19,6 +19,8 @@ Enables a friend following an enemy
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

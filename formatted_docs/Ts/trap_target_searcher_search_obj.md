@@ -1,6 +1,6 @@
 ## trap_target_searcher_search_obj* (target)
 
-syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)
+`syscall 6, 11 ; trap_target_searcher_search_obj (3 in, 0 out)`
 
 Has a target searcher search for a specific object.
 
@@ -29,6 +29,7 @@ Has a target searcher search for a specific object.
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L80:
  popToSp 4
  popToSp 0
@@ -42,5 +43,6 @@ L80:
  pushImm 1
  popToSpVal 104
  ret
+```
 </details>
 

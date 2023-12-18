@@ -1,6 +1,6 @@
 ## trap_friend_get_target_size* (friend)
 
-syscall 7, 15 ; trap_friend_get_target_size (1 in, 1 out)
+`syscall 7, 15 ; trap_friend_get_target_size (1 in, 1 out)`
 
 Get the collision size of a friends target
 
@@ -23,6 +23,8 @@ Get the collision size of a friends target
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

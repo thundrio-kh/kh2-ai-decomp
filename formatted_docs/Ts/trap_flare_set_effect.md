@@ -1,6 +1,6 @@
 ## trap_flare_set_effect* (special)
 
-syscall 7, 8 ; trap_flare_set_effect (2 in, 0 out)
+`syscall 7, 8 ; trap_flare_set_effect (2 in, 0 out)`
 
 Set a Flare Force effect
 
@@ -23,6 +23,7 @@ Set a Flare Force effect
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1717:
  pushImm 0
  popToSp 160
@@ -98,5 +99,6 @@ L1717:
  memcpyToSp 16, 176
  pushFromPSp 176
  memcpy 16
+```
 </details>
 

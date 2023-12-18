@@ -1,6 +1,6 @@
 ## trap_prize_vacuum_ca* (prize)
 
-syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
+`syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)`
 
 Vacuums up a number of medals from one object to the target
 
@@ -27,6 +27,7 @@ Vacuums up a number of medals from one object to the target
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L6690:
  jz L6758
  pushFromFSp 36
@@ -46,5 +47,6 @@ L6690:
  syscall 1, 339 ; trap_prize_vacuum_ca (3 in, 1 out)
  drop 
  jmp L6725
+```
 </details>
 

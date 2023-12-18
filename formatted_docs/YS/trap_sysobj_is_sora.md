@@ -1,6 +1,6 @@
 ## trap_sysobj_is_sora* (player)
 
-syscall 1, 319 ; trap_sysobj_is_sora (1 in, 1 out)
+`syscall 1, 319 ; trap_sysobj_is_sora (1 in, 1 out)`
 
 Returns true if the object is Sora
 
@@ -29,6 +29,7 @@ Returns true if the object is Sora
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
+```
 L2835:
  gosub 4, L2828
  pushImm 0
@@ -45,5 +46,6 @@ L2835:
  jnz L2862
  gosub 12, L2886
  neqzv
+```
 </details>
 

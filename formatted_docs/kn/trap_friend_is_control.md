@@ -1,6 +1,6 @@
 ## trap_friend_is_control* (friend)
 
-syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
+`syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)`
 
 Returns if the friend has control
 
@@ -27,6 +27,7 @@ Returns if the friend has control
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L8995:
  popToSp 0
  syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
@@ -35,5 +36,6 @@ L8995:
  pushFromFSp 0
  syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
  eqzv
+```
 </details>
 

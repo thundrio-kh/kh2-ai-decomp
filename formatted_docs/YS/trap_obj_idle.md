@@ -1,6 +1,6 @@
 ## trap_obj_idle* (action)
 
-syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+`syscall 1, 74 ; trap_obj_idle (1 in, 0 out)`
 
 Sets the current action for the object to idle.
 
@@ -233,6 +233,7 @@ Sets the current action for the object to idle.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L397:
  popToSp 0
  pushFromFSp 0
@@ -260,5 +261,6 @@ L397:
  pushImm 0
  memcpy 0
  jmp L448
+```
 </details>
 

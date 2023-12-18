@@ -1,6 +1,6 @@
 ## trap_mission_return* (mission)
 
-syscall 4, 32 ; trap_mission_return (0 in, 0 out)
+`syscall 4, 32 ; trap_mission_return (0 in, 0 out)`
 
 Unlocks a mission and returns control/settings to normal
 
@@ -22,6 +22,7 @@ Unlocks a mission and returns control/settings to normal
 
 <details>
 	<summary>Example Usage From msn\HB16_MS404D\hb16.bdscript</summary>
+```
 L87:
  gosub 4, L109
  pushImm 42
@@ -33,5 +34,6 @@ L87:
  syscall 1, 187 ; trap_status_prize_drain_start (0 in, 0 out)
  syscall 4, 32 ; trap_mission_return (0 in, 0 out)
  ret
+```
 </details>
 

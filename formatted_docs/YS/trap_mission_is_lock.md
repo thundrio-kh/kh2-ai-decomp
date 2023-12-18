@@ -1,6 +1,6 @@
 ## trap_mission_is_lock* (mission)
 
-syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+`syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)`
 
 Is there another mission going on already?
 
@@ -293,6 +293,7 @@ Is there another mission going on already?
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
+```
 L44:
  popToSp 4
  popToSp 0
@@ -305,5 +306,6 @@ L44:
  popToSpVal 4
  syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
  jmp L66
+```
 </details>
 

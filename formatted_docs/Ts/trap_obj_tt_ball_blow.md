@@ -1,6 +1,6 @@
 ## trap_obj_tt_ball_blow (special)
 
-syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
+`syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)`
 
 Make the twilight town minigame ball perform a blow
 
@@ -22,6 +22,7 @@ Make the twilight town minigame ball perform a blow
 
 <details>
 	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
+```
 L165:
  drop 
  pushFromFSp 4
@@ -61,5 +62,6 @@ L165:
  fetchValue 12
  syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
  jmp L475
+```
 </details>
 

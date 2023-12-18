@@ -1,6 +1,6 @@
 ## trap_mission_deactivate2d* (mission)
 
-syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
+`syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)`
 
 deactiates custom HUD, such as Demyx timer or hud used by Mushrooms
 
@@ -43,8 +43,10 @@ deactiates custom HUD, such as Demyx timer or hud used by Mushrooms
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+```
 L329:
  syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
  ret
+```
 </details>
 

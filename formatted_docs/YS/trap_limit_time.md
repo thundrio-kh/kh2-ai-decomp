@@ -1,6 +1,6 @@
 ## trap_limit_time* (limit)
 
-syscall 2, 60 ; trap_limit_time (1 in, 1 out)
+`syscall 2, 60 ; trap_limit_time (1 in, 1 out)`
 
 Return the time limit for the limit?
 
@@ -54,6 +54,7 @@ Return the time limit for the limit?
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L5110:
  pushFromFSpVal 44
  dup 
@@ -65,5 +66,6 @@ L5110:
  subf 
  supzf 
  eqzv
+```
 </details>
 

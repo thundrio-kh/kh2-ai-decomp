@@ -1,6 +1,6 @@
 ## trap_vector_roty* (math)
 
-syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+`syscall 0, 13 ; trap_vector_roty (2 in, 1 out)`
 
 Rotates a vector along the Y axis
 
@@ -418,6 +418,7 @@ Rotates a vector along the Y axis
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+```
 L597:
  pushFromPSpVal 16
  pushFromFSpVal 48
@@ -430,5 +431,6 @@ L597:
  pushFromPSpVal 16
  syscall 9, 22 ; ?
  ret
+```
 </details>
 

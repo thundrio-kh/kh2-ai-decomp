@@ -1,6 +1,6 @@
 ## trap_target_searcher_get_old* (target)
 
-syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
+`syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)`
 
 Return the nth oldest target in the searcher
 
@@ -29,6 +29,7 @@ Return the nth oldest target in the searcher
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L549:
  pushFromFSp 72
  pushImm 0
@@ -60,5 +61,6 @@ L549:
  syscall 0, 16 ; trap_random_get (1 in, 1 out)
  syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
  jmp L607
+```
 </details>
 

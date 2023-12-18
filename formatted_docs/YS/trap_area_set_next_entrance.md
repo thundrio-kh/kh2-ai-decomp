@@ -1,6 +1,6 @@
 ## *trap_area_set_next_entrance* (mapinfo)
 
-syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
+`syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)`
 
 Increments the AREA::NextArea.Entrance value by 1. Only used by the Olympus Cups.
 
@@ -62,6 +62,7 @@ Increments the AREA::NextArea.Entrance value by 1. Only used by the Olympus Cups
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
+```
 L307:
  popToSp 0
  syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
@@ -79,5 +80,6 @@ L307:
  syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
  syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
  ret
+```
 </details>
 

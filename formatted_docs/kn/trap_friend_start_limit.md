@@ -1,6 +1,6 @@
 ## trap_friend_start_limit* (friend)
 
-syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
+`syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)`
 
 Have the friend start their limit
 
@@ -25,6 +25,7 @@ Have the friend start their limit
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L374:
  pushFromPSpVal 4
  pushFromPSp 16
@@ -37,5 +38,6 @@ L374:
  pushFromPSpVal 20
  syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
  ret
+```
 </details>
 

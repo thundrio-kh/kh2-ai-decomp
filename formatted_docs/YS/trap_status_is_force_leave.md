@@ -1,6 +1,6 @@
 ## *trap_status_is_force_leave* (status)
 
-syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
+`syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)`
 
 Returns if the force leave flag is true
 
@@ -462,6 +462,7 @@ Returns if the force leave flag is true
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L7147:
  popToSp 0
  syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
@@ -469,5 +470,6 @@ L7147:
  pushImm 1
  popToSp 8
  jmp L7217
+```
 </details>
 

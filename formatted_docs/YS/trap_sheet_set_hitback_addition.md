@@ -1,6 +1,6 @@
 ## trap_sheet_set_hitback_addition* (sheet)
 
-syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
+`syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)`
 
 Set the hitback addition value for an object
 
@@ -23,6 +23,7 @@ Set the hitback addition value for an object
 
 <details>
 	<summary>Example Usage From obj\B_EX220\b_ex.bdscript</summary>
+```
 L409:
  popToSp 4
  popToSp 0
@@ -38,5 +39,6 @@ L409:
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
  pushImmf 200
  syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
+```
 </details>
 

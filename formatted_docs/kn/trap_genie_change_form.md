@@ -1,6 +1,6 @@
 ## trap_genie_change_form* (special)
 
-syscall 10, 9 ; trap_genie_change_form (2 in, 0 out)
+`syscall 10, 9 ; trap_genie_change_form (2 in, 0 out)`
 
 Changes the genies form
 
@@ -22,6 +22,7 @@ Changes the genies form
 
 <details>
 	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
+```
 L68:
  pushFromPWp W312
  fetchValue 4
@@ -56,5 +57,6 @@ L68:
  pushImm 1
  memcpy 0
  jmp L137
+```
 </details>
 

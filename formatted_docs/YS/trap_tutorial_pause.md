@@ -1,6 +1,6 @@
 ## trap_tutorial_pause* (menu)
 
-syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)
+`syscall 1, 284 ; trap_tutorial_pause (1 in, 0 out)`
 
 Perform a menu pause?
 
@@ -22,6 +22,7 @@ Perform a menu pause?
 
 <details>
 	<summary>Example Usage From msn\TT04_MS107\tt04.bdscript</summary>
+```
 L81:
  pushImmf 12
  gosub 4, L99
@@ -31,5 +32,6 @@ L81:
  pushImm -1
  gosub 4, L121
  ret
+```
 </details>
 

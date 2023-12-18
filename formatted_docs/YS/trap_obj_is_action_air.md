@@ -1,6 +1,6 @@
 ## trap_obj_is_action_air* (object)
 
-syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
+`syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)`
 
 Returns if the object is currently in the air performing an action
 
@@ -27,11 +27,13 @@ Returns if the object is currently in the air performing an action
 
 <details>
 	<summary>Example Usage From obj\M_EX690\m_ex.bdscript</summary>
+```
 L390:
  pushFromFSp 0
  syscall 1, 224 ; trap_obj_is_action_air (1 in, 1 out)
  jz L399
  halt 
  jmp L390
+```
 </details>
 

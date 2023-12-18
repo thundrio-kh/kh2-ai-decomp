@@ -1,6 +1,6 @@
 ## trap_mission_is_gauge_warning* (mission_gauge)
 
-syscall 4, 34 ; trap_mission_is_gauge_warning (1 in, 1 out)
+`syscall 4, 34 ; trap_mission_is_gauge_warning (1 in, 1 out)`
 
 Returns if the specified gauge at the warning level
 
@@ -23,6 +23,8 @@ Returns if the specified gauge at the warning level
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

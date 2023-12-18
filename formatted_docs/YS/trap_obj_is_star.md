@@ -1,6 +1,6 @@
 ## trap_obj_is_star* (object)
 
-syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
+`syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)`
 
 Returns if the object is currently invulnerable
 
@@ -100,6 +100,7 @@ Returns if the object is currently invulnerable
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4020:
  popToSp 0
  pushFromFSp 0
@@ -110,5 +111,6 @@ L4020:
  pushFromFSp 0
  syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
  eqzv
+```
 </details>
 

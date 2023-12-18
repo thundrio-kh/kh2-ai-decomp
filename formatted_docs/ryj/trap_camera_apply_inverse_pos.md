@@ -1,6 +1,6 @@
 ## trap_camera_apply_inverse_pos* (camera)
 
-syscall 8, 8 ; trap_camera_apply_inverse_pos (1 in, 1 out)
+`syscall 8, 8 ; trap_camera_apply_inverse_pos (1 in, 1 out)`
 
 Inverse the position of the camera and apply it
 
@@ -26,6 +26,7 @@ Inverse the position of the camera and apply it
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+```
 L5355:
  pushFromFSpVal 64
  eqz 
@@ -92,5 +93,6 @@ L5355:
  pushImmf 30
  gosub 16, L193
  jmp L5355
+```
 </details>
 

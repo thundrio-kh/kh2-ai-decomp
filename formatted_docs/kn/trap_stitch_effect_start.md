@@ -1,6 +1,6 @@
 ## trap_stitch_effect_start* (special)
 
-syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)
+`syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)`
 
 Start a stitch effect
 
@@ -26,6 +26,7 @@ Start a stitch effect
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L1369:
  popToSp 4
  popToSp 0
@@ -263,5 +264,6 @@ L1369:
  syscall 10, 12 ; trap_stitch_effect_start (8 in, 1 out)
  popToSpVal 20
  jmp L2000
+```
 </details>
 

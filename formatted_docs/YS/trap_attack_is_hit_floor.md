@@ -1,6 +1,6 @@
 ## trap_attack_is_hit_floor* (attack)
 
-syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
+`syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)`
 
 Checks if an attack has hit the floor
 
@@ -32,6 +32,7 @@ Checks if an attack has hit the floor
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L19567:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
@@ -54,5 +55,6 @@ L19567:
  pushFromFSpVal 68
  syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
  eqzv
+```
 </details>
 

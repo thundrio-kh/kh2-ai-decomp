@@ -1,6 +1,6 @@
 ## trap_obj_texanm_stop* (animation)
 
-syscall 1, 86 ; trap_obj_texanm_stop (2 in, 0 out)
+`syscall 1, 86 ; trap_obj_texanm_stop (2 in, 0 out)`
 
 Stops a specific animation
 
@@ -30,6 +30,7 @@ Stops a specific animation
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
+```
 L11734:
  popToSp 0
  pushFromFSp 0
@@ -83,5 +84,6 @@ L11734:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  jmp L11939
+```
 </details>
 

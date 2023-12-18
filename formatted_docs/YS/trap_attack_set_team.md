@@ -1,6 +1,6 @@
 ## trap_attack_set_team* (attack)
 
-syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)
+`syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)`
 
 Sets a team for an attack (most likely so that objects on the same team cannot be damaged by this attack)
 
@@ -31,6 +31,7 @@ Sets a team for an attack (most likely so that objects on the same team cannot b
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L9800:
  pushFromFSpVal 68
  pushFromFSp 68
@@ -42,5 +43,6 @@ L9800:
  pushFromPSpVal 0
  syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
  popToSp 32
+```
 </details>
 

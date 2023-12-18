@@ -1,6 +1,6 @@
 ## trap_limit_effect_start_pos* (limit)
 
-syscall 2, 58 ; trap_limit_effect_start_pos (4 in, 1 out)
+`syscall 2, 58 ; trap_limit_effect_start_pos (4 in, 1 out)`
 
 Starts a limit effect at a specified position
 
@@ -29,6 +29,7 @@ Starts a limit effect at a specified position
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L303:
  pushFromFSp 4
  fetchValue 4
@@ -66,5 +67,6 @@ L303:
  pushImmf 0
  pushImmf 0
  syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+```
 </details>
 

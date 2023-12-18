@@ -1,6 +1,6 @@
 ## trap_obj_action_lightcycle* (special)
 
-syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)
+`syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)`
 
 Does a lightcycle specific action
 
@@ -25,6 +25,7 @@ Does a lightcycle specific action
 
 <details>
 	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
+```
 L23:
  popToSp 0
  pushFromFSp 0
@@ -44,5 +45,6 @@ L23:
  pushFromFSp 0
  pushFromPAi L2803 ; ___ai 'choice' (L2803)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+```
 </details>
 

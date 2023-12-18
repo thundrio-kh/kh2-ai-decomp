@@ -1,6 +1,6 @@
 ## trap_obj_set_land_motion* (mset)
 
-syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+`syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)`
 
 Sets an object to go into a landing animation
 
@@ -71,6 +71,7 @@ Sets an object to go into a landing animation
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1258:
  pushFromPWp W0
  pushFromFSp 0
@@ -106,5 +107,6 @@ L1258:
  gosub 52, L2603
  drop 
  jmp L1365
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_vector_mul* (math)
 
-syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
+`syscall 0, 36 ; trap_vector_mul (2 in, 1 out)`
 
 Multiplies two vectors together
 
@@ -343,6 +343,7 @@ Multiplies two vectors together
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L985:
  pushFromFSp 0
  fetchValue 4
@@ -380,5 +381,6 @@ L985:
  pushFromPSp 64
  memcpyToSp 16, 32
  jmp L1074
+```
 </details>
 

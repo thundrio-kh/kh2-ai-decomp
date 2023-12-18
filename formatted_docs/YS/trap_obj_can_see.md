@@ -1,6 +1,6 @@
 ## trap_obj_can_see* (object)
 
-syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
+`syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)`
 
 Checks if object can see target object
 
@@ -26,6 +26,7 @@ Checks if object can see target object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L6358:
  pushFromFSp 64
  pushImmf 500
@@ -37,5 +38,6 @@ L6358:
  pushFromPSp 80
  syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
  eqzv
+```
 </details>
 

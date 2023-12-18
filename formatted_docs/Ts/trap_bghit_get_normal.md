@@ -1,6 +1,6 @@
 ## trap_bghit_get_normal* (collision)
 
-syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
+`syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)`
 
 Get the normal vector of a bghit
 
@@ -42,6 +42,7 @@ Get the normal vector of a bghit
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L298:
  pushFromFSp 88
  pushImmf 0
@@ -115,5 +116,6 @@ L298:
  pushImmf 3
  popToSp 84
  jmp L451
+```
 </details>
 

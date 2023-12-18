@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_is_end* (mset)
 
-syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+`syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)`
 
 Returns true if the current motion set has ended
 
@@ -609,10 +609,12 @@ Returns true if the current motion set has ended
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2619:
  pushFromFSp 4
  fetchValue 4
  syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
  ret
+```
 </details>
 

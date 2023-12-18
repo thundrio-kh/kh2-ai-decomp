@@ -1,6 +1,6 @@
 ## trap_obj_star* (object)
 
-syscall 1, 91 ; trap_obj_star (2 in, 0 out)
+`syscall 1, 91 ; trap_obj_star (2 in, 0 out)`
 
 Grants Iframes?
 
@@ -37,6 +37,7 @@ Grants Iframes?
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+```
 L506:
  jz L528
  pushFromFSp 20
@@ -48,5 +49,6 @@ L506:
  gosub 8, L696
  drop 
  jmp L528
+```
 </details>
 

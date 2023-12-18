@@ -1,6 +1,6 @@
 ## *func_screen_whiteout* (visual)
 
-syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+`syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)`
 
 Fades the screen to white. On HD versions of the game, the spinning KH logo is present in the bottom right
 
@@ -43,6 +43,7 @@ Fades the screen to white. On HD versions of the game, the spinning KH logo is p
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+```
 L246:
  jz L265
  pushImmf 150
@@ -53,5 +54,6 @@ L246:
  pushImm 1
  memcpy 0
  jmp L265
+```
 </details>
 

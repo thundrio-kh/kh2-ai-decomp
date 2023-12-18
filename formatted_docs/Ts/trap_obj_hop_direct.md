@@ -1,6 +1,6 @@
 ## trap_obj_hop_direct* (movement)
 
-syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)
+`syscall 6, 42 ; trap_obj_hop_direct (4 in, 0 out)`
 
 Similar to trap_obj_hop, but does not set an animation for the object, just performs the hop
 
@@ -25,6 +25,7 @@ Similar to trap_obj_hop, but does not set an animation for the object, just perf
 
 <details>
 	<summary>Example Usage From obj\M_EX530\m_ex.bdscript</summary>
+```
 L8286:
  pushFromPSp 16
  pushImm 4
@@ -41,5 +42,6 @@ L8286:
  syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
  pushImmf 40
  gosub 12, L1505
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_friend_get_target_last_position* (friend)
 
-syscall 10, 8 ; trap_friend_get_target_last_position (1 in, 1 out)
+`syscall 10, 8 ; trap_friend_get_target_last_position (1 in, 1 out)`
 
 Get the last position of the friends target
 
@@ -26,6 +26,7 @@ Get the last position of the friends target
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L8852:
  pushFromPSpVal 0
  fetchValue 4
@@ -77,5 +78,6 @@ L8852:
  pushFromPSp 144
  gosub 48, L9066
  jmp L8977
+```
 </details>
 

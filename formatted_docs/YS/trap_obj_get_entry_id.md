@@ -1,6 +1,6 @@
 ## trap_obj_get_entry_id* (object)
 
-syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
+`syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)`
 
 returns the ID for an object (according to 00objentry.bin)
 
@@ -344,6 +344,7 @@ returns the ID for an object (according to 00objentry.bin)
 
 <details>
 	<summary>Example Usage From msn\AL14_MS_O\al14.bdscript</summary>
+```
 L89:
  pushFromPSp 16
  pushFromFSp 0
@@ -355,5 +356,6 @@ L89:
  sub 
  jz L108
  jmp L117
+```
 </details>
 

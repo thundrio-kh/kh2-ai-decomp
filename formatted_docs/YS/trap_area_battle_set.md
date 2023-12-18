@@ -1,6 +1,6 @@
 ## trap_area_battle_set* (mapinfo)
 
-syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
+`syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)`
 
 Returns the number for the battle program being executed
 
@@ -69,6 +69,7 @@ Returns the number for the battle program being executed
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
+```
 TR3:
  syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
  pushImm 80
@@ -78,5 +79,6 @@ TR3:
  pushImm 21
  syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
  jmp L328
+```
 </details>
 

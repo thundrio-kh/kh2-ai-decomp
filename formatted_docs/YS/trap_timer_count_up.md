@@ -1,6 +1,6 @@
 ## trap_timer_count_up* (mission_timer)
 
-syscall 0, 56 ; trap_timer_count_up (1 in, 0 out)
+`syscall 0, 56 ; trap_timer_count_up (1 in, 0 out)`
 
 Starts a countup timer
 
@@ -19,6 +19,8 @@ Starts a countup timer
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_sheet_get_drive_time* (sheet)
 
-syscall 10, 45 ; trap_sheet_get_drive_time (1 in, 1 out)
+`syscall 10, 45 ; trap_sheet_get_drive_time (1 in, 1 out)`
 
 Get the amount of drive time left
 
@@ -29,6 +29,7 @@ Get the amount of drive time left
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L1306:
  gosub 8, L1348
  memcpyToSp 16, 16
@@ -40,5 +41,6 @@ L1306:
  infoezf 
  jz L1328
  jmp L1345
+```
 </details>
 

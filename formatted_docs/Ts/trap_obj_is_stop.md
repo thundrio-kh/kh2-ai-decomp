@@ -1,6 +1,6 @@
 ## trap_obj_is_stop* (object)
 
-syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)
+`syscall 6, 49 ; trap_obj_is_stop (1 in, 1 out)`
 
 Checks if an object is stopped
 
@@ -30,6 +30,7 @@ Checks if an object is stopped
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L19588:
  jz L19615
  halt 
@@ -46,5 +47,6 @@ L19588:
  subf 
  memcpy 0
  jmp L19613
+```
 </details>
 

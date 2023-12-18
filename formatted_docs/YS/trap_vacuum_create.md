@@ -1,6 +1,6 @@
 ## trap_vacuum_create (vacuum)
 
-syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
+`syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)`
 
 Create a vacuum object
 
@@ -44,6 +44,7 @@ Create a vacuum object
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
+```
 L5403:
  pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
@@ -53,5 +54,6 @@ L5403:
  popToWp W4264
  pushFromFSp 8
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+```
 </details>
 

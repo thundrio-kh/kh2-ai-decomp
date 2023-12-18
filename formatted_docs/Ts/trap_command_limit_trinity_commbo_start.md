@@ -1,6 +1,6 @@
 ## trap_command_limit_trinity_commbo_start* (special)
 
-syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
+`syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)`
 
 Start one of the three parts of the trinity limit combo
 
@@ -23,6 +23,7 @@ Start one of the three parts of the trinity limit combo
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L962:
  pushFromFSp 0
  gosub 4, L1120
@@ -32,5 +33,6 @@ L962:
  pushImm 0
  syscall 6, 43 ; trap_command_limit_trinity_commbo_start (1 in, 0 out)
  jmp L979
+```
 </details>
 

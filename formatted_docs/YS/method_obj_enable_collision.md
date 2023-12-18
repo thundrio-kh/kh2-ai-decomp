@@ -1,6 +1,6 @@
 ## method_obj_enable_collision* (object)
 
-syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
+`syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)`
 
 Turns on part of an objects collision
 
@@ -121,11 +121,13 @@ Turns on part of an objects collision
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
+```
 L4369:
  popToSp 0
  pushFromFSp 0
  pushImm 0
  syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
  ret
+```
 </details>
 

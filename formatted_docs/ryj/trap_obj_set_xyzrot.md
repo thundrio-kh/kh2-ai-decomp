@@ -1,6 +1,6 @@
 ## trap_obj_set_xyzrot* (position)
 
-syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
+`syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)`
 
 Set the xyz rotation of an object
 
@@ -31,6 +31,7 @@ Set the xyz rotation of an object
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+```
 L36929:
  pushFromPSp 16
  pushImmf 0
@@ -48,5 +49,6 @@ L36929:
  pushFromPSp 16
  syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
  jmp L36965
+```
 </details>
 

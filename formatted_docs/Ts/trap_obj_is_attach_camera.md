@@ -1,6 +1,6 @@
 ## trap_obj_is_attach_camera* (object)
 
-syscall 6, 37 ; trap_obj_is_attach_camera (1 in, 1 out)
+`syscall 6, 37 ; trap_obj_is_attach_camera (1 in, 1 out)`
 
 Check if an object is attached to a camera
 
@@ -23,6 +23,8 @@ Check if an object is attached to a camera
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

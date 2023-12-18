@@ -1,6 +1,6 @@
 ## trap_player_get_movement* (player)
 
-syscall 1, 113 ; trap_player_get_movement (1 in, 1 out)
+`syscall 1, 113 ; trap_player_get_movement (1 in, 1 out)`
 
 Get the position that the player is moving to
 
@@ -38,6 +38,7 @@ Get the position that the player is moving to
 
 <details>
 	<summary>Example Usage From limit\goofy\limi.bdscript</summary>
+```
 L1410:
  jz L1742
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
@@ -58,5 +59,6 @@ L1410:
  pushImmf 0
  popToSp 80
  jmp L1473
+```
 </details>
 

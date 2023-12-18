@@ -1,6 +1,6 @@
 ## trap_obj_cmp* (math)
 
-syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+`syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)`
 
 Compares two numbers, and returns the difference
 
@@ -159,6 +159,7 @@ Compares two numbers, and returns the difference
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1393:
  popToSp 4
  popToSp 0
@@ -167,5 +168,6 @@ L1393:
  syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
  eqz 
  ret
+```
 </details>
 

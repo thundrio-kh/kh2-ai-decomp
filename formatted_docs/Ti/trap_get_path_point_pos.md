@@ -1,6 +1,6 @@
 ## trap_get_path_point_pos* (path)
 
-syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)
+`syscall 5, 14 ; trap_get_path_point_pos (2 in, 1 out)`
 
 Get the position of a point on a path.
 
@@ -32,6 +32,7 @@ Get the position of a point on a path.
 
 <details>
 	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
+```
 L5755:
  popToSp 0
  pushImmf 300
@@ -54,5 +55,6 @@ L5755:
  pushFromPSp 48
  memcpyToSp 16, 16
  jmp L5835
+```
 </details>
 

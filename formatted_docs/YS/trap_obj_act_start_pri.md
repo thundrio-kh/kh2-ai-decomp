@@ -1,6 +1,6 @@
 ## trap_obj_act_start_pri* (action)
 
-syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
+`syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)`
 
 Starts an action (with priority?)
 
@@ -33,6 +33,7 @@ Starts an action (with priority?)
 
 <details>
 	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
+```
 L3972:
  popToSp 4
  popToSp 0
@@ -40,5 +41,6 @@ L3972:
  pushFromPAi L6378 ; ___ai 'rush_start' (L6378)
  syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
  ret
+```
 </details>
 

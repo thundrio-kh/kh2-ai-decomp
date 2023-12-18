@@ -1,6 +1,6 @@
 ## trap_obj_set_team* (object)
 
-syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
+`syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)`
 
 Sets the object to a team (IE player, enemy, or npc)
 
@@ -42,6 +42,7 @@ Sets the object to a team (IE player, enemy, or npc)
 
 <details>
 	<summary>Example Usage From obj\B_NM110_HEAD\b_nm.bdscript</summary>
+```
 L137:
  gosub 12, L380
  jz L150
@@ -49,5 +50,6 @@ L137:
  pushImm 1
  syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
  jmp L157
+```
 </details>
 

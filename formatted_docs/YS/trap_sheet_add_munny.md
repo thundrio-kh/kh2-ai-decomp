@@ -1,6 +1,6 @@
 ## trap_sheet_add_munny* (save)
 
-syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
+`syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)`
 
 Adds an amount of money to the player
 
@@ -44,6 +44,7 @@ Adds an amount of money to the player
 
 <details>
 	<summary>Example Usage From ard\tt02\tt_n.bdscript</summary>
+```
 TR3:
  pushImm 362
  pushImm 100
@@ -53,5 +54,6 @@ TR3:
  syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
  drop 
  ret
+```
 </details>
 

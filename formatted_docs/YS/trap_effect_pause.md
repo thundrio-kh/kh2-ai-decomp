@@ -1,6 +1,6 @@
 ## trap_effect_pause (effect)
 
-syscall 0, 66 ; trap_effect_pause (2 in, 0 out)
+`syscall 0, 66 ; trap_effect_pause (2 in, 0 out)`
 
 pause an effect under certain condictions
 
@@ -25,6 +25,7 @@ pause an effect under certain condictions
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L1827:
  pushFromFSpVal 64
  pushImm 1
@@ -34,5 +35,6 @@ L1827:
  pushFromFSpVal 64
  pushImmf 12
  gosub 20, L1940
+```
 </details>
 

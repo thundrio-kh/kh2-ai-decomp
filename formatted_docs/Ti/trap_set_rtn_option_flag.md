@@ -1,6 +1,6 @@
 ## trap_set_rtn_option_flag* (field)
 
-syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
+`syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)`
 
 Set the RTN option flag
 
@@ -251,6 +251,7 @@ Set the RTN option flag
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2452:
  pushFromPAi L2895 ; ___ai 'RTN_stop' (L2895)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
@@ -268,5 +269,6 @@ L2452:
  pushFromPAi L2910 ; ___ai 'fix_idle' (L2910)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L2518
+```
 </details>
 

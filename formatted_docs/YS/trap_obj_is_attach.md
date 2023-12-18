@@ -1,6 +1,6 @@
 ## trap_obj_is_attach* (object)
 
-syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+`syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)`
 
 Returns if the object is attached to another object
 
@@ -356,6 +356,7 @@ Returns if the object is attached to another object
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1067:
  popToSp 0
  pushFromPWp W72
@@ -385,5 +386,6 @@ L1067:
  pushFromPSp 16
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  jmp L1124
+```
 </details>
 

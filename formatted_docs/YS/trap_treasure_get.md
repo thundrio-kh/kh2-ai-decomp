@@ -1,6 +1,6 @@
 ## *trap_treasure_get* (save)
 
-syscall 1, 362 ; trap_treasure_get (1 in, 0 out)
+`syscall 1, 362 ; trap_treasure_get (1 in, 0 out)`
 
 Get a treasure
 
@@ -22,6 +22,7 @@ Get a treasure
 
 <details>
 	<summary>Example Usage From obj\M_EX350_13\m_ex.bdscript</summary>
+```
 L7928:
  popToSp 0
  pushImm 588
@@ -37,5 +38,6 @@ L7928:
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  gosub 4, L2575
  ret
+```
 </details>
 

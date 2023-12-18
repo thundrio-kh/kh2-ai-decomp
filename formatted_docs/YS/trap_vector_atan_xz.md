@@ -1,6 +1,6 @@
 ## trap_vector_atan_xz* (math)
 
-syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
+`syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)`
 
 Computes the arctangent of the ratio of the x and z components of the vector
 
@@ -176,6 +176,7 @@ Computes the arctangent of the ratio of the x and z components of the vector
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L3072:
  pushFromPSp 48
  pushImmf 0
@@ -204,5 +205,6 @@ L3072:
  popToSp 72
  pushImmf 0
  popToSp 68
+```
 </details>
 

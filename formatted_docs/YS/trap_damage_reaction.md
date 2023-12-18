@@ -1,6 +1,6 @@
 ## trap_damage_reaction* (attack)
 
-syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)
+`syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)`
 
 Gets the reaction type value of an attack, which is the "Enemy Reaction" value defined in its Atkp entry found in 00battle.bin
 
@@ -47,6 +47,7 @@ Gets the reaction type value of an attack, which is the "Enemy Reaction" value d
 
 <details>
 	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
+```
 L122:
  jz L153
  pushFromFSp 0
@@ -56,5 +57,6 @@ L122:
  sub 
  jz L137
  jmp L150
+```
 </details>
 

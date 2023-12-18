@@ -1,6 +1,6 @@
 ## trap_target_attack* (attack)
 
-syscall 1, 166 ; trap_target_attack (1 in, 1 out)
+`syscall 1, 166 ; trap_target_attack (1 in, 1 out)`
 
 Get the target of an attack
 
@@ -39,6 +39,7 @@ Get the target of an attack
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L167:
  popToSp 0
  popToSp 4
@@ -87,5 +88,6 @@ L167:
  pushImm 0
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  ret
+```
 </details>
 

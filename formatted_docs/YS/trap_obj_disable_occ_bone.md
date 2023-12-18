@@ -1,6 +1,6 @@
 ## trap_obj_disable_occ_bone* (culling)
 
-syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)
+`syscall 1, 335 ; trap_obj_disable_occ_bone (2 in, 0 out)`
 
 Disable occlusion culling for a specific bone
 
@@ -22,6 +22,7 @@ Disable occlusion culling for a specific bone
 
 <details>
 	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
+```
 L10872:
  pushFromFSp 0
  fetchValue 4
@@ -90,5 +91,6 @@ L10872:
  pushFromPAi L12047 ; ___ai 'phil_appear' (L12047)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
+```
 </details>
 

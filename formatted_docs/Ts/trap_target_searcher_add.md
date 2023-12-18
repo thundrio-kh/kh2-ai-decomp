@@ -1,6 +1,6 @@
 ## trap_target_searcher_add* (target)
 
-syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
+`syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)`
 
 Add an object to a target searcher
 
@@ -33,6 +33,7 @@ Add an object to a target searcher
 
 <details>
 	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
+```
 L421:
  popToSp 4
  popToSp 0
@@ -70,5 +71,6 @@ L421:
  pushFromFSp 4
  syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
  jmp L498
+```
 </details>
 

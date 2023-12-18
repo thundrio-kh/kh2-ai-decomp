@@ -1,6 +1,6 @@
 ## trap_progress_set_flag* (save)
 
-syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+`syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)`
 
 Sets the value of a flag to true
 
@@ -59,6 +59,7 @@ Sets the value of a flag to true
 
 <details>
 	<summary>Example Usage From 00common</summary>
+```
 L68:
  pushImm 13325
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
@@ -67,5 +68,6 @@ L68:
  pushImm 13325
  syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
  jmp L118
+```
 </details>
 

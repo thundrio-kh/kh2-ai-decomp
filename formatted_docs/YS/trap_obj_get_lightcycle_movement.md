@@ -1,6 +1,6 @@
 ## trap_obj_get_lightcycle_movement* (special)
 
-syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)
+`syscall 1, 269 ; trap_obj_get_lightcycle_movement (3 in, 1 out)`
 
 Get the movement for the light cycle to head to a target
 
@@ -29,6 +29,7 @@ Get the movement for the light cycle to head to a target
 
 <details>
 	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
+```
 L62:
  pushFromFSp 0
  gosub 4, L88
@@ -41,5 +42,6 @@ L62:
  memcpyToSpVal 16, 112
  halt 
  jmp L62
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_damage_get_hitback* (attack)
 
-syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
+`syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)`
 
 Get the hitback value of damage
 
@@ -31,6 +31,7 @@ Get the hitback value of damage
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L1729:
  jz L1743
  pushFromFSp 0
@@ -39,5 +40,6 @@ L1729:
  syscall 2, 86 ; trap_damage_get_hitback (1 in, 1 out)
  syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
  jmp L1784
+```
 </details>
 

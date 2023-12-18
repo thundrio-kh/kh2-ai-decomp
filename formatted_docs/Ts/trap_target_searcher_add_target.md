@@ -1,6 +1,6 @@
 ## trap_target_searcher_add_target* (target)
 
-syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
+`syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)`
 
 Add a target to a target searcher
 
@@ -28,6 +28,7 @@ Add a target to a target searcher
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L2552:
  popToSp 0
  pushFromPWp W0
@@ -49,5 +50,6 @@ L2552:
  pushFromFSp 4
  syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
  jmp L2629
+```
 </details>
 

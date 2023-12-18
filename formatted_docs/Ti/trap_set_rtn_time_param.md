@@ -1,6 +1,6 @@
 ## trap_set_rtn_time_param* (field)
 
-syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)
+`syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)`
 
 Set the time parameter for an RTN
 
@@ -251,6 +251,7 @@ Set the time parameter for an RTN
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L303:
  popToSp 4
  popToSp 0
@@ -483,5 +484,6 @@ L303:
  pushFromPSpVal 28
  syscall 5, 33 ; trap_set_rtn_time_param (2 in, 0 out)
  ret
+```
 </details>
 

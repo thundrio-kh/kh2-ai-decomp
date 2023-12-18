@@ -1,6 +1,6 @@
 ## trap_obj_reraise* (friend)
 
-syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)
+`syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)`
 
 Revives the player (ala Tinker Bells ability)
 
@@ -22,6 +22,7 @@ Revives the player (ala Tinker Bells ability)
 
 <details>
 	<summary>Example Usage From obj\P_EX340\p_ex.bdscript</summary>
+```
 L1695:
  popToSp 0
  pushFromFSp 0
@@ -60,5 +61,6 @@ L1695:
  pushFromFSp 0
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  ret
+```
 </details>
 

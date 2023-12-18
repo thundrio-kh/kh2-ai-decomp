@@ -1,6 +1,6 @@
 ## trap_sheet_min_hp* (min_hp)
 
-syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
+`syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)`
 
 Return the min HP of an object
 
@@ -56,6 +56,7 @@ Return the min HP of an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3693:
  drop 
  pushFromFSp 0
@@ -93,5 +94,6 @@ L3693:
  pushImm 10000
  memcpy 0
  jmp L3812
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_friend_is_effect_exist* (friend)
 
-syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
+`syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)`
 
 Checks if the effect still exists
 
@@ -28,6 +28,7 @@ Checks if the effect still exists
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L2908:
  dup 
  jz L2918
@@ -35,5 +36,6 @@ L2908:
  pushFromFSp 52
  syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
  eqzv
+```
 </details>
 

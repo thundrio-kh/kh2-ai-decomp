@@ -1,6 +1,6 @@
 ## trap_obj_act_clear* (action)
 
-syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)
+`syscall 1, 127 ; trap_obj_act_clear (1 in, 0 out)`
 
 clears an action
 
@@ -45,6 +45,7 @@ clears an action
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L50:
  popToSp 4
  popToSp 0
@@ -84,5 +85,6 @@ L50:
  pushFromFSp 0
  gosub 12, L848
  ret
+```
 </details>
 

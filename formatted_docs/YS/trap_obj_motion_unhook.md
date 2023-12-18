@@ -1,6 +1,6 @@
 ## trap_obj_motion_unhook* (mset)
 
-syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
+`syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)`
 
 Unhooks a motion set
 
@@ -40,6 +40,7 @@ Unhooks a motion set
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
+```
 L5222:
  pushFromFSp 0
  syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
@@ -49,5 +50,6 @@ L5222:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
+```
 </details>
 

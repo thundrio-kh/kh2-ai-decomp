@@ -1,6 +1,6 @@
 ## method_obj_reset_collision* (object)
 
-syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
+`syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)`
 
 Resets the objects collision to its default state
 
@@ -168,6 +168,7 @@ Resets the objects collision to its default state
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+```
 L1904:
  popToSp 4
  popToSp 0
@@ -185,5 +186,6 @@ L1904:
  pushImm 16
  syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
  jmp L1951
+```
 </details>
 

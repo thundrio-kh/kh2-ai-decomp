@@ -1,6 +1,6 @@
 ## trap_obj_enable_occ_bone* (culling)
 
-syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
+`syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)`
 
 Enable occlusion culling for a specific bone
 
@@ -22,6 +22,7 @@ Enable occlusion culling for a specific bone
 
 <details>
 	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
+```
 L5637:
  popToSp 0
  pushFromFSp 0
@@ -148,5 +149,6 @@ L5637:
  pushImm 222
  syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
  ret
+```
 </details>
 

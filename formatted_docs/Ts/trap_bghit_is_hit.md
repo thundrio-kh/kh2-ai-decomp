@@ -1,6 +1,6 @@
 ## trap_bghit_is_hit* (collision)
 
-syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
+`syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)`
 
 Check if a bghit has hit something
 
@@ -49,6 +49,7 @@ Check if a bghit has hit something
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L6856:
  popToSp 4
  popToSp 8
@@ -71,5 +72,6 @@ L6856:
  pushFromPSp 16
  syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
  jmp L6947
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_attack_is_hit_bg* (attack)
 
-syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
+`syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)`
 
 Checks if an attack hit the background (OOB?).
 
@@ -95,6 +95,7 @@ Checks if an attack hit the background (OOB?).
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L4735:
  pushFromFSpVal 68
  syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
@@ -149,5 +150,6 @@ L4735:
  pushFromPSp 112
  syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
  jmp L4845
+```
 </details>
 

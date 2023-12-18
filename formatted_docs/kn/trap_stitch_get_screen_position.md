@@ -1,6 +1,6 @@
 ## trap_stitch_get_screen_position* (special)
 
-syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)
+`syscall 10, 2 ; trap_stitch_get_screen_position (1 in, 1 out)`
 
 Get the position of stitch on the screen
 
@@ -26,6 +26,7 @@ Get the position of stitch on the screen
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L3526:
  popToSp 4
  popToSp 8
@@ -61,5 +62,6 @@ L3526:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  jmp L3607
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_vector_add* (math)
 
-syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+`syscall 0, 4 ; trap_vector_add (2 in, 1 out)`
 
 Adds two vectors together
 
@@ -392,6 +392,7 @@ Adds two vectors together
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1951:
  popToSp 4
  popToSp 0
@@ -420,5 +421,6 @@ L1951:
  pushFromPSp 16
  gosub 12, L2106
  jmp L2051
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_motion_capture_id* (mset)
 
-syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
+`syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)`
 
 return the id of a motion capture
 
@@ -205,6 +205,7 @@ return the id of a motion capture
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2626:
  popToSp 0
  popToSp 4
@@ -219,5 +220,6 @@ L2626:
  sub 
  neqz 
  neqzv
+```
 </details>
 

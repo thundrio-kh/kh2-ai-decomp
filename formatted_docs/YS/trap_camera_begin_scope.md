@@ -1,6 +1,6 @@
 ## *trap_camera_begin_scope* (camera)
 
-syscall 1, 281 ; trap_camera_begin_scope (2 in, 0 out)
+`syscall 1, 281 ; trap_camera_begin_scope (2 in, 0 out)`
 
 Switch the camera mode to the inverse scope used in the Xigbar fight.
 
@@ -23,6 +23,7 @@ Switch the camera mode to the inverse scope used in the Xigbar fight.
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L20862:
  popToSp 4
  popToSp 0
@@ -95,5 +96,6 @@ L20862:
  pushImm 0
  popToSpVal 224
  ret
+```
 </details>
 

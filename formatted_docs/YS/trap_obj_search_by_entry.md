@@ -1,6 +1,6 @@
 ## trap_obj_search_by_entry* (object)
 
-syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+`syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)`
 
 Looks up an object by objentry ID and puts the object in the data object. If this object does not exist, will throw an error (which is ignored by the VM on PS2, but will crash on PC)
 
@@ -448,6 +448,7 @@ Looks up an object by objentry ID and puts the object in the data object. If thi
 
 <details>
 	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
+```
 L55:
  pushFromPSp 0
  pushImm 1295
@@ -458,5 +459,6 @@ L55:
  pushImm 17626
  gosub 8, L75
  ret
+```
 </details>
 

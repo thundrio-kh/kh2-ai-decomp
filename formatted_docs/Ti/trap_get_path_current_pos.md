@@ -1,6 +1,6 @@
 ## trap_get_path_current_pos* (path)
 
-syscall 5, 19 ; trap_get_path_current_pos (1 in, 1 out)
+`syscall 5, 19 ; trap_get_path_current_pos (1 in, 1 out)`
 
 Get the current position of the path
 
@@ -23,6 +23,8 @@ Get the current position of the path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_message_open* (menu)
 
-syscall 1, 32 ; trap_message_open (2 in, 1 out)
+`syscall 1, 32 ; trap_message_open (2 in, 1 out)`
 
 Opens a scrolling text window in the top left of the screen
 
@@ -158,6 +158,7 @@ Opens a scrolling text window in the top left of the screen
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L4427:
  pushFromFSp 0
  syscall 4, 0 ; ?
@@ -192,5 +193,6 @@ L4427:
  pushImm 50
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 </details>
 

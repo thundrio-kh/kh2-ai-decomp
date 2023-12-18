@@ -1,6 +1,6 @@
 ## trap_damage_element* (attack)
 
-syscall 2, 85 ; trap_damage_element (1 in, 1 out)
+`syscall 2, 85 ; trap_damage_element (1 in, 1 out)`
 
 Returns the element of the attack, according to openkh documentation
 
@@ -56,6 +56,7 @@ Returns the element of the attack, according to openkh documentation
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L2101:
  jz L2170
  pushFromFSp 4
@@ -65,5 +66,6 @@ L2101:
  sub 
  jz L2116
  jmp L2139
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_obj_recov_holylight* (special)
 
-syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
+`syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)`
 
 activate mickeys recovery holy light
 
@@ -23,6 +23,7 @@ activate mickeys recovery holy light
 
 <details>
 	<summary>Example Usage From obj\P_EX200\mick.bdscript</summary>
+```
 L1677:
  popToSp 0
  pushImmf 30
@@ -40,5 +41,6 @@ L1677:
  pushFromPSpVal 0
  syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
  ret
+```
 </details>
 

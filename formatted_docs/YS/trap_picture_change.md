@@ -1,6 +1,6 @@
 ## trap_picture_change* (visual)
 
-syscall 1, 290 ; trap_picture_change (2 in, 0 out)
+`syscall 1, 290 ; trap_picture_change (2 in, 0 out)`
 
 Change a picture attached to a layout
 
@@ -23,6 +23,7 @@ Change a picture attached to a layout
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L10848:
  popToSp 0
  pushImm 5
@@ -35,5 +36,6 @@ L10848:
  pushImm 1
  syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
  ret
+```
 </details>
 

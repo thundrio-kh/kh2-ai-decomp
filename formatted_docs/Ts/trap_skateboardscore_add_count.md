@@ -1,6 +1,6 @@
 ## trap_skateboardscore_add_count* (special)
 
-syscall 6, 48 ; trap_skateboardscore_add_count (2 in, 0 out)
+`syscall 6, 48 ; trap_skateboardscore_add_count (2 in, 0 out)`
 
 Add to the skateboard count score
 
@@ -34,6 +34,7 @@ Add to the skateboard count score
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L522:
  popToSp 0
  pushImm 20
@@ -50,5 +51,6 @@ L522:
  gosub 4, L757
  drop 
  jmp L555
+```
 </details>
 

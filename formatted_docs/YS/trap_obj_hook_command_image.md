@@ -1,6 +1,6 @@
 ## trap_obj_hook_command_image* (command)
 
-syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)
+`syscall 1, 359 ; trap_obj_hook_command_image (1 in, 0 out)`
 
 hooks the command image
 
@@ -22,6 +22,7 @@ hooks the command image
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L2290:
  popToSp 0
  pushImmf 30
@@ -42,5 +43,6 @@ L2290:
  syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
  drop 
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_btlobj_set_sheet* (btlobj)
 
-syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)
+`syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)`
 
 Sets a batleobj to use a specific enmp entry.
 
@@ -305,6 +305,7 @@ Sets a batleobj to use a specific enmp entry.
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L4649:
  popToSp 4
  popToSp 0
@@ -931,5 +932,6 @@ L4649:
  pushImmf 0.8
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
+```
 </details>
 

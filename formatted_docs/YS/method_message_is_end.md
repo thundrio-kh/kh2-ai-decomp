@@ -1,6 +1,6 @@
 ## method_message_is_end (menu)
 
-syscall 1, 48 ; method_message_is_end (1 in, 1 out)
+`syscall 1, 48 ; method_message_is_end (1 in, 1 out)`
 
 Checks if the message playing at the top of the screen is done being scrolled
 
@@ -158,6 +158,7 @@ Checks if the message playing at the top of the screen is done being scrolled
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L4504:
  pushFromFSp 48
  syscall 1, 48 ; method_message_is_end (1 in, 1 out)
@@ -165,5 +166,6 @@ L4504:
  jz L4514
  halt 
  jmp L4504
+```
 </details>
 

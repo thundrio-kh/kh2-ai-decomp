@@ -1,6 +1,6 @@
 ## *trap_area_cost_rest* (mapinfo)
 
-syscall 1, 197 ; trap_area_cost_rest (0 in, 1 out)
+`syscall 1, 197 ; trap_area_cost_rest (0 in, 1 out)`
 
 Returns the amount of cost left in the room before the capacity is filled (YS::Capacity - YS::Cost)
 
@@ -34,6 +34,7 @@ Returns the amount of cost left in the room before the capacity is filled (YS::C
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L230:
  dup 
  jz L254
@@ -49,5 +50,6 @@ L230:
  sub 
  ipos 
  eqzv
+```
 </details>
 

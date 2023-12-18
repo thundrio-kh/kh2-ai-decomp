@@ -1,6 +1,6 @@
 ## trap_event_layer_on* (event)
 
-syscall 1, 356 ; trap_event_layer_on (0 in, 0 out)
+`syscall 1, 356 ; trap_event_layer_on (0 in, 0 out)`
 
 enables the event HUD
 
@@ -22,6 +22,7 @@ enables the event HUD
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L15358:
  gosub 12, L757
  memcpyToSp 16, 32
@@ -105,5 +106,6 @@ L15358:
  pushFromPAi L27920 ; ___ai 'laser_faint' (L27920)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret
+```
 </details>
 

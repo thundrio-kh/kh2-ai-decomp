@@ -1,6 +1,6 @@
 ## *trap_act_table_init* (action)
 
-syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
+`syscall 1, 5 ; trap_act_table_init (1 in, 0 out)`
 
 Initializes an action table to be used by an object. Needs actions added to it afterward with trap_act_table_add
 
@@ -811,11 +811,13 @@ Initializes an action table to be used by an object. Needs actions added to it a
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6423:
  popToSp 4
  popToSp 0
  pushFromFSp 4
  syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_detach_camera* (camera)
 
-syscall 6, 36 ; trap_obj_detach_camera (1 in, 0 out)
+`syscall 6, 36 ; trap_obj_detach_camera (1 in, 0 out)`
 
 Detatch the camera from an object
 
@@ -22,6 +22,7 @@ Detatch the camera from an object
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L169:
  popToSp 0
  gosub 20, L397
@@ -97,5 +98,6 @@ L169:
  pushFromPAi L3844 ; ___ai '10' (L3844)
  pushFromPSpVal 4
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
+```
 </details>
 

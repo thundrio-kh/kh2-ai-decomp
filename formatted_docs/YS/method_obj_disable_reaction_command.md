@@ -1,6 +1,6 @@
 ## method_obj_disable_reaction_command* (unused)
 
-syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)
+`syscall 1, 50 ; method_obj_disable_reaction_command (3 in, 0 out)`
 
 Disables a reaction command from being activated by the player. Unused in the vanilla game
 
@@ -19,6 +19,8 @@ Disables a reaction command from being activated by the player. Unused in the va
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

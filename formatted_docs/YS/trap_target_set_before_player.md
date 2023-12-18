@@ -1,6 +1,6 @@
 ## trap_target_set_before_player* (target)
 
-syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
+`syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)`
 
 Set the target of an object to be before the player
 
@@ -43,6 +43,7 @@ Set the target of an object to be before the player
 
 <details>
 	<summary>Example Usage From msn\MU01_MS102\mu01.bdscript</summary>
+```
 TR3:
  pushImm 19155
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
@@ -58,5 +59,6 @@ TR3:
  pushImm 0
  syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
  jmp L263
+```
 </details>
 

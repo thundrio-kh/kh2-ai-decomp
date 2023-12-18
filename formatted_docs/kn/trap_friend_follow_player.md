@@ -1,6 +1,6 @@
 ## trap_friend_follow_player* (friend)
 
-syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
+`syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)`
 
 Have a friend follow the player
 
@@ -23,6 +23,7 @@ Have a friend follow the player
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L6080:
  pushFromPWp W364
  gosub 4, L6099
@@ -34,5 +35,6 @@ L6080:
  syscall 10, 20 ; trap_friend_follow_player (1 in, 0 out)
  halt 
  jmp L6080
+```
 </details>
 

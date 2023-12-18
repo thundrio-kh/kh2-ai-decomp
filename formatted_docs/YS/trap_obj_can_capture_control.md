@@ -1,6 +1,6 @@
 ## trap_obj_can_capture_control* (object)
 
-syscall 1, 253 ; trap_obj_can_capture_control (1 in, 1 out)
+`syscall 1, 253 ; trap_obj_can_capture_control (1 in, 1 out)`
 
 Returns if the objects control can be captured
 
@@ -23,6 +23,8 @@ Returns if the objects control can be captured
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

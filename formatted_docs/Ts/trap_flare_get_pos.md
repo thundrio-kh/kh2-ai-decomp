@@ -1,6 +1,6 @@
 ## trap_flare_get_pos* (special)
 
-syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)
+`syscall 7, 10 ; trap_flare_get_pos (1 in, 1 out)`
 
 Get the position of Flare Force
 
@@ -27,6 +27,7 @@ Get the position of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L2440:
  popToSp 0
  pushFromFSpVal 80
@@ -34,5 +35,6 @@ L2440:
  memcpyToSp 16, 16
  pushFromPSp 16
  ret
+```
 </details>
 

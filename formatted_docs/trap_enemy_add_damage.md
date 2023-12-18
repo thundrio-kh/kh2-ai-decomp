@@ -1,6 +1,6 @@
 ## trap_enemy_add_damage (enemy)
 
-syscall 2, 36 ; trap_enemy_add_damage (2 in, 0 out)
+`syscall 2, 36 ; trap_enemy_add_damage (2 in, 0 out)`
 
 Unknown
 
@@ -27,6 +27,7 @@ Unknown
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+```
 L6918:
  pushFromFSp 0
  pushFromFSp 4
@@ -45,5 +46,6 @@ L6918:
  pushImm 197
  syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
  jmp L6960
+```
 </details>
 

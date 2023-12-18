@@ -1,6 +1,6 @@
 ## *trap_obj_pos* (position)
 
-syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+`syscall 1, 147 ; trap_obj_pos (1 in, 1 out)`
 
 Return a position vector for the objects current position.
 
@@ -869,6 +869,7 @@ Return a position vector for the objects current position.
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L56:
  jz L112
  pushFromPSp 0
@@ -896,5 +897,6 @@ L56:
  syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
  gosub 12, L289
  jmp L112
+```
 </details>
 

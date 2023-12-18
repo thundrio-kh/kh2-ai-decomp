@@ -1,6 +1,6 @@
 ## trap_obj_motion_check_trigger* (mset)
 
-syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
+`syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)`
 
 returns the frame trigger count (Triggered on X frame) of a motion entry
 
@@ -293,6 +293,7 @@ returns the frame trigger count (Triggered on X frame) of a motion entry
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L1074:
  pushFromPSp 32
  pushFromFSp 4
@@ -338,5 +339,6 @@ L1074:
  pushImm 1
  syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
  eqzv
+```
 </details>
 

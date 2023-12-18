@@ -1,6 +1,6 @@
 ## trap_sheet_max_hp* (sheet)
 
-syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
+`syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)`
 
 Return the max HP of an object
 
@@ -106,6 +106,7 @@ Return the max HP of an object
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L163:
  popToSp 0
  popToSp 4
@@ -141,5 +142,6 @@ L163:
  pushImm 1
  popToSp 36
  jmp L228
+```
 </details>
 

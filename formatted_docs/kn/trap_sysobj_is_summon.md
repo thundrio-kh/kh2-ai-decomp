@@ -1,6 +1,6 @@
 ## trap_sysobj_is_summon* (object)
 
-syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
+`syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)`
 
 Check if the object is a summon
 
@@ -61,6 +61,7 @@ Check if the object is a summon
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+```
 L321:
  popToSp 4
  popToSp 0
@@ -76,5 +77,6 @@ L321:
  syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

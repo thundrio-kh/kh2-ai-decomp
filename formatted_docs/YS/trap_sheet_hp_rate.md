@@ -1,6 +1,6 @@
 ## trap_sheet_hp_rate* (sheet)
 
-syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
+`syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)`
 
 Return the HP rate of an object
 
@@ -126,6 +126,7 @@ Return the HP rate of an object
 
 <details>
 	<summary>Example Usage From msn\DC00_MS101\dc_m.bdscript</summary>
+```
 L152:
  pushFromPSpVal 16
  fetchValue 4
@@ -143,5 +144,6 @@ L152:
  syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
  halt 
  jmp L152
+```
 </details>
 

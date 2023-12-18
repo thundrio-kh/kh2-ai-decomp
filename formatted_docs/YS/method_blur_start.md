@@ -1,6 +1,6 @@
 ## method_blur_start* (visual)
 
-syscall 0, 29 ; method_blur_start (1 in, 0 out)
+`syscall 0, 29 ; method_blur_start (1 in, 0 out)`
 
 Starts the blur effect. Unused in the vanilla game
 
@@ -19,6 +19,8 @@ Starts the blur effect. Unused in the vanilla game
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

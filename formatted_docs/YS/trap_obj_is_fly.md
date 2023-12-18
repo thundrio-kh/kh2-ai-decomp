@@ -1,6 +1,6 @@
 ## trap_obj_is_fly* (object)
 
-syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
+`syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)`
 
 Returns if the object is flying
 
@@ -71,6 +71,7 @@ Returns if the object is flying
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L3114:
  pushFromFSp 4
  syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
@@ -84,5 +85,6 @@ L3114:
  pushImm 5
  syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
  jmp L3140
+```
 </details>
 

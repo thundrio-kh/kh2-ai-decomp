@@ -1,6 +1,6 @@
 ## trap_is_end_rtn_action* (field)
 
-syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
+`syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)`
 
 Return if the current RTN action is end
 
@@ -256,6 +256,7 @@ Return if the current RTN action is end
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1117:
  pushFromFSp 0
  syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
@@ -263,5 +264,6 @@ L1117:
  jz L1127
  halt 
  jmp L1117
+```
 </details>
 

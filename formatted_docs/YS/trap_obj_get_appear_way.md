@@ -1,6 +1,6 @@
 ## trap_obj_get_appear_way* (object)
 
-syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
+`syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)`
 
 Returns the appear way value of an object, or -1. It seems like just about every object script calls this.
 
@@ -559,6 +559,7 @@ Returns the appear way value of an object, or -1. It seems like just about every
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6432:
  popToSp 0
  pushFromFSp 0
@@ -572,5 +573,6 @@ L6432:
  sub 
  jz L6454
  jmp L6460
+```
 </details>
 

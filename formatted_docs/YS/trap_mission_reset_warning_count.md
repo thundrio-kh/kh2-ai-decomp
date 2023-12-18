@@ -1,6 +1,6 @@
 ## trap_mission_reset_warning_count* (mission_counter)
 
-syscall 4, 58 ; trap_mission_reset_warning_count (1 in, 0 out)
+`syscall 4, 58 ; trap_mission_reset_warning_count (1 in, 0 out)`
 
 Reset the warning flag for a counter
 
@@ -22,6 +22,7 @@ Reset the warning flag for a counter
 
 <details>
 	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
+```
 L5144:
  pushFromFSp 0
  fetchValue 4
@@ -50,5 +51,6 @@ L5144:
  divf 
  citf 
  memcpy 0
+```
 </details>
 

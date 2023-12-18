@@ -1,6 +1,6 @@
 ## *trap_special_last_xemnus_laser_optimize_end* (special)
 
-syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)
+`syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)`
 
 Removes the dome (dark globe) effect at the end of the Final Xemnas attack
 
@@ -22,6 +22,7 @@ Removes the dome (dark globe) effect at the end of the Final Xemnas attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L15101:
  popToSp 0
  pushFromFSp 0
@@ -34,5 +35,6 @@ L15101:
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
  syscall 8, 7 ; trap_special_last_xemnus_laser_optimize_end (0 in, 0 out)
  ret
+```
 </details>
 

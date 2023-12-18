@@ -1,6 +1,6 @@
 ## trap_attack_set_obj_pax* (attack)
 
-syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
+`syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)`
 
 Attaches an PAX effect during an attack. Unknown how this is different from trap_attack_set_pax
 
@@ -154,6 +154,7 @@ Attaches an PAX effect during an attack. Unknown how this is different from trap
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L903:
  popToSp 0
  pushFromPSp 64
@@ -215,5 +216,6 @@ L903:
  pushImmf 60
  pushImmf 0
  syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+```
 </details>
 

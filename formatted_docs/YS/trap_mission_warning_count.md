@@ -1,6 +1,6 @@
 ## trap_mission_warning_count* (mission_counter)
 
-syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
+`syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)`
 
 mission_counter
 
@@ -84,6 +84,7 @@ mission_counter
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
+```
 L67:
  popToSp 4
  popToSp 0
@@ -101,5 +102,6 @@ L67:
  pushFromFSpVal 4
  syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
  jmp L98
+```
 </details>
 

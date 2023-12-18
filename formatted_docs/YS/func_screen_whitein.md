@@ -1,6 +1,6 @@
 ## *func_screen_whitein* (visual)
 
-syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+`syscall 0, 32 ; func_screen_whitein (1 in, 0 out)`
 
 Takes the screen from being all white and fades in.
 
@@ -67,6 +67,7 @@ Takes the screen from being all white and fades in.
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L8679:
  popToSp 0
  pushImmf 360
@@ -78,5 +79,6 @@ L8679:
  pushImmf 0
  syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_damage_damage* (attack)
 
-syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
+`syscall 2, 46 ; trap_damage_damage (1 in, 1 out)`
 
 Returns the Team value of the attack, as documented in the Openkh ATKP page (Deal damage to: 0/1/2 Enemies, 3/4/5 Enemies and allies…)
 
@@ -38,6 +38,7 @@ Returns the Team value of the attack, as documented in the Openkh ATKP page (Dea
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
+```
 TR6:
  popToSp 0
  popToSp 4
@@ -57,5 +58,6 @@ TR6:
  pushImm 0
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L86
+```
 </details>
 

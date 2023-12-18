@@ -1,6 +1,6 @@
 ## trap_worldflag_set* (save)
 
-syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+`syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)`
 
 Set a worldflag to true
 
@@ -63,6 +63,7 @@ Set a worldflag to true
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
+```
 L358:
  pushFromPSpVal 12
  pushImm 0
@@ -72,5 +73,6 @@ L358:
  pushImm 212
  syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
  jmp L591
+```
 </details>
 

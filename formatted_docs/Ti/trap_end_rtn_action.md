@@ -1,6 +1,6 @@
 ## trap_end_rtn_action* (field)
 
-syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
+`syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)`
 
 End an RTN action
 
@@ -252,6 +252,7 @@ End an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1127:
  pushFromFSp 0
  syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
@@ -259,5 +260,6 @@ L1127:
  pushFromPAi L2943 ; ___ai 'path_move' (L2943)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret
+```
 </details>
 

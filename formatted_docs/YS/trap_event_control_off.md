@@ -1,6 +1,6 @@
 ## trap_event_control_off* (event)
 
-syscall 1, 293 ; trap_event_control_off (0 in, 0 out)
+`syscall 1, 293 ; trap_event_control_off (0 in, 0 out)`
 
 Turns off player control for an event
 
@@ -23,6 +23,7 @@ Turns off player control for an event
 
 <details>
 	<summary>Example Usage From msn\TT02_MS201\save.bdscript</summary>
+```
 L52:
  pushImm 32
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
@@ -30,5 +31,6 @@ L52:
  pushImm 1
  popToWp W12
  jmp L66
+```
 </details>
 

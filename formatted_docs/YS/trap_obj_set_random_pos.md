@@ -1,6 +1,6 @@
 ## trap_obj_set_random_pos* (position)
 
-syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
+`syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)`
 
 Sets an object to a random in bounds position (if the random location found is out of bounds, it will be moved to the closest in bounds location)
 
@@ -27,6 +27,7 @@ Sets an object to a random in bounds position (if the random location found is o
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L56:
  jz L112
  pushFromPSp 0
@@ -54,5 +55,6 @@ L56:
  syscall 1, 199 ; trap_obj_set_random_pos (4 in, 0 out)
  gosub 12, L289
  jmp L112
+```
 </details>
 

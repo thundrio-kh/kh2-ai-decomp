@@ -1,6 +1,6 @@
 ## trap_obj_effect_unbind* (effect)
 
-syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
+`syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)`
 
 Unbinds the effect from the object
 
@@ -31,6 +31,7 @@ Unbinds the effect from the object
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+```
 L38605:
  pushFromFSp 0
  gosub32 32, L36670
@@ -47,5 +48,6 @@ L38605:
  fetchValue 0
  syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
  jmp L38636
+```
 </details>
 

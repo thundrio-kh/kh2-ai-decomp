@@ -1,6 +1,6 @@
 ## trap_mission_set_gauge_ratio* (mission_gauge)
 
-syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
+`syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)`
 
 Sets a filled in ratio for the specified gauge
 
@@ -24,10 +24,12 @@ Sets a filled in ratio for the specified gauge
 
 <details>
 	<summary>Example Usage From obj\B_EX270_SIDECAR\b_ex.bdscript</summary>
+```
 L2536:
  pushImmf 0
  pushImm 0
  syscall 4, 10 ; trap_mission_set_gauge_ratio (2 in, 0 out)
  ret
+```
 </details>
 

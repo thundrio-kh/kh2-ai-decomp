@@ -1,6 +1,6 @@
 ## trap_flare_set_target* (special)
 
-syscall 7, 9 ; trap_flare_set_target (2 in, 0 out)
+`syscall 7, 9 ; trap_flare_set_target (2 in, 0 out)`
 
 Set the target of Flare Force
 
@@ -23,6 +23,7 @@ Set the target of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1573:
  popToSp 0
  pushFromFSp 0
@@ -44,5 +45,6 @@ L1573:
  pushImmf 60
  syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
  ret
+```
 </details>
 

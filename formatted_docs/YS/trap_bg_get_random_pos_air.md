@@ -1,6 +1,6 @@
 ## trap_bg_get_random_pos_air* (position)
 
-syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
+`syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)`
 
 Gets a random open position in the air
 
@@ -63,6 +63,7 @@ Gets a random open position in the air
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L4039:
  popToSp 0
  gosub 12, L1148
@@ -87,5 +88,6 @@ L4039:
  pushFromFSp 0
  gosub 12, L178
  ret
+```
 </details>
 

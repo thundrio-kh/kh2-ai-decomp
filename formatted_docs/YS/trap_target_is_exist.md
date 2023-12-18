@@ -1,6 +1,6 @@
 ## trap_target_is_exist* (target)
 
-syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+`syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)`
 
 Returns true if the target exists
 
@@ -247,6 +247,7 @@ Returns true if the target exists
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L468:
  pushFromFSp 180
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
@@ -259,5 +260,6 @@ L468:
  syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
  gosub 52, L1675
  jmp L489
+```
 </details>
 

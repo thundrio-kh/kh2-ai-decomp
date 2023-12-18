@@ -1,6 +1,6 @@
 ## func_area_activate_unit* (spawn)
 
-syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
+`syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)`
 
 Activates the spawn file with the passed in name.
 
@@ -22,6 +22,7 @@ Activates the spawn file with the passed in name.
 
 <details>
 	<summary>Example Usage From ard\wi00\wi00.bdscript</summary>
+```
 TR3:
  pushImm 13318
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
@@ -29,5 +30,6 @@ TR3:
  pushFromPAi L180 ; ___ai 'c02_' (L180)
  syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
  jmp L31
+```
 </details>
 

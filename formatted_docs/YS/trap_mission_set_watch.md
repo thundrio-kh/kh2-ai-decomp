@@ -1,6 +1,6 @@
 ## trap_mission_set_watch* (mission_watch)
 
-syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
+`syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)`
 
 sets a value to watch on the specified widget
 
@@ -32,11 +32,13 @@ sets a value to watch on the specified widget
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+```
 L209:
  pushFromFSp 0
  fetchValue 8
  syscall 4, 36 ; trap_score_score (1 in, 1 out)
  pushFromFSpVal 4
  syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_obj_dump* (unused)
 
-syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
+`syscall 1, 122 ; trap_obj_dump (1 in, 0 out)`
 
 likely printed the name of an object, but does nothing in the production versions of the game
 
@@ -38,6 +38,7 @@ likely printed the name of an object, but does nothing in the production version
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L400:
  pushFromFSp 20
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
@@ -48,5 +49,6 @@ L400:
  pushFromPSp 32
  syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
  jmp L419
+```
 </details>
 

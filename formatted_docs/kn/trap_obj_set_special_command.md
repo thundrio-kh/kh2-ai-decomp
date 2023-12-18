@@ -1,6 +1,6 @@
 ## trap_obj_set_special_command* (command)
 
-syscall 10, 6 ; trap_obj_set_special_command (2 in, 0 out)
+`syscall 10, 6 ; trap_obj_set_special_command (2 in, 0 out)`
 
 Set the special command for an object
 
@@ -23,6 +23,7 @@ Set the special command for an object
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L1116:
  pushFromPAi L27786 ; ___ai 'riku detach' (L27786)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
@@ -49,5 +50,6 @@ L1116:
  pushFromPWp W688
  pushFromFSp 0
  gosub 4, L4892
+```
 </details>
 

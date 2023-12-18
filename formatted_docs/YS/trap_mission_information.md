@@ -1,6 +1,6 @@
 ## *trap_mission_information* (mission)
 
-syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+`syscall 4, 4 ; trap_mission_information (1 in, 0 out)`
 
 Shows a message from a msg.bar file. Game assumes it is from the world one currently in RAM, or sys.bar. Pops up with a failsafe (FAKE) otherwise.
 
@@ -149,6 +149,7 @@ Shows a message from a msg.bar file. Game assumes it is from the world one curre
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
+```
 L182:
  syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
  pushFromFWp W8
@@ -169,5 +170,6 @@ L182:
  pushImm 14144
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  jmp L221
+```
 </details>
 

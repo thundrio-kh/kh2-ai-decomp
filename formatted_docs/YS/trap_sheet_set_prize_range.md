@@ -1,6 +1,6 @@
 ## trap_sheet_set_prize_range* (sheet)
 
-syscall 1, 329 ; trap_sheet_set_prize_range (2 in, 0 out)
+`syscall 1, 329 ; trap_sheet_set_prize_range (2 in, 0 out)`
 
 Set the prize range value for an object
 
@@ -22,6 +22,7 @@ Set the prize range value for an object
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L3024:
  pushFromFSp 0
  pushFromFSp 12
@@ -108,5 +109,6 @@ L3024:
  pushImm 652
  syscall 1, 265 ; trap_obj_set_medal (2 in, 0 out)
  jmp L3268
+```
 </details>
 

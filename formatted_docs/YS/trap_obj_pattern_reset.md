@@ -1,6 +1,6 @@
 ## trap_obj_pattern_reset* (object)
 
-syscall 1, 324 ; trap_obj_pattern_reset (2 in, 0 out)
+`syscall 1, 324 ; trap_obj_pattern_reset (2 in, 0 out)`
 
 Resets the resistance value to the default state
 
@@ -63,6 +63,7 @@ Resets the resistance value to the default state
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+```
 L3097:
  pushFromPAi L18917 ; ___ai 'SIGNAL_GAUGEMIN' (L18917)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
@@ -82,5 +83,6 @@ L3097:
  syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
  drop 
  jmp L3135
+```
 </details>
 

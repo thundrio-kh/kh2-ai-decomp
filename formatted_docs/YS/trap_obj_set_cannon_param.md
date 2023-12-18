@@ -1,6 +1,6 @@
 ## trap_obj_set_cannon_param* (special)
 
-syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
+`syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)`
 
 Parameters for the present cannon
 
@@ -22,6 +22,7 @@ Parameters for the present cannon
 
 <details>
 	<summary>Example Usage From obj\F_NM180\f_nm.bdscript</summary>
+```
 TR0:
  popToSp 0
  pushFromPSp 16
@@ -50,5 +51,6 @@ TR0:
  pushImmf 0
  syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
  ret
+```
 </details>
 

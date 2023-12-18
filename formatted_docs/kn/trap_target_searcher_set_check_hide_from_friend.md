@@ -1,6 +1,6 @@
 ## trap_target_searcher_set_check_hide_from_friend* (target)
 
-syscall 10, 55 ; trap_target_searcher_set_check_hide_from_friend (2 in, 0 out)
+`syscall 10, 55 ; trap_target_searcher_set_check_hide_from_friend (2 in, 0 out)`
 
 Set the flag to hide from friends target_searcher
 
@@ -38,6 +38,7 @@ Set the flag to hide from friends target_searcher
 
 <details>
 	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
+```
 L2790:
  popToSp 0
  pushImm 0
@@ -75,5 +76,6 @@ L2790:
  pushImm 1
  syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
  jmp L2871
+```
 </details>
 

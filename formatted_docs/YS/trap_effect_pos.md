@@ -1,6 +1,6 @@
 ## trap_effect_pos* (effect)
 
-syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
+`syscall 0, 53 ; trap_effect_pos (1 in, 1 out)`
 
 Returns the position of an effect
 
@@ -293,6 +293,7 @@ Returns the position of an effect
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3258:
  jz L3274
  pushFromFSpVal 16
@@ -301,5 +302,6 @@ L3258:
  pushFromPSp 16
  memcpyToSpVal 16, 32
  jmp L3274
+```
 </details>
 

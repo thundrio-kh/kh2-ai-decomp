@@ -1,6 +1,6 @@
 ## *func_system_set_game_speed* (system)
 
-syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)
+`syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)`
 
 Changes the speed the game runs.
 
@@ -19,6 +19,8 @@ Changes the speed the game runs.
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

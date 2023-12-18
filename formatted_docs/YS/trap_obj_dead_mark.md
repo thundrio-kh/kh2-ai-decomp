@@ -1,6 +1,6 @@
 ## trap_obj_dead_mark* (object)
 
-syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
+`syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)`
 
 Marks an object as dead
 
@@ -41,6 +41,7 @@ Marks an object as dead
 
 <details>
 	<summary>Example Usage From obj\M_EX350_01\m_ex.bdscript</summary>
+```
 L2510:
  pushFromFSp 0
  pushImm 3
@@ -58,5 +59,6 @@ L2510:
  pushFromFSp 0
  syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
  jmp L2545
+```
 </details>
 

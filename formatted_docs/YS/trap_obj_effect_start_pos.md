@@ -1,6 +1,6 @@
 ## *trap_obj_effect_start_pos* (effect)
 
-syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
+`syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)`
 
 Starts an effect associated with an object at the specified position
 
@@ -163,6 +163,7 @@ Starts an effect associated with an object at the specified position
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L185:
  popToSp 0
  popToSp 4
@@ -180,5 +181,6 @@ L185:
  syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
  drop 
  jmp L219
+```
 </details>
 

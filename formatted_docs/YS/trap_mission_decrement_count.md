@@ -1,6 +1,6 @@
 ## trap_mission_decrement_count* (mission_counter)
 
-syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
+`syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)`
 
 subtracts one from the value of an on screen counter
 
@@ -66,9 +66,11 @@ subtracts one from the value of an on screen counter
 
 <details>
 	<summary>Example Usage From msn\AL10_MS102\ms_d.bdscript</summary>
+```
 L33:
  pushImm 0
  syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
  jmp L69
+```
 </details>
 

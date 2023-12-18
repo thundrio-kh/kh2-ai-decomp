@@ -1,6 +1,6 @@
 ## trap_effect_set_color* (effect)
 
-syscall 0, 67 ; trap_effect_set_color (2 in, 0 out)
+`syscall 0, 67 ; trap_effect_set_color (2 in, 0 out)`
 
 Sets the color of an effect
 
@@ -30,6 +30,7 @@ Sets the color of an effect
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
+```
 L3409:
  pushFromFSp 56
  pushFromFSp 52
@@ -93,5 +94,6 @@ L3409:
  popToSp 48
  halt 
  jmp L3349
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## method_obj_is_culling* (object)
 
-syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
+`syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)`
 
 Determines if obj is currently being culled
 
@@ -469,6 +469,7 @@ Determines if obj is currently being culled
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L7175:
  pushImm 0
  popToSp 8
@@ -487,5 +488,6 @@ L7175:
  supzf 
  popToSp 8
  jmp L7217
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_sheet_get_mp* (sheet)
 
-syscall 10, 50 ; trap_sheet_get_mp (1 in, 1 out)
+`syscall 10, 50 ; trap_sheet_get_mp (1 in, 1 out)`
 
 Get the amount of MP left
 
@@ -27,6 +27,7 @@ Get the amount of MP left
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L327:
  popToSp 0
  pushFromPWp W0
@@ -55,5 +56,6 @@ L327:
  subf 
  supzf 
  eqzv
+```
 </details>
 

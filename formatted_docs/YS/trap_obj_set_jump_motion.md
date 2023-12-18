@@ -1,6 +1,6 @@
 ## trap_obj_set_jump_motion* (mset)
 
-syscall 1, 115 ; trap_obj_set_jump_motion (2 in, 0 out)
+`syscall 1, 115 ; trap_obj_set_jump_motion (2 in, 0 out)`
 
 Sets an object to go into a falling animation
 
@@ -27,6 +27,7 @@ Sets an object to go into a falling animation
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L2149:
  popToSp 0
  pushFromPSpVal 4
@@ -81,5 +82,6 @@ L2149:
  pushFromPSpVal 4
  gosub 4, L2267
  ret
+```
 </details>
 

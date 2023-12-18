@@ -1,6 +1,6 @@
 ## trap_damage_exec_reaction* (attack)
 
-syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
+`syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)`
 
 
 
@@ -98,6 +98,7 @@ syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
 
 <details>
 	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
+```
 L1192:
  popToSp 4
  popToSp 0
@@ -133,5 +134,6 @@ L1192:
  pushFromPAi L4860 ; ___ai 'mode_revenge' (L4860)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  exit
+```
 </details>
 

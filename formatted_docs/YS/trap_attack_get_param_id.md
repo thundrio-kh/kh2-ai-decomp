@@ -1,6 +1,6 @@
 ## trap_attack_get_param_id* (attack)
 
-syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
+`syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)`
 
 returns the parameter id associated with an attack
 
@@ -123,6 +123,7 @@ returns the parameter id associated with an attack
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 TR26:
  popToSp 0
  popToSp 4
@@ -134,5 +135,6 @@ TR26:
  sub 
  jz L45
  jmp L61
+```
 </details>
 

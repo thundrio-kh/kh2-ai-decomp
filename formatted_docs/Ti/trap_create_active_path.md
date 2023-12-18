@@ -1,6 +1,6 @@
 ## trap_create_active_path* (path)
 
-syscall 5, 8 ; trap_create_active_path (2 in, 0 out)
+`syscall 5, 8 ; trap_create_active_path (2 in, 0 out)`
 
 Creates an active path from one object to another
 
@@ -22,6 +22,7 @@ Creates an active path from one object to another
 
 <details>
 	<summary>Example Usage From obj\M_EX900\m_ex.bdscript</summary>
+```
 L5933:
  popToSp 4
  popToSp 8
@@ -93,5 +94,6 @@ L5933:
  sub 
  jz L6077
  jmp L6198
+```
 </details>
 

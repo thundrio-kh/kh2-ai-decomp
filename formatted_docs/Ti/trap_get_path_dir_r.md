@@ -1,6 +1,6 @@
 ## trap_get_path_dir_r* (path)
 
-syscall 5, 25 ; trap_get_path_dir_r (3 in, 1 out)
+`syscall 5, 25 ; trap_get_path_dir_r (3 in, 1 out)`
 
 Get the reverse direction of a path
 
@@ -23,6 +23,8 @@ Get the reverse direction of a path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

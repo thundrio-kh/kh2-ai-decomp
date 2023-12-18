@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_push* (mset)
 
-syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+`syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)`
 
 Push a motion set entry to be played after the current queue is empty
 
@@ -459,6 +459,7 @@ Push a motion set entry to be played after the current queue is empty
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1331:
  pushFromPWp W0
  fetchValue 0
@@ -475,5 +476,6 @@ L1331:
  pushImm 0
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+```
 </details>
 

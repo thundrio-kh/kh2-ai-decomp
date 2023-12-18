@@ -1,6 +1,6 @@
 ## trap_friend_enable_system_wishdir* (friend)
 
-syscall 7, 24 ; trap_friend_enable_system_wishdir (1 in, 0 out)
+`syscall 7, 24 ; trap_friend_enable_system_wishdir (1 in, 0 out)`
 
 Enables a friend's system wishdir used for summons
 
@@ -24,6 +24,7 @@ Enables a friend's system wishdir used for summons
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L3932:
  popToSp 0
  pushFromFSp 0
@@ -37,5 +38,6 @@ L3932:
  pushFromFSp 0
  gosub 4, L3970
  ret
+```
 </details>
 

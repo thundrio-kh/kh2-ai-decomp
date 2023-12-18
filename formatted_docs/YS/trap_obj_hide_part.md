@@ -1,6 +1,6 @@
 ## trap_obj_hide_part* (bones)
 
-syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+`syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)`
 
 Hides a specific bone/part of an object
 
@@ -94,6 +94,7 @@ Hides a specific bone/part of an object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L1000:
  pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
@@ -110,5 +111,6 @@ L1000:
  pushImm 24
  syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
  jmp L1077
+```
 </details>
 

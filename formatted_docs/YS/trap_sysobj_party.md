@@ -1,6 +1,6 @@
 ## *trap_sysobj_party* (party)
 
-syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
+`syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)`
 
 Get the nth party member
 
@@ -54,6 +54,7 @@ Get the nth party member
 
 <details>
 	<summary>Example Usage From magic\cure1\cure.bdscript</summary>
+```
 L323:
  popToSp 0
  pushFromPSp 16
@@ -64,5 +65,6 @@ L323:
  memcpy 0
  pushFromPSp 16
  ret
+```
 </details>
 

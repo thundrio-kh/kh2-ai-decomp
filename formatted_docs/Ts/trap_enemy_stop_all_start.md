@@ -1,6 +1,6 @@
 ## trap_enemy_stop_all_start* (enemy)
 
-syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
+`syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)`
 
 Stops all instances of an object from doing anything, until trap_enemy_stop_all_end is run
 
@@ -33,9 +33,11 @@ Stops all instances of an object from doing anything, until trap_enemy_stop_all_
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3400:
  pushImm 17
  syscall 7, 0 ; trap_enemy_stop_all_start (1 in, 0 out)
  ret
+```
 </details>
 

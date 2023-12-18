@@ -1,6 +1,6 @@
 ## trap_player_set_exec_rc* (player)
 
-syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
+`syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)`
 
 Sets the player to be executing a reaction command
 
@@ -44,6 +44,7 @@ Sets the player to be executing a reaction command
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L342:
  popToSp 4
  popToSp 0
@@ -55,5 +56,6 @@ L342:
  pushFromFSp 4
  syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
  ret
+```
 </details>
 

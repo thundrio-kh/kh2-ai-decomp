@@ -1,6 +1,6 @@
 ## trap_saveram_increment_friend_recov* (save)
 
-syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
+`syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)`
 
 Increments the "Healed Party Members" value on the battle report at the end of the game
 
@@ -26,11 +26,13 @@ Increments the "Healed Party Members" value on the battle report at the end of t
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+```
 L221:
  drop 
  pushFromFSp 36
  jz L230
  syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
  jmp L230
+```
 </details>
 

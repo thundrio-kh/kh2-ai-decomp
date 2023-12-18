@@ -1,6 +1,6 @@
 ## trap_attack_strike* (attack)
 
-syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
+`syscall 2, 17 ; trap_attack_strike (4 in, 0 out)`
 
 Sets up an attack to strike a specific part of an object
 
@@ -95,6 +95,7 @@ Sets up an attack to strike a specific part of an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4188:
  jz L4406
  pushFromFSpVal 68
@@ -191,5 +192,6 @@ L4188:
  pushImm 99
  syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
  jmp L4398
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_scatter_prize_tr* (prize)
 
-syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
+`syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)`
 
 Scatter a number of tron orbs from an enemy
 
@@ -24,6 +24,7 @@ Scatter a number of tron orbs from an enemy
 
 <details>
 	<summary>Example Usage From obj\F_TR020\f_tr.bdscript</summary>
+```
 L636:
  gosub 4, L675
  pushFromFSpVal 120
@@ -34,5 +35,6 @@ L636:
  pushImm 4
  syscall 1, 278 ; trap_obj_scatter_prize_tr (2 in, 0 out)
  jmp L656
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_clear_hitback* (object)
 
-syscall 6, 66 ; trap_obj_clear_hitback (1 in, 0 out)
+`syscall 6, 66 ; trap_obj_clear_hitback (1 in, 0 out)`
 
 Clear the hitback flag for an object
 
@@ -22,6 +22,7 @@ Clear the hitback flag for an object
 
 <details>
 	<summary>Example Usage From obj\B_MU100\b_mu.bdscript</summary>
+```
 L201:
  popToSp 0
  popToSp 4
@@ -60,5 +61,6 @@ L201:
  pushFromPAi L8549 ; ___ai 'rush_guard_start' (L8549)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret
+```
 </details>
 

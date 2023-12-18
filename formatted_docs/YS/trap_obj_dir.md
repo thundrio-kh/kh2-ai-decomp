@@ -1,6 +1,6 @@
 ## trap_obj_dir* (object)
 
-syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+`syscall 1, 201 ; trap_obj_dir (1 in, 1 out)`
 
 Returns the direction of the object
 
@@ -705,6 +705,7 @@ Returns the direction of the object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L573:
  pushFromPSp 176
  pushImmf 0
@@ -715,5 +716,6 @@ L573:
  memcpyToSp 16, 192
  pushFromPSp 192
  gosub 56, L1936
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_attack_new_combo_group* (attack)
 
-syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
+`syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)`
 
 Associates a number with a new combo group, for a series of attacks that are in the same combo.
 
@@ -70,6 +70,7 @@ Associates a number with a new combo group, for a series of attacks that are in 
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L951:
  popToSp 0
  pushImm 0
@@ -79,5 +80,6 @@ L951:
  pushFromFSpVal 48
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
  jz L1103
+```
 </details>
 

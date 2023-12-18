@@ -1,6 +1,6 @@
 ## trap_camera_reset* (camera)
 
-syscall 1, 295 ; trap_camera_reset (0 in, 0 out)
+`syscall 1, 295 ; trap_camera_reset (0 in, 0 out)`
 
 Resets the camera position
 
@@ -41,6 +41,7 @@ Resets the camera position
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L1887:
  popToSp 0
  popToSp 4
@@ -68,5 +69,6 @@ L1887:
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_menuflag_check* (menu)
 
-syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
+`syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)`
 
 checks if a menuflag is activated
 
@@ -29,6 +29,7 @@ checks if a menuflag is activated
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+```
 L100:
  popToSp 0
  popToSp 4
@@ -41,5 +42,6 @@ L100:
  pushFromFSp 8
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
  jmp L122
+```
 </details>
 

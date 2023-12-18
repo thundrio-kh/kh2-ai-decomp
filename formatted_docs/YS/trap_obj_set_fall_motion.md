@@ -1,6 +1,6 @@
 ## trap_obj_set_fall_motion* (mset)
 
-syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+`syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)`
 
 Sets an object to go into a falling animation
 
@@ -91,6 +91,7 @@ Sets an object to go into a falling animation
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1258:
  pushFromPWp W0
  pushFromFSp 0
@@ -126,5 +127,6 @@ L1258:
  gosub 52, L2603
  drop 
  jmp L1365
+```
 </details>
 

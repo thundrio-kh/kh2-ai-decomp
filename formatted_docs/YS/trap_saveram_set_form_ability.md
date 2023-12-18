@@ -1,6 +1,6 @@
 ## trap_saveram_set_form_ability* (save)
 
-syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
+`syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)`
 
 Adds an ability to a specific form of sora (IE lion sora)
 
@@ -23,10 +23,12 @@ Adds an ability to a specific form of sora (IE lion sora)
 
 <details>
 	<summary>Example Usage From ard\lk02\lk_g.bdscript</summary>
+```
 TR2:
  pushImm 7
  pushImm 525
  syscall 0, 98 ; trap_saveram_set_form_ability (2 in, 0 out)
  ret
+```
 </details>
 

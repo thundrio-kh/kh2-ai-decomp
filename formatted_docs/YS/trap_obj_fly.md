@@ -1,6 +1,6 @@
 ## trap_obj_fly* (movement)
 
-syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
+`syscall 1, 58 ; trap_obj_fly (3 in, 0 out)`
 
 Tells an object to fly with a specific velocity and acceleration
 
@@ -489,6 +489,7 @@ Tells an object to fly with a specific velocity and acceleration
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+```
 L738:
  popToSp 4
  popToSp 0
@@ -522,5 +523,6 @@ L738:
  pushFromFSp 0
  gosub 12, L1483
  ret
+```
 </details>
 

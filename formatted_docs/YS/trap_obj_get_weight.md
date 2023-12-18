@@ -1,6 +1,6 @@
 ## trap_obj_get_weight* (object)
 
-syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
+`syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)`
 
 Returns the defined weight of an object
 
@@ -26,6 +26,7 @@ Returns the defined weight of an object
 
 <details>
 	<summary>Example Usage From msn\TR07_MS203\tr07.bdscript</summary>
+```
 L240:
  pushFromPSp 0
  gosub 32, L268
@@ -36,5 +37,6 @@ L240:
  addf 
  popToSp 108
  jmp L240
+```
 </details>
 

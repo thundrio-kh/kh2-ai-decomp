@@ -1,6 +1,6 @@
 ## trap_mission_pause_timer* (mission_timer)
 
-syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
+`syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)`
 
 Pauses all screen timers
 
@@ -32,6 +32,7 @@ Pauses all screen timers
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+```
 L112:
  popToSp 0
  syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
@@ -46,5 +47,6 @@ L112:
  pushImm 10
  syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
  jmp L140
+```
 </details>
 

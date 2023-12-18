@@ -1,6 +1,6 @@
 ## trap_mission_disable_timer* (mission_timer)
 
-syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
+`syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)`
 
 turns off the display of an on screen timer
 
@@ -23,11 +23,13 @@ turns off the display of an on screen timer
 
 <details>
 	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
+```
 L204:
  pushImm 0
  syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)
  pushImm 17354
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  jmp L176
+```
 </details>
 

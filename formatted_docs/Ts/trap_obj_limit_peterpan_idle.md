@@ -1,6 +1,6 @@
 ## trap_obj_limit_peterpan_idle* (special)
 
-syscall 6, 40 ; trap_obj_limit_peterpan_idle (1 in, 0 out)
+`syscall 6, 40 ; trap_obj_limit_peterpan_idle (1 in, 0 out)`
 
 Set the peterpan limit action to idle
 
@@ -22,6 +22,7 @@ Set the peterpan limit action to idle
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L2529:
  popToSp 4
  popToSp 0
@@ -44,5 +45,6 @@ L2529:
  pushFromPSpVal 20
  syscall 10, 3 ; trap_friend_start_limit (1 in, 0 out)
  ret
+```
 </details>
 

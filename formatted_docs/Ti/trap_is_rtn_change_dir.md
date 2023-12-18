@@ -1,6 +1,6 @@
 ## trap_is_rtn_change_dir* (field)
 
-syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
+`syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)`
 
 Return if the RTN is changing direction
 
@@ -256,6 +256,7 @@ Return if the RTN is changing direction
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2569:
  pushFromFSp 0
  syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
@@ -264,5 +265,6 @@ L2569:
  syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
  drop 
  jmp L2582
+```
 </details>
 

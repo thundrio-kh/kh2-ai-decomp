@@ -1,6 +1,6 @@
 ## trap_damage_orig_reaction* (attack)
 
-syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
+`syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)`
 
 returns the type of the attack, as defined in its Atkp entry found in 00battle.bin
 
@@ -81,6 +81,7 @@ returns the type of the attack, as defined in its Atkp entry found in 00battle.b
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L1372:
  pushFromFSp 4
  syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
@@ -93,5 +94,6 @@ L1372:
  pushFromFSp 4
  syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
  eqzv
+```
 </details>
 

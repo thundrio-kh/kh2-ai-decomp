@@ -1,6 +1,6 @@
 ## trap_obj_is_jump* (object)
 
-syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
+`syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)`
 
 Returns if the object is jumping.
 
@@ -185,6 +185,7 @@ Returns if the object is jumping.
 
 <details>
 	<summary>Example Usage From magic\FIRE_1\fire.bdscript</summary>
+```
 L47:
  pushFromPSpVal 0
  syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
@@ -194,5 +195,6 @@ L47:
  pushImm 7
  popToSp 16
  jmp L75
+```
 </details>
 

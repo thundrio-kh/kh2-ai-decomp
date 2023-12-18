@@ -1,6 +1,6 @@
 ## trap_friend_end_limit* (friend)
 
-syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
+`syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)`
 
 End a friends limit
 
@@ -25,6 +25,7 @@ End a friends limit
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L1009:
  popToSp 0
  pushFromPSpVal 20
@@ -42,5 +43,6 @@ L1009:
  pushFromPSpVal 20
  syscall 10, 4 ; trap_friend_end_limit (1 in, 0 out)
  ret
+```
 </details>
 

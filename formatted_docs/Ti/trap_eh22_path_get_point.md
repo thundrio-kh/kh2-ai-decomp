@@ -1,6 +1,6 @@
 ## trap_eh22_path_get_point* (special)
 
-syscall 5, 31 ; trap_eh22_path_get_point (1 in, 1 out)
+`syscall 5, 31 ; trap_eh22_path_get_point (1 in, 1 out)`
 
 Get the current point of the path during the Dragon Xemnas fight
 
@@ -23,6 +23,8 @@ Get the current point of the path during the Dragon Xemnas fight
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

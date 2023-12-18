@@ -1,6 +1,6 @@
 ## trap_vector_get_rot_xz* (math)
 
-syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
+`syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)`
 
 Calculates the rotation of a vector in the XZ plane
 
@@ -396,6 +396,7 @@ Calculates the rotation of a vector in the XZ plane
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2130:
  pushFromFSpVal 104
  jz L2209
@@ -431,5 +432,6 @@ L2130:
  mulf 
  popToSp 12
  jmp L2191
+```
 </details>
 

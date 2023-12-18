@@ -1,6 +1,6 @@
 ## trap_attack_is_reflect* (attack)
 
-syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
+`syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)`
 
 Checks if an attack is reflected
 
@@ -121,6 +121,7 @@ Checks if an attack is reflected
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L5057:
  pushFromFSp 0
  gosub 8, L5251
@@ -135,5 +136,6 @@ L5057:
  pushFromFSpVal 68
  syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
  eqzv
+```
 </details>
 

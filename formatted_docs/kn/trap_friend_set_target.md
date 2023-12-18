@@ -1,6 +1,6 @@
 ## trap_friend_set_target* (friend)
 
-syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
+`syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)`
 
 Set the target for a friend
 
@@ -30,6 +30,7 @@ Set the target for a friend
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+```
 L545:
  popToSp 0
  pushImm 0
@@ -64,5 +65,6 @@ L545:
  syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
  syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
  jmp L615
+```
 </details>
 

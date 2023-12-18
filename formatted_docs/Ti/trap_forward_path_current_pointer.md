@@ -1,6 +1,6 @@
 ## trap_forward_path_current_pointer* (path)
 
-syscall 5, 10 ; trap_forward_path_current_pointer (2 in, 0 out)
+`syscall 5, 10 ; trap_forward_path_current_pointer (2 in, 0 out)`
 
 Go forward on the current path a distance
 
@@ -19,6 +19,8 @@ Go forward on the current path a distance
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

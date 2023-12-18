@@ -1,6 +1,6 @@
 ## *trap_sound_disable* (sound)
 
-syscall 0, 64 ; trap_sound_disable (0 in, 0 out)
+`syscall 0, 64 ; trap_sound_disable (0 in, 0 out)`
 
 Turn off the game sound
 
@@ -18,6 +18,8 @@ Turn off the game sound
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

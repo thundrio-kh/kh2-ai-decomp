@@ -1,6 +1,6 @@
 ## trap_flare_set_pos* (special)
 
-syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
+`syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)`
 
 Set the position of Flare Force
 
@@ -23,6 +23,7 @@ Set the position of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L3056:
  popToSp 4
  popToSp 0
@@ -33,5 +34,6 @@ L3056:
  pushFromFSp 4
  syscall 7, 6 ; trap_flare_set_pos (2 in, 0 out)
  ret
+```
 </details>
 

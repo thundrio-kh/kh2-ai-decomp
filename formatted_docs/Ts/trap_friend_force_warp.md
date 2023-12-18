@@ -1,6 +1,6 @@
 ## trap_friend_force_warp* (friend)
 
-syscall 6, 13 ; trap_friend_force_warp (1 in, 0 out)
+`syscall 6, 13 ; trap_friend_force_warp (1 in, 0 out)`
 
 Forces a friend to perform a warp
 
@@ -25,6 +25,7 @@ Forces a friend to perform a warp
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+```
 L817:
  jz L1095
  pushFromPSp 4
@@ -53,5 +54,6 @@ L817:
  sub 
  jz L873
  jmp L1063
+```
 </details>
 

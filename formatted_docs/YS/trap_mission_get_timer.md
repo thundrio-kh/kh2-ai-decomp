@@ -1,6 +1,6 @@
 ## trap_mission_get_timer* (mission_timer)
 
-syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)
+`syscall 4, 26 ; trap_mission_get_timer (1 in, 1 out)`
 
 return the number of minutes on the specified timer
 
@@ -37,6 +37,7 @@ return the number of minutes on the specified timer
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+```
 L112:
  popToSp 0
  syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)
@@ -51,5 +52,6 @@ L112:
  pushImm 10
  syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
  jmp L140
+```
 </details>
 

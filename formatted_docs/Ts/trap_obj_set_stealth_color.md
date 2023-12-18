@@ -1,6 +1,6 @@
 ## trap_obj_set_stealth_color* (object)
 
-syscall 6, 60 ; trap_obj_set_stealth_color (4 in, 0 out)
+`syscall 6, 60 ; trap_obj_set_stealth_color (4 in, 0 out)`
 
 Set the stealth color for an object
 
@@ -22,6 +22,7 @@ Set the stealth color for an object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+```
 L17408:
  popToSp 0
  pushImmf 200
@@ -65,5 +66,6 @@ L17408:
  pushImmf 60
  gosub 12, L543
  ret
+```
 </details>
 

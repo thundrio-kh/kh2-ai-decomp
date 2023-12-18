@@ -1,6 +1,6 @@
 ## trap_obj_limit_mulan_idle* (special)
 
-syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)
+`syscall 6, 38 ; trap_obj_limit_mulan_idle (1 in, 0 out)`
 
 Change the mulan limit action to idle
 
@@ -22,6 +22,7 @@ Change the mulan limit action to idle
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L5649:
  popToSp 0
  gosub 12, L5675
@@ -36,5 +37,6 @@ L5649:
  pushFromFSp 0
  gosub 12, L2011
  ret
+```
 </details>
 

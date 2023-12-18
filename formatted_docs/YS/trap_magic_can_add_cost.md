@@ -1,6 +1,6 @@
 ## trap_magic_can_add_cost* (unused)
 
-syscall 2, 69 ; trap_magic_can_add_cost (1 in, 1 out)
+`syscall 2, 69 ; trap_magic_can_add_cost (1 in, 1 out)`
 
 Check if the cost for this magic object can be added to the areas current cost
 
@@ -23,6 +23,8 @@ Check if the cost for this magic object can be added to the areas current cost
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

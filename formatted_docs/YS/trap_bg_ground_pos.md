@@ -1,6 +1,6 @@
 ## trap_bg_ground_pos* (position)
 
-syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
+`syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)`
 
 Gets the position of the nearest ground
 
@@ -112,6 +112,7 @@ Gets the position of the nearest ground
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L96:
  popToSp 0
  pushFromPSpVal 0
@@ -131,5 +132,6 @@ L96:
  pushImm 0
  popToSp 52
  pushImm 12
+```
 </details>
 

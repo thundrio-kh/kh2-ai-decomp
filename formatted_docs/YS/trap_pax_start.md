@@ -1,6 +1,6 @@
 ## trap_pax_start* (animation)
 
-syscall 1, 138 ; trap_pax_start (4 in, 1 out)
+`syscall 1, 138 ; trap_pax_start (4 in, 1 out)`
 
 Starts a PAX effect
 
@@ -54,6 +54,7 @@ Starts a PAX effect
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+```
 L60:
  pushFromPSpVal 0
  pushFromPSpVal 0
@@ -127,5 +128,6 @@ L60:
  popToSp 64
  pushImm 0
  popToSp 72
+```
 </details>
 

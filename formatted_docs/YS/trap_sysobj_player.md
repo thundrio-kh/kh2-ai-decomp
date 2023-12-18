@@ -1,6 +1,6 @@
 ## *trap_sysobj_player* (player)
 
-syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+`syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)`
 
 Get the player object
 
@@ -858,6 +858,7 @@ Get the player object
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L277:
  pushFromPSp 0
  pushImm 4
@@ -866,5 +867,6 @@ L277:
  memcpy 0
  pushFromPSp 0
  ret
+```
 </details>
 

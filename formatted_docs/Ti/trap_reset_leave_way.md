@@ -1,6 +1,6 @@
 ## trap_reset_leave_way* (field)
 
-syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
+`syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)`
 
 Reset the leave way action
 
@@ -252,6 +252,7 @@ Reset the leave way action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1650:
  pushFromFSpVal 64
  jz L1673
@@ -264,5 +265,6 @@ L1650:
  pushFromPAi L2943 ; ___ai 'path_move' (L2943)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L1679
+```
 </details>
 

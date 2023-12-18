@@ -1,6 +1,6 @@
 ## trap_obj_add_hp* (object)
 
-syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
+`syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)`
 
 Adds an amount of HP to an object
 
@@ -74,6 +74,7 @@ Adds an amount of HP to an object
 
 <details>
 	<summary>Example Usage From msn\TT14_MS110\tt14.bdscript</summary>
+```
 L99:
  gosub 4, L182
  memcpyToSp 16, 16
@@ -92,5 +93,6 @@ L99:
  pushImm 0
  gosub 4, L194
  jmp L139
+```
 </details>
 

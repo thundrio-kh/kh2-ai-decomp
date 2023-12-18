@@ -1,6 +1,6 @@
 ## trap_mission_increment_count* (mission_counter)
 
-syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
+`syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)`
 
 Adds one to a counter
 
@@ -58,6 +58,7 @@ Adds one to a counter
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 TR6:
  popToSp 0
  popToSp 4
@@ -74,5 +75,6 @@ TR6:
  pushImm 0
  syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
  jmp L117
+```
 </details>
 

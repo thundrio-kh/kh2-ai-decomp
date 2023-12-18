@@ -1,6 +1,6 @@
 ## trap_sheet_set_min_hp* (sheet)
 
-syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
+`syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)`
 
 Set an objects minimum HP
 
@@ -123,6 +123,7 @@ Set an objects minimum HP
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L228:
  pushFromFSp 36
  pushFromPAi L374 ; ___ai 'INT' (L374)
@@ -136,5 +137,6 @@ L228:
  pushImm 0
  syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
  ret
+```
 </details>
 

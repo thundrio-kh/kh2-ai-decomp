@@ -1,6 +1,6 @@
 ## trap_flare_init* (special)
 
-syscall 7, 3 ; trap_flare_init (0 in, 0 out)
+`syscall 7, 3 ; trap_flare_init (0 in, 0 out)`
 
 Initialize Flare Force
 
@@ -22,6 +22,7 @@ Initialize Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L5986:
  syscall 7, 3 ; trap_flare_init (0 in, 0 out)
  pushImm 0
@@ -29,5 +30,6 @@ L5986:
  pushImm 0
  popToSp 0
  pushImm 16
+```
 </details>
 

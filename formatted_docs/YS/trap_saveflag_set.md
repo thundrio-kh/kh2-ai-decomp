@@ -1,6 +1,6 @@
 ## trap_saveflag_set* (save)
 
-syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+`syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)`
 
 Sets a flag value to true
 
@@ -34,10 +34,12 @@ Sets a flag value to true
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
+```
 L29:
  pushImm 64
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
  gosub 4, L58
  jmp L56
+```
 </details>
 

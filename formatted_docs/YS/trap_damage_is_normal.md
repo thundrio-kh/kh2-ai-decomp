@@ -1,6 +1,6 @@
 ## trap_damage_is_normal (attack)
 
-syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)
+`syscall 2, 93 ; trap_damage_is_normal (1 in, 1 out)`
 
 Returns if the damage from an attack is normal type
 
@@ -27,6 +27,7 @@ Returns if the damage from an attack is normal type
 
 <details>
 	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
+```
 L31:
  popToSp 4
  popToSp 0
@@ -38,5 +39,6 @@ L31:
  pushFromFSp 4
  syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
  neqzv
+```
 </details>
 

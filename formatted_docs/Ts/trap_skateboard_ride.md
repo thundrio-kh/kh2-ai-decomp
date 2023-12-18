@@ -1,6 +1,6 @@
 ## trap_skateboard_ride* (special)
 
-syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)
+`syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)`
 
 Attach an object to a board
 
@@ -29,6 +29,7 @@ Attach an object to a board
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L45:
  pushFromFSp 8
  syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
@@ -66,5 +67,6 @@ L45:
  pushImm 1
  syscall 1, 302 ; trap_obj_set_skateboard_mode (2 in, 0 out)
  jmp L124
+```
 </details>
 

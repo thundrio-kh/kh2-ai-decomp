@@ -1,6 +1,6 @@
 ## trap_partram_set_item_max* (save)
 
-syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)
+`syscall 0, 62 ; trap_partram_set_item_max (2 in, 0 out)`
 
 Sets the maximum number of consumables the player can equip
 
@@ -19,6 +19,8 @@ Sets the maximum number of consumables the player can equip
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

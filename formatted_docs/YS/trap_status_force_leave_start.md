@@ -1,6 +1,6 @@
 ## *trap_status_force_leave_start* (status)
 
-syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)
+`syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)`
 
 Set the force leave flag to true
 
@@ -24,6 +24,7 @@ Set the force leave flag to true
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
+```
 L3824:
  popToSp 4
  popToSp 0
@@ -43,5 +44,6 @@ L3824:
  syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
  syscall 1, 204 ; trap_status_force_leave_start (0 in, 0 out)
  jmp L3861
+```
 </details>
 

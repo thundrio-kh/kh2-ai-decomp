@@ -1,6 +1,6 @@
 ## trap_target_searcher_init* (target)
 
-syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
+`syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)`
 
 
 
@@ -81,11 +81,13 @@ syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3932:
  popToSp 0
  pushFromFSp 0
  pushImm 20
  syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
  ret
+```
 </details>
 

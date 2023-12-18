@@ -1,6 +1,6 @@
 ## trap_limit_start_command* (limit)
 
-syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)
+`syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)`
 
 Start the limit command
 
@@ -30,6 +30,7 @@ Start the limit command
 
 <details>
 	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
+```
 L3640:
  popToSp 4
  popToSp 0
@@ -51,5 +52,6 @@ L3640:
  syscall 7, 27 ; trap_limit_start_command (0 in, 1 out)
  gosub 12, L150
  ret
+```
 </details>
 

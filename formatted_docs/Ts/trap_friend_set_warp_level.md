@@ -1,6 +1,6 @@
 ## trap_friend_set_warp_level* (friend)
 
-syscall 6, 15 ; trap_friend_set_warp_level (1 in, 0 out)
+`syscall 6, 15 ; trap_friend_set_warp_level (1 in, 0 out)`
 
 Set the warp level of a friend
 
@@ -19,6 +19,8 @@ Set the warp level of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

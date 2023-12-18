@@ -1,6 +1,6 @@
 ## trap_stitch_shot_effect* (special)
 
-syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
+`syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)`
 
 Activate the shot effect for stitch
 
@@ -22,10 +22,12 @@ Activate the shot effect for stitch
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L1141:
  pushFromPWp W108
  pushFromFSp 0
  syscall 10, 13 ; trap_stitch_shot_effect (2 in, 0 out)
  jmp L1149
+```
 </details>
 

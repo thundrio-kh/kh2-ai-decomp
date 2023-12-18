@@ -1,6 +1,6 @@
 ## trap_obj_leave* (object)
 
-syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+`syscall 1, 28 ; trap_obj_leave (1 in, 0 out)`
 
 Makes an object leave
 
@@ -581,6 +581,7 @@ Makes an object leave
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+```
 L134:
  pushFromPSp 32
  pushFromFSp 0
@@ -592,5 +593,6 @@ L134:
  pushFromPSp 32
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  jmp L154
+```
 </details>
 

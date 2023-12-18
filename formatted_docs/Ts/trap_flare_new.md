@@ -1,6 +1,6 @@
 ## trap_flare_new* (special)
 
-syscall 7, 4 ; trap_flare_new (0 in, 1 out)
+`syscall 7, 4 ; trap_flare_new (0 in, 1 out)`
 
 Create and allocate a new Flare Force Object
 
@@ -26,6 +26,7 @@ Create and allocate a new Flare Force Object
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L1573:
  popToSp 0
  pushFromFSp 0
@@ -47,5 +48,6 @@ L1573:
  pushImmf 60
  syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
  ret
+```
 </details>
 

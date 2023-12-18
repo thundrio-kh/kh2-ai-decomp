@@ -1,6 +1,6 @@
 ## trap_area_area* (mapinfo)
 
-syscall 1, 24 ; trap_area_area (0 in, 1 out)
+`syscall 1, 24 ; trap_area_area (0 in, 1 out)`
 
 Returns the number representing the current map (ie for ca03 it would return 3)
 
@@ -66,6 +66,7 @@ Returns the number representing the current map (ie for ca03 it would return 3)
 
 <details>
 	<summary>Example Usage From msn\HE00_MS104B\he00.bdscript</summary>
+```
 L214:
  pushImm 6
  pushImm 176
@@ -86,5 +87,6 @@ L214:
  sub 
  eqz 
  eqzv
+```
 </details>
 

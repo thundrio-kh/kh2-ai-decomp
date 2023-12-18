@@ -1,6 +1,6 @@
 ## trap_command_override_slot (command)
 
-syscall 1, 345 ; trap_command_override_slot (4 in, 1 out)
+`syscall 1, 345 ; trap_command_override_slot (4 in, 1 out)`
 
 Overrides the specified slot on the command cage with priority 100, and returns the slot
 
@@ -23,6 +23,8 @@ Overrides the specified slot on the command cage with priority 100, and returns 
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_attack_reflecter* (attack)
 
-syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
+`syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)`
 
 Return the object that reflected this attack
 
@@ -98,6 +98,7 @@ Return the object that reflected this attack
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L5092:
  jz L5190
  pushFromFSpVal 68
@@ -121,5 +122,6 @@ L5092:
  syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
  popToSpVal 64
  jmp L5156
+```
 </details>
 

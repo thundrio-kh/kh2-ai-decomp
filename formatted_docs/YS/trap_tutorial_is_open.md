@@ -1,6 +1,6 @@
 ## *trap_tutorial_is_open* (status)
 
-syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
+`syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)`
 
 Checks if a tutorial window is open
 
@@ -552,10 +552,12 @@ Checks if a tutorial window is open
 
 <details>
 	<summary>Example Usage From ard\eh18\full.bdscript</summary>
+```
 L29:
  syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
  jz L36
  halt 
  jmp L29
+```
 </details>
 

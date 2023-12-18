@@ -1,6 +1,6 @@
 ## *trap_stputi* (debug)
 
-syscall 0, 24 ; trap_stputi (2 in, 0 out)
+`syscall 0, 24 ; trap_stputi (2 in, 0 out)`
 
 value"
 
@@ -30,6 +30,7 @@ value"
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+```
 L3409:
  pushFromFSp 0
  gosub 4, L3877
@@ -45,5 +46,6 @@ L3409:
  pushImm 0
  popToSpVal 128
  jmp L3438
+```
 </details>
 

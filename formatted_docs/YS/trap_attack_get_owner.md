@@ -1,6 +1,6 @@
 ## trap_attack_get_owner* (attack)
 
-syscall 2, 24 ; trap_attack_get_owner (1 in, 1 out)
+`syscall 2, 24 ; trap_attack_get_owner (1 in, 1 out)`
 
 returns the owner of an attack
 
@@ -38,6 +38,7 @@ returns the owner of an attack
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
+```
 L5643:
  popToSp 4
  popToSp 8
@@ -76,5 +77,6 @@ L5643:
  pushFromPAi L10734 ; ___ai 'reflect_counter' (L10734)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L5724
+```
 </details>
 

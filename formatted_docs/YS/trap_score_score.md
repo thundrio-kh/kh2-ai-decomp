@@ -1,6 +1,6 @@
 ## trap_score_score* (mission_score)
 
-syscall 4, 36 ; trap_score_score (1 in, 1 out)
+`syscall 4, 36 ; trap_score_score (1 in, 1 out)`
 
 Returns the high score?
 
@@ -101,6 +101,7 @@ Returns the high score?
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
+```
 L237:
  pushFromFSpVal 0
  syscall 4, 35 ; trap_score_type (1 in, 1 out)
@@ -117,5 +118,6 @@ L237:
  pushFromFSpVal 4
  syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
  jmp L268
+```
 </details>
 

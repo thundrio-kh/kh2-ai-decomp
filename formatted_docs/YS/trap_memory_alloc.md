@@ -1,6 +1,6 @@
 ## trap_memory_alloc* (system)
 
-syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
+`syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)`
 
 allocates an amount of memory
 
@@ -268,6 +268,7 @@ allocates an amount of memory
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3456:
  popToSp 0
  popToSp 4
@@ -292,5 +293,6 @@ L3456:
  memcpy 0
  pushFromFSp 12
  ret
+```
 </details>
 

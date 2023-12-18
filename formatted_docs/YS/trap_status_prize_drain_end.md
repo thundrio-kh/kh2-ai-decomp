@@ -1,6 +1,6 @@
 ## *trap_status_prize_drain_end* (prize)
 
-syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
+`syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)`
 
 End the prize drain effect
 
@@ -27,6 +27,7 @@ End the prize drain effect
 
 <details>
 	<summary>Example Usage From magic\MAGNET_1\magn.bdscript</summary>
+```
 L44:
  halt 
  pushFromFSp 0
@@ -34,5 +35,6 @@ L44:
  jz L55
  syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
  jmp L55
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_hide* (bones)
 
-syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+`syscall 1, 133 ; trap_obj_hide (1 in, 0 out)`
 
 Hides all parts of an object
 
@@ -112,6 +112,7 @@ Hides all parts of an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3659:
  popToSp 0
  pushFromPSpVal 4
@@ -119,5 +120,6 @@ L3659:
  pushFromPSpVal 20
  syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
  ret
+```
 </details>
 

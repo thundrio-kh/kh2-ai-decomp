@@ -1,6 +1,6 @@
 ## trap_obj_is_ride* (object)
 
-syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
+`syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)`
 
 Checks if the ride flag is checked on the object
 
@@ -29,6 +29,7 @@ Checks if the ride flag is checked on the object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+```
 L5360:
  popToSp 0
  pushFromFSp 0
@@ -60,5 +61,6 @@ L5360:
  pushFromPSp 32
  syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
  eqzv
+```
 </details>
 

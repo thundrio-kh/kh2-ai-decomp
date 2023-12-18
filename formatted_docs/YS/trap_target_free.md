@@ -1,6 +1,6 @@
 ## trap_target_free* (target)
 
-syscall 1, 132 ; trap_target_free (1 in, 0 out)
+`syscall 1, 132 ; trap_target_free (1 in, 0 out)`
 
 Free a target object
 
@@ -281,6 +281,7 @@ Free a target object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3420:
  popToSp 0
  pushFromFSpVal 48
@@ -288,5 +289,6 @@ L3420:
  pushFromFSp 0
  syscall 0, 48 ; trap_memory_free (1 in, 0 out)
  ret
+```
 </details>
 

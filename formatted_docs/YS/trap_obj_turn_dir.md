@@ -1,6 +1,6 @@
 ## trap_obj_turn_dir* (movement)
 
-syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+`syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)`
 
 Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 if it does not (if this is an xyz rotation, then it will not do the rotation)
 
@@ -429,6 +429,7 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
+```
 L2255:
  pushFromFSp 0
  pushFromPSp 32
@@ -444,5 +445,6 @@ L2255:
  pushFromPSp 68
  gosub 28, L1739
  jmp L2283
+```
 </details>
 

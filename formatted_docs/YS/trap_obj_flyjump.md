@@ -1,6 +1,6 @@
 ## trap_obj_flyjump* (movement)
 
-syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
+`syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)`
 
 Prepares and starts a flyjump for an object
 
@@ -147,6 +147,7 @@ Prepares and starts a flyjump for an object
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L4450:
  pushFromPSp 16
  pushImm 4
@@ -171,5 +172,6 @@ L4450:
  pushImm 1
  syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
  jmp L4512
+```
 </details>
 

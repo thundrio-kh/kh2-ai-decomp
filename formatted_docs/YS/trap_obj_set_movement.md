@@ -1,6 +1,6 @@
 ## trap_obj_set_movement* (movement)
 
-syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+`syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)`
 
 Has an object start moving in the specified direction at the given speed
 
@@ -381,6 +381,7 @@ Has an object start moving in the specified direction at the given speed
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -437,5 +438,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

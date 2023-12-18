@@ -1,6 +1,6 @@
 ## trap_event_layer_off* (event)
 
-syscall 1, 354 ; trap_event_layer_off (0 in, 0 out)
+`syscall 1, 354 ; trap_event_layer_off (0 in, 0 out)`
 
 Disables the event HUD
 
@@ -22,6 +22,7 @@ Disables the event HUD
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L7213:
  popToSp 0
  pushFromPAi L28020 ; ___ai 'crowd_laser_finish' (L28020)
@@ -50,5 +51,6 @@ L7213:
  pushImmf 360
  popToSp 4
  syscall 1, 354 ; trap_event_layer_off (0 in, 0 out)
+```
 </details>
 

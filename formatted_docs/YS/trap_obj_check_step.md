@@ -1,6 +1,6 @@
 ## trap_obj_check_step* (collision)
 
-syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
+`syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)`
 
 Check if a step is interesecting with a given line?
 
@@ -151,6 +151,7 @@ Check if a step is interesecting with a given line?
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L4358:
  pushFromFSp 0
  fetchValue 4
@@ -191,5 +192,6 @@ L4358:
  sub 
  jz L4435
  jmp L4514
+```
 </details>
 

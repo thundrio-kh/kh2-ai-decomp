@@ -1,6 +1,6 @@
 ## *trap_mission_is_activate2d* (mission)
 
-syscall 4, 21 ; trap_mission_is_activate2d (0 in, 1 out)
+`syscall 4, 21 ; trap_mission_is_activate2d (0 in, 1 out)`
 
 checks if the mission custom hud is activated
 
@@ -27,6 +27,7 @@ checks if the mission custom hud is activated
 
 <details>
 	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
+```
 TR10:
  popToSp 0
  popToSp 4
@@ -38,5 +39,6 @@ TR10:
  sub 
  jz L9548
  jmp L9564
+```
 </details>
 

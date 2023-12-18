@@ -1,6 +1,6 @@
 ## trap_stitch_effect_kill* (special)
 
-syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
+`syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)`
 
 Kill a stitch effect
 
@@ -22,6 +22,7 @@ Kill a stitch effect
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L3436:
  popToSp 0
  pushFromFSp 0
@@ -39,5 +40,6 @@ L3436:
  pushFromFSpVal 20
  syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
  jmp L3468
+```
 </details>
 

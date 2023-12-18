@@ -1,6 +1,6 @@
 ## trap_attack_get_reflect_count* (attack)
 
-syscall 2, 66 ; trap_attack_get_reflect_count (1 in, 1 out)
+`syscall 2, 66 ; trap_attack_get_reflect_count (1 in, 1 out)`
 
 Returns the count for the current reflect attack
 
@@ -32,6 +32,7 @@ Returns the count for the current reflect attack
 
 <details>
 	<summary>Example Usage From magic\reflect1\refl.bdscript</summary>
+```
 L125:
  halt 
  pushFromFSpVal 28
@@ -55,5 +56,6 @@ L125:
  syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
  popToSp 8
  jmp L167
+```
 </details>
 

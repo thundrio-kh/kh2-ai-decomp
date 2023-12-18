@@ -1,6 +1,6 @@
 ## trap_effect_kill* (effect)
 
-syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
+`syscall 0, 51 ; trap_effect_kill (1 in, 0 out)`
 
 ends an effect and frees the associated memory
 
@@ -234,6 +234,7 @@ ends an effect and frees the associated memory
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4545:
  popToSp 0
  pushFromFSpVal 64
@@ -246,5 +247,6 @@ L4545:
  pushImm 0
  popToSpVal 64
  jmp L4567
+```
 </details>
 

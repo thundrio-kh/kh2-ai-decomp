@@ -1,6 +1,6 @@
 ## trap_limit_effect_start_bind* (limit)
 
-syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
+`syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)`
 
 starts an limit effect bound to an object
 
@@ -38,6 +38,7 @@ starts an limit effect bound to an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1405:
  popToSp 4
  popToSp 0
@@ -115,5 +116,6 @@ L1405:
  pushImm 1
  popToSpVal 28
  jmp L1564
+```
 </details>
 

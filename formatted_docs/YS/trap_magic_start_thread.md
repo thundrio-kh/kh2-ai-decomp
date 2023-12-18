@@ -1,6 +1,6 @@
 ## trap_magic_start_thread* (threading)
 
-syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+`syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)`
 
 Starts a new magic thread
 
@@ -268,6 +268,7 @@ Starts a new magic thread
 
 <details>
 	<summary>Example Usage From magic\BLIZZARD_1\bliz.bdscript</summary>
+```
 L1238:
  popToSp 0
  popToSp 4
@@ -286,5 +287,6 @@ L1238:
  memcpy 0
  pushFromFSp 12
  ret
+```
 </details>
 

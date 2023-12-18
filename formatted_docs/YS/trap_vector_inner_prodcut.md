@@ -1,6 +1,6 @@
 ## trap_vector_inner_prodcut* (math)
 
-syscall 0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)
+`syscall 0, 91 ; trap_vector_inner_prodcut (2 in, 1 out)`
 
 Calculates the inner product of two vectors
 
@@ -43,6 +43,7 @@ Calculates the inner product of two vectors
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L331:
  popToSp 4
  popToSp 8
@@ -97,5 +98,6 @@ L331:
  pushFromPSp 48
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  jmp L454
+```
 </details>
 

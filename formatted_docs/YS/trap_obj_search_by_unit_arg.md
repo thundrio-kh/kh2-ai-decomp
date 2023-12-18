@@ -1,6 +1,6 @@
 ## trap_obj_search_by_unit_arg* (object)
 
-syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
+`syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)`
 
 Searches for an object with a specific unit argument
 
@@ -30,6 +30,7 @@ Searches for an object with a specific unit argument
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+```
 L3195:
  popToSp 0
  pushFromFSp 0
@@ -44,5 +45,6 @@ L3195:
  pushImm 30
  syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
  jmp L3233
+```
 </details>
 

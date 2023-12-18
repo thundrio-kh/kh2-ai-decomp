@@ -1,6 +1,6 @@
 ## trap_mission_add_gauge* (mission_gauge)
 
-syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+`syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)`
 
 Adds to a gauge on the screen
 
@@ -84,6 +84,7 @@ Adds to a gauge on the screen
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
+```
 TR6:
  popToSp 0
  popToSp 4
@@ -103,5 +104,6 @@ TR6:
  pushImm 0
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L86
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_vector_normalize* (math)
 
-syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+`syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)`
 
 Calculate the euclidean norm of a vector
 
@@ -876,6 +876,7 @@ Calculate the euclidean norm of a vector
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L592:
  pushImmf 0
  popToSp 184
@@ -930,5 +931,6 @@ L592:
  pushImmf 0
  gosub 52, L2458
  jmp L722
+```
 </details>
 

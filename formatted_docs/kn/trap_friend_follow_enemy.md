@@ -1,6 +1,6 @@
 ## trap_friend_follow_enemy* (friend)
 
-syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
+`syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)`
 
 Have a friend follow an enemy
 
@@ -22,6 +22,7 @@ Have a friend follow an enemy
 
 <details>
 	<summary>Example Usage From obj\P_LK020\p_lk.bdscript</summary>
+```
 L2181:
  pushFromPSpVal 0
  pushFromPSpVal 0
@@ -37,5 +38,6 @@ L2181:
  pushFromPSpVal 0
  syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
  jmp L2207
+```
 </details>
 

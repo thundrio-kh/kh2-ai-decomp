@@ -1,6 +1,6 @@
 ## method_vector_scale* (math)
 
-syscall 0, 35 ; method_vector_scale (2 in, 0 out)
+`syscall 0, 35 ; method_vector_scale (2 in, 0 out)`
 
 Scales the given vector by an amount, putting the result in the first argument
 
@@ -157,6 +157,7 @@ Scales the given vector by an amount, putting the result in the first argument
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4188:
  jz L4406
  pushFromFSpVal 68
@@ -253,5 +254,6 @@ L4188:
  pushImm 99
  syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
  jmp L4398
+```
 </details>
 

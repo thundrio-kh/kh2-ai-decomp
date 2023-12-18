@@ -1,6 +1,6 @@
 ## trap_obj_start_mpdrive* (object)
 
-syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
+`syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)`
 
 Starts mpdrive for an object
 
@@ -22,6 +22,7 @@ Starts mpdrive for an object
 
 <details>
 	<summary>Example Usage From obj\N_HB630\n_hb.bdscript</summary>
+```
 L5513:
  popToSp 0
  pushFromFSp 0
@@ -99,5 +100,6 @@ L5513:
  pushImmf 1
  syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
  jmp L5685
+```
 </details>
 

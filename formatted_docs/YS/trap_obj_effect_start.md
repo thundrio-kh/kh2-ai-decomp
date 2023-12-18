@@ -1,6 +1,6 @@
 ## trap_obj_effect_start* (effect)
 
-syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
+`syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)`
 
 Starts an effect associated with an object
 
@@ -183,6 +183,7 @@ Starts an effect associated with an object
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L4996:
  pushFromPSpVal 0
  pushImm 0
@@ -190,5 +191,6 @@ L4996:
  pushImm 0
  syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
  popToSpVal 64
+```
 </details>
 

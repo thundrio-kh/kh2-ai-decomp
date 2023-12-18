@@ -1,6 +1,6 @@
 ## trap_obj_tex_fade_set* (texture)
 
-syscall 1, 123 ; trap_obj_tex_fade_set (2 in, 0 out)
+`syscall 1, 123 ; trap_obj_tex_fade_set (2 in, 0 out)`
 
 Sets the time for a texture fade
 
@@ -19,6 +19,8 @@ Sets the time for a texture fade
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

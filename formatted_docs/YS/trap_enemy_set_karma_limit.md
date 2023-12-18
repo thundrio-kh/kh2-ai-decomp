@@ -1,6 +1,6 @@
 ## trap_enemy_set_karma_limit* (enemy)
 
-syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+`syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)`
 
 Sets an enemies karma value (revenge limit) to the specified number.
 
@@ -65,6 +65,7 @@ Sets an enemies karma value (revenge limit) to the specified number.
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
+```
 L4842:
  pushFromFSp 0
  pushFromFSp 8
@@ -104,5 +105,6 @@ L4842:
  pushImmf 92
  syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
  jmp L4969
+```
 </details>
 

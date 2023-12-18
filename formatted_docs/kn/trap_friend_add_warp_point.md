@@ -1,6 +1,6 @@
 ## trap_friend_add_warp_point* (friend)
 
-syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
+`syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)`
 
 Add a friend warp point at a position
 
@@ -22,6 +22,7 @@ Add a friend warp point at a position
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+```
 L873:
  pushFromPSp 48
  pushImmf 0
@@ -100,5 +101,6 @@ L873:
  pushFromPSp 48
  syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
  jmp L1090
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_limit_reference (limit)
 
-syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
+`syscall 2, 63 ; trap_limit_reference (1 in, 1 out)`
 
 Return some reference associated with the limit
 
@@ -54,6 +54,7 @@ Return some reference associated with the limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6698:
  pushFromFSp 0
  fetchValue 0
@@ -64,5 +65,6 @@ L6698:
  jz L6714
  halt 
  jmp L6698
+```
 </details>
 

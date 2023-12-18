@@ -1,6 +1,6 @@
 ## trap_sysobj_is_limit* (object)
 
-syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
+`syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)`
 
 Check if an object is a limit
 
@@ -45,6 +45,7 @@ Check if an object is a limit
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L40:
  dup 
  jz L56
@@ -55,5 +56,6 @@ L40:
  syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_set_path_by_id* (path)
 
-syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
+`syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)`
 
 Set a path for an object by ID
 
@@ -26,6 +26,7 @@ Set a path for an object by ID
 
 <details>
 	<summary>Example Usage From obj\F_TT110\f_tt.bdscript</summary>
+```
 L4131:
  pushFromFSpVal 120
  popToSpVal 116
@@ -38,5 +39,6 @@ L4131:
  syscall 5, 23 ; trap_set_path_by_id (2 in, 1 out)
  drop 
  jmp L4236
+```
 </details>
 

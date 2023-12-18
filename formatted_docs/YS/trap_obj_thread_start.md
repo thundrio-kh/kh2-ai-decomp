@@ -1,6 +1,6 @@
 ## trap_obj_thread_start* (threading)
 
-syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)
+`syscall 1, 82 ; trap_obj_thread_start (5 in, 1 out)`
 
 Starts a new VM thread and begins execution at the label
 
@@ -36,6 +36,7 @@ Starts a new VM thread and begins execution at the label
 
 <details>
 	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
+```
 L3109:
  popToSp 0
  pushImm 1
@@ -52,5 +53,6 @@ L3109:
  pushImm 192
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 </details>
 

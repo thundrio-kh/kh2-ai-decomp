@@ -1,6 +1,6 @@
 ## trap_obj_set_act_table* (action)
 
-syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)
+`syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)`
 
 Initializes an action table for an object
 
@@ -811,6 +811,7 @@ Initializes an action table for an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L4649:
  popToSp 4
  popToSp 0
@@ -1437,5 +1438,6 @@ L4649:
  pushImmf 0.8
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
+```
 </details>
 

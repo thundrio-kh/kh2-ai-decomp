@@ -1,6 +1,6 @@
 ## trap_friend_start_leave* (friend)
 
-syscall 10, 41 ; trap_friend_start_leave (1 in, 0 out)
+`syscall 10, 41 ; trap_friend_start_leave (1 in, 0 out)`
 
 Have the friend start the leave action
 
@@ -25,6 +25,7 @@ Have the friend start the leave action
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L3514:
  popToSp 0
  pushFromFSp 0
@@ -32,5 +33,6 @@ L3514:
  pushImm 0
  popToSpVal 16
  ret
+```
 </details>
 

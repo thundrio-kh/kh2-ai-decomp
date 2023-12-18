@@ -1,6 +1,6 @@
 ## trap_attack_is_hit* (attack)
 
-syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
+`syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)`
 
 Checks if an attack has hit something
 
@@ -128,6 +128,7 @@ Checks if an attack has hit something
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L3490:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
@@ -136,5 +137,6 @@ L3490:
  syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
  jz L3506
  jmp L3676
+```
 </details>
 

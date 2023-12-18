@@ -1,6 +1,6 @@
 ## trap_random_range* (utility)
 
-syscall 0, 18 ; trap_random_range (2 in, 1 out)
+`syscall 0, 18 ; trap_random_range (2 in, 1 out)`
 
 Return a random float between the two values
 
@@ -629,6 +629,7 @@ Return a random float between the two values
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L289:
  gosub 4, L205
  pushImm 4
@@ -646,5 +647,6 @@ L289:
  syscall 0, 18 ; trap_random_range (2 in, 1 out)
  memcpy 0
  ret
+```
 </details>
 

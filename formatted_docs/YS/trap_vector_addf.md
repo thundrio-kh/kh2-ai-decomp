@@ -1,6 +1,6 @@
 ## trap_vector_addf (math)
 
-syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
+`syscall 0, 45 ; trap_vector_addf (3 in, 0 out)`
 
 Adds two vectors of floats together, Third parameter has an unknown purpose
 
@@ -188,6 +188,7 @@ Adds two vectors of floats together, Third parameter has an unknown purpose
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L2082:
  pushFromPSp 48
  pushFromPSpVal 32
@@ -200,5 +201,6 @@ L2082:
  gosub 44, L3051
  syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
  jmp L2104
+```
 </details>
 

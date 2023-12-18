@@ -1,6 +1,6 @@
 ## trap_limit_reset_hit_counter* (limit)
 
-syscall 7, 36 ; trap_limit_reset_hit_counter (1 in, 1 out)
+`syscall 7, 36 ; trap_limit_reset_hit_counter (1 in, 1 out)`
 
 Reset the hit counter for a limit
 
@@ -27,6 +27,7 @@ Reset the hit counter for a limit
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L8450:
  pushFromFSp 148
  popToSp 156
@@ -42,5 +43,6 @@ L8450:
  popToSp 144
  pushImm 0
  popToSp 172
+```
 </details>
 

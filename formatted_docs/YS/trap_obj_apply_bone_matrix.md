@@ -1,6 +1,6 @@
 ## trap_obj_apply_bone_matrix* (bones)
 
-syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
+`syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)`
 
 Applies a matrix to a bone
 
@@ -210,6 +210,7 @@ Applies a matrix to a bone
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L782:
  pushFromPSp 176
  gosub 52, L2499
@@ -234,5 +235,6 @@ L782:
  pushFromPAi L6864 ; ___ai 'break' (L6864)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  jmp L1049
+```
 </details>
 

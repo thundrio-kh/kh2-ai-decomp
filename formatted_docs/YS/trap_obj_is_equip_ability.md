@@ -1,6 +1,6 @@
 ## trap_obj_is_equip_ability* (object)
 
-syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)
+`syscall 1, 343 ; trap_obj_is_equip_ability (2 in, 1 out)`
 
 Returns if the object has the specified ability equipped
 
@@ -31,6 +31,7 @@ Returns if the object has the specified ability equipped
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+```
 L488:
  pushFromFSp 20
  pushImm 114
@@ -42,5 +43,6 @@ L488:
  syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

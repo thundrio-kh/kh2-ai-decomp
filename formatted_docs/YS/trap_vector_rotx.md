@@ -1,6 +1,6 @@
 ## trap_vector_rotx* (math)
 
-syscall 0, 68 ; trap_vector_rotx (2 in, 1 out)
+`syscall 0, 68 ; trap_vector_rotx (2 in, 1 out)`
 
 Rotates a vector along the X axis
 
@@ -60,6 +60,7 @@ Rotates a vector along the X axis
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L7618:
  pushFromFSp 36
  pushImm 0
@@ -141,5 +142,6 @@ L7618:
  sub 
  popToSp 36
  jmp L7618
+```
 </details>
 

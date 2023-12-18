@@ -1,6 +1,6 @@
 ## trap_obj_act_push* (action)
 
-syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
+`syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)`
 
 pushes an action so that it starts next
 
@@ -808,10 +808,12 @@ pushes an action so that it starts next
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L7353:
  pushFromFSp 0
  pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  ret
+```
 </details>
 

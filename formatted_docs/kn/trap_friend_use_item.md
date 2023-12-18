@@ -1,6 +1,6 @@
 ## trap_friend_use_item* (friend)
 
-syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
+`syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)`
 
 Have a friend use an item
 
@@ -25,6 +25,7 @@ Have a friend use an item
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L7518:
  popToSp 0
  pushFromPSpVal 0
@@ -37,5 +38,6 @@ L7518:
  pushImm 0
  syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
  ret
+```
 </details>
 

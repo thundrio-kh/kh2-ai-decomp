@@ -1,6 +1,6 @@
 ## trap_obj_dead* (object)
 
-syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
+`syscall 1, 209 ; trap_obj_dead (1 in, 0 out)`
 
 Performs required cleanup when an object dies
 
@@ -102,6 +102,7 @@ Performs required cleanup when an object dies
 
 <details>
 	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
+```
 L730:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
@@ -118,5 +119,6 @@ L730:
  pushFromFSp 0
  syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
  jmp L938
+```
 </details>
 

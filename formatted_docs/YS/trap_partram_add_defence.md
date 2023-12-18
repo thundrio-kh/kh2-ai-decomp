@@ -1,6 +1,6 @@
 ## trap_partram_add_defence* (save)
 
-syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)
+`syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)`
 
 Gives defence to the player
 
@@ -22,6 +22,7 @@ Gives defence to the player
 
 <details>
 	<summary>Example Usage From ard\tt04\tt04.bdscript</summary>
+```
 L65:
  pushImm 1
  pushImm 502
@@ -31,5 +32,6 @@ L65:
  pushImm 1
  syscall 0, 94 ; trap_partram_add_defence (2 in, 0 out)
  jmp L114
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_friend_action_clear* (friend)
 
-syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)
+`syscall 10, 39 ; trap_friend_action_clear (1 in, 0 out)`
 
 Clear the friends action queue
 
@@ -24,6 +24,7 @@ Clear the friends action queue
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+```
 L947:
  pushFromPSpVal 80
  pushImm 598051
@@ -43,5 +44,6 @@ L947:
  pushFromFSp 0
  gosub 4, L1044
  ret
+```
 </details>
 

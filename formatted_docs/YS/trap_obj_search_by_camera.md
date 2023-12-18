@@ -1,6 +1,6 @@
 ## trap_obj_search_by_camera* (object)
 
-syscall 1, 307 ; trap_obj_search_by_camera (2 in, 0 out)
+`syscall 1, 307 ; trap_obj_search_by_camera (2 in, 0 out)`
 
 Looks up an object by ID and then returns the object that is closest to the camera? This is unused and might not actually work
 
@@ -19,6 +19,8 @@ Looks up an object by ID and then returns the object that is closest to the came
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

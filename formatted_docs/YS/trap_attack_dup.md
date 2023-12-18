@@ -1,6 +1,6 @@
 ## trap_attack_dup* (attack)
 
-syscall 2, 31 ; trap_attack_dup (2 in, 1 out)
+`syscall 2, 31 ; trap_attack_dup (2 in, 1 out)`
 
 Duplicates a magic attack
 
@@ -44,6 +44,7 @@ Duplicates a magic attack
 
 <details>
 	<summary>Example Usage From magic\FIRE_1\fire.bdscript</summary>
+```
 L227:
  halt 
  pushFromFSp 0
@@ -82,5 +83,6 @@ L227:
  fetchValue 4
  syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
  jmp L303
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_attack_set_line* (attack)
 
-syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
+`syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)`
 
 Sets a line for an attack that needs a line set
 
@@ -75,6 +75,7 @@ Sets a line for an attack that needs a line set
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L6269:
  pushFromFSpVal 68
  pushImm 0
@@ -100,5 +101,6 @@ L6269:
  addf 
  memcpy 0
  jmp L6317
+```
 </details>
 

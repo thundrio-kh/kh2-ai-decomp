@@ -1,6 +1,6 @@
 ## trap_unit_disable* (spawn)
 
-syscall 1, 202 ; trap_unit_disable (1 in, 0 out)
+`syscall 1, 202 ; trap_unit_disable (1 in, 0 out)`
 
 Disable a unit group from being able to spawn
 
@@ -35,6 +35,7 @@ Disable a unit group from being able to spawn
 
 <details>
 	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
+```
 TR3:
  gosub 4, L329
  pushImm 417
@@ -53,5 +54,6 @@ TR3:
  pushFromPWp W0
  gosub 4, L341
  ret
+```
 </details>
 

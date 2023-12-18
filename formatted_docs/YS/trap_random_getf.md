@@ -1,6 +1,6 @@
 ## *trap_random_getf* (utility)
 
-syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+`syscall 0, 17 ; trap_random_getf (1 in, 1 out)`
 
 Return a random float between 0 and range
 
@@ -627,6 +627,7 @@ Return a random float between 0 and range
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+```
 L1230:
  popToSp 0
  pushFromPWp W0
@@ -654,5 +655,6 @@ L1230:
  pushImmf 0
  syscall 9, 4 ; ?
  jmp L1305
+```
 </details>
 

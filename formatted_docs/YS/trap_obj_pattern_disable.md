@@ -1,6 +1,6 @@
 ## trap_obj_pattern_disable* (object)
 
-syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+`syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)`
 
 Disable resistances/sturdy frames for an object
 
@@ -137,6 +137,7 @@ Disable resistances/sturdy frames for an object
 
 <details>
 	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
+```
 L9044:
  popToSp 0
  pushFromFSp 0
@@ -169,5 +170,6 @@ L9044:
  pushImm 202
  gosub 12, L7179
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+```
 </details>
 

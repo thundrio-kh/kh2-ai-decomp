@@ -1,6 +1,6 @@
 ## trap_attack_is_strike* (attack)
 
-syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
+`syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)`
 
 Checks if an attack is striking an object
 
@@ -49,6 +49,7 @@ Checks if an attack is striking an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4188:
  jz L4406
  pushFromFSpVal 68
@@ -145,5 +146,6 @@ L4188:
  pushImm 99
  syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
  jmp L4398
+```
 </details>
 

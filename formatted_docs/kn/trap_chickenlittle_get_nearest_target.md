@@ -1,6 +1,6 @@
 ## trap_chickenlittle_get_nearest_target* (special)
 
-syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
+`syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)`
 
 Have chicken little target the nearest enemy
 
@@ -22,6 +22,7 @@ Have chicken little target the nearest enemy
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L584:
  popToSp 0
  popToSp 4
@@ -48,5 +49,6 @@ L584:
  pushImmf 60
  syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
  ret
+```
 </details>
 

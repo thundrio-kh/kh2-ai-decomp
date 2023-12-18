@@ -1,6 +1,6 @@
 ## trap_obj_sysjump (object)
 
-syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
+`syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)`
 
 Unknown
 
@@ -275,6 +275,7 @@ Unknown
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1258:
  pushFromPWp W0
  pushFromFSp 0
@@ -310,5 +311,6 @@ L1258:
  gosub 52, L2603
  drop 
  jmp L1365
+```
 </details>
 

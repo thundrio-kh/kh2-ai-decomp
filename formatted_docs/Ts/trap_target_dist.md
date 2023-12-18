@@ -1,6 +1,6 @@
 ## trap_target_dist* (target)
 
-syscall 6, 9 ; trap_target_dist (2 in, 1 out)
+`syscall 6, 9 ; trap_target_dist (2 in, 1 out)`
 
 Get the distance to a target from the position
 
@@ -119,6 +119,7 @@ Get the distance to a target from the position
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L833:
  pushFromFSp 180
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
@@ -160,5 +161,6 @@ L833:
  pushFromPAi L6864 ; ___ai 'break' (L6864)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  jmp L1049
+```
 </details>
 

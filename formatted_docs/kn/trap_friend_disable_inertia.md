@@ -1,6 +1,6 @@
 ## trap_friend_disable_inertia* (friend)
 
-syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
+`syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)`
 
 Disable a friends inertia action
 
@@ -22,6 +22,7 @@ Disable a friends inertia action
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L7902:
  popToSp 4
  popToSp 0
@@ -32,5 +33,6 @@ L7902:
  pushFromPWp W364
  syscall 10, 28 ; trap_friend_disable_inertia (1 in, 0 out)
  ret
+```
 </details>
 

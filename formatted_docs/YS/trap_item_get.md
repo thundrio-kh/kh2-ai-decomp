@@ -1,6 +1,6 @@
 ## trap_item_get* (player)
 
-syscall 0, 63 ; trap_item_get (2 in, 1 out)
+`syscall 0, 63 ; trap_item_get (2 in, 1 out)`
 
 Give an item to the player
 
@@ -23,6 +23,8 @@ Give an item to the player
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

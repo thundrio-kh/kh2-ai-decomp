@@ -1,6 +1,6 @@
 ## trap_obj_search_by_glance* (object)
 
-syscall 1, 304 ; trap_obj_search_by_glance (2 in, 0 out)
+`syscall 1, 304 ; trap_obj_search_by_glance (2 in, 0 out)`
 
 Looks up an object by ID and then returns the copy of the object that is closest to the camera? looks very similar to trap_obj_search_by_entry but is actually used in game
 
@@ -26,6 +26,7 @@ Looks up an object by ID and then returns the copy of the object that is closest
 
 <details>
 	<summary>Example Usage From obj\F_AL110\f_al.bdscript</summary>
+```
 L218:
  pushFromPSp 16
  pushImm 1886
@@ -41,5 +42,6 @@ L218:
  pushImm 1
  memcpy 0
  jmp L246
+```
 </details>
 

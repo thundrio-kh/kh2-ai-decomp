@@ -1,6 +1,6 @@
 ## trap_prize_get_all_tr* (prize)
 
-syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
+`syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)`
 
 Make all the hostile program orbs that are out disappear?
 
@@ -22,6 +22,7 @@ Make all the hostile program orbs that are out disappear?
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+```
 L10470:
  pushFromFSp 0
  syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)
@@ -43,5 +44,6 @@ L10470:
  pushImm 0
  gosub 4, L8154
  jmp L10520
+```
 </details>
 

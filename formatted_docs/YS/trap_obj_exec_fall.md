@@ -1,6 +1,6 @@
 ## trap_obj_exec_fall* (object)
 
-syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
+`syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)`
 
 Tells the object to fall
 
@@ -234,6 +234,7 @@ Tells the object to fall
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
+```
 TR13:
  pushFromPWp W0
  pushImmf 0
@@ -246,5 +247,6 @@ TR13:
  pushFromPWp W0
  syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
  ret
+```
 </details>
 

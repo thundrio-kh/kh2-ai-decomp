@@ -1,6 +1,6 @@
 ## trap_mission_set_timer_param* (mission_timer)
 
-syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
+`syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)`
 
 sets parameters for a timer
 
@@ -34,6 +34,7 @@ sets parameters for a timer
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript</summary>
+```
 TR3:
  pushFromPWp W0
  gosub 4, L400
@@ -56,5 +57,6 @@ TR3:
  pushImm 0
  syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
  jmp L395
+```
 </details>
 

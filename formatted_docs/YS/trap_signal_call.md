@@ -1,6 +1,6 @@
 ## trap_signal_call* (system)
 
-syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+`syscall 1, 41 ; trap_signal_call (2 in, 0 out)`
 
 Perform a signal call.
 
@@ -119,11 +119,13 @@ Perform a signal call.
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
+```
 L72:
  jz L84
  pushImm 9
  pushImm 0
  syscall 1, 41 ; trap_signal_call (2 in, 0 out)
  jmp L84
+```
 </details>
 

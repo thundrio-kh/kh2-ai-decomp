@@ -1,6 +1,6 @@
 ## trap_mission_set_combo_counter_param* (mission_combocounter)
 
-syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
+`syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)`
 
 Set parameters for the combo counter
 
@@ -23,6 +23,7 @@ Set parameters for the combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+```
 L190:
  pushFromFSp 0
  fetchValue 0
@@ -38,5 +39,6 @@ L190:
  add 
  pushImm 0
  syscall 4, 51 ; trap_mission_set_combo_counter_param (4 in, 0 out)
+```
 </details>
 

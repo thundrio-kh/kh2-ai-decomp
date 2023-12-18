@@ -1,6 +1,6 @@
 ## trap_attack_free* (attack)
 
-syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+`syscall 2, 13 ; trap_attack_free (1 in, 0 out)`
 
 Destroy an attack object, freeing the memory.
 
@@ -296,6 +296,7 @@ Destroy an attack object, freeing the memory.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L4568:
  popToSp 0
  pushFromFSpVal 68
@@ -308,5 +309,6 @@ L4568:
  pushImm 0
  popToSpVal 68
  jmp L4590
+```
 </details>
 

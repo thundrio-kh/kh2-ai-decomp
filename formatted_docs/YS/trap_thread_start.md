@@ -1,6 +1,6 @@
 ## trap_thread_start (threading)
 
-syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+`syscall 0, 9 ; trap_thread_start (4 in, 1 out)`
 
 Starts a new thread of execution
 
@@ -116,6 +116,7 @@ startThread:
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L4479:
  popToSp 0
  pushImm 0
@@ -135,5 +136,6 @@ L4479:
  memcpyToSp 16, 48
  pushFromPSp 48
  memcpyToSpVal 16, 32
+```
 </details>
 

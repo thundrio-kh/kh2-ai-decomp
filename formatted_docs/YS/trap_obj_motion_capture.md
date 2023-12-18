@@ -1,6 +1,6 @@
 ## trap_obj_motion_capture* (mset)
 
-syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
+`syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)`
 
 starts a motion set id that captures an object, returning the id of the capture
 
@@ -228,6 +228,7 @@ starts a motion set id that captures an object, returning the id of the capture
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L2804:
  pushFromPSpVal 0
  pushFromPSp 4
@@ -266,5 +267,6 @@ L2804:
  popToSp 92
  pushImmf 12
  gosub 28, L3021
+```
 </details>
 

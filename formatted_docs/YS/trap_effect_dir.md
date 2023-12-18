@@ -1,6 +1,6 @@
 ## trap_effect_dir* (effect)
 
-syscall 0, 54 ; trap_effect_dir (1 in, 1 out)
+`syscall 0, 54 ; trap_effect_dir (1 in, 1 out)`
 
 returns the direction of an effect as a vector
 
@@ -32,6 +32,7 @@ returns the direction of an effect as a vector
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
+```
 L347:
  popToSp 0
  pushFromPSpVal 0
@@ -68,5 +69,6 @@ L347:
  pushImm 0
  popToSpVal 196
  ret
+```
 </details>
 

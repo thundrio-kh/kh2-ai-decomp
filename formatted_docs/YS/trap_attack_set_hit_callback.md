@@ -1,6 +1,6 @@
 ## trap_attack_set_hit_callback (attack)
 
-syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
+`syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)`
 
 Adds a callback function to an attack that will run on hit
 
@@ -72,6 +72,7 @@ Adds a callback function to an attack that will run on hit
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L5011:
  pushFromPSpVal 0
  pushImm 1539
@@ -86,5 +87,6 @@ L5011:
  pushFromPSpVal 280
  syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
  jmp L5038
+```
 </details>
 

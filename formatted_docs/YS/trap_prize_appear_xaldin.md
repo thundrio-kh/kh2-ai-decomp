@@ -1,6 +1,6 @@
 ## trap_prize_appear_xaldin* (prize)
 
-syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)
+`syscall 1, 363 ; trap_prize_appear_xaldin (2 in, 0 out)`
 
 Makes a number of prizes for mushroom 3 appear at a position
 
@@ -22,6 +22,7 @@ Makes a number of prizes for mushroom 3 appear at a position
 
 <details>
 	<summary>Example Usage From obj\M_EX350_03\m_ex.bdscript</summary>
+```
 L440:
  jz L474
  pushFromFSp 0
@@ -39,5 +40,6 @@ L440:
  sub 
  popToSp 12
  jmp L418
+```
 </details>
 

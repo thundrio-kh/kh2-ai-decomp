@@ -1,6 +1,6 @@
 ## trap_obj_levelup_unit* (spawn)
 
-syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)
+`syscall 1, 291 ; trap_obj_levelup_unit (1 in, 0 out)`
 
 Levels up the specified unit group of spawns
 
@@ -23,6 +23,7 @@ Levels up the specified unit group of spawns
 
 <details>
 	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
+```
 L2170:
  popToSp 0
  pushFromFSp 0
@@ -61,5 +62,6 @@ L2170:
  syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
  drop 
  jmp L2249
+```
 </details>
 

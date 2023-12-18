@@ -1,6 +1,6 @@
 ## trap_status_no_leave* (status)
 
-syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
+`syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)`
 
 Returns the value of the no_leave flag
 
@@ -462,11 +462,13 @@ Returns the value of the no_leave flag
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L7162:
  syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
  jz L7175
  pushImm 0
  popToSp 8
  jmp L7217
+```
 </details>
 

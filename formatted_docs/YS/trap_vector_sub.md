@@ -1,6 +1,6 @@
 ## trap_vector_sub* (math)
 
-syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+`syscall 0, 5 ; trap_vector_sub (2 in, 1 out)`
 
 Performs vector subtraction (vec1 - vec2)
 
@@ -898,6 +898,7 @@ Performs vector subtraction (vec1 - vec2)
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L511:
  pushFromPSp 48
  pushImmf 0.523599
@@ -926,5 +927,6 @@ L511:
  pushFromPSp 224
  gosub 64, L1936
  jmp L592
+```
 </details>
 

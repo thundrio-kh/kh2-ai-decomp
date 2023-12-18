@@ -1,6 +1,6 @@
 ## trap_chickenlittle_get_shoot_target* (special)
 
-syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)
+`syscall 10, 5 ; trap_chickenlittle_get_shoot_target (1 in, 1 out)`
 
 Have Chicken Little shoot in the direction of the target
 
@@ -26,6 +26,7 @@ Have Chicken Little shoot in the direction of the target
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L518:
  popToSp 0
  pushFromFSp 0
@@ -53,5 +54,6 @@ L518:
  pushFromPSp 16
  gosub 16, L584
  jmp L583
+```
 </details>
 

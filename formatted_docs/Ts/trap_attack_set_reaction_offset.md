@@ -1,6 +1,6 @@
 ## trap_attack_set_reaction_offset* (attack)
 
-syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)
+`syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)`
 
 Set a position offset for being able to perform a reaction command
 
@@ -25,6 +25,7 @@ Set a position offset for being able to perform a reaction command
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L1882:
  pushFromFSp 4
  pushFromPSpVal 96
@@ -52,5 +53,6 @@ L1882:
  pushFromPSp 32
  syscall 7, 14 ; trap_attack_set_reaction_offset (2 in, 0 out)
  jmp L1939
+```
 </details>
 

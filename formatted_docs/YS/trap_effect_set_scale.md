@@ -1,6 +1,6 @@
 ## trap_effect_set_scale* (effect)
 
-syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
+`syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)`
 
 Scales an effect object
 
@@ -57,6 +57,7 @@ Scales an effect object
 
 <details>
 	<summary>Example Usage From magic\magnet1\magn.bdscript</summary>
+```
 L395:
  popToSp 4
  popToSp 0
@@ -87,5 +88,6 @@ L395:
  pushFromPSp 16
  syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
  ret
+```
 </details>
 

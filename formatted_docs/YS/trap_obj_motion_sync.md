@@ -1,6 +1,6 @@
 ## trap_obj_motion_sync* (mset)
 
-syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
+`syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)`
 
 Syncs two motion sets
 
@@ -46,6 +46,7 @@ Syncs two motion sets
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L4229:
  popToSp 4
  popToSp 8
@@ -71,5 +72,6 @@ L4229:
  pushImm 0
  syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
  jmp L4279
+```
 </details>
 

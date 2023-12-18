@@ -1,6 +1,6 @@
 ## trap_signal_reserve_min_hp* (system)
 
-syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
+`syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)`
 
 Signal an object to reserve an minimum HP value
 
@@ -39,6 +39,7 @@ Signal an object to reserve an minimum HP value
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
+```
 L228:
  pushFromFSp 36
  pushFromPAi L374 ; ___ai 'INT' (L374)
@@ -52,5 +53,6 @@ L228:
  pushImm 0
  syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
  ret
+```
 </details>
 

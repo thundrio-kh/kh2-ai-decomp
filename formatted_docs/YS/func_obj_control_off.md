@@ -1,6 +1,6 @@
 ## func_obj_control_off* (object)
 
-syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
+`syscall 1, 42 ; func_obj_control_off (1 in, 0 out)`
 
 Turns off control of the object running this function.
 
@@ -34,6 +34,7 @@ Turns off control of the object running this function.
 
 <details>
 	<summary>Example Usage From msn\TT12_WORK_BOX\tt12.bdscript</summary>
+```
 L61:
  pushImm 0
  syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
@@ -44,5 +45,6 @@ L61:
  syscall 0, 9 ; trap_thread_start (4 in, 1 out)
  drop 
  jmp L83
+```
 </details>
 

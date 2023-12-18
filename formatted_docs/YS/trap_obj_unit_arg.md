@@ -1,6 +1,6 @@
 ## *trap_obj_unit_arg* (object)
 
-syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+`syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)`
 
 Return the value of a unit argument
 
@@ -272,6 +272,7 @@ Return the value of a unit argument
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L2308:
  popToSp 0
  pushFromFSp 0
@@ -283,5 +284,6 @@ L2308:
  jz L2328
  gosub 12, L2424
  jmp L2334
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_skateboard_trick* (special)
 
-syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
+`syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)`
 
 Perform a skateboard trick
 
@@ -34,6 +34,7 @@ Perform a skateboard trick
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L483:
  popToSp 4
  popToSp 8
@@ -53,5 +54,6 @@ L483:
  pushImmf 0
  syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
  ret
+```
 </details>
 

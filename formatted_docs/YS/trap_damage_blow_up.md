@@ -1,6 +1,6 @@
 ## trap_damage_blow_up* (attack)
 
-syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
+`syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)`
 
 Returns the blow up value for the attack, documented in openkh as Knockback Strength 2
 
@@ -26,6 +26,7 @@ Returns the blow up value for the attack, documented in openkh as Knockback Stre
 
 <details>
 	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
+```
 L116:
  pushFromFSp 4
  syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)
@@ -35,5 +36,6 @@ L116:
  addf 
  popToSp 8
  jmp L165
+```
 </details>
 

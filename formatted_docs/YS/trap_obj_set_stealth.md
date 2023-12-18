@@ -1,6 +1,6 @@
 ## trap_obj_set_stealth* (object)
 
-syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)
+`syscall 1, 194 ; trap_obj_set_stealth (2 in, 0 out)`
 
 Turns stealth on or off for an object
 
@@ -25,6 +25,7 @@ Turns stealth on or off for an object
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L11216:
  pushFromFSp 0
  pushImm -1
@@ -38,5 +39,6 @@ L11216:
  pushImmf 0
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_get_rtn_action_dir* (field)
 
-syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
+`syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)`
 
 Get the direction of a RTN action
 
@@ -256,6 +256,7 @@ Get the direction of a RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L2245:
  popToSp 0
  pushFromFSp 0
@@ -268,5 +269,6 @@ L2245:
  pushImmf 0.087266
  syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
  drop
+```
 </details>
 

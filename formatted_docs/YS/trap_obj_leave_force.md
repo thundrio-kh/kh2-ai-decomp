@@ -1,6 +1,6 @@
 ## trap_obj_leave_force* (object)
 
-syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
+`syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)`
 
 Forces an object to leave
 
@@ -86,10 +86,12 @@ Forces an object to leave
 
 <details>
 	<summary>Example Usage From obj\B_EX310\b_ex.bdscript</summary>
+```
 L2726:
  popToSp 0
  pushFromFSp 0
  syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
  ret
+```
 </details>
 

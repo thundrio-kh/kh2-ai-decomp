@@ -1,6 +1,6 @@
 ## *trap_area_world* (mapinfo)
 
-syscall 1, 23 ; trap_area_world (0 in, 1 out)
+`syscall 1, 23 ; trap_area_world (0 in, 1 out)`
 
 Returns the number for the current world
 
@@ -295,6 +295,7 @@ Returns the number for the current world
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L6541:
  popToSp 4
  popToSp 8
@@ -315,5 +316,6 @@ L6541:
  pushFromFSp 4
  syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
  jmp L6597
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_obj_jump_height_to_uptime* (Math)
 
-syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
+`syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)`
 
 Converts jump height to uptime using the following formula: `math.sqrt(math.abs(height * 2.0) / 0.40816328)`
 
@@ -59,6 +59,7 @@ Converts jump height to uptime using the following formula: `math.sqrt(math.abs(
 
 <details>
 	<summary>Example Usage From limit\goofy\limi.bdscript</summary>
+```
 L1794:
  popToSp 4
  popToSp 0
@@ -73,5 +74,6 @@ L1794:
  syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
  popToSpVal 16
  ret
+```
 </details>
 

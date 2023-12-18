@@ -1,6 +1,6 @@
 ## trap_vector_inter* (math)
 
-syscall 0, 78 ; trap_vector_inter (3 in, 1 out)
+`syscall 0, 78 ; trap_vector_inter (3 in, 1 out)`
 
 Calculates the intersection point between two vectors
 
@@ -58,6 +58,7 @@ Calculates the intersection point between two vectors
 
 <details>
 	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
+```
 L2480:
  dup 
  pushFromFSp 60
@@ -134,5 +135,6 @@ L2480:
  pushFromFSp 60
  gosub 28, L2657
  jmp L2626
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_attack_is_finish* (attack)
 
-syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)
+`syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)`
 
 Returns if an attack is a finisher
 
@@ -27,6 +27,7 @@ Returns if an attack is a finisher
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L135:
  pushFromFSp 0
  gosub 4, L170
@@ -35,5 +36,6 @@ L135:
  pushFromFSp 0
  syscall 10, 38 ; trap_attack_is_finish (1 in, 1 out)
  eqzv
+```
 </details>
 

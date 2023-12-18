@@ -1,6 +1,6 @@
 ## trap_eh22_path_is_moving* (special)
 
-syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
+`syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)`
 
 Return if the path is moving during the dragon xemnas fight
 
@@ -26,6 +26,7 @@ Return if the path is moving during the dragon xemnas fight
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+```
 L829:
  pushFromFSpVal 124
  pushImm 0
@@ -45,5 +46,6 @@ L829:
  pushFromFSp 0
  syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
  neqzv
+```
 </details>
 

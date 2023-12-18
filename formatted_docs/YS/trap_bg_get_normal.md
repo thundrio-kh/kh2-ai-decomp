@@ -1,6 +1,6 @@
 ## trap_bg_get_normal* (camera)
 
-syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)
+`syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)`
 
 Return the normal of the background position from the given camera
 
@@ -29,6 +29,7 @@ Return the normal of the background position from the given camera
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L8661:
  pushFromFSp 64
  syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)
@@ -48,5 +49,6 @@ L8661:
  memcpyToSpVal 16, 80
  pushImm 1
  popToSp 4
+```
 </details>
 

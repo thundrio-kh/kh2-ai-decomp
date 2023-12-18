@@ -1,6 +1,6 @@
 ## trap_obj_can_look* (object)
 
-syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)
+`syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)`
 
 Checks if an object can look at a pos
 
@@ -256,6 +256,7 @@ Checks if an object can look at a pos
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1297:
  pushImm 1
  jz L1412
@@ -292,5 +293,6 @@ L1297:
  pushImmf 10
  popToSp 32
  jmp L1409
+```
 </details>
 

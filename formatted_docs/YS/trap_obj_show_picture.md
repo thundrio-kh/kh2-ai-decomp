@@ -1,6 +1,6 @@
 ## trap_obj_show_picture* (object)
 
-syscall 1, 285 ; trap_obj_show_picture (2 in, 1 out)
+`syscall 1, 285 ; trap_obj_show_picture (2 in, 1 out)`
 
 Show a numbered picture associated with an object
 
@@ -29,6 +29,7 @@ Show a numbered picture associated with an object
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L16883:
  pushFromFSp 100
  jz L18181
@@ -130,5 +131,6 @@ L16883:
  pushImm 1
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
  jmp L17119
+```
 </details>
 

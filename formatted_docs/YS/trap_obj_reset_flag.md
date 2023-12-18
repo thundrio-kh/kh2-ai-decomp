@@ -1,6 +1,6 @@
 ## trap_obj_reset_flag* (object)
 
-syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
+`syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)`
 
 Reset a specific flag on an object
 
@@ -255,6 +255,7 @@ Reset a specific flag on an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L3001:
  pushFromPSp 4
  pushImm 8
@@ -264,5 +265,6 @@ L3001:
  pushImm 0
  pushImmf 16
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 </details>
 

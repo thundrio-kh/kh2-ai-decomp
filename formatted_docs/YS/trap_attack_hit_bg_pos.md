@@ -1,6 +1,6 @@
 ## trap_attack_hit_bg_pos* (attack)
 
-syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
+`syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)`
 
 Returns the position of when the attack hit the background
 
@@ -43,6 +43,7 @@ Returns the position of when the attack hit the background
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L1263:
  pushFromFSp 176
  syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
@@ -65,5 +66,6 @@ L1263:
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  pushFromPSpVal 64
  syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+```
 </details>
 

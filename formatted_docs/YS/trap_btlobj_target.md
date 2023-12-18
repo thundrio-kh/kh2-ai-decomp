@@ -1,6 +1,6 @@
 ## trap_btlobj_target* (btlobj)
 
-syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+`syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)`
 
 Retrieves the btlobj of the subject of a target object
 
@@ -648,6 +648,7 @@ Retrieves the btlobj of the subject of a target object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3456:
  popToSp 0
  popToSp 4
@@ -672,5 +673,6 @@ L3456:
  memcpy 0
  pushFromFSp 12
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_special_last_xemnus_laser_optimize* (special)
 
-syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)
+`syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)`
 
 Adds the dome effect (dark globe) during the final xemnas laser attack
 
@@ -22,6 +22,7 @@ Adds the dome effect (dark globe) during the final xemnas laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L15024:
  pushFromFSp 0
  pushImm 226
@@ -34,5 +35,6 @@ L15024:
  jz L15047
  syscall 8, 6 ; trap_special_last_xemnus_laser_optimize (0 in, 0 out)
  jmp L15047
+```
 </details>
 

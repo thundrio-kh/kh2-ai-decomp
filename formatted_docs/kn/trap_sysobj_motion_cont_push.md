@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_cont_push* (mset)
 
-syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)
+`syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)`
 
 Push a motion entry onto the motion queue
 
@@ -19,6 +19,8 @@ Push a motion entry onto the motion queue
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

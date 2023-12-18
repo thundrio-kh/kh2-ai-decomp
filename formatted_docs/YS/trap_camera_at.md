@@ -1,6 +1,6 @@
 ## trap_camera_at* (camera)
 
-syscall 1, 306 ; trap_camera_at (0 in, 1 out)
+`syscall 1, 306 ; trap_camera_at (0 in, 1 out)`
 
 returns the position of the camera
 
@@ -41,6 +41,7 @@ returns the position of the camera
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L291:
  popToSp 0
  syscall 1, 306 ; trap_camera_at (0 in, 1 out)
@@ -63,5 +64,6 @@ L291:
  drop 
  pushFromPSp 16
  ret
+```
 </details>
 

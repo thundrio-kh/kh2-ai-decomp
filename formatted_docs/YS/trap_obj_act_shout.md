@@ -1,6 +1,6 @@
 ## trap_obj_act_shout* (action)
 
-syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
+`syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)`
 
 Shouts an action after an amount of time
 
@@ -169,6 +169,7 @@ Shouts an action after an amount of time
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+```
 L3139:
  pushFromPWp W36
  pushImm 4
@@ -177,5 +178,6 @@ L3139:
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  jmp L3154
+```
 </details>
 

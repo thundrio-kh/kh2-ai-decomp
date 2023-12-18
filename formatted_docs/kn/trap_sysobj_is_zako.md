@@ -1,6 +1,6 @@
 ## trap_sysobj_is_zako* (object)
 
-syscall 10, 17 ; trap_sysobj_is_zako (1 in, 1 out)
+`syscall 10, 17 ; trap_sysobj_is_zako (1 in, 1 out)`
 
 Check if the object is a non-boss enemy
 
@@ -30,6 +30,7 @@ Check if the object is a non-boss enemy
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L4280:
  popToSp 0
  pushFromFSp 0
@@ -41,5 +42,6 @@ L4280:
  fetchValue 4
  syscall 10, 18 ; trap_sysobj_is_boss (1 in, 1 out)
  neqzv
+```
 </details>
 

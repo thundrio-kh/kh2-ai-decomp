@@ -1,6 +1,6 @@
 ## trap_light_set_fog_far* (light)
 
-syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)
+`syscall 1, 258 ; trap_light_set_fog_far (2 in, 0 out)`
 
 Sets the distance that the fog becomes fully opaque
 
@@ -30,6 +30,7 @@ Sets the distance that the fog becomes fully opaque
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript</summary>
+```
 L415:
  pushImm 1
  syscall 1, 181 ; trap_light_create (1 in, 1 out)
@@ -68,5 +69,6 @@ L415:
  pushImmf 30
  gosub 4, L503
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_prize_appear_tr* (prize)
 
-syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
+`syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)`
 
 Makes a number of Hostile Program orbs appear at a position
 
@@ -23,6 +23,7 @@ Makes a number of Hostile Program orbs appear at a position
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+```
 L2202:
  popToSp 4
  popToSp 0
@@ -62,5 +63,6 @@ L2202:
  pushImm 3
  syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
  jmp L2282
+```
 </details>
 

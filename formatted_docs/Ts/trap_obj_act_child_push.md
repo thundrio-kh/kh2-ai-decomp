@@ -1,6 +1,6 @@
 ## trap_obj_act_child_push* (action)
 
-syscall 6, 58 ; trap_obj_act_child_push (2 in, 0 out)
+`syscall 6, 58 ; trap_obj_act_child_push (2 in, 0 out)`
 
 Push the action of a child object to the action table
 
@@ -23,6 +23,7 @@ Push the action of a child object to the action table
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L24594:
  popToSp 0
  pushFromFSp 0
@@ -75,5 +76,6 @@ L24594:
  pushFromPAi L27770 ; ___ai 'atk_air_fight' (L27770)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  jmp L24706
+```
 </details>
 

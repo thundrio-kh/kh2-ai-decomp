@@ -1,6 +1,6 @@
 ## trap_obj_step_pos* (position)
 
-syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
+`syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)`
 
 Returns the position of the floor under an object
 
@@ -240,11 +240,13 @@ Returns the position of the floor under an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3028:
  pushFromPSpVal 4
  syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
  memcpyToSp 16, 96
  pushFromPSp 96
  memcpyToSp 16, 48
+```
 </details>
 

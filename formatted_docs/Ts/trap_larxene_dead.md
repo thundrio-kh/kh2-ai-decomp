@@ -1,6 +1,6 @@
 ## trap_larxene_dead* (special)
 
-syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
+`syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)`
 
 Mark all copies of larxene as dead
 
@@ -22,6 +22,7 @@ Mark all copies of larxene as dead
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+```
 L28537:
  pushFromFSp 0
  syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)
@@ -37,5 +38,6 @@ L28537:
  pushImm 0
  gosub 4, L28567
  ret
+```
 </details>
 

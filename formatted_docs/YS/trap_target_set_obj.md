@@ -1,6 +1,6 @@
 ## trap_target_set_obj* (target)
 
-syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
+`syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)`
 
 Set the target to an object
 
@@ -146,6 +146,7 @@ Set the target to an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L450:
  pushFromPWp W0
  pushFromFSp 0
@@ -156,5 +157,6 @@ L450:
  pushFromFSp 180
  pushFromPSp 32
  syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
+```
 </details>
 

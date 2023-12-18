@@ -1,6 +1,6 @@
 ## trap_obj_scatter_prize_tt (unused)
 
-syscall 1, 240 ; trap_obj_scatter_prize_tt (3 in, 0 out)
+`syscall 1, 240 ; trap_obj_scatter_prize_tt (3 in, 0 out)`
 
 probably does nothing, is not used
 
@@ -19,6 +19,8 @@ probably does nothing, is not used
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

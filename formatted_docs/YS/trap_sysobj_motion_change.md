@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_change* (mset)
 
-syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+`syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)`
 
 Changes the object to use a different motion set entry
 
@@ -810,6 +810,7 @@ Changes the object to use a different motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6824:
  pushFromFSp 0
  fetchValue 4
@@ -818,5 +819,6 @@ L6824:
  pushFromFSp 12
  gosub 8, L6962
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+```
 </details>
 

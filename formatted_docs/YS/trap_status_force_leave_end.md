@@ -1,6 +1,6 @@
 ## *trap_status_force_leave_end* (status)
 
-syscall 1, 205 ; trap_status_force_leave_end (0 in, 0 out)
+`syscall 1, 205 ; trap_status_force_leave_end (0 in, 0 out)`
 
 Set the force leave flag to false
 
@@ -24,6 +24,7 @@ Set the force leave flag to false
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
+```
 L6971:
  popToSp 0
  pushFromFWp W4708
@@ -45,5 +46,6 @@ L6971:
  pushImm 97
  syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
  jmp L7017
+```
 </details>
 

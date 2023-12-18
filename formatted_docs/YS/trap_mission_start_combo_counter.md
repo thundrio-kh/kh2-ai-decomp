@@ -1,6 +1,6 @@
 ## trap_mission_start_combo_counter* (mission_combocounter)
 
-syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
+`syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)`
 
 adds and starts a combo counter that is id 0
 
@@ -24,9 +24,11 @@ adds and starts a combo counter that is id 0
 
 <details>
 	<summary>Example Usage From msn\TT06_PERFORM_01\tt06.bdscript</summary>
+```
 L33:
  pushImmf 0
  syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)
  jmp L73
+```
 </details>
 

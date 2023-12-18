@@ -1,6 +1,6 @@
 ## trap_obj_hook (friend)
 
-syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
+`syscall 1, 112 ; trap_obj_hook (3 in, 0 out)`
 
 Forks the current VM and hooks the new fork
 
@@ -196,6 +196,7 @@ Forks the current VM and hooks the new fork
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L197:
  pushFromPWp W0
  pushImm 20
@@ -204,5 +205,6 @@ L197:
  pushImm 0
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  jmp L274
+```
 </details>
 

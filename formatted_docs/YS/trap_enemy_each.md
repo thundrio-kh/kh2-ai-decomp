@@ -1,6 +1,6 @@
 ## trap_enemy_each* (enemy)
 
-syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
+`syscall 2, 4 ; trap_enemy_each (1 in, 1 out)`
 
 seems to return an array of all instances of an enemy
 
@@ -46,6 +46,7 @@ seems to return an array of all instances of an enemy
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L1759:
  popToSp 0
  pushFromFSpVal 4
@@ -56,5 +57,6 @@ L1759:
  sub 
  neqz 
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## *trap_status_is_battle* (status)
 
-syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
+`syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)`
 
 Returns if a battle is going on
 
@@ -29,6 +29,7 @@ Returns if a battle is going on
 
 <details>
 	<summary>Example Usage From obj\F_HB020\f_hb.bdscript</summary>
+```
 L2276:
  popToSp 0
  syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
@@ -40,5 +41,6 @@ L2276:
  fetchValue 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  eqzv
+```
 </details>
 

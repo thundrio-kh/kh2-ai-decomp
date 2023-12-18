@@ -1,6 +1,6 @@
 ## trap_obj_voice* (sound)
 
-syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
+`syscall 1, 262 ; trap_obj_voice (3 in, 0 out)`
 
 Plays a voice clip belonging to an object
 
@@ -120,6 +120,7 @@ Plays a voice clip belonging to an object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L9010:
  pushFromFSp 0
  fetchValue 4
@@ -137,5 +138,6 @@ L9010:
  pushImm 1
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
  jmp L9045
+```
 </details>
 

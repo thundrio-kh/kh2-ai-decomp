@@ -1,6 +1,6 @@
 ## trap_obj_play_se* (sound)
 
-syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
+`syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)`
 
 Plays a sound effect
 
@@ -41,6 +41,7 @@ Plays a sound effect
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L8150:
  pushFromFSp 4
  jz L8183
@@ -56,5 +57,6 @@ L8150:
  pushImmf 30
  gosub 4, L5452
  jmp L8188
+```
 </details>
 

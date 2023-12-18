@@ -1,6 +1,6 @@
 ## trap_obj_shadow_move_end* (movement)
 
-syscall 1, 105 ; trap_obj_shadow_move_end (1 in, 0 out)
+`syscall 1, 105 ; trap_obj_shadow_move_end (1 in, 0 out)`
 
 Ends the kind of movement shadows do where they sink into the floor
 
@@ -30,6 +30,7 @@ Ends the kind of movement shadows do where they sink into the floor
 
 <details>
 	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
+```
 L4961:
  popToSp 0
  pushFromFSp 0
@@ -45,5 +46,6 @@ L4961:
  pushImm 162
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 </details>
 

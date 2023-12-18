@@ -1,6 +1,6 @@
 ## trap_sysobj_moveto* (movement)
 
-syscall 1, 2 ; trap_sysobj_moveto (3 in, 1 out)
+`syscall 1, 2 ; trap_sysobj_moveto (3 in, 1 out)`
 
 Moves an object to a position
 
@@ -27,6 +27,7 @@ Moves an object to a position
 
 <details>
 	<summary>Example Usage From obj\M_EX420\m_ex.bdscript</summary>
+```
 L3495:
  pushFromFSp 16
  pushImmf 0
@@ -133,5 +134,6 @@ L3495:
  subf 
  infzf 
  neqzv
+```
 </details>
 

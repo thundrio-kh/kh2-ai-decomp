@@ -1,6 +1,6 @@
 ## trap_obj_effect_start_bind* (effect)
 
-syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+`syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)`
 
 Starts an effect associated with an object and binds it to that object
 
@@ -592,6 +592,7 @@ Starts an effect associated with an object and binds it to that object
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+```
 L7676:
  popToSp 4
  popToSp 8
@@ -609,5 +610,6 @@ L7676:
  syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
  popToSpVal 0
  jmp L7708
+```
 </details>
 

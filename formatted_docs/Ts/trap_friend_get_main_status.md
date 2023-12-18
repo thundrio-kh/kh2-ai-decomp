@@ -1,6 +1,6 @@
 ## trap_friend_get_main_status* (friend)
 
-syscall 7, 18 ; trap_friend_get_main_status (1 in, 1 out)
+`syscall 7, 18 ; trap_friend_get_main_status (1 in, 1 out)`
 
 Get the main status of a friend
 
@@ -23,6 +23,8 @@ Get the main status of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

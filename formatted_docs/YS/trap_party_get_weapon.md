@@ -1,6 +1,6 @@
 ## trap_party_get_weapon* (party)
 
-syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
+`syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)`
 
 Return the ID of the weapon the party member has equipped
 
@@ -52,6 +52,7 @@ Return the ID of the weapon the party member has equipped
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L6058:
  popToSp 0
  pushFromPWp W72
@@ -100,5 +101,6 @@ L6058:
  gosub 12, L6188
  pushFromFSp 0
  gosub 12, L6211
+```
 </details>
 

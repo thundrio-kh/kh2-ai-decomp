@@ -1,6 +1,6 @@
 ## trap_sysobj_appear* (system)
 
-syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
+`syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)`
 
 Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 
@@ -99,6 +99,7 @@ Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+```
 L255:
  popToSp 4
  popToSp 0
@@ -107,5 +108,6 @@ L255:
  syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
  gosub 4, L268
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_motion_is_hook* (mset)
 
-syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
+`syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)`
 
 Returns if the motion set is a hook
 
@@ -41,6 +41,7 @@ Returns if the motion set is a hook
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
+```
 L1536:
  pushFromFWp W8
  jz L1632
@@ -56,5 +57,6 @@ L1536:
  pushImm 0
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L1630
+```
 </details>
 

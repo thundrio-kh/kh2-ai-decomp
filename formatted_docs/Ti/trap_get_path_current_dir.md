@@ -1,6 +1,6 @@
 ## trap_get_path_current_dir* (path)
 
-syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)
+`syscall 5, 20 ; trap_get_path_current_dir (1 in, 1 out)`
 
 Get the current direction of the path
 
@@ -23,6 +23,8 @@ Get the current direction of the path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

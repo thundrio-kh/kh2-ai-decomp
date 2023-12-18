@@ -1,6 +1,6 @@
 ## trap_obj_reset_parts_color* (bones)
 
-syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)
+`syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)`
 
 Resets the color of an object part
 
@@ -25,6 +25,7 @@ Resets the color of an object part
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+```
 L5082:
  pushFromFSp 0
  fetchValue 4
@@ -70,5 +71,6 @@ L5082:
  pushImm 0
  syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
  jmp L5216
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_start* (mset)
 
-syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+`syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)`
 
 Starts playing a motion set entry
 
@@ -594,6 +594,7 @@ Starts playing a motion set entry
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2778:
  popToSp 0
  pushFromPWp W0
@@ -607,5 +608,6 @@ L2778:
  pushImmf 8
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
  jmp L2804
+```
 </details>
 

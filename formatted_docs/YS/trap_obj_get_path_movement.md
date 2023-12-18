@@ -1,6 +1,6 @@
 ## trap_obj_get_path_movement* (movement)
 
-syscall 1, 178 ; trap_obj_get_path_movement (1 in, 1 out)
+`syscall 1, 178 ; trap_obj_get_path_movement (1 in, 1 out)`
 
 Gets a movement vector along a specific path
 
@@ -26,6 +26,7 @@ Gets a movement vector along a specific path
 
 <details>
 	<summary>Example Usage From obj\N_AL090_BTL\n_al.bdscript</summary>
+```
 L3262:
  pushFromFSp 0
  fetchValue 4
@@ -48,5 +49,6 @@ L3262:
  syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
  halt 
  jmp L3262
+```
 </details>
 

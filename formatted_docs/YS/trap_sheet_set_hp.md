@@ -1,6 +1,6 @@
 ## trap_sheet_set_hp* (sheet)
 
-syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
+`syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)`
 
 Set an objects HP
 
@@ -33,6 +33,7 @@ Set an objects HP
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L148:
  popToSp 0
  pushFromPSpVal 116
@@ -65,5 +66,6 @@ L148:
  pushImm 2
  syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
  jmp L217
+```
 </details>
 

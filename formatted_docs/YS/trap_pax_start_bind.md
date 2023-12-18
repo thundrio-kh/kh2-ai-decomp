@@ -1,6 +1,6 @@
 ## trap_pax_start_bind* (animation)
 
-syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
+`syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)`
 
 Starts and binds a PAX effect
 
@@ -68,6 +68,7 @@ Starts and binds a PAX effect
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+```
 L362:
  pushFromFSpVal 16
  pushFromFSp 4
@@ -76,5 +77,6 @@ L362:
  pushImm 0
  syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
  ret
+```
 </details>
 

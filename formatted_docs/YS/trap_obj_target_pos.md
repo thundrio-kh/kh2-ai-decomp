@@ -1,6 +1,6 @@
 ## trap_obj_target_pos* (position)
 
-syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
+`syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)`
 
 Returns the position of the objects current target
 
@@ -105,6 +105,7 @@ Returns the position of the objects current target
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L1383:
  popToSp 0
  pushFromPWp W108
@@ -140,5 +141,6 @@ L1383:
  pushImmf 10
  popToSp 64
  jmp L1483
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_target_dup* (target)
 
-syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+`syscall 1, 131 ; trap_target_dup (1 in, 1 out)`
 
 Duplicates a target object
 
@@ -285,6 +285,7 @@ Duplicates a target object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3456:
  popToSp 0
  popToSp 4
@@ -309,5 +310,6 @@ L3456:
  memcpy 0
  pushFromFSp 12
  ret
+```
 </details>
 

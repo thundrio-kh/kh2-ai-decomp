@@ -1,6 +1,6 @@
 ## method_obj_enable_reaction_command* (unused)
 
-syscall 1, 49 ; method_obj_enable_reaction_command (3 in, 0 out)
+`syscall 1, 49 ; method_obj_enable_reaction_command (3 in, 0 out)`
 
 Enables a reaction command so it can be activated by the player. Unused in the vanilla game.
 
@@ -19,6 +19,8 @@ Enables a reaction command so it can be activated by the player. Unused in the v
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_card_set_spec* (special)
 
-syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)
+`syscall 6, 30 ; trap_card_set_spec (7 in, 0 out)`
 
 Set the parameters of card actions based on a number of parameters
 
@@ -24,6 +24,7 @@ Set the parameters of card actions based on a number of parameters
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+```
 L15018:
  popToSp 0
  pushImmf 4
@@ -49,5 +50,6 @@ L15018:
  jz L15077
  syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
  jmp L15077
+```
 </details>
 

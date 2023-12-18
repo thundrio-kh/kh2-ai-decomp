@@ -1,6 +1,6 @@
 ## trap_obj_spec (object)
 
-syscall 1, 97 ; trap_obj_spec (1 in, 1 out)
+`syscall 1, 97 ; trap_obj_spec (1 in, 1 out)`
 
 Returns the spec of an object
 
@@ -87,6 +87,7 @@ Returns the spec of an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L4649:
  popToSp 4
  popToSp 0
@@ -713,5 +714,6 @@ L4649:
  pushImmf 0.8
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
+```
 </details>
 

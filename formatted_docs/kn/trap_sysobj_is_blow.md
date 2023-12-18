@@ -1,6 +1,6 @@
 ## trap_sysobj_is_blow* (object)
 
-syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)
+`syscall 10, 22 ; trap_sysobj_is_blow (1 in, 1 out)`
 
 Check if the object is in a blow state
 
@@ -27,6 +27,7 @@ Check if the object is in a blow state
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L26146:
  jz L26172
  pushFromFSp 0
@@ -36,5 +37,6 @@ L26146:
  pushFromFSp 0
  syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
  jmp L26162
+```
 </details>
 

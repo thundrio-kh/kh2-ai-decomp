@@ -1,6 +1,6 @@
 ## *trap_puti* (debug)
 
-syscall 0, 0 ; trap_puti (2 in, 0 out)
+`syscall 0, 0 ; trap_puti (2 in, 0 out)`
 
 value"
 
@@ -181,6 +181,7 @@ value"
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
+```
 L3767:
  dup 
  pushFromFSp 4
@@ -225,5 +226,6 @@ L3767:
  pushFromPAi L4528 ; ___ai '@aura[i] is null' (L4528)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  jmp L3851
+```
 </details>
 

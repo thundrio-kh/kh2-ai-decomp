@@ -1,6 +1,6 @@
 ## trap_limit_start_thread* (threading)
 
-syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
+`syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)`
 
 Limit version of starting a separate thread
 
@@ -50,6 +50,7 @@ Limit version of starting a separate thread
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3431:
  popToSp 0
  popToSp 4
@@ -64,5 +65,6 @@ L3431:
  syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
  pushFromFSp 12
  ret
+```
 </details>
 

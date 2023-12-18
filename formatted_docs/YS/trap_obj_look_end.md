@@ -1,6 +1,6 @@
 ## trap_obj_look_end* (object)
 
-syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
+`syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)`
 
 Removes a created lookat object in the specified time
 
@@ -252,6 +252,7 @@ Removes a created lookat object in the specified time
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
+```
 L1973:
  pushFromFSp 0
  pushImmf 20
@@ -262,5 +263,6 @@ L1973:
  gosub 12, L1413
  pushImmf 10
  popToSp 32
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_area_entrance* (mapinfo)
 
-syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+`syscall 1, 196 ; trap_area_entrance (0 in, 1 out)`
 
 Returns the number for the entrance used to enter the room
 
@@ -67,6 +67,7 @@ Returns the number for the entrance used to enter the room
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
+```
 L188:
  syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
  pushFromFSpVal 20
@@ -80,5 +81,6 @@ L188:
  syscall 4, 37 ; trap_score_update (3 in, 1 out)
  drop 
  jmp L217
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_is_pirate_shade* (object)
 
-syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
+`syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)`
 
 Returns if the object is in shade
 
@@ -30,6 +30,7 @@ Returns if the object is in shade
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+```
 L1544:
  pushFromFSp 0
  fetchValue 132
@@ -39,5 +40,6 @@ L1544:
  pushFromFSp 0
  syscall 1, 40 ; trap_obj_is_pirate_shade (1 in, 1 out)
  eqzv
+```
 </details>
 

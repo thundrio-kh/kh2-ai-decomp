@@ -1,6 +1,6 @@
 ## trap_obj_set_use_mp* (object)
 
-syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)
+`syscall 10, 43 ; trap_obj_set_use_mp (2 in, 0 out)`
 
 Sets an object to use its MP
 
@@ -23,6 +23,7 @@ Sets an object to use its MP
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+```
 L4060:
  popToSp 0
  pushImm 1
@@ -34,5 +35,6 @@ L4060:
  pushFromPWp W0
  gosub 4, L4080
  ret
+```
 </details>
 

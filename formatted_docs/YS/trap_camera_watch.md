@@ -1,6 +1,6 @@
 ## trap_camera_watch* (camera)
 
-syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
+`syscall 1, 207 ; trap_camera_watch (1 in, 0 out)`
 
 Sets a "reaction" view camera to watch a target
 
@@ -37,6 +37,7 @@ Sets a "reaction" view camera to watch a target
 
 <details>
 	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
+```
 L55:
  pushFromPSp 0
  pushImm 1295
@@ -47,5 +48,6 @@ L55:
  pushImm 17626
  gosub 8, L75
  ret
+```
 </details>
 

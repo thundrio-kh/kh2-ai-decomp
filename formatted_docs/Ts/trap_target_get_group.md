@@ -1,6 +1,6 @@
 ## trap_target_get_group* (target)
 
-syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
+`syscall 6, 57 ; trap_target_get_group (1 in, 1 out)`
 
 Get the group ID a target belongs to
 
@@ -59,6 +59,7 @@ Get the group ID a target belongs to
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L1675:
  popToSp 4
  popToSp 0
@@ -72,5 +73,6 @@ L1675:
  syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
  popToSpVal 4
  ret
+```
 </details>
 

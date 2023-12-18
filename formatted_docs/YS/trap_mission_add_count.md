@@ -1,6 +1,6 @@
 ## trap_mission_add_count* (mission_counter)
 
-syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
+`syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)`
 
 Adds to a on screen counter
 
@@ -32,6 +32,7 @@ Adds to a on screen counter
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript</summary>
+```
 L50:
  jz L64
  pushFromFSp 0
@@ -40,5 +41,6 @@ L50:
  pushImm 2
  syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
  jmp L64
+```
 </details>
 

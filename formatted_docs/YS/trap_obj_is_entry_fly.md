@@ -1,6 +1,6 @@
 ## trap_obj_is_entry_fly* (object)
 
-syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
+`syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)`
 
 Returns if the "fly" flag is checked for the obj in its objentry
 
@@ -581,6 +581,7 @@ Returns if the "fly" flag is checked for the obj in its objentry
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6466:
  popToSp 0
  gosub 12, L6617
@@ -615,5 +616,6 @@ L6466:
  syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
  eqz 
  neqzv
+```
 </details>
 

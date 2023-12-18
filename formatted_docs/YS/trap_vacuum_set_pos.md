@@ -1,6 +1,6 @@
 ## trap_vacuum_set_pos* (vacuum)
 
-syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)
+`syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)`
 
 Set the position of a vacuum
 
@@ -26,6 +26,7 @@ Set the position of a vacuum
 
 <details>
 	<summary>Example Usage From obj\M_EX210\m_ex.bdscript</summary>
+```
 L5866:
  pushFromFSpVal 108
  pushImm 0
@@ -42,5 +43,6 @@ L5866:
  syscall 2, 80 ; trap_vacuum_set_pos (2 in, 0 out)
  halt 
  jmp L5866
+```
 </details>
 

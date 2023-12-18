@@ -1,6 +1,6 @@
 ## trap_obj_get_medal* (special)
 
-syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
+`syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)`
 
 Get the current number of medals an object has
 
@@ -29,6 +29,7 @@ Get the current number of medals an object has
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
+```
 L106:
  gosub 12, L142
  memcpyToSp 16, 32
@@ -46,5 +47,6 @@ L106:
  syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
  halt 
  jmp L106
+```
 </details>
 

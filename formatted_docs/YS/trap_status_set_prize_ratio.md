@@ -1,6 +1,6 @@
 ## *trap_status_set_prize_ratio* (prize)
 
-syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)
+`syscall 1, 249 ; trap_status_set_prize_ratio (1 in, 0 out)`
 
 Set the range the player has to be from a prize to pick it up
 
@@ -25,6 +25,7 @@ Set the range the player has to be from a prize to pick it up
 
 <details>
 	<summary>Example Usage From msn\MU01_MS103C\mu01.bdscript</summary>
+```
 TR3:
  gosub 4, L239
  pushImmf 100
@@ -41,5 +42,6 @@ TR3:
  pushFromPWp W0
  gosub 4, L270
  ret
+```
 </details>
 

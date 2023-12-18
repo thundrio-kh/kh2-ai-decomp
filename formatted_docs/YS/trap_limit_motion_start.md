@@ -1,6 +1,6 @@
 ## trap_limit_motion_start* (limit)
 
-syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+`syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)`
 
 Starts an animation associated with a limit
 
@@ -45,6 +45,7 @@ Starts an animation associated with a limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L758:
  pushFromPSp 48
  pushImm 64
@@ -58,5 +59,6 @@ L758:
  pushImmf 0
  syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
  drop
+```
 </details>
 

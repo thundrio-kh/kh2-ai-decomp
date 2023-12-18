@@ -1,6 +1,6 @@
 ## trap_prize_return_ca* (prize)
 
-syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
+`syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)`
 
 Moves a number of medals from the player to the target battle object
 
@@ -26,6 +26,7 @@ Moves a number of medals from the player to the target battle object
 
 <details>
 	<summary>Example Usage From obj\F_CA690_BTL\f_ca.bdscript</summary>
+```
 L278:
  popToSp 4
  popToSp 0
@@ -34,5 +35,6 @@ L278:
  pushImm 10
  syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
  ret
+```
 </details>
 

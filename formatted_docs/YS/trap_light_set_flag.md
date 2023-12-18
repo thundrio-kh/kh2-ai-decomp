@@ -1,6 +1,6 @@
 ## trap_light_set_flag* (light)
 
-syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
+`syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)`
 
 flag to set.
 
@@ -67,6 +67,7 @@ flag to set.
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L1419:
  popToSp 4
  popToSp 8
@@ -85,5 +86,6 @@ L1419:
  pushImm 1
  syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
  jmp L1454
+```
 </details>
 

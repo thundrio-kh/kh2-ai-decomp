@@ -1,6 +1,6 @@
 ## trap_player_get_rc* (player)
 
-syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
+`syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)`
 
 Get the value of the players current rc
 
@@ -26,6 +26,7 @@ Get the value of the players current rc
 
 <details>
 	<summary>Example Usage From obj\F_TR010\f_tr.bdscript</summary>
+```
 L25:
  gosub 4, L99
  memcpyToSp 16, 16
@@ -42,5 +43,6 @@ L25:
  sub 
  eqz 
  eqzv
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_sysobj_motion_frame_start* (mset)
 
-syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
+`syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)`
 
 Have an object start a motion set entry at a specific frame number
 
@@ -749,6 +749,7 @@ Have an object start a motion set entry at a specific frame number
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6629:
  popToSp 0
  pushFromFSp 0
@@ -763,5 +764,6 @@ L6629:
  pushFromFSp 0
  gosub 4, L6657
  ret
+```
 </details>
 

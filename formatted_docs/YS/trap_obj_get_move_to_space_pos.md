@@ -1,6 +1,6 @@
 ## trap_obj_get_move_to_space_pos* (movement)
 
-syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)
+`syscall 1, 367 ; trap_obj_get_move_to_space_pos (3 in, 1 out)`
 
 Return a position within a space that the object can move to
 
@@ -26,6 +26,7 @@ Return a position within a space that the object can move to
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+```
 L15264:
  popToSp 4
  popToSp 8
@@ -75,5 +76,6 @@ L15264:
  pushImmf 6
  gosub32 16, L1748
  jmp L15372
+```
 </details>
 

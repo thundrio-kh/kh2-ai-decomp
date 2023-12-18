@@ -1,6 +1,6 @@
 ## trap_attack_get_type* (attack)
 
-syscall 2, 34 ; trap_attack_get_type (1 in, 1 out)
+`syscall 2, 34 ; trap_attack_get_type (1 in, 1 out)`
 
 returns the type of the passed in attack
 
@@ -23,6 +23,8 @@ returns the type of the passed in attack
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

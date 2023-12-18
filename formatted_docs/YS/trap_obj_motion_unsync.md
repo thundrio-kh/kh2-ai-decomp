@@ -1,6 +1,6 @@
 ## trap_obj_motion_unsync* (mset)
 
-syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
+`syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)`
 
 Unsyncs two motion sets
 
@@ -41,6 +41,7 @@ Unsyncs two motion sets
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L6188:
  popToSp 4
  popToSp 0
@@ -53,5 +54,6 @@ L6188:
  pushFromFSp 0
  syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
  jmp L6210
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_picture_set_pos* (visual)
 
-syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)
+`syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)`
 
 Set the position of a picture for a layout object
 
@@ -23,6 +23,7 @@ Set the position of a picture for a layout object
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+```
 L21874:
  popToSp 0
  pushFromFSpVal 212
@@ -65,5 +66,6 @@ L21874:
  gosub 8, L21980
  syscall 1, 315 ; trap_picture_set_pos (3 in, 0 out)
  ret
+```
 </details>
 

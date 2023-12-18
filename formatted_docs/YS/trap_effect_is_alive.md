@@ -1,6 +1,6 @@
 ## trap_effect_is_alive* (effect)
 
-syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+`syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)`
 
 checks if an effect is still alive
 
@@ -84,6 +84,7 @@ checks if an effect is still alive
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+```
 L224:
  pushFromFSpVal 32
  syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
@@ -95,5 +96,6 @@ L224:
  pushFromFSpVal 28
  syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
  neqzv
+```
 </details>
 

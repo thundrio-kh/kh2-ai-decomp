@@ -1,6 +1,6 @@
 ## trap_obj_play_se_loop* (sound)
 
-syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
+`syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)`
 
 Play a object sound effect on loop
 
@@ -26,6 +26,7 @@ Play a object sound effect on loop
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 L12374:
  popToSp 4
  popToSp 0
@@ -34,5 +35,6 @@ L12374:
  syscall 6, 70 ; trap_obj_play_se_loop (2 in, 1 out)
  popToSpVal 0
  ret
+```
 </details>
 

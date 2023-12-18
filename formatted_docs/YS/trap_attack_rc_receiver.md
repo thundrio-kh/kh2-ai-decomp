@@ -1,6 +1,6 @@
 ## trap_attack_rc_receiver* (attack)
 
-syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)
+`syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)`
 
 Return the receiver of the attack rc
 
@@ -39,6 +39,7 @@ Return the receiver of the attack rc
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L167:
  popToSp 0
  popToSp 4
@@ -87,5 +88,6 @@ L167:
  pushImm 0
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  ret
+```
 </details>
 

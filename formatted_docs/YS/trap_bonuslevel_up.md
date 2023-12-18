@@ -1,6 +1,6 @@
 ## trap_bonuslevel_up* (unused)
 
-syscall 2, 73 ; trap_bonuslevel_up (1 in, 0 out)
+`syscall 2, 73 ; trap_bonuslevel_up (1 in, 0 out)`
 
 Activates a bonus get (Normally the things acquired by finishing missions ). Unused in the game itself
 
@@ -19,6 +19,8 @@ Activates a bonus get (Normally the things acquired by finishing missions ). Unu
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_scatter_medal* (prize)
 
-syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
+`syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)`
 
 Scatters a number of Pirates of the Caribbean coins from an object
 
@@ -25,6 +25,7 @@ Scatters a number of Pirates of the Caribbean coins from an object
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
+```
 L294:
  pushFromFSp 4
  gosub 4, L142
@@ -35,5 +36,6 @@ L294:
  div 
  syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
  jmp L313
+```
 </details>
 

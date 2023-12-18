@@ -1,6 +1,6 @@
 ## trap_enemy_get_attacker* (enemy)
 
-syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
+`syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)`
 
 Returns the object that last attacked the passed in object
 
@@ -72,6 +72,7 @@ Returns the object that last attacked the passed in object
 
 <details>
 	<summary>Example Usage From obj\B_HE030_PART\b_he.bdscript</summary>
+```
 L39:
  popToSp 4
  popToSp 0
@@ -90,5 +91,6 @@ L39:
  pushFromFSp 4
  syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
  eqzv
+```
 </details>
 

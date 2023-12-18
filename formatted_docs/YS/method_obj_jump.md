@@ -1,6 +1,6 @@
 ## method_obj_jump* (movement)
 
-syscall 1, 55 ; method_obj_jump (5 in, 0 out)
+`syscall 1, 55 ; method_obj_jump (5 in, 0 out)`
 
 Jumps an object to the vector
 
@@ -183,6 +183,7 @@ Jumps an object to the vector
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L1950:
  pushFromPSp 16
  pushImm 4
@@ -217,5 +218,6 @@ L1950:
  pushImm -1
  syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
  halt
+```
 </details>
 

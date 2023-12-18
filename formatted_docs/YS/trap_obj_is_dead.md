@@ -1,6 +1,6 @@
 ## trap_obj_is_dead* (object)
 
-syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
+`syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)`
 
 Returns if the object is dead
 
@@ -51,6 +51,7 @@ Returns if the object is dead
 
 <details>
 	<summary>Example Usage From msn\CA10_MS107\ca10.bdscript</summary>
+```
 L98:
  pushFromPSp 0
  pushImm 8
@@ -63,5 +64,6 @@ L98:
  pushFromPSp 0
  syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
  eqzv
+```
 </details>
 

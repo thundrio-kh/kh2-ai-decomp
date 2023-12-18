@@ -1,6 +1,6 @@
 ## trap_fixrad* (math)
 
-syscall 0, 43 ; trap_fixrad (1 in, 1 out)
+`syscall 0, 43 ; trap_fixrad (1 in, 1 out)`
 
 Constrain a radian value to a certain range
 
@@ -210,6 +210,7 @@ Constrain a radian value to a certain range
 
 <details>
 	<summary>Example Usage From limit\sparrow\limi.bdscript</summary>
+```
 L402:
  popToSp 0
  pushFromPWp W0
@@ -268,5 +269,6 @@ L402:
  pushImm 1
  memcpy 0
  jmp L537
+```
 </details>
 

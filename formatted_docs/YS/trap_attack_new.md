@@ -1,6 +1,6 @@
 ## trap_attack_new* (attack)
 
-syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+`syscall 2, 10 ; trap_attack_new (4 in, 1 out)`
 
 Creates a new attack object
 
@@ -321,6 +321,7 @@ Creates a new attack object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3275:
  popToSp 0
  pushFromPSpVal 32
@@ -365,5 +366,6 @@ L3275:
  gosub 4, L3406
  gosub 4, L3414
  jmp L3377
+```
 </details>
 

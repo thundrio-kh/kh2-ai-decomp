@@ -1,6 +1,6 @@
 ## *trap_stputf* (debug)
 
-syscall 0, 25 ; trap_stputf (2 in, 0 out)
+`syscall 0, 25 ; trap_stputf (2 in, 0 out)`
 
 value"
 
@@ -24,6 +24,7 @@ value"
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+```
 L879:
  popToSp 0
  pushFromFSp 0
@@ -67,5 +68,6 @@ L879:
  fetchValue 0
  syscall 9, 24 ; ?
  ret
+```
 </details>
 

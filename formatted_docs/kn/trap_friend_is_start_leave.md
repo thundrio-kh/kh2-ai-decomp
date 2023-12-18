@@ -1,6 +1,6 @@
 ## trap_friend_is_start_leave* (friend)
 
-syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
+`syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)`
 
 Checks if the friend has started the leave action
 
@@ -26,6 +26,7 @@ Checks if the friend has started the leave action
 
 <details>
 	<summary>Example Usage From obj\P_EX360\p_ex.bdscript</summary>
+```
 L1237:
  dup 
  jz L1246
@@ -33,5 +34,6 @@ L1237:
  syscall 10, 42 ; trap_friend_is_start_leave (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

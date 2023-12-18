@@ -1,6 +1,6 @@
 ## trap_attack_set_rc* (attack)
 
-syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
+`syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)`
 
 Attaches a reaction command to an attack for the player to use
 
@@ -39,6 +39,7 @@ Attaches a reaction command to an attack for the player to use
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L1572:
  pushFromFSpVal 120
  jz L1630
@@ -64,5 +65,6 @@ L1572:
  pushImmf 500
  syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
  jmp L1628
+```
 </details>
 

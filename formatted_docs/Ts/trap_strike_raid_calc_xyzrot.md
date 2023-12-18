@@ -1,6 +1,6 @@
 ## trap_strike_raid_calc_xyzrot* (math)
 
-syscall 6, 68 ; trap_strike_raid_calc_xyzrot (2 in, 1 out)
+`syscall 6, 68 ; trap_strike_raid_calc_xyzrot (2 in, 1 out)`
 
 Calculate an xyzrot value for strike raid
 
@@ -31,6 +31,7 @@ Calculate an xyzrot value for strike raid
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+```
 L38553:
  pushFromFSp 0
  pushFromPSpVal 32
@@ -56,5 +57,6 @@ L38553:
  gosub32 32, L7164
  drop 
  jmp L38420
+```
 </details>
 

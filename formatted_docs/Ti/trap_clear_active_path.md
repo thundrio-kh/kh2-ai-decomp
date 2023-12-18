@@ -1,6 +1,6 @@
 ## trap_clear_active_path* (path)
 
-syscall 5, 15 ; trap_clear_active_path (1 in, 0 out)
+`syscall 5, 15 ; trap_clear_active_path (1 in, 0 out)`
 
 Clears the active path
 
@@ -19,6 +19,8 @@ Clears the active path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

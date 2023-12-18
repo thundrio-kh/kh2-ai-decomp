@@ -1,6 +1,6 @@
 ## trap_limit_friend (limit)
 
-syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
+`syscall 2, 49 ; trap_limit_friend (2 in, 1 out)`
 
 Something to do with enabling/disabling team member limits
 
@@ -54,6 +54,7 @@ Something to do with enabling/disabling team member limits
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L5230:
  popToSp 4
  popToSp 0
@@ -83,5 +84,6 @@ L5230:
  syscall 1, 131 ; trap_target_dup (1 in, 1 out)
  popToSpVal 40
  jmp L5293
+```
 </details>
 

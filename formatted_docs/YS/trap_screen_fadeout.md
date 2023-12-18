@@ -1,6 +1,6 @@
 ## trap_screen_fadeout* (visual)
 
-syscall 0, 87 ; trap_screen_fadeout (1 in, 0 out)
+`syscall 0, 87 ; trap_screen_fadeout (1 in, 0 out)`
 
 Performs a fadeout on the screen
 
@@ -19,6 +19,8 @@ Performs a fadeout on the screen
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

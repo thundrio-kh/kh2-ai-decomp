@@ -1,6 +1,6 @@
 ## trap_sysobj_is_btlnpc* (field)
 
-syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)
+`syscall 1, 332 ; trap_sysobj_is_btlnpc (1 in, 1 out)`
 
 Returns true if the object is a NPC
 
@@ -29,6 +29,7 @@ Returns true if the object is a NPC
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
+```
 L177:
  pushFromPSp 0
  gosub 8, L214
@@ -42,5 +43,6 @@ L177:
  pushImmf 0
  syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
  jmp L203
+```
 </details>
 

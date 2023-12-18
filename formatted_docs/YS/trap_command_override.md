@@ -1,6 +1,6 @@
 ## trap_command_override (command)
 
-syscall 1, 165 ; trap_command_override (4 in, 0 out)
+`syscall 1, 165 ; trap_command_override (4 in, 0 out)`
 
 Overrides the specified slot on the command cage with priority 100
 
@@ -90,6 +90,7 @@ Overrides the specified slot on the command cage with priority 100
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L5490:
  jz L5505
  pushFromFSp 12
@@ -98,5 +99,6 @@ L5490:
  pushImm 1
  syscall 1, 165 ; trap_command_override (4 in, 0 out)
  jmp L5505
+```
 </details>
 

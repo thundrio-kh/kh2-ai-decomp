@@ -1,6 +1,6 @@
 ## trap_obj_set_bg_collision_type* (map)
 
-syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)
+`syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)`
 
 Sets how an object will collide with the map
 
@@ -28,6 +28,7 @@ Sets how an object will collide with the map
 
 <details>
 	<summary>Example Usage From obj\F_HE030_L\f_he.bdscript</summary>
+```
 L2612:
  popToSp 0
  pushFromFSp 0
@@ -45,5 +46,6 @@ L2612:
  pushImm 2
  syscall 1, 200 ; trap_obj_set_bg_collision_type (2 in, 0 out)
  ret
+```
 </details>
 

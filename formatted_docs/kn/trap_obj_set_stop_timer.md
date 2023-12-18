@@ -1,6 +1,6 @@
 ## trap_obj_set_stop_timer* (unused)
 
-syscall 10, 11 ; trap_obj_set_stop_timer (3 in, 0 out)
+`syscall 10, 11 ; trap_obj_set_stop_timer (3 in, 0 out)`
 
 Stops the timer
 
@@ -19,6 +19,8 @@ Stops the timer
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

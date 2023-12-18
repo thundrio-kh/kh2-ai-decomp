@@ -1,6 +1,6 @@
 ## trap_obj_search_by_serial* (object)
 
-syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
+`syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)`
 
 Searches for an existing object with the given serial number (a value set in a spawn)
 
@@ -46,6 +46,7 @@ Searches for an existing object with the given serial number (a value set in a s
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+```
 L134:
  pushFromPSp 32
  pushFromFSp 0
@@ -57,5 +58,6 @@ L134:
  pushFromPSp 32
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  jmp L154
+```
 </details>
 

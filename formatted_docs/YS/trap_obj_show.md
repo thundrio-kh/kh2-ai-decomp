@@ -1,6 +1,6 @@
 ## trap_obj_show* (bones)
 
-syscall 1, 134 ; trap_obj_show (1 in, 0 out)
+`syscall 1, 134 ; trap_obj_show (1 in, 0 out)`
 
 Shows all parts of an object
 
@@ -90,6 +90,7 @@ Shows all parts of an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3670:
  popToSp 0
  pushFromPSpVal 4
@@ -97,5 +98,6 @@ L3670:
  pushFromPSpVal 20
  syscall 1, 134 ; trap_obj_show (1 in, 0 out)
  ret
+```
 </details>
 

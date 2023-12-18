@@ -1,6 +1,6 @@
 ## trap_trinity_shot_ensure* (special)
 
-syscall 7, 30 ; trap_trinity_shot_ensure (0 in, 0 out)
+`syscall 7, 30 ; trap_trinity_shot_ensure (0 in, 0 out)`
 
 Ensure a trinity limit shot
 
@@ -22,6 +22,7 @@ Ensure a trinity limit shot
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+```
 L8991:
  pushFromFSp 0
  fetchValue 0
@@ -40,5 +41,6 @@ L8991:
  pushFromFSpVal 96
  syscall 1, 132 ; trap_target_free (1 in, 0 out)
  jmp L9025
+```
 </details>
 

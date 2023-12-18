@@ -1,6 +1,6 @@
 ## trap_obj_can_decide_command* (command)
 
-syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
+`syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)`
 
 Returns  if the object can decide command.
 
@@ -70,6 +70,7 @@ Returns  if the object can decide command.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L5456:
  popToSp 4
  popToSp 8
@@ -90,5 +91,6 @@ L5456:
  pushFromPSpVal 20
  syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
  neqzv
+```
 </details>
 

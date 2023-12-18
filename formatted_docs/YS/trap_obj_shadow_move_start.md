@@ -1,6 +1,6 @@
 ## trap_obj_shadow_move_start* (movement)
 
-syscall 1, 104 ; trap_obj_shadow_move_start (1 in, 0 out)
+`syscall 1, 104 ; trap_obj_shadow_move_start (1 in, 0 out)`
 
 Starts the kind of movement shadows do where they sink into the floor
 
@@ -30,6 +30,7 @@ Starts the kind of movement shadows do where they sink into the floor
 
 <details>
 	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
+```
 L4817:
  pushFromFSp 0
  pushImm 5
@@ -45,5 +46,6 @@ L4817:
  pushImm 1
  popToSpVal 108
  ret
+```
 </details>
 

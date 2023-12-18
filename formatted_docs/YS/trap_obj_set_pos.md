@@ -1,6 +1,6 @@
 ## trap_obj_set_pos* (position)
 
-syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+`syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)`
 
 Sets the position for an object
 
@@ -210,6 +210,7 @@ Sets the position for an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3079:
  pushFromPSpVal 4
  gosub 12, L3189
@@ -262,5 +263,6 @@ L3079:
  pushFromPSpVal 20
  gosub 12, L5024
  ret
+```
 </details>
 

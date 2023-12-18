@@ -1,6 +1,6 @@
 ## trap_obj_lockon_target* (object)
 
-syscall 1, 191 ; trap_obj_lockon_target (1 in, 1 out)
+`syscall 1, 191 ; trap_obj_lockon_target (1 in, 1 out)`
 
 Locks the player onto the target object
 
@@ -57,6 +57,7 @@ Locks the player onto the target object
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
+```
 L287:
  popToSp 4
  popToSp 0
@@ -112,5 +113,6 @@ L287:
  pushImm 1
  syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
  jmp L407
+```
 </details>
 

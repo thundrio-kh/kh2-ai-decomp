@@ -1,6 +1,6 @@
 ## trap_bg_set_uvscroll_speed (special)
 
-syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
+`syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)`
 
 UNknown. Used only by Oogie Boogie conveyor belts
 
@@ -23,6 +23,7 @@ UNknown. Used only by Oogie Boogie conveyor belts
 
 <details>
 	<summary>Example Usage From obj\F_NM140\f_nm.bdscript</summary>
+```
 L2162:
  popToSp 0
  pushFromFSp 0
@@ -38,5 +39,6 @@ L2162:
  pushFromPSp 16
  syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
  ret
+```
 </details>
 

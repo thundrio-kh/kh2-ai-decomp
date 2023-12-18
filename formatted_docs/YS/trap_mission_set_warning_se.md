@@ -1,6 +1,6 @@
 ## trap_mission_set_warning_se* (mission)
 
-syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+`syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)`
 
 sets a sound effect for when the specified widget gets to a warning state
 
@@ -83,6 +83,7 @@ sets a sound effect for when the specified widget gets to a warning state
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
+```
 L268:
  pushFromFSp 0
  fetchValue 0
@@ -92,5 +93,6 @@ L268:
  pushImm 10
  pushImm 0
  syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+```
 </details>
 

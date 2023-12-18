@@ -1,6 +1,6 @@
 ## trap_attack_set_time* (attack)
 
-syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+`syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)`
 
 Sets an amount of time for an attack to go on. Looks like it is a more powerful version of trap_attack_set_radius
 
@@ -130,6 +130,7 @@ Sets an amount of time for an attack to go on. Looks like it is a more powerful 
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3275:
  popToSp 0
  pushFromPSpVal 32
@@ -174,5 +175,6 @@ L3275:
  gosub 4, L3406
  gosub 4, L3414
  jmp L3377
+```
 </details>
 

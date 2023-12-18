@@ -1,6 +1,6 @@
 ## trap_trinity_shot_set_effect_id* (special)
 
-syscall 7, 31 ; trap_trinity_shot_set_effect_id (2 in, 0 out)
+`syscall 7, 31 ; trap_trinity_shot_set_effect_id (2 in, 0 out)`
 
 Set the effect ID of a trinity limit shot
 
@@ -19,6 +19,8 @@ Set the effect ID of a trinity limit shot
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

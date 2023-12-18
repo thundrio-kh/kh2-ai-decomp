@@ -1,6 +1,6 @@
 ## trap_obj_hover* (movement)
 
-syscall 1, 73 ; trap_obj_hover (3 in, 0 out)
+`syscall 1, 73 ; trap_obj_hover (3 in, 0 out)`
 
 Has the object hover at a given velocity and acceleration
 
@@ -44,6 +44,7 @@ Has the object hover at a given velocity and acceleration
 
 <details>
 	<summary>Example Usage From obj\B_EX220\b_ex.bdscript</summary>
+```
 L150:
  popToSp 4
  popToSp 8
@@ -95,5 +96,6 @@ L150:
  pushImm 6
  syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
  ret
+```
 </details>
 

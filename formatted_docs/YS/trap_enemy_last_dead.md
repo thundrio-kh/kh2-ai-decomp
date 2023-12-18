@@ -1,6 +1,6 @@
 ## trap_enemy_last_dead* (enemy)
 
-syscall 2, 53 ; trap_enemy_last_dead (0 in, 1 out)
+`syscall 2, 53 ; trap_enemy_last_dead (0 in, 1 out)`
 
 Returns the object of the last enemy attacker.
 
@@ -22,6 +22,8 @@ Returns the object of the last enemy attacker.
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_struggle_increment (special)
 
-syscall 4, 42 ; trap_struggle_increment (2 in, 1 out)
+`syscall 4, 42 ; trap_struggle_increment (2 in, 1 out)`
 
 Increments the struggle value
 
@@ -28,6 +28,7 @@ Increments the struggle value
 
 <details>
 	<summary>Example Usage From msn\TT04_MS00\tt04.bdscript</summary>
+```
 L172:
  popToSp 0
  pushFromFSpVal 8
@@ -44,5 +45,6 @@ L172:
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
  eqz 
  eqzv
+```
 </details>
 

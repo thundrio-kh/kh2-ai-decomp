@@ -1,6 +1,6 @@
 ## trap_enemy_exec_reflect* (enemy)
 
-syscall 2, 27 ; trap_enemy_exec_reflect (5 in, 0 out)
+`syscall 2, 27 ; trap_enemy_exec_reflect (5 in, 0 out)`
 
 executes reflect
 
@@ -19,6 +19,8 @@ executes reflect
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

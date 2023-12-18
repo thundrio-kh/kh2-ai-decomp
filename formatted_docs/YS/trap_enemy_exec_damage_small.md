@@ -1,6 +1,6 @@
 ## trap_enemy_exec_damage_small* (enemy)
 
-syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
+`syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)`
 
 executes a small amount of damage
 
@@ -28,6 +28,7 @@ executes a small amount of damage
 
 <details>
 	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
+```
 L730:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
@@ -44,5 +45,6 @@ L730:
  pushFromFSp 0
  syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
  jmp L938
+```
 </details>
 

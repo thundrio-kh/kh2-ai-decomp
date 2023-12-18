@@ -1,6 +1,6 @@
 ## trap_effect_loop_end_kill* (effect)
 
-syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
+`syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)`
 
 Ends an effect loop and kills it.
 
@@ -157,6 +157,7 @@ Ends an effect loop and kills it.
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
+```
 L3879:
  dup 
  pushFromFSp 4
@@ -184,5 +185,6 @@ L3879:
  fetchValue 0
  syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
  jmp L3925
+```
 </details>
 

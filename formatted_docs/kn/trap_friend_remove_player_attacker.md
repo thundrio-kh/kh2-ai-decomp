@@ -1,6 +1,6 @@
 ## trap_friend_remove_player_attacker* (friend)
 
-syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
+`syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)`
 
 Remove the player attacker
 
@@ -22,6 +22,7 @@ Remove the player attacker
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+```
 L8674:
  popToSp 0
  pushFromPSpVal 0
@@ -37,5 +38,6 @@ L8674:
  pushImm 1
  syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
  jmp L8704
+```
 </details>
 

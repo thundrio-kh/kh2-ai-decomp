@@ -1,6 +1,6 @@
 ## trap_camera_cancel* (camera)
 
-syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
+`syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)`
 
 Cancel the currecnt camera event
 
@@ -43,6 +43,7 @@ Cancel the currecnt camera event
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+```
 L710:
  popToSp 4
  popToSp 0
@@ -58,5 +59,6 @@ L710:
  pushImm 1
  syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
  ret
+```
 </details>
 

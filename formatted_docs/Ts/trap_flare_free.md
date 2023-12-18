@@ -1,6 +1,6 @@
 ## trap_flare_free* (special)
 
-syscall 7, 5 ; trap_flare_free (1 in, 0 out)
+`syscall 7, 5 ; trap_flare_free (1 in, 0 out)`
 
 Free memory associated with Flare Force
 
@@ -23,6 +23,7 @@ Free memory associated with Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L4019:
  popToSp 0
  pushFromFSpVal 80
@@ -30,5 +31,6 @@ L4019:
  pushFromFSp 0
  gosub 4, L4008
  ret
+```
 </details>
 

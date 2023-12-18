@@ -1,6 +1,6 @@
 ## trap_obj_reset_special_command* (command)
 
-syscall 10, 7 ; trap_obj_reset_special_command (1 in, 0 out)
+`syscall 10, 7 ; trap_obj_reset_special_command (1 in, 0 out)`
 
 Reset an objects special command
 
@@ -23,6 +23,7 @@ Reset an objects special command
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+```
 L9432:
  popToSp 4
  popToSp 8
@@ -44,5 +45,6 @@ L9432:
  pushFromFSp 8
  syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
  jmp L9475
+```
 </details>
 

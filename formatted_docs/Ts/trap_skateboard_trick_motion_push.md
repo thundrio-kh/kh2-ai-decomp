@@ -1,6 +1,6 @@
 ## trap_skateboard_trick_motion_push* (special)
 
-syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
+`syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)`
 
 Push a skateboard trick animation to the action stack
 
@@ -34,6 +34,7 @@ Push a skateboard trick animation to the action stack
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+```
 L832:
  popToSp 4
  popToSp 0
@@ -46,5 +47,6 @@ L832:
  pushImmf 0
  syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
  ret
+```
 </details>
 

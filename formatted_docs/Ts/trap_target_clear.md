@@ -1,6 +1,6 @@
 ## trap_target_clear* (target)
 
-syscall 6, 16 ; trap_target_clear (1 in, 0 out)
+`syscall 6, 16 ; trap_target_clear (1 in, 0 out)`
 
 Clear a target
 
@@ -43,6 +43,7 @@ Clear a target
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+```
 L1061:
  popToSp 0
  pushFromPWp W16
@@ -60,5 +61,6 @@ L1061:
  pushImmf 40
  gosub 4, L1123
  ret
+```
 </details>
 

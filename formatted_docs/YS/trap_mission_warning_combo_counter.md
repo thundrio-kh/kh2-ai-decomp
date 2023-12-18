@@ -1,6 +1,6 @@
 ## trap_mission_warning_combo_counter* (mission_combocounter)
 
-syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
+`syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)`
 
 sets a warning state for the specified combo counter
 
@@ -23,6 +23,7 @@ sets a warning state for the specified combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+```
 L64:
  popToSp 4
  popToSp 0
@@ -34,5 +35,6 @@ L64:
  pushImm 0
  syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
  jmp L85
+```
 </details>
 

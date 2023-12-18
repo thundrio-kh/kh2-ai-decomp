@@ -1,6 +1,6 @@
 ## trap_obj_hook_stop (friend)
 
-syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)
+`syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)`
 
 Stops the hook
 
@@ -39,6 +39,7 @@ Stops the hook
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L2149:
  popToSp 0
  pushFromPSpVal 4
@@ -93,5 +94,6 @@ L2149:
  pushFromPSpVal 4
  gosub 4, L2267
  ret
+```
 </details>
 

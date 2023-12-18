@@ -1,6 +1,6 @@
 ## trap_obj_get_wish_movement* (object)
 
-syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
+`syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)`
 
 get the direction that a summon object has moved
 
@@ -76,6 +76,7 @@ get the direction that a summon object has moved
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+```
 L4682:
  dup 
  jnz L4714
@@ -94,5 +95,6 @@ L4682:
  subf 
  infzf 
  neqzv
+```
 </details>
 

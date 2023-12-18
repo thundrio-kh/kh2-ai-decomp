@@ -1,6 +1,6 @@
 ## trap_obj_move_request* (movement)
 
-syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
+`syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)`
 
 Requests the object to move in a direction
 
@@ -134,6 +134,7 @@ Requests the object to move in a direction
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -190,5 +191,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

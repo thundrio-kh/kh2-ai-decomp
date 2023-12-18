@@ -1,6 +1,6 @@
 ## *trap_jigsaw_get* (system)
 
-syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
+`syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)`
 
 Gives a jigsaw piece
 
@@ -22,10 +22,12 @@ Gives a jigsaw piece
 
 <details>
 	<summary>Example Usage From ard\tt28\jigs.bdscript</summary>
+```
 TR2:
  pushImm 0
  pushImm 4
  syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
  ret
+```
 </details>
 

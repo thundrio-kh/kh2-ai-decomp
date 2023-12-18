@@ -1,6 +1,6 @@
 ## trap_lockon_hide* (visual)
 
-syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
+`syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)`
 
 Hide the lockon reticle
 
@@ -23,11 +23,13 @@ Hide the lockon reticle
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L3650:
  popToSp 0
  pushFromFSp 0
  gosub 4, L3241
  syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
  ret
+```
 </details>
 

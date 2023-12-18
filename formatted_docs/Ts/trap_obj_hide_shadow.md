@@ -1,6 +1,6 @@
 ## trap_obj_hide_shadow* (object)
 
-syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
+`syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)`
 
 Hide the shadow of an object
 
@@ -26,6 +26,7 @@ Hide the shadow of an object
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+```
 L8099:
  pushFromPWp W0
  fetchValue 176
@@ -50,5 +51,6 @@ L8099:
  pushFromPSp 16
  syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
  jmp L8148
+```
 </details>
 

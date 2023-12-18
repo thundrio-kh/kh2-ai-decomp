@@ -1,6 +1,6 @@
 ## func_history_clear_enemy* (spawn)
 
-syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
+`syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)`
 
 Appears to clear out the history (cache?) of enemies in the current room.
 
@@ -23,6 +23,7 @@ Appears to clear out the history (cache?) of enemies in the current room.
 
 <details>
 	<summary>Example Usage From obj\B_EX240\b_ex.bdscript</summary>
+```
 L4498:
  syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
  pushImm 152
@@ -39,5 +40,6 @@ L4498:
  fetchValue 4
  gosub 4, L204
  ret
+```
 </details>
 

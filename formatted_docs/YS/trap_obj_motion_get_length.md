@@ -1,6 +1,6 @@
 ## trap_obj_motion_get_length* (mset)
 
-syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
+`syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)`
 
 Returns the length of a given motion set entry
 
@@ -567,6 +567,7 @@ Returns the length of a given motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L6629:
  popToSp 0
  pushFromFSp 0
@@ -581,5 +582,6 @@ L6629:
  pushFromFSp 0
  gosub 4, L6657
  ret
+```
 </details>
 

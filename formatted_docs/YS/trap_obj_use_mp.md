@@ -1,6 +1,6 @@
 ## trap_obj_use_mp* (object)
 
-syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
+`syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)`
 
 Use up the mp for a party member
 
@@ -51,6 +51,7 @@ Use up the mp for a party member
 
 <details>
 	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
+```
 L2717:
  popToSp 4
  popToSp 8
@@ -76,5 +77,6 @@ L2717:
  pushFromPSpVal 0
  syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
  jmp L2769
+```
 </details>
 

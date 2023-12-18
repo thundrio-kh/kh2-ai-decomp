@@ -1,6 +1,6 @@
 ## trap_command_cage_on* (command)
 
-syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
+`syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)`
 
 Turns on temporary barriers, like those used during the escape from Hades sequence.
 
@@ -30,6 +30,7 @@ Turns on temporary barriers, like those used during the escape from Hades sequen
 
 <details>
 	<summary>Example Usage From msn\HB16_MS404B\hb16.bdscript</summary>
+```
 L33:
  pushImm 21
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
@@ -37,5 +38,6 @@ L33:
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
  jmp L65
+```
 </details>
 

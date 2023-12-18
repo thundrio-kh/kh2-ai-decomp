@@ -1,6 +1,6 @@
 ## trap_score_type* (mission_score)
 
-syscall 4, 35 ; trap_score_type (1 in, 1 out)
+`syscall 4, 35 ; trap_score_type (1 in, 1 out)`
 
 Returns the score type
 
@@ -101,6 +101,7 @@ Returns the score type
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
+```
 L191:
  popToSp 4
  popToSp 8
@@ -125,5 +126,6 @@ L191:
  pushFromFSp 4
  syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
  jmp L286
+```
 </details>
 

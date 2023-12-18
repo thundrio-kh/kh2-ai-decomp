@@ -1,6 +1,6 @@
 ## trap_saveflag_reset* (save)
 
-syscall 0, 58 ; trap_saveflag_reset (1 in, 0 out)
+`syscall 0, 58 ; trap_saveflag_reset (1 in, 0 out)`
 
 Resets the value of the save flag to 0
 
@@ -19,6 +19,8 @@ Resets the value of the save flag to 0
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

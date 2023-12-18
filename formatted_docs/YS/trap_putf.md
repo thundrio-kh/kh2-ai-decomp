@@ -1,6 +1,6 @@
 ## *trap_putf* (debug)
 
-syscall 0, 1 ; trap_putf (2 in, 0 out)
+`syscall 0, 1 ; trap_putf (2 in, 0 out)`
 
 value"
 
@@ -134,6 +134,7 @@ value"
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L920:
  pushFromFSp 0
  pushFromPSp 48
@@ -190,5 +191,6 @@ L920:
  infzf 
  jz L1030
  jmp L1049
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_obj_jump_direct (Movement)
 
-syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
+`syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)`
 
 Makes an object jump probably 10 units.
 
@@ -62,6 +62,7 @@ Makes an object jump probably 10 units.
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+```
 L1200:
  popToSp 0
  pushFromPWp W108
@@ -83,5 +84,6 @@ L1200:
  pushFromFSp 0
  pushImm -1
  syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+```
 </details>
 

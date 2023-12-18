@@ -1,6 +1,6 @@
 ## trap_peterpan_receive_notify_player_target* (special)
 
-syscall 10, 25 ; trap_peterpan_receive_notify_player_target (1 in, 1 out)
+`syscall 10, 25 ; trap_peterpan_receive_notify_player_target (1 in, 1 out)`
 
 Recieve a notify player target
 
@@ -26,6 +26,7 @@ Recieve a notify player target
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+```
 L6204:
  popToSp 4
  popToSp 0
@@ -43,5 +44,6 @@ L6204:
  subf 
  supzf 
  neqzv
+```
 </details>
 

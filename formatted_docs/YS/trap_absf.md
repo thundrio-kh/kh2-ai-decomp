@@ -1,6 +1,6 @@
 ## trap_absf* (math)
 
-syscall 0, 22 ; trap_abs (1 in, 1 out)
+`syscall 0, 22 ; trap_abs (1 in, 1 out)`
 
 Takes a float and returns the absolute value of that float
 
@@ -299,6 +299,7 @@ Takes a float and returns the absolute value of that float
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+```
 L2130:
  pushFromFSpVal 104
  jz L2209
@@ -334,5 +335,6 @@ L2130:
  mulf 
  popToSp 12
  jmp L2191
+```
 </details>
 

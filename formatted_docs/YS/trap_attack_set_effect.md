@@ -1,6 +1,6 @@
 ## trap_attack_set_effect* (attack)
 
-syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
+`syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)`
 
 Applies an object effect to an attack
 
@@ -51,6 +51,7 @@ Applies an object effect to an attack
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
+```
 L39:
  pushFromFSp 8
  pushImm 497
@@ -71,5 +72,6 @@ L39:
  pushImmf 0
  syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
  jmp L85
+```
 </details>
 

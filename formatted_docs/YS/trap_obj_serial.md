@@ -1,6 +1,6 @@
 ## trap_obj_serial* (object)
 
-syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
+`syscall 1, 144 ; trap_obj_serial (1 in, 1 out)`
 
 Returns the serial value for an object
 
@@ -52,6 +52,7 @@ Returns the serial value for an object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
+```
 L2562:
  popToSp 0
  pushFromFSp 0
@@ -67,5 +68,6 @@ L2562:
  pushImm 0
  memcpy 0
  ret
+```
 </details>
 

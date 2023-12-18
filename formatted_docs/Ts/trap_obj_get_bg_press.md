@@ -1,6 +1,6 @@
 ## trap_obj_get_bg_press* (object)
 
-syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)
+`syscall 6, 24 ; trap_obj_get_bg_press (1 in, 1 out)`
 
 get the press position of an object
 
@@ -43,6 +43,7 @@ get the press position of an object
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+```
 L1848:
  popToSp 4
  popToSp 8
@@ -84,5 +85,6 @@ L1848:
  supzf 
  jz L1933
  jmp L2267
+```
 </details>
 

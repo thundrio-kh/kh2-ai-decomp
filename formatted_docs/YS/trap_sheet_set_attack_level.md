@@ -1,6 +1,6 @@
 ## *trap_sheet_set_attack_level* (sheet)
 
-syscall 1, 358 ; trap_sheet_set_attack_level (2 in, 0 out)
+`syscall 1, 358 ; trap_sheet_set_attack_level (2 in, 0 out)`
 
 Set the attack level of an object
 
@@ -22,6 +22,7 @@ Set the attack level of an object
 
 <details>
 	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
+```
 L5357:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
@@ -30,5 +31,6 @@ L5357:
  pushImm 0
  popToSpVal 168
  jmp L5491
+```
 </details>
 

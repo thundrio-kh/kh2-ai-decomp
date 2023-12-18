@@ -1,6 +1,6 @@
 ## trap_attack_is_valid* (attack)
 
-syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)
+`syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)`
 
 Checks if an attack is valid
 
@@ -28,6 +28,7 @@ Checks if an attack is valid
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+```
 TR15:
  popToSp 0
  popToSp 4
@@ -39,5 +40,6 @@ TR15:
  pushFromFSp 0
  syscall 2, 96 ; trap_attack_is_valid (1 in, 1 out)
  eqzv
+```
 </details>
 

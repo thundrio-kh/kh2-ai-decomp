@@ -1,6 +1,6 @@
 ## trap_obj_act_wedge* (action)
 
-syscall 1, 81 ; trap_obj_act_wedge (2 in, 0 out)
+`syscall 1, 81 ; trap_obj_act_wedge (2 in, 0 out)`
 
 wedges an action, unclear what this means (it is unused in the vanilla game)
 
@@ -19,6 +19,8 @@ wedges an action, unclear what this means (it is unused in the vanilla game)
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

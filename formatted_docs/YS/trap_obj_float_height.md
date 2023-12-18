@@ -1,6 +1,6 @@
 ## trap_obj_float_height* (object)
 
-syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
+`syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)`
 
 Returns the height the object is floating above the ground.
 
@@ -80,6 +80,7 @@ Returns the height the object is floating above the ground.
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
+```
 L6649:
  jz L6704
  halt 
@@ -98,5 +99,6 @@ L6649:
  subf 
  supzf 
  eqzv
+```
 </details>
 

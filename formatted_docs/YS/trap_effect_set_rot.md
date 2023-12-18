@@ -1,6 +1,6 @@
 ## trap_effect_set_rot* (effect)
 
-syscall 0, 40 ; trap_effect_set_rot (2 in, 0 out)
+`syscall 0, 40 ; trap_effect_set_rot (2 in, 0 out)`
 
 Sets the rotation of an effect
 
@@ -24,6 +24,7 @@ Sets the rotation of an effect
 
 <details>
 	<summary>Example Usage From obj\B_AL120\b_al.bdscript</summary>
+```
 L2453:
  popToSp 0
  pushFromPSpVal 0
@@ -77,5 +78,6 @@ L2453:
  pushImm 0
  popToSpVal 84
  ret
+```
 </details>
 

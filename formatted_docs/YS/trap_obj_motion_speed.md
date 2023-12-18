@@ -1,6 +1,6 @@
 ## trap_obj_motion_speed* (mset)
 
-syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
+`syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)`
 
 Sets the speed of a motion set
 
@@ -91,6 +91,7 @@ Sets the speed of a motion set
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+```
 L7602:
  pushFromFSp 0
  pushImmf 0
@@ -104,5 +105,6 @@ L7602:
  syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
  gosub 8, L6740
  ret
+```
 </details>
 

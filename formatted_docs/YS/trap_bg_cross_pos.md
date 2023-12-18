@@ -1,6 +1,6 @@
 ## trap_bg_cross_pos (math)
 
-syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)
+`syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)`
 
 Checks if the cross vector hits the line drawn between from and to. Unknown what type does.
 
@@ -32,6 +32,7 @@ Checks if the cross vector hits the line drawn between from and to. Unknown what
 
 <details>
 	<summary>Example Usage From obj\B_CA040_PUB\b_ca.bdscript</summary>
+```
 L5052:
  popToSp 4
  popToSp 0
@@ -62,5 +63,6 @@ L5052:
  sub 
  msbi 
  ret
+```
 </details>
 

@@ -1,6 +1,6 @@
 ## trap_btlobj_is_reflect_motion* (object)
 
-syscall 10, 52 ; trap_btlobj_is_reflect_motion (1 in, 1 out)
+`syscall 10, 52 ; trap_btlobj_is_reflect_motion (1 in, 1 out)`
 
 Returns if an object is performing a reflect animation
 
@@ -27,6 +27,7 @@ Returns if an object is performing a reflect animation
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+```
 L1635:
  pushFromFSp 0
  fetchValue 4
@@ -40,5 +41,6 @@ L1635:
  pushImm 1
  syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
  eqzv
+```
 </details>
 

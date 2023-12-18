@@ -1,6 +1,6 @@
 ## trap_obj_reaction_callback* (object)
 
-syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
+`syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)`
 
 Set a reaction callback for an object
 
@@ -29,6 +29,7 @@ Set a reaction callback for an object
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
+```
 L145:
  pushFromPSp 0
  pushImm 5067
@@ -45,5 +46,6 @@ L145:
  pushFromPSp 0
  syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
  jmp L178
+```
 </details>
 

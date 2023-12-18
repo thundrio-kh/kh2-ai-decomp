@@ -1,6 +1,6 @@
 ## trap_partram_add_wisdom* (save)
 
-syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
+`syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)`
 
 Gives magic to the player
 
@@ -22,6 +22,7 @@ Gives magic to the player
 
 <details>
 	<summary>Example Usage From ard\tt04\tt04.bdscript</summary>
+```
 L94:
  pushImm 1
  pushImm 501
@@ -31,5 +32,6 @@ L94:
  pushImm 1
  syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
  jmp L114
+```
 </details>
 

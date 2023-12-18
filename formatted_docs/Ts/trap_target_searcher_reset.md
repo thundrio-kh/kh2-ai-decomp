@@ -1,6 +1,6 @@
 ## trap_target_searcher_reset* (target)
 
-syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)
+`syscall 6, 4 ; trap_target_searcher_reset (1 in, 0 out)`
 
 Reset a target searcher counter to 0
 
@@ -44,6 +44,7 @@ Reset a target searcher counter to 0
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+```
 L4858:
  popToSp 0
  pushFromPWp W0
@@ -99,5 +100,6 @@ L4858:
  pushImm 1
  syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
  jmp L4975
+```
 </details>
 

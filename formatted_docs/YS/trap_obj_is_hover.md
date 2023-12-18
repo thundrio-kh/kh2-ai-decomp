@@ -1,6 +1,6 @@
 ## trap_obj_is_hover* (object)
 
-syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
+`syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)`
 
 Returns if the object is hovering
 
@@ -28,6 +28,7 @@ Returns if the object is hovering
 
 <details>
 	<summary>Example Usage From obj\F_HB090\f_hb.bdscript</summary>
+```
 L442:
  pushFromFSp 0
  syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)
@@ -35,5 +36,6 @@ L442:
  pushFromFSp 0
  syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
  jmp L454
+```
 </details>
 

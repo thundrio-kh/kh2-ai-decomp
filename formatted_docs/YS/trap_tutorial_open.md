@@ -1,6 +1,6 @@
 ## trap_tutorial_open* (status)
 
-syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+`syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)`
 
 Open a tutorial window displaying a message
 
@@ -43,6 +43,7 @@ Open a tutorial window displaying a message
 
 <details>
 	<summary>Example Usage From ard\bb03\bb.bdscript</summary>
+```
 TR3:
  pushImm 39
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
@@ -56,5 +57,6 @@ TR3:
  pushImm 17627
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
  jmp L44
+```
 </details>
 

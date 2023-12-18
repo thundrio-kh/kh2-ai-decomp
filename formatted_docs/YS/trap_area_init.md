@@ -1,6 +1,6 @@
 ## trap_area_init (unused)
 
-syscall 1, 35 ; trap_area_init (3 in, 0 out)
+`syscall 1, 35 ; trap_area_init (3 in, 0 out)`
 
 Unknown
 
@@ -19,6 +19,8 @@ Unknown
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

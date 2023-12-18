@@ -1,6 +1,6 @@
 ## trap_sysobj_fadein* (visual)
 
-syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
+`syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)`
 
 Perform a fade in effect
 
@@ -570,6 +570,7 @@ Perform a fade in effect
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+```
 L4186:
  pushFromPWp W72
  pushImm 268
@@ -588,5 +589,6 @@ L4186:
  pushImm 0
  gosub 12, L4229
  ret
+```
 </details>
 

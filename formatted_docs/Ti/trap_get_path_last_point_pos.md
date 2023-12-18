@@ -1,6 +1,6 @@
 ## trap_get_path_last_point_pos* (path)
 
-syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)
+`syscall 5, 22 ; trap_get_path_last_point_pos (1 in, 1 out)`
 
 Get the position of the last point on a path
 
@@ -23,6 +23,8 @@ Get the position of the last point on a path
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 

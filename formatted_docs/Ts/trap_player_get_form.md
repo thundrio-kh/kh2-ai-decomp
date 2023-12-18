@@ -1,6 +1,6 @@
 ## trap_player_get_form* (status)
 
-syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
+`syscall 6, 2 ; trap_player_get_form (0 in, 1 out)`
 
 Return the id of the form the player is currently in
 
@@ -43,11 +43,13 @@ Return the id of the form the player is currently in
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
+```
 L2886:
  syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
  pushImm 6
  sub 
  eqz 
  ret
+```
 </details>
 

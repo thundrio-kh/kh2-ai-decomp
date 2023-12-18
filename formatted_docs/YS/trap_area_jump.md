@@ -1,6 +1,6 @@
 ## trap_area_jump* (mapinfo)
 
-syscall 1, 30 ; trap_area_jump (3 in, 0 out)
+`syscall 1, 30 ; trap_area_jump (3 in, 0 out)`
 
 Jumps to a new room, using no battle/event/map programs
 
@@ -19,6 +19,8 @@ Jumps to a new room, using no battle/event/map programs
 
 <details>
 	<summary>Example Usage From NA</summary>
+```
 
+```
 </details>
 
