@@ -1,4 +1,4 @@
-## trap_memory_free* (system_memory)
+## trap_memory_free* (system)
 
 syscall 0, 48 ; trap_memory_free (1 in, 0 out)
 

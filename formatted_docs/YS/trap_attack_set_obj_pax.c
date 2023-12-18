@@ -1,4 +1,4 @@
-## trap_attack_set_obj_pax (attack)
+## trap_attack_set_obj_pax* (attack)
 
 syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
 

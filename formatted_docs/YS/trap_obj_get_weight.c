@@ -1,4 +1,4 @@
-## trap_obj_get_weight* (object_details)
+## trap_obj_get_weight* (object)
 
 syscall 1, 310 ; trap_obj_get_weight (1 in, 1 out)
 

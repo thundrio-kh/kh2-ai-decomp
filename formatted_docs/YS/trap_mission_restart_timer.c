@@ -1,4 +1,4 @@
-## trap_mission_restart_timer (mission_timer)
+## trap_mission_restart_timer* (mission_timer)
 
 syscall 4, 7 ; trap_mission_restart_timer (2 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_obj_action_lightcycle (special)
+## trap_obj_action_lightcycle* (special)
 
 syscall 1, 268 ; trap_obj_action_lightcycle (1 in, 0 out)
 

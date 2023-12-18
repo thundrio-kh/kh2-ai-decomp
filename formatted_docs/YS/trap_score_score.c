@@ -1,4 +1,4 @@
-## trap_score_score* (score)
+## trap_score_score* (mission_score)
 
 syscall 4, 36 ; trap_score_score (1 in, 1 out)
 

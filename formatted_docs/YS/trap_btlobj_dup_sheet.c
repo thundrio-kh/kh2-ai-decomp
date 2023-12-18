@@ -1,4 +1,4 @@
-## trap_btlobj_dup_sheet (btlobj)
+## trap_btlobj_dup_sheet* (btlobj)
 
 syscall 2, 95 ; trap_btlobj_dup_sheet (2 in, 0 out)
 

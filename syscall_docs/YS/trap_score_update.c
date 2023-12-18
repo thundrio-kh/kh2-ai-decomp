@@ -5,7 +5,7 @@ name: trap_score_update
 ---
 ---
 ---
-category: minigame
+category: mission_score
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_item_get* (inventory)
+## trap_item_get* (player)
 
 syscall 0, 63 ; trap_item_get (2 in, 1 out)
 

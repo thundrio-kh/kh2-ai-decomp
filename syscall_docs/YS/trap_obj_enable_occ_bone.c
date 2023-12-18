@@ -9,12 +9,12 @@ category: culling
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---
 push objocc ; (YS::OBJOCC_133 *)  (an occlusion culling object)
-push boneid ; (ID of a bone)
+push boneid ; (ID of a bone) ()
 syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
 ---
 ---

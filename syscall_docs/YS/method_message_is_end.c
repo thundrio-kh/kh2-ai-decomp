@@ -5,7 +5,7 @@ name: method_message_is_end
 ---
 ---
 ---
-category: Interface
+category: menu
 ---
 ---
 ---

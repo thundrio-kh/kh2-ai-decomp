@@ -1,4 +1,4 @@
-## trap_obj_check_flag (object)
+## trap_obj_check_flag* (object)
 
 syscall 1, 72 ; trap_obj_check_flag (2 in, 1 out)
 

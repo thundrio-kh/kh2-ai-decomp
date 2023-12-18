@@ -1,4 +1,4 @@
-## trap_mission_set_warning_se* (mission_widget)
+## trap_mission_set_warning_se* (mission)
 
 syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
 

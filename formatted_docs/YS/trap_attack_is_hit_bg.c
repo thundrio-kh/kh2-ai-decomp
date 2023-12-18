@@ -1,4 +1,4 @@
-## trap_attack_is_hit_bg (attack)
+## trap_attack_is_hit_bg* (attack)
 
 syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
 

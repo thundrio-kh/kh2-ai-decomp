@@ -1,4 +1,4 @@
-## trap_memory_alloc* (system_memory)
+## trap_memory_alloc* (system)
 
 syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
 

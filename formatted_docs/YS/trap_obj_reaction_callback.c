@@ -1,4 +1,4 @@
-## trap_obj_reaction_callback (reaction)
+## trap_obj_reaction_callback* (object)
 
 syscall 1, 325 ; trap_obj_reaction_callback (4 in, 0 out)
 

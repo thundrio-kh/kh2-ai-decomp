@@ -1,4 +1,4 @@
-## trap_mission_add_count* (mission_count)
+## trap_mission_add_count* (mission_counter)
 
 syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
 

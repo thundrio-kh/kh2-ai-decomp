@@ -5,7 +5,7 @@ name: trap_obj_part
 ---
 ---
 ---
-category: parts
+category: bones
 ---
 ---
 ---

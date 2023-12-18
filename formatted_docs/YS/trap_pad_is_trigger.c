@@ -1,4 +1,4 @@
-## *trap_pad_is_trigger* (controls)
+## *trap_pad_is_trigger* (input)
 
 syscall 0, 81 ; trap_pad_is_trigger (1 in, 1 out)
 

@@ -1,4 +1,4 @@
-## trap_btlobj_set_sheet (btlobj)
+## trap_btlobj_set_sheet* (btlobj)
 
 syscall 2, 9 ; trap_btlobj_set_sheet (3 in, 0 out)
 

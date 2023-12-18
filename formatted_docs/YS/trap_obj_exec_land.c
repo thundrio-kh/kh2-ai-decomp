@@ -1,4 +1,4 @@
-## trap_obj_exec_land (object_movement)
+## trap_obj_exec_land* (object)
 
 syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_player_get_rc* (rc)
+## trap_player_get_rc* (player)
 
 syscall 1, 297 ; trap_player_get_rc (1 in, 1 out)
 

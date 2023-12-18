@@ -5,7 +5,7 @@ name: trap_obj_float_height
 ---
 ---
 ---
-category: object_movement
+category: object
 ---
 ---
 ---

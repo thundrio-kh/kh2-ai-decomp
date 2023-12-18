@@ -5,7 +5,7 @@ name: trap_score_score
 ---
 ---
 ---
-category: score
+category: mission_score
 ---
 ---
 ---

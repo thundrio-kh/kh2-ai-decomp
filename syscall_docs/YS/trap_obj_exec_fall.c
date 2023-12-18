@@ -5,7 +5,7 @@ name: trap_obj_exec_fall
 ---
 ---
 ---
-category: object_movement
+category: object
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_target_set_after_player
 ---
 ---
 ---
-category: unsed
+category: unused
 ---
 ---
 ---

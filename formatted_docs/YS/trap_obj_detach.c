@@ -1,4 +1,4 @@
-## trap_obj_detach (bones)
+## trap_obj_detach* (bones)
 
 syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
 

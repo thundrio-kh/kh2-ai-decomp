@@ -1,4 +1,4 @@
-## trap_attack_exec_reflect (attack)
+## trap_attack_exec_reflect* (attack)
 
 syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
 

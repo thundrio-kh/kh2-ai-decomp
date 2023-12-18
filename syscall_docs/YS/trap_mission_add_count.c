@@ -5,7 +5,7 @@ name: trap_mission_add_count
 ---
 ---
 ---
-category: mission_count
+category: mission_counter
 ---
 ---
 ---

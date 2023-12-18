@@ -5,7 +5,7 @@ name: trap_mission_set_watch
 ---
 ---
 ---
-category: mission_widget
+category: mission_watch
 ---
 ---
 ---

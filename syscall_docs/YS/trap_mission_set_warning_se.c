@@ -5,7 +5,7 @@ name: trap_mission_set_warning_se
 ---
 ---
 ---
-category: mission_widget
+category: mission
 ---
 ---
 ---

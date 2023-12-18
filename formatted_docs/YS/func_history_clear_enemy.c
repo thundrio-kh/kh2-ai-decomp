@@ -1,4 +1,4 @@
-## func_history_clear_enemy* (spawns)
+## func_history_clear_enemy* (spawn)
 
 syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_menuflag_check* (menuflag)
+## trap_menuflag_check* (menu)
 
 syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
 

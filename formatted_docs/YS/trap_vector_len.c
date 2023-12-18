@@ -1,4 +1,4 @@
-## trap_vector_len* (vector)
+## trap_vector_len* (math)
 
 syscall 0, 6 ; trap_vector_len (1 in, 1 out)
 

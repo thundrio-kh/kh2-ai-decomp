@@ -1,4 +1,4 @@
-## *trap_jigsaw_get* (treasure)
+## *trap_jigsaw_get* (system)
 
 syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
 

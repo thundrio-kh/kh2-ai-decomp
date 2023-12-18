@@ -1,4 +1,4 @@
-## *trap_act_table_init* (actions)
+## *trap_act_table_init* (action)
 
 syscall 1, 5 ; trap_act_table_init (1 in, 0 out)
 

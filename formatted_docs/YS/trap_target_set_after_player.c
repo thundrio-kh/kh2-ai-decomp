@@ -1,4 +1,4 @@
-## trap_target_set_after_player* (unsed)
+## trap_target_set_after_player* (unused)
 
 syscall 1, 163 ; trap_target_set_after_player (2 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_obj_near_parts* (parts)
+## trap_obj_near_parts* (bones)
 
 syscall 6, 23 ; trap_obj_near_parts (2 in, 1 out)
 

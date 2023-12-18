@@ -13,7 +13,7 @@ documentation level: incomplete
 ---
 ---
 ---
-push unk1 ; (unknown)  (pushFromPSpVal: 20,4) (pushFromFSp: 0,4,8) (pushFromPSp: 16,32) (add: )
+push unk1 ; (unknown)  ()
 syscall 1, 214 ; trap_obj_hook_stop (1 in, 0 out)
 ---
 ---

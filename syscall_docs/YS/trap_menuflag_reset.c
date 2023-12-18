@@ -5,7 +5,7 @@ name: trap_menuflag_reset
 ---
 ---
 ---
-category: menuflag
+category: menu
 ---
 ---
 ---

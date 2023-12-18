@@ -5,7 +5,7 @@ name: trap_act_table_add
 ---
 ---
 ---
-category: actions
+category: action
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_obj_look_end* (npc)
+## trap_obj_look_end* (object)
 
 syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
 

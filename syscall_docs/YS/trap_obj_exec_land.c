@@ -5,11 +5,11 @@ name: trap_obj_exec_land
 ---
 ---
 ---
-category: object_movement
+category: object
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_limit_time (limit)
+## trap_limit_time* (limit)
 
 syscall 2, 60 ; trap_limit_time (1 in, 1 out)
 

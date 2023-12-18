@@ -5,7 +5,7 @@ name: trap_memory_free
 ---
 ---
 ---
-category: system_memory
+category: system
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_magic_start_thread
 ---
 ---
 ---
-category: system_threading
+category: threading
 ---
 ---
 ---

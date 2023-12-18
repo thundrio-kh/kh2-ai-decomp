@@ -1,4 +1,4 @@
-## trap_obj_exec_fall* (object_movement)
+## trap_obj_exec_fall* (object)
 
 syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
 

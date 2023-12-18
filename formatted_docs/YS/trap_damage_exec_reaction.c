@@ -1,4 +1,4 @@
-## trap_damage_exec_reaction (attack)
+## trap_damage_exec_reaction* (attack)
 
 syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
 

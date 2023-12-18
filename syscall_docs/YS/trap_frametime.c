@@ -5,7 +5,7 @@ name: trap_frametime
 ---
 ---
 ---
-category: timing
+category: system
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## *trap_pad_is_button* (controls)
+## *trap_pad_is_button* (input)
 
 syscall 0, 80 ; trap_pad_is_button (1 in, 1 out)
 

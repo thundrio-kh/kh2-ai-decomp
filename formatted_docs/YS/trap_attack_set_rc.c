@@ -1,4 +1,4 @@
-## trap_attack_set_rc (attack)
+## trap_attack_set_rc* (attack)
 
 syscall 2, 51 ; trap_attack_set_rc (5 in, 0 out)
 

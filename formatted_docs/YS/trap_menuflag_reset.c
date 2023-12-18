@@ -1,4 +1,4 @@
-## trap_menuflag_reset* (menuflag)
+## trap_menuflag_reset* (menu)
 
 syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
 

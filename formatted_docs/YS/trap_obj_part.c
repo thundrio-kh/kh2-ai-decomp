@@ -1,4 +1,4 @@
-## trap_obj_part* (parts)
+## trap_obj_part* (bones)
 
 syscall 1, 213 ; trap_obj_part (1 in, 1 out)
 

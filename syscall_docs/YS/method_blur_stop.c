@@ -5,7 +5,7 @@ name: method_blur_stop
 ---
 ---
 ---
-category: incomplete
+category: visual
 ---
 ---
 ---

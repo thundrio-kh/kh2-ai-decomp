@@ -7,6 +7,11 @@ complete = 0
 doc_levels = {}
 files_to_print = []
 
+category_mapping = {}
+toc_urls = {}
+
+variable_types = set()
+
 if os.path.exists('formatted_docs'):
     shutil.rmtree('formatted_docs')
 
@@ -30,6 +35,15 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         # category
         category = sections[2]
         category = re.findall(r'category:(.*)\b', category)[0].strip()
+
+        # toc url
+        toc_urls[name] = out_fn[15:]
+
+        ## Add to category mapping
+        if not category in category_mapping:
+            category_mapping[category.lower()] = []
+        category_mapping[category.lower()].append(name)
+
         # documentation level
         doc_level = sections[3]
         doc_level = re.findall(r'documentation level:(.*)\b', sections[3])[0].strip()
@@ -62,6 +76,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             parens = re.findall(r'.*?\((.*?)\)',arg)
             arg_name = re.findall(r'push (.*) ;', arg)[0]
             arg_type = parens[0]
+            variable_types.add(arg_type)
             arg_description = parens[1] if len(parens) > 1 else ''
             page += '| {}   | {}   | {}\n'.format(arg_name, arg_type, arg_description)
         page += '\n\n'
@@ -74,6 +89,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
                 parens = re.findall(r'.*?\((.*?)\)',arg)
                 arg_name = re.findall(r'pop (.*) ;', arg)[0]
                 arg_type = parens[0]
+                variable_types.add(arg_type)
                 page += '| {}   | {}   \n'.format(arg_name, arg_type)
 
         appears_table = '| filename | Entity (obj)\n'
@@ -102,6 +118,38 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
                 files_to_print.append(fn)
         except:
             doc_levels['error'] += 1
+
+open("arg_types.txt","w").write("\n".join(sorted(variable_types)))
+
+
+max_len = 0
+for cat in category_mapping.values():
+    if len(cat) > max_len:
+        max_len = len(cat)
+for cat_k in category_mapping:
+    category_mapping[cat_k] = sorted(category_mapping[cat_k])
+
+
+with open("category_split.csv", "w") as f:
+    sorted_categories = sorted(category_mapping.keys())
+    f.write(",".join(sorted_categories))
+    f.write("\n")
+    for i in range(max_len):
+        line = []
+        for cat in sorted_categories:
+            line.append(category_mapping[cat][i] if len(category_mapping[cat]) > i else '')
+        f.write(",".join(line))
+        f.write("\n")
+    print(category_mapping[cat])
+
+toc = ''
+for c in sorted_categories:
+    toc += "## {}\n".format(c)
+    for v in category_mapping[c]:
+        toc += "[{}][({})]\n".format(v, toc_urls[v])
+    toc += "\n\n"
+
+open("formatted_docs/toc.md", "w").write(toc)
 
 for k,v in doc_levels.items():
     print("{}: {}".format(k,v))

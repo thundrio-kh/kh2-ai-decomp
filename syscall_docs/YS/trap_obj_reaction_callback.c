@@ -5,11 +5,11 @@ name: trap_obj_reaction_callback
 ---
 ---
 ---
-category: reaction
+category: object
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

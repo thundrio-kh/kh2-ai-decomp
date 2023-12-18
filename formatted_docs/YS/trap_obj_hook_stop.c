@@ -7,7 +7,7 @@ Stops the hook
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
-| unk1   | unknown   | pushFromPSpVal: 20,4
+| unk1   | unknown   | 
 
 
 

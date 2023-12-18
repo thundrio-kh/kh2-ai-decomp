@@ -9,7 +9,7 @@ category: mapinfo
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

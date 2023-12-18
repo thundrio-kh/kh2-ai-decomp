@@ -5,7 +5,7 @@ name: trap_jigsaw_get
 ---
 ---
 ---
-category: treasure
+category: system
 ---
 ---
 ---

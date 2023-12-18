@@ -5,7 +5,7 @@ name: trap_memory_alloc
 ---
 ---
 ---
-category: system_memory
+category: system
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_obj_float_height* (object_movement)
+## trap_obj_float_height* (object)
 
 syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
 

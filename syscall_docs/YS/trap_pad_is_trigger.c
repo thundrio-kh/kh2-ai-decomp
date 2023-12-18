@@ -5,7 +5,7 @@ name: trap_pad_is_trigger
 ---
 ---
 ---
-category: controls
+category: input
 ---
 ---
 ---

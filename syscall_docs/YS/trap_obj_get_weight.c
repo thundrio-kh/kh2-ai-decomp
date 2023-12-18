@@ -5,7 +5,7 @@ name: trap_obj_get_weight
 ---
 ---
 ---
-category: object_details
+category: object
 ---
 ---
 ---

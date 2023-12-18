@@ -1,4 +1,4 @@
-## trap_frametime* (timing)
+## trap_frametime* (system)
 
 syscall 0, 3 ; trap_frametime (0 in, 1 out)
 

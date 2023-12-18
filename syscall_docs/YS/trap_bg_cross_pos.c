@@ -5,7 +5,7 @@ name: trap_bg_cross_pos
 ---
 ---
 ---
-category: vector
+category: math
 ---
 ---
 ---

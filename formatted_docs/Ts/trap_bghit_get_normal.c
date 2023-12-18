@@ -1,4 +1,4 @@
-## trap_bghit_get_normal* (bghit)
+## trap_bghit_get_normal* (collision)
 
 syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
 

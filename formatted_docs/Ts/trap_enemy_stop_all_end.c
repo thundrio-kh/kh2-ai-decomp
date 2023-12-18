@@ -1,4 +1,4 @@
-## trap_enemy_stop_all_end* (end)
+## trap_enemy_stop_all_end* (enemy)
 
 syscall 7, 1 ; trap_enemy_stop_all_end (1 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_attack_rc_receiver (attack)
+## trap_attack_rc_receiver* (attack)
 
 syscall 2, 52 ; trap_attack_rc_receiver (1 in, 1 out)
 

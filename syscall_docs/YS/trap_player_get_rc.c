@@ -5,7 +5,7 @@ name: trap_player_get_rc
 ---
 ---
 ---
-category: rc
+category: player
 ---
 ---
 ---

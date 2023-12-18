@@ -5,7 +5,7 @@ name: func_history_clear_enemy
 ---
 ---
 ---
-category: spawns
+category: spawn
 ---
 ---
 ---

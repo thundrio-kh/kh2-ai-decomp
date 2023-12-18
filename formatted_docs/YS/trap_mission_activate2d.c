@@ -1,4 +1,4 @@
-## trap_mission_activate2d* (mission_hud)
+## trap_mission_activate2d* (mission)
 
 syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
 

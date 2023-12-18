@@ -5,7 +5,7 @@ name: trap_obj_near_parts
 ---
 ---
 ---
-category: parts
+category: bones
 ---
 ---
 ---

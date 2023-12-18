@@ -5,7 +5,7 @@ name: trap_bghit_get_kind
 ---
 ---
 ---
-category: bghit
+category: collision
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_obj_each_all (object)
+## trap_obj_each_all* (object)
 
 syscall 1, 331 ; trap_obj_each_all (1 in, 1 out)
 

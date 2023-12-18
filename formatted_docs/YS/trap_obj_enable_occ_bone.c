@@ -1,4 +1,4 @@
-## trap_obj_enable_occ_bone (culling)
+## trap_obj_enable_occ_bone* (culling)
 
 syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_enemy_each (enemy)
+## trap_enemy_each* (enemy)
 
 syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
 

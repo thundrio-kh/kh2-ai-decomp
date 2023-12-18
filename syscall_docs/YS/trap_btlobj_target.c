@@ -5,7 +5,7 @@ name: trap_btlobj_target
 ---
 ---
 ---
-category: untested
+category: btlobj
 ---
 ---
 ---

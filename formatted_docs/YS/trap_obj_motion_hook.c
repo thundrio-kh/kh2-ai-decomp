@@ -1,4 +1,4 @@
-## trap_obj_motion_hook* (mnset)
+## trap_obj_motion_hook* (mset)
 
 syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
 

@@ -5,7 +5,7 @@ name: trap_menuflag_check
 ---
 ---
 ---
-category: menuflag
+category: menu
 ---
 ---
 ---

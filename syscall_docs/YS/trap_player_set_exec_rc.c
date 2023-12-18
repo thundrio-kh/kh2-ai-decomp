@@ -5,7 +5,7 @@ name: trap_player_set_exec_rc
 ---
 ---
 ---
-category: rc
+category: player
 ---
 ---
 ---

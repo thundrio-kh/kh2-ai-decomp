@@ -1,4 +1,4 @@
-## trap_area_setjump (mapinfo)
+## trap_area_setjump* (mapinfo)
 
 syscall 1, 31 ; trap_area_setjump (2 in, 0 out)
 

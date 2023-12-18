@@ -5,7 +5,7 @@ name: trap_obj_reraise
 ---
 ---
 ---
-category: summon
+category: friend
 ---
 ---
 ---

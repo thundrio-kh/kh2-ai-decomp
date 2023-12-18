@@ -1,4 +1,4 @@
-## trap_magic_start_thread* (system_threading)
+## trap_magic_start_thread* (threading)
 
 syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
 

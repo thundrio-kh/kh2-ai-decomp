@@ -5,7 +5,7 @@ name: trap_vector_len
 ---
 ---
 ---
-category: vector
+category: math
 ---
 ---
 ---

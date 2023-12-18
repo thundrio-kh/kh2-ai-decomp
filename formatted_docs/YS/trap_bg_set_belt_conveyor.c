@@ -1,4 +1,4 @@
-## trap_bg_set_belt_conveyor (unknown)
+## trap_bg_set_belt_conveyor (special)
 
 syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
 

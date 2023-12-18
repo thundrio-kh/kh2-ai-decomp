@@ -1,4 +1,4 @@
-## trap_btlobj_target* (untested)
+## trap_btlobj_target* (btlobj)
 
 syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
 

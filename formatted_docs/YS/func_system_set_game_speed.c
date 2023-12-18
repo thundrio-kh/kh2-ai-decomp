@@ -1,4 +1,4 @@
-## *func_system_set_game_speed* (gameplay)
+## *func_system_set_game_speed* (system)
 
 syscall 0, 27 ; func_system_set_game_speed (1 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_obj_reraise* (summon)
+## trap_obj_reraise* (friend)
 
 syscall 1, 277 ; trap_obj_reraise (1 in, 0 out)
 

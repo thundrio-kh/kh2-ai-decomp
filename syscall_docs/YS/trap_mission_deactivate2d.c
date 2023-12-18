@@ -5,11 +5,11 @@ name: trap_mission_deactivate2d
 ---
 ---
 ---
-category: mission_hud
+category: mission
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

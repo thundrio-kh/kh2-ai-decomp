@@ -5,7 +5,7 @@ name: trap_message_close
 ---
 ---
 ---
-category: hud
+category: menu
 ---
 ---
 ---

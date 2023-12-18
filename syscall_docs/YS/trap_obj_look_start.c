@@ -5,7 +5,7 @@ name: trap_obj_look_start
 ---
 ---
 ---
-category: npc
+category: object
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: trap_message_open
 ---
 ---
 ---
-category: hud
+category: menu
 ---
 ---
 ---

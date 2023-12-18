@@ -1,4 +1,4 @@
-## trap_bg_cross_pos (vector)
+## trap_bg_cross_pos (math)
 
 syscall 1, 135 ; trap_bg_cross_pos (4 in, 1 out)
 

@@ -9,7 +9,7 @@ category: enemy
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

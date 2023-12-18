@@ -1,4 +1,4 @@
-## trap_command_slot_set_status (command)
+## trap_command_slot_set_status* (command)
 
 syscall 1, 346 ; trap_command_slot_set_status (2 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_obj_check_step (collision)
+## trap_obj_check_step* (collision)
 
 syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
 

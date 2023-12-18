@@ -1,4 +1,4 @@
-## trap_message_open* (hud)
+## trap_message_open* (menu)
 
 syscall 1, 32 ; trap_message_open (2 in, 1 out)
 

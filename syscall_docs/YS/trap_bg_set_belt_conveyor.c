@@ -5,7 +5,7 @@ name: trap_bg_set_belt_conveyor
 ---
 ---
 ---
-category: unknown
+category: special
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: method_blur_start
 ---
 ---
 ---
-category: incomplete
+category: visual
 ---
 ---
 ---

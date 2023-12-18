@@ -5,7 +5,7 @@ name: trap_item_get
 ---
 ---
 ---
-category: inventory
+category: player
 ---
 ---
 ---

@@ -5,7 +5,7 @@ name: func_system_set_game_speed
 ---
 ---
 ---
-category: gameplay
+category: system
 ---
 ---
 ---

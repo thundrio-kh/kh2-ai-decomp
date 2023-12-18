@@ -1,4 +1,4 @@
-## trap_bghit_get_kind* (bghit)
+## trap_bghit_get_kind* (collision)
 
 syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
 

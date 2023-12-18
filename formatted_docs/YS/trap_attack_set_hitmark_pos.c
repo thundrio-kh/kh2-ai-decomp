@@ -1,4 +1,4 @@
-## trap_attack_set_hitmark_pos (attack)
+## trap_attack_set_hitmark_pos* (attack)
 
 syscall 2, 71 ; trap_attack_set_hitmark_pos (2 in, 0 out)
 

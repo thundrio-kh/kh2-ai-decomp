@@ -1,4 +1,4 @@
-## trap_camera_warp (camera)
+## trap_camera_warp* (camera)
 
 syscall 1, 193 ; trap_camera_warp (0 in, 0 out)
 

@@ -1,4 +1,4 @@
-## trap_attack_refresh (attack)
+## trap_attack_refresh* (attack)
 
 syscall 2, 28 ; trap_attack_refresh (1 in, 0 out)
 

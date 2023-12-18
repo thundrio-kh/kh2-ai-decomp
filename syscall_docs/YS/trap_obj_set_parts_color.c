@@ -5,7 +5,7 @@ name: trap_obj_set_parts_color
 ---
 ---
 ---
-category: parts
+category: bones
 ---
 ---
 ---

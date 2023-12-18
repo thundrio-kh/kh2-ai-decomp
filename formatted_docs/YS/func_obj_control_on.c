@@ -1,4 +1,4 @@
-## func_obj_control_on (object)
+## func_obj_control_on* (object)
 
 syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
 

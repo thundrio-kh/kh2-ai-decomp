@@ -5,7 +5,7 @@ name: trap_summon_is_tink_exist
 ---
 ---
 ---
-category: summon
+category: friend
 ---
 ---
 ---

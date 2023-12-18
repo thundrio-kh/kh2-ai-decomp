@@ -5,7 +5,7 @@ name: trap_item_reduce
 ---
 ---
 ---
-category: inventory
+category: player
 ---
 ---
 ---

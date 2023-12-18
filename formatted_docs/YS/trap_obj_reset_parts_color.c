@@ -1,4 +1,4 @@
-## trap_obj_reset_parts_color* (parts)
+## trap_obj_reset_parts_color* (bones)
 
 syscall 1, 186 ; trap_obj_reset_parts_color (3 in, 0 out)
 

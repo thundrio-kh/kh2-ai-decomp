@@ -1,4 +1,4 @@
-## trap_summon_is_tink_exist* (summon)
+## trap_summon_is_tink_exist* (friend)
 
 syscall 2, 75 ; trap_summon_is_tink_exist (0 in, 1 out)
 

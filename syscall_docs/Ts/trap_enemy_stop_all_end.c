@@ -5,7 +5,7 @@ name: trap_enemy_stop_all_end
 ---
 ---
 ---
-category: end
+category: enemy
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_attack_set_team (attack)
+## trap_attack_set_team* (attack)
 
 syscall 2, 37 ; trap_attack_set_team (2 in, 0 out)
 

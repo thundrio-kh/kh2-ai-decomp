@@ -5,7 +5,7 @@ name: trap_mission_is_activate2d
 ---
 ---
 ---
-category: mission_hud
+category: mission
 ---
 ---
 ---

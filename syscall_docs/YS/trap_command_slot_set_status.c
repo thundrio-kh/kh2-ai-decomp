@@ -9,7 +9,7 @@ category: command
 ---
 ---
 ---
-documentation level: incomplete
+documentation level: untested
 ---
 ---
 ---

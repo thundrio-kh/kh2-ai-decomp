@@ -1,4 +1,4 @@
-## trap_mission_set_watch* (mission_widget)
+## trap_mission_set_watch* (mission_watch)
 
 syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
 

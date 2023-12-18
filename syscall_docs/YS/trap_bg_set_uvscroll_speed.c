@@ -5,7 +5,7 @@ name: trap_bg_set_uvscroll_speed
 ---
 ---
 ---
-category: unknown
+category: special
 ---
 ---
 ---

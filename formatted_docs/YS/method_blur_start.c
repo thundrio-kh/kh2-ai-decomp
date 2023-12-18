@@ -1,4 +1,4 @@
-## method_blur_start* (incomplete)
+## method_blur_start* (visual)
 
 syscall 0, 29 ; method_blur_start (1 in, 0 out)
 

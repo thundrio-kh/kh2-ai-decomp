@@ -5,7 +5,7 @@ name: func_area_activate_unit
 ---
 ---
 ---
-category: spawns
+category: spawn
 ---
 ---
 ---

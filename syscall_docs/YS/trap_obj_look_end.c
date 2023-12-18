@@ -5,7 +5,7 @@ name: trap_obj_look_end
 ---
 ---
 ---
-category: npc
+category: object
 ---
 ---
 ---

@@ -1,4 +1,4 @@
-## trap_score_type* (minigame)
+## trap_score_type* (mission_score)
 
 syscall 4, 35 ; trap_score_type (1 in, 1 out)
 

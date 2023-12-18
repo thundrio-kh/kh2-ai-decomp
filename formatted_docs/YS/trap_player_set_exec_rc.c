@@ -1,4 +1,4 @@
-## trap_player_set_exec_rc* (rc)
+## trap_player_set_exec_rc* (player)
 
 syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
 

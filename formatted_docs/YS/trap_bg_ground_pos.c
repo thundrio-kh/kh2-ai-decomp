@@ -1,4 +1,4 @@
-## trap_bg_ground_pos (position)
+## trap_bg_ground_pos* (position)
 
 syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
 

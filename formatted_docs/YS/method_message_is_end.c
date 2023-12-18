@@ -1,4 +1,4 @@
-## method_message_is_end (Interface)
+## method_message_is_end (menu)
 
 syscall 1, 48 ; method_message_is_end (1 in, 1 out)
 

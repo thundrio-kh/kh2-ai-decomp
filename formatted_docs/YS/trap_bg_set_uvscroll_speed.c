@@ -1,4 +1,4 @@
-## trap_bg_set_uvscroll_speed (unknown)
+## trap_bg_set_uvscroll_speed (special)
 
 syscall 1, 159 ; trap_bg_set_uvscroll_speed (1 in, 0 out)
 

@@ -1,4 +1,4 @@
-## func_area_activate_unit* (spawns)
+## func_area_activate_unit* (spawn)
 
 syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
 

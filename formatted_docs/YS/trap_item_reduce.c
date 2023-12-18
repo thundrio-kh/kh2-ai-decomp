@@ -1,4 +1,4 @@
-## trap_item_reduce* (inventory)
+## trap_item_reduce* (player)
 
 syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
 
