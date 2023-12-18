@@ -146,7 +146,7 @@ toc = ''
 for c in sorted_categories:
     toc += "## {}\n".format(c)
     for v in category_mapping[c]:
-        toc += "[{}][({})]\n".format(v, toc_urls[v])
+        toc += "* [{}]({})\n".format(v, toc_urls[v])
     toc += "\n\n"
 
 open("formatted_docs/toc.md", "w").write(toc)
