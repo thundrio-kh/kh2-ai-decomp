@@ -21,7 +21,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         if ".DS_Store" in fn:
             continue
 
-        out_fn = fn.replace('syscall_docs', 'formatted_docs')
+        out_fn = fn.replace('syscall_docs', 'formatted_docs')[:-2] + ".md"
         if not (os.path.exists(os.path.dirname(out_fn))):
             os.makedirs(os.path.dirname(out_fn))
 
