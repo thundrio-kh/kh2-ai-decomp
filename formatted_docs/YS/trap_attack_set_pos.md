@@ -7,6 +7,7 @@ Sets a position for an attack to happen.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | pos   | kn::FVector *   | A Vector representing where the attack should occur
 
 

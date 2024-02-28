@@ -7,6 +7,7 @@ Vacuums all medals within a designated range of the object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::BTLOBJ *   | A battle object
 | range   | float   | A range value
 
 

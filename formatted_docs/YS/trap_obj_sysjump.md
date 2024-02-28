@@ -7,6 +7,7 @@ Unknown
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | unk   | Unknown, game uses values between -200 and 300:    | 
 
 

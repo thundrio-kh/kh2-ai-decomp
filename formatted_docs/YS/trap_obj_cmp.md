@@ -7,6 +7,7 @@ Compares two numbers, and returns the difference
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| num1   | int   | A number
 | num2   | int   | A number
 
 

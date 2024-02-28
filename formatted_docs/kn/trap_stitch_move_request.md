@@ -7,6 +7,7 @@ Request stitch move (to the target)
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | move_target   | int   | Target number stitch should move to
 
 

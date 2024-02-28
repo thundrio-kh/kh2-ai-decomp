@@ -7,6 +7,7 @@ Sets the movement path for an NPC object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_133 *   | An object
 | serial   | int   | Serial number, value of -1 is always used in game
 
 

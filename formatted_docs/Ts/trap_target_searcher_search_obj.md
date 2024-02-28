@@ -7,6 +7,8 @@ Has a target searcher search for a specific object.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
+| obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 

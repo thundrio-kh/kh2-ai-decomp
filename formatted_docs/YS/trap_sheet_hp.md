@@ -7,6 +7,7 @@ Return the amount of HP an object has
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
 | index   | int   | HP index to use
 
 

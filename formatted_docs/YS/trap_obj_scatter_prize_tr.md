@@ -7,6 +7,7 @@ Scatter a number of tron orbs from an enemy
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Number to scatter
 
 

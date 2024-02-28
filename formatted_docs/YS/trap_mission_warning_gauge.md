@@ -7,6 +7,7 @@ sets a warning flag for the specified gauge
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| flag   | bool   | 1 for true, 0 for false
 | id   | int   | id of a gauge
 
 

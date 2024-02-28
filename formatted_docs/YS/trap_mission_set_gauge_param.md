@@ -7,6 +7,9 @@ Set parameters for a gauge
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| start   | int   | start value of the gauge
+| max   | int   | max value of the gauge
+| warning   | int   | threshold for warning mode of the gauge
 | id   | int   | id of the gauge
 
 

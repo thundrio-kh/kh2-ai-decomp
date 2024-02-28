@@ -7,6 +7,7 @@ Checks if an attack is striking an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | An attack object
 | btlobj   | YS::BTLOBJ *   | An battle object
 
 

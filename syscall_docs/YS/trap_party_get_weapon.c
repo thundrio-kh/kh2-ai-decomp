@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push party (YS::PARTY_63 *) (Party object)
+push party ; (YS::PARTY_63 *) (Party object)
 push member_index ; (int) (Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html))
 syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
 pop id ; (int) 

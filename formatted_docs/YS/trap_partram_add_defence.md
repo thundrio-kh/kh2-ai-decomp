@@ -7,6 +7,7 @@ Gives defence to the player
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| partram   | YS::PARTRAM *   | Partram object
 | amt   | int   | Amount of defence to add
 
 

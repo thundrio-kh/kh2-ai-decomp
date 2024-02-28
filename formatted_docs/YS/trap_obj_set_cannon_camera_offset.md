@@ -7,6 +7,8 @@ Sets the present cannon camera offset
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| offset1   | kn::FVector *   | First offset
 | offset2   | kn::FVector *   | Second offset
 
 

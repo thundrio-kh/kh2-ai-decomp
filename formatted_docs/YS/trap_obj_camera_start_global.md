@@ -7,6 +7,7 @@ Starts running a label to change the camera to a global target, usually for a sp
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::STDOBJ_112 *   | An object
 | label   | string   | A label for a camera routine, usually called '00' or '10' etc
 
 

@@ -7,6 +7,8 @@ Sets a unit argument for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| unitnum   | int   | Unit number
 | argnum   | int   | Argument to set
 
 

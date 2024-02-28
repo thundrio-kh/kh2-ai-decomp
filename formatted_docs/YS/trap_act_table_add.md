@@ -7,6 +7,17 @@ Adds an label to an action table, as an action that can be performed
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| table   | YS::ACT::TABLE *   | The action table that will get a action added to it
+| name   | string   | name to represent the action
+| priority   | int   | what priority to treat this action. Most actions use a priority of 100
+| entry   | int   | Line number to routine to process the action
+| callback1   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback2   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback3   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback4   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback5   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback6   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
+| callback7   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
 | callback8   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
 
 

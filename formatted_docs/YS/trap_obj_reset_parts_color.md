@@ -7,6 +7,8 @@ Resets the color of an object part
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| partnum   | int   | Part number
 | time   | float   | Time in frames for the color transition to happen
 
 

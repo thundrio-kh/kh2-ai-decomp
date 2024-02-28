@@ -7,6 +7,10 @@ Parameters for the present cannon
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| h_speed   | int   | Horizontal speed
+| h_limit   | int   | Horizontal speed limit
+| v_speed   | int   | Vertical speed
 | v_limit   | int   | Vertical speed limit
 
 

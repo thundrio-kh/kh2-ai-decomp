@@ -7,6 +7,7 @@ Play a object sound effect on loop
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | ID number of sound effect to play
 
 

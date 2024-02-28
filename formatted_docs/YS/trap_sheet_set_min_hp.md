@@ -7,6 +7,8 @@ Set an objects minimum HP
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
+| HP   | int   | HP value to set
 | index   | int   | HP index to use
 
 

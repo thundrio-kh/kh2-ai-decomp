@@ -7,6 +7,8 @@ Sets a hitback in a given direction
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| btlobj   | YS::BTLOBJ *   | A battle object
+| dir   | kn::FVector *   | A direction vector
 | dist   | float   | A distance value (game uses range of 50-200
 
 

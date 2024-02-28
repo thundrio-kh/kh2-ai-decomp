@@ -7,6 +7,8 @@ Sets a batleobj to use a specific enmp entry.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| btlobj   | YS::PIERROT_6 *   | A btlobj
+| id   | int   | enmp entry to use
 | param   | int   | unknown, always 0 in game
 
 

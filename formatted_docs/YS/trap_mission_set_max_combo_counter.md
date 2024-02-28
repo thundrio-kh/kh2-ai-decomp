@@ -7,6 +7,7 @@ sets the max limit for a combo counter
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| value   | int   | value to set the combo counter max to
 | id   | int   | id of a combo counter
 
 

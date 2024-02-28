@@ -7,6 +7,7 @@ Increments the struggle value
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| stage   | int   | Stage of the struggle tournament the player is at
 | won_match   | bool   | If the player won the last match
 
 

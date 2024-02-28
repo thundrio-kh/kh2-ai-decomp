@@ -7,6 +7,7 @@ Set a target point on a path
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| path   | Ti::Path_3   | Path object
 | point_index   | label   | call label for point index
 
 

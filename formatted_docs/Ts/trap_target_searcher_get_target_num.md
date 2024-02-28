@@ -7,6 +7,9 @@ Return the index number of a target within a position and a direction
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
+| pos   | kn::FVector *   | A position vector
+| dir   | kn::FVector *   | A direction vector
 | is_history   | bool   | Unknown purpose, only value used in game is 0
 
 

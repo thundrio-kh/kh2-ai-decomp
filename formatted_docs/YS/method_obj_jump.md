@@ -7,6 +7,10 @@ Jumps an object to the vector
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| v   | kn::FVector *   | Position vectors
+| motion_id   | int   | ID of a specific motion set entry
+| blend_time   | float   | Time to blend between animations
 | force   | bool   | Probably whether or not to force the animation to switch
 
 

@@ -7,6 +7,7 @@ Returns the length of a given motion set entry
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 

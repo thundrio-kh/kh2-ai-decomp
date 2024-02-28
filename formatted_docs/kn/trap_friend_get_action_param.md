@@ -7,6 +7,7 @@ Get the parameter of a friends action
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | id   | int   | ID of an action
 
 

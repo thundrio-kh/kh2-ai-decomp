@@ -7,6 +7,8 @@ executes a small amount of damage
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy_obj   | YS::BTLOBJ *   | A battle object
+| damage   | YS::DAMAGE_4 *   | A damage object
 | power   | float   | amount of power for the damage, value of 100 is the only one used in game
 
 

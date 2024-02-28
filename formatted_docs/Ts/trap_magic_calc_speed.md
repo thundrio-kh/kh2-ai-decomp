@@ -7,6 +7,9 @@ Calculate the speed of magic
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | float   | Values of -10, -2 used in game
+| unk2   | float   | Values of 100, 200, 500 used in game
+| unk3   | float   | Unknown
 | unk4   | float   | Unkown
 
 

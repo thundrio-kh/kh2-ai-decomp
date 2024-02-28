@@ -7,6 +7,7 @@ Adds to a gauge on the screen
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| amount   | float   | amount to add to gauge
 | gauge_id   | int   | id of gauge to add to
 
 

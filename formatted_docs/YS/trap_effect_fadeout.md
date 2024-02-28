@@ -7,6 +7,8 @@ Fades out an effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | an effect object
+| frame   | float   | which frame to fade the effect out? Game uses values between 0 and 10
 | shouldfade   | int   | A boolean value. If 0 then this trap does nothing.
 
 

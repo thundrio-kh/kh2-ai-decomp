@@ -7,6 +7,7 @@ Perform a fade in effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| fade_amt   | float   | Amount to fade in, 0.0 to 1.0
 | time   | float   | Number of frames for the fade in
 
 

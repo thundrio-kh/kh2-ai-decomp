@@ -7,6 +7,7 @@ Duplicates a battle object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| btlobj   | YS::PIERROT_6   | the btl object to copy
 | param   | int   | Unknown purpose, only used value is 216 (Larxene Datas enmp entry
 
 

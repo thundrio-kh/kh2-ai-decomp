@@ -7,6 +7,9 @@ Have an object start a motion set entry at a specific frame number
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
+| id   | int   | ID of a specific motion set entry
+| blend_time   | float   | Time to take to blend the animations
 | start_time   | float   | Frame number to start the animation at
 
 

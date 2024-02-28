@@ -7,6 +7,7 @@ Set the attack level of an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
 | level   | int   | The new attack level
 
 

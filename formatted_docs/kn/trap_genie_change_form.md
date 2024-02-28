@@ -7,6 +7,7 @@ Changes the genies form
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | formCommand   | int   | Which form to change to
 
 

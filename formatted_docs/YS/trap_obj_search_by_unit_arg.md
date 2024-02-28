@@ -7,6 +7,8 @@ Searches for an object with a specific unit argument
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
+| unitnum   | int   | Unit number
 | argnum   | int   | Argument to search for
 
 

@@ -7,6 +7,9 @@ starts the specialized limit camera
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit_obj   | YS::LIMIT_1 *   | A limit object
+| label   | int   | Line number to label for limit camera routine
+| objspace_range   | float   | pushImmf: 0,500
 | is_air   | bool   | pushImm: 0,1
 
 

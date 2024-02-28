@@ -7,6 +7,7 @@ Sets the rotation of an effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | An effect object
 | rotation   | kn::FVector *   | A rotation vector
 
 

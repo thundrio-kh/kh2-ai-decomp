@@ -7,6 +7,9 @@ Similar to trap_obj_hop, but does not set an animation for the object, just perf
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_88   | An object
+| velocity   | float   | A velocity value
+| time   | float   | Time for the hop to last
 | accel   | float   | Acceleration value
 
 

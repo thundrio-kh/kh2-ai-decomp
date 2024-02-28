@@ -7,6 +7,8 @@ Sets a specific digit in the counter to a value
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| figure   | int   | digit to set
+| num   | int   | number to set it to
 | id   | int   | id of a counter
 
 

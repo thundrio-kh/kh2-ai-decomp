@@ -7,6 +7,9 @@ Starts an animation associated with a limit
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit   | YS::LIMIT_1   | An limit object
+| obj   | YS::OBJ_114   | Object that will be performing the limit animation
+| motion_id   | int   | A motionset ID value
 | blend   | float   | Blend value
 
 

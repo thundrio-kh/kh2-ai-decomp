@@ -7,6 +7,9 @@ starts an limit effect bound to an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit_obj   | YS::LIMIT_1 *   | A limit object
+| id   | int   | id of the effect to start
+| obj   | YS::OBJ_114 *   | Object to bind the limit to
 | flag   | int   | set the flag to 0 or 1
 
 

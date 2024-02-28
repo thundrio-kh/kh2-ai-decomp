@@ -7,6 +7,7 @@ Starts a new magic thread
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| label   | int   | Line number/label to start thread execution at
 | arg   | BD_VALUE_8 *   | An argument to start as the top of the stack in the new thread
 
 

@@ -7,6 +7,7 @@ Set the effect ID of a trinity limit shot
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | effect_id   | int   | ID of an effect
 
 

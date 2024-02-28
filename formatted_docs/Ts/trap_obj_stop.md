@@ -7,6 +7,8 @@ Stop an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | unknown
 | time   | float   | Time to stop for, 0 is indefinite time
 
 

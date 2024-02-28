@@ -7,6 +7,7 @@ Checks the option of an rtn flag
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| npc   | YS::NPC_0 *   | An npc object
 | n   | int   | A flag number to check
 
 

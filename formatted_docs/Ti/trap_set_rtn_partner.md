@@ -7,6 +7,7 @@ Set a partner for an RTN action
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| npc   | YS::NPC_0 *   | An npc object
 | npc_partner   | YS::NPC_0 *   | An npc object
 
 

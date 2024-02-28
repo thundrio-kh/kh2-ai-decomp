@@ -7,6 +7,7 @@ Have a friend watch an effect object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | effect   | ryj::EFFECT_55 *   | An effect object
 
 

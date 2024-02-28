@@ -7,6 +7,7 @@ Set the effective range of a vacuum object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | range   | float   | Range value to set
 
 

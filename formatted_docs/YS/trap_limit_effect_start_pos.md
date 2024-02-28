@@ -7,6 +7,9 @@ Starts a limit effect at a specified position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit_obj   | YS::LIMIT_1 *   | A limit object
+| id   | int   | id of the effect to start
+| pos   | kn::FVector *   | position to start the effect
 | flag   | int   | set the flag to 0 or 1
 
 

@@ -7,6 +7,7 @@ Set the special command for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | type   | int   | Type of command to set
 
 

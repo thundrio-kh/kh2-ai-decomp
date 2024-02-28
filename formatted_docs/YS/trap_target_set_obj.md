@@ -7,6 +7,7 @@ Set the target to an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
 | obj   | YS::OBJ_125   | An object
 
 

@@ -7,6 +7,7 @@ Set the way on a path that an object is going
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| path   | Ti::Path_3   | Path object
 | dir   | bool   | bool indicating direction?
 
 

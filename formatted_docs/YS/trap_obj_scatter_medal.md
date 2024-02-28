@@ -7,6 +7,7 @@ Scatters a number of Pirates of the Caribbean coins from an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Number to scatter
 
 

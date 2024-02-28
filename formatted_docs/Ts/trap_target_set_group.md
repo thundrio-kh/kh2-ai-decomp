@@ -7,6 +7,7 @@ Set the group ID that a target belongs to
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
 | group_id   | int   | ID of a group
 
 

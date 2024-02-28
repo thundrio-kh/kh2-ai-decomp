@@ -7,6 +7,7 @@ Set the position of Flare Force
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| flare   | Ts::FLARE_0 *   | Flare Force object
 | pos   | kn::FVector *   | A position vector
 
 

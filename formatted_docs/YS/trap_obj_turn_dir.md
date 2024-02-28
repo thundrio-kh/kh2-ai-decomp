@@ -7,6 +7,8 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| dir   | kn::FVector *   | A direction vector
 | limit   | float   | Maximum turn amount
 
 

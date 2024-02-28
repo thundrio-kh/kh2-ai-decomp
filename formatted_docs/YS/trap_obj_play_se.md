@@ -7,6 +7,7 @@ Plays a sound effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Sound effect number to play
 
 

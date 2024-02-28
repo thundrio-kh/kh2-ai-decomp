@@ -7,6 +7,7 @@ Performs vector subtraction (vec1 - vec2)
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 

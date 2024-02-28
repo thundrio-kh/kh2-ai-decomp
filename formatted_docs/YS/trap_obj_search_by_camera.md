@@ -7,6 +7,7 @@ Looks up an object by ID and then returns the object that is closest to the came
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
 | offset   | kn::FVector *   | A position vector?
 
 

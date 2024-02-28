@@ -7,6 +7,7 @@ Invalidates a warp point within range of the friend
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| center   | kn::FVector *   | A position vector
 | range   | float   | A range value
 
 

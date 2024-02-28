@@ -7,6 +7,7 @@ Perform a signal call.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| signal   | int   | Signal to call
 | arg   | int   | Argument to call signal with
 
 

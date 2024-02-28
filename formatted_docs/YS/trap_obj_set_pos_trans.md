@@ -9,6 +9,7 @@ Set the position for an object. This is identical to trap_obj_set_pos but it als
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 

@@ -31,6 +31,7 @@ Resets the resistance value to the default state
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | value   | int   | Pattern number to reset. See table in description
 
 

@@ -7,6 +7,7 @@ Initializes an action table for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | act_table   | memory   | Variable/stack location to store the act table
 
 

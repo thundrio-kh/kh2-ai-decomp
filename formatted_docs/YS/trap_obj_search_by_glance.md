@@ -7,6 +7,7 @@ Looks up an object by ID and then returns the copy of the object that is closest
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
 | entry_id   | int   | ID of the object to look up
 
 

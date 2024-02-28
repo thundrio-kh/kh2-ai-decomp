@@ -7,6 +7,7 @@ Set the attacker for an enemy.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy   | YS::PIERROT_6   | Enemy btl object
 | attacker   | YS::OBJ_138   | Object of the attacker
 
 

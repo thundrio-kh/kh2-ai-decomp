@@ -7,6 +7,8 @@ Resets the reaction command state to starting state
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ *   | Object with a reaction command flag
+| command   | int   | The command to be enabled
 | group   | int   | Unknown
 
 

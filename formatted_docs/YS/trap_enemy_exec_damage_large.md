@@ -7,6 +7,8 @@ executes a large amount of damage
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy_obj   | YS::BTLOBJ *   | pushFromFSp: 0
+| damage   | YS::DAMAGE_4 *   | pushFromFSp: 4
 | power   | float   | pushImmf: 0
 
 

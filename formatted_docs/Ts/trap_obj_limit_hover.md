@@ -7,6 +7,9 @@ Hover an object as part of a limit
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| v   | RCFVector   | A velocity vector
+| brake   | float   | Brake speed
 | brake_slow   | float   | Slow brake speed
 
 

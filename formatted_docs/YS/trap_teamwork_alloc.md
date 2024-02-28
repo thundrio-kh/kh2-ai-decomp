@@ -7,6 +7,7 @@ Allocates an amount of work memory
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| id   | int   | ID of memory allocator
 | size   | Amount of memory to allocate   | 
 
 

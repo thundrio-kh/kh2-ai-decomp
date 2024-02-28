@@ -7,6 +7,7 @@ Set the script status of a friend
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | value   | int   | Value to set
 
 

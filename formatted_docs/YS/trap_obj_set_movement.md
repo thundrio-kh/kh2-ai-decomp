@@ -7,6 +7,8 @@ Has an object start moving in the specified direction at the given speed
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| dir   | kn::FVector *   | Direction to move
 | speed   | int   | Speed to move, must be between 0 and 500
 
 

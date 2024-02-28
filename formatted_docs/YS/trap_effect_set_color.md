@@ -7,6 +7,7 @@ Sets the color of an effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | an effect object
 | color_vector   | kn::FVector *   | probably r,g,b,a color vector
 
 

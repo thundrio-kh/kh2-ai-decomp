@@ -7,6 +7,7 @@ Set a path for an object by ID
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | id   | int   | ID number of a path
 
 

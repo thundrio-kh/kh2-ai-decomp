@@ -7,6 +7,7 @@ Sets the level up path to sword/shield/staff.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| partram   | YS::PARTRAM *   | Partram object
 | type   | int   | 0, 1, or 2
 
 

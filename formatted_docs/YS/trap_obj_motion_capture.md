@@ -7,6 +7,9 @@ starts a motion set id that captures an object, returning the id of the capture
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
+| target_obj   | YS::OBJ_124   | Target object to capture
+| id   | int   | ID of a specific motion set entry
 | blend_time   | float   | time to blend between two motion entries
 
 

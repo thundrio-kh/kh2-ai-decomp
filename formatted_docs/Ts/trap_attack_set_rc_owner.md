@@ -7,6 +7,7 @@ Set the owner of an RC
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | obj   | YS::OBJ_125   | An object to set as the owner
 
 

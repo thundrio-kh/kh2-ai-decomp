@@ -7,6 +7,7 @@ value"
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| value   | int   | An integer
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 

@@ -7,6 +7,8 @@ Tells an object to fly with a specific velocity and acceleration
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_187 *   | An object
+| vel   | int   | Velocity value
 | accel   | float   | Acceleration value
 
 

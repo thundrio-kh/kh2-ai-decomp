@@ -7,6 +7,7 @@ returns the range trigger count (Happens during X frames) of a motion entry
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 

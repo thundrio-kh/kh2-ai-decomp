@@ -31,6 +31,7 @@ Disable resistances/sturdy frames for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | value   | int   | Pattern number to disable. See table in description
 
 

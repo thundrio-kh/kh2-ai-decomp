@@ -7,6 +7,7 @@ Sets the maximum density for fog
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| light_object   | YS::LIGHT_0 *   | a light object
 | max_density   | int   | maximum light density. Value of 255 is used in game scripts
 
 

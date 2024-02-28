@@ -16,9 +16,6 @@ documentation level: untested
 push part ; (int)  (ID of the character to give the weapon to?)
 push right ; (int)  (Right hand weapon ID)
 push left ; (int)  (Left hand weapon ID, 0 for none)
-
-push form_id ; (int)  (ID of the form to grant the ability to)
-push ability_id ; (int)  (ID of the ability to grant)
 syscall 0, 75 ; trap_saveram_set_weapon (3 in, 0 out)
 ---
 ---

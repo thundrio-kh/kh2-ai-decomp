@@ -7,6 +7,7 @@ Add a target to a target searcher
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
 | target   | YS::TARGET_108 *   | A target object
 
 

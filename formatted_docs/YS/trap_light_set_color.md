@@ -7,6 +7,10 @@ sets a color for a light, "a" value is always 128
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| light_object   | YS::LIGHT_0 *   | a light object
+| r   | int   | red value
+| g   | int   | green value
+| b   | int   | blue value
 | time   | int   | time to take to set the color
 
 

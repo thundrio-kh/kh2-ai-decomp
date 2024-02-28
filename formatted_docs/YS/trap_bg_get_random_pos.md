@@ -7,6 +7,8 @@ Gets a random open position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| center   | kn::FVector *   | center value to use
+| near   | float   | how near to the center to look
 | far   | float   | how far from the center to look
 
 

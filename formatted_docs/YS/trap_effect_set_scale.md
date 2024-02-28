@@ -7,6 +7,7 @@ Scales an effect object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | An effect object
 | scale   | kn::FVector *   | vector to scale the effect by
 
 

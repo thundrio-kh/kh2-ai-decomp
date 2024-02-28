@@ -7,6 +7,8 @@ Sets the radius and height for a [circular] attack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
+| radius   | float   | Radius to set for attack
 | height   | height   | Height to set for attack
 
 

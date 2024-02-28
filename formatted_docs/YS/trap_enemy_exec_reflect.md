@@ -7,6 +7,10 @@ executes reflect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy_obj   | YS::BTLOBJ *   | A battle object
+| self   | YS::ATTACK_13 *   | An attack object
+| other   | YS::ATTACK_13 *   | An attack object
+| motion   | int   | motion slot for the reflect
 | hitback   | float   | amount of hitback for the damage
 
 

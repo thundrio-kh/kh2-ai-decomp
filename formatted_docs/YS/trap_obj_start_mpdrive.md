@@ -7,6 +7,7 @@ Starts mpdrive for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | ratio   | float   | Ratio mpdrive should start at
 
 

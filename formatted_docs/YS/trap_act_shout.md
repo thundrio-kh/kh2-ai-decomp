@@ -7,6 +7,7 @@ Adds the passed action into the ShoutBuff. Maybe this is a separate queue that h
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| label   | string   | name of action
 | wait   | float   | amount of time to wait before shouting action
 
 

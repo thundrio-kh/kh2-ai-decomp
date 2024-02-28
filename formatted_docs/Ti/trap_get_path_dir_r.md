@@ -7,6 +7,8 @@ Get the reverse direction of a path
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| path   | Ti::Path_3   | Path object
 | a5   | float   | unknown
 
 

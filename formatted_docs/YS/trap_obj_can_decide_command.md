@@ -7,6 +7,8 @@ Returns  if the object can decide command.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_96   | An object
+| command_id   | int   | ID of a command
 | element   | YS::COMMAND_ELEM   | Command element value
 
 

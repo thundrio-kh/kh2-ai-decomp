@@ -7,6 +7,7 @@ sets the cost for this magic object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | 
 | unk2   | unknown   | 
 
 

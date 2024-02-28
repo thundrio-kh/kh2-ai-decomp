@@ -7,6 +7,7 @@ Calculates the inner product of two vectors
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| a   | Axa::FVECTOR4   | A vector
 | b   | Axa::FVECTOR4   | A vector
 
 

@@ -7,6 +7,7 @@ Set the number of CA medals an object has
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Number of medals
 
 

@@ -7,6 +7,7 @@ Finds the parts of obj1 that are colliding with obj2?
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj1   | YS::OBJ_125   | An object
 | obj2   | YS::OBJ_125   | An object
 
 

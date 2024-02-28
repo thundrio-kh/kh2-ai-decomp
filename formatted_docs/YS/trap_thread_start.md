@@ -19,6 +19,9 @@ startThread:
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | pushImm: 0,1
+| code   | label   | Line number for label to execute
+| unk3   | unknown   | pushImm: 0
 | owner   | YS::OBJ_175   | Object that spawns the thread
 
 

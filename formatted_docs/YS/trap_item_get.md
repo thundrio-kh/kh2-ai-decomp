@@ -7,6 +7,7 @@ Give an item to the player
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| item   | int   | value of the item to give
 | part   | int   | unknown
 
 

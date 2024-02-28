@@ -7,6 +7,7 @@ Adds a value to the combo counter
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| amount   | int   | amount to add
 | time   | int   | Time to set to timer associated with counter. Value of 0 or 600 used in game
 
 

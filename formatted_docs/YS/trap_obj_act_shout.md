@@ -7,6 +7,8 @@ Shouts an action after an amount of time
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| act   | YS::ACT_86 *   | An action object
+| unk2   | string   | A label for an action
 | wait   | float   | time to wait before shouting the action
 
 

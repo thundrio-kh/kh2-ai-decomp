@@ -7,6 +7,8 @@ Calculates the intersection point between two vectors
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec1   | kn::FVector *   | A vector
+| vec2   | kn::FVector *   | A vector
 | r   | float   | A rotation value?
 
 

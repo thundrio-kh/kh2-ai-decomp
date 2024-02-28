@@ -7,6 +7,9 @@ Have chicken little target the nearest enemy
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
+| target   | YS::TARGET_18 *   | Target object
+| w   | float   | Width to look for targets
 | h   | float   | Height to look for targets
 
 

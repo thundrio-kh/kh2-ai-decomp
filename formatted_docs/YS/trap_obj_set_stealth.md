@@ -7,6 +7,7 @@ Turns stealth on or off for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | set_stealth   | bool   | If stealth should be set to on (1
 
 

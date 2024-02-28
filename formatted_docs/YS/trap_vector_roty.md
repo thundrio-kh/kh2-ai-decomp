@@ -7,6 +7,7 @@ Rotates a vector along the Y axis
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec   | kn::FVector *   | A vector
 | rad   | float   | Amount to rotate
 
 

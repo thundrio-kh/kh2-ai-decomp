@@ -7,6 +7,7 @@ Attaches a PAX effect to an attack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | An attack object
 | pax   | struct *   | A PAX effect. Exact object type unknown
 
 

@@ -7,6 +7,7 @@ Reset the leave way action
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| path   | Ti::Path_3   | Path object
 | obj   | YS::OBJ_125   | An object
 
 

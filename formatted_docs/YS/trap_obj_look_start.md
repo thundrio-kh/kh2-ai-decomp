@@ -7,6 +7,8 @@ Create a lookat object using an object as a base
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125 *   | An object
+| pos   | kn::FVector   | A position vector
 | time   | float   | time for the lookat to last
 
 

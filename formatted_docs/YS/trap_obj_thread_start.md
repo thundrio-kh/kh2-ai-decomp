@@ -7,6 +7,10 @@ Starts a new VM thread and begins execution at the label
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| oldvm   | YS::VM_377   | A VM object
+| shouldstop   | bool   | If true, stop execution in the oldvm
+| pc   | label   | pushImm: L2119,L3217,L3476,L3506,L3972,L4539,L5303,L5484,L6113
+| args   | BD_VALUE_0 *   | Pointer to all the arguments to send to the thread
 | argc   | int   | Number of arguments
 
 

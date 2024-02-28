@@ -7,6 +7,8 @@ Changes the camera similar to trab_obj_camera_start_gloal, but setting a target 
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::STDOBJ_112 *   | An object
+| label   | string   | A label for a camera routine, usually called '00' or '10' etc
 | target   | YS::OBJ_164 *   | An object, probably for the camera to be focused on
 
 

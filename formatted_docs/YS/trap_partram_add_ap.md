@@ -7,6 +7,7 @@ Gives AP to the player
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| partram   | YS::PARTRAM *   | Partram object
 | amt   | int   | Amount of AP to give to the player
 
 

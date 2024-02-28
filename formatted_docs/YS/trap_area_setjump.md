@@ -7,6 +7,7 @@ Jumps to a new area, without a program. Unclear how this is different from trap_
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| area   | int   | number of the room to jump to
 | fadetype   | int   | fade type to use
 
 

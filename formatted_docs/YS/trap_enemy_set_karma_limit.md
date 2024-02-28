@@ -7,6 +7,7 @@ Sets an enemies karma value (revenge limit) to the specified number.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::BTLOBJ *   | an enemy battle object
 | karma   | float   | value to set for karma. Is 100 normally
 
 

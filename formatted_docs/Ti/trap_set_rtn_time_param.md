@@ -7,6 +7,7 @@ Set the time parameter for an RTN
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| npc   | YS::NPC_0 *   | An npc object
 | time_param   | float   | Time parameter to set
 
 

@@ -7,6 +7,10 @@ Starts an effect associated with an object at the specified position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | ID of effect
+| pos   | kn::FVector *   | A position vector
+| flag   | bool   | value to set flag
 | priority   | int   | Priority value for effect
 
 

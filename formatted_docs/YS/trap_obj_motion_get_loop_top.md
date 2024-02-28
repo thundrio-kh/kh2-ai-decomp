@@ -7,6 +7,7 @@ Returns the position matrix offset value of a motion set entry, this value is ta
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 

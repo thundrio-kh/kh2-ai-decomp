@@ -7,6 +7,7 @@ Perform a signal hook
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| signal   | int   | Signal to hook
 | arg   | int   | Argument to hook signal with
 
 

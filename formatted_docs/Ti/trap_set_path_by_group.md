@@ -7,6 +7,7 @@ Set an path for an object by group ID
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | id   | int   | Group ID
 
 

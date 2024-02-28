@@ -7,6 +7,7 @@ Makes an object jump probably 10 units.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | unk   | unknown   | Unknown what this is used for
 
 

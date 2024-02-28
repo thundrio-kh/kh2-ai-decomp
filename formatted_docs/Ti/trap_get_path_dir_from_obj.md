@@ -7,6 +7,8 @@ Get the direction for a path from an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| path   | Ti::Path_3   | Path object
 | a5   | float   | unknown
 
 

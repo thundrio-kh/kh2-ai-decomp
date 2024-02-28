@@ -7,6 +7,7 @@ Removes a created lookat object in the specified time
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| lookat   | YS::LOOKAT_116 *   | A lookat object
 | time   | float   | Amount of frames before the lookat is ended
 
 

@@ -7,7 +7,7 @@ Chcks if the player is pushing the reaction command button
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
-| unk1   | unknown   | 
+| unk1   | unknown   | unknown
 
 
 #### Return Parameters

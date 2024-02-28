@@ -7,6 +7,8 @@ Gives the player/party an ability.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| partram   | YS::PARTRAM *   | Partram object
+| id   | int   | ID of an ability
 | equip   | bool   | Whether or not to start the ability equipped
 
 

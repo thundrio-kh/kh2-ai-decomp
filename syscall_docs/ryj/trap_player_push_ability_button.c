@@ -13,9 +13,9 @@ documentation level: untested
 ---
 ---
 ---
-push unk1 ; (unknown) 
+push unk1 ; (unknown) (unknown)
 syscall 8, 1 ; trap_player_push_ability_button (1 in, 1 out)
-pop unk ; (unknown) 
+pop unk ; (unknown)
 ---
 ---
 ---

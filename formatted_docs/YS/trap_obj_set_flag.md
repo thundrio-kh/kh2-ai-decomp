@@ -7,6 +7,7 @@ Sets a specific flag on an object to true
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | flagnum   | int   | Flag number
 
 

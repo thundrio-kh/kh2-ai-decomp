@@ -7,6 +7,7 @@ Updates the target of a friend
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | force   | bool   | Whether to force the target update immediately
 
 

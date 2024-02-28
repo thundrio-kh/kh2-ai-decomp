@@ -7,6 +7,7 @@ Checks if an enemy is being attacked by the passed in object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy   | YS::OBJ_125   | An enemy object
 | obj   | YS::OBJ_125   | An object
 
 

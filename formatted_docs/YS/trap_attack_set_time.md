@@ -7,6 +7,9 @@ Sets an amount of time for an attack to go on. Looks like it is a more powerful 
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
+| time   | float   | Amount of time (in seconds?
+| radius   | float   | Radius to set for attack
 | height   | float   | Height to set for attack
 
 

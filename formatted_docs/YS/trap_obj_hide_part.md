@@ -7,6 +7,7 @@ Hides a specific bone/part of an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_130 *   | An object
 | part   | int   | A part number
 
 

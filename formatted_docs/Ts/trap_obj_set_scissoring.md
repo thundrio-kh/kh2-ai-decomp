@@ -7,6 +7,7 @@ Set the scissoring flag for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | value   | bool   | Value to set
 
 

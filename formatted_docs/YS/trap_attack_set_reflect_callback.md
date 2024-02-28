@@ -7,6 +7,8 @@ Attaches a callback to be used when an attack is reflected
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::ATTACK_MAGIC_3 *   | An attack object
+| label   | int   | line number of callback to use
 | unk3   | unknown   | pushFromFSp: 0
 
 

@@ -7,6 +7,7 @@ Set the position of a vacuum
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | pos   | kn::FVector *   | A position vector
 
 

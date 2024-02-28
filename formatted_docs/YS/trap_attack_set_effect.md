@@ -7,6 +7,7 @@ Applies an object effect to an attack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | an attack object
 | effect   | ryj::EFFECT *   | an object effect to apply to an attack
 
 

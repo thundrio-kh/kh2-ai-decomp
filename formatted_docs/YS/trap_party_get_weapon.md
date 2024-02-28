@@ -7,6 +7,7 @@ Return the ID of the weapon the party member has equipped
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| party   | YS::PARTY_63 *   | Party object
 | member_index   | int   | Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html
 
 

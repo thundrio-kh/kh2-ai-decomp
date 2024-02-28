@@ -7,6 +7,7 @@ pushes an action so that it starts next
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| act   | YS::ACT_86 *   | An action object
 | unk2   | string   | A label for an action
 
 

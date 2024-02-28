@@ -7,6 +7,7 @@ Remove the player attacker
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | remove_old   | bool   | Should the old attacker also be removed
 
 

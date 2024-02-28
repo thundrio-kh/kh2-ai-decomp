@@ -7,6 +7,7 @@ Sets an object to go into a landing animation
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | id   | int   | ID of a specific motion set entry
 
 

@@ -7,6 +7,7 @@ Checks if an object can look at a pos
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_128   | An object
 | pos   | kn::FVector   | A position vector
 
 

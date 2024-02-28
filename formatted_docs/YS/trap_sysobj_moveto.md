@@ -7,6 +7,8 @@ Moves an object to a position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| pos   | kn::FVector *   | A position vector
 | speed   | float   | Speed value
 
 

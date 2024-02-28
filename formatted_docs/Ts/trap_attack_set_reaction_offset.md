@@ -7,6 +7,7 @@ Set a position offset for being able to perform a reaction command
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | pos   | kn::FVector *   | A position vector
 
 

@@ -7,6 +7,7 @@ Add to the skateboard count score
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| points   | int   | Number of points to add
 | time   | float   | Time to take (in frames
 
 

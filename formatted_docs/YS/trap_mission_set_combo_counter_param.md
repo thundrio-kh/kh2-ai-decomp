@@ -7,6 +7,9 @@ Set parameters for the combo counter
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| start   | int   | start value for the combo counter
+| max   | int   | max value for the combo counter
+| warning   | int   | value that will be the warning for the combo counter
 | id   | int   | id of a combo counter
 
 

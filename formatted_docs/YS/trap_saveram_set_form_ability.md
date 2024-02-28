@@ -7,6 +7,7 @@ Adds an ability to a specific form of sora (IE lion sora)
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| form_id   | int   | ID of the form to grant the ability to
 | ability_id   | int   | ID of the ability to grant
 
 

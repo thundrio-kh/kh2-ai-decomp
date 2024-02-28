@@ -7,6 +7,7 @@ Sets the distance that the fog becomes fully opaque
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| light_object   | YS::LIGHT_0 *   | a light object
 | distance   | int   | far distance for the fog, only value of 1000 is used in game scripts
 
 

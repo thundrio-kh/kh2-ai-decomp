@@ -7,7 +7,9 @@
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
-| ability_id   | int   | ID of the ability to grant
+| part   | int   | ID of the character to give the weapon to?
+| right   | int   | Right hand weapon ID
+| left   | int   | Left hand weapon ID, 0 for none
 
 
 

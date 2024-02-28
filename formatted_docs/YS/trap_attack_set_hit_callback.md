@@ -7,6 +7,8 @@ Adds a callback function to an attack that will run on hit
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | An attack object
+| callback   | label   | label of the callback function to the attack that will run
 | unk   | unknown   | unknown
 
 

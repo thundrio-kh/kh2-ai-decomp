@@ -7,6 +7,8 @@ Adds two vectors of floats together, Third parameter has an unknown purpose
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec1   | kn::FVector *   | A vector
+| vec2   | kn::FVector *   | A vector
 | unk   | float   | unk
 
 

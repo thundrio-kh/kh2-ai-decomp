@@ -7,6 +7,7 @@ Sets a hitmark pos
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pos   | Vector *   | Position vector
 | dir   | Vector *   | Direction vector
 
 

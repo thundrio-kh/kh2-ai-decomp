@@ -7,6 +7,10 @@ Starts and binds a PAX effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pax   | ryj::PAX_161 *   | A PAX effect object
+| id   | int   | ID of the animation to start
+| obj   | YS::OBJ_125   | Object to bind to
+| flag   | int   | Flag to set, possibly a boolean as 0 and 1 are only values used in game
 | priority   | int   | Priority for the animation
 
 

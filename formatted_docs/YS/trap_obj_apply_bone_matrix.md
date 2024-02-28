@@ -7,6 +7,8 @@ Applies a matrix to a bone
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125 *   | Representation of an obj/mdlx
+| bone   | int   | Bone number
 | matrix   | A matrix to apply to the bone   | 
 
 

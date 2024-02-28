@@ -7,6 +7,8 @@ Vacuums up a number of medals from one object to the target
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::BTLOBJ *   | A battle object
+| target   | YS::BTLOBJ *   | A battle object
 | num   | int   | number of prizes
 
 

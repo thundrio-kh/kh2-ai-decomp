@@ -7,6 +7,7 @@ Duplicates a magic attack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | attack magic object to be duplicated
 | param_id   | unknown   | pushImm: 1165,1181,249,502
 
 

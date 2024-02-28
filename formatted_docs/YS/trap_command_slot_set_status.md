@@ -7,6 +7,7 @@ Sets the status for a command slot
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| slot   | int   | slot to set
 | status   | int   | the status to set
 
 

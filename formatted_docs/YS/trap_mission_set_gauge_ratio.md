@@ -7,6 +7,7 @@ Sets a filled in ratio for the specified gauge
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| ratio   | float   | proportion of gauge that should be filled
 | id   | int   | id of a gauge
 
 

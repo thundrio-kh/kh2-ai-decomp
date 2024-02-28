@@ -7,6 +7,7 @@ Set the direction an object is facing
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | dir   | kn::FVector *   | A direction vector
 
 

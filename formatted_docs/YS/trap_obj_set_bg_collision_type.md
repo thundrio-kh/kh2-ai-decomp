@@ -7,6 +7,7 @@ Sets how an object will collide with the map
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | coll_type   | int   | Collision type. Only a value of 2 is used in game
 
 

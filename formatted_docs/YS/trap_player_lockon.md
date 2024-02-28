@@ -7,6 +7,8 @@ Locks the player onto an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| player   | YS::PLAYER_44 *   | Player object
+| mode   | int   | lock on mode
 | target   | YS::OBJ_168 *   | Target object
 
 

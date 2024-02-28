@@ -7,6 +7,7 @@ Reset a specific flag on an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | id   | int   | ID of a flag
 
 

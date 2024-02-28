@@ -7,6 +7,7 @@ Adds to a on screen counter
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| value   | int   | value to add
 | counter_id   | int   | id of counter
 
 

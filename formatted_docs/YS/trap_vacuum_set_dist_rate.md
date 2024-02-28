@@ -7,6 +7,7 @@ Set the distance rate for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | rate   | float   | Rate amount, from 0 to 1
 
 

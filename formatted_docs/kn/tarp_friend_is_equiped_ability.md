@@ -7,6 +7,7 @@ Returns if a party member has an equipped ability. "tarp" typo comes directly fr
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | id   | int   | Ability ID
 
 

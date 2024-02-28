@@ -7,6 +7,8 @@ Moves to a random space within the given radius
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_133   | An object
+| radius   | float   | Radius value
 | is_air   | bool   | Is the space to move in the air
 
 

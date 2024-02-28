@@ -14,8 +14,6 @@ documentation level: untested
 ---
 ---
 push bghit ; (YS::BGHIT_0 *)  (A BGHIT object)
-push from ; (unknown)  (pushFromPSp: 112,128,16,224,32,...) (pushFromFSp: 12) (pushFromPSpVal: 0,32,80) (add: ) (memcpyToSp: 16, 288)
-push unk3 ; (unknown)  (pushFromPSp: 112,16,208,288,32,...) (pushFromFSp: 4,8) (pushFromPSpVal: 32,80,96)
 push from ; (kn::FVector *)  (A position vector specifying the from point)
 push to ; (kn::FVector *)  (A position vector specifying the to point)
 push type ; (int)  (Type of hit to check)

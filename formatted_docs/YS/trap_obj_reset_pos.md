@@ -7,6 +7,7 @@ Resets the position of an object, either to 0,0,0 or to the vector passed in
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 

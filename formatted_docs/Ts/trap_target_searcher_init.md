@@ -7,6 +7,7 @@
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
 | num   | int   | Number of targets the target searcher is allowed to have
 
 

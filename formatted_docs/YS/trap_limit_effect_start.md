@@ -7,6 +7,8 @@ Starts a limit effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit_obj   | YS::LIMIT_1 *   | A limit object
+| id   | int   | id of the effect to start
 | flag   | int   | set the flag to 0 or 1
 
 

@@ -7,6 +7,7 @@ Returns if the object has the specified ability equipped
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125 *   | An object
 | ability_id   | int   | ID of an ability
 
 

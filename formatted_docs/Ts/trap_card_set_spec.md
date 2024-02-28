@@ -7,6 +7,12 @@ Set the parameters of card actions based on a number of parameters
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | float   | Values of 2,4 used in game AI
+| unk2   | float   | Values of 6,8 used in game AI
+| unk3   | float   | Values of 0.069813 used in game AI
+| unk4   | float   | Values of 0.95 used in game AI
+| unk5   | float   | Values of 0.03 used in game AI
+| unk6   | float   | Values of 50 used in game AI
 | unk7   | float   | Values of 3 used in game AI
 
 

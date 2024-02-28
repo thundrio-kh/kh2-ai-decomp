@@ -7,6 +7,9 @@ Creates a new attack object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| btlobj   | YS::BTLOBJ *   | The owner of the attack
+| paramid   | int   | The param id for the attack, usually referencing the hitbox to use
+| combogroup   | int   | The combo group for the attack to be a part of. Pass -1 if not part of a combo group
 | level   | int   | The level of the attack
 
 

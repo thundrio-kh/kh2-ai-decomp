@@ -7,6 +7,8 @@ Set the radius of Flare Force
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| flare   | Ts::FLARE_0 *   | Flare Force object
+| radius   | float   | Radius value to set
 | height   | float   | Height value to set
 
 

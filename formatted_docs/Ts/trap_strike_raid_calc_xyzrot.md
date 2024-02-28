@@ -7,6 +7,7 @@ Calculate an xyzrot value for strike raid
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | pushFromPSp: 48,80
 | unk2   | unknown   | pushFromPSp: 16,32,48,64
 
 

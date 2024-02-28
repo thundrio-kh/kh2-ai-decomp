@@ -7,6 +7,7 @@ sets a gauge to a specified value
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| value   | float   | value to set the gauge to
 | id   | int   | id of a gauge
 
 

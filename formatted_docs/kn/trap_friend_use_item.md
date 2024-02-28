@@ -7,6 +7,9 @@ Have a friend use an item
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
+| kind   | int   | ID of item to use
+| target   | YS::OBJ_28   | An object
 | num   | int   | How many of the item to use? 0 is the only value used by game scripts
 
 

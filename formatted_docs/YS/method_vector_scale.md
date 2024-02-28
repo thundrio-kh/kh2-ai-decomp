@@ -7,6 +7,7 @@ Scales the given vector by an amount, putting the result in the first argument
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vector   | vector * or float    | Either a vector of numbers, or a single float
 | amount   | float   | The amount to scale the first argument by
 
 

@@ -7,6 +7,7 @@ Checks if the effect still exists
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | effect   | yj::EFFECT_55   | An effect object
 
 

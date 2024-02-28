@@ -7,6 +7,7 @@ Sets the object to a team (IE player, enemy, or npc)
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | team   | int   | team to set
 
 

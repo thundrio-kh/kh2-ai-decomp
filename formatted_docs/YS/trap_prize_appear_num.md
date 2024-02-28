@@ -7,6 +7,8 @@ Makes a number of prizes appear at a position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pos   | kn::FVector *   | A position vector
+| type   | int   | Prize type
 | num   | int   | number of prizes
 
 

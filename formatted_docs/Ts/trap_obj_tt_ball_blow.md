@@ -7,6 +7,9 @@ Make the twilight town minigame ball perform a blow
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| vec   | kn::FVector   | A vector
+| unk1   | unknown   | Unknown
 | unk2   | unknown   | UNknown
 
 

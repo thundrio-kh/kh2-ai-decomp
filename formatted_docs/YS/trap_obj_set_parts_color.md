@@ -7,6 +7,9 @@ Set a part of an object to a color
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| partnum   | int   | Part number
+| color   | int   | Color value to set, should be RGBA values all in one int
 | time   | unknown   | Time to take to blend to this color
 
 

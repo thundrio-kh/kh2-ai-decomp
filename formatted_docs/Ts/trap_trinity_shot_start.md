@@ -7,6 +7,9 @@ Start a trinity limit shot
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| caster   | YS::OBJ_125   | An object
+| target   | YS::TARGET_108 *   | A target object
+| pos   | kn::FVector *   | A position vector
 | dir   | kn::FVector *   | A direction vector
 
 

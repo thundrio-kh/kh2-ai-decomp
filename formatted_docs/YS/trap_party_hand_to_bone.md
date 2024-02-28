@@ -7,6 +7,7 @@ Return the bone ID of the hand of the party member
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| party   | YS::PARTY_63 *   | Party object
 | hand   | int   | Hand to check
 
 

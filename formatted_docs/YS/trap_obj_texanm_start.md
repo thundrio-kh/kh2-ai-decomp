@@ -7,6 +7,7 @@ Starts a specific animation
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | id   | int   | ID of the animation
 
 

@@ -7,6 +7,7 @@ Get the distance to a target from the position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
 | pos   | kn::FVector *   | A position vector
 
 

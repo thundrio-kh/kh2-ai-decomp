@@ -7,6 +7,7 @@ Set the weapon for a specific form
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| form_id   | int   | ID of the form to grant the ability to
 | weapon_id   | int   | ID of the weapon to set
 
 

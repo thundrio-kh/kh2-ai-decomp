@@ -17,6 +17,8 @@ Set resistances for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
+| element   | int   | Type of element to set resistance for, reference table in description
 | percent   | int   | Percentage damage taken
 
 

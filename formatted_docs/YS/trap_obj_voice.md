@@ -15,6 +15,8 @@ Plays a voice clip belonging to an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | ID of voice clip to play
 | priority   | int   | Priority for playing the voice clip
 
 

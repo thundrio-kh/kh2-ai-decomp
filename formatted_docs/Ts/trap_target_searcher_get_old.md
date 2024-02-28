@@ -7,6 +7,8 @@ Return the nth oldest target in the searcher
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
+| target   | YS::TARGET_108 *   | A target object
 | n   | int   | An index value for the list of targets
 
 

@@ -7,6 +7,7 @@ Something to do with enabling/disabling team member limits
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| limit_obj   | YS::LIMIT_1 *   | A limit object
 | flag   | int   | values are 0 and 1, probably a bool
 
 

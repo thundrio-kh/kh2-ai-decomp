@@ -7,6 +7,7 @@ Checks if object can see target object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_128   | An object
 | target_obj   | YS::OBJ_128   | A target object
 
 

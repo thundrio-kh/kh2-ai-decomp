@@ -7,6 +7,9 @@ Set parameters for the specified counter
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| start   | int   | start value of the counter
+| max   | int   | max value of the counter
+| warning   | int   | warning amount for the counter
 | id   | int   | id of a counter
 
 

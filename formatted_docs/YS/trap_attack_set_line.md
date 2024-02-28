@@ -7,6 +7,8 @@ Sets a line for an attack that needs a line set
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC *   | An attack object
+| p1   | kn::FVector *   | The position of one end of the line to be set 
 | p2   | kn::FVector *   | The position of the other end of the line to be set
 
 

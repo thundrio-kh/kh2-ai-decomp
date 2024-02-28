@@ -7,6 +7,7 @@ Creates an active path from one object to another
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | target_obj   | YS::OBJ_125   | An target object to path to
 
 

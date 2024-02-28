@@ -7,6 +7,10 @@ Overrides the command for all of the slots on the command cage with priority 100
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| command   | int   | Line number to command
+| command2   | int   | Optional line number to command
+| command3   | int   | Optional line number to command
+| command4   | int   | Optional line number to command
 | unk5   | unknown   | unknown, possibly battle object?
 
 

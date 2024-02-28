@@ -7,6 +7,7 @@ Return an object with a specific part number
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
 | partnum   | int   | A part number
 
 

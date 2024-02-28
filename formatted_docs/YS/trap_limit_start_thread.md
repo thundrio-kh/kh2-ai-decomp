@@ -7,6 +7,7 @@ Limit version of starting a separate thread
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| label   | int   | line number/label for the new thread to start executing at
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 

@@ -7,6 +7,9 @@ Check if a step is interesecting with a given line?
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_133   | An object
+| dir   | kn::FVector   | A direction vector
+| len   | float   | Length of the step?
 | jump_height   | float   | How high the step goes
 
 

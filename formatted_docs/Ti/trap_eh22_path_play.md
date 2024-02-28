@@ -7,6 +7,8 @@ Play the specified path in the Dragon Xemnas fight
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| path_num   | int   | Number ID of the path to play
 | dir   | bool   | Boolean that indicates directon
 
 

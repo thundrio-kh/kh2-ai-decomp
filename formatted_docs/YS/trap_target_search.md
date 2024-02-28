@@ -7,6 +7,8 @@ Searches for a target of a given type
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
+| obj   | YS::OBJ_125   | An object
 | type   | int   | Target type
 
 

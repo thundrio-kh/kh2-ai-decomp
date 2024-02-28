@@ -7,6 +7,10 @@ Gets a random open position in the air
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| center   | kn::FVector *   | center value to use
+| near   | float   | how near to the center to look
+| far   | float   | how far from the center to look
+| low   | float   | how low from the center to look
 | high   | float   | how high from the center to look
 
 

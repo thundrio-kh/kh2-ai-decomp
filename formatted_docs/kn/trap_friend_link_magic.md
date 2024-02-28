@@ -7,6 +7,8 @@ Links magic to a friend
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
+| magic   | YS::MAGIC_7 *   | A magic object
 | buffer   | data   | Uninitialized data
 
 

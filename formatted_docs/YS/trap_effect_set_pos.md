@@ -7,6 +7,7 @@ Sets the position of an effect to pos
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | an effect object
 | pos   | kn::FVector *   | a position vector
 
 

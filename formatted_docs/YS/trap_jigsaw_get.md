@@ -7,6 +7,7 @@ Gives a jigsaw piece
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| picture   | int   | puzzle that the piece is a part of
 | piece   | int   | number piece in the puzzle
 
 

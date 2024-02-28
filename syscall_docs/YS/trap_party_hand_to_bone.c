@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push party (YS::PARTY_63 *) (Party object)
+push party ; (YS::PARTY_63 *) (Party object)
 push hand ; (int)  (Hand to check)
 syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
 pop bone_id ; (int) 

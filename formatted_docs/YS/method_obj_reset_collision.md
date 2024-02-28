@@ -7,6 +7,7 @@ Resets the objects collision to its default state
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ *   | Object who should have its collision disabled
 | group   | int   | Probably which part of the collision to turn off. Range of values used between 0 and 30
 
 

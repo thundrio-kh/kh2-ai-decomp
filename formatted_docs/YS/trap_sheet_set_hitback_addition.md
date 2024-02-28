@@ -7,6 +7,7 @@ Set the hitback addition value for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
 | hitback_addition   | float   | The new hitback addition value
 
 

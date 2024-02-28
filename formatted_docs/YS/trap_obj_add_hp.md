@@ -7,6 +7,9 @@ Adds an amount of HP to an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj_sheet   | YS::OBJ_103   | Object to add HP to
+| amount   | int   | Amount of HP to add
+| unk   | int   | Value used in game scripts is 0, 1, or 2
 | unk1   | int   | Value used in game scripts is always 0
 
 

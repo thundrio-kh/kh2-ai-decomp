@@ -7,6 +7,7 @@ Makes a number of Hostile Program orbs appear at a position
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pos   | kn::FVector *   | A position vector
 | num   | int   | number of prizes
 
 

@@ -7,6 +7,8 @@ Requests the object to move in a direction
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| dir   | kn::FVector   | A direction vector
 | speed   | float   | Speed to travel
 
 

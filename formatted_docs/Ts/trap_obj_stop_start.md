@@ -7,6 +7,7 @@ Either start the stop action or stop the start action
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| id   | int   | unknown
 | mask   | int   | unknown
 
 

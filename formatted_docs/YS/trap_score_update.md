@@ -7,6 +7,8 @@ Updates a score object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| score_object   | YS::SCORE *   | A score object
+| type   | int   | Type of score
 | score   | int   | Value of new score
 
 

@@ -7,6 +7,7 @@ Set the target of an object to be before the player
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | priority   | int   | Priority of the target
 
 

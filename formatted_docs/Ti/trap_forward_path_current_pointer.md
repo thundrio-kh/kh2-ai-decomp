@@ -7,6 +7,7 @@ Go forward on the current path a distance
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| path   | Ti::Path_3   | Path object
 | dist   | float   | Distance to move forward
 
 

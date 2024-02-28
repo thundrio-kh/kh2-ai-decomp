@@ -7,6 +7,7 @@ sets a sound effect for when the specified widget gets to a warning state
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| num   | int   | number indicating a sound effect
 | id   | int   | id of a widget (gauge, timer, counter, etc
 
 

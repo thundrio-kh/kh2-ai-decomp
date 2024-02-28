@@ -7,6 +7,7 @@ Push the action of a child object to the action table
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| act   | YS::ACT_86 *   | An action object
 | act   | label   | Label of action to push
 
 

@@ -7,6 +7,10 @@ Starts an effect associated with an object and binds it to another object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | ID of effect
+| flag   | bool   | value to set flag
+| priority   | int   | Priority value for effect
 | other_object   | YS::OBJ_125   | Other object for the effect to be binded to
 
 

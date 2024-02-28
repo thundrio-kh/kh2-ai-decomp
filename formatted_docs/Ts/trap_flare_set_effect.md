@@ -7,6 +7,7 @@ Set a Flare Force effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| flare   | Ts::FLARE_0 *   | Flare Force object
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 

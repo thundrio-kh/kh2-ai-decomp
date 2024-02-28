@@ -7,6 +7,9 @@ Set the parameters of dice actions based on a number of parameters
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | float   | Value of 0 used in game AI
+| unk2   | float   | Value of 0.087266 used in game AI
+| unk3   | float   | Value of 40 used in game AI
 | unk4   | float   | Value of 3.5 used in game AI
 
 

@@ -7,6 +7,10 @@ Attaches a reaction command to an attack for the player to use
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
+| receiver   | int   | value representing the object being attacked?
+| command   | int   | value of reaction command to use, based on the CMD table in 03system
+| radius   | int   | value to use for the radius for the reaction command activation zone
 | height   | int   | value to use for the height for the reaction command activation zone
 
 

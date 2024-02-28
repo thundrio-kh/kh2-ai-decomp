@@ -7,6 +7,9 @@ Sets an object to a random in bounds position (if the random location found is o
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| pos   | kn::FVector    | Base position to randomize from
+| range   | float   | Determines radius of random positions to choose from
 | height   | float   | Determines height of random positions to choose from
 
 

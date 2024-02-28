@@ -7,6 +7,7 @@ Sets the skateboard mode
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | mode   | int   | Skateboard mode, values of 0 and 1 are used in game
 
 

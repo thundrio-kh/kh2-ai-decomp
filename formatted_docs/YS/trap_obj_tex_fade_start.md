@@ -7,6 +7,9 @@ Starts a texture fade
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| fade   | YS::FADE *   | pushFromFSp: 0
+| from   | float   | Unknown, values of 0 or 1 used in game
+| to   | float   | Unknown, values of 0 or 1 used in game
 | time   | float   | Number of frames for the fade
 
 

@@ -7,6 +7,9 @@ Starts an effect associated with an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | ID of effect
+| flag   | bool   | value to set flag
 | priority   | int   | Priority value for effect
 
 

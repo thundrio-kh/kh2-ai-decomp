@@ -7,6 +7,7 @@ Sets the type of an effect.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | An effect object
 | effect_type   | int   | type of the effect
 
 

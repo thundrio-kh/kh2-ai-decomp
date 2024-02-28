@@ -7,6 +7,8 @@ Push a skateboard trick animation to the action stack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| motion_id   | int   | ID of a animation to play
 | blend_time   | float   | Time to blend animations
 
 

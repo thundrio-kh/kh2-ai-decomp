@@ -7,6 +7,7 @@ Searches for an existing object with the given serial number (a value set in a s
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
 | serial   | int   | Serial number to search
 
 

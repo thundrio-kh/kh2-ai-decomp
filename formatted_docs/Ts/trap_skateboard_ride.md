@@ -7,6 +7,7 @@ Attach an object to a board
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | board   | YS::OBJ_125   | An board object
 
 

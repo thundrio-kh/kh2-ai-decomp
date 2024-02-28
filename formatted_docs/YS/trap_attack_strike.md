@@ -7,6 +7,9 @@ Sets up an attack to strike a specific part of an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| owner   | YS::ATTACK_10   | An attack object
+| target   | YS::BTLOBJ *   | object of the attack target
+| hitpart   | int   | Which part to hit
 | parts   | int   | Perhaps the number of parts
 
 

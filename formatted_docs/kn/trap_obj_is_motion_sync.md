@@ -7,6 +7,7 @@ Checks if the motion of an object is synced with the child object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | child   | YS::OBJ_125   | An object
 
 

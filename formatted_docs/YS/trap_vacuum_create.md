@@ -7,6 +7,7 @@ Create a vacuum object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| result   | int   | Unknown
 | a2   | float   | Unknown
 
 

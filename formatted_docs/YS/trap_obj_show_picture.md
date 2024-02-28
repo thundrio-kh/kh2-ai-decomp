@@ -7,6 +7,7 @@ Show a numbered picture associated with an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Number picture
 
 

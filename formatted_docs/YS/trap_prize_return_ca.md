@@ -7,6 +7,8 @@ Moves a number of medals from the player to the target battle object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| player   | YS::PLAYER_44 *   | Player object
+| btlobj   | YS::BTLOBJ *   | A battle object
 | num   | int   | number of prizes
 
 

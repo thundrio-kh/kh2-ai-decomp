@@ -7,6 +7,7 @@ Sets an object to use its MP
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | mp   | float   | Value to set MP to
 
 

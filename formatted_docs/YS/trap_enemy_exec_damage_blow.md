@@ -7,6 +7,11 @@ executes blow damage against an enemy.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| enemy_obj   | YS::BTLOBJ *   | a battle object
+| damage   | YS::DAMAGE_4 *   | a damage object
+| motion_front   | int   | animation slot to use for front motion
+| motion_back   | int   | animation slot to use for back motion
+| up   | float   | amount to blow up
 | speed   | float   | speed to blow
 
 

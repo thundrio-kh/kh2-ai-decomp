@@ -7,6 +7,7 @@ Sets the time for a texture fade
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| fade   | YS::FADE *   | A fade object
 | fromto   | float   | Unknown, but used as both the from and to arguments
 
 

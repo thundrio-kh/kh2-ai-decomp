@@ -7,6 +7,8 @@ Set the position of a picture for a layout object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| layout   | dk::Layout *   | A layout object
+| x   | float   | X coordinate
 | y   | float   | Y coordinate
 
 

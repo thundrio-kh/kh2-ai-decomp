@@ -7,6 +7,9 @@ Overrides the specified slot on the command cage with priority 100, and returns 
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| slot   | int   | slot on the command cage to override, value must be within 0-7
+| command   | int   | command to override
+| unk   | unknown   | unknown
 | num   | int   | unknown
 
 

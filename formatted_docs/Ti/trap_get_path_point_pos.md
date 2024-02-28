@@ -7,6 +7,7 @@ Get the position of a point on a path.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| path   | Ti::Path_3   | Path object
 | point_index   | label   | ID of a call label
 
 

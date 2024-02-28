@@ -7,6 +7,7 @@ Set the RTN option flag
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| npc   | YS::NPC_0 *   | An npc object
 | flag_num   | int   | Flag number to turn on
 
 

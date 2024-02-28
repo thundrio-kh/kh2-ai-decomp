@@ -7,6 +7,9 @@ Checks if the cross vector hits the line drawn between from and to. Unknown what
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| from   | kn::FVector *   | pushFromPSp: 32,48
+| to   | kn::FVector *   | pushFromPSp: 16,32,48
+| cross   | kn::FVector *   | pushFromPSp: 16
 | type   | int   | Also passed as 'collbcharacter'. Used values are either 1 or 4
 
 

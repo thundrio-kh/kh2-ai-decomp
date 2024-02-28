@@ -7,6 +7,8 @@ Signal an object to reserve an minimum HP value
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| signal   | int   | Signal to call
 | arg   | int   | Argument to call signal with
 
 

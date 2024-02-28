@@ -7,6 +7,7 @@ Opens a scrolling text window in the top left of the screen
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| message_id   | int   | id of a message, looked up in the associated msg file
 | priority   | int   | only a value of 0 is used in the game
 
 

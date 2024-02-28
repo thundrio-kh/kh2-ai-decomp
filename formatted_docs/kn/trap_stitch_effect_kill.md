@@ -7,6 +7,7 @@ Kill a stitch effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | index   | int   | Index of effect to kill
 
 

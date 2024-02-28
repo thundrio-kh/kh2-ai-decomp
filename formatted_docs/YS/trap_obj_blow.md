@@ -7,6 +7,7 @@ Performs a blow in the direction specified by the vector
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | pushFromFSp: 0
 | dir_v   | kn::FVector   | Direction vector?
 
 

@@ -7,6 +7,7 @@ Unbinds the effect from the object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | effect   | ryj::EFFECT_310   | An effect object
 
 

@@ -7,6 +7,7 @@ Set the prize range value for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
 | range   | float   | Range value to set
 
 

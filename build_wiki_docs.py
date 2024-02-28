@@ -65,7 +65,10 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += ' ({})'.format(category)
         page += '\n\n'
         page += "`"
-        page += re.findall(r'(syscall.*)\b', arguments)[0] + ')'
+        syscall_line = re.findall(r'(syscall.*)\b', arguments)[0]
+        page += syscall_line + ')'
+        n_in_params = int(re.findall(r'syscall.*\((.*)?in', syscall_line)[0].strip())
+        n_out_params = int(re.findall(r'syscall.* in,(.*)?out', syscall_line)[0].strip())
         page += "`"
         page += '\n\n'
         page += description
@@ -74,7 +77,11 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += '| Name | Type | Description\n'
         page += '|------|------|------------\n'
         # push pos ; (kn::FVector *)  (A position vector)
-        for arg in re.findall(r'(.*)\nsyscall.*\b', arguments):
+        input_args = [a for a in arguments.split("\n") if a.startswith("push")]
+        if not int(n_in_params) == len(input_args):
+            raise ValueError("Number of input arguments does not match")
+        # IMMEDIATE TODO have logic to validate n arguments
+        for arg in input_args:
             parens = re.findall(r'.*?\((.*?)\)',arg)
             arg_name = re.findall(r'push (.*) ;', arg)[0]
             arg_type = parens[0]
@@ -82,12 +89,14 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             arg_description = parens[1] if len(parens) > 1 else ''
             page += '| {}   | {}   | {}\n'.format(arg_name, arg_type, arg_description)
         page += '\n\n'
-        output_args = re.findall(r'syscall.*\n(.*)', arguments)
+        output_args = [a for a in arguments.split("\n") if a.startswith("pop")]
+        if not int(n_out_params) == len(output_args):
+            raise ValueError("Number of output arguments does not match")
         if output_args:
             page += '#### Return Parameters\n'
             page += '| Name | Type\n'
             page += '|------|-----\n'
-            for arg in re.findall(r'syscall.*\n(.*)', arguments):
+            for arg in output_args:
                 parens = re.findall(r'.*?\((.*?)\)',arg)
                 arg_name = re.findall(r'pop (.*) ;', arg)[0]
                 arg_type = parens[0]

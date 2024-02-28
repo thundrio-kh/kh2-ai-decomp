@@ -7,6 +7,9 @@ Set the speed of a vacuum
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
+| unk2   | float   | Unknown
+| unk3   | float   | Unknown
 | unk4   | float   | Unknown
 
 

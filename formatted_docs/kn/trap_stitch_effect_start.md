@@ -7,6 +7,13 @@ Start a stitch effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
+| id   | int   | ID of effect to start
+| obj   | YS::OBJ_125   | An object
+| bone   | int   | Bone ID
+| motion   | int   | Motion set ID. -1 is used in game AI
+| use_bone_rotation   | bool   | Should bone rotation be used
+| flag   | int   | Flag argument for effect
 | priority   | int   | Priority of effectt
 
 

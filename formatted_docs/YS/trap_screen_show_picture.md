@@ -7,6 +7,7 @@ Shows a picture on the screen
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| datafile   | string   | filename?
 | number   | int   | ID of picture to show
 
 

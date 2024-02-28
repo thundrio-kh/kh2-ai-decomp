@@ -7,6 +7,7 @@ Return the max HP of an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| sheet   | YS::SHEET_44 *   | An object stat sheet
 | index   | int   | HP index to use
 
 

@@ -7,6 +7,7 @@ Captures a command
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | type   | int   | type of command
 
 

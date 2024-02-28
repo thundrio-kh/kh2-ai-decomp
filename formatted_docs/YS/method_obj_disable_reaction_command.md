@@ -7,6 +7,8 @@ Disables a reaction command from being activated by the player. Unused in the va
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ *   | Object with a reaction command flag
+| command   | int   | The command to be disabled
 | group   | int   | Unknown
 
 

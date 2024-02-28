@@ -7,6 +7,7 @@ Activate a party attack
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target   | YS::TARGET_108 *   | A target object
 | id   | int   | id of the attack to activate
 
 

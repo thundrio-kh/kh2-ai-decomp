@@ -7,6 +7,7 @@ Sets the effects direction to be pointing to dir
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | an effect object
 | dir   | kn::FVector *   | a vector object representing a position/direction
 
 

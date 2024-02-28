@@ -7,6 +7,8 @@ Gets the position of the nearest ground
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pos   | current position to use when calculated nearest ground   | 
+| result   | kn::FVector *   | vector that the result will be stored in
 | height   | float   | Value to add to the result of the nearest ground
 
 

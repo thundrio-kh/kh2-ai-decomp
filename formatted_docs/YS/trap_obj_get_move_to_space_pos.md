@@ -7,6 +7,8 @@ Return a position within a space that the object can move to
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_133 *   | An object
+| radius   | float   | Radius to look for the move
 | is_air   | bool   | should the position be in the air
 
 

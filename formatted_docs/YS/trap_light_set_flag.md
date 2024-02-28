@@ -7,6 +7,7 @@ flag to set.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| light_object   | YS::LIGHT_0 *   | a light object
 | flag_number   | int   | which flag to set, only a value of 1 is used in game
 
 

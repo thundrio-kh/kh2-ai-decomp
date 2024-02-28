@@ -7,6 +7,7 @@ Looks up an object by objentry ID and puts the object in the data object. If thi
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| data   | memory   | variable/stack location where the object will be stored
 | entry_id   | int   | ID of the object to look up
 
 

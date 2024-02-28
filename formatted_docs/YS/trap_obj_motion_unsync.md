@@ -7,6 +7,7 @@ Unsyncs two motion sets
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| parent   | YS::MOTION_289   | A motion set
 | child   | YS::MOTION_289   | A motion set
 
 

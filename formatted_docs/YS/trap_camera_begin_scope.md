@@ -7,6 +7,7 @@ Switch the camera mode to the inverse scope used in the Xigbar fight.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_8 *   | Object to center the camera on
 | heightOffset   | int   | height offset for the camera, value of 200 is used by Xigbar
 
 

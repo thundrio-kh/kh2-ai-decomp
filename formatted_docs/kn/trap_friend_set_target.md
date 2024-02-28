@@ -7,6 +7,8 @@ Set the target for a friend
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
+| unk2   | unknown   | Unknown
 | unk3   | unknown   | Unknown
 
 

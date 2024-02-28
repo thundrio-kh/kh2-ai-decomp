@@ -7,6 +7,12 @@ Make the camera shake according to a lot of parameters
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | float   | Values of 10,240,30,60,90 used in game AI
+| unk2   | float   | Values of 10,2,4,6,8 used in game AI
+| unk3   | float   | Values of 10,12,3,4 used in game AI
+| unk4   | float   | Values of 10,2,4,6 used in game AI
+| unk5   | float   | Values of 10,12,16,3,30,6,8 used in game AI
+| unk6   | float   | Values of -0.03,-0.05,-0.066667,-0.1,-0.111111,0 used in game AI
 | unk7   | float   | Values of -0.05,-0.1,-0.133333,-0.2,-0.3,-0.5,2 used in game AI
 
 

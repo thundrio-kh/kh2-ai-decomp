@@ -17,6 +17,7 @@ push obj ; (YS::OBJ_126)  (An object)
 push parent ; (unknown)  (Unknown)
 push bone ; (unknown)  (Unknown)
 push label ; (int)  (Line number, a callback?)
+push unk5 ; (unknown)  (Unknown)
 push unk6 ; (unknown)  (Unknown)
 syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
 ---

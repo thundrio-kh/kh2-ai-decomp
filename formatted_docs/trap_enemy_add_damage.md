@@ -7,6 +7,7 @@ Unknown
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | probably an enemy object
 | unk2   | unknown   | probably an amount of damage
 
 

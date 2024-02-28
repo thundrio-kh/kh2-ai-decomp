@@ -7,6 +7,7 @@ Set the counter to a specific value.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| counter   | int   | Value to set the counter to
 | id   | int   | id of a counter
 
 

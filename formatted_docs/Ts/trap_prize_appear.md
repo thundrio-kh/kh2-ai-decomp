@@ -7,6 +7,7 @@ Make a prize appear
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| pos   | kn::FVector *   | A position vector
 | prize_id   | int   | ID of the prize to appear
 
 

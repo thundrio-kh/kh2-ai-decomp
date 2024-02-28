@@ -7,6 +7,7 @@ Sets the player to be executing a reaction command
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| player   | YS::PLAYER_44 *   | Player object
 | command   | int   | Reaction command ID
 
 

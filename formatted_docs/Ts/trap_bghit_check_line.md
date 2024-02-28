@@ -7,6 +7,9 @@ Collision check along a line
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| bghit   | YS::BGHIT_0 *   | A BGHIT object
+| from   | kn::FVector *   | A position vector specifying the from point
+| to   | kn::FVector *   | A position vector specifying the to point
 | type   | int   | Type of hit to check
 
 

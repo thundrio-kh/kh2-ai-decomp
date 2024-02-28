@@ -7,6 +7,7 @@ Have chicken little set the destination to shoot
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | target_pos   | kn::FVector *   | pushFromPSp: 16
 
 

@@ -7,6 +7,8 @@ Have the skateboard perform an edge jump
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| v   | kn::FVector   | A velocity vector
 | motion_id   | int   | Animation id to play
 
 

@@ -7,6 +7,9 @@ Stop the object from doing anything else due to an RC
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| id   | int   | unknown
+| time   | float   | Time that object should remain stopped
 | force   | bool   | If the stop should be forced?
 
 

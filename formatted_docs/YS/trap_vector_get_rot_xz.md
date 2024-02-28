@@ -7,6 +7,7 @@ Calculates the rotation of a vector in the XZ plane
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec   | kn::FVector *   | A vector
 | flt   | float   | An offset amount?
 
 

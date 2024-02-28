@@ -7,6 +7,8 @@ Rotates a vector along an axis by a given angle
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec   | kn::FVector *   | A vector
+| axis   | kn::FVector *   | A vector defining the axis to rotate on
 | rad   | float   | Amount to rotate
 
 

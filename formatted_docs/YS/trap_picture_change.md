@@ -7,6 +7,7 @@ Change a picture attached to a layout
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| layout   | Tz::Layout_36 *   | A layout object
 | num   | int   | Number to change picture to
 
 

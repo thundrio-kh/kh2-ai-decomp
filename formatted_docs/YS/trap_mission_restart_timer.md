@@ -7,6 +7,7 @@ Restarts a paused timer. if time parameter is < 1, timer counts up instead of do
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| time   | int   | Value the timer should be set to?
 | timer_id   | int   | id of a timer
 
 

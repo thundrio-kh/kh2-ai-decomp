@@ -7,6 +7,11 @@ Attaches a bone between two objects
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_126   | An object
+| parent   | unknown   | Unknown
+| bone   | unknown   | Unknown
+| label   | int   | Line number, a callback?
+| unk5   | unknown   | Unknown
 | unk6   | unknown   | Unknown
 
 

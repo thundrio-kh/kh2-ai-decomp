@@ -7,6 +7,10 @@ Draws a sphere around a vector.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | 
+| unk2   | unknown   | 
+| unk3   | unknown   | 
+| unk4   | unknown   | 
 | unk5   | unknown   | 
 
 

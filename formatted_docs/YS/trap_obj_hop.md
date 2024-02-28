@@ -7,6 +7,12 @@ Sets an object to do a hop
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_88   | An object
+| velocity   | float   | A velocity value
+| time   | float   | Time for the hop to last
+| accel   | float   | Acceleration value
+| mot   | YS::BINARC_62 *   | A motion file
+| blend_time   | float   | Blend time value
 | start_with_vel   | bool   | If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here
 
 

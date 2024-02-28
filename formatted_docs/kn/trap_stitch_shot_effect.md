@@ -7,6 +7,7 @@ Activate the shot effect for stitch
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | a   | int   | unknown, maybe number of shots to fire?
 
 

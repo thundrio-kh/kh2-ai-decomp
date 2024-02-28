@@ -7,6 +7,9 @@ Set the stealth color for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
+| r   | int   | Red value, 0-255
+| g   | int   | Green value, 0-255
 | b   | int   | Blue value, 0-255
 
 

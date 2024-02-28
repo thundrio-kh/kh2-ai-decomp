@@ -7,6 +7,7 @@ Return the value of a unit argument
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | num   | int   | Which argument to return (1 or 2 are the valid inputs here
 
 

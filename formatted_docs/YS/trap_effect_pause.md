@@ -7,6 +7,7 @@ pause an effect under certain condictions
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| effect   | ryj::EFFECT_144 *   | an effect object
 | unk   | int   | Only known used value is 1
 
 

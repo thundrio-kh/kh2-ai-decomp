@@ -7,6 +7,9 @@ sets parameters for a timer
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| start   | int   | start value for the timer
+| max   | int   | max value for the timer
+| warning   | int   | threshold for the timers warning state
 | id   | int   | id of a timer
 
 

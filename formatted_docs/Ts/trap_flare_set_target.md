@@ -7,6 +7,7 @@ Set the target of Flare Force
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| flare   | Ts::FLARE_0 *   | Flare Force object
 | obj   | YS::OBJ_125   | An object
 
 

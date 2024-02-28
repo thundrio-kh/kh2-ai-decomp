@@ -7,6 +7,7 @@ Set the position of stitch on the screen
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | pos   | kn::FVector *   | A position vector
 
 

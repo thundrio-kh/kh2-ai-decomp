@@ -7,6 +7,7 @@ Normally does nothing in production game. When running the PC version of the gam
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vec   | kn::FVector *   | A vector
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 

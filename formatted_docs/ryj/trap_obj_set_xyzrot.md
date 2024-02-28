@@ -7,6 +7,7 @@ Set the xyz rotation of an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | rot   | kn::FVector *   | A rotation vector
 
 

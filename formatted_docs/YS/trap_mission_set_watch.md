@@ -7,6 +7,7 @@ sets a value to watch on the specified widget
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| value   | int   | value to watch for the widget
 | id   | int   | id of a widget
 
 

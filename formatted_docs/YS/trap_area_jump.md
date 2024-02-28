@@ -7,6 +7,8 @@ Jumps to a new room, using no battle/event/map programs
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| area   | int   | which room to jump to
+| entrance   | int   | which entrance to use
 | fadetype   | what fade type to use   | 
 
 

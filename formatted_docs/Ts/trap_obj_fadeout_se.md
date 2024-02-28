@@ -7,6 +7,7 @@ Fadeout a sound effect
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| id   | int   | ID of the sound effect
 | fadetime   | int   | Time to take to fade out
 
 

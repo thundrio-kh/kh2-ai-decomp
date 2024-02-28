@@ -7,6 +7,7 @@ Resets the stealth value of an object back to default
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | partnum   | int   | Part number
 
 

@@ -7,6 +7,7 @@ Checks if an object flag is set. Unused normally
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_128   | An object
 | flag   | int   | a flag?
 
 

@@ -7,6 +7,7 @@ fades light out
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| light_object   | YS::LIGHT_0 *   | a light object
 | time   | int   | time to take to fade light out
 
 

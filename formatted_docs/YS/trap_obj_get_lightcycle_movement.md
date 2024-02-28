@@ -7,6 +7,8 @@ Get the movement for the light cycle to head to a target
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_195 *   | An object
+| target   | YS::OBJ_126 *   | An object
 | range   | float   | Range to try and target the target
 
 

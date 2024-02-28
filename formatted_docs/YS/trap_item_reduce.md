@@ -7,6 +7,7 @@ Removes/reduces an item from inventory.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| item   | int   | Item number
 | part   | int   | Unknown, game only uses value of 100
 
 

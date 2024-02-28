@@ -7,6 +7,8 @@ Has the object hover at a given velocity and acceleration
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_193   | An object
+| velocity   | float   | Velocity value
 | accel   | float   | Acceleration value
 
 

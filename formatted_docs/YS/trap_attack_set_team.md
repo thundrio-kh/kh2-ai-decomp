@@ -7,6 +7,7 @@ Sets a team for an attack (most likely so that objects on the same team cannot b
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | team   | int   | Value to represent which team this attack belongs to
 
 

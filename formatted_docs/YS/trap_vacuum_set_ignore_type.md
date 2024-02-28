@@ -7,6 +7,7 @@ Set the types of object that the vacuum should ignore
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | type   | int   | Type that should be ignored
 
 

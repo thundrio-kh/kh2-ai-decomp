@@ -7,6 +7,7 @@ Set the near range value for a vacuum
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | near_range   | float   | A range, game AI uses values between 0-250
 
 

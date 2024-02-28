@@ -7,6 +7,7 @@ Sets the speed of a motion set
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| motion   | YS::MOTION_289   | A motion set
 | speed   | float   | Speed to set
 
 

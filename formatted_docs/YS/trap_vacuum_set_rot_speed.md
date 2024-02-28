@@ -7,6 +7,7 @@ Set the rotation speed of a vacuum
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| unk1   | unknown   | pushFromFSpVal: 108,112,156,164,168,...
 | unk2   | unknown   | pushImmf: 0,6
 
 

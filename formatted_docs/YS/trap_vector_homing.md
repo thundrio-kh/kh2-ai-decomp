@@ -7,6 +7,8 @@ Performs a homing calculation between two objects.
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| dir   | kn::FVector *   | Direction to home
+| target   | kn::FVector *   | Target vector to home to
 | limit   | float   | Distance limit for the homing calculation
 
 

@@ -7,6 +7,7 @@ Return a random float between the two values
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| min_value   | float   | Floor of possible random range
 | unk2   | unknown   | Ceiling of possible random range
 
 

@@ -7,6 +7,7 @@ Get the direction of a path
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | a5   | float   | unknown
 
 

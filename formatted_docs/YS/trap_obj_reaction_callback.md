@@ -7,6 +7,9 @@ Set a reaction callback for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125 *   | An object
+| obj2   | YS::OBJ_125 *   | A second object to receive the RC?
+| command   | int   | pushImm: 327
 | target_obj   | YS::OBJ_125 *   | Object for the reaction to target
 
 

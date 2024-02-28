@@ -7,6 +7,7 @@ Sets the position for an object
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 

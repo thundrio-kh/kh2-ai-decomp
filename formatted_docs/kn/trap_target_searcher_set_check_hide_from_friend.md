@@ -7,6 +7,7 @@ Set the flag to hide from friends target_searcher
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| target_searcher   | Ts::TARGET_SEARCHER_0 *   | A target searcher object
 | check   | bool   | A flag of some sort
 
 

@@ -7,6 +7,7 @@ make a call to a friend script
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| friend   | kn::Friend_0 *   | A friend object
 | no   | int   | A line number?
 
 

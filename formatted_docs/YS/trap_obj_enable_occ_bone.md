@@ -7,6 +7,7 @@ Enable occlusion culling for a specific bone
 #### Input parameters
 | Name | Type | Description
 |------|------|------------
+| objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 | boneid   | ID of a bone   | 
 
 
