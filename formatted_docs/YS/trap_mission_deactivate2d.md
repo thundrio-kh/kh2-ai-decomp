@@ -4,12 +4,12 @@
 
 deactiates custom HUD, such as Demyx timer or hud used by Mushrooms
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+### Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L329:
  syscall 4, 15 ; trap_mission_deactivate2d (0 in, 0 out)
@@ -17,10 +17,7 @@ L329:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

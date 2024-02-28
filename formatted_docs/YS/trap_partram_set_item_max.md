@@ -4,21 +4,18 @@
 
 Sets the maximum number of consumables the player can equip
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | partram   | YS::PARTRAM *   | Partram object
 | num   | int   | number of consumables to allow
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

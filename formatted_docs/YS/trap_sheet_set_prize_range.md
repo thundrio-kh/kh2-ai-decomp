@@ -4,14 +4,14 @@
 
 Set the prize range value for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 | range   | float   | Range value to set
 
 
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L3024:
  pushFromFSp 0
@@ -102,10 +102,7 @@ L3024:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

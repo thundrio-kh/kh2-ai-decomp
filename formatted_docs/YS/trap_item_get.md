@@ -4,25 +4,22 @@
 
 Give an item to the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | item   | int   | value of the item to give
 | part   | int   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | int   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

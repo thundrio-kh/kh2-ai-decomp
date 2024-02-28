@@ -4,7 +4,7 @@
 
 Attaches a callback to be used when an attack is reflected
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::ATTACK_MAGIC_3 *   | An attack object
@@ -12,7 +12,7 @@ Attaches a callback to be used when an attack is reflected
 | unk3   | unknown   | pushFromFSp: 0
 
 
-Example Usage From obj\B_EX430\b_ex.bdscript
+### Example Usage From obj\B_EX430\b_ex.bdscript
 ```plaintext
 L205:
  popToSp 4
@@ -56,10 +56,7 @@ L205:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          

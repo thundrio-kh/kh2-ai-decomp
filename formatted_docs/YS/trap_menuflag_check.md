@@ -4,17 +4,17 @@
 
 checks if a menuflag is activated
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag   | int   | a number representing a specific menuflag
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_checked   | bool   
-Example Usage From ard\he03\he_t.bdscript
+### Example Usage From ard\he03\he_t.bdscript
 ```plaintext
 L100:
  popToSp 0
@@ -31,10 +31,7 @@ L100:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           

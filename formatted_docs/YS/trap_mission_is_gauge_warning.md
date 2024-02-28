@@ -4,24 +4,21 @@
 
 Returns if the specified gauge at the warning level
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | gauge_id   | int   | id of a gauge
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_warning   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

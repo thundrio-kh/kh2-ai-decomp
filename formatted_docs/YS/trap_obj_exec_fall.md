@@ -4,13 +4,13 @@
 
 Tells the object to fall
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An Object
 
 
-Example Usage From obj\B_AL110\b_al.bdscript
+### Example Usage From obj\B_AL110\b_al.bdscript
 ```plaintext
 TR13:
  pushFromPWp W0
@@ -27,10 +27,7 @@ TR13:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          

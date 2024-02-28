@@ -4,14 +4,14 @@
 
 Resets the objects collision to its default state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ *   | Object who should have its collision disabled
 | group   | int   | Probably which part of the collision to turn off. Range of values used between 0 and 30
 
 
-Example Usage From limit\jack\limi.bdscript
+### Example Usage From limit\jack\limi.bdscript
 ```plaintext
 L1904:
  popToSp 4
@@ -33,10 +33,7 @@ L1904:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           

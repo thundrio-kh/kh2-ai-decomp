@@ -4,14 +4,14 @@
 
 Sets the rotation of an effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | An effect object
 | rotation   | kn::FVector *   | A rotation vector
 
 
-Example Usage From obj\B_AL120\b_al.bdscript
+### Example Usage From obj\B_AL120\b_al.bdscript
 ```plaintext
 L2453:
  popToSp 0
@@ -69,10 +69,7 @@ L2453:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL120\b_al.bdscript       | ((B) Blizzard Lord’s ice spikes)          

@@ -4,13 +4,13 @@
 
 Destroy a vacuum object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 
 
-Example Usage From obj\B_EX180\b_ex.bdscript
+### Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L5637:
  pushFromPAi L11074 ; ___ai 'destroy' (L11074)
@@ -43,10 +43,7 @@ L5637:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          

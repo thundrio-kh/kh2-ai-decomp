@@ -4,14 +4,14 @@
 
 Shows a specific part of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_130 *   | An object
 | part   | int   | A part number
 
 
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L1000:
  pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
@@ -32,10 +32,7 @@ L1000:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

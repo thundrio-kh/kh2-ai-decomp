@@ -4,17 +4,17 @@
 
 Recieve a notify player target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | received   | bool   
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6204:
  popToSp 4
@@ -36,10 +36,7 @@ L6204:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

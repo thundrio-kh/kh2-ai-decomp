@@ -4,17 +4,17 @@
 
 Returns true if the target exists
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_exist   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L468:
  pushFromFSp 180
@@ -31,10 +31,7 @@ L468:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,23 +4,20 @@
 
 Divides the total cost of all objects currently spawned by the capacity of the room (YS::Cost / YS::Capacity)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | percentage   | percentage of rooms capacity that is currently used   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

@@ -4,13 +4,13 @@
 
 Set the spec for a limit hover
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | spec   | Ts::ACTION_LIMIT_HOVER_0::SPEC *   | A limit hover spec
 
 
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L609:
  gosub 4, L616
@@ -20,10 +20,7 @@ L609:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

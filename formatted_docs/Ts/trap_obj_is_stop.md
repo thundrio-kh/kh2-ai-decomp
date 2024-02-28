@@ -4,17 +4,17 @@
 
 Checks if an object is stopped
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_stop   | bool   
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L19588:
  jz L19615
@@ -35,10 +35,7 @@ L19588:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

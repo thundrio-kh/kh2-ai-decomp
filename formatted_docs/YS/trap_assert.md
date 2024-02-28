@@ -4,13 +4,13 @@
 
 Checks if the passed assertion is true otherwise throws an error. However assertions are not thrown on the release version of the game, so this effectively does nothing.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | assertion   | int   | Value to be tested, should be 0 or 1
 
 
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L163:
  popToSp 0
@@ -50,10 +50,7 @@ L163:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

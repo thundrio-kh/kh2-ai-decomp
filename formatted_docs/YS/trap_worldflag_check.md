@@ -4,24 +4,21 @@
 
 Check the status of a worldflag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | Worldflag ID
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | status   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

@@ -4,17 +4,17 @@
 
 Have Chicken Little shoot in the direction of the target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | shoot_dir   | kn::FVector   
-Example Usage From obj\P_EX350\p_ex.bdscript
+### Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L518:
  popToSp 0
@@ -46,10 +46,7 @@ L518:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          

@@ -4,18 +4,18 @@
 
 returns the range trigger count (Happens during X frames) of a motion entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | range   | int   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L6675:
  jz L6688
@@ -27,10 +27,7 @@ L6675:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

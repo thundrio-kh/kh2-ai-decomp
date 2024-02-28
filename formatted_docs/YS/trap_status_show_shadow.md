@@ -4,12 +4,12 @@
 
 Shows shadows displayed by objects
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L2991:
  popToSp 0
@@ -19,10 +19,7 @@ L2991:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

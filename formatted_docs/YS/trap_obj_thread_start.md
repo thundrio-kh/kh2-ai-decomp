@@ -4,7 +4,7 @@
 
 Starts a new VM thread and begins execution at the label
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | oldvm   | YS::VM_377   | A VM object
@@ -14,11 +14,11 @@ Starts a new VM thread and begins execution at the label
 | argc   | int   | Number of arguments
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | vm   | YS::VM_377 *   
-Example Usage From obj\P_CA000\p_ca.bdscript
+### Example Usage From obj\P_CA000\p_ca.bdscript
 ```plaintext
 L3109:
  popToSp 0
@@ -39,10 +39,7 @@ L3109:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          

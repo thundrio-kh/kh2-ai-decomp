@@ -4,12 +4,12 @@
 
 Show the screen effect of the Pete curtain closing
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\N_EX760_BTL\n_ex.bdscript
+### Example Usage From obj\N_EX760_BTL\n_ex.bdscript
 ```plaintext
 L6309:
  pushFromFSp 4
@@ -50,10 +50,7 @@ L6309:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          

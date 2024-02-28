@@ -4,17 +4,17 @@
 
 Have genie get the limit command
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | command_id   | int   
-Example Usage From obj\P_AL010\p_al.bdscript
+### Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L4091:
  pushFromFSp 0
@@ -27,10 +27,7 @@ L4091:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          

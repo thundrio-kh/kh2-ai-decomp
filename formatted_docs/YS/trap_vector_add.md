@@ -4,18 +4,18 @@
 
 Adds two vectors together
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L1951:
  popToSp 4
@@ -48,10 +48,7 @@ L1951:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,7 +4,7 @@
 
 Play the specified path in the Dragon Xemnas fight
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Play the specified path in the Dragon Xemnas fight
 | dir   | bool   | Boolean that indicates directon
 
 
-Example Usage From obj\B_EX330\b_ex.bdscript
+### Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L5141:
  popToSp 0
@@ -27,10 +27,7 @@ L5141:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          

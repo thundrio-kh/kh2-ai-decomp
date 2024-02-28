@@ -4,7 +4,7 @@
 
 Starts a limit effect at a specified position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
@@ -13,11 +13,11 @@ Starts a limit effect at a specified position
 | flag   | int   | set the flag to 0 or 1
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L303:
  pushFromFSp 4
@@ -59,10 +59,7 @@ L303:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

@@ -4,7 +4,7 @@
 
 Has an object start moving in the specified direction at the given speed
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Has an object start moving in the specified direction at the given speed
 | speed   | int   | Speed to move, must be between 0 and 500
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L920:
  pushFromFSp 0
@@ -73,10 +73,7 @@ L920:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

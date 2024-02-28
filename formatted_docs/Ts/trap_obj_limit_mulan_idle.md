@@ -4,13 +4,13 @@
 
 Change the mulan limit action to idle
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L5649:
  popToSp 0
@@ -29,10 +29,7 @@ L5649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

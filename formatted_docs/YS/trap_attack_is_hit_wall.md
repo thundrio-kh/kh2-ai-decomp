@@ -4,17 +4,17 @@
 
 Checks if an attack has hit the wall
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | bool   
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L1057:
  jz L1263
@@ -25,10 +25,7 @@ L1057:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

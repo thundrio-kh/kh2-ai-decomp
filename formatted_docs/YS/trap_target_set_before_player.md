@@ -4,14 +4,14 @@
 
 Set the target of an object to be before the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | priority   | int   | Priority of the target
 
 
-Example Usage From msn\MU01_MS102\mu01.bdscript
+### Example Usage From msn\MU01_MS102\mu01.bdscript
 ```plaintext
 TR3:
  pushImm 19155
@@ -31,10 +31,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU01_MS102\mu01.bdscript       |           

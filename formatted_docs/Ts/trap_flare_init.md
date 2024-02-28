@@ -4,12 +4,12 @@
 
 Initialize Flare Force
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L5986:
  syscall 7, 3 ; trap_flare_init (0 in, 0 out)
@@ -21,10 +21,7 @@ L5986:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

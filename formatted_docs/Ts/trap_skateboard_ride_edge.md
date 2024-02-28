@@ -4,13 +4,13 @@
 
 Set the skateboard to be riding an edge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\F_TT010\f_tt.bdscript
+### Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L474:
  popToSp 4
@@ -21,10 +21,7 @@ L474:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          

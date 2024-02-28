@@ -4,23 +4,20 @@
 
 Is there currently a summon
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_summon   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

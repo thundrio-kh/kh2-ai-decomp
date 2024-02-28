@@ -4,17 +4,17 @@
 
 Returns the Team value of the attack, as documented in the Openkh ATKP page (Deal damage to: 0/1/2 Enemies, 3/4/5 Enemies and allies…)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | damage_to   | int   
-Example Usage From msn\EH14_MS103\ms_l.bdscript
+### Example Usage From msn\EH14_MS103\ms_l.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -38,10 +38,7 @@ TR6:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           

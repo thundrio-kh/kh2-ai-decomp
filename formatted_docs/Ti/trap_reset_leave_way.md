@@ -4,14 +4,14 @@
 
 Reset the leave way action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L1650:
  pushFromFSpVal 64
@@ -28,10 +28,7 @@ L1650:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

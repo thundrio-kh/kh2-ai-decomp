@@ -4,17 +4,17 @@
 
 Returns the number of components in a vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | Axa::FVECTOR4   | A vector object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L920:
  pushFromFSp 0
@@ -75,10 +75,7 @@ L920:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

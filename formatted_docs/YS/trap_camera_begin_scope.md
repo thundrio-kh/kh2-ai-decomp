@@ -4,14 +4,14 @@
 
 Switch the camera mode to the inverse scope used in the Xigbar fight.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_8 *   | Object to center the camera on
 | heightOffset   | int   | height offset for the camera, value of 200 is used by Xigbar
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L20862:
  popToSp 4
@@ -88,10 +88,7 @@ L20862:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

@@ -4,14 +4,14 @@
 
 Sets the distance that the fog becomes fully opaque
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | light_object   | YS::LIGHT_0 *   | a light object
 | distance   | int   | far distance for the fog, only value of 1000 is used in game scripts
 
 
-Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
 ```plaintext
 L415:
  pushImm 1
@@ -54,10 +54,7 @@ L415:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           

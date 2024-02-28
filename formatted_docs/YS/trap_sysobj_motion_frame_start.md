@@ -4,7 +4,7 @@
 
 Have an object start a motion set entry at a specific frame number
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
@@ -13,7 +13,7 @@ Have an object start a motion set entry at a specific frame number
 | start_time   | float   | Frame number to start the animation at
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L6629:
  popToSp 0
@@ -32,10 +32,7 @@ L6629:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

@@ -4,24 +4,21 @@
 
 Check if an object is attached to a camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_attach   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

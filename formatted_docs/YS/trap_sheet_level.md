@@ -4,17 +4,17 @@
 
 Return the level of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | level   | int   
-Example Usage From obj\N_CM000_BTL\n_cm.bdscript
+### Example Usage From obj\N_CM000_BTL\n_cm.bdscript
 ```plaintext
 L16905:
  popToSp 0
@@ -115,10 +115,7 @@ L16905:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          

@@ -4,14 +4,14 @@
 
 Syncs two motion sets
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | parent   | YS::MOTION_289   | A motion set
 | child   | YS::MOTION_289   | A motion set
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4229:
  popToSp 4
@@ -41,10 +41,7 @@ L4229:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

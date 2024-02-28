@@ -4,14 +4,14 @@
 
 Sets how an object will collide with the map
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | coll_type   | int   | Collision type. Only a value of 2 is used in game
 
 
-Example Usage From obj\F_HE030_L\f_he.bdscript
+### Example Usage From obj\F_HE030_L\f_he.bdscript
 ```plaintext
 L2612:
  popToSp 0
@@ -33,10 +33,7 @@ L2612:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_HE030_L\f_he.bdscript       | ((F) Phil minigame L (HE))          

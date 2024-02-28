@@ -4,14 +4,14 @@
 
 flag to set.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | light_object   | YS::LIGHT_0 *   | a light object
 | flag_number   | int   | which flag to set, only a value of 1 is used in game
 
 
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L1419:
  popToSp 4
@@ -34,10 +34,7 @@ L1419:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

@@ -4,13 +4,13 @@
 
 Make all the hostile program orbs that are out disappear?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::BTLOBJ *   | A battle object
 
 
-Example Usage From obj\B_TR000\b_tr.bdscript
+### Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L10470:
  pushFromFSp 0
@@ -36,10 +36,7 @@ L10470:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          

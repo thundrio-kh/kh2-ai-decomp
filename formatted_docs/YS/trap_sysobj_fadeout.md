@@ -4,14 +4,14 @@
 
 Perform a fade out effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | fade_amt   | float   | Amount to fade out, 0.0 to 1.0
 | time   | float   | Number of frames for the fade out
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4073:
  pushFromPWp W72
@@ -62,10 +62,7 @@ L4073:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

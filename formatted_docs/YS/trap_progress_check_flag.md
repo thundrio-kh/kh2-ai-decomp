@@ -4,17 +4,17 @@
 
 Checks value of a progress flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag_num   | int   | Flag number
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | bool   
-Example Usage From 00common
+### Example Usage From 00common
 ```plaintext
 L68:
  pushImm 13325
@@ -27,10 +27,7 @@ L68:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | 00common       |           

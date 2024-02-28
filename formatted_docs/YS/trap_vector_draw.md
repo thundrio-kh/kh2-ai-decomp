@@ -4,7 +4,7 @@
 
 Draws a sphere around a vector.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | 
@@ -14,14 +14,11 @@ Draws a sphere around a vector.
 | unk5   | unknown   | 
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

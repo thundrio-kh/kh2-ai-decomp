@@ -4,17 +4,17 @@
 
 Get the parameter for an RTN action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | param   | int   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L2305:
  popToSp 0
@@ -33,10 +33,7 @@ L2305:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

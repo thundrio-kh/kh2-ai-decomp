@@ -4,18 +4,18 @@
 
 Finds the parts of obj1 that are colliding with obj2?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj1   | YS::OBJ_125   | An object
 | obj2   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | parts_colliding   | YS::COLLISION_ELEM_0 *   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L1426:
  popToSp 0
@@ -54,10 +54,7 @@ L1426:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

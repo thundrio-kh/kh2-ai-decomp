@@ -4,7 +4,7 @@
 
 Returns  if the object can decide command.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_96   | An object
@@ -12,11 +12,11 @@ Returns  if the object can decide command.
 | element   | YS::COMMAND_ELEM   | Command element value
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | can_decide   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L5456:
  popToSp 4
@@ -41,10 +41,7 @@ L5456:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

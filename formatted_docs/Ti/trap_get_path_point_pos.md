@@ -4,18 +4,18 @@
 
 Get the position of a point on a path.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 | point_index   | label   | ID of a call label
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From obj\B_LK100\b_lk.bdscript
+### Example Usage From obj\B_LK100\b_lk.bdscript
 ```plaintext
 L5755:
  popToSp 0
@@ -42,10 +42,7 @@ L5755:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          

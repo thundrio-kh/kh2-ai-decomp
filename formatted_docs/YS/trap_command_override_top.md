@@ -4,7 +4,7 @@
 
 Overrides the command for all of the slots on the command cage with priority 100
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | command   | int   | Line number to command
@@ -14,7 +14,7 @@ Overrides the command for all of the slots on the command cage with priority 100
 | unk5   | unknown   | unknown, possibly battle object?
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L958:
  popToSp 0
@@ -38,10 +38,7 @@ L958:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

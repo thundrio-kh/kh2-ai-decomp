@@ -4,14 +4,14 @@
 
 fades light out
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | light_object   | YS::LIGHT_0 *   | a light object
 | time   | int   | time to take to fade light out
 
 
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L2462:
  popToSp 4
@@ -30,10 +30,7 @@ L2462:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

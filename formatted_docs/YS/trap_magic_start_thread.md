@@ -4,18 +4,18 @@
 
 Starts a new magic thread
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | label   | int   | Line number/label to start thread execution at
 | arg   | BD_VALUE_8 *   | An argument to start as the top of the stack in the new thread
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | thread   | YS::MAGIC_85 *   
-Example Usage From magic\BLIZZARD_1\bliz.bdscript
+### Example Usage From magic\BLIZZARD_1\bliz.bdscript
 ```plaintext
 L1238:
  popToSp 0
@@ -38,10 +38,7 @@ L1238:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\BLIZZARD_1\bliz.bdscript       |           

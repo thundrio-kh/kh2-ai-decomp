@@ -4,7 +4,7 @@
 
 Similar to trap_obj_hop, but does not set an animation for the object, just performs the hop
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_88   | An object
@@ -13,7 +13,7 @@ Similar to trap_obj_hop, but does not set an animation for the object, just perf
 | accel   | float   | Acceleration value
 
 
-Example Usage From obj\M_EX530\m_ex.bdscript
+### Example Usage From obj\M_EX530\m_ex.bdscript
 ```plaintext
 L8286:
  pushFromPSp 16
@@ -34,10 +34,7 @@ L8286:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          

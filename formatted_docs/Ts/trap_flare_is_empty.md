@@ -4,16 +4,16 @@
 
 Check if the Flare Force gauge is empty
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_empty   | bool   
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L7062:
  syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
@@ -24,10 +24,7 @@ L7062:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

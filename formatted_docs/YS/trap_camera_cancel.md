@@ -4,13 +4,13 @@
 
 Cancel the currecnt camera event
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | should_interpolate   | bool   | Flag for if the screen should be interpolated as the camera is canceled
 
 
-Example Usage From limit\jack\limi.bdscript
+### Example Usage From limit\jack\limi.bdscript
 ```plaintext
 L710:
  popToSp 4
@@ -30,10 +30,7 @@ L710:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           

@@ -4,18 +4,18 @@
 
 Sets the movement path for an NPC object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133 *   | An object
 | serial   | int   | Serial number, value of -1 is always used in game
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L232:
  pushFromFSp 0
@@ -31,10 +31,7 @@ L232:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

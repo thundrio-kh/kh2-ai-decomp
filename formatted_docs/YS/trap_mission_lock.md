@@ -4,12 +4,12 @@
 
 Set the mutex lock for the mission, to inform other threads it is running
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From ard\al05\ms_b.bdscript
+### Example Usage From ard\al05\ms_b.bdscript
 ```plaintext
 L44:
  popToSp 4
@@ -26,10 +26,7 @@ L44:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           

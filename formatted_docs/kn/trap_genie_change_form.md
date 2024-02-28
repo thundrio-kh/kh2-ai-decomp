@@ -4,14 +4,14 @@
 
 Changes the genies form
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | formCommand   | int   | Which form to change to
 
 
-Example Usage From obj\P_AL010\p_al.bdscript
+### Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L68:
  pushFromPWp W312
@@ -50,10 +50,7 @@ L68:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          

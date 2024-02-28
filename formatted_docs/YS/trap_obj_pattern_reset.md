@@ -28,14 +28,14 @@ Resets the resistance value to the default state
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | value   | int   | Pattern number to reset. See table in description
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L3097:
  pushFromPAi L18917 ; ___ai 'SIGNAL_GAUGEMIN' (L18917)
@@ -59,10 +59,7 @@ L3097:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

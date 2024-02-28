@@ -4,13 +4,13 @@
 
 exits a mission
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | signal_arg   | int   | signal to send when exiting the mission
 
 
-Example Usage From ard\al05\ms_b.bdscript
+### Example Usage From ard\al05\ms_b.bdscript
 ```plaintext
 L141:
  pushFromFSpVal 4
@@ -19,10 +19,7 @@ L141:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           

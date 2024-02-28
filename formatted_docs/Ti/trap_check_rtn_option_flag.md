@@ -4,18 +4,18 @@
 
 Checks the option of an rtn flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 | n   | int   | A flag number to check
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | bool   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L179:
  pushFromFSp 0
@@ -36,10 +36,7 @@ L179:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

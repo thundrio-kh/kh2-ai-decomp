@@ -4,17 +4,17 @@
 
 Returns the object that last attacked the passed in object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | A battle object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | attacker   | YS::OBJ_128 *   
-Example Usage From obj\B_HE030_PART\b_he.bdscript
+### Example Usage From obj\B_HE030_PART\b_he.bdscript
 ```plaintext
 L39:
  popToSp 4
@@ -37,10 +37,7 @@ L39:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          

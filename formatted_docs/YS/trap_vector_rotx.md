@@ -4,18 +4,18 @@
 
 Rotates a vector along the X axis
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
 | rad   | float   | Amount to rotate
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L7618:
  pushFromFSp 36
@@ -101,10 +101,7 @@ L7618:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

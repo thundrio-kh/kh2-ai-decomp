@@ -4,14 +4,14 @@
 
 Performs a blow in the direction specified by the vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSp: 0
 | dir_v   | kn::FVector   | Direction vector?
 
 
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L10262:
  pushImm 1
@@ -60,10 +60,7 @@ L10262:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

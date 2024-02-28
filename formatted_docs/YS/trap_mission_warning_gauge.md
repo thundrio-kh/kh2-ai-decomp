@@ -4,14 +4,14 @@
 
 sets a warning flag for the specified gauge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag   | bool   | 1 for true, 0 for false
 | id   | int   | id of a gauge
 
 
-Example Usage From obj\N_CM040_BTL\n_cm.bdscript
+### Example Usage From obj\N_CM040_BTL\n_cm.bdscript
 ```plaintext
 L20248:
  pushFromPAi L24325 ; ___ai 'change_gauge' (L24325)
@@ -22,10 +22,7 @@ L20248:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          

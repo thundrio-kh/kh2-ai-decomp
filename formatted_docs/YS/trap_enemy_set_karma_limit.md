@@ -4,14 +4,14 @@
 
 Sets an enemies karma value (revenge limit) to the specified number.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ *   | an enemy battle object
 | karma   | float   | value to set for karma. Is 100 normally
 
 
-Example Usage From obj\B_EX110\b_ex.bdscript
+### Example Usage From obj\B_EX110\b_ex.bdscript
 ```plaintext
 L4842:
  pushFromFSp 0
@@ -55,10 +55,7 @@ L4842:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          

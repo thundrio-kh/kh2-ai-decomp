@@ -4,7 +4,7 @@
 
 Get the reverse direction of a path
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,18 +12,15 @@ Get the reverse direction of a path
 | a5   | float   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | dir_r   | kn::FVector *   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

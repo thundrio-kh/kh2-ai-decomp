@@ -4,14 +4,14 @@
 
 Set the position of a vacuum
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From obj\M_EX210\m_ex.bdscript
+### Example Usage From obj\M_EX210\m_ex.bdscript
 ```plaintext
 L5866:
  pushFromFSpVal 108
@@ -32,10 +32,7 @@ L5866:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          

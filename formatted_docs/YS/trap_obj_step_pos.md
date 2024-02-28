@@ -4,17 +4,17 @@
 
 Returns the position of the floor under an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3028:
  pushFromPSpVal 4
@@ -25,10 +25,7 @@ L3028:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

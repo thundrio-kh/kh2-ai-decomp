@@ -4,14 +4,14 @@
 
 Makes an object jump probably 10 units.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | unk   | unknown   | Unknown what this is used for
 
 
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L1200:
  popToSp 0
@@ -37,10 +37,7 @@ L1200:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

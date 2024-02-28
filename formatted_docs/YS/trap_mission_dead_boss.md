@@ -4,13 +4,13 @@
 
 Marks the mission as complete because the boss is dead
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | signal_arg   | int   | Signal to send when marking the mission as complete
 
 
-Example Usage From ard\al05\ms_b.bdscript
+### Example Usage From ard\al05\ms_b.bdscript
 ```plaintext
 L113:
  pushFromFSpVal 4
@@ -19,10 +19,7 @@ L113:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           

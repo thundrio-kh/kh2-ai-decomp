@@ -4,13 +4,13 @@
 
 Revives the player (ala Tinker Bells ability)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
 
 
-Example Usage From obj\P_EX340\p_ex.bdscript
+### Example Usage From obj\P_EX340\p_ex.bdscript
 ```plaintext
 L1695:
  popToSp 0
@@ -53,10 +53,7 @@ L1695:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX340\p_ex.bdscript       | ((P) Tinker Bell)          

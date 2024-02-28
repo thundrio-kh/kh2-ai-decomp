@@ -4,21 +4,18 @@
 
 Adds the passed action into the ShoutBuff. Maybe this is a separate queue that has a higher priority, unknown since it is not used in the vanilla game.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | label   | string   | name of action
 | wait   | float   | amount of time to wait before shouting action
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

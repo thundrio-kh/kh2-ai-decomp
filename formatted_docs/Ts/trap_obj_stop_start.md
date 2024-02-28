@@ -4,21 +4,18 @@
 
 Either start the stop action or stop the start action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | unknown
 | mask   | int   | unknown
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

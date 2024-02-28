@@ -4,7 +4,7 @@
 
 Return a position within a space that the object can move to
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133 *   | An object
@@ -12,11 +12,11 @@ Return a position within a space that the object can move to
 | is_air   | bool   | should the position be in the air
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
-Example Usage From obj\B_EX420\b_ex.bdscript
+### Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L15264:
  popToSp 4
@@ -70,10 +70,7 @@ L15264:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          

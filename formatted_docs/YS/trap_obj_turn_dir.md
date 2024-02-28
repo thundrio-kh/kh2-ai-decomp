@@ -4,7 +4,7 @@
 
 Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 if it does not (if this is an xyz rotation, then it will not do the rotation)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,11 +12,11 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 | limit   | float   | Maximum turn amount
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | bool   
-Example Usage From limit\beast\limi.bdscript
+### Example Usage From limit\beast\limi.bdscript
 ```plaintext
 L2255:
  pushFromFSp 0
@@ -36,10 +36,7 @@ L2255:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           

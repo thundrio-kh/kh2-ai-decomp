@@ -4,13 +4,13 @@
 
 reflects an attack. Unsure if it changes the direction of the attack, or changes it's attributes.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | attack object to be reflected
 
 
-Example Usage From obj\N_CM020_BTL\n_cm.bdscript
+### Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L75:
  jz L83
@@ -20,10 +20,7 @@ L75:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          

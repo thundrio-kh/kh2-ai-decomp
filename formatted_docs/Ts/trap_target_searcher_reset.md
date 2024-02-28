@@ -4,13 +4,13 @@
 
 Reset a target searcher counter to 0
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
 
 
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L4858:
  popToSp 0
@@ -70,10 +70,7 @@ L4858:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

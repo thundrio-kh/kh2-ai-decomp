@@ -4,18 +4,18 @@
 
 Get the distance to a target from the position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 | pos   | kn::FVector *   | A position vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | distance   | float   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L833:
  pushFromFSp 180
@@ -61,10 +61,7 @@ L833:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

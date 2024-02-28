@@ -4,7 +4,7 @@
 
 Rotates a vector along an axis by a given angle
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
@@ -12,11 +12,11 @@ Rotates a vector along an axis by a given angle
 | rad   | float   | Amount to rotate
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L4165:
  pushFromFSp 4
@@ -85,10 +85,7 @@ L4165:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

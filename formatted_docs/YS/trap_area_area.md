@@ -4,16 +4,16 @@
 
 Returns the number representing the current map (ie for ca03 it would return 3)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | area   | int   
-Example Usage From msn\HE00_MS104B\he00.bdscript
+### Example Usage From msn\HE00_MS104B\he00.bdscript
 ```plaintext
 L214:
  pushImm 6
@@ -38,10 +38,7 @@ L214:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE00_MS104B\he00.bdscript       |           

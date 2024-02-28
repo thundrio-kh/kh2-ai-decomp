@@ -4,7 +4,7 @@
 
 Start a stitch effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
@@ -17,11 +17,11 @@ Start a stitch effect
 | priority   | int   | Priority of effectt
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | unknown   
-Example Usage From obj\N_HB040_BTL\n_hb.bdscript
+### Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L1369:
  popToSp 4
@@ -263,10 +263,7 @@ L1369:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          

@@ -4,7 +4,7 @@
 
 Starts a PAX effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pax   | ryj::PAX_161 *   | A PAX effect object
@@ -13,11 +13,11 @@ Starts a PAX effect
 | priority   | int   | Priority for the animation
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
-Example Usage From magic\blizzard1\bliz.bdscript
+### Example Usage From magic\blizzard1\bliz.bdscript
 ```plaintext
 L60:
  pushFromPSpVal 0
@@ -95,10 +95,7 @@ L60:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           

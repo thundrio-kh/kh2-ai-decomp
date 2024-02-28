@@ -4,17 +4,17 @@
 
 returns the type of the attack, as defined in its Atkp entry found in 00battle.bin
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | attack_type   | int   
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L1372:
  pushFromFSp 4
@@ -31,10 +31,7 @@ L1372:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

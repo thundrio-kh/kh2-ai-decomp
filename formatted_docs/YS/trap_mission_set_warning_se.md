@@ -4,14 +4,14 @@
 
 sets a sound effect for when the specified widget gets to a warning state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | num   | int   | number indicating a sound effect
 | id   | int   | id of a widget (gauge, timer, counter, etc
 
 
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L268:
  pushFromFSp 0
@@ -25,10 +25,7 @@ L268:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

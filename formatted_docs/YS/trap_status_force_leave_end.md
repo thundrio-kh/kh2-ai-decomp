@@ -4,12 +4,12 @@
 
 Set the force leave flag to false
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_MU120\b_mu.bdscript
+### Example Usage From obj\B_MU120\b_mu.bdscript
 ```plaintext
 L6971:
  popToSp 0
@@ -35,10 +35,7 @@ L6971:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          

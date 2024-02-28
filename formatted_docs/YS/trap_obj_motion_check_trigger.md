@@ -4,18 +4,18 @@
 
 returns the frame trigger count (Triggered on X frame) of a motion entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L1074:
  pushFromPSp 32
@@ -65,10 +65,7 @@ L1074:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

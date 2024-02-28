@@ -4,13 +4,13 @@
 
 Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a string to the console that can be opened with F2
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L1205:
  pushFromFSpVal 16
@@ -21,10 +21,7 @@ L1205:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

@@ -4,17 +4,17 @@
 
 Checks if an attack has hit something
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | bool   
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L3490:
  pushFromFSpVal 64
@@ -27,10 +27,7 @@ L3490:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

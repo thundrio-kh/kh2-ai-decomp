@@ -4,7 +4,7 @@
 
 Updates a score object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | score_object   | YS::SCORE *   | A score object
@@ -12,11 +12,11 @@ Updates a score object
 | score   | int   | Value of new score
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | new_score   | int   
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L67:
  popToSp 4
@@ -38,10 +38,7 @@ L67:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

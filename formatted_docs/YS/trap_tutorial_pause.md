@@ -4,13 +4,13 @@
 
 Perform a menu pause?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | message_id   | int   | Message ID
 
 
-Example Usage From msn\TT04_MS107\tt04.bdscript
+### Example Usage From msn\TT04_MS107\tt04.bdscript
 ```plaintext
 L81:
  pushImmf 12
@@ -24,10 +24,7 @@ L81:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS107\tt04.bdscript       |           

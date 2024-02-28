@@ -4,14 +4,14 @@
 
 Set the target to an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L450:
  pushFromPWp W0
@@ -26,10 +26,7 @@ L450:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,13 +4,13 @@
 
 Sets the closeup distance to be used by the scope
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | distance   | float   | Distance to zoom in for closeup. Value of 150 used by Xigbar
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L20862:
  popToSp 4
@@ -87,10 +87,7 @@ L20862:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

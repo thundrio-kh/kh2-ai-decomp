@@ -4,18 +4,18 @@
 
 Get the direction of a path
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | a5   | float   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L2613:
  pushFromFSp 0
@@ -52,10 +52,7 @@ L2613:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

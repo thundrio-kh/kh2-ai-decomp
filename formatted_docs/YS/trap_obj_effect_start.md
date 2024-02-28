@@ -4,7 +4,7 @@
 
 Starts an effect associated with an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,11 +13,11 @@ Starts an effect associated with an object
 | priority   | int   | Priority value for effect
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L4996:
  pushFromPSpVal 0
@@ -29,10 +29,7 @@ L4996:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

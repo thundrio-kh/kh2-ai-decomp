@@ -4,7 +4,7 @@
 
 Perform a skateboard trick
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Perform a skateboard trick
 | blend_time   | float   | Time to blend animations
 
 
-Example Usage From obj\F_TT010\f_tt.bdscript
+### Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L483:
  popToSp 4
@@ -36,10 +36,7 @@ L483:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          

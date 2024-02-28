@@ -4,13 +4,13 @@
 
 Sets a "reaction" view camera to watch a target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_3 *   | target for the camera to watch
 
 
-Example Usage From ard\hb10\moog.bdscript
+### Example Usage From ard\hb10\moog.bdscript
 ```plaintext
 L55:
  pushFromPSp 0
@@ -25,10 +25,7 @@ L55:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\hb10\moog.bdscript       |           

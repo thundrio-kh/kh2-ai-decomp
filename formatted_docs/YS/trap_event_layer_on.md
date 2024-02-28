@@ -4,12 +4,12 @@
 
 enables the event HUD
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L15358:
  gosub 12, L757
@@ -97,10 +97,7 @@ L15358:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

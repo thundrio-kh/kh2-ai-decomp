@@ -73,7 +73,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         page += '\n\n'
         page += description
         page += '\n\n'
-        page += '#### Input parameters\n'
+        page += '### Input parameters\n'
         page += '| Name | Type | Description\n'
         page += '|------|------|------------\n'
         # push pos ; (kn::FVector *)  (A position vector)
@@ -93,7 +93,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         if not int(n_out_params) == len(output_args):
             raise ValueError("Number of output arguments does not match")
         if output_args:
-            page += '#### Return Parameters\n'
+            page += '### Output Parameters\n'
             page += '| Name | Type\n'
             page += '|------|-----\n'
             for arg in output_args:
@@ -114,9 +114,9 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             appears_table = ''
 
         code_block = "```plaintext\n{}\n```".format(example_usage) if example_usage else ""
-        page += """Example Usage From {}\n{}\n\n\n""".format(example_usage_from, code_block)
+        page += """### Example Usage From {}\n{}\n\n\n""".format(example_usage_from, code_block)
 
-        page += """\n\n\n\tAppears in:\n{}\n\n\n""".format(appears_table)
+        page += """### Appears in:\n{}\n\n\n""".format(appears_table)
 
         with open(out_fn, 'w') as f:
             f.write(page)

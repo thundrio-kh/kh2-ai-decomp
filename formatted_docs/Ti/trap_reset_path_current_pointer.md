@@ -4,20 +4,17 @@
 
 Reset the current pointer of the path
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

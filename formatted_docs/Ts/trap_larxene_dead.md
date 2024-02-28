@@ -4,13 +4,13 @@
 
 Mark all copies of larxene as dead
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\B_EX400\b_ex.bdscript
+### Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L28537:
  pushFromFSp 0
@@ -30,10 +30,7 @@ L28537:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          

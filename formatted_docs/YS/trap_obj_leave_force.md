@@ -4,13 +4,13 @@
 
 Forces an object to leave
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-Example Usage From obj\B_EX310\b_ex.bdscript
+### Example Usage From obj\B_EX310\b_ex.bdscript
 ```plaintext
 L2726:
  popToSp 0
@@ -20,10 +20,7 @@ L2726:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX310\b_ex.bdscript       | ((F) Xemnas armor - Xaldin’s spears)          

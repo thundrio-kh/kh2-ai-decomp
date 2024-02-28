@@ -4,17 +4,17 @@
 
 returns the SubId of the attack, as defined in its Atkp entry found in 00battle.bin
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | param_id   | int   
-Example Usage From msn\CA01_MS204\ca01.bdscript
+### Example Usage From msn\CA01_MS204\ca01.bdscript
 ```plaintext
 L279:
  jz L316
@@ -28,10 +28,7 @@ L279:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           

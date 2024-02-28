@@ -4,14 +4,14 @@
 
 value"
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | float   | A float
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From gumimenu\event\gumi.bdscript
+### Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L879:
  popToSp 0
@@ -59,10 +59,7 @@ L879:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           

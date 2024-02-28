@@ -4,24 +4,21 @@
 
 Chcks if the player is pushing the reaction command button
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

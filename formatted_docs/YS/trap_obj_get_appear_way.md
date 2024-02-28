@@ -4,17 +4,17 @@
 
 Returns the appear way value of an object, or -1. It seems like just about every object script calls this.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | int   
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L6432:
  popToSp 0
@@ -32,10 +32,7 @@ L6432:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

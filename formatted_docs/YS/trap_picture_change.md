@@ -4,14 +4,14 @@
 
 Change a picture attached to a layout
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | layout   | Tz::Layout_36 *   | A layout object
 | num   | int   | Number to change picture to
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L10848:
  popToSp 0
@@ -28,10 +28,7 @@ L10848:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

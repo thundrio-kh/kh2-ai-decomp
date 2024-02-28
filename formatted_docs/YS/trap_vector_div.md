@@ -4,18 +4,18 @@
 
 Divides the values of two vectors
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L7250:
  pushFromFSp 0
@@ -60,10 +60,7 @@ L7250:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

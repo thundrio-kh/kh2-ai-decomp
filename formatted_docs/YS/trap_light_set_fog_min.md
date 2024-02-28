@@ -4,14 +4,14 @@
 
 Sets the minimum density for fog
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | light_object   | YS::LIGHT_0 *   | a light object
 | max_density   | int   | maximum light density. Value of 255 is used in game scripts
 
 
-Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
 ```plaintext
 L415:
  pushImm 1
@@ -54,10 +54,7 @@ L415:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           

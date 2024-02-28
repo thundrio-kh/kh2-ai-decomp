@@ -4,18 +4,18 @@
 
 Checks if an attack is striking an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 | btlobj   | YS::BTLOBJ *   | An battle object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4188:
  jz L4406
@@ -116,10 +116,7 @@ L4188:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

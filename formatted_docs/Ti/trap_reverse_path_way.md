@@ -4,17 +4,17 @@
 
 Reverse the way the object associated with this path is going
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L2432:
  pushFromFSp 0
@@ -26,10 +26,7 @@ L2432:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

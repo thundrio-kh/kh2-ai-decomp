@@ -4,18 +4,18 @@
 
 Opens a scrolling text window in the top left of the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | message_id   | int   | id of a message, looked up in the associated msg file
 | priority   | int   | only a value of 0 is used in the game
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | window   | YS::WINDOW_8 *   
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L4427:
  pushFromFSp 0
@@ -54,10 +54,7 @@ L4427:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

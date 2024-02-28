@@ -4,17 +4,17 @@
 
 get the direction that a summon object has moved
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L4682:
  dup 
@@ -37,10 +37,7 @@ L4682:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

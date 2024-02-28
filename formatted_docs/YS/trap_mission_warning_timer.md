@@ -4,13 +4,13 @@
 
 sets the timer into a warning state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | id of a timer
 
 
-Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+### Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L112:
  popToSp 0
@@ -29,10 +29,7 @@ L112:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

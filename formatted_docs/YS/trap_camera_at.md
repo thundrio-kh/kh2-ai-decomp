@@ -4,16 +4,16 @@
 
 returns the position of the camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L291:
  popToSp 0
@@ -40,10 +40,7 @@ L291:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

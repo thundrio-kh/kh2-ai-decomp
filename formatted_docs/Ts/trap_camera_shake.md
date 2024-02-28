@@ -4,7 +4,7 @@
 
 Make the camera shake according to a lot of parameters
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | float   | Values of 10,240,30,60,90 used in game AI
@@ -16,7 +16,7 @@ Make the camera shake according to a lot of parameters
 | unk7   | float   | Values of -0.05,-0.1,-0.133333,-0.2,-0.3,-0.5,2 used in game AI
 
 
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L4703:
  jz L4735
@@ -34,10 +34,7 @@ L4703:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

@@ -4,18 +4,18 @@
 
 Checks if the motion of an object is synced with the child object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | child   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\P_CA000\p_ca.bdscript
+### Example Usage From obj\P_CA000\p_ca.bdscript
 ```plaintext
 L4032:
  pushFromPSp 8
@@ -29,10 +29,7 @@ L4032:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          

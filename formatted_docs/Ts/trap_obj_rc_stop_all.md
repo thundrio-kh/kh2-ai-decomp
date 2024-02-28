@@ -4,7 +4,7 @@
 
 Stop the object from doing anything else due to an RC
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Stop the object from doing anything else due to an RC
 | force   | bool   | If the stop should be forced?
 
 
-Example Usage From obj\B_EX120\b_ex.bdscript
+### Example Usage From obj\B_EX120\b_ex.bdscript
 ```plaintext
 L9190:
  popToSp 4
@@ -69,10 +69,7 @@ L9190:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          

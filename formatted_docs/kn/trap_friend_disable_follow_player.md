@@ -4,13 +4,13 @@
 
 Stop the friend from following the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-Example Usage From obj\B_EX260\b_ex.bdscript
+### Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L5725:
  popToSp 0
@@ -33,10 +33,7 @@ L5725:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          

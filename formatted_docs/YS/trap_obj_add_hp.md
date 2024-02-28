@@ -4,7 +4,7 @@
 
 Adds an amount of HP to an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj_sheet   | YS::OBJ_103   | Object to add HP to
@@ -13,11 +13,11 @@ Adds an amount of HP to an object
 | unk1   | int   | Value used in game scripts is always 0
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | new_hp   | int   
-Example Usage From msn\TT14_MS110\tt14.bdscript
+### Example Usage From msn\TT14_MS110\tt14.bdscript
 ```plaintext
 L99:
  gosub 4, L182
@@ -40,10 +40,7 @@ L99:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT14_MS110\tt14.bdscript       |           

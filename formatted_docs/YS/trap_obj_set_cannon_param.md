@@ -4,7 +4,7 @@
 
 Parameters for the present cannon
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -14,7 +14,7 @@ Parameters for the present cannon
 | v_limit   | int   | Vertical speed limit
 
 
-Example Usage From obj\F_NM180\f_nm.bdscript
+### Example Usage From obj\F_NM180\f_nm.bdscript
 ```plaintext
 TR0:
  popToSp 0
@@ -47,10 +47,7 @@ TR0:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          

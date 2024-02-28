@@ -4,13 +4,13 @@
 
 Runs the function to complete a mission, unsure what the signal_arg is used for
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | signal_arg   | int   | Signal to send when marking the mission as complete
 
 
-Example Usage From ard\al05\ms_b.bdscript
+### Example Usage From ard\al05\ms_b.bdscript
 ```plaintext
 L98:
  pushFromFSpVal 4
@@ -19,10 +19,7 @@ L98:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           

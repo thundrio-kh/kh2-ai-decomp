@@ -4,7 +4,7 @@
 
 Fades out an effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
@@ -12,7 +12,7 @@ Fades out an effect
 | shouldfade   | int   | A boolean value. If 0 then this trap does nothing.
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4451:
  popToSp 4
@@ -30,10 +30,7 @@ L4451:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

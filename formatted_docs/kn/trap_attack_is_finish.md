@@ -4,17 +4,17 @@
 
 Returns if an attack is a finisher
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_10 *   | An attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_finish   | bool   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L135:
  pushFromFSp 0
@@ -27,10 +27,7 @@ L135:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

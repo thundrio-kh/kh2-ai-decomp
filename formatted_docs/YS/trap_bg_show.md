@@ -4,13 +4,13 @@
 
 Shows a group for the map.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | groupNumber   | int   | groupNumber to hide
 
 
-Example Usage From ard\he03\he_t.bdscript
+### Example Usage From ard\he03\he_t.bdscript
 ```plaintext
 L100:
  popToSp 0
@@ -27,10 +27,7 @@ L100:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           

@@ -4,13 +4,13 @@
 
 Takes the screen from being all white and fades in.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | frame   | float   | Number of frames to take for fade in
 
 
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L8679:
  popToSp 0
@@ -26,10 +26,7 @@ L8679:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

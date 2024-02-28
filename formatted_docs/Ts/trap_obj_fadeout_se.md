@@ -4,14 +4,14 @@
 
 Fadeout a sound effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | ID of the sound effect
 | fadetime   | int   | Time to take to fade out
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L13066:
  popToSp 0
@@ -30,10 +30,7 @@ L13066:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

@@ -4,24 +4,21 @@
 
 Gets the attack level of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | attack_level   | int   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

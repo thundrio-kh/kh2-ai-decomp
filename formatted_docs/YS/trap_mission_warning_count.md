@@ -4,13 +4,13 @@
 
 mission_counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSpVal: 4
 
 
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L67:
  popToSp 4
@@ -32,10 +32,7 @@ L67:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

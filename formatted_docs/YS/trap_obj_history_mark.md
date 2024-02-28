@@ -4,13 +4,13 @@
 
 Set the history flag for an field object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::FIELDOBJ *   | A field object
 
 
-Example Usage From obj\F_AL050\f_al.bdscript
+### Example Usage From obj\F_AL050\f_al.bdscript
 ```plaintext
 L2368:
  popToSp 0
@@ -25,10 +25,7 @@ L2368:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          

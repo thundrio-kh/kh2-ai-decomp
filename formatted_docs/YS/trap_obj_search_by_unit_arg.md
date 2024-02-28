@@ -4,7 +4,7 @@
 
 Searches for an object with a specific unit argument
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
@@ -12,7 +12,7 @@ Searches for an object with a specific unit argument
 | argnum   | int   | Argument to search for
 
 
-Example Usage From obj\B_EX400\b_ex.bdscript
+### Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L3195:
  popToSp 0
@@ -31,10 +31,7 @@ L3195:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          

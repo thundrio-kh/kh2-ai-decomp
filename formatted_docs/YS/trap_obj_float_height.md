@@ -4,17 +4,17 @@
 
 Returns the height the object is floating above the ground.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | height   | float   
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L6649:
  jz L6704
@@ -37,10 +37,7 @@ L6649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

@@ -4,20 +4,17 @@
 
 Closes the limit gauge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

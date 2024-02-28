@@ -4,17 +4,17 @@
 
 Get a Xemnas object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | type   | int   | Whether or not to get the clone or actual xemnas object?
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | xemnas   | YS::OBJ_125   
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L15077:
  pushFromPSp 0
@@ -26,10 +26,7 @@ L15077:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

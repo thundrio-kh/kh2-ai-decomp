@@ -4,13 +4,13 @@
 
 turns off the display of an on screen timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | timer_id   | int   | id of counter
 
 
-Example Usage From msn\CA07_MS105\ca07.bdscript
+### Example Usage From msn\CA07_MS105\ca07.bdscript
 ```plaintext
 L204:
  pushImm 0
@@ -21,10 +21,7 @@ L204:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           

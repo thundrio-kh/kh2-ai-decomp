@@ -4,14 +4,14 @@
 
 Set the rotation value of an object.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | rot   | float   | Rotation value
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3322:
  popToSp 4
@@ -36,10 +36,7 @@ L3322:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

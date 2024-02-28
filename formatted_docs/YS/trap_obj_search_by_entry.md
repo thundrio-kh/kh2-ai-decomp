@@ -4,14 +4,14 @@
 
 Looks up an object by objentry ID and puts the object in the data object. If this object does not exist, will throw an error (which is ignored by the VM on PS2, but will crash on PC)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
 | entry_id   | int   | ID of the object to look up
 
 
-Example Usage From ard\hb10\moog.bdscript
+### Example Usage From ard\hb10\moog.bdscript
 ```plaintext
 L55:
  pushFromPSp 0
@@ -26,10 +26,7 @@ L55:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\hb10\moog.bdscript       |           

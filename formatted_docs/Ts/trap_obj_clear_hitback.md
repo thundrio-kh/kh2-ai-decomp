@@ -4,13 +4,13 @@
 
 Clear the hitback flag for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\B_MU100\b_mu.bdscript
+### Example Usage From obj\B_MU100\b_mu.bdscript
 ```plaintext
 L201:
  popToSp 0
@@ -53,10 +53,7 @@ L201:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          

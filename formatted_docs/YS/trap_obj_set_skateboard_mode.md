@@ -4,14 +4,14 @@
 
 Sets the skateboard mode
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | mode   | int   | Skateboard mode, values of 0 and 1 are used in game
 
 
-Example Usage From obj\F_TT010\f_tt.bdscript
+### Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L45:
  pushFromFSp 8
@@ -53,10 +53,7 @@ L45:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          

@@ -4,7 +4,7 @@
 
 Attaches a bone between two objects
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_126   | An object
@@ -15,7 +15,7 @@ Attaches a bone between two objects
 | unk6   | unknown   | Unknown
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2833:
  popToSp 0
@@ -70,10 +70,7 @@ L2833:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,7 +4,7 @@
 
 Set the target for a friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
@@ -12,7 +12,7 @@ Set the target for a friend
 | unk3   | unknown   | Unknown
 
 
-Example Usage From obj\B_EX260\b_ex.bdscript
+### Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L545:
  popToSp 0
@@ -51,10 +51,7 @@ L545:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          

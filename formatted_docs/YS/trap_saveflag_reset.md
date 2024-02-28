@@ -4,20 +4,17 @@
 
 Resets the value of the save flag to 0
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag_num   | int   | A flag number
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

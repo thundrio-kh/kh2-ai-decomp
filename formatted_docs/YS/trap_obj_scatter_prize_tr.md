@@ -4,14 +4,14 @@
 
 Scatter a number of tron orbs from an enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | num   | int   | Number to scatter
 
 
-Example Usage From obj\F_TR020\f_tr.bdscript
+### Example Usage From obj\F_TR020\f_tr.bdscript
 ```plaintext
 L636:
  gosub 4, L675
@@ -26,10 +26,7 @@ L636:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TR020\f_tr.bdscript       | ((F) Energy core’s cube (TR))          

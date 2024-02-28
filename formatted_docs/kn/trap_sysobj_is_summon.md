@@ -4,17 +4,17 @@
 
 Check if the object is a summon
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_summon   | bool   
-Example Usage From magic\CURE_1\cure.bdscript
+### Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L321:
  popToSp 4
@@ -34,10 +34,7 @@ L321:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           

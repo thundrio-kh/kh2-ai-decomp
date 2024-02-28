@@ -4,13 +4,13 @@
 
 Clear the friends action queue
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-Example Usage From obj\N_HB040_BTL\n_hb.bdscript
+### Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L947:
  pushFromPSpVal 80
@@ -34,10 +34,7 @@ L947:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          

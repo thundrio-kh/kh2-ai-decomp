@@ -4,21 +4,18 @@
 
 Sets the status for a command slot
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | slot   | int   | slot to set
 | status   | int   | the status to set
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

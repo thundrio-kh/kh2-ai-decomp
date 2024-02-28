@@ -4,14 +4,14 @@
 
 Set the distance rate for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vacuum   | YS::VACUUM::VACUUM   | A vacuum object
 | rate   | float   | Rate amount, from 0 to 1
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L15007:
  popToSp 0
@@ -45,10 +45,7 @@ L15007:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

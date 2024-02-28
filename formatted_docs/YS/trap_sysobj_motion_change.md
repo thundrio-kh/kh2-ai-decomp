@@ -4,7 +4,7 @@
 
 Changes the object to use a different motion set entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
@@ -12,7 +12,7 @@ Changes the object to use a different motion set entry
 | blend_time   | float   | Time to take to blend the animations
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L6824:
  pushFromFSp 0
@@ -25,10 +25,7 @@ L6824:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

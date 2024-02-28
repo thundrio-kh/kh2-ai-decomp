@@ -4,17 +4,17 @@
 
 Returns if an object is performing a reflect animation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_reflect_motion   | bool   
-Example Usage From obj\B_EX390\b_ex.bdscript
+### Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L1635:
  pushFromFSp 0
@@ -32,10 +32,7 @@ L1635:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          

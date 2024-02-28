@@ -4,17 +4,17 @@
 
 checks if an effect is still active
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | isactive   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3241:
  popToSp 0
@@ -30,10 +30,7 @@ L3241:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,7 +4,7 @@
 
 Adds an label to an action table, as an action that can be performed
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | table   | YS::ACT::TABLE *   | The action table that will get a action added to it
@@ -21,7 +21,7 @@ Adds an label to an action table, as an action that can be performed
 | callback8   | int   | Optional line number to callback routine to process after the entry routine. Value of 0 for unused callback
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L4649:
  popToSp 4
@@ -652,10 +652,7 @@ L4649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

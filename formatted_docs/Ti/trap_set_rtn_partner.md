@@ -4,14 +4,14 @@
 
 Set a partner for an RTN action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 | npc_partner   | YS::NPC_0 *   | An npc object
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L125:
  drop 
@@ -41,10 +41,7 @@ L125:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

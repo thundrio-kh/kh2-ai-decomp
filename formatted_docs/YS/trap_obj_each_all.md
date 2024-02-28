@@ -4,17 +4,17 @@
 
 returns each instance of an object to the top of the stack?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_132 *   | An object?
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | obj_list   | list of objects   
-Example Usage From msn\TT04_MS301\tt04.bdscript
+### Example Usage From msn\TT04_MS301\tt04.bdscript
 ```plaintext
 L214:
  popToSp 0
@@ -29,10 +29,7 @@ L214:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           

@@ -4,14 +4,14 @@
 
 Sets an object to go into a falling animation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | id   | int   | ID of a specific motion set entry
 
 
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L2149:
  popToSp 0
@@ -70,10 +70,7 @@ L2149:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

@@ -4,14 +4,14 @@
 
 sets a value to watch on the specified widget
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | value to watch for the widget
 | id   | int   | id of a widget
 
 
-Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+### Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L209:
  pushFromFSp 0
@@ -22,10 +22,7 @@ L209:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

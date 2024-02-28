@@ -4,16 +4,16 @@
 
 Get a YS::WORLDWORK object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | worldwork   | YS::WORLDWORK    
-Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
 ```plaintext
 L307:
  popToSp 0
@@ -35,10 +35,7 @@ L307:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           

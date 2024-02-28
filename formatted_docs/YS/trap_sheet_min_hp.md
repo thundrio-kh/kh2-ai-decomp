@@ -4,18 +4,18 @@
 
 Return the min HP of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 | index   | int   | HP index to use
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | min_hp   | int   
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3693:
  drop 
@@ -57,10 +57,7 @@ L3693:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

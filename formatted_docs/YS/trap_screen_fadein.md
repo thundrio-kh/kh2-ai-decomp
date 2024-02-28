@@ -4,13 +4,13 @@
 
 Performs a fadein on the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | frame   | float   | Number of frames
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L9573:
  pushImmf 80
@@ -31,10 +31,7 @@ L9573:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

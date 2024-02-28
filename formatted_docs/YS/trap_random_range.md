@@ -4,18 +4,18 @@
 
 Return a random float between the two values
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | min_value   | float   | Floor of possible random range
 | unk2   | unknown   | Ceiling of possible random range
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num   | float   
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L289:
  gosub 4, L205
@@ -37,10 +37,7 @@ L289:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

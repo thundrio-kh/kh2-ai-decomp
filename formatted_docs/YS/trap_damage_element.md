@@ -4,17 +4,17 @@
 
 Returns the element of the attack, according to openkh documentation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | element   | int   
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L2101:
  jz L2170
@@ -28,10 +28,7 @@ L2101:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

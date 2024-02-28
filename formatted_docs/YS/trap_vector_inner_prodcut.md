@@ -4,18 +4,18 @@
 
 Calculates the inner product of two vectors
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | a   | Axa::FVECTOR4   | A vector
 | b   | Axa::FVECTOR4   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | float   
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L331:
  popToSp 4
@@ -74,10 +74,7 @@ L331:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

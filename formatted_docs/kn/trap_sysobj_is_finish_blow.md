@@ -4,17 +4,17 @@
 
 Check if the object is in a finish blow state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_finish_blow   | bool   
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6309:
  popToSp 4
@@ -35,10 +35,7 @@ L6309:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

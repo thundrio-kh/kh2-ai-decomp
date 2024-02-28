@@ -4,17 +4,17 @@
 
 Get the nth party member
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | n   | int   | Which number party member to get, the Player is 0
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | party_member   | YS::OBJ_125   
-Example Usage From magic\cure1\cure.bdscript
+### Example Usage From magic\cure1\cure.bdscript
 ```plaintext
 L323:
  popToSp 0
@@ -29,10 +29,7 @@ L323:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\cure1\cure.bdscript       |           

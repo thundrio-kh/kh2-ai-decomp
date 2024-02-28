@@ -4,16 +4,16 @@
 
 Returns if a battle is going on
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_battle   | bool   
-Example Usage From obj\F_HB020\f_hb.bdscript
+### Example Usage From obj\F_HB020\f_hb.bdscript
 ```plaintext
 L2276:
  popToSp 0
@@ -29,10 +29,7 @@ L2276:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          

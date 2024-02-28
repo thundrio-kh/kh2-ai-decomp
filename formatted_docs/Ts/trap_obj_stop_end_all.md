@@ -4,13 +4,13 @@
 
 Stop an object from ending all actions
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | unknown
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3414:
  pushImm 17
@@ -19,10 +19,7 @@ L3414:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

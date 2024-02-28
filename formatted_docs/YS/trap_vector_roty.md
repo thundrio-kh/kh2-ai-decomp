@@ -4,18 +4,18 @@
 
 Rotates a vector along the Y axis
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
 | rad   | float   | Amount to rotate
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-Example Usage From gumimenu\event\gumi.bdscript
+### Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L597:
  pushFromPSpVal 16
@@ -32,10 +32,7 @@ L597:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           

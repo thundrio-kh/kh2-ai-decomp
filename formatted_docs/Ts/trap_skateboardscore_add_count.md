@@ -4,14 +4,14 @@
 
 Add to the skateboard count score
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | points   | int   | Number of points to add
 | time   | float   | Time to take (in frames
 
 
-Example Usage From obj\F_TT010\f_tt.bdscript
+### Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L522:
  popToSp 0
@@ -32,10 +32,7 @@ L522:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          

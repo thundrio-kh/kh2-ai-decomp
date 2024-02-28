@@ -4,14 +4,14 @@
 
 Return an object with a specific part number
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
 | partnum   | int   | A part number
 
 
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L9026:
  popToSp 4
@@ -47,10 +47,7 @@ L9026:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

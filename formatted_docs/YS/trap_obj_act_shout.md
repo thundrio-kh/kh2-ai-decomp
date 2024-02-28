@@ -4,7 +4,7 @@
 
 Shouts an action after an amount of time
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | act   | YS::ACT_86 *   | An action object
@@ -12,7 +12,7 @@ Shouts an action after an amount of time
 | wait   | float   | time to wait before shouting the action
 
 
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L3139:
  pushFromPWp W36
@@ -25,10 +25,7 @@ L3139:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

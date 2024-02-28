@@ -4,17 +4,17 @@
 
 Get the radius of a target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | radius   | float   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L8788:
  pushFromPSpVal 5468
@@ -63,10 +63,7 @@ L8788:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

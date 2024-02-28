@@ -4,17 +4,17 @@
 
 Adds an amount of money to the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | num   | int   | Amount of munny to add
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | total_munny   | int   
-Example Usage From ard\tt02\tt_n.bdscript
+### Example Usage From ard\tt02\tt_n.bdscript
 ```plaintext
 TR3:
  pushImm 362
@@ -28,10 +28,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt02\tt_n.bdscript       |           

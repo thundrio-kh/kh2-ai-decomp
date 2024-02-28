@@ -4,17 +4,17 @@
 
 Computes the arctangent of the ratio of the x and z components of the vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | float   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L3072:
  pushFromPSp 48
@@ -47,10 +47,7 @@ L3072:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

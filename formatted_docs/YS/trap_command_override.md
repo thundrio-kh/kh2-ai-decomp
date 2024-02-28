@@ -4,7 +4,7 @@
 
 Overrides the specified slot on the command cage with priority 100
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | slot   | int   | slot on the command cage to override, value must be within 0-7
@@ -13,7 +13,7 @@ Overrides the specified slot on the command cage with priority 100
 | num   | int   | unknown
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L5490:
  jz L5505
@@ -26,10 +26,7 @@ L5490:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

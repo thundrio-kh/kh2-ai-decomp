@@ -4,7 +4,7 @@
 
 Forks the current VM and hooks the new fork
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | add: 
@@ -12,7 +12,7 @@ Forks the current VM and hooks the new fork
 | unk3   | unknown   | pushImm: 0
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L197:
  pushFromPWp W0
@@ -25,10 +25,7 @@ L197:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

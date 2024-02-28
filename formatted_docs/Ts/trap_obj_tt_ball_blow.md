@@ -4,7 +4,7 @@
 
 Make the twilight town minigame ball perform a blow
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Make the twilight town minigame ball perform a blow
 | unk2   | unknown   | UNknown
 
 
-Example Usage From obj\F_TT020\f_tt.bdscript
+### Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L165:
  drop 
@@ -57,10 +57,7 @@ L165:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          

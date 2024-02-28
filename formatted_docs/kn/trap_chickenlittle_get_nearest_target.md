@@ -4,7 +4,7 @@
 
 Have chicken little target the nearest enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
@@ -13,7 +13,7 @@ Have chicken little target the nearest enemy
 | h   | float   | Height to look for targets
 
 
-Example Usage From obj\P_EX350\p_ex.bdscript
+### Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L584:
  popToSp 0
@@ -44,10 +44,7 @@ L584:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          

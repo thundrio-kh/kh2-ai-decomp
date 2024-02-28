@@ -4,7 +4,7 @@
 
 Applies a matrix to a bone
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | Representation of an obj/mdlx
@@ -12,11 +12,11 @@ Applies a matrix to a bone
 | matrix   | A matrix to apply to the bone   | 
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | matrix_out   | float   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L782:
  pushFromPSp 176
@@ -45,10 +45,7 @@ L782:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

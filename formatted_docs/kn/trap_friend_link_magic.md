@@ -4,7 +4,7 @@
 
 Links magic to a friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
@@ -12,7 +12,7 @@ Links magic to a friend
 | buffer   | data   | Uninitialized data
 
 
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L208:
  popToSp 0
@@ -26,10 +26,7 @@ L208:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

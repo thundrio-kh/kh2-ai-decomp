@@ -4,7 +4,7 @@
 
 Signal an object to reserve an HP value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,14 +13,11 @@ Signal an object to reserve an HP value
 | arg   | int   | Argument to call signal with
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

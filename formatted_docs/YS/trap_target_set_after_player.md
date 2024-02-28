@@ -4,21 +4,18 @@
 
 Doesnt appear to do anything except print some debug warnings
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | 
 | unk2   | unknown   | 
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

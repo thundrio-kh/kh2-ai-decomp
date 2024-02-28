@@ -4,17 +4,17 @@
 
 Return the position of the target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L511:
  pushFromPSp 48
@@ -47,10 +47,7 @@ L511:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

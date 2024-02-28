@@ -4,17 +4,17 @@
 
 Determines if obj is currently being culled
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ *   | The object to be tested
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_culling   | bool   
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L7175:
  pushImm 0
@@ -37,10 +37,7 @@ L7175:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

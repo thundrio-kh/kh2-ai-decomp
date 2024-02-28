@@ -4,17 +4,17 @@
 
 Checks if an object script execution is a hook?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_hook   | bool   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L493:
  dup 
@@ -26,10 +26,7 @@ L493:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

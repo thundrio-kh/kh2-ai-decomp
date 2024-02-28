@@ -4,14 +4,14 @@
 
 Starts mpdrive for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | ratio   | float   | Ratio mpdrive should start at
 
 
-Example Usage From obj\N_HB630\n_hb.bdscript
+### Example Usage From obj\N_HB630\n_hb.bdscript
 ```plaintext
 L5513:
  popToSp 0
@@ -93,10 +93,7 @@ L5513:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          

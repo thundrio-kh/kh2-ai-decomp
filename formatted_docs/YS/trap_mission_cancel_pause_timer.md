@@ -4,12 +4,12 @@
 
 Pauses/stops the onscreen timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\M_EX950\m_ex.bdscript
+### Example Usage From obj\M_EX950\m_ex.bdscript
 ```plaintext
 L1183:
  syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
@@ -27,10 +27,7 @@ L1183:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          

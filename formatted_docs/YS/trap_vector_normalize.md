@@ -4,17 +4,17 @@
 
 Calculate the euclidean norm of a vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | Axa::FVECTOR4   | A vector object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | float   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L592:
  pushImmf 0
@@ -73,10 +73,7 @@ L592:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

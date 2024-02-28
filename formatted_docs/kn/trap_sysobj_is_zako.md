@@ -4,17 +4,17 @@
 
 Check if the object is a non-boss enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_zako   | bool   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L4280:
  popToSp 0
@@ -30,10 +30,7 @@ L4280:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

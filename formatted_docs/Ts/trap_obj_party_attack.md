@@ -4,14 +4,14 @@
 
 Activate a party attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 | id   | int   | id of the attack to activate
 
 
-Example Usage From obj\P_EX100_KH1F\limi.bdscript
+### Example Usage From obj\P_EX100_KH1F\limi.bdscript
 ```plaintext
 L1683:
  popToSp 0
@@ -49,10 +49,7 @@ L1683:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          

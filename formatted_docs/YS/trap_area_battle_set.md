@@ -4,16 +4,16 @@
 
 Returns the number for the battle program being executed
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | battlenum   | The number representing the battle program being executed   
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 TR3:
  syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
@@ -27,10 +27,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

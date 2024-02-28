@@ -4,14 +4,14 @@
 
 Add an object to a target searcher
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\B_CA020\b_ca.bdscript
+### Example Usage From obj\B_CA020\b_ca.bdscript
 ```plaintext
 L421:
  popToSp 4
@@ -53,10 +53,7 @@ L421:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          

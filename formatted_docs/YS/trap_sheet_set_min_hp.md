@@ -4,7 +4,7 @@
 
 Set an objects minimum HP
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
@@ -12,7 +12,7 @@ Set an objects minimum HP
 | index   | int   | HP index to use
 
 
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L228:
  pushFromFSp 36
@@ -30,10 +30,7 @@ L228:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

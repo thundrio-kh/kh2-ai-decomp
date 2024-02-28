@@ -4,14 +4,14 @@
 
 Invalidates a warp point within range of the friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | center   | kn::FVector *   | A position vector
 | range   | float   | A range value
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L17950:
  pushFromPSp 80
@@ -51,10 +51,7 @@ L17950:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

@@ -4,17 +4,17 @@
 
 Returns the a value from 0.0 to 1.0 representing the current progress of the specified gauge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | gauge_id   | int   | id of a gauge
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | float   
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L163:
  popToSp 0
@@ -54,10 +54,7 @@ L163:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

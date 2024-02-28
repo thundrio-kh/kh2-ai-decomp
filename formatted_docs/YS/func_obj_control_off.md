@@ -4,13 +4,13 @@
 
 Turns off control of the object running this function.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | type   | int   | Unknown purpose. Possible values 0 or 1
 
 
-Example Usage From msn\TT12_WORK_BOX\tt12.bdscript
+### Example Usage From msn\TT12_WORK_BOX\tt12.bdscript
 ```plaintext
 L61:
  pushImm 0
@@ -25,10 +25,7 @@ L61:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT12_WORK_BOX\tt12.bdscript       |           

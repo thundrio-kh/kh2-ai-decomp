@@ -4,12 +4,12 @@
 
 Turns off temporary barriers, like those used during the escape from Hades sequence.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HE05_MS102\he05.bdscript
+### Example Usage From msn\HE05_MS102\he05.bdscript
 ```plaintext
 L44:
  syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
@@ -23,10 +23,7 @@ L44:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE05_MS102\he05.bdscript       |           

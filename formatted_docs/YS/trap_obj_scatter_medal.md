@@ -4,14 +4,14 @@
 
 Scatters a number of Pirates of the Caribbean coins from an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | num   | int   | Number to scatter
 
 
-Example Usage From msn\CA01_MS204\ca01.bdscript
+### Example Usage From msn\CA01_MS204\ca01.bdscript
 ```plaintext
 L294:
  pushFromFSp 4
@@ -26,10 +26,7 @@ L294:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           

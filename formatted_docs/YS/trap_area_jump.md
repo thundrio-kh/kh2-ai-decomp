@@ -4,7 +4,7 @@
 
 Jumps to a new room, using no battle/event/map programs
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | area   | int   | which room to jump to
@@ -12,14 +12,11 @@ Jumps to a new room, using no battle/event/map programs
 | fadetype   | what fade type to use   | 
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

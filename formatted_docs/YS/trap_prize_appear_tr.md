@@ -4,14 +4,14 @@
 
 Makes a number of Hostile Program orbs appear at a position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | A position vector
 | num   | int   | number of prizes
 
 
-Example Usage From obj\B_TR000\b_tr.bdscript
+### Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L2202:
  popToSp 4
@@ -55,10 +55,7 @@ L2202:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          

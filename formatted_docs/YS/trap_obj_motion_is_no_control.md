@@ -4,17 +4,17 @@
 
 returns if the is_no_control flag is set for the motion set
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_no_control   | bool   
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L4282:
  popToSp 4
@@ -57,10 +57,7 @@ L4282:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

@@ -4,16 +4,16 @@
 
 Checks if the secret movie is unlocked
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From ard\es00\es_s.bdscript
+### Example Usage From ard\es00\es_s.bdscript
 ```plaintext
 TR3:
  gosub 4, L39
@@ -26,10 +26,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\es00\es_s.bdscript       |           

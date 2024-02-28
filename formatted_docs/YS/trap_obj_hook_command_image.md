@@ -4,13 +4,13 @@
 
 hooks the command image
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | stdobj   | YS::STDOBJ_112   | An std object
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L2290:
  popToSp 0
@@ -35,10 +35,7 @@ L2290:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

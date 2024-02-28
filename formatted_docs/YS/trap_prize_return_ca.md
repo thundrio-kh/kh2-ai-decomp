@@ -4,7 +4,7 @@
 
 Moves a number of medals from the player to the target battle object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
@@ -12,11 +12,11 @@ Moves a number of medals from the player to the target battle object
 | num   | int   | number of prizes
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | all_returned   | bool   
-Example Usage From obj\F_CA690_BTL\f_ca.bdscript
+### Example Usage From obj\F_CA690_BTL\f_ca.bdscript
 ```plaintext
 L278:
  popToSp 4
@@ -29,10 +29,7 @@ L278:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_CA690_BTL\f_ca.bdscript       | ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))          

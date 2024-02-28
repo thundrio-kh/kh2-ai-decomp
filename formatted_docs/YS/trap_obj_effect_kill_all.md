@@ -4,13 +4,13 @@
 
 Kills all effects for an object PAX
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pax   | ryj::PAX_161 *   | A PAX effect
 
 
-Example Usage From obj\F_HB020\f_hb.bdscript
+### Example Usage From obj\F_HB020\f_hb.bdscript
 ```plaintext
 L9368:
  popToSp 0
@@ -22,10 +22,7 @@ L9368:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          

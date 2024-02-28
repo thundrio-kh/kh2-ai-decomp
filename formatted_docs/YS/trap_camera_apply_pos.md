@@ -4,17 +4,17 @@
 
 Apply a position vector to the camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | position vector to apply to the camera
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\B_EX330\b_ex.bdscript
+### Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L5355:
  pushFromFSpVal 64
@@ -85,10 +85,7 @@ L5355:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          

@@ -4,17 +4,17 @@
 
 Checks if an attack hit the background (OOB?).
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | ishit   | bool   
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L4735:
  pushFromFSpVal 68
@@ -73,10 +73,7 @@ L4735:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

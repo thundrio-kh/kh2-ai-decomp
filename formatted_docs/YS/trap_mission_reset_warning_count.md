@@ -4,13 +4,13 @@
 
 Reset the warning flag for a counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | counter_id   | int   | id of a counter
 
 
-Example Usage From obj\N_CM020_BTL\n_cm.bdscript
+### Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L5144:
  pushFromFSp 0
@@ -43,10 +43,7 @@ L5144:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          

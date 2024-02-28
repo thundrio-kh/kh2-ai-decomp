@@ -4,7 +4,7 @@
 
 Resets the reaction command state to starting state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ *   | Object with a reaction command flag
@@ -12,14 +12,11 @@ Resets the reaction command state to starting state
 | group   | int   | Unknown
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

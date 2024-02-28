@@ -4,13 +4,13 @@
 
 Initializes an action table to be used by an object. Needs actions added to it afterward with trap_act_table_add
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | table   | YS::ACT::TABLE *   | Variable to store the action table in
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L6423:
  popToSp 4
@@ -21,10 +21,7 @@ L6423:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

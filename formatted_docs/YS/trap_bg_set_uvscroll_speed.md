@@ -4,13 +4,13 @@
 
 UNknown. Used only by Oogie Boogie conveyor belts
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSp: 0
 
 
-Example Usage From obj\F_NM140\f_nm.bdscript
+### Example Usage From obj\F_NM140\f_nm.bdscript
 ```plaintext
 L2162:
  popToSp 0
@@ -30,10 +30,7 @@ L2162:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          

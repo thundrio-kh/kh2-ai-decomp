@@ -4,14 +4,14 @@
 
 Set the counter to a specific value.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | counter   | int   | Value to set the counter to
 | id   | int   | id of a counter
 
 
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L268:
  pushFromFSp 0
@@ -25,10 +25,7 @@ L268:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

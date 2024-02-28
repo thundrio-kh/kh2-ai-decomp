@@ -4,14 +4,14 @@
 
 Starts a specific animation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | id   | int   | ID of the animation
 
 
-Example Usage From obj\B_EX110\b_ex.bdscript
+### Example Usage From obj\B_EX110\b_ex.bdscript
 ```plaintext
 L11734:
  popToSp 0
@@ -69,10 +69,7 @@ L11734:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          

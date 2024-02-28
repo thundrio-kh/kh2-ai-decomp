@@ -4,14 +4,14 @@
 
 Set the attacker for an enemy.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy   | YS::PIERROT_6   | Enemy btl object
 | attacker   | YS::OBJ_138   | Object of the attacker
 
 
-Example Usage From obj\M_EX590\m_ex.bdscript
+### Example Usage From obj\M_EX590\m_ex.bdscript
 ```plaintext
 L5246:
  popToSp 0
@@ -65,10 +65,7 @@ L5246:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX590\m_ex.bdscript       | ((M) Bulky Vendor)          

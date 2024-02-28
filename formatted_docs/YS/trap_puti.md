@@ -4,14 +4,14 @@
 
 value"
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | An integer
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From limit\beast\limi.bdscript
+### Example Usage From limit\beast\limi.bdscript
 ```plaintext
 L3767:
  dup 
@@ -60,10 +60,7 @@ L3767:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           

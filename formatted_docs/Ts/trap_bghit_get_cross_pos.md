@@ -4,17 +4,17 @@
 
 Get the interesection point of a collision
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | bghit   | YS::BGHIT_0 *   | A BGHIT object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | cross_pos   | kn::FVector *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2954:
  popToSp 0
@@ -56,10 +56,7 @@ L2954:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

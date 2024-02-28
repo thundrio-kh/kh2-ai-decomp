@@ -4,14 +4,14 @@
 
 Set the owner of an RC
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | obj   | YS::OBJ_125   | An object to set as the owner
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L5260:
  jz L5404
@@ -79,10 +79,7 @@ L5260:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

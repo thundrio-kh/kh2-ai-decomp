@@ -4,13 +4,13 @@
 
 Have a friend follow an enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-Example Usage From obj\P_LK020\p_lk.bdscript
+### Example Usage From obj\P_LK020\p_lk.bdscript
 ```plaintext
 L2181:
  pushFromPSpVal 0
@@ -30,10 +30,7 @@ L2181:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          

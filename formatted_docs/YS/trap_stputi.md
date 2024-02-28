@@ -4,14 +4,14 @@
 
 value"
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | An integer
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L3409:
  pushFromFSp 0
@@ -31,10 +31,7 @@ L3409:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

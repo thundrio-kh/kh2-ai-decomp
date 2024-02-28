@@ -4,17 +4,17 @@
 
 Return a position vector for the objects current position.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L56:
  jz L112
@@ -46,10 +46,7 @@ L56:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

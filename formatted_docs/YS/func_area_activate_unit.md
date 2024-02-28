@@ -4,13 +4,13 @@
 
 Activates the spawn file with the passed in name.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unit   | string   | name of spawn file to be activated (ie 'f01_'
 
 
-Example Usage From ard\wi00\wi00.bdscript
+### Example Usage From ard\wi00\wi00.bdscript
 ```plaintext
 TR3:
  pushImm 13318
@@ -22,10 +22,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\wi00\wi00.bdscript       |           

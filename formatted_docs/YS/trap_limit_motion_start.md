@@ -4,7 +4,7 @@
 
 Starts an animation associated with a limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit   | YS::LIMIT_1   | An limit object
@@ -13,11 +13,11 @@ Starts an animation associated with a limit
 | blend   | float   | Blend value
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | int   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L758:
  pushFromPSp 48
@@ -35,10 +35,7 @@ L758:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

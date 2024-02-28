@@ -4,18 +4,18 @@
 
 Returns if a party member has an equipped ability. "tarp" typo comes directly from the games source code
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | id   | int   | Ability ID
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_equipped   | bool   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L378:
  dup 
@@ -27,10 +27,7 @@ L378:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

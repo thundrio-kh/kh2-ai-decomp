@@ -4,7 +4,7 @@
 
 Checks if the cross vector hits the line drawn between from and to. Unknown what type does.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | from   | kn::FVector *   | pushFromPSp: 32,48
@@ -13,11 +13,11 @@ Checks if the cross vector hits the line drawn between from and to. Unknown what
 | type   | int   | Also passed as 'collbcharacter'. Used values are either 1 or 4
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res_y   | int   
-Example Usage From obj\B_CA040_PUB\b_ca.bdscript
+### Example Usage From obj\B_CA040_PUB\b_ca.bdscript
 ```plaintext
 L5052:
  popToSp 4
@@ -52,10 +52,7 @@ L5052:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA040_PUB\b_ca.bdscript       | ()          

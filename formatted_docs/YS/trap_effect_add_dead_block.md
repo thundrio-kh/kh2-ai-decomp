@@ -4,13 +4,13 @@
 
 Start the "dead" effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effectobj   | ryj::EFFECT_278 *   | 
 
 
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L5649:
  pushFromFSp 0
@@ -48,10 +48,7 @@ L5649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

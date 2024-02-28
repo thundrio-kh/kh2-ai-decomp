@@ -4,14 +4,14 @@
 
 Gives a jigsaw piece
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | picture   | int   | puzzle that the piece is a part of
 | piece   | int   | number piece in the puzzle
 
 
-Example Usage From ard\tt28\jigs.bdscript
+### Example Usage From ard\tt28\jigs.bdscript
 ```plaintext
 TR2:
  pushImm 0
@@ -21,10 +21,7 @@ TR2:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt28\jigs.bdscript       |           

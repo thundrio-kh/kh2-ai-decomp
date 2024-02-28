@@ -4,13 +4,13 @@
 
 Unhooks a motion set
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-Example Usage From obj\B_EX160\b_ex.bdscript
+### Example Usage From obj\B_EX160\b_ex.bdscript
 ```plaintext
 L5222:
  pushFromFSp 0
@@ -24,10 +24,7 @@ L5222:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          

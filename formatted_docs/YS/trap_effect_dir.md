@@ -4,17 +4,17 @@
 
 returns the direction of an effect as a vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | pushFromFSpVal: 16
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | eff_dir   | kn::FVector *   
-Example Usage From obj\B_EX180\b_ex.bdscript
+### Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L347:
  popToSp 0
@@ -55,10 +55,7 @@ L347:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          

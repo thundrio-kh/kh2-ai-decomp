@@ -4,16 +4,16 @@
 
 Checks if the Final Mix Secret Movie is unlocked
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_unlocked   | bool   
-Example Usage From ard\es00\es_u.bdscript
+### Example Usage From ard\es00\es_u.bdscript
 ```plaintext
 TR3:
  gosub 4, L39
@@ -26,10 +26,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\es00\es_u.bdscript       |           

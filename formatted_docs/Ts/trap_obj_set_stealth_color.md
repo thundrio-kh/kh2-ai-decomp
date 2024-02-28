@@ -4,7 +4,7 @@
 
 Set the stealth color for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Set the stealth color for an object
 | b   | int   | Blue value, 0-255
 
 
-Example Usage From obj\B_LK120\b_lk.bdscript
+### Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L17408:
  popToSp 0
@@ -61,10 +61,7 @@ L17408:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          

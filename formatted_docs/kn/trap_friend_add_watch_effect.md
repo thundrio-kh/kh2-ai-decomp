@@ -4,14 +4,14 @@
 
 Have a friend watch an effect object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | effect   | ryj::EFFECT_55 *   | An effect object
 
 
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L2856:
  pushFromPSpVal 0
@@ -32,10 +32,7 @@ L2856:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

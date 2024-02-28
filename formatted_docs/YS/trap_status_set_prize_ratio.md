@@ -4,13 +4,13 @@
 
 Set the range the player has to be from a prize to pick it up
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | range   | float   | The new prize range value
 
 
-Example Usage From msn\MU01_MS103C\mu01.bdscript
+### Example Usage From msn\MU01_MS103C\mu01.bdscript
 ```plaintext
 TR3:
  gosub 4, L239
@@ -31,10 +31,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU01_MS103C\mu01.bdscript       |           

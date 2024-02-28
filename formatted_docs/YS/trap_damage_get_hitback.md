@@ -4,17 +4,17 @@
 
 Get the hitback value of damage
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | hitback   | float   
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L1729:
  jz L1743
@@ -27,10 +27,7 @@ L1729:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

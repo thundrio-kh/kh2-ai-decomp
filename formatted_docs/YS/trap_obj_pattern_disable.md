@@ -28,14 +28,14 @@ Disable resistances/sturdy frames for an object
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | value   | int   | Pattern number to disable. See table in description
 
 
-Example Usage From obj\B_AL100_2ND\b_al.bdscript
+### Example Usage From obj\B_AL100_2ND\b_al.bdscript
 ```plaintext
 L9044:
  popToSp 0
@@ -72,10 +72,7 @@ L9044:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          

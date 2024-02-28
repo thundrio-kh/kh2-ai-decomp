@@ -4,7 +4,7 @@
 
 sets a color for a light, "a" value is always 128
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | light_object   | YS::LIGHT_0 *   | a light object
@@ -14,7 +14,7 @@ sets a color for a light, "a" value is always 128
 | time   | int   | time to take to set the color
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L6541:
  popToSp 4
@@ -39,10 +39,7 @@ L6541:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

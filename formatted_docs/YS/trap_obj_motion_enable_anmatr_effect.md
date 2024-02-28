@@ -4,14 +4,14 @@
 
 Enables the anmatr effect for a given motion set entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 
-Example Usage From obj\B_LK110\b_lk.bdscript
+### Example Usage From obj\B_LK110\b_lk.bdscript
 ```plaintext
 L8820:
  popToSp 0
@@ -46,10 +46,7 @@ L8820:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK110\b_lk.bdscript       | ((B) Scar)          

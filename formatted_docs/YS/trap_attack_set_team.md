@@ -4,14 +4,14 @@
 
 Sets a team for an attack (most likely so that objects on the same team cannot be damaged by this attack)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | team   | int   | Value to represent which team this attack belongs to
 
 
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L9800:
  pushFromFSpVal 68
@@ -27,10 +27,7 @@ L9800:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

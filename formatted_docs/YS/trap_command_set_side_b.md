@@ -4,12 +4,12 @@
 
 Sets the command cage to the back side
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From ard\bb03\bb.bdscript
+### Example Usage From ard\bb03\bb.bdscript
 ```plaintext
 TR3:
  pushImm 39
@@ -27,10 +27,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\bb03\bb.bdscript       |           

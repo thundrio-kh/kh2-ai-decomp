@@ -4,18 +4,18 @@
 
 Calculates the rotation of a vector in the XZ plane
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
 | flt   | float   | An offset amount?
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2130:
  pushFromFSpVal 104
@@ -55,10 +55,7 @@ L2130:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

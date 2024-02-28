@@ -4,17 +4,17 @@
 
 Return the normal of the background position from the given camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | camera   | int   | Value designating the camera
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | normal   | kn::FVector   
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L8661:
  pushFromFSp 64
@@ -38,10 +38,7 @@ L8661:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

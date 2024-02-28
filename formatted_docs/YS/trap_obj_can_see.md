@@ -4,18 +4,18 @@
 
 Checks if object can see target object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_128   | An object
 | target_obj   | YS::OBJ_128   | A target object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | can_see   | bool   
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L6358:
  pushFromFSp 64
@@ -31,10 +31,7 @@ L6358:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

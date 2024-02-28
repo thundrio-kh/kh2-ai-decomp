@@ -4,14 +4,14 @@
 
 Request stitch move (to the target)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | move_target   | int   | Target number stitch should move to
 
 
-Example Usage From obj\N_HB040_BTL\n_hb.bdscript
+### Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L3314:
  popToSp 0
@@ -67,10 +67,7 @@ L3314:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          

@@ -4,17 +4,17 @@
 
 Gets the projection pos of the camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | camera_pos   | kn::FVector   | A position vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | projection_pos   | kn::FMatrix   
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L22781:
  popToSp 0
@@ -41,10 +41,7 @@ L22781:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

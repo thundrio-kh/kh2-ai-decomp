@@ -4,7 +4,7 @@
 
 
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | part   | int   | ID of the character to give the weapon to?
@@ -12,7 +12,7 @@
 | left   | int   | Left hand weapon ID, 0 for none
 
 
-Example Usage From 00common
+### Example Usage From 00common
 ```plaintext
 L193:
  pushImm 1
@@ -92,10 +92,7 @@ L193:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | 00common       |           

@@ -4,14 +4,14 @@
 
 Set the time parameter for an RTN
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 | time_param   | float   | Time parameter to set
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L303:
  popToSp 4
@@ -248,10 +248,7 @@ L303:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

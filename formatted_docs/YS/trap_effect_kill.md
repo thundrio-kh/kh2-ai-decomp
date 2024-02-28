@@ -4,13 +4,13 @@
 
 ends an effect and frees the associated memory
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4545:
  popToSp 0
@@ -27,10 +27,7 @@ L4545:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

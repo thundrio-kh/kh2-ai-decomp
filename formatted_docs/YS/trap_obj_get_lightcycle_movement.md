@@ -4,7 +4,7 @@
 
 Get the movement for the light cycle to head to a target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_195 *   | An object
@@ -12,11 +12,11 @@ Get the movement for the light cycle to head to a target
 | range   | float   | Range to try and target the target
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | movement   | kn::FVector   
-Example Usage From obj\M_EX600_LC\m_ex.bdscript
+### Example Usage From obj\M_EX600_LC\m_ex.bdscript
 ```plaintext
 L62:
  pushFromFSp 0
@@ -33,10 +33,7 @@ L62:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          

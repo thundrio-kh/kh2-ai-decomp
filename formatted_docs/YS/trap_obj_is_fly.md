@@ -4,17 +4,17 @@
 
 Returns if the object is flying
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSp: 0,4
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_fly   | bool   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L3114:
  pushFromFSp 4
@@ -32,10 +32,7 @@ L3114:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

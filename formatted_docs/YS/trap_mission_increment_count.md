@@ -4,13 +4,13 @@
 
 Adds one to a counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | counter_id   | int   | id of a counter
 
 
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -31,10 +31,7 @@ TR6:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

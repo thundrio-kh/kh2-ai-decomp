@@ -13,16 +13,16 @@ def GetRestTime:
   return 3600
 */
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | rest_time   | float   
-Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript
+### Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript
 ```plaintext
 L2592:
  syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
@@ -35,10 +35,7 @@ L2592:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX660_WI_RAW\m_ex.bdscript       | ()          

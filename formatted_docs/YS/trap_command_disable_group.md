@@ -4,13 +4,13 @@
 
 Disables a numbered command group
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | group   | int   | Values used by Lingering Will are 1 and 2
 
 
-Example Usage From obj\B_EX420\b_ex.bdscript
+### Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L4680:
  popToSp 0
@@ -34,10 +34,7 @@ L4680:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          

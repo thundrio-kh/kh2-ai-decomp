@@ -4,17 +4,17 @@
 
 returns the ID for an object (according to 00objentry.bin)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | entry_id   | int   
-Example Usage From msn\AL14_MS_O\al14.bdscript
+### Example Usage From msn\AL14_MS_O\al14.bdscript
 ```plaintext
 L89:
  pushFromPSp 16
@@ -30,10 +30,7 @@ L89:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL14_MS_O\al14.bdscript       |           

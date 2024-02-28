@@ -4,14 +4,14 @@
 
 executes damage
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | A battle object
 | damage   | YS::DAMAGE_4 *   | A damage object
 
 
-Example Usage From obj\F_MU030\f_mu.bdscript
+### Example Usage From obj\F_MU030\f_mu.bdscript
 ```plaintext
 L31:
  popToSp 4
@@ -23,10 +23,7 @@ L31:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_MU030\f_mu.bdscript       | ((F) ??? (MU))          

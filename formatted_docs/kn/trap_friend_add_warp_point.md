@@ -4,13 +4,13 @@
 
 Add a friend warp point at a position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From obj\B_EX260\b_ex.bdscript
+### Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L873:
  pushFromPSp 48
@@ -93,10 +93,7 @@ L873:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          

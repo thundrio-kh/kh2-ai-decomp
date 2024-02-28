@@ -4,13 +4,13 @@
 
 Clear a target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 
 
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L1061:
  popToSp 0
@@ -32,10 +32,7 @@ L1061:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

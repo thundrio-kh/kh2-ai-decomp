@@ -4,20 +4,17 @@
 
 clears the OCC
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

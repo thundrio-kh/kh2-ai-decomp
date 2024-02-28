@@ -4,13 +4,13 @@
 
 Accept a notify player target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6806:
  popToSp 0
@@ -24,10 +24,7 @@ L6806:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

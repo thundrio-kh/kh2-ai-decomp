@@ -4,21 +4,18 @@
 
 Set the way on a path that an object is going
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 | dir   | bool   | bool indicating direction?
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

@@ -4,12 +4,12 @@
 
 ends a mission in failure
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From ard\al05\ms_b.bdscript
+### Example Usage From ard\al05\ms_b.bdscript
 ```plaintext
 L128:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
@@ -17,10 +17,7 @@ L128:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           

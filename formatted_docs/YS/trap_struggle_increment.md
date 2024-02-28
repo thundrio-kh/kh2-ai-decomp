@@ -4,18 +4,18 @@
 
 Increments the struggle value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | stage   | int   | Stage of the struggle tournament the player is at
 | won_match   | bool   | If the player won the last match
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From msn\TT04_MS00\tt04.bdscript
+### Example Usage From msn\TT04_MS00\tt04.bdscript
 ```plaintext
 L172:
  popToSp 0
@@ -36,10 +36,7 @@ L172:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS00\tt04.bdscript       |           

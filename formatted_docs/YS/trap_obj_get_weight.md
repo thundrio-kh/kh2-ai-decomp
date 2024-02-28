@@ -4,17 +4,17 @@
 
 Returns the defined weight of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | weight   | float   
-Example Usage From msn\TR07_MS203\tr07.bdscript
+### Example Usage From msn\TR07_MS203\tr07.bdscript
 ```plaintext
 L240:
  pushFromPSp 0
@@ -29,10 +29,7 @@ L240:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TR07_MS203\tr07.bdscript       |           

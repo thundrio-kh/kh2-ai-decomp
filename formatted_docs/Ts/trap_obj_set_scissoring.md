@@ -4,14 +4,14 @@
 
 Set the scissoring flag for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | value   | bool   | Value to set
 
 
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L7475:
  popToSp 0
@@ -55,10 +55,7 @@ L7475:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

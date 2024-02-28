@@ -4,14 +4,14 @@
 
 Set the position of Flare Force
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flare   | Ts::FLARE_0 *   | Flare Force object
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L3056:
  popToSp 4
@@ -26,10 +26,7 @@ L3056:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

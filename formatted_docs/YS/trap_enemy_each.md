@@ -4,17 +4,17 @@
 
 seems to return an array of all instances of an enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy   | YS::ENEMY_0 *   | A type of enemy
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | enemy_array   | an array of all instances of this enemy   
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L1759:
  popToSp 0
@@ -29,10 +29,7 @@ L1759:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

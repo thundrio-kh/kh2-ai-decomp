@@ -4,7 +4,7 @@
 
 Vacuums up a number of medals from one object to the target
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ *   | A battle object
@@ -12,11 +12,11 @@ Vacuums up a number of medals from one object to the target
 | num   | int   | number of prizes
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | all_vacuumed   | bool   
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L6690:
  jz L6758
@@ -40,10 +40,7 @@ L6690:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

@@ -4,7 +4,7 @@
 
 Set the speed of a vacuum
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vacuum   | YS::VACUUM::VACUUM   | A vacuum object
@@ -13,7 +13,7 @@ Set the speed of a vacuum
 | unk4   | float   | Unknown
 
 
-Example Usage From obj\B_EX180\b_ex.bdscript
+### Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L5602:
  pushFromFWp W4264
@@ -31,10 +31,7 @@ L5602:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          

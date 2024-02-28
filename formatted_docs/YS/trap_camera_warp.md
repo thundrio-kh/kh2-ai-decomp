@@ -4,12 +4,12 @@
 
 Warps the camera (to another object?)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_EX130\b_ex.bdscript
+### Example Usage From obj\B_EX130\b_ex.bdscript
 ```plaintext
 L3109:
  pushFromFSp 0
@@ -50,10 +50,7 @@ L3109:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          

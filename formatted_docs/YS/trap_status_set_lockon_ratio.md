@@ -4,13 +4,13 @@
 
 Set the range at which the player is allowed to lockon from
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | range   | float   | Range to set
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L4649:
  popToSp 4
@@ -641,10 +641,7 @@ L4649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

@@ -4,12 +4,12 @@
 
 Enable the item row on the command menu
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\TT32_MS303\tt32.bdscript
+### Example Usage From msn\TT32_MS303\tt32.bdscript
 ```plaintext
 L60:
  syscall 1, 322 ; trap_command_enable_item (0 in, 0 out)
@@ -19,10 +19,7 @@ L60:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT32_MS303\tt32.bdscript       |           

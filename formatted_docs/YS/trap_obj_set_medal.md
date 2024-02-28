@@ -4,14 +4,14 @@
 
 Set the number of CA medals an object has
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | num   | int   | Number of medals
 
 
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L3024:
  pushFromFSp 0
@@ -102,10 +102,7 @@ L3024:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

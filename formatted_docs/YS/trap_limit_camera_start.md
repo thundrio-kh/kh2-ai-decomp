@@ -4,7 +4,7 @@
 
 starts the specialized limit camera
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
@@ -13,7 +13,7 @@ starts the specialized limit camera
 | is_air   | bool   | pushImm: 0,1
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3043:
  popToSp 0
@@ -29,10 +29,7 @@ L3043:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

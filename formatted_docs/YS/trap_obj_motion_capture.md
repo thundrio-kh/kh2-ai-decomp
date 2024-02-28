@@ -4,7 +4,7 @@
 
 starts a motion set id that captures an object, returning the id of the capture
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
@@ -13,11 +13,11 @@ starts a motion set id that captures an object, returning the id of the capture
 | blend_time   | float   | time to blend between two motion entries
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | motion_capture_id   | int   
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L2804:
  pushFromPSpVal 0
@@ -60,10 +60,7 @@ L2804:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

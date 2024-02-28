@@ -4,17 +4,17 @@
 
 Returns if the object is hovering
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_hover   | bool   
-Example Usage From obj\F_HB090\f_hb.bdscript
+### Example Usage From obj\F_HB090\f_hb.bdscript
 ```plaintext
 L442:
  pushFromFSp 0
@@ -26,10 +26,7 @@ L442:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          

@@ -4,14 +4,14 @@
 
 Set the group ID that a target belongs to
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 | group_id   | int   | ID of a group
 
 
-Example Usage From obj\B_LK120\b_lk.bdscript
+### Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L3502:
  pushFromFSp 20
@@ -21,10 +21,7 @@ L3502:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          

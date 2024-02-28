@@ -4,17 +4,17 @@
 
 Returns if the motion set is a hook
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_hook   | bool   
-Example Usage From obj\B_EX160\b_ex.bdscript
+### Example Usage From obj\B_EX160\b_ex.bdscript
 ```plaintext
 L1536:
  pushFromFWp W8
@@ -34,10 +34,7 @@ L1536:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          

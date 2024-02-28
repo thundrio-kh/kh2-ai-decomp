@@ -4,7 +4,7 @@
 
 Sets a line for an attack that needs a line set
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
@@ -12,7 +12,7 @@ Sets a line for an attack that needs a line set
 | p2   | kn::FVector *   | The position of the other end of the line to be set
 
 
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L6269:
  pushFromFSpVal 68
@@ -42,10 +42,7 @@ L6269:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

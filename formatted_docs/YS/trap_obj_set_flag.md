@@ -4,14 +4,14 @@
 
 Sets a specific flag on an object to true
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | flagnum   | int   | Flag number
 
 
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L5471:
  popToSp 0
@@ -43,10 +43,7 @@ L5471:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

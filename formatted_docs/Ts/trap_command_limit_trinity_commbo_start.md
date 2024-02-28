@@ -4,13 +4,13 @@
 
 Start one of the three parts of the trinity limit combo
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | n   | int   | number, 0 1 or 2
 
 
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L962:
  pushFromFSp 0
@@ -24,10 +24,7 @@ L962:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

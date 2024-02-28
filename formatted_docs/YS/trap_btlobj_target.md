@@ -4,17 +4,17 @@
 
 Retrieves the btlobj of the subject of a target object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | btlobj   | YS::BTLOBJ *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3456:
  popToSp 0
@@ -43,10 +43,7 @@ L3456:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

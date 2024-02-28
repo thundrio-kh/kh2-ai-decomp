@@ -18,17 +18,17 @@ Checks if a button is pressed on the controller.
 | R1     | 11    |
 | Select | 22    |
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | button   | int   | ID of button to check, see description
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_pressed   | bool   
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L2134:
  jz L2167
@@ -48,10 +48,7 @@ L2134:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

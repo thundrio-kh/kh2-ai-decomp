@@ -4,13 +4,13 @@
 
 Sets an object to go from a fly animation to a jump animation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133   | An object
 
 
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L3114:
  pushFromFSp 4
@@ -28,10 +28,7 @@ L3114:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

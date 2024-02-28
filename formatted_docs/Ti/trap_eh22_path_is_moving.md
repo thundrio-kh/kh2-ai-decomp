@@ -4,17 +4,17 @@
 
 Return if the path is moving during the dragon xemnas fight
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_moving   | bool   
-Example Usage From obj\B_EX330\b_ex.bdscript
+### Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L829:
  pushFromFSpVal 124
@@ -38,10 +38,7 @@ L829:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          

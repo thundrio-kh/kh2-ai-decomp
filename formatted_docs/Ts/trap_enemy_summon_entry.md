@@ -4,17 +4,17 @@
 
 Summon a new instance of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_254 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | new_obj   | YS::OBJ_254 *   
-Example Usage From obj\M_EX740\m_ex.bdscript
+### Example Usage From obj\M_EX740\m_ex.bdscript
 ```plaintext
 L1922:
  popToSp 0
@@ -62,10 +62,7 @@ L1922:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          

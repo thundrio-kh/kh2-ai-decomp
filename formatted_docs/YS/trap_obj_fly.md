@@ -4,7 +4,7 @@
 
 Tells an object to fly with a specific velocity and acceleration
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_187 *   | An object
@@ -12,7 +12,7 @@ Tells an object to fly with a specific velocity and acceleration
 | accel   | float   | Acceleration value
 
 
-Example Usage From limit\jack\limi.bdscript
+### Example Usage From limit\jack\limi.bdscript
 ```plaintext
 L738:
  popToSp 4
@@ -50,10 +50,7 @@ L738:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           

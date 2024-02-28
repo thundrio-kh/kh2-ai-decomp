@@ -4,14 +4,14 @@
 
 Removes/reduces an item from inventory.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | item   | int   | Item number
 | part   | int   | Unknown, game only uses value of 100
 
 
-Example Usage From ard\ca01\ca_d.bdscript
+### Example Usage From ard\ca01\ca_d.bdscript
 ```plaintext
 TR2:
  pushImm 372
@@ -21,10 +21,7 @@ TR2:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\ca01\ca_d.bdscript       |           

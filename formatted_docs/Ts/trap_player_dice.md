@@ -4,12 +4,12 @@
 
 Change the player into a die
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L10397:
  gosub 4, L946
@@ -61,10 +61,7 @@ L10397:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

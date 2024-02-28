@@ -4,7 +4,7 @@
 
 Starts an effect associated with an object and binds it to another object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -14,11 +14,11 @@ Starts an effect associated with an object and binds it to another object
 | other_object   | YS::OBJ_125   | Other object for the effect to be binded to
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
-Example Usage From obj\B_EX100\b_ex.bdscript
+### Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L15416:
  popToSp 0
@@ -67,10 +67,7 @@ L15416:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          

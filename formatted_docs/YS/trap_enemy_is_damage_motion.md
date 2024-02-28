@@ -4,17 +4,17 @@
 
 returns if the damage is happening while the enemy is in an animation
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ *   | an battle object for an enemy
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | ismotion   | bool   
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L4913:
  pushFromFSp 0
@@ -31,10 +31,7 @@ L4913:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

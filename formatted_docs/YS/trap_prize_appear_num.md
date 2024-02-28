@@ -4,7 +4,7 @@
 
 Makes a number of prizes appear at a position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | A position vector
@@ -12,7 +12,7 @@ Makes a number of prizes appear at a position
 | num   | int   | number of prizes
 
 
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L1121:
  pushFromFSp 4
@@ -31,10 +31,7 @@ L1121:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

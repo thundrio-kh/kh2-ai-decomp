@@ -4,12 +4,12 @@
 
 Turns on temporary barriers, like those used during the escape from Hades sequence.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HB16_MS404B\hb16.bdscript
+### Example Usage From msn\HB16_MS404B\hb16.bdscript
 ```plaintext
 L33:
  pushImm 21
@@ -21,10 +21,7 @@ L33:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB16_MS404B\hb16.bdscript       |           

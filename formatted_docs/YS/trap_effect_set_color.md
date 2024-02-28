@@ -4,14 +4,14 @@
 
 Sets the color of an effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 | color_vector   | kn::FVector *   | probably r,g,b,a color vector
 
 
-Example Usage From obj\B_AL110\b_al.bdscript
+### Example Usage From obj\B_AL110\b_al.bdscript
 ```plaintext
 L3409:
  pushFromFSp 56
@@ -79,10 +79,7 @@ L3409:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          

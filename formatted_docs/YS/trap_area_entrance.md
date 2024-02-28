@@ -4,16 +4,16 @@
 
 Returns the number for the entrance used to enter the room
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | entnum   | int   
-Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
 ```plaintext
 L188:
  syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
@@ -31,10 +31,7 @@ L188:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           

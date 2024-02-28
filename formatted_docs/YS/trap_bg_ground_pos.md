@@ -4,7 +4,7 @@
 
 Gets the position of the nearest ground
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | current position to use when calculated nearest ground   | 
@@ -12,11 +12,11 @@ Gets the position of the nearest ground
 | height   | float   | Value to add to the result of the nearest ground
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | returnval   | int   
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L96:
  popToSp 0
@@ -40,10 +40,7 @@ L96:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

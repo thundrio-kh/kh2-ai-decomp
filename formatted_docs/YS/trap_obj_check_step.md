@@ -4,7 +4,7 @@
 
 Check if a step is interesecting with a given line?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133   | An object
@@ -13,11 +13,11 @@ Check if a step is interesecting with a given line?
 | jump_height   | float   | How high the step goes
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_step   | bool   
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L4358:
  pushFromFSp 0
@@ -62,10 +62,7 @@ L4358:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

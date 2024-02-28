@@ -4,24 +4,21 @@
 
 Check if the cost for this magic object can be added to the areas current cost
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | magic   | YS::MAGIC_85 *   | A magic object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | allowed   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

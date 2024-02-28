@@ -4,14 +4,14 @@
 
 Resets the position of an object, either to 0,0,0 or to the vector passed in
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From obj\B_BB130\b_bb.bdscript
+### Example Usage From obj\B_BB130\b_bb.bdscript
 ```plaintext
 L4066:
  popToSp 0
@@ -50,10 +50,7 @@ L4066:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB130\b_bb.bdscript       | ((B) Thresholder’s possessor?)          

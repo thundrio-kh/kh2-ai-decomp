@@ -4,7 +4,7 @@
 
 Sets a hitback in a given direction
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::BTLOBJ *   | A battle object
@@ -12,7 +12,7 @@ Sets a hitback in a given direction
 | dist   | float   | A distance value (game uses range of 50-200
 
 
-Example Usage From magic\blizzard1\bliz.bdscript
+### Example Usage From magic\blizzard1\bliz.bdscript
 ```plaintext
 L60:
  pushFromPSpVal 0
@@ -90,10 +90,7 @@ L60:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           

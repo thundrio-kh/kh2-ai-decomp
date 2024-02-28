@@ -4,20 +4,17 @@
 
 Changes the speed the game runs.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | scale   | float   | Set new game speed
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

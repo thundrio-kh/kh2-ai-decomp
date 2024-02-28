@@ -4,13 +4,13 @@
 
 Use up the mp for a party member
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\P_AL000\p_al.bdscript
+### Example Usage From obj\P_AL000\p_al.bdscript
 ```plaintext
 L2717:
  popToSp 4
@@ -40,10 +40,7 @@ L2717:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          

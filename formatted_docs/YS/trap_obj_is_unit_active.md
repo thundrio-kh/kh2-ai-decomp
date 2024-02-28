@@ -4,17 +4,17 @@
 
 Returns if the object's unit is active
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_unit_active   | bool   
-Example Usage From obj\F_CA060\f_ca.bdscript
+### Example Usage From obj\F_CA060\f_ca.bdscript
 ```plaintext
 L143:
  pushFromFSp 0
@@ -30,10 +30,7 @@ L143:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          

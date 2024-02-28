@@ -4,14 +4,14 @@
 
 Set the RTN option flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 | flag_num   | int   | Flag number to turn on
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L2452:
  pushFromPAi L2895 ; ___ai 'RTN_stop' (L2895)
@@ -33,10 +33,7 @@ L2452:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

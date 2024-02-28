@@ -4,13 +4,13 @@
 
 Marks an object as dead
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ   | An object
 
 
-Example Usage From obj\M_EX350_01\m_ex.bdscript
+### Example Usage From obj\M_EX350_01\m_ex.bdscript
 ```plaintext
 L2510:
  pushFromFSp 0
@@ -32,10 +32,7 @@ L2510:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX350_01\m_ex.bdscript       | ((M) Mushroom 1 (EX))          

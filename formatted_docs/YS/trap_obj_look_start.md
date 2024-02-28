@@ -4,7 +4,7 @@
 
 Create a lookat object using an object as a base
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
@@ -12,7 +12,7 @@ Create a lookat object using an object as a base
 | time   | float   | time for the lookat to last
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L1138:
  popToSp 0
@@ -33,10 +33,7 @@ L1138:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

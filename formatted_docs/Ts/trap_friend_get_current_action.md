@@ -4,24 +4,21 @@
 
 Gets the current action of a friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | action   | char *   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

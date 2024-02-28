@@ -4,18 +4,18 @@
 
 Play a object sound effect on loop
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | num   | int   | ID number of sound effect to play
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | int   
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L12374:
  popToSp 4
@@ -28,10 +28,7 @@ L12374:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

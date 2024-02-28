@@ -4,17 +4,17 @@
 
 Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | Object entry ID
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | crowd_event   | YS::CROWD_EVENT_4   
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L255:
  popToSp 4
@@ -27,10 +27,7 @@ L255:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

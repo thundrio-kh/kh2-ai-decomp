@@ -4,14 +4,14 @@
 
 sets the max limit for a combo counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | value to set the combo counter max to
 | id   | int   | id of a combo counter
 
 
-Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
 ```plaintext
 L307:
  popToSp 0
@@ -33,10 +33,7 @@ L307:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           

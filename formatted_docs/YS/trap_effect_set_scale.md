@@ -4,14 +4,14 @@
 
 Scales an effect object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | An effect object
 | scale   | kn::FVector *   | vector to scale the effect by
 
 
-Example Usage From magic\magnet1\magn.bdscript
+### Example Usage From magic\magnet1\magn.bdscript
 ```plaintext
 L395:
  popToSp 4
@@ -46,10 +46,7 @@ L395:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\magnet1\magn.bdscript       |           

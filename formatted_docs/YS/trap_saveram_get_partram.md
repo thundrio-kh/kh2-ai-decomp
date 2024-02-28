@@ -4,17 +4,17 @@
 
 Gets a specific part of the saveram
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | part   | int   | Part to get
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | partram   | YS::PARTRAM *   
-Example Usage From ard\mu07\mu_g.bdscript
+### Example Usage From ard\mu07\mu_g.bdscript
 ```plaintext
 TR2:
  pushImm 6
@@ -47,10 +47,7 @@ TR2:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\mu07\mu_g.bdscript       |           

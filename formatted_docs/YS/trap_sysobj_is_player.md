@@ -4,17 +4,17 @@
 
 Returns true if the object is the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_player   | bool   
-Example Usage From msn\CA01_MS204\ca01.bdscript
+### Example Usage From msn\CA01_MS204\ca01.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -31,10 +31,7 @@ TR6:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           

@@ -4,7 +4,7 @@
 
 Get the direction for a path from an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,18 +12,15 @@ Get the direction for a path from an object
 | a5   | float   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

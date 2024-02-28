@@ -4,7 +4,7 @@
 
 Calculate the speed of magic
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | float   | Values of -10, -2 used in game
@@ -13,11 +13,11 @@ Calculate the speed of magic
 | unk4   | float   | Unkown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | speed   | float   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L592:
  pushImmf 0
@@ -76,10 +76,7 @@ L592:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

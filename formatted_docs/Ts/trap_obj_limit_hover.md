@@ -4,7 +4,7 @@
 
 Hover an object as part of a limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Hover an object as part of a limit
 | brake_slow   | float   | Slow brake speed
 
 
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L1340:
  popToSp 4
@@ -36,10 +36,7 @@ L1340:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

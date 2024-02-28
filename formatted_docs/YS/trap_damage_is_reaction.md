@@ -4,17 +4,17 @@
 
 Checks if damage from an attack should be reacted to, which it is as long as the reaction type is not 0 or 1. The reaction type is the "Enemy Reaction" value defined in the ATKP table
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | shouldreact   | bool   
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L2139:
  pushFromFSp 4
@@ -35,10 +35,7 @@ L2139:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

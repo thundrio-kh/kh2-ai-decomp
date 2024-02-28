@@ -4,18 +4,18 @@
 
 Calulates the outer product of two vectors
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | res   | float   
-Example Usage From obj\B_CA000\b_ca.bdscript
+### Example Usage From obj\B_CA000\b_ca.bdscript
 ```plaintext
 L2000:
  popToSp 0
@@ -78,10 +78,7 @@ L2000:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          

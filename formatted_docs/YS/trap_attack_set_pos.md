@@ -4,14 +4,14 @@
 
 Sets a position for an attack to happen.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | pos   | kn::FVector *   | A Vector representing where the attack should occur
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3275:
  popToSp 0
@@ -60,10 +60,7 @@ L3275:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

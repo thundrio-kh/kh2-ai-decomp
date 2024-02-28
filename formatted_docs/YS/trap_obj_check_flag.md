@@ -4,25 +4,22 @@
 
 Checks if an object flag is set. Unused normally
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_128   | An object
 | flag   | int   | a flag?
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_set   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

@@ -4,13 +4,13 @@
 
 Hides a specific part of the map
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | groupNumber   | int   | groupNumber to hide
 
 
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 L182:
  syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
@@ -35,10 +35,7 @@ L182:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

@@ -4,17 +4,17 @@
 
 Returns true if the current motion set has ended
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_end   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2619:
  pushFromFSp 4
@@ -24,10 +24,7 @@ L2619:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

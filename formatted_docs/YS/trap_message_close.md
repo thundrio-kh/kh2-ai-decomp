@@ -4,13 +4,13 @@
 
 closes the scrolling message window in the top left of the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | window   | YS::WINDOW_8 *   | a window object
 
 
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L4514:
  pushFromFSp 48
@@ -33,10 +33,7 @@ L4514:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

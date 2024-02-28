@@ -4,14 +4,14 @@
 
 Looks up an object by ID and then returns the copy of the object that is closest to the camera? looks very similar to trap_obj_search_by_entry but is actually used in game
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
 | entry_id   | int   | ID of the object to look up
 
 
-Example Usage From obj\F_AL110\f_al.bdscript
+### Example Usage From obj\F_AL110\f_al.bdscript
 ```plaintext
 L218:
  pushFromPSp 16
@@ -31,10 +31,7 @@ L218:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          

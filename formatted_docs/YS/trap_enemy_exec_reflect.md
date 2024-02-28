@@ -4,7 +4,7 @@
 
 executes reflect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | A battle object
@@ -14,14 +14,11 @@ executes reflect
 | hitback   | float   | amount of hitback for the damage
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

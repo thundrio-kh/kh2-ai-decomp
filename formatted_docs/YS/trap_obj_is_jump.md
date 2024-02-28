@@ -4,17 +4,17 @@
 
 Returns if the object is jumping.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_jump   | bool   
-Example Usage From magic\FIRE_1\fire.bdscript
+### Example Usage From magic\FIRE_1\fire.bdscript
 ```plaintext
 L47:
  pushFromPSpVal 0
@@ -28,10 +28,7 @@ L47:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\FIRE_1\fire.bdscript       |           

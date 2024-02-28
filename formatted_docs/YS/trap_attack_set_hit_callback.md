@@ -4,7 +4,7 @@
 
 Adds a callback function to an attack that will run on hit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
@@ -12,7 +12,7 @@ Adds a callback function to an attack that will run on hit
 | unk   | unknown   | unknown
 
 
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L5011:
  pushFromPSpVal 0
@@ -31,10 +31,7 @@ L5011:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

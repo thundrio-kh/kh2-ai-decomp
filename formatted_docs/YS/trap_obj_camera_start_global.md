@@ -4,14 +4,14 @@
 
 Starts running a label to change the camera to a global target, usually for a special big attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::STDOBJ_112 *   | An object
 | label   | string   | A label for a camera routine, usually called '00' or '10' etc
 
 
-Example Usage From obj\B_EX110\b_ex.bdscript
+### Example Usage From obj\B_EX110\b_ex.bdscript
 ```plaintext
 L140:
  popToSp 4
@@ -56,10 +56,7 @@ L140:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          

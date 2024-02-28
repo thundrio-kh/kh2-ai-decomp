@@ -4,20 +4,17 @@
 
 Performs a crossfade on the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | frame   | float   | number of frames to take
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

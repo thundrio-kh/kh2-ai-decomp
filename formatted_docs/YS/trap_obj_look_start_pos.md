@@ -4,7 +4,7 @@
 
 Create a lookat object using a lookat as a base
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | lookat   | YS::LOOKAT_116   | A lookat object
@@ -12,14 +12,11 @@ Create a lookat object using a lookat as a base
 | time   | float   | time for the lookat to last
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

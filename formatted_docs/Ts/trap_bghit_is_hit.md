@@ -4,17 +4,17 @@
 
 Check if a bghit has hit something
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | bghit   | YS::BGHIT_0 *   | A BGHIT object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_hit   | bool   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L6856:
  popToSp 4
@@ -41,10 +41,7 @@ L6856:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

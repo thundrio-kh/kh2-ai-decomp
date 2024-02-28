@@ -4,14 +4,14 @@
 
 Adds an ability to a specific form of sora (IE lion sora)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | form_id   | int   | ID of the form to grant the ability to
 | ability_id   | int   | ID of the ability to grant
 
 
-Example Usage From ard\lk02\lk_g.bdscript
+### Example Usage From ard\lk02\lk_g.bdscript
 ```plaintext
 TR2:
  pushImm 7
@@ -21,10 +21,7 @@ TR2:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\lk02\lk_g.bdscript       |           

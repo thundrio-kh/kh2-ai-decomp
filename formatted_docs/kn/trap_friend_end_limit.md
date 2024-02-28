@@ -4,13 +4,13 @@
 
 End a friends limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-Example Usage From obj\N_HB040_BTL\n_hb.bdscript
+### Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L1009:
  popToSp 0
@@ -32,10 +32,7 @@ L1009:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          

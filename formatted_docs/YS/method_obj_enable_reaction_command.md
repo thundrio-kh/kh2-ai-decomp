@@ -4,7 +4,7 @@
 
 Enables a reaction command so it can be activated by the player. Unused in the vanilla game.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ *   | Object with a reaction command flag
@@ -12,14 +12,11 @@ Enables a reaction command so it can be activated by the player. Unused in the v
 | group   | int   | Unknown
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

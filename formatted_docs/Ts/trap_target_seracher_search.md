@@ -4,7 +4,7 @@
 
 Searches for a target based on a number of parameters
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
@@ -16,7 +16,7 @@ Searches for a target based on a number of parameters
 | is_history   | bool   | Unknown purpose, only value used in game is 1
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3839:
  pushFromFSp 20
@@ -60,10 +60,7 @@ L3839:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

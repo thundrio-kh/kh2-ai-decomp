@@ -4,24 +4,21 @@
 
 returns the type of the passed in attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | an attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | type   | int   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

@@ -4,13 +4,13 @@
 
 Lets all instances of the object start doing things again
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | ID of an enemy
 
 
-Example Usage From obj\B_TR000\b_tr.bdscript
+### Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L429:
  pushImm 6
@@ -21,10 +21,7 @@ L429:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          

@@ -4,13 +4,13 @@
 
 Detatch the camera from an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\N_HB040_BTL\n_hb.bdscript
+### Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L169:
  popToSp 0
@@ -90,10 +90,7 @@ L169:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          

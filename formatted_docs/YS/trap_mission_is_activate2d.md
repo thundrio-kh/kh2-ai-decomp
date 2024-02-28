@@ -4,16 +4,16 @@
 
 checks if the mission custom hud is activated
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_activated   | bool   
-Example Usage From obj\B_EX120\b_ex.bdscript
+### Example Usage From obj\B_EX120\b_ex.bdscript
 ```plaintext
 TR10:
  popToSp 0
@@ -29,10 +29,7 @@ TR10:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          

@@ -4,16 +4,16 @@
 
 Checks the value of the 0x102B flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | bool   
-Example Usage From obj\F_AL050\f_al.bdscript
+### Example Usage From obj\F_AL050\f_al.bdscript
 ```plaintext
 L136:
  popToSp 0
@@ -25,10 +25,7 @@ L136:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          

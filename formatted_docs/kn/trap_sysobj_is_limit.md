@@ -4,17 +4,17 @@
 
 Check if an object is a limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_limit   | bool   
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L40:
  dup 
@@ -29,10 +29,7 @@ L40:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

@@ -4,7 +4,7 @@
 
 Start a trinity limit shot
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | caster   | YS::OBJ_125   | An object
@@ -13,11 +13,11 @@ Start a trinity limit shot
 | dir   | kn::FVector *   | A direction vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | int   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L7618:
  pushFromFSp 36
@@ -103,10 +103,7 @@ L7618:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

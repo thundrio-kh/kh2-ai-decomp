@@ -4,16 +4,16 @@
 
 Associates a number with a new combo group, for a series of attacks that are in the same combo.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | combogroup   | int   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L951:
  popToSp 0
@@ -27,10 +27,7 @@ L951:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

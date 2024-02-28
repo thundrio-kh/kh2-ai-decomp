@@ -4,16 +4,16 @@
 
 Returns if an event is executing
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_exec   | bool   
-Example Usage From ard\es00\es_s.bdscript
+### Example Usage From ard\es00\es_s.bdscript
 ```plaintext
 L39:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
@@ -23,10 +23,7 @@ L39:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\es00\es_s.bdscript       |           

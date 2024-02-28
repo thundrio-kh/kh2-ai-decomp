@@ -4,7 +4,7 @@
 
 Set the radius of Flare Force
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flare   | Ts::FLARE_0 *   | Flare Force object
@@ -12,7 +12,7 @@ Set the radius of Flare Force
 | height   | float   | Height value to set
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1573:
  popToSp 0
@@ -38,10 +38,7 @@ L1573:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

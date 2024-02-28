@@ -4,7 +4,7 @@
 
 Gets a random open position in the air
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | center   | kn::FVector *   | center value to use
@@ -14,11 +14,11 @@ Gets a random open position in the air
 | high   | float   | how high from the center to look
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L4039:
  popToSp 0
@@ -47,10 +47,7 @@ L4039:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

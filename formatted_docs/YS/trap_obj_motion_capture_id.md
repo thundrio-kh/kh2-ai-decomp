@@ -4,17 +4,17 @@
 
 return the id of a motion capture
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289 *   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | id   | int   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2626:
  popToSp 0
@@ -33,10 +33,7 @@ L2626:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

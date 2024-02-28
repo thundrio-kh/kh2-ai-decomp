@@ -4,7 +4,7 @@
 
 Locks the player onto an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
@@ -12,7 +12,7 @@ Locks the player onto an object
 | target   | YS::OBJ_168 *   | Target object
 
 
-Example Usage From msn\TT04_MS107\tt04.bdscript
+### Example Usage From msn\TT04_MS107\tt04.bdscript
 ```plaintext
 L63:
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
@@ -25,10 +25,7 @@ L63:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS107\tt04.bdscript       |           

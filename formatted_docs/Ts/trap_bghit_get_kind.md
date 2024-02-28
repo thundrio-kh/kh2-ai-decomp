@@ -4,17 +4,17 @@
 
 Get the kind of bghit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | bghit   | YS::BGHIT_0 *   | A BGHIT object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | kind   | int   
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L2524:
  popToSp 0
@@ -31,10 +31,7 @@ L2524:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

@@ -4,14 +4,14 @@
 
 Set the flag to hide from friends target_searcher
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target_searcher   | Ts::TARGET_SEARCHER_0 *   | A target searcher object
 | check   | bool   | A flag of some sort
 
 
-Example Usage From obj\P_AL000\p_al.bdscript
+### Example Usage From obj\P_AL000\p_al.bdscript
 ```plaintext
 L2790:
  popToSp 0
@@ -53,10 +53,7 @@ L2790:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          

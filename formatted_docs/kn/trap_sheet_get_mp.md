@@ -4,17 +4,17 @@
 
 Get the amount of MP left
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | mp   | int   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L327:
  popToSp 0
@@ -47,10 +47,7 @@ L327:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

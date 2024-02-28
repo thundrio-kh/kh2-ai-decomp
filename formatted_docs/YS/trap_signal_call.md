@@ -4,14 +4,14 @@
 
 Perform a signal call.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | signal   | int   | Signal to call
 | arg   | int   | Argument to call signal with
 
 
-Example Usage From ard\al09\al09.bdscript
+### Example Usage From ard\al09\al09.bdscript
 ```plaintext
 L72:
  jz L84
@@ -22,10 +22,7 @@ L72:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           

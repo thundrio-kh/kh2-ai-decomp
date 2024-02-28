@@ -4,13 +4,13 @@
 
 Sets a flag value to true
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag_num   | int   | A flag number
 
 
-Example Usage From ard\al09\al09.bdscript
+### Example Usage From ard\al09\al09.bdscript
 ```plaintext
 L29:
  pushImm 64
@@ -20,10 +20,7 @@ L29:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           

@@ -4,13 +4,13 @@
 
 Ends an effect loop and kills it.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-Example Usage From limit\beast\limi.bdscript
+### Example Usage From limit\beast\limi.bdscript
 ```plaintext
 L3879:
  dup 
@@ -42,10 +42,7 @@ L3879:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           

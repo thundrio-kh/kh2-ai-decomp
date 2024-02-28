@@ -4,7 +4,7 @@
 
 Sets the present cannon camera offset
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Sets the present cannon camera offset
 | offset2   | kn::FVector *   | Second offset
 
 
-Example Usage From obj\F_NM180\f_nm.bdscript
+### Example Usage From obj\F_NM180\f_nm.bdscript
 ```plaintext
 TR0:
  popToSp 0
@@ -45,10 +45,7 @@ TR0:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          

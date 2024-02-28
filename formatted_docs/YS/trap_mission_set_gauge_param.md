@@ -4,7 +4,7 @@
 
 Set parameters for a gauge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | start   | int   | start value of the gauge
@@ -13,14 +13,11 @@ Set parameters for a gauge
 | id   | int   | id of the gauge
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

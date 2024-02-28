@@ -4,14 +4,14 @@
 
 Set the xyz rotation of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | rot   | kn::FVector *   | A rotation vector
 
 
-Example Usage From obj\B_EX390\b_ex.bdscript
+### Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L36929:
  pushFromPSp 16
@@ -33,10 +33,7 @@ L36929:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          

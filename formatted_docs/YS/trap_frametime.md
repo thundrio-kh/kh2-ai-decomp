@@ -4,16 +4,16 @@
 
 Returns the time (since the VM started?) as a number of frames.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | numframes   | int   
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L158:
  pushFromFSp 0
@@ -30,10 +30,7 @@ L158:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

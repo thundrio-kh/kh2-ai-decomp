@@ -4,7 +4,7 @@
 
 Have the skateboard perform an edge jump
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Have the skateboard perform an edge jump
 | motion_id   | int   | Animation id to play
 
 
-Example Usage From obj\F_TT010\f_tt.bdscript
+### Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L970:
  popToSp 4
@@ -46,10 +46,7 @@ L970:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          

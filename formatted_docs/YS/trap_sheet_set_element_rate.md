@@ -14,7 +14,7 @@ Set resistances for an object
 | 5     | Light   |
 | 6     | All     |
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
@@ -22,7 +22,7 @@ Set resistances for an object
 | percent   | int   | Percentage damage taken
 
 
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L4269:
  pushFromFSp 0
@@ -49,10 +49,7 @@ L4269:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

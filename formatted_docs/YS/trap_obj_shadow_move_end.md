@@ -4,13 +4,13 @@
 
 Ends the kind of movement shadows do where they sink into the floor
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-Example Usage From obj\B_EX210\b_ex.bdscript
+### Example Usage From obj\B_EX210\b_ex.bdscript
 ```plaintext
 L4961:
  popToSp 0
@@ -30,10 +30,7 @@ L4961:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          

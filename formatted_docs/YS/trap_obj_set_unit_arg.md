@@ -4,7 +4,7 @@
 
 Sets a unit argument for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Sets a unit argument for an object
 | argnum   | int   | Argument to set
 
 
-Example Usage From msn\HE00_MS104B\he00.bdscript
+### Example Usage From msn\HE00_MS104B\he00.bdscript
 ```plaintext
 L725:
  pushFromFWp W12
@@ -73,10 +73,7 @@ L725:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE00_MS104B\he00.bdscript       |           

@@ -4,16 +4,16 @@
 
 Start the limit command
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | int   
-Example Usage From obj\P_AL010\p_al.bdscript
+### Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L3640:
  popToSp 4
@@ -39,10 +39,7 @@ L3640:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          

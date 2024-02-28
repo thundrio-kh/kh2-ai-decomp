@@ -4,14 +4,14 @@
 
 Creates an active path from one object to another
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | target_obj   | YS::OBJ_125   | An target object to path to
 
 
-Example Usage From obj\M_EX900\m_ex.bdscript
+### Example Usage From obj\M_EX900\m_ex.bdscript
 ```plaintext
 L5933:
  popToSp 4
@@ -87,10 +87,7 @@ L5933:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          

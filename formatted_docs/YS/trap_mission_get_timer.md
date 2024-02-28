@@ -4,17 +4,17 @@
 
 return the number of minutes on the specified timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | timer_id   | int   | id of a timer
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | float   
-Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+### Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L112:
  popToSp 0
@@ -33,10 +33,7 @@ L112:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

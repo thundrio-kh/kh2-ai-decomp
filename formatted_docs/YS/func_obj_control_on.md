@@ -4,13 +4,13 @@
 
 Turns on control of the object running this function.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unit   | int   | Unknown purpose. Possible values 0 or 1
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L18089:
  pushFromFSp 0
@@ -55,10 +55,7 @@ L18089:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

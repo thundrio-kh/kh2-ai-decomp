@@ -4,19 +4,16 @@
 
 Gives Sora the ability to Jump infinitely like is done in the Armor Xemnas II fight
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

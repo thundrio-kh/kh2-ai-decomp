@@ -4,14 +4,14 @@
 
 Attaches a PAX effect to an attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 | pax   | struct *   | A PAX effect. Exact object type unknown
 
 
-Example Usage From magic\blizzard1\bliz.bdscript
+### Example Usage From magic\blizzard1\bliz.bdscript
 ```plaintext
 L377:
  popToSp 4
@@ -30,10 +30,7 @@ L377:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           

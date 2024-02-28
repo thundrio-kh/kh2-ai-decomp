@@ -4,17 +4,17 @@
 
 Takes a integer and returns the absolute value of that integer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | A positive or negative signed integer
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | abs_value   | int   
-Example Usage From obj\F_TR150\f_tr.bdscript
+### Example Usage From obj\F_TR150\f_tr.bdscript
 ```plaintext
 L2016:
  jz L2056
@@ -41,10 +41,7 @@ L2016:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          

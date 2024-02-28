@@ -4,18 +4,18 @@
 
 Return the HP rate of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 | index   | int   | HP index to use. Only a value of 0 is used in game
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | rate   | float   
-Example Usage From msn\DC00_MS101\dc_m.bdscript
+### Example Usage From msn\DC00_MS101\dc_m.bdscript
 ```plaintext
 L152:
  pushFromPSpVal 16
@@ -37,10 +37,7 @@ L152:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\DC00_MS101\dc_m.bdscript       |           

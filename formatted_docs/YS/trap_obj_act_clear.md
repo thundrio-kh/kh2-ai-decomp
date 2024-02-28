@@ -4,13 +4,13 @@
 
 clears an action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | act   | YS::ACT_86 *   | An action object
 
 
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L50:
  popToSp 4
@@ -54,10 +54,7 @@ L50:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

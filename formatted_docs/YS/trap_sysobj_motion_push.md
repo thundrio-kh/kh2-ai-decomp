@@ -4,7 +4,7 @@
 
 Push a motion set entry to be played after the current queue is empty
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
@@ -12,7 +12,7 @@ Push a motion set entry to be played after the current queue is empty
 | blend_time   | float   | Time to take to blend the animations
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L1331:
  pushFromPWp W0
@@ -33,10 +33,7 @@ L1331:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

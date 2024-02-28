@@ -4,17 +4,17 @@
 
 Returns the value of a save flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag_num   | int   | A flag number
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | bool   
-Example Usage From ard\al09\al09.bdscript
+### Example Usage From ard\al09\al09.bdscript
 ```plaintext
 L58:
  pushImm 64
@@ -27,10 +27,7 @@ L58:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           

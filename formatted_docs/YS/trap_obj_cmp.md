@@ -4,18 +4,18 @@
 
 Compares two numbers, and returns the difference
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | num1   | int   | A number
 | num2   | int   | A number
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | int   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L1393:
  popToSp 4
@@ -28,10 +28,7 @@ L1393:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

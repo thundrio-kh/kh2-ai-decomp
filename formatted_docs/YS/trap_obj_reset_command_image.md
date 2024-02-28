@@ -4,13 +4,13 @@
 
 Resets the image on the command menu
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | stdobj   | YS::STDOBJ_112 *   | An stdobj
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L2350:
  pushFromFSp 0
@@ -19,10 +19,7 @@ L2350:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

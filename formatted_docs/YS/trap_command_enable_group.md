@@ -4,13 +4,13 @@
 
 Enables a numbered command group. 0 enables everything.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | group   | int   | Enables a numbered command group. Only value used ingame is 0
 
 
-Example Usage From obj\B_EX420\b_ex.bdscript
+### Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L5811:
  pushImm 0
@@ -30,10 +30,7 @@ L5811:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          

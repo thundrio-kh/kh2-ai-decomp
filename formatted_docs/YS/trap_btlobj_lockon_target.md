@@ -4,17 +4,17 @@
 
 
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::TARGET_108 *   | Object to lock on to
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L468:
  pushFromFSp 180
@@ -31,10 +31,7 @@ L468:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

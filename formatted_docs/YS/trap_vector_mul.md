@@ -4,18 +4,18 @@
 
 Multiplies two vectors together
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | vec   | kn::FVector *   
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L985:
  pushFromFSp 0
@@ -57,10 +57,7 @@ L985:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

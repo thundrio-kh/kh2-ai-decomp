@@ -4,7 +4,7 @@
 
 Prepares and starts a flyjump for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_189   | An object
@@ -14,7 +14,7 @@ Prepares and starts a flyjump for an object
 | start_with_vel   | bool   | If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here
 
 
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L4450:
  pushFromPSp 16
@@ -43,10 +43,7 @@ L4450:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

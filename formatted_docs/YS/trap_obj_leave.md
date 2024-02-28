@@ -4,13 +4,13 @@
 
 Makes an object leave
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-Example Usage From ard\he03\he_t.bdscript
+### Example Usage From ard\he03\he_t.bdscript
 ```plaintext
 L134:
  pushFromPSp 32
@@ -26,10 +26,7 @@ L134:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           

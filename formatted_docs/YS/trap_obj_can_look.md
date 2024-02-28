@@ -4,18 +4,18 @@
 
 Checks if an object can look at a pos
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_128   | An object
 | pos   | kn::FVector   | A position vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | can_look   | bool   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L1297:
  pushImm 1
@@ -56,10 +56,7 @@ L1297:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

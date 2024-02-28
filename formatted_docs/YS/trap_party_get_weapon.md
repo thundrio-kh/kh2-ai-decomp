@@ -4,18 +4,18 @@
 
 Return the ID of the weapon the party member has equipped
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | party   | YS::PARTY_63 *   | Party object
 | member_index   | int   | Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | id   | int   
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L6058:
  popToSp 0
@@ -68,10 +68,7 @@ L6058:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

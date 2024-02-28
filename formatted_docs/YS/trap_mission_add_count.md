@@ -4,14 +4,14 @@
 
 Adds to a on screen counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | int   | value to add
 | counter_id   | int   | id of counter
 
 
-Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript
 ```plaintext
 L50:
  jz L64
@@ -24,10 +24,7 @@ L50:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_3\he_c.bdscript       |           

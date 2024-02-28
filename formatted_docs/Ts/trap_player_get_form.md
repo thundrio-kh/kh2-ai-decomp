@@ -4,16 +4,16 @@
 
 Return the id of the form the player is currently in
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | form_id   | int   
-Example Usage From obj\B_EX130\b_ex.bdscript
+### Example Usage From obj\B_EX130\b_ex.bdscript
 ```plaintext
 L2886:
  syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
@@ -24,10 +24,7 @@ L2886:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          

@@ -4,7 +4,7 @@
 
 Set parameters for the combo counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | start   | int   | start value for the combo counter
@@ -13,7 +13,7 @@ Set parameters for the combo counter
 | id   | int   | id of a combo counter
 
 
-Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+### Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L190:
  pushFromFSp 0
@@ -33,10 +33,7 @@ L190:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           

@@ -4,7 +4,7 @@
 
 Push a motion entry onto the motion queue
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
@@ -12,14 +12,11 @@ Push a motion entry onto the motion queue
 | blend_time   | float   | time to blend two animations
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

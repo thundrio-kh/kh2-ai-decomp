@@ -4,7 +4,7 @@
 
 Sets an amount of time for an attack to go on. Looks like it is a more powerful version of trap_attack_set_radius
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
@@ -13,7 +13,7 @@ Sets an amount of time for an attack to go on. Looks like it is a more powerful 
 | height   | float   | Height to set for attack
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3275:
  popToSp 0
@@ -62,10 +62,7 @@ L3275:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

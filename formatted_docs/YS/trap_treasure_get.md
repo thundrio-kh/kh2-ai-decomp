@@ -4,13 +4,13 @@
 
 Get a treasure
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | Treasure location ID
 
 
-Example Usage From obj\M_EX350_13\m_ex.bdscript
+### Example Usage From obj\M_EX350_13\m_ex.bdscript
 ```plaintext
 L7928:
  popToSp 0
@@ -30,10 +30,7 @@ L7928:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          

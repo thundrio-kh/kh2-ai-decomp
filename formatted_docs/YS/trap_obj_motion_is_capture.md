@@ -4,17 +4,17 @@
 
 Returns if the motion set is a capture
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_capture   | bool   
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1176:
  pushFromPWp W72
@@ -27,10 +27,7 @@ L1176:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

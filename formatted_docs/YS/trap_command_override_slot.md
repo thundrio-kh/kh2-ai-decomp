@@ -4,7 +4,7 @@
 
 Overrides the specified slot on the command cage with priority 100, and returns the slot
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | slot   | int   | slot on the command cage to override, value must be within 0-7
@@ -13,18 +13,15 @@ Overrides the specified slot on the command cage with priority 100, and returns 
 | num   | int   | unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | commandslot   | YS::COMMAND_SLOT_14 *   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

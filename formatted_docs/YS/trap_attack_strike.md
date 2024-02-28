@@ -4,7 +4,7 @@
 
 Sets up an attack to strike a specific part of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | owner   | YS::ATTACK_10   | An attack object
@@ -13,7 +13,7 @@ Sets up an attack to strike a specific part of an object
 | parts   | int   | Perhaps the number of parts
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4188:
  jz L4406
@@ -114,10 +114,7 @@ L4188:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

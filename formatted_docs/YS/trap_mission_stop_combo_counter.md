@@ -4,12 +4,12 @@
 
 stops a combo counter with id 0
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+### Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L58:
  syscall 4, 27 ; trap_mission_stop_combo_counter (0 in, 0 out)
@@ -17,10 +17,7 @@ L58:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           

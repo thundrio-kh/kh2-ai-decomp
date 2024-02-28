@@ -4,17 +4,17 @@
 
 Returns the serial value for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | serial   | int   
-Example Usage From obj\F_AL050\f_al.bdscript
+### Example Usage From obj\F_AL050\f_al.bdscript
 ```plaintext
 L2562:
  popToSp 0
@@ -34,10 +34,7 @@ L2562:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          

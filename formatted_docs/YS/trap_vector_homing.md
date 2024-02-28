@@ -4,7 +4,7 @@
 
 Performs a homing calculation between two objects.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | dir   | kn::FVector *   | Direction to home
@@ -12,7 +12,7 @@ Performs a homing calculation between two objects.
 | limit   | float   | Distance limit for the homing calculation
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2209:
  pushFromPSpVal 16
@@ -23,10 +23,7 @@ L2209:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,17 +4,17 @@
 
 Return if the current RTN action is end
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | npc   | YS::NPC_0 *   | An npc object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_end   | bool   
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L1117:
  pushFromFSp 0
@@ -26,10 +26,7 @@ L1117:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

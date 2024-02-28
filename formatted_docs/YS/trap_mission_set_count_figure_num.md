@@ -4,7 +4,7 @@
 
 Sets a specific digit in the counter to a value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | figure   | int   | digit to set
@@ -12,7 +12,7 @@ Sets a specific digit in the counter to a value
 | id   | int   | id of a counter
 
 
-Example Usage From obj\B_LK100\b_lk.bdscript
+### Example Usage From obj\B_LK100\b_lk.bdscript
 ```plaintext
 L8060:
  popToSp 0
@@ -41,10 +41,7 @@ L8060:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          

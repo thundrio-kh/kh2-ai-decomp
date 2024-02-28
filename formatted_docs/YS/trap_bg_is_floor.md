@@ -4,24 +4,21 @@
 
 Returns if the background the camera is looking at is the floor
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | camera   | int   | Value designating the camera
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_floor   | bool   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

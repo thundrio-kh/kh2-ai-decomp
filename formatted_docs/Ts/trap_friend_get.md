@@ -4,17 +4,17 @@
 
 get a friend object for the friend in slot n
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | n   | int   | Slot index
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | friend   | kn::Friend_0 *   
-Example Usage From obj\B_EX260\b_ex.bdscript
+### Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L618:
  popToSp 0
@@ -27,10 +27,7 @@ L618:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          

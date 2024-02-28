@@ -4,14 +4,14 @@
 
 Remove the player attacker
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | remove_old   | bool   | Should the old attacker also be removed
 
 
-Example Usage From obj\P_EX350\p_ex.bdscript
+### Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L8674:
  popToSp 0
@@ -31,10 +31,7 @@ L8674:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          

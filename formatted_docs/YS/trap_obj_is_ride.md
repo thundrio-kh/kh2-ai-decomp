@@ -4,17 +4,17 @@
 
 Checks if the ride flag is checked on the object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_ride   | bool   
-Example Usage From obj\B_LK120\b_lk.bdscript
+### Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L5360:
  popToSp 0
@@ -50,10 +50,7 @@ L5360:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          

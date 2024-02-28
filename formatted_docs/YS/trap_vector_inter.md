@@ -4,7 +4,7 @@
 
 Calculates the intersection point between two vectors
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
@@ -12,11 +12,11 @@ Calculates the intersection point between two vectors
 | r   | float   | A rotation value?
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | result   | kn::FVector *   
-Example Usage From obj\B_AL100_2ND\b_al.bdscript
+### Example Usage From obj\B_AL100_2ND\b_al.bdscript
 ```plaintext
 L2480:
  dup 
@@ -97,10 +97,7 @@ L2480:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          

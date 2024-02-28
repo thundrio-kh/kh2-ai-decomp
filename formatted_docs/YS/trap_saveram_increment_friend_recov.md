@@ -4,12 +4,12 @@
 
 Increments the "Healed Party Members" value on the battle report at the end of the game
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From magic\CURE_1\cure.bdscript
+### Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L221:
  drop 
@@ -20,10 +20,7 @@ L221:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           

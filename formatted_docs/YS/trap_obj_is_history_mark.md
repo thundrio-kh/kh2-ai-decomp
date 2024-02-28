@@ -4,17 +4,17 @@
 
 Returns if the history flag is set for the object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_history_mark   | bool   
-Example Usage From obj\F_AL050\f_al.bdscript
+### Example Usage From obj\F_AL050\f_al.bdscript
 ```plaintext
 L187:
  popToSp 0
@@ -28,10 +28,7 @@ L187:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          

@@ -4,17 +4,17 @@
 
 Returns the blow up value for the attack, documented in openkh as Knockback Strength 2
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | blow_up   | int   
-Example Usage From obj\F_TT020\f_tt.bdscript
+### Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L116:
  pushFromFSp 4
@@ -28,10 +28,7 @@ L116:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          

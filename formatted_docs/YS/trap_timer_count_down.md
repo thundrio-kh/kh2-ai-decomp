@@ -4,20 +4,17 @@
 
 Starts a countdown timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | start_value   | int   | Value to start the timer at
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

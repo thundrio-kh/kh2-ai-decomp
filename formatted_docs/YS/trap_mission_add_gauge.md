@@ -4,14 +4,14 @@
 
 Adds to a gauge on the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | amount   | float   | amount to add to gauge
 | gauge_id   | int   | id of gauge to add to
 
 
-Example Usage From msn\EH14_MS103\ms_l.bdscript
+### Example Usage From msn\EH14_MS103\ms_l.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -35,10 +35,7 @@ TR6:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           

@@ -4,18 +4,18 @@
 
 Calculate an xyzrot value for strike raid
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromPSp: 48,80
 | unk2   | unknown   | pushFromPSp: 16,32,48,64
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\B_EX390\b_ex.bdscript
+### Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L38553:
  pushFromFSp 0
@@ -45,10 +45,7 @@ L38553:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          

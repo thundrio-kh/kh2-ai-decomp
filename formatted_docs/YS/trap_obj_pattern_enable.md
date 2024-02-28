@@ -28,14 +28,14 @@ Enable resistances/sturdy frames for an object
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | value   | int   | Pattern number to enable. See table in description
 
 
-Example Usage From msn\TT04_MS301\tt04.bdscript
+### Example Usage From msn\TT04_MS301\tt04.bdscript
 ```plaintext
 TR3:
  gosub 4, L172
@@ -54,10 +54,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           

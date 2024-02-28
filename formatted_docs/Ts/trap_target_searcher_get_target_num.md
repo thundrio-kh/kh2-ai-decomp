@@ -4,7 +4,7 @@
 
 Return the index number of a target within a position and a direction
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
@@ -13,11 +13,11 @@ Return the index number of a target within a position and a direction
 | is_history   | bool   | Unknown purpose, only value used in game is 0
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | target_num   | int   
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L921:
  popToSp 0
@@ -66,10 +66,7 @@ L921:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

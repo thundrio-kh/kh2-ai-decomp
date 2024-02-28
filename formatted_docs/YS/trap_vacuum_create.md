@@ -4,18 +4,18 @@
 
 Create a vacuum object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | result   | int   | Unknown
 | a2   | float   | Unknown
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | vacuum   | YS::VACUUM::VACUUM   
-Example Usage From obj\B_EX180\b_ex.bdscript
+### Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L5403:
  pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
@@ -29,10 +29,7 @@ L5403:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          

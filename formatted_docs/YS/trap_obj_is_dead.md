@@ -4,17 +4,17 @@
 
 Returns if the object is dead
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_dead   | bool   
-Example Usage From msn\CA10_MS107\ca10.bdscript
+### Example Usage From msn\CA10_MS107\ca10.bdscript
 ```plaintext
 L98:
  pushFromPSp 0
@@ -31,10 +31,7 @@ L98:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA10_MS107\ca10.bdscript       |           

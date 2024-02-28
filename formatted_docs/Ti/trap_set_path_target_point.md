@@ -4,14 +4,14 @@
 
 Set a target point on a path
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | path   | Ti::Path_3   | Path object
 | point_index   | label   | call label for point index
 
 
-Example Usage From obj\N_AL070_BTL\n_al.bdscript
+### Example Usage From obj\N_AL070_BTL\n_al.bdscript
 ```plaintext
 L1140:
  pushFromFSp 0
@@ -35,10 +35,7 @@ L1140:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_AL070_BTL\n_al.bdscript       | ((N) Jafar clone (BTL) (AL))          

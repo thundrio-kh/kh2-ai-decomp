@@ -4,13 +4,13 @@
 
 Shows a message from a msg.bar file. Game assumes it is from the world one currently in RAM, or sys.bar. Pops up with a failsafe (FAKE) otherwise.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | message_id   | int   | id of a message
 
 
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 L182:
  syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
@@ -35,10 +35,7 @@ L182:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

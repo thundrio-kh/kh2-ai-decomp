@@ -4,20 +4,17 @@
 
 Activates a bonus get (Normally the things acquired by finishing missions ). Unused in the game itself
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | id of the bonus to give
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

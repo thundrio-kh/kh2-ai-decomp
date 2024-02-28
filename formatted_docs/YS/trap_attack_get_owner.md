@@ -4,17 +4,17 @@
 
 returns the owner of an attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | an attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | owner   | YS::BTLOBJ *   
-Example Usage From obj\B_EX160\b_ex.bdscript
+### Example Usage From obj\B_EX160\b_ex.bdscript
 ```plaintext
 L5643:
  popToSp 4
@@ -57,10 +57,7 @@ L5643:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          

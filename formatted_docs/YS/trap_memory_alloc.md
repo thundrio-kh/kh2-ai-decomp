@@ -4,17 +4,17 @@
 
 allocates an amount of memory
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | amount   | int   | amount of memory to allocate
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | memory_loc   | int *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3456:
  popToSp 0
@@ -43,10 +43,7 @@ L3456:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

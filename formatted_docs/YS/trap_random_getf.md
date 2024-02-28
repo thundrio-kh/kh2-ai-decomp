@@ -4,17 +4,17 @@
 
 Return a random float between 0 and range
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | range   | float   | A number
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num   | int   
-Example Usage From gumimenu\event\gumi.bdscript
+### Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L1230:
  popToSp 0
@@ -46,10 +46,7 @@ L1230:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           

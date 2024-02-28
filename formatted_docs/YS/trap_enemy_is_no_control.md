@@ -4,17 +4,17 @@
 
 is the enemy control on?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ *   | A battle object for an enemy
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | iscontrol   | bool   
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L6860:
  pushFromFSp 0
@@ -25,10 +25,7 @@ L6860:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

@@ -4,13 +4,13 @@
 
 Starts the kind of movement shadows do where they sink into the floor
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSp: 0
 
 
-Example Usage From obj\B_EX210\b_ex.bdscript
+### Example Usage From obj\B_EX210\b_ex.bdscript
 ```plaintext
 L4817:
  pushFromFSp 0
@@ -30,10 +30,7 @@ L4817:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          

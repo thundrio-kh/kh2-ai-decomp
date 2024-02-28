@@ -4,17 +4,17 @@
 
 get the press position of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L1848:
  popToSp 4
@@ -60,10 +60,7 @@ L1848:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

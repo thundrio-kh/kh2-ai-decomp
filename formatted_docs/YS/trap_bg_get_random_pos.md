@@ -4,7 +4,7 @@
 
 Gets a random open position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | center   | kn::FVector *   | center value to use
@@ -12,11 +12,11 @@ Gets a random open position
 | far   | float   | how far from the center to look
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L7019:
  pushFromPSp 16
@@ -59,10 +59,7 @@ L7019:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

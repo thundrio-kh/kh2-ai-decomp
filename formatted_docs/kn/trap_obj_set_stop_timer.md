@@ -4,7 +4,7 @@
 
 Stops the timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,14 +12,11 @@ Stops the timer
 | time   | float   | Time to stop at
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

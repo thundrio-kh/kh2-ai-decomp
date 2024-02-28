@@ -4,7 +4,7 @@
 
 Set the position of a picture for a layout object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | layout   | dk::Layout *   | A layout object
@@ -12,7 +12,7 @@ Set the position of a picture for a layout object
 | y   | float   | Y coordinate
 
 
-Example Usage From obj\B_EX140\b_ex.bdscript
+### Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L21874:
  popToSp 0
@@ -59,10 +59,7 @@ L21874:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

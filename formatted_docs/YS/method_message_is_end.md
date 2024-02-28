@@ -4,17 +4,17 @@
 
 Checks if the message playing at the top of the screen is done being scrolled
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | msg   | unknown   | Some representation of the message playing at the top of the screen
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_finished   | bool   
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L4504:
  pushFromFSp 48
@@ -26,10 +26,7 @@ L4504:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

@@ -4,17 +4,17 @@
 
 Return a player reference associated with a limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L5230:
  popToSp 4
@@ -48,10 +48,7 @@ L5230:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,17 +4,17 @@
 
 Returns the position of when the attack hit the background
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSp: 176,180
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | vec   | kn::FVector *   
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L1263:
  pushFromFSp 176
@@ -41,10 +41,7 @@ L1263:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

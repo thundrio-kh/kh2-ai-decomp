@@ -4,20 +4,17 @@
 
 Set the warp level of a friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | level   | kn::Friend_0::WARP_LEVEL   | level to set
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

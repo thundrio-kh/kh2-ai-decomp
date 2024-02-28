@@ -4,7 +4,7 @@
 
 executes blow damage against an enemy.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | a battle object
@@ -15,7 +15,7 @@ executes blow damage against an enemy.
 | speed   | float   | speed to blow
 
 
-Example Usage From obj\B_NM100\b_nm.bdscript
+### Example Usage From obj\B_NM100\b_nm.bdscript
 ```plaintext
 L3020:
  jz L3053
@@ -35,10 +35,7 @@ L3020:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          

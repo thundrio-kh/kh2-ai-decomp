@@ -4,7 +4,7 @@
 
 executes hitback damage against an enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | A battle object
@@ -12,7 +12,7 @@ executes hitback damage against an enemy
 | power   | float   | amount of power for the damage
 
 
-Example Usage From obj\B_AL100_1ST\b_al.bdscript
+### Example Usage From obj\B_AL100_1ST\b_al.bdscript
 ```plaintext
 L2116:
  pushFromFSp 0
@@ -29,10 +29,7 @@ L2116:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

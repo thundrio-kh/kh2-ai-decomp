@@ -4,13 +4,13 @@
 
 Disable a unit group from being able to spawn
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | id   | Unit group ID
 
 
-Example Usage From msn\MU02_MS103B\mu02.bdscript
+### Example Usage From msn\MU02_MS103B\mu02.bdscript
 ```plaintext
 TR3:
  gosub 4, L329
@@ -33,10 +33,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU02_MS103B\mu02.bdscript       |           

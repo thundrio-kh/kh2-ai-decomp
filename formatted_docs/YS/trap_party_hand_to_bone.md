@@ -4,18 +4,18 @@
 
 Return the bone ID of the hand of the party member
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | party   | YS::PARTY_63 *   | Party object
 | hand   | int   | Hand to check
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | bone_id   | int   
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4229:
  popToSp 4
@@ -45,10 +45,7 @@ L4229:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

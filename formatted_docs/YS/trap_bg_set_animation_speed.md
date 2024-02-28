@@ -4,13 +4,13 @@
 
 Sets the background animation speed of the map. Only used by Hostile Program to stop the animation of the walls when Hostile Program has been frozen.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | ratio   | float   | ratio to set for animation speed. Used values are 0 and 1
 
 
-Example Usage From obj\B_TR000\b_tr.bdscript
+### Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L402:
  gosub 12, L440
@@ -21,10 +21,7 @@ L402:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          

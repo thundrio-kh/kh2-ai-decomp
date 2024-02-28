@@ -4,13 +4,13 @@
 
 turns off the hud for a given watch
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | timer_id   | int   | id of counter
 
 
-Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+### Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L159:
  popToSp 4
@@ -41,10 +41,7 @@ L159:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

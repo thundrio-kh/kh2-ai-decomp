@@ -4,12 +4,12 @@
 
 Start the prize drain effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From magic\MAGNET_1\magn.bdscript
+### Example Usage From magic\MAGNET_1\magn.bdscript
 ```plaintext
 L23:
  popToSp 0
@@ -25,10 +25,7 @@ L23:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\MAGNET_1\magn.bdscript       |           

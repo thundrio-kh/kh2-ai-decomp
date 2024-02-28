@@ -4,14 +4,14 @@
 
 Set a position offset for being able to perform a reaction command
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From obj\B_EX100\b_ex.bdscript
+### Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L1882:
  pushFromFSp 4
@@ -43,10 +43,7 @@ L1882:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          

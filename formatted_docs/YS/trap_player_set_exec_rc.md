@@ -4,14 +4,14 @@
 
 Sets the player to be executing a reaction command
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
 | command   | int   | Reaction command ID
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L342:
  popToSp 4
@@ -27,10 +27,7 @@ L342:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

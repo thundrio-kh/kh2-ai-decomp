@@ -4,18 +4,18 @@
 
 Get the parameter of a friends action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | id   | int   | ID of an action
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | param   | int   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L803:
  popToSp 4
@@ -267,10 +267,7 @@ L803:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

@@ -4,17 +4,17 @@
 
 Returns if the friend has control
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | has_control   | bool   
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L8995:
  popToSp 0
@@ -27,10 +27,7 @@ L8995:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

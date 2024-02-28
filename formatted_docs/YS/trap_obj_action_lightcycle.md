@@ -4,13 +4,13 @@
 
 Does a lightcycle specific action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-Example Usage From obj\M_EX600_LC\m_ex.bdscript
+### Example Usage From obj\M_EX600_LC\m_ex.bdscript
 ```plaintext
 L23:
  popToSp 0
@@ -34,10 +34,7 @@ L23:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          

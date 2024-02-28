@@ -4,18 +4,18 @@
 
 Returns if the object has the specified ability equipped
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 | ability_id   | int   | ID of an ability
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_equip_ability   | bool   
-Example Usage From magic\CURE_1\cure.bdscript
+### Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L488:
  pushFromFSp 20
@@ -31,10 +31,7 @@ L488:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           

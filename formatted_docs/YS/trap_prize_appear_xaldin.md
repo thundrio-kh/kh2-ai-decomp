@@ -4,14 +4,14 @@
 
 Makes a number of prizes for mushroom 3 appear at a position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | A position vector
 | num   | int   | number of prizes
 
 
-Example Usage From obj\M_EX350_03\m_ex.bdscript
+### Example Usage From obj\M_EX350_03\m_ex.bdscript
 ```plaintext
 L440:
  jz L474
@@ -33,10 +33,7 @@ L440:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          

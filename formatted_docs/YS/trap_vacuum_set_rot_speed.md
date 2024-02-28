@@ -4,14 +4,14 @@
 
 Set the rotation speed of a vacuum
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromFSpVal: 108,112,156,164,168,...
 | unk2   | unknown   | pushImmf: 0,6
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L15007:
  popToSp 0
@@ -45,10 +45,7 @@ L15007:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

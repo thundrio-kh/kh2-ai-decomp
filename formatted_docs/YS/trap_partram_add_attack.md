@@ -4,14 +4,14 @@
 
 Gives attack to the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | partram   | YS::PARTRAM *   | Partram object
 | amt   | int   | Amount of attack to add
 
 
-Example Usage From ard\tt04\tt04.bdscript
+### Example Usage From ard\tt04\tt04.bdscript
 ```plaintext
 L36:
  pushImm 1
@@ -25,10 +25,7 @@ L36:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt04\tt04.bdscript       |           

@@ -16,7 +16,7 @@ startThread:
  syscall 0, 9 ; trap_thread_start (4 in, 1 out)
  ret
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushImm: 0,1
@@ -25,11 +25,11 @@ startThread:
 | owner   | YS::OBJ_175   | Object that spawns the thread
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\tron\limi.bdscript
+### Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L4479:
  popToSp 0
@@ -53,10 +53,7 @@ L4479:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           

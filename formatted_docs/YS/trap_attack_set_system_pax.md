@@ -4,13 +4,13 @@
 
 Attach a system PAX effect to an attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
 
 
-Example Usage From magic\CURE_1\cure.bdscript
+### Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L612:
  popToSp 0
@@ -31,10 +31,7 @@ L612:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           

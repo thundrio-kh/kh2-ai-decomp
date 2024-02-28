@@ -4,14 +4,14 @@
 
 Searches for an existing object with the given serial number (a value set in a spawn)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
 | serial   | int   | Serial number to search
 
 
-Example Usage From ard\he03\he_t.bdscript
+### Example Usage From ard\he03\he_t.bdscript
 ```plaintext
 L134:
  pushFromPSp 32
@@ -27,10 +27,7 @@ L134:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           

@@ -4,17 +4,17 @@
 
 Gets the reaction type value of an attack, which is the "Enemy Reaction" value defined in its Atkp entry found in 00battle.bin
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From msn\CA07_MS105\ca07.bdscript
+### Example Usage From msn\CA07_MS105\ca07.bdscript
 ```plaintext
 L122:
  jz L153
@@ -28,10 +28,7 @@ L122:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           

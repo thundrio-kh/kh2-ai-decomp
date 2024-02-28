@@ -4,17 +4,17 @@
 
 checks if an effect is still alive
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From magic\blizzard1\bliz.bdscript
+### Example Usage From magic\blizzard1\bliz.bdscript
 ```plaintext
 L224:
  pushFromFSpVal 32
@@ -30,10 +30,7 @@ L224:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           

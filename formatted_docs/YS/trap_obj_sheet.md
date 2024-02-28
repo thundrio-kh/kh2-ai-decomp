@@ -4,17 +4,17 @@
 
 returns the objects stat sheet
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | sheet   | YS::SHEET_44 *   
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L163:
  popToSp 0
@@ -54,10 +54,7 @@ L163:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

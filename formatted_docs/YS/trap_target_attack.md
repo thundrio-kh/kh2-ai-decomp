@@ -4,17 +4,17 @@
 
 Get the target of an attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | target   | YS::OBJ_125   
-Example Usage From obj\B_EX100\b_ex.bdscript
+### Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L167:
  popToSp 0
@@ -67,10 +67,7 @@ L167:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          

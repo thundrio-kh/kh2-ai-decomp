@@ -4,12 +4,12 @@
 
 Change the player into a card
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L15077:
  gosub 4, L946
@@ -37,10 +37,7 @@ L15077:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

@@ -4,17 +4,17 @@
 
 Returns if the object is a tornado object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_tornado   | bool   
-Example Usage From obj\P_EX350\p_ex.bdscript
+### Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L7335:
  jz L7542
@@ -43,10 +43,7 @@ L7335:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          

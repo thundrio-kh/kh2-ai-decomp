@@ -4,7 +4,7 @@
 
 Creates a new attack object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::BTLOBJ *   | The owner of the attack
@@ -13,11 +13,11 @@ Creates a new attack object
 | level   | int   | The level of the attack
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | attack   | YS::ATTACK_MAGIC *   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3275:
  popToSp 0
@@ -66,10 +66,7 @@ L3275:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

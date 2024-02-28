@@ -4,17 +4,17 @@
 
 Returns the blow speed value for the attack, documented in openkh as ???
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | blow_speed   | unknown   
-Example Usage From obj\F_TT020\f_tt.bdscript
+### Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L305:
  pushFromPSpVal 112
@@ -45,10 +45,7 @@ L305:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          

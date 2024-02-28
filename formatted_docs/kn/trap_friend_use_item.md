@@ -4,7 +4,7 @@
 
 Have a friend use an item
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
@@ -13,7 +13,7 @@ Have a friend use an item
 | num   | int   | How many of the item to use? 0 is the only value used by game scripts
 
 
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L7518:
  popToSp 0
@@ -30,10 +30,7 @@ L7518:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

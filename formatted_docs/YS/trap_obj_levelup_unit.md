@@ -4,13 +4,13 @@
 
 Levels up the specified unit group of spawns
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unit   | YS::UNIT_GROUP_8 *   | A unit group
 
 
-Example Usage From obj\F_CA060\f_ca.bdscript
+### Example Usage From obj\F_CA060\f_ca.bdscript
 ```plaintext
 L2170:
  popToSp 0
@@ -53,10 +53,7 @@ L2170:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          

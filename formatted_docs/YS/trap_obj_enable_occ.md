@@ -4,13 +4,13 @@
 
 enable occlusion culling for all bones in an culling object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 
 
-Example Usage From obj\B_LK120\b_lk.bdscript
+### Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 TR14:
  pushFromPWp W576
@@ -23,10 +23,7 @@ TR14:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          

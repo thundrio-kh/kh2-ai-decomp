@@ -4,21 +4,18 @@
 
 Shows a picture on the screen
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | datafile   | string   | filename?
 | number   | int   | ID of picture to show
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

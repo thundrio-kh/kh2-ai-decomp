@@ -4,13 +4,13 @@
 
 Unknown. Used by conveyor belts in Oogie Boogie boss room
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | pushFromPSp: 16
 
 
-Example Usage From obj\F_HB110\f_hb.bdscript
+### Example Usage From obj\F_HB110\f_hb.bdscript
 ```plaintext
 L2054:
  popToSp 0
@@ -33,10 +33,7 @@ L2054:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_HB110\f_hb.bdscript       | ((F) ??? (HB))          

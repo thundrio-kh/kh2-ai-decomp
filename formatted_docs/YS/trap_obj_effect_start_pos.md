@@ -4,7 +4,7 @@
 
 Starts an effect associated with an object at the specified position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -14,11 +14,11 @@ Starts an effect associated with an object at the specified position
 | priority   | int   | Priority value for effect
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L185:
  popToSp 0
@@ -40,10 +40,7 @@ L185:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

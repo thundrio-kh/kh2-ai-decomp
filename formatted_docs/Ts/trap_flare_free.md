@@ -4,13 +4,13 @@
 
 Free memory associated with Flare Force
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flare   | Ts::FLARE_0 *   | Flare Force object
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4019:
  popToSp 0
@@ -22,10 +22,7 @@ L4019:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

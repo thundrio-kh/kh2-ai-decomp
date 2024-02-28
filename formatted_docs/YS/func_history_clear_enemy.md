@@ -4,12 +4,12 @@
 
 Appears to clear out the history (cache?) of enemies in the current room.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\B_EX240\b_ex.bdscript
+### Example Usage From obj\B_EX240\b_ex.bdscript
 ```plaintext
 L4498:
  syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
@@ -30,10 +30,7 @@ L4498:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          

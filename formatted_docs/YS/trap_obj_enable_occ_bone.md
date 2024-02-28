@@ -4,14 +4,14 @@
 
 Enable occlusion culling for a specific bone
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 | boneid   | ID of a bone   | 
 
 
-Example Usage From obj\B_HE100\b_he.bdscript
+### Example Usage From obj\B_HE100\b_he.bdscript
 ```plaintext
 L5637:
  popToSp 0
@@ -142,10 +142,7 @@ L5637:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_HE100\b_he.bdscript       | ((B) Hydra)          

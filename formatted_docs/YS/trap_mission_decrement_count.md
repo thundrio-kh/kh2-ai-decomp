@@ -4,13 +4,13 @@
 
 subtracts one from the value of an on screen counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | counter_id   | int   | id of counter
 
 
-Example Usage From msn\AL10_MS102\ms_d.bdscript
+### Example Usage From msn\AL10_MS102\ms_d.bdscript
 ```plaintext
 L33:
  pushImm 0
@@ -19,10 +19,7 @@ L33:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_MS102\ms_d.bdscript       |           

@@ -4,7 +4,7 @@
 
 Changes the camera similar to trab_obj_camera_start_gloal, but setting a target as well
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::STDOBJ_112 *   | An object
@@ -12,7 +12,7 @@ Changes the camera similar to trab_obj_camera_start_gloal, but setting a target 
 | target   | YS::OBJ_164 *   | An object, probably for the camera to be focused on
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3114:
  popToSp 4
@@ -98,10 +98,7 @@ L3114:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

@@ -4,7 +4,7 @@
 
 Set a part of an object to a color
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Set a part of an object to a color
 | time   | unknown   | Time to take to blend to this color
 
 
-Example Usage From obj\B_CA050\b_ca.bdscript
+### Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L3024:
  pushFromFSp 0
@@ -104,10 +104,7 @@ L3024:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

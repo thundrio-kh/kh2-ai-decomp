@@ -4,17 +4,17 @@
 
 Initializes a light object.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | type   | int   | type or index of light to create. Valid values are 0 and 1
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | light_object   | YS::LIGHT_0 *   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L1419:
  popToSp 4
@@ -37,10 +37,7 @@ L1419:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

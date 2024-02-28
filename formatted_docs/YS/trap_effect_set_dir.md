@@ -4,14 +4,14 @@
 
 Sets the effects direction to be pointing to dir
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | effect   | ryj::EFFECT_144 *   | an effect object
 | dir   | kn::FVector *   | a vector object representing a position/direction
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1717:
  pushImm 0
@@ -91,10 +91,7 @@ L1717:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

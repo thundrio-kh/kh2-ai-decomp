@@ -4,14 +4,14 @@
 
 Sets a filled in ratio for the specified gauge
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | ratio   | float   | proportion of gauge that should be filled
 | id   | int   | id of a gauge
 
 
-Example Usage From obj\B_EX270_SIDECAR\b_ex.bdscript
+### Example Usage From obj\B_EX270_SIDECAR\b_ex.bdscript
 ```plaintext
 L2536:
  pushImmf 0
@@ -21,10 +21,7 @@ L2536:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX270_SIDECAR\b_ex.bdscript       | ((F) Xemnas’s dragon sidecar)          

@@ -4,18 +4,18 @@
 
 Checks if the effect still exists
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | effect   | yj::EFFECT_55   | An effect object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_effect_exist   | bool   
-Example Usage From obj\P_EH000\p_eh.bdscript
+### Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L2908:
  dup 
@@ -27,10 +27,7 @@ L2908:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

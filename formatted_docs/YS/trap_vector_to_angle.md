@@ -4,17 +4,17 @@
 
 Converts the passed in vector to an angle
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | dir   | kn::FVector *   | A direction vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | angle   | float   
-Example Usage From obj\EH_G_EX120\g_ex.bdscript
+### Example Usage From obj\EH_G_EX120\g_ex.bdscript
 ```plaintext
 L2751:
  popToSp 0
@@ -50,10 +50,7 @@ L2751:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          

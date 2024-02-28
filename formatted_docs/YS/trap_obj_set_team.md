@@ -4,14 +4,14 @@
 
 Sets the object to a team (IE player, enemy, or npc)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | team   | int   | team to set
 
 
-Example Usage From obj\B_NM110_HEAD\b_nm.bdscript
+### Example Usage From obj\B_NM110_HEAD\b_nm.bdscript
 ```plaintext
 L137:
  gosub 12, L380
@@ -23,10 +23,7 @@ L137:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_NM110_HEAD\b_nm.bdscript       | ((B) The Experiment (Head))          

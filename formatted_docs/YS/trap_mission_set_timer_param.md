@@ -4,7 +4,7 @@
 
 sets parameters for a timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | start   | int   | start value for the timer
@@ -13,7 +13,7 @@ sets parameters for a timer
 | id   | int   | id of a timer
 
 
-Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript
 ```plaintext
 TR3:
  pushFromPWp W0
@@ -40,10 +40,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_2\he_c.bdscript       |           

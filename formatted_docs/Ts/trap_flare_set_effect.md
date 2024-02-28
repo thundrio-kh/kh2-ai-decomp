@@ -4,14 +4,14 @@
 
 Set a Flare Force effect
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flare   | Ts::FLARE_0 *   | Flare Force object
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1717:
  pushImm 0
@@ -91,10 +91,7 @@ L1717:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

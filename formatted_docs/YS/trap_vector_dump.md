@@ -4,14 +4,14 @@
 
 Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints each component of the vector to the screen, one per line
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec   | kn::FVector *   | A vector
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3114:
  popToSp 4
@@ -97,10 +97,7 @@ L3114:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

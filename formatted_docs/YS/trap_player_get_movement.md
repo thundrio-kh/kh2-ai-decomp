@@ -4,17 +4,17 @@
 
 Get the position that the player is moving to
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   |  kn::FVector   
-Example Usage From limit\goofy\limi.bdscript
+### Example Usage From limit\goofy\limi.bdscript
 ```plaintext
 L1410:
  jz L1742
@@ -39,10 +39,7 @@ L1410:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy\limi.bdscript       |           

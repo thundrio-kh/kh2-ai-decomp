@@ -4,13 +4,13 @@
 
 Performs required cleanup when an object dies
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::BTLOBJ   | An object
 
 
-Example Usage From obj\B_CA020\b_ca.bdscript
+### Example Usage From obj\B_CA020\b_ca.bdscript
 ```plaintext
 L730:
  pushFromFSp 0
@@ -31,10 +31,7 @@ L730:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          

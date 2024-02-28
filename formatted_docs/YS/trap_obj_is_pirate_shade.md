@@ -4,17 +4,17 @@
 
 Returns if the object is in shade
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_pirate_shade   | bool   
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L1544:
  pushFromFSp 0
@@ -28,10 +28,7 @@ L1544:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

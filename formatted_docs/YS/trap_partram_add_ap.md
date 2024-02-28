@@ -4,14 +4,14 @@
 
 Gives AP to the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | partram   | YS::PARTRAM *   | Partram object
 | amt   | int   | Amount of AP to give to the player
 
 
-Example Usage From ard\mu07\mu_g.bdscript
+### Example Usage From ard\mu07\mu_g.bdscript
 ```plaintext
 TR2:
  pushImm 6
@@ -44,10 +44,7 @@ TR2:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\mu07\mu_g.bdscript       |           

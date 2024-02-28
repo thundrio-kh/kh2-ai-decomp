@@ -4,14 +4,14 @@
 
 Make a prize appear
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | kn::FVector *   | A position vector
 | prize_id   | int   | ID of the prize to appear
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L45:
  pushFromFSp 0
@@ -24,10 +24,7 @@ L45:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

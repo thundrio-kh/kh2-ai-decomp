@@ -4,13 +4,13 @@
 
 removes a connection between two bones
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | object   | YS::OBJ_126   | An object
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4061:
  pushFromFSp 0
@@ -22,10 +22,7 @@ L4061:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

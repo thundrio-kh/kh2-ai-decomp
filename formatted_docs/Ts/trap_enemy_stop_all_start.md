@@ -4,13 +4,13 @@
 
 Stops all instances of an object from doing anything, until trap_enemy_stop_all_end is run
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | ID of an enemy
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3400:
  pushImm 17
@@ -19,10 +19,7 @@ L3400:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

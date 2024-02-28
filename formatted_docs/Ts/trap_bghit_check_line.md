@@ -4,7 +4,7 @@
 
 Collision check along a line
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | bghit   | YS::BGHIT_0 *   | A BGHIT object
@@ -13,11 +13,11 @@ Collision check along a line
 | type   | int   | Type of hit to check
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_collision   | bool   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2954:
  popToSp 0
@@ -59,10 +59,7 @@ L2954:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

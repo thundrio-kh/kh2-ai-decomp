@@ -4,14 +4,14 @@
 
 Scatter Mulan orbs from an enemy
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | num   | int   | Number to scatter
 
 
-Example Usage From msn\MU01_MS102\mu01.bdscript
+### Example Usage From msn\MU01_MS102\mu01.bdscript
 ```plaintext
 L118:
  jz L139
@@ -27,10 +27,7 @@ L118:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU01_MS102\mu01.bdscript       |           

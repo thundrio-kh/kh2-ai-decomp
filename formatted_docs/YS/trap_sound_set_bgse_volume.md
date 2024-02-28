@@ -4,13 +4,13 @@
 
 Turn background sound effects on or off
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sound_on   | bool   | If background sound effects should be on or off
 
 
-Example Usage From obj\B_EX370\b_ex.bdscript
+### Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L12020:
  popToSp 0
@@ -20,10 +20,7 @@ L12020:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          

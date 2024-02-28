@@ -4,14 +4,14 @@
 
 Set the sound effect that will play when the combo counter reaches the warning value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | num   | int   | id of sound effect to play. ID of 10 is used in game
 | id   | int   | id of a combo counter
 
 
-Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+### Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L221:
  pushImm 10
@@ -21,10 +21,7 @@ L221:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           

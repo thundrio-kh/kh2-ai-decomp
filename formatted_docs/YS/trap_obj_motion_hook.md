@@ -4,14 +4,14 @@
 
 Hooks a motion set entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 
-Example Usage From obj\B_EX160\b_ex.bdscript
+### Example Usage From obj\B_EX160\b_ex.bdscript
 ```plaintext
 L5073:
  pushFromFSp 0
@@ -26,10 +26,7 @@ L5073:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          

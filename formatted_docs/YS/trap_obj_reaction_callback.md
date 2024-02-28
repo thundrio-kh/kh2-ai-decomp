@@ -4,7 +4,7 @@
 
 Set a reaction callback for an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
@@ -13,7 +13,7 @@ Set a reaction callback for an object
 | target_obj   | YS::OBJ_125 *   | Object for the reaction to target
 
 
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L145:
  pushFromPSp 0
@@ -34,10 +34,7 @@ L145:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

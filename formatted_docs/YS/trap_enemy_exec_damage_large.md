@@ -4,7 +4,7 @@
 
 executes a large amount of damage
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | enemy_obj   | YS::BTLOBJ *   | pushFromFSp: 0
@@ -12,7 +12,7 @@ executes a large amount of damage
 | power   | float   | pushImmf: 0
 
 
-Example Usage From obj\B_HE030\b_he.bdscript
+### Example Usage From obj\B_HE030\b_he.bdscript
 ```plaintext
 L81:
  pushFromFWp W4212
@@ -56,10 +56,7 @@ L81:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          

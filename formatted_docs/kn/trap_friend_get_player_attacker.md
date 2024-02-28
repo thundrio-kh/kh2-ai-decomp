@@ -4,17 +4,17 @@
 
 Get a enemy attacking the player and if the argument is true also stop the enemy attacking the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | should_remove_player_attacker   | bool   | If the player attacker should be removed
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | obj   | YS::OBJ_125   
-Example Usage From obj\P_EX350\p_ex.bdscript
+### Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L8205:
  popToSp 4
@@ -33,10 +33,7 @@ L8205:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          

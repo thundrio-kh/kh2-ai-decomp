@@ -4,17 +4,17 @@
 
 Get the current number of medals an object has
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_195 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num_medals   | int   
-Example Usage From msn\CA01_MS204\ca01.bdscript
+### Example Usage From msn\CA01_MS204\ca01.bdscript
 ```plaintext
 L106:
  gosub 12, L142
@@ -36,10 +36,7 @@ L106:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           

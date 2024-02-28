@@ -4,14 +4,14 @@
 
 Unknown
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | unknown   | probably an enemy object
 | unk2   | unknown   | probably an amount of damage
 
 
-Example Usage From obj\B_EX420\b_ex.bdscript
+### Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L6918:
  pushFromFSp 0
@@ -34,10 +34,7 @@ L6918:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          

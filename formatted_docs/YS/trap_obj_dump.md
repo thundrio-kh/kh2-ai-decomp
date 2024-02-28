@@ -4,13 +4,13 @@
 
 likely printed the name of an object, but does nothing in the production versions of the game
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L400:
  pushFromFSp 20
@@ -25,10 +25,7 @@ L400:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

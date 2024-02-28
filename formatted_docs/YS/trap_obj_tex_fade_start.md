@@ -4,7 +4,7 @@
 
 Starts a texture fade
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | fade   | YS::FADE *   | pushFromFSp: 0
@@ -13,7 +13,7 @@ Starts a texture fade
 | time   | float   | Number of frames for the fade
 
 
-Example Usage From obj\B_BB100\b_bb.bdscript
+### Example Usage From obj\B_BB100\b_bb.bdscript
 ```plaintext
 L3724:
  popToSp 0
@@ -65,10 +65,7 @@ L3724:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          

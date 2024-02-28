@@ -4,20 +4,17 @@
 
 Initialize a blur object. Unused in the vanilla game
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | blur   | YS::BLUR *   | Variable to store the blur object in?
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

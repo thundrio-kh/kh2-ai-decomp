@@ -4,16 +4,16 @@
 
 Checks if a tutorial window is open
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_open   | bool   
-Example Usage From ard\eh18\full.bdscript
+### Example Usage From ard\eh18\full.bdscript
 ```plaintext
 L29:
  syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
@@ -23,10 +23,7 @@ L29:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\eh18\full.bdscript       |           

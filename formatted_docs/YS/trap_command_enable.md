@@ -4,12 +4,12 @@
 
 Enable the command menu?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\N_EX690_TT_TUTOR_RTN\n_ex.bdscript
+### Example Usage From obj\N_EX690_TT_TUTOR_RTN\n_ex.bdscript
 ```plaintext
 L37:
  syscall 1, 334 ; trap_command_enable (0 in, 0 out)
@@ -20,10 +20,7 @@ L37:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_EX690_TT_TUTOR_RTN\n_ex.bdscript       | ((N) Villager (woman) (TT_TUTOR) (RTN) (EX))          

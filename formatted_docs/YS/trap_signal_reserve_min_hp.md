@@ -4,7 +4,7 @@
 
 Signal an object to reserve an minimum HP value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,7 +12,7 @@ Signal an object to reserve an minimum HP value
 | arg   | int   | Argument to call signal with
 
 
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L228:
  pushFromFSp 36
@@ -30,10 +30,7 @@ L228:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

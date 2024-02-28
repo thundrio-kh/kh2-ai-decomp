@@ -4,17 +4,17 @@
 
 returns the number of seconds remaining on the specified timer
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | timer_id   | int   | id of a timer
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | int   
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 L363:
  pushFromFWp W8
@@ -39,10 +39,7 @@ L363:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

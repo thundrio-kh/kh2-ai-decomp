@@ -4,12 +4,12 @@
 
 Continues the current event now that control is off
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HB38_FM_MAR\ms_b.bdscript
+### Example Usage From msn\HB38_FM_MAR\ms_b.bdscript
 ```plaintext
 TR3:
  syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
@@ -19,10 +19,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB38_FM_MAR\ms_b.bdscript       |           

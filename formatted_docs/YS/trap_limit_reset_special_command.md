@@ -4,13 +4,13 @@
 
 Related to trinity limit functionality, probably resets the custom command menu
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L8991:
  pushFromFSp 0
@@ -33,10 +33,7 @@ L8991:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

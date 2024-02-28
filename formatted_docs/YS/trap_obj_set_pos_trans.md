@@ -6,14 +6,14 @@ Set the position for an object. This is identical to trap_obj_set_pos but it als
 
 *(_DWORD *)(unsigned int)((_DWORD)this + 2040) |= 0x1000u;
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From limit\jack\limi.bdscript
+### Example Usage From limit\jack\limi.bdscript
 ```plaintext
 L1483:
  popToSp 0
@@ -62,10 +62,7 @@ L1483:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           

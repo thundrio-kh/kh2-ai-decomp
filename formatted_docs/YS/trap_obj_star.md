@@ -4,14 +4,14 @@
 
 Grants Iframes?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | numframes   | float   | Number of frames?
 
 
-Example Usage From magic\CURE_1\cure.bdscript
+### Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L506:
  jz L528
@@ -27,10 +27,7 @@ L506:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           

@@ -4,12 +4,12 @@
 
 Turn off the secure mode flag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 L221:
  halt 
@@ -22,10 +22,7 @@ L221:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

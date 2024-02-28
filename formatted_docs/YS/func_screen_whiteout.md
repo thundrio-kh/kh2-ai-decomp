@@ -4,13 +4,13 @@
 
 Fades the screen to white. On HD versions of the game, the spinning KH logo is present in the bottom right
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | frame   | int   | Number of frames to take for fade out
 
 
-Example Usage From gumimenu\event\gumi.bdscript
+### Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L246:
  jz L265
@@ -25,10 +25,7 @@ L246:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           

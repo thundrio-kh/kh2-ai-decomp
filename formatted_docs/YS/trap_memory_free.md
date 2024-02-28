@@ -4,13 +4,13 @@
 
 Frees an amount of memory
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | amt   | int   | amount of memory to free
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3420:
  popToSp 0
@@ -22,10 +22,7 @@ L3420:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

@@ -4,17 +4,17 @@
 
 Return the time limit for the limit?
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | time   | int   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L5110:
  pushFromFSpVal 44
@@ -30,10 +30,7 @@ L5110:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

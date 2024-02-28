@@ -12,7 +12,7 @@ Plays a voice clip belonging to an object
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
  ret
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -20,7 +20,7 @@ Plays a voice clip belonging to an object
 | priority   | int   | Priority for playing the voice clip
 
 
-Example Usage From obj\B_CA010\b_ca.bdscript
+### Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L9010:
  pushFromFSp 0
@@ -42,10 +42,7 @@ L9010:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

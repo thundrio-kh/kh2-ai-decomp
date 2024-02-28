@@ -4,16 +4,16 @@
 
 Returns whether the players form can be captured, which is determined by if the player has a summon going.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | can_capture_form   | bool   
-Example Usage From obj\M_EX950\m_ex.bdscript
+### Example Usage From obj\M_EX950\m_ex.bdscript
 ```plaintext
 L9331:
  popToSp 0
@@ -55,10 +55,7 @@ L9331:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          

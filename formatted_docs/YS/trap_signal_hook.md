@@ -4,21 +4,18 @@
 
 Perform a signal hook
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | signal   | int   | Signal to hook
 | arg   | int   | Argument to hook signal with
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

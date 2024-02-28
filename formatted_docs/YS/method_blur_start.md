@@ -4,20 +4,17 @@
 
 Starts the blur effect. Unused in the vanilla game
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | blur   | YS::BLUR *   | blur object that has been initialized?
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

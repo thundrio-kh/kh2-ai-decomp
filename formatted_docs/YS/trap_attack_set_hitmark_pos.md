@@ -4,14 +4,14 @@
 
 Sets a hitmark pos
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | pos   | Vector *   | Position vector
 | dir   | Vector *   | Direction vector
 
 
-Example Usage From obj\B_MU120\b_mu.bdscript
+### Example Usage From obj\B_MU120\b_mu.bdscript
 ```plaintext
 L11772:
  pushFromFSp 4
@@ -67,10 +67,7 @@ L11772:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          

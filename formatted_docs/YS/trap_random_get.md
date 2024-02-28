@@ -4,17 +4,17 @@
 
 Return a random integer between 0 and range
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | range   | int   | A number
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num   | int   
-Example Usage From limit\donald\limi.bdscript
+### Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L1160:
  popToSp 0
@@ -36,10 +36,7 @@ L1160:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           

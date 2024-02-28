@@ -4,13 +4,13 @@
 
 adds and starts a combo counter that is id 0
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | time   | float   | time to start the combo counter at
 
 
-Example Usage From msn\TT06_PERFORM_01\tt06.bdscript
+### Example Usage From msn\TT06_PERFORM_01\tt06.bdscript
 ```plaintext
 L33:
  pushImmf 0
@@ -19,10 +19,7 @@ L33:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT06_PERFORM_01\tt06.bdscript       |           

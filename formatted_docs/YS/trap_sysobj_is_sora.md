@@ -4,17 +4,17 @@
 
 Returns true if the object is Sora
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_sora   | bool   
-Example Usage From obj\B_EX130\b_ex.bdscript
+### Example Usage From obj\B_EX130\b_ex.bdscript
 ```plaintext
 L2835:
  gosub 4, L2828
@@ -35,10 +35,7 @@ L2835:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          

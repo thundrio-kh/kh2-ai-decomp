@@ -4,14 +4,14 @@
 
 Adds a value to the combo counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | amount   | int   | amount to add
 | time   | int   | Time to set to timer associated with counter. Value of 0 or 600 used in game
 
 
-Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+### Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L33:
  pushFromFSp 0
@@ -24,10 +24,7 @@ L33:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           

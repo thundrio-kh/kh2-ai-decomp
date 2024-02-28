@@ -4,17 +4,17 @@
 
 Returns the direction vector of the reflected attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | a reflect attack
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | vec   | kn::FVector *   
-Example Usage From limit\riku\limi.bdscript
+### Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L5227:
  pushFromFSpVal 68
@@ -31,10 +31,7 @@ L5227:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           

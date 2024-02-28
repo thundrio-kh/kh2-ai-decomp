@@ -4,14 +4,14 @@
 
 starts an action
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | act   | YS::ACT_86 *   | An action object
 | unk2   | string   | A label for an action
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3114:
  popToSp 4
@@ -97,10 +97,7 @@ L3114:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

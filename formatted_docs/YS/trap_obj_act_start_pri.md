@@ -4,14 +4,14 @@
 
 Starts an action (with priority?)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | act   | YS::ACT_86 *   | An action object
 | unk2   | string   | A label for an action
 
 
-Example Usage From obj\B_EX210\b_ex.bdscript
+### Example Usage From obj\B_EX210\b_ex.bdscript
 ```plaintext
 L3972:
  popToSp 4
@@ -23,10 +23,7 @@ L3972:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          

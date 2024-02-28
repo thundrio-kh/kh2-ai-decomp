@@ -4,7 +4,7 @@
 
 Set parameters for the specified counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | start   | int   | start value of the counter
@@ -13,7 +13,7 @@ Set parameters for the specified counter
 | id   | int   | id of a counter
 
 
-Example Usage From msn\AL00_SKATE_01\al00.bdscript
+### Example Usage From msn\AL00_SKATE_01\al00.bdscript
 ```plaintext
 L237:
  pushFromFSpVal 0
@@ -34,10 +34,7 @@ L237:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           

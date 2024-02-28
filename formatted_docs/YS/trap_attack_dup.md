@@ -4,18 +4,18 @@
 
 Duplicates a magic attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | attack magic object to be duplicated
 | param_id   | unknown   | pushImm: 1165,1181,249,502
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | attack_dup   | struct *   
-Example Usage From magic\FIRE_1\fire.bdscript
+### Example Usage From magic\FIRE_1\fire.bdscript
 ```plaintext
 L227:
  halt 
@@ -58,10 +58,7 @@ L227:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\FIRE_1\fire.bdscript       |           

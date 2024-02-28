@@ -4,7 +4,7 @@
 
 Moves to a random space within the given radius
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133   | An object
@@ -12,7 +12,7 @@ Moves to a random space within the given radius
 | is_air   | bool   | Is the space to move in the air
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3079:
  pushFromPSpVal 4
@@ -69,10 +69,7 @@ L3079:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

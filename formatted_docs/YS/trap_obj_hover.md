@@ -4,7 +4,7 @@
 
 Has the object hover at a given velocity and acceleration
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_193   | An object
@@ -12,7 +12,7 @@ Has the object hover at a given velocity and acceleration
 | accel   | float   | Acceleration value
 
 
-Example Usage From obj\B_EX220\b_ex.bdscript
+### Example Usage From obj\B_EX220\b_ex.bdscript
 ```plaintext
 L150:
  popToSp 4
@@ -68,10 +68,7 @@ L150:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          

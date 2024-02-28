@@ -4,7 +4,7 @@
 
 Sets a batleobj to use a specific enmp entry.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::PIERROT_6 *   | A btlobj
@@ -12,7 +12,7 @@ Sets a batleobj to use a specific enmp entry.
 | param   | int   | unknown, always 0 in game
 
 
-Example Usage From obj\B_AL020\b_al.bdscript
+### Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L4649:
  popToSp 4
@@ -643,10 +643,7 @@ L4649:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

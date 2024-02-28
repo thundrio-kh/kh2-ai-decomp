@@ -4,14 +4,14 @@
 
 sets a gauge to a specified value
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | float   | value to set the gauge to
 | id   | int   | id of a gauge
 
 
-Example Usage From msn\DC00_MS101\dc_m.bdscript
+### Example Usage From msn\DC00_MS101\dc_m.bdscript
 ```plaintext
 L152:
  pushFromPSpVal 16
@@ -33,10 +33,7 @@ L152:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\DC00_MS101\dc_m.bdscript       |           

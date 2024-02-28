@@ -4,17 +4,17 @@
 
 Gets a movement vector along a specific path
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_133 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
-Example Usage From obj\N_AL090_BTL\n_al.bdscript
+### Example Usage From obj\N_AL090_BTL\n_al.bdscript
 ```plaintext
 L3262:
  pushFromFSp 0
@@ -41,10 +41,7 @@ L3262:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_AL090_BTL\n_al.bdscript       | ((N) Abu holding gem (BTL) (AL))          

@@ -4,7 +4,7 @@
 
 Jumps an object to the vector
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -14,7 +14,7 @@ Jumps an object to the vector
 | force   | bool   | Probably whether or not to force the animation to switch
 
 
-Example Usage From limit\auron\limi.bdscript
+### Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L1950:
  pushFromPSp 16
@@ -53,10 +53,7 @@ L1950:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           

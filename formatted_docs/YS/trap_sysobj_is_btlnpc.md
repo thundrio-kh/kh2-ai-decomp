@@ -4,17 +4,17 @@
 
 Returns true if the object is a NPC
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_npc   | bool   
-Example Usage From msn\TT04_MS301\tt04.bdscript
+### Example Usage From msn\TT04_MS301\tt04.bdscript
 ```plaintext
 L177:
  pushFromPSp 0
@@ -32,10 +32,7 @@ L177:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           

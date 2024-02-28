@@ -4,12 +4,12 @@
 
 Clear the target before the player
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript
+### Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript
 ```plaintext
 L5513:
  popToSp 0
@@ -41,10 +41,7 @@ L5513:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          

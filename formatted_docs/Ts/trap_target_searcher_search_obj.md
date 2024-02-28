@@ -4,7 +4,7 @@
 
 Has a target searcher search for a specific object.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
@@ -12,7 +12,7 @@ Has a target searcher search for a specific object.
 | pos   | kn::FVector *   | A position vector
 
 
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L80:
  popToSp 4
@@ -30,10 +30,7 @@ L80:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

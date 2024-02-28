@@ -4,17 +4,17 @@
 
 Get the time of a motion set entry
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\B_AL100_2ND\b_al.bdscript
+### Example Usage From obj\B_AL100_2ND\b_al.bdscript
 ```plaintext
 L1235:
  popToSp 0
@@ -57,10 +57,7 @@ L1235:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          

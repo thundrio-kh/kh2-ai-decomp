@@ -4,14 +4,14 @@
 
 Restarts a paused timer. if time parameter is < 1, timer counts up instead of down
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | time   | int   | Value the timer should be set to?
 | timer_id   | int   | id of a timer
 
 
-Example Usage From msn\CA07_MS105\ca07.bdscript
+### Example Usage From msn\CA07_MS105\ca07.bdscript
 ```plaintext
 L184:
  pushImm -1
@@ -22,10 +22,7 @@ L184:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           

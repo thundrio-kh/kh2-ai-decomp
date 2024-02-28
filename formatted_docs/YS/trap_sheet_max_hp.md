@@ -4,18 +4,18 @@
 
 Return the max HP of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 | index   | int   | HP index to use
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | max_hp   | int   
-Example Usage From msn\AL00_MS101\ms_a.bdscript
+### Example Usage From msn\AL00_MS101\ms_a.bdscript
 ```plaintext
 L163:
  popToSp 0
@@ -55,10 +55,7 @@ L163:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           

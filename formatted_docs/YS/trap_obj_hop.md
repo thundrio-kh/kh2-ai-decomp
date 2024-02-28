@@ -4,7 +4,7 @@
 
 Sets an object to do a hop
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_88   | An object
@@ -16,7 +16,7 @@ Sets an object to do a hop
 | start_with_vel   | bool   | If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here
 
 
-Example Usage From obj\B_BB110\b_bb.bdscript
+### Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L5368:
  popToSp 0
@@ -48,10 +48,7 @@ L5368:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

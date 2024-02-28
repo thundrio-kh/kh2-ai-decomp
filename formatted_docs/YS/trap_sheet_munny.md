@@ -4,16 +4,16 @@
 
 Return the amount of munny the player has
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | amt   | int   
-Example Usage From ard\tt02\tt_n.bdscript
+### Example Usage From ard\tt02\tt_n.bdscript
 ```plaintext
 TR3:
  pushImm 362
@@ -27,10 +27,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt02\tt_n.bdscript       |           

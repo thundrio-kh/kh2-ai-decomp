@@ -4,14 +4,14 @@
 
 Scales the given vector by an amount, putting the result in the first argument
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vector   | vector * or float    | Either a vector of numbers, or a single float
 | amount   | float   | The amount to scale the first argument by
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4188:
  jz L4406
@@ -112,10 +112,7 @@ L4188:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

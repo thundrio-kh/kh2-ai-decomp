@@ -4,12 +4,12 @@
 
 Turns off player control for an event
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\TT02_MS201\save.bdscript
+### Example Usage From msn\TT02_MS201\save.bdscript
 ```plaintext
 L52:
  pushImm 32
@@ -21,10 +21,7 @@ L52:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT02_MS201\save.bdscript       |           

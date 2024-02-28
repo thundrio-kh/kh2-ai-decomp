@@ -4,17 +4,17 @@
 
 Constrain a radian value to a certain range
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | radian   | float   | radian value in degrees that needs to be constrained
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | radian_out   | constrained radians   
-Example Usage From limit\sparrow\limi.bdscript
+### Example Usage From limit\sparrow\limi.bdscript
 ```plaintext
 L402:
  popToSp 0
@@ -77,10 +77,7 @@ L402:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\sparrow\limi.bdscript       |           

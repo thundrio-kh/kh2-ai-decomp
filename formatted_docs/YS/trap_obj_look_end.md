@@ -4,14 +4,14 @@
 
 Removes a created lookat object in the specified time
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | lookat   | YS::LOOKAT_116 *   | A lookat object
 | time   | float   | Amount of frames before the lookat is ended
 
 
-Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+### Example Usage From obj\B_EX110_RTN\rtn_.bdscript
 ```plaintext
 L1973:
  pushFromFSp 0
@@ -26,10 +26,7 @@ L1973:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          

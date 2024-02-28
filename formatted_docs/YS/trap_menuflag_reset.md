@@ -4,13 +4,13 @@
 
 resets a menu flag to the default state
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag   | int   | a number representing a specific menuflag
 
 
-Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript
+### Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript
 ```plaintext
 L3817:
  popToSp 0
@@ -83,10 +83,7 @@ L3817:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          

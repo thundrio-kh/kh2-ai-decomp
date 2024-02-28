@@ -4,18 +4,18 @@
 
 Computes the angle between two vectors
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | vec1   | kn::FVector *   | A vector
 | vec2   | kn::FVector *   | A vector
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | angle   | float   
-Example Usage From obj\F_EH060\f_eh.bdscript
+### Example Usage From obj\F_EH060\f_eh.bdscript
 ```plaintext
 L3755:
  popToSp 0
@@ -56,10 +56,7 @@ L3755:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          

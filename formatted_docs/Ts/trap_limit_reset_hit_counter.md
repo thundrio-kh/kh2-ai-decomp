@@ -4,17 +4,17 @@
 
 Reset the hit counter for a limit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | limit   | YS::LIMIT_1 *   | A limit object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | int   
-Example Usage From limit\trinity\limi.bdscript
+### Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L8450:
  pushFromFSp 148
@@ -34,10 +34,7 @@ L8450:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           

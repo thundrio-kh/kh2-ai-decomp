@@ -4,17 +4,17 @@
 
 Converts jump height to uptime using the following formula: `math.sqrt(math.abs(height * 2.0) / 0.40816328)`
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | height   | float   | Height Value
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | uptime   | float   
-Example Usage From limit\goofy\limi.bdscript
+### Example Usage From limit\goofy\limi.bdscript
 ```plaintext
 L1794:
  popToSp 4
@@ -33,10 +33,7 @@ L1794:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy\limi.bdscript       |           

@@ -4,14 +4,14 @@
 
 Limit version of starting a separate thread
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | label   | int   | line number/label for the new thread to start executing at
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3431:
  popToSp 0
@@ -30,10 +30,7 @@ L3431:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

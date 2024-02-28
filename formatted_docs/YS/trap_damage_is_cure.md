@@ -4,17 +4,17 @@
 
 Returns if the type of damage is healing (if the value is 5 or 6)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | isheal   | bool   
-Example Usage From msn\EH14_MS103\ms_l.bdscript
+### Example Usage From msn\EH14_MS103\ms_l.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -38,10 +38,7 @@ TR6:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           

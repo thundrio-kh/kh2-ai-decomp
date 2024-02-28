@@ -4,17 +4,17 @@
 
 Get the normal vector of a bghit
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | bghit   | YS::BGHIT_0 *   | A BGHIT object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | normal   | kn::FVector *   
-Example Usage From limit\mulan\limi.bdscript
+### Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L298:
  pushFromFSp 88
@@ -92,10 +92,7 @@ L298:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           

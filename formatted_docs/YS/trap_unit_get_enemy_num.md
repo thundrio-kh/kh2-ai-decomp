@@ -4,16 +4,16 @@
 
 Get the number of enemies currently spawned
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num_enemies   | int   
-Example Usage From obj\F_MU080\f_mu.bdscript
+### Example Usage From obj\F_MU080\f_mu.bdscript
 ```plaintext
 L103:
  popToSp 0
@@ -30,10 +30,7 @@ L103:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_MU080\f_mu.bdscript       | ((F) ??? (MU))          

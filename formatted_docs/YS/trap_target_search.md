@@ -4,7 +4,7 @@
 
 Searches for a target of a given type
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | target   | YS::TARGET_108 *   | A target object
@@ -12,7 +12,7 @@ Searches for a target of a given type
 | type   | int   | Target type
 
 
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L489:
  pushFromFSp 180
@@ -29,10 +29,7 @@ L489:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

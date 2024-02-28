@@ -4,17 +4,17 @@
 
 Get the value of the players current rc
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | player   | YS::PLAYER_44 *   | Player object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | rc   | int   
-Example Usage From obj\F_TR010\f_tr.bdscript
+### Example Usage From obj\F_TR010\f_tr.bdscript
 ```plaintext
 L25:
  gosub 4, L99
@@ -35,10 +35,7 @@ L25:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TR010\f_tr.bdscript       | ((F) A Terminal from Space Paranoids (TR))          

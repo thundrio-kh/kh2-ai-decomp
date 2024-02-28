@@ -4,21 +4,18 @@
 
 Looks up an object by ID and then returns the object that is closest to the camera? This is unused and might not actually work
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | data   | memory   | variable/stack location where the object will be stored
 | offset   | kn::FVector *   | A position vector?
 
 
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

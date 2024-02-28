@@ -4,13 +4,13 @@
 
 activates a menuflag
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | flag   | int   | a number representing a specific menuflag
 
 
-Example Usage From msn\AL13_TRAP\al13.bdscript
+### Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 TR3:
  syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
@@ -24,10 +24,7 @@ TR3:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           

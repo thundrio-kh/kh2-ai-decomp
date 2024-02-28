@@ -4,7 +4,7 @@
 
 Return the nth oldest target in the searcher
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | searcher   | Ts::TARGET_SEARCHER_0   | A target searcher object
@@ -12,7 +12,7 @@ Return the nth oldest target in the searcher
 | n   | int   | An index value for the list of targets
 
 
-Example Usage From limit\donald2\limi.bdscript
+### Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L549:
  pushFromFSp 72
@@ -48,10 +48,7 @@ L549:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           

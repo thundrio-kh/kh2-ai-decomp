@@ -4,7 +4,7 @@
 
 Set the parameters of card actions based on a number of parameters
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | unk1   | float   | Values of 2,4 used in game AI
@@ -16,7 +16,7 @@ Set the parameters of card actions based on a number of parameters
 | unk7   | float   | Values of 3 used in game AI
 
 
-Example Usage From obj\B_EX150\b_ex.bdscript
+### Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L15018:
  popToSp 0
@@ -46,10 +46,7 @@ L15018:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          

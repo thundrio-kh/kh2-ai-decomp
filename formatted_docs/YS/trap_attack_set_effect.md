@@ -4,14 +4,14 @@
 
 Applies an object effect to an attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | an attack object
 | effect   | ryj::EFFECT *   | an object effect to apply to an attack
 
 
-Example Usage From limit\beast\limi.bdscript
+### Example Usage From limit\beast\limi.bdscript
 ```plaintext
 L39:
  pushFromFSp 8
@@ -36,10 +36,7 @@ L39:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           

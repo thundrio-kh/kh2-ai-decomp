@@ -4,14 +4,14 @@
 
 Attaches an PAX effect during an attack. Unknown how this is different from trap_attack_set_pax
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | An attack object
 | pax   | struct *   | The pax effect to attach. Unknown what type of object this is
 
 
-Example Usage From limit\goofy2\limi.bdscript
+### Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L903:
  popToSp 0
@@ -77,10 +77,7 @@ L903:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           

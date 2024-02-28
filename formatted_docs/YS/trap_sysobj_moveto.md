@@ -4,7 +4,7 @@
 
 Moves an object to a position
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -12,11 +12,11 @@ Moves an object to a position
 | speed   | float   | Speed value
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | float   
-Example Usage From obj\M_EX420\m_ex.bdscript
+### Example Usage From obj\M_EX420\m_ex.bdscript
 ```plaintext
 L3495:
  pushFromFSp 16
@@ -127,10 +127,7 @@ L3495:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX420\m_ex.bdscript       | ((M) Neoshadow)          

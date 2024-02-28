@@ -4,18 +4,18 @@
 
 Updates the target of a friend
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | friend   | kn::Friend_0 *   | A friend object
 | force   | bool   | Whether to force the target update immediately
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | is_updated   | bool   
-Example Usage From obj\P_EX330\p_ex.bdscript
+### Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6099:
  popToSp 0
@@ -41,10 +41,7 @@ L6099:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          

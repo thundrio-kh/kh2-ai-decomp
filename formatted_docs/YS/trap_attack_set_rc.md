@@ -4,7 +4,7 @@
 
 Attaches a reaction command to an attack for the player to use
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC_3 *   | An attack object
@@ -14,7 +14,7 @@ Attaches a reaction command to an attack for the player to use
 | height   | int   | value to use for the height for the reaction command activation zone
 
 
-Example Usage From obj\B_EX100\b_ex.bdscript
+### Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L1572:
  pushFromFSpVal 120
@@ -44,10 +44,7 @@ L1572:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          

@@ -4,14 +4,14 @@
 
 Unbinds the effect from the object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | effect   | ryj::EFFECT_310   | An effect object
 
 
-Example Usage From obj\B_EX390\b_ex.bdscript
+### Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L38605:
  pushFromFSp 0
@@ -32,10 +32,7 @@ L38605:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          

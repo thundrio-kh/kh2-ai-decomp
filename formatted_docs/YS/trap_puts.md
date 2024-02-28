@@ -4,13 +4,13 @@
 
 Normally does nothing in production game. When running the PC version of the game with this mod (MainMemory/KH2AIDebug), it prints a string to the console that can be opened with F2
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-Example Usage From gumimenu\event\gumi.bdscript
+### Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L19:
  popToSp 0
@@ -29,10 +29,7 @@ L19:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           

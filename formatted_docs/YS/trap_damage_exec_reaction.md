@@ -4,13 +4,13 @@
 
 
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-Example Usage From obj\B_BB100\b_bb.bdscript
+### Example Usage From obj\B_BB100\b_bb.bdscript
 ```plaintext
 L1192:
  popToSp 4
@@ -50,10 +50,7 @@ L1192:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          

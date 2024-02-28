@@ -4,12 +4,12 @@
 
 Unlocks a mission and returns control/settings to normal
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HB16_MS404D\hb16.bdscript
+### Example Usage From msn\HB16_MS404D\hb16.bdscript
 ```plaintext
 L87:
  gosub 4, L109
@@ -25,10 +25,7 @@ L87:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB16_MS404D\hb16.bdscript       |           

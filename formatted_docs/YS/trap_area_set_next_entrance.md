@@ -4,12 +4,12 @@
 
 Increments the AREA::NextArea.Entrance value by 1. Only used by the Olympus Cups.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 
 
-Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+### Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
 ```plaintext
 L307:
  popToSp 0
@@ -31,10 +31,7 @@ L307:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           

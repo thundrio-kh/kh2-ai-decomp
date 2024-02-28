@@ -4,17 +4,17 @@
 
 Returns the count for the current reflect attack
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | attack   | YS::ATTACK_MAGIC *   | a reflect attack
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | count   | int   
-Example Usage From magic\reflect1\refl.bdscript
+### Example Usage From magic\reflect1\refl.bdscript
 ```plaintext
 L125:
  halt 
@@ -42,10 +42,7 @@ L125:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\reflect1\refl.bdscript       |           

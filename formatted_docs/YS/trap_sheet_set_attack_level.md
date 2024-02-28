@@ -4,14 +4,14 @@
 
 Set the attack level of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | sheet   | YS::SHEET_44 *   | An object stat sheet
 | level   | int   | The new attack level
 
 
-Example Usage From obj\N_CM020_BTL\n_cm.bdscript
+### Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L5357:
  pushFromFSp 0
@@ -24,10 +24,7 @@ L5357:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          

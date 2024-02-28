@@ -4,17 +4,17 @@
 
 Return the number of instances of an object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj_id   | int   | An object ID
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | num   | int   
-Example Usage From msn\MU09_KINOKO_VEX\kino.bdscript
+### Example Usage From msn\MU09_KINOKO_VEX\kino.bdscript
 ```plaintext
 L402:
  pushImm 2345
@@ -32,10 +32,7 @@ L402:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU09_KINOKO_VEX\kino.bdscript       |           

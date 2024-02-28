@@ -4,18 +4,18 @@
 
 Set a path for an object by ID
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
 | id   | int   | ID number of a path
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | path   | Ti::Path_3   
-Example Usage From obj\F_TT110\f_tt.bdscript
+### Example Usage From obj\F_TT110\f_tt.bdscript
 ```plaintext
 L4131:
  pushFromFSpVal 120
@@ -32,10 +32,7 @@ L4131:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          

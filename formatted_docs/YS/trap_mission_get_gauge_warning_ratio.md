@@ -4,24 +4,21 @@
 
 Returns the a value from 0.0 to 1.0 representing the current progress of the specified gauge getting to the warning level. Unused in game.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | gauge_id   | int   | id of a gauge
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | value   | float   
-Example Usage From NA
+### Example Usage From NA
 
 
 
-
-
-
-	Appears in:
+### Appears in:
 
 
 

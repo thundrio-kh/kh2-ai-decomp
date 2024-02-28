@@ -4,14 +4,14 @@
 
 Sets the level up path to sword/shield/staff.
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | partram   | YS::PARTRAM *   | Partram object
 | type   | int   | 0, 1, or 2
 
 
-Example Usage From ard\tt32\tt_l.bdscript
+### Example Usage From ard\tt32\tt_l.bdscript
 ```plaintext
 L40:
  pushFromFSp 8
@@ -21,10 +21,7 @@ L40:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt32\tt_l.bdscript       |           

@@ -4,13 +4,13 @@
 
 Enable a unit group so it can spawn
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | id   | Unit group ID
 
 
-Example Usage From msn\MU02_MS103B\mu02.bdscript
+### Example Usage From msn\MU02_MS103B\mu02.bdscript
 ```plaintext
 L204:
  pushImm 417
@@ -19,10 +19,7 @@ L204:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU02_MS103B\mu02.bdscript       |           

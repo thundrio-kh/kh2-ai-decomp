@@ -4,7 +4,7 @@
 
 Sets an object to a random in bounds position (if the random location found is out of bounds, it will be moved to the closest in bounds location)
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125   | An object
@@ -13,7 +13,7 @@ Sets an object to a random in bounds position (if the random location found is o
 | height   | float   | Determines height of random positions to choose from
 
 
-Example Usage From ard\he05\f_he.bdscript
+### Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L56:
  jz L112
@@ -45,10 +45,7 @@ L56:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           

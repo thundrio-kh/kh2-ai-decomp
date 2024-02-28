@@ -4,13 +4,13 @@
 
 sets a warning state for the specified combo counter
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | id   | int   | id of a combo counter
 
 
-Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+### Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L64:
  popToSp 4
@@ -26,10 +26,7 @@ L64:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           

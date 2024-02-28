@@ -4,17 +4,17 @@
 
 Takes a float and returns the absolute value of that float
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | value   | float   | A positive or negative signed float
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | abs_value   | float   
-Example Usage From limit\aladdin\limi.bdscript
+### Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L2130:
  pushFromFSpVal 104
@@ -54,10 +54,7 @@ L2130:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           

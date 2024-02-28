@@ -4,14 +4,14 @@
 
 Duplicates a battle object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | btlobj   | YS::PIERROT_6   | the btl object to copy
 | param   | int   | Unknown purpose, only used value is 216 (Larxene Datas enmp entry
 
 
-Example Usage From obj\B_EX400\b_ex.bdscript
+### Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L3817:
  popToSp 4
@@ -1427,10 +1427,7 @@ L3817:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          

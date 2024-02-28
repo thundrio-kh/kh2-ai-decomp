@@ -4,18 +4,18 @@
 
 Returns the position matrix offset value of a motion set entry, this value is taken from the raw motion header
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | motion   | YS::MOTION_289   | A motion set
 | id   | int   | ID of a specific motion set entry
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | position_matrix_offset   | int   
-Example Usage From obj\M_EX020\m_ex.bdscript
+### Example Usage From obj\M_EX020\m_ex.bdscript
 ```plaintext
 L2835:
  popToSp 0
@@ -43,10 +43,7 @@ L2835:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX020\m_ex.bdscript       | ((M) Shadow)          

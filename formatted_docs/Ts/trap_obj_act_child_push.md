@@ -4,14 +4,14 @@
 
 Push the action of a child object to the action table
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | act   | YS::ACT_86 *   | An action object
 | act   | label   | Label of action to push
 
 
-Example Usage From obj\B_EX170_LAST\b_ex.bdscript
+### Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L24594:
  popToSp 0
@@ -68,10 +68,7 @@ L24594:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

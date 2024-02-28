@@ -4,17 +4,17 @@
 
 Returns if the damage from an attack is normal type
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From obj\F_CA060\f_ca.bdscript
+### Example Usage From obj\F_CA060\f_ca.bdscript
 ```plaintext
 L31:
  popToSp 4
@@ -30,10 +30,7 @@ L31:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          

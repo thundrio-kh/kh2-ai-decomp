@@ -4,13 +4,13 @@
 
 activate mickeys recovery holy light
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | mickey_obj   | YS::MICKEY_0 *   | Object for mickey
 
 
-Example Usage From obj\P_EX200\mick.bdscript
+### Example Usage From obj\P_EX200\mick.bdscript
 ```plaintext
 L1677:
  popToSp 0
@@ -32,10 +32,7 @@ L1677:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          

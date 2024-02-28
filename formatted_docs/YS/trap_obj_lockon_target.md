@@ -4,17 +4,17 @@
 
 Locks the player onto the target object
 
-#### Input parameters
+### Input parameters
 | Name | Type | Description
 |------|------|------------
 | obj   | YS::OBJ_125 *   | An object
 
 
-#### Return Parameters
+### Output Parameters
 | Name | Type
 |------|-----
 | unk   | unknown   
-Example Usage From limit\beast\limi.bdscript
+### Example Usage From limit\beast\limi.bdscript
 ```plaintext
 L287:
  popToSp 4
@@ -74,10 +74,7 @@ L287:
 ```
 
 
-
-
-
-	Appears in:
+### Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
