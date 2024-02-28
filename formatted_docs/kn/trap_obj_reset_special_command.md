@@ -23,7 +23,7 @@ Reset an objects special command
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L9432:
  popToSp 4
  popToSp 8

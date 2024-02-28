@@ -38,7 +38,7 @@ Returns if the type of damage is healing (if the value is 5 or 6)
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```
+```plaintext
 TR6:
  popToSp 0
  popToSp 4

@@ -169,7 +169,7 @@ Resets the objects collision to its default state
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```
+```plaintext
 L1904:
  popToSp 4
  popToSp 0

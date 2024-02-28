@@ -171,7 +171,7 @@ Shouts an action after an amount of time
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L3139:
  pushFromPWp W36
  pushImm 4

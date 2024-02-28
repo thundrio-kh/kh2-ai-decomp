@@ -119,7 +119,7 @@ startThread:
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L4479:
  popToSp 0
  pushImm 0

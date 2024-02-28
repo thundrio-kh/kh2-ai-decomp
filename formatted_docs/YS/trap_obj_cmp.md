@@ -160,7 +160,7 @@ Compares two numbers, and returns the difference
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1393:
  popToSp 4
  popToSp 0

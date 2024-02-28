@@ -38,7 +38,7 @@ Grants Iframes?
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```
+```plaintext
 L506:
  jz L528
  pushFromFSp 20

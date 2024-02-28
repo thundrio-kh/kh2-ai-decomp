@@ -23,7 +23,7 @@ Have a friend follow the player
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L6080:
  pushFromPWp W364
  gosub 4, L6099

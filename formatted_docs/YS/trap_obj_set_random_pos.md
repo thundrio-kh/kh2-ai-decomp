@@ -30,7 +30,7 @@ Sets an object to a random in bounds position (if the random location found is o
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L56:
  jz L112
  pushFromPSp 0

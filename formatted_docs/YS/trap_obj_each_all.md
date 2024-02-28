@@ -31,7 +31,7 @@ returns each instance of an object to the top of the stack?
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
-```
+```plaintext
 L214:
  popToSp 0
  pushFromFSpVal 4

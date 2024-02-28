@@ -27,7 +27,7 @@ Get a Xemnas object
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L15077:
  pushFromPSp 0
  pushImm 1

@@ -56,7 +56,7 @@ Returns the element of the attack, according to openkh documentation
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L2101:
  jz L2170
  pushFromFSp 4

@@ -31,7 +31,7 @@ Sets the color of an effect
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
-```
+```plaintext
 L3409:
  pushFromFSp 56
  pushFromFSp 52

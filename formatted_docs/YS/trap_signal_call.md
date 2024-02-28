@@ -120,7 +120,7 @@ Perform a signal call.
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```
+```plaintext
 L72:
  jz L84
  pushImm 9

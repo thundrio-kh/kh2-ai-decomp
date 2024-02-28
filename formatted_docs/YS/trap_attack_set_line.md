@@ -77,7 +77,7 @@ Sets a line for an attack that needs a line set
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L6269:
  pushFromFSpVal 68
  pushImm 0

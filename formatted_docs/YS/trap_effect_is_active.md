@@ -285,7 +285,7 @@ checks if an effect is still active
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3241:
  popToSp 0
  pushFromFSpVal 16

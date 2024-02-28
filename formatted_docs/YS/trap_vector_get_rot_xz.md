@@ -397,7 +397,7 @@ Calculates the rotation of a vector in the XZ plane
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2130:
  pushFromFSpVal 104
  jz L2209

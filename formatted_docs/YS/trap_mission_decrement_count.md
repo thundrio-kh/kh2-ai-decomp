@@ -66,7 +66,7 @@ subtracts one from the value of an on screen counter
 
 <details>
 	<summary>Example Usage From msn\AL10_MS102\ms_d.bdscript</summary>
-```
+```plaintext
 L33:
  pushImm 0
  syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)

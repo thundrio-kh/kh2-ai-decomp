@@ -95,7 +95,7 @@ Checks if an attack hit the background (OOB?).
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```
+```plaintext
 L4735:
  pushFromFSpVal 68
  syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)

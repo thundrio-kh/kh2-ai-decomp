@@ -43,7 +43,7 @@ Cancel the currecnt camera event
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```
+```plaintext
 L710:
  popToSp 4
  popToSp 0

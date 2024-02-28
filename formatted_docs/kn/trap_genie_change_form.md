@@ -23,7 +23,7 @@ Changes the genies form
 
 <details>
 	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
-```
+```plaintext
 L68:
  pushFromPWp W312
  fetchValue 4

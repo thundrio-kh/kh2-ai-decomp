@@ -44,7 +44,7 @@ Reset a target searcher counter to 0
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L4858:
  popToSp 0
  pushFromPWp W0

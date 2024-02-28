@@ -98,7 +98,7 @@
 
 <details>
 	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
-```
+```plaintext
 L1192:
  popToSp 4
  popToSp 0

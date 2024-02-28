@@ -233,7 +233,7 @@ Sets the current action for the object to idle.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L397:
  popToSp 0
  pushFromFSp 0

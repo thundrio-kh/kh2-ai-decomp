@@ -23,8 +23,6 @@ Check the status of a worldflag
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -35,7 +35,7 @@ starts the specialized limit camera
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3043:
  popToSp 0
  pushFromFSpVal 152

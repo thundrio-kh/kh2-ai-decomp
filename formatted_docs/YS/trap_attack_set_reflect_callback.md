@@ -27,7 +27,7 @@ Attaches a callback to be used when an attack is reflected
 
 <details>
 	<summary>Example Usage From obj\B_EX430\b_ex.bdscript</summary>
-```
+```plaintext
 L205:
  popToSp 4
  popToSp 0

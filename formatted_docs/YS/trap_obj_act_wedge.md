@@ -20,8 +20,6 @@ wedges an action, unclear what this means (it is unused in the vanilla game)
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

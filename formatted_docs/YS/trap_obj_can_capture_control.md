@@ -23,8 +23,6 @@ Returns if the objects control can be captured
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

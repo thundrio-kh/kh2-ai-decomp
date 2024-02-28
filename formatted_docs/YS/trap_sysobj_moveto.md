@@ -29,7 +29,7 @@ Moves an object to a position
 
 <details>
 	<summary>Example Usage From obj\M_EX420\m_ex.bdscript</summary>
-```
+```plaintext
 L3495:
  pushFromFSp 16
  pushImmf 0

@@ -23,8 +23,6 @@ Gets the attack level of an object
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

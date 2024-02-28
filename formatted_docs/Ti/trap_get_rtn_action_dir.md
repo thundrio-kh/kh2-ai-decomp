@@ -256,7 +256,7 @@ Get the direction of a RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2245:
  popToSp 0
  pushFromFSp 0

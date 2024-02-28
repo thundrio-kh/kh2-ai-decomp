@@ -23,7 +23,7 @@ Set the attack level of an object
 
 <details>
 	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
-```
+```plaintext
 L5357:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)

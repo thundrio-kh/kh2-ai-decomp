@@ -35,7 +35,7 @@ Set an objects HP
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L148:
  popToSp 0
  pushFromPSpVal 116

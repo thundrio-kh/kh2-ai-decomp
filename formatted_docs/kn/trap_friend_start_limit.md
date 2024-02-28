@@ -25,7 +25,7 @@ Have the friend start their limit
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L374:
  pushFromPSpVal 4
  pushFromPSp 16

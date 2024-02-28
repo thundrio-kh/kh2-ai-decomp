@@ -25,7 +25,7 @@ Set a target point on a path
 
 <details>
 	<summary>Example Usage From obj\N_AL070_BTL\n_al.bdscript</summary>
-```
+```plaintext
 L1140:
  pushFromFSp 0
  gosub 4, L1376

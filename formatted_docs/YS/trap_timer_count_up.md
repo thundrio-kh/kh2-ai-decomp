@@ -19,8 +19,6 @@ Starts a countup timer
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

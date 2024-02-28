@@ -21,7 +21,7 @@ Start Peter Pan prize drain
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L764:
  popToSp 0
  pushFromFSp 0

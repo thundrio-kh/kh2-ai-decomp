@@ -830,7 +830,7 @@ Sets the direction an object wishes to face
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1092:
  pushFromPSp 176
  gosub 52, L2499

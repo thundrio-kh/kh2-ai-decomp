@@ -123,7 +123,7 @@ Return the amount of HP an object has
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L3693:
  drop 
  pushFromFSp 0

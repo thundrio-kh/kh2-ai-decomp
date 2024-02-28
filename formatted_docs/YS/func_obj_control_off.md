@@ -34,7 +34,7 @@ Turns off control of the object running this function.
 
 <details>
 	<summary>Example Usage From msn\TT12_WORK_BOX\tt12.bdscript</summary>
-```
+```plaintext
 L61:
  pushImm 0
  syscall 1, 42 ; func_obj_control_off (1 in, 0 out)

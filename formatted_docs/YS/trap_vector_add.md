@@ -393,7 +393,7 @@ Adds two vectors together
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1951:
  popToSp 4
  popToSp 0

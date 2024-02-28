@@ -23,7 +23,7 @@ Remove the player attacker
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L8674:
  popToSp 0
  pushFromPSpVal 0

@@ -99,7 +99,7 @@ Returns if the motion set is a capture
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L1176:
  pushFromPWp W72
  fetchValue 44

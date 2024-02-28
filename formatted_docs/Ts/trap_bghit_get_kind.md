@@ -49,7 +49,7 @@ Get the kind of bghit
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L2524:
  popToSp 0
  pushFromFSp 0

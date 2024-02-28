@@ -252,7 +252,7 @@ Set the RTN option flag
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2452:
  pushFromPAi L2895 ; ___ai 'RTN_stop' (L2895)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

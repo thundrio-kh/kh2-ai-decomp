@@ -25,7 +25,7 @@ Scatter a number of tron orbs from an enemy
 
 <details>
 	<summary>Example Usage From obj\F_TR020\f_tr.bdscript</summary>
-```
+```plaintext
 L636:
  gosub 4, L675
  pushFromFSpVal 120

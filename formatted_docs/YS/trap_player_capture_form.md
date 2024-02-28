@@ -24,7 +24,7 @@ Changes a players form
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L10397:
  gosub 4, L946
  memcpyToSp 16, 16

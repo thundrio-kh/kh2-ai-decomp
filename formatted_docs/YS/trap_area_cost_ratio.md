@@ -22,8 +22,6 @@ Divides the total cost of all objects currently spawned by the capacity of the r
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

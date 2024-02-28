@@ -31,7 +31,7 @@ Get the movement for the light cycle to head to a target
 
 <details>
 	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
-```
+```plaintext
 L62:
  pushFromFSp 0
  gosub 4, L88

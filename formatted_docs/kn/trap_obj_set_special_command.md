@@ -24,7 +24,7 @@ Set the special command for an object
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L1116:
  pushFromPAi L27786 ; ___ai 'riku detach' (L27786)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

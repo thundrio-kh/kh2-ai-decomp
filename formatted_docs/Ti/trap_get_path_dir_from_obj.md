@@ -25,8 +25,6 @@ Get the direction for a path from an object
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

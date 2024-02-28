@@ -147,7 +147,7 @@ Set the target to an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L450:
  pushFromPWp W0
  pushFromFSp 0

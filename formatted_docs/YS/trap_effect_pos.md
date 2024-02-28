@@ -293,7 +293,7 @@ Returns the position of an effect
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3258:
  jz L3274
  pushFromFSpVal 16

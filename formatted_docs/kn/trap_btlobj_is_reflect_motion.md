@@ -27,7 +27,7 @@ Returns if an object is performing a reflect animation
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
-```
+```plaintext
 L1635:
  pushFromFSp 0
  fetchValue 4

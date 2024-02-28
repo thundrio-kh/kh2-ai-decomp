@@ -23,7 +23,7 @@ executes damage
 
 <details>
 	<summary>Example Usage From obj\F_MU030\f_mu.bdscript</summary>
-```
+```plaintext
 L31:
  popToSp 4
  popToSp 0

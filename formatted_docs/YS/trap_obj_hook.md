@@ -198,7 +198,7 @@ Forks the current VM and hooks the new fork
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L197:
  pushFromPWp W0
  pushImm 20

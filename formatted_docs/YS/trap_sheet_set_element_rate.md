@@ -112,7 +112,7 @@ Set resistances for an object
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L4269:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)

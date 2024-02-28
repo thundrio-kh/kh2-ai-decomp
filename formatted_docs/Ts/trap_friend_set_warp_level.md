@@ -19,8 +19,6 @@ Set the warp level of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -94,7 +94,7 @@ Set the counter to a specific value.
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```
+```plaintext
 L268:
  pushFromFSp 0
  fetchValue 0

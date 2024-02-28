@@ -185,7 +185,7 @@ Returns if the object is jumping.
 
 <details>
 	<summary>Example Usage From magic\FIRE_1\fire.bdscript</summary>
-```
+```plaintext
 L47:
  pushFromPSpVal 0
  syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)

@@ -46,7 +46,7 @@ Has the object hover at a given velocity and acceleration
 
 <details>
 	<summary>Example Usage From obj\B_EX220\b_ex.bdscript</summary>
-```
+```plaintext
 L150:
  popToSp 4
  popToSp 8

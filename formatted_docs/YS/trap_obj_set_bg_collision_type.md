@@ -29,7 +29,7 @@ Sets how an object will collide with the map
 
 <details>
 	<summary>Example Usage From obj\F_HE030_L\f_he.bdscript</summary>
-```
+```plaintext
 L2612:
  popToSp 0
  pushFromFSp 0

@@ -24,7 +24,7 @@ executes a large amount of damage
 
 <details>
 	<summary>Example Usage From obj\B_HE030\b_he.bdscript</summary>
-```
+```plaintext
 L81:
  pushFromFWp W4212
  eqz 

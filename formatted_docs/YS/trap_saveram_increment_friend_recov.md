@@ -26,7 +26,7 @@ Increments the "Healed Party Members" value on the battle report at the end of t
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```
+```plaintext
 L221:
  drop 
  pushFromFSp 36

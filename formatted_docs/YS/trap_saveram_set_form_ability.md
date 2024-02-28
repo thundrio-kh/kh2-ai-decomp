@@ -24,7 +24,7 @@ Adds an ability to a specific form of sora (IE lion sora)
 
 <details>
 	<summary>Example Usage From ard\lk02\lk_g.bdscript</summary>
-```
+```plaintext
 TR2:
  pushImm 7
  pushImm 525

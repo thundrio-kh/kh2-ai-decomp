@@ -26,7 +26,7 @@ Summon a new instance of an object
 
 <details>
 	<summary>Example Usage From obj\M_EX740\m_ex.bdscript</summary>
-```
+```plaintext
 L1922:
  popToSp 0
  pushFromFSp 0

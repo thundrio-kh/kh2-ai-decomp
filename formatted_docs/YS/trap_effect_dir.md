@@ -32,7 +32,7 @@ returns the direction of an effect as a vector
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
-```
+```plaintext
 L347:
  popToSp 0
  pushFromPSpVal 0

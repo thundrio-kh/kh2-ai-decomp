@@ -65,7 +65,7 @@ returns the number of seconds remaining on the specified timer
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```
+```plaintext
 L363:
  pushFromFWp W8
  pushImm 5

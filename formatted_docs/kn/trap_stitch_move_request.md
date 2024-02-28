@@ -23,7 +23,7 @@ Request stitch move (to the target)
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L3314:
  popToSp 0
  gosub 12, L1348

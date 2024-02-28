@@ -41,7 +41,7 @@ Signal an object to reserve an minimum HP value
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```
+```plaintext
 L228:
  pushFromFSp 36
  pushFromPAi L374 ; ___ai 'INT' (L374)

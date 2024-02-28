@@ -22,7 +22,7 @@ Adds the dome effect (dark globe) during the final xemnas laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L15024:
  pushFromFSp 0
  pushImm 226

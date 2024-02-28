@@ -31,7 +31,7 @@ Start the prize drain effect
 
 <details>
 	<summary>Example Usage From magic\MAGNET_1\magn.bdscript</summary>
-```
+```plaintext
 L23:
  popToSp 0
  pushFromFSp 0

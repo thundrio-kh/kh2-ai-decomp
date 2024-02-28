@@ -32,7 +32,7 @@ get a friend object for the friend in slot n
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
-```
+```plaintext
 L618:
  popToSp 0
  pushFromPSp 4

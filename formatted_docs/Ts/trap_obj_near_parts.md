@@ -29,7 +29,7 @@ Finds the parts of obj1 that are colliding with obj2?
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L1426:
  popToSp 0
  pushFromFSpVal 48

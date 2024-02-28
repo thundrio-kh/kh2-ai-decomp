@@ -41,7 +41,7 @@ Marks an object as dead
 
 <details>
 	<summary>Example Usage From obj\M_EX350_01\m_ex.bdscript</summary>
-```
+```plaintext
 L2510:
  pushFromFSp 0
  pushImm 3

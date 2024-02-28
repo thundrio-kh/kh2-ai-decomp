@@ -172,7 +172,7 @@ Performs a homing calculation between two objects.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2209:
  pushFromPSpVal 16
  pushFromFSp 4

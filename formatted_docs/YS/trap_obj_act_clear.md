@@ -45,7 +45,7 @@ clears an action
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L50:
  popToSp 4
  popToSp 0

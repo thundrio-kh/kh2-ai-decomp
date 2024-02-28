@@ -22,7 +22,7 @@ Ensure a trinity limit shot
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L8991:
  pushFromFSp 0
  fetchValue 0

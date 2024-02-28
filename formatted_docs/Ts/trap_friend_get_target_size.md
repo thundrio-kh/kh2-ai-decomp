@@ -23,8 +23,6 @@ Get the collision size of a friends target
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -822,7 +822,7 @@ Adds an label to an action table, as an action that can be performed
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L4649:
  popToSp 4
  popToSp 0

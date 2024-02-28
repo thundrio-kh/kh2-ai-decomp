@@ -32,7 +32,7 @@ Calculate an xyzrot value for strike raid
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
-```
+```plaintext
 L38553:
  pushFromFSp 0
  pushFromPSpVal 32

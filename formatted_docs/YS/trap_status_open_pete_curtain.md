@@ -21,7 +21,7 @@ Show the screen effect of the Pete curtain opening
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
-```
+```plaintext
 L6577:
  pushFromFSp 0
  gosub 4, L7439

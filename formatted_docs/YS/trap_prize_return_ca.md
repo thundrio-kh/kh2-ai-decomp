@@ -28,7 +28,7 @@ Moves a number of medals from the player to the target battle object
 
 <details>
 	<summary>Example Usage From obj\F_CA690_BTL\f_ca.bdscript</summary>
-```
+```plaintext
 L278:
  popToSp 4
  popToSp 0

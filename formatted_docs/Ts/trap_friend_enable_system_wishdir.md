@@ -24,7 +24,7 @@ Enables a friend's system wishdir used for summons
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L3932:
  popToSp 0
  pushFromFSp 0

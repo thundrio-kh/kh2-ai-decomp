@@ -23,7 +23,7 @@ Enable occlusion culling for a specific bone
 
 <details>
 	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
-```
+```plaintext
 L5637:
  popToSp 0
  pushFromFSp 0

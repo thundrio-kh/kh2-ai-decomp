@@ -20,8 +20,6 @@ Sets the status for a command slot
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

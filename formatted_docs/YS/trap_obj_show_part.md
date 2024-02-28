@@ -74,7 +74,7 @@ Shows a specific part of an object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L1000:
  pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

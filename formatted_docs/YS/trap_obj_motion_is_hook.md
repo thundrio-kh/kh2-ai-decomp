@@ -41,7 +41,7 @@ Returns if the motion set is a hook
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```
+```plaintext
 L1536:
  pushFromFWp W8
  jz L1632

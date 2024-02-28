@@ -33,7 +33,7 @@ Turns on control of the object running this function.
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L18089:
  pushFromFSp 0
  pushImm 51

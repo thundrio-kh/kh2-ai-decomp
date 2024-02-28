@@ -27,7 +27,7 @@ Looks up an object by ID and then returns the copy of the object that is closest
 
 <details>
 	<summary>Example Usage From obj\F_AL110\f_al.bdscript</summary>
-```
+```plaintext
 L218:
  pushFromPSp 16
  pushImm 1886

@@ -23,7 +23,7 @@ activate mickeys recovery holy light
 
 <details>
 	<summary>Example Usage From obj\P_EX200\mick.bdscript</summary>
-```
+```plaintext
 L1677:
  popToSp 0
  pushImmf 30

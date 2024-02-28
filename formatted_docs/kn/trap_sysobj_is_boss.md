@@ -29,7 +29,7 @@ Return if the object is a boss
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L4280:
  popToSp 0
  pushFromFSp 0

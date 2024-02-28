@@ -22,7 +22,7 @@ Ends the Final Xemnas dome laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L7213:
  popToSp 0
  pushFromPAi L28020 ; ___ai 'crowd_laser_finish' (L28020)

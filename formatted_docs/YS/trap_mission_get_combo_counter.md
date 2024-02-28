@@ -22,8 +22,6 @@ returns the current value of the combo counter
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -29,7 +29,7 @@ Checks if the ride flag is checked on the object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
-```
+```plaintext
 L5360:
  popToSp 0
  pushFromFSp 0

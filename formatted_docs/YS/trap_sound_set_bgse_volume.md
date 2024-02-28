@@ -22,7 +22,7 @@ Turn background sound effects on or off
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L12020:
  popToSp 0
  pushImm 0

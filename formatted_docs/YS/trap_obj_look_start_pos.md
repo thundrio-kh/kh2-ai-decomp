@@ -21,8 +21,6 @@ Create a lookat object using a lookat as a base
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

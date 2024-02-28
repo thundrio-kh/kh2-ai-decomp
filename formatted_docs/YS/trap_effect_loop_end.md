@@ -217,7 +217,7 @@ Ends an effect loop
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2691:
  dup 
  pushFromFSp 4

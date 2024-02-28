@@ -324,7 +324,7 @@ Creates a new attack object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3275:
  popToSp 0
  pushFromPSpVal 32

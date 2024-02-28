@@ -18,8 +18,6 @@ Turns on all barriers spawned in to the map.
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

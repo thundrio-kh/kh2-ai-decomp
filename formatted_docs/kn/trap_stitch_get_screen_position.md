@@ -26,7 +26,7 @@ Get the position of stitch on the screen
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L3526:
  popToSp 4
  popToSp 8

@@ -596,7 +596,7 @@ Starts playing a motion set entry
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2778:
  popToSp 0
  pushFromPWp W0

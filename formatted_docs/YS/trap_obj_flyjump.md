@@ -151,7 +151,7 @@ Prepares and starts a flyjump for an object
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L4450:
  pushFromPSp 16
  pushImm 4

@@ -52,7 +52,7 @@ Applies an object effect to an attack
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```
+```plaintext
 L39:
  pushFromFSp 8
  pushImm 497

@@ -23,7 +23,7 @@ Kills all effects for an object PAX
 
 <details>
 	<summary>Example Usage From obj\F_HB020\f_hb.bdscript</summary>
-```
+```plaintext
 L9368:
  popToSp 0
  pushFromFSp 0

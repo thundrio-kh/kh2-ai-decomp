@@ -45,7 +45,7 @@ Duplicates a magic attack
 
 <details>
 	<summary>Example Usage From magic\FIRE_1\fire.bdscript</summary>
-```
+```plaintext
 L227:
  halt 
  pushFromFSp 0

@@ -23,8 +23,6 @@ Check if the cost for this magic object can be added to the areas current cost
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

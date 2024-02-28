@@ -26,7 +26,7 @@
 
 <details>
 	<summary>Example Usage From 00common</summary>
-```
+```plaintext
 L193:
  pushImm 1
  pushImm 41

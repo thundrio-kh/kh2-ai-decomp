@@ -25,7 +25,7 @@ Set the range the player has to be from a prize to pick it up
 
 <details>
 	<summary>Example Usage From msn\MU01_MS103C\mu01.bdscript</summary>
-```
+```plaintext
 TR3:
  gosub 4, L239
  pushImmf 100

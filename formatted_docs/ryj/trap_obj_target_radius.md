@@ -28,7 +28,7 @@ Get the radius of a target
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L8788:
  pushFromPSpVal 5468
  gosub 12, L5578

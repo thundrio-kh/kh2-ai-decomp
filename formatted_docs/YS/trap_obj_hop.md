@@ -46,7 +46,7 @@ Sets an object to do a hop
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L5368:
  popToSp 0
  pushFromFSp 0

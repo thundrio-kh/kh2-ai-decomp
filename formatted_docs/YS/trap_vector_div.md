@@ -27,7 +27,7 @@ Divides the values of two vectors
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L7250:
  pushFromFSp 0
  gosub 48, L7443

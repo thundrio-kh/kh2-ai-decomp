@@ -23,7 +23,7 @@ Start one of the three parts of the trinity limit combo
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L962:
  pushFromFSp 0
  gosub 4, L1120

@@ -23,7 +23,7 @@ Have chicken little set the destination to shoot
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L409:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
  jz L422

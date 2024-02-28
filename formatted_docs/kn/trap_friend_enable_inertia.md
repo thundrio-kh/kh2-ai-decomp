@@ -22,7 +22,7 @@ Enable the inertia action for a friend
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L7882:
  popToSp 0
  pushFromPWp W364

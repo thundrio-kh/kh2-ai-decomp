@@ -24,7 +24,7 @@ Turn on the secure mode flag
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```
+```plaintext
 L182:
  syscall 1, 154 ; trap_status_secure_mode_start (0 in, 0 out)
  pushFromFWp W8

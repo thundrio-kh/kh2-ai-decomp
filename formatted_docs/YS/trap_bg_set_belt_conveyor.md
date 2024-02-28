@@ -24,7 +24,7 @@ Unknown. Used by conveyor belts in Oogie Boogie boss room
 
 <details>
 	<summary>Example Usage From obj\F_HB110\f_hb.bdscript</summary>
-```
+```plaintext
 L2054:
  popToSp 0
  pushFromPSp 16

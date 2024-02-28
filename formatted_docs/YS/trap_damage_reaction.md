@@ -47,7 +47,7 @@ Gets the reaction type value of an attack, which is the "Enemy Reaction" value d
 
 <details>
 	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
-```
+```plaintext
 L122:
  jz L153
  pushFromFSp 0

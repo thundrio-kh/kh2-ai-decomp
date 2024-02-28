@@ -24,7 +24,7 @@ resets a menu flag to the default state
 
 <details>
 	<summary>Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript</summary>
-```
+```plaintext
 L3817:
  popToSp 0
  pushFromFSp 0

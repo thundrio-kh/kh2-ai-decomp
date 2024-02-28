@@ -20,8 +20,6 @@ Perform a signal hook
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

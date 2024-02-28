@@ -549,7 +549,7 @@ Normally does nothing in production game. When running the PC version of the gam
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```
+```plaintext
 L19:
  popToSp 0
  pushFromFSp 0

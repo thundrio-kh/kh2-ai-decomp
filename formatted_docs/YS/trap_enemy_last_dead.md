@@ -22,8 +22,6 @@ Returns the object of the last enemy attacker.
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

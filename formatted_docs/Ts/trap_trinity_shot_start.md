@@ -30,7 +30,7 @@ Start a trinity limit shot
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L7618:
  pushFromFSp 36
  pushImm 0

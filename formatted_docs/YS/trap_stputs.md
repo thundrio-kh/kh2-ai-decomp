@@ -33,7 +33,7 @@ Normally does nothing in production game. When running the PC version of the gam
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L1205:
  pushFromFSpVal 16
  jz L1215

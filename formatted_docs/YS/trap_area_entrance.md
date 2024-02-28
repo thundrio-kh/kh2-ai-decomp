@@ -67,7 +67,7 @@ Returns the number for the entrance used to enter the room
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```
+```plaintext
 L188:
  syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
  pushFromFSpVal 20

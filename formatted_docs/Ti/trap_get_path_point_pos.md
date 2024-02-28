@@ -33,7 +33,7 @@ Get the position of a point on a path.
 
 <details>
 	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
-```
+```plaintext
 L5755:
  popToSp 0
  pushImmf 300

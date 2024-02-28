@@ -30,7 +30,7 @@ Attach an object to a board
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L45:
  pushFromFSp 8
  syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)

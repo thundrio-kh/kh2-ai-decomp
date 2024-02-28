@@ -27,7 +27,7 @@ Returns if the friend has control
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L8995:
  popToSp 0
  syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)

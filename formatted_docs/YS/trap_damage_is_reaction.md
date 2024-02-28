@@ -267,7 +267,7 @@ Checks if damage from an attack should be reacted to, which it is as long as the
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L2139:
  pushFromFSp 4
  syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)

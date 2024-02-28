@@ -22,7 +22,7 @@ Involved in performing Final Xemnas Dome Laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L16062:
  popToSp 0
  gosub 4, L10254

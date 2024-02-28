@@ -447,7 +447,7 @@ Returns if the object is currently executing and action
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L4091:
  pushFromFSp 0
  gosub 4, L4126

@@ -419,7 +419,7 @@ Rotates a vector along the Y axis
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```
+```plaintext
 L597:
  pushFromPSpVal 16
  pushFromFSpVal 48

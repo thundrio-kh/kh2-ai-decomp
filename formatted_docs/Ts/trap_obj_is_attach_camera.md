@@ -23,8 +23,6 @@ Check if an object is attached to a camera
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

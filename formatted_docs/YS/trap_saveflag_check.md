@@ -38,7 +38,7 @@ Returns the value of a save flag
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```
+```plaintext
 L58:
  pushImm 64
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)

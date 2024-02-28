@@ -24,7 +24,7 @@ Set the attacker for an enemy.
 
 <details>
 	<summary>Example Usage From obj\M_EX590\m_ex.bdscript</summary>
-```
+```plaintext
 L5246:
  popToSp 0
  pushFromFSp 0

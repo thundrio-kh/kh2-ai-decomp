@@ -67,7 +67,7 @@ Gets a random open position in the air
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L4039:
  popToSp 0
  gosub 12, L1148

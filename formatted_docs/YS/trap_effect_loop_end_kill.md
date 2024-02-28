@@ -157,7 +157,7 @@ Ends an effect loop and kills it.
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```
+```plaintext
 L3879:
  dup 
  pushFromFSp 4

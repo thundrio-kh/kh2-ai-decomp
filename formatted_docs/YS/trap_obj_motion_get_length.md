@@ -568,7 +568,7 @@ Returns the length of a given motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L6629:
  popToSp 0
  pushFromFSp 0

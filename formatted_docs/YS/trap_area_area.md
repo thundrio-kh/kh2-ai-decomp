@@ -66,7 +66,7 @@ Returns the number representing the current map (ie for ca03 it would return 3)
 
 <details>
 	<summary>Example Usage From msn\HE00_MS104B\he00.bdscript</summary>
-```
+```plaintext
 L214:
  pushImm 6
  pushImm 176

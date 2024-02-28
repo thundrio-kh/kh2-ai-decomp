@@ -806,7 +806,7 @@ Set the direction an object is facing
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L920:
  pushFromFSp 0
  pushFromPSp 48

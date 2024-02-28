@@ -36,7 +36,7 @@ Checks if the motion of an object is synced with the child object
 
 <details>
 	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
-```
+```plaintext
 L4032:
  pushFromPSp 8
  pushFromPSp 28

@@ -37,7 +37,7 @@ def GetRestTime:
 
 <details>
 	<summary>Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript</summary>
-```
+```plaintext
 L2592:
  syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
  pushFromFSp 4

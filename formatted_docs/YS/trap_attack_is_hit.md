@@ -128,7 +128,7 @@ Checks if an attack has hit something
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L3490:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)

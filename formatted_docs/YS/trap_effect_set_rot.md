@@ -25,7 +25,7 @@ Sets the rotation of an effect
 
 <details>
 	<summary>Example Usage From obj\B_AL120\b_al.bdscript</summary>
-```
+```plaintext
 L2453:
  popToSp 0
  pushFromPSpVal 0

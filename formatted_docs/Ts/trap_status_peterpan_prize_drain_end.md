@@ -21,7 +21,7 @@ End Peter Pan prize drain
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L2991:
  popToSp 0
  syscall 6, 20 ; trap_status_peterpan_prize_drain_end (0 in, 0 out)

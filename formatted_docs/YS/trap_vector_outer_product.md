@@ -55,7 +55,7 @@ Calulates the outer product of two vectors
 
 <details>
 	<summary>Example Usage From obj\B_CA000\b_ca.bdscript</summary>
-```
+```plaintext
 L2000:
  popToSp 0
  pushImmf 30

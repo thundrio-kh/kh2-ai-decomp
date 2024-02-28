@@ -35,7 +35,7 @@ Add to the skateboard count score
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L522:
  popToSp 0
  pushImm 20

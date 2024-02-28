@@ -601,7 +601,7 @@ Returns if an event is executing
 
 <details>
 	<summary>Example Usage From ard\es00\es_s.bdscript</summary>
-```
+```plaintext
 L39:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
  jz L46

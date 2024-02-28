@@ -34,7 +34,7 @@ Starts an action (with priority?)
 
 <details>
 	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
-```
+```plaintext
 L3972:
  popToSp 4
  popToSp 0

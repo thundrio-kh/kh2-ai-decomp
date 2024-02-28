@@ -19,8 +19,6 @@ Enable a friend to follow the player
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

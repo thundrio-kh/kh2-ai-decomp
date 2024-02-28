@@ -32,7 +32,7 @@ Set the target for a friend
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
-```
+```plaintext
 L545:
  popToSp 0
  pushImm 0

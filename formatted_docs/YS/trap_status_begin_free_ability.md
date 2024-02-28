@@ -18,8 +18,6 @@ Gives Sora the ability to Jump infinitely like is done in the Armor Xemnas II fi
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

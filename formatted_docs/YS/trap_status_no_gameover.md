@@ -76,7 +76,7 @@ Sets the no_gameover flag to true, so if the player dies, the game over screen d
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```
+```plaintext
 L307:
  popToSp 0
  syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)

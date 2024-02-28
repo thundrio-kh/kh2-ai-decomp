@@ -21,7 +21,7 @@ Show the screen effect of the Pete curtain closing
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
-```
+```plaintext
 L6309:
  pushFromFSp 4
  jz L6708

@@ -22,8 +22,6 @@ Checks if a file is being read
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

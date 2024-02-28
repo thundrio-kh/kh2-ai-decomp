@@ -22,7 +22,7 @@ Set the peterpan limit action to idle
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L2529:
  popToSp 4
  popToSp 0

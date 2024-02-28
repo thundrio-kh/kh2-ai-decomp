@@ -39,7 +39,7 @@ Get the target of an attack
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L167:
  popToSp 0
  popToSp 4

@@ -38,7 +38,7 @@ returns the owner of an attack
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```
+```plaintext
 L5643:
  popToSp 4
  popToSp 8

@@ -30,7 +30,7 @@ Ends the kind of movement shadows do where they sink into the floor
 
 <details>
 	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
-```
+```plaintext
 L4961:
  popToSp 0
  pushFromFSp 0

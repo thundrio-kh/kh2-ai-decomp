@@ -127,7 +127,7 @@ Return the HP rate of an object
 
 <details>
 	<summary>Example Usage From msn\DC00_MS101\dc_m.bdscript</summary>
-```
+```plaintext
 L152:
  pushFromPSpVal 16
  fetchValue 4

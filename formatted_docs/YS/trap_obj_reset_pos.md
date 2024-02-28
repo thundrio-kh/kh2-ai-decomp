@@ -35,7 +35,7 @@ Resets the position of an object, either to 0,0,0 or to the vector passed in
 
 <details>
 	<summary>Example Usage From obj\B_BB130\b_bb.bdscript</summary>
-```
+```plaintext
 L4066:
  popToSp 0
  pushFromFSp 0

@@ -27,7 +27,7 @@ Converts the passed in vector to an angle
 
 <details>
 	<summary>Example Usage From obj\EH_G_EX120\g_ex.bdscript</summary>
-```
+```plaintext
 L2751:
  popToSp 0
  pushFromPSpVal 128

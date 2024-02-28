@@ -23,7 +23,7 @@ Turns off player control for an event
 
 <details>
 	<summary>Example Usage From msn\TT02_MS201\save.bdscript</summary>
-```
+```plaintext
 L52:
  pushImm 32
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)

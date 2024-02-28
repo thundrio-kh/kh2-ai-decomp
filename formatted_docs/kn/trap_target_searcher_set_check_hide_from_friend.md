@@ -39,7 +39,7 @@ Set the flag to hide from friends target_searcher
 
 <details>
 	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
-```
+```plaintext
 L2790:
  popToSp 0
  pushImm 0

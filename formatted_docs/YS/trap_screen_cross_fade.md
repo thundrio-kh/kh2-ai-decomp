@@ -19,8 +19,6 @@ Performs a crossfade on the screen
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -23,8 +23,6 @@ Gets the current action of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

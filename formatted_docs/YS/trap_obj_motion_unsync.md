@@ -42,7 +42,7 @@ Unsyncs two motion sets
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L6188:
  popToSp 4
  popToSp 0

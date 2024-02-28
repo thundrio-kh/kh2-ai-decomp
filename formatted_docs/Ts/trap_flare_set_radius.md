@@ -25,7 +25,7 @@ Set the radius of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L1573:
  popToSp 0
  pushFromFSp 0

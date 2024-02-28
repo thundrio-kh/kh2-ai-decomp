@@ -20,8 +20,6 @@ Sets the type of an effect.
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

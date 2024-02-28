@@ -24,7 +24,7 @@ Push the action of a child object to the action table
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L24594:
  popToSp 0
  pushFromFSp 0

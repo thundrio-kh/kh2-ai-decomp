@@ -23,7 +23,7 @@ Set the spec for a limit hover
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L609:
  gosub 4, L616
  pushFromPWp W0

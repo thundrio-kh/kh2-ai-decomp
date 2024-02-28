@@ -35,7 +35,7 @@ Checks if the cross vector hits the line drawn between from and to. Unknown what
 
 <details>
 	<summary>Example Usage From obj\B_CA040_PUB\b_ca.bdscript</summary>
-```
+```plaintext
 L5052:
  popToSp 4
  popToSp 0

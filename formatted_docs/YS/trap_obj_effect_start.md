@@ -186,7 +186,7 @@ Starts an effect associated with an object
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L4996:
  pushFromPSpVal 0
  pushImm 0

@@ -60,7 +60,7 @@ Calculates the intersection point between two vectors
 
 <details>
 	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
-```
+```plaintext
 L2480:
  dup 
  pushFromFSp 60

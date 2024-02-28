@@ -205,7 +205,7 @@ return the id of a motion capture
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2626:
  popToSp 0
  popToSp 4

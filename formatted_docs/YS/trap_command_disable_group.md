@@ -22,7 +22,7 @@ Disables a numbered command group
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
-```
+```plaintext
 L4680:
  popToSp 0
  gosub32 4, L4674

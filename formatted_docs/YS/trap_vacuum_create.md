@@ -45,7 +45,7 @@ Create a vacuum object
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
-```
+```plaintext
 L5403:
  pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

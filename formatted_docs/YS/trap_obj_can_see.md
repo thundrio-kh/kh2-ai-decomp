@@ -27,7 +27,7 @@ Checks if object can see target object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L6358:
  pushFromFSp 64
  pushImmf 500

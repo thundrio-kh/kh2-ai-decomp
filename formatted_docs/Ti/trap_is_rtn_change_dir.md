@@ -256,7 +256,7 @@ Return if the RTN is changing direction
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2569:
  pushFromFSp 0
  syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)

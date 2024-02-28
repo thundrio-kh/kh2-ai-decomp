@@ -26,7 +26,7 @@ Resets the stealth value of an object back to default
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L1144:
  pushFromFSp 4
  syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)

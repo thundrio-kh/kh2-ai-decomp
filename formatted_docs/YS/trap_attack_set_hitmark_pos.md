@@ -24,7 +24,7 @@ Sets a hitmark pos
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
-```
+```plaintext
 L11772:
  pushFromFSp 4
  jz L11891

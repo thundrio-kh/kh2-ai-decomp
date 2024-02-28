@@ -51,7 +51,7 @@ Returns if the object is dead
 
 <details>
 	<summary>Example Usage From msn\CA10_MS107\ca10.bdscript</summary>
-```
+```plaintext
 L98:
  pushFromPSp 0
  pushImm 8

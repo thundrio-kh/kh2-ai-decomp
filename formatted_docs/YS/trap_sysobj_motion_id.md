@@ -835,7 +835,7 @@ Gets the motion ID of a motion object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6642:
  popToSp 0
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)

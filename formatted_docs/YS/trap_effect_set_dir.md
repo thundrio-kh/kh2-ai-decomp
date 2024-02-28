@@ -172,7 +172,7 @@ Sets the effects direction to be pointing to dir
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L1717:
  pushImm 0
  popToSp 160

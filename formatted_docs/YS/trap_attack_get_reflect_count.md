@@ -32,7 +32,7 @@ Returns the count for the current reflect attack
 
 <details>
 	<summary>Example Usage From magic\reflect1\refl.bdscript</summary>
-```
+```plaintext
 L125:
  halt 
  pushFromFSpVal 28

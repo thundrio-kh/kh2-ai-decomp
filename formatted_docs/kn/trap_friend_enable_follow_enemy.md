@@ -19,8 +19,6 @@ Enables a friend following an enemy
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

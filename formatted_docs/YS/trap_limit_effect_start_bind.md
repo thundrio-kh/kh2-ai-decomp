@@ -41,7 +41,7 @@ starts an limit effect bound to an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1405:
  popToSp 4
  popToSp 0

@@ -44,7 +44,7 @@ Hooks a motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```
+```plaintext
 L5073:
  pushFromFSp 0
  pushImm 161

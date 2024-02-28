@@ -72,7 +72,7 @@ Returns the object that last attacked the passed in object
 
 <details>
 	<summary>Example Usage From obj\B_HE030_PART\b_he.bdscript</summary>
-```
+```plaintext
 L39:
  popToSp 4
  popToSp 0

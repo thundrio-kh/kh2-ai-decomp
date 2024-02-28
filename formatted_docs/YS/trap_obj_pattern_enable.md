@@ -295,7 +295,7 @@ Enable resistances/sturdy frames for an object
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
-```
+```plaintext
 TR3:
  gosub 4, L172
  pushFromPSp 0

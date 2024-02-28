@@ -40,7 +40,7 @@ Starts a new VM thread and begins execution at the label
 
 <details>
 	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
-```
+```plaintext
 L3109:
  popToSp 0
  pushImm 1

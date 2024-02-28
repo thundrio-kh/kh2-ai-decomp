@@ -154,7 +154,7 @@ returns the range trigger count (Happens during X frames) of a motion entry
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6675:
  jz L6688
  pushFromPSpVal 20

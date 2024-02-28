@@ -26,7 +26,7 @@ Returns the blow up value for the attack, documented in openkh as Knockback Stre
 
 <details>
 	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
-```
+```plaintext
 L116:
  pushFromFSp 4
  syscall 2, 32 ; trap_damage_blow_up (1 in, 1 out)

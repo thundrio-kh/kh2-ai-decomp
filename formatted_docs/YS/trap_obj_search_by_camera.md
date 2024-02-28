@@ -20,8 +20,6 @@ Looks up an object by ID and then returns the object that is closest to the came
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

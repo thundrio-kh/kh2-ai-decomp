@@ -47,7 +47,7 @@ Searches for an existing object with the given serial number (a value set in a s
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```
+```plaintext
 L134:
  pushFromPSp 32
  pushFromFSp 0

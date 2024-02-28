@@ -36,7 +36,7 @@ Push a skateboard trick animation to the action stack
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L832:
  popToSp 4
  popToSp 0

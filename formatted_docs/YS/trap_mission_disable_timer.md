@@ -23,7 +23,7 @@ turns off the display of an on screen timer
 
 <details>
 	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
-```
+```plaintext
 L204:
  pushImm 0
  syscall 4, 49 ; trap_mission_disable_timer (1 in, 0 out)

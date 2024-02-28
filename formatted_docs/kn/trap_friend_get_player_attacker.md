@@ -26,7 +26,7 @@ Get a enemy attacking the player and if the argument is true also stop the enemy
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L8205:
  popToSp 4
  popToSp 0

@@ -29,7 +29,7 @@ Vacuums up a number of medals from one object to the target
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L6690:
  jz L6758
  pushFromFSp 36

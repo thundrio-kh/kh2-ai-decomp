@@ -29,7 +29,7 @@ Invalidates a warp point within range of the friend
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L17950:
  pushFromPSp 80
  pushImmf 100

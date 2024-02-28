@@ -22,7 +22,7 @@ Clear the hitback flag for an object
 
 <details>
 	<summary>Example Usage From obj\B_MU100\b_mu.bdscript</summary>
-```
+```plaintext
 L201:
  popToSp 0
  popToSp 4

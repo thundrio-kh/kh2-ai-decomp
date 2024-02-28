@@ -19,8 +19,6 @@ Stops an active blur. Unused in the vanilla game
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

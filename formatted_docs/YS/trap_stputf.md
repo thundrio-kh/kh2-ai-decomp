@@ -25,7 +25,7 @@ value"
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```
+```plaintext
 L879:
  popToSp 0
  pushFromFSp 0

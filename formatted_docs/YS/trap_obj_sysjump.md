@@ -276,7 +276,7 @@ Unknown
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1258:
  pushFromPWp W0
  pushFromFSp 0

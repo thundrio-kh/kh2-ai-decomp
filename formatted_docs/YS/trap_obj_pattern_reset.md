@@ -64,7 +64,7 @@ Resets the resistance value to the default state
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L3097:
  pushFromPAi L18917 ; ___ai 'SIGNAL_GAUGEMIN' (L18917)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

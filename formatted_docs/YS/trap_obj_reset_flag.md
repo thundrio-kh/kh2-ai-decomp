@@ -256,7 +256,7 @@ Reset a specific flag on an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L3001:
  pushFromPSp 4
  pushImm 8

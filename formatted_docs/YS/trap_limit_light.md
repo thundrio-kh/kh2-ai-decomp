@@ -48,7 +48,7 @@ Creates a light object associated with the limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6541:
  popToSp 4
  popToSp 8

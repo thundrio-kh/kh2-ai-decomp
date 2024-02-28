@@ -23,7 +23,7 @@ Hide the lockon reticle
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3650:
  popToSp 0
  pushFromFSp 0

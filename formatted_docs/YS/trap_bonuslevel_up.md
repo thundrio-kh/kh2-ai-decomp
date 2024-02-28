@@ -19,8 +19,6 @@ Activates a bonus get (Normally the things acquired by finishing missions ). Unu
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

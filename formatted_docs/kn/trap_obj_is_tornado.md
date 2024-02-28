@@ -26,7 +26,7 @@ Returns if the object is a tornado object
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L7335:
  jz L7542
  pushFromFSpVal 48

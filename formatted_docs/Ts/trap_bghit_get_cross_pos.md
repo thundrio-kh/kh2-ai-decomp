@@ -80,7 +80,7 @@ Get the interesection point of a collision
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2954:
  popToSp 0
  pushFromPSpVal 4

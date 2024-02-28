@@ -23,8 +23,6 @@ Get the current point of the path during the Dragon Xemnas fight
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -32,7 +32,7 @@ turns off the hud for a given watch
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```
+```plaintext
 L159:
  popToSp 4
  popToSp 8

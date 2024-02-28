@@ -23,8 +23,6 @@ Returns the a value from 0.0 to 1.0 representing the current progress of the spe
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

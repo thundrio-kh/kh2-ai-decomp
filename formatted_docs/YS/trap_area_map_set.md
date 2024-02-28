@@ -22,8 +22,6 @@ Returns the number for the battle program being executed
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

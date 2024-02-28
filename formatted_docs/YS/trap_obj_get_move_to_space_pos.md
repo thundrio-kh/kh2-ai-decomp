@@ -28,7 +28,7 @@ Return a position within a space that the object can move to
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
-```
+```plaintext
 L15264:
  popToSp 4
  popToSp 8

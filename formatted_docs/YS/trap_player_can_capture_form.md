@@ -25,7 +25,7 @@ Returns whether the players form can be captured, which is determined by if the 
 
 <details>
 	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
-```
+```plaintext
 L9331:
  popToSp 0
  pushFromFSp 0

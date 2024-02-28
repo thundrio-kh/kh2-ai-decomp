@@ -182,7 +182,7 @@ value"
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```
+```plaintext
 L3767:
  dup 
  pushFromFSp 4

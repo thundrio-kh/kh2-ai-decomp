@@ -36,7 +36,7 @@ Perform a skateboard trick
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L483:
  popToSp 4
  popToSp 8

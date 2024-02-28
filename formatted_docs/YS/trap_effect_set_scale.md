@@ -58,7 +58,7 @@ Scales an effect object
 
 <details>
 	<summary>Example Usage From magic\magnet1\magn.bdscript</summary>
-```
+```plaintext
 L395:
  popToSp 4
  popToSp 0

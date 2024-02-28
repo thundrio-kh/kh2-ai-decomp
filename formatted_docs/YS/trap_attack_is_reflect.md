@@ -121,7 +121,7 @@ Checks if an attack is reflected
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L5057:
  pushFromFSp 0
  gosub 8, L5251

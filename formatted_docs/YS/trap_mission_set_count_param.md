@@ -89,7 +89,7 @@ Set parameters for the specified counter
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```
+```plaintext
 L237:
  pushFromFSpVal 0
  syscall 4, 35 ; trap_score_type (1 in, 1 out)

@@ -23,7 +23,7 @@ Sets the closeup distance to be used by the scope
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L20862:
  popToSp 4
  popToSp 0

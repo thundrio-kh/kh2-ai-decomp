@@ -46,7 +46,7 @@ seems to return an array of all instances of an enemy
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L1759:
  popToSp 0
  pushFromFSpVal 4

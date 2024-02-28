@@ -20,8 +20,6 @@ Set the way on a path that an object is going
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

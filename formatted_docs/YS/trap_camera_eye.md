@@ -43,7 +43,7 @@ Returns the passed in position with height + 80 to account for being at eye leve
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L291:
  popToSp 0
  syscall 1, 306 ; trap_camera_at (0 in, 1 out)

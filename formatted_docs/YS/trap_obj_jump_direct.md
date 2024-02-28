@@ -63,7 +63,7 @@ Makes an object jump probably 10 units.
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L1200:
  popToSp 0
  pushFromPWp W108

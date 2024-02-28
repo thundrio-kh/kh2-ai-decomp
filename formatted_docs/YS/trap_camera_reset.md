@@ -41,7 +41,7 @@ Resets the camera position
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L1887:
  popToSp 0
  popToSp 4

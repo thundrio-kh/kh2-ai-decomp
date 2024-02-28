@@ -28,7 +28,7 @@ Checks if an attack is valid
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 TR15:
  popToSp 0
  popToSp 4

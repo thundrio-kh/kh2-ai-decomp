@@ -44,7 +44,7 @@ Return the amount of munny the player has
 
 <details>
 	<summary>Example Usage From ard\tt02\tt_n.bdscript</summary>
-```
+```plaintext
 TR3:
  pushImm 362
  pushImm 100

@@ -24,7 +24,7 @@ enable occlusion culling for all bones in an culling object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
-```
+```plaintext
 TR14:
  pushFromPWp W576
  gosub 4, L4604

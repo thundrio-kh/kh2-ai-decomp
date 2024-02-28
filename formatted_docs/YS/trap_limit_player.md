@@ -54,7 +54,7 @@ Return a player reference associated with a limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5230:
  popToSp 4
  popToSp 0

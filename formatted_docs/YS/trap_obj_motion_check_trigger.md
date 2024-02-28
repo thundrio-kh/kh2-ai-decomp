@@ -294,7 +294,7 @@ returns the frame trigger count (Triggered on X frame) of a motion entry
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L1074:
  pushFromPSp 32
  pushFromFSp 4

@@ -634,7 +634,7 @@ Return the position of the target
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L511:
  pushFromPSp 48
  pushImmf 0.523599

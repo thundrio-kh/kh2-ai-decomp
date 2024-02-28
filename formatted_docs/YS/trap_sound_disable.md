@@ -18,8 +18,6 @@ Turn off the game sound
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

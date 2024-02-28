@@ -40,7 +40,7 @@ Destroy a vacuum object
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
-```
+```plaintext
 L5637:
  pushFromPAi L11074 ; ___ai 'destroy' (L11074)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

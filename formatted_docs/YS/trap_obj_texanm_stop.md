@@ -31,7 +31,7 @@ Stops a specific animation
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
-```
+```plaintext
 L11734:
  popToSp 0
  pushFromFSp 0

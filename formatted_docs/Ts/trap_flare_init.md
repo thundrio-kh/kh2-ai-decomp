@@ -22,7 +22,7 @@ Initialize Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L5986:
  syscall 7, 3 ; trap_flare_init (0 in, 0 out)
  pushImm 0

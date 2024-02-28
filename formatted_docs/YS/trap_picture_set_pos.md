@@ -25,7 +25,7 @@ Set the position of a picture for a layout object
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L21874:
  popToSp 0
  pushFromFSpVal 212

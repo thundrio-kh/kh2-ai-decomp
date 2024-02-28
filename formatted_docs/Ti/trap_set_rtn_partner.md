@@ -252,7 +252,7 @@ Set a partner for an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L125:
  drop 
  pushFromFSp 8

@@ -43,7 +43,7 @@ Return the id of the form the player is currently in
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
-```
+```plaintext
 L2886:
  syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
  pushImm 6

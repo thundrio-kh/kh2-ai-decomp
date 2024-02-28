@@ -26,7 +26,7 @@ Hide the shadow of an object
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L8099:
  pushFromPWp W0
  fetchValue 176

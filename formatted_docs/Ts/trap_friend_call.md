@@ -27,7 +27,7 @@ make a call to a friend script
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L69:
  pushFromFSp 0
  fetchValue 0

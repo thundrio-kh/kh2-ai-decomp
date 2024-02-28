@@ -28,7 +28,7 @@ Sets an object to go into a falling animation
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L2149:
  popToSp 0
  pushFromPSpVal 4

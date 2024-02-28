@@ -26,7 +26,7 @@ Set parameters for the combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
-```
+```plaintext
 L190:
  pushFromFSp 0
  fetchValue 0

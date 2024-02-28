@@ -627,7 +627,7 @@ Return a random float between 0 and range
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```
+```plaintext
 L1230:
  popToSp 0
  pushFromPWp W0

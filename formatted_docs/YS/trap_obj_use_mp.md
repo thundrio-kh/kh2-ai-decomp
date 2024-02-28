@@ -51,7 +51,7 @@ Use up the mp for a party member
 
 <details>
 	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
-```
+```plaintext
 L2717:
  popToSp 4
  popToSp 8

@@ -18,8 +18,6 @@ Turns on player control for an event
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

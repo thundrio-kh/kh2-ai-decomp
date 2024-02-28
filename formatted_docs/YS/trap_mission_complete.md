@@ -317,7 +317,7 @@ Runs the function to complete a mission, unsure what the signal_arg is used for
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L98:
  pushFromFSpVal 4
  syscall 4, 3 ; trap_mission_complete (1 in, 0 out)

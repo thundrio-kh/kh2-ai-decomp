@@ -30,7 +30,7 @@ executes a small amount of damage
 
 <details>
 	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
-```
+```plaintext
 L730:
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)

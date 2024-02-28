@@ -24,7 +24,7 @@ Play the specified path in the Dragon Xemnas fight
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
-```
+```plaintext
 L5141:
  popToSp 0
  pushImm 6

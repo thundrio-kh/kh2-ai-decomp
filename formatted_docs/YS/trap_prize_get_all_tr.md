@@ -22,7 +22,7 @@ Make all the hostile program orbs that are out disappear?
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
-```
+```plaintext
 L10470:
  pushFromFSp 0
  syscall 1, 327 ; trap_prize_get_all_tr (1 in, 0 out)

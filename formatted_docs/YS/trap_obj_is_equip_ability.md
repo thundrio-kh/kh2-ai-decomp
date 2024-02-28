@@ -32,7 +32,7 @@ Returns if the object has the specified ability equipped
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```
+```plaintext
 L488:
  pushFromFSp 20
  pushImm 114

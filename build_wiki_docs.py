@@ -114,9 +114,9 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             appears_table = ''
         page += """\n\n<details>\n\t<summary>Appears in:</summary>\n{}\n</details>\n\n""".format(appears_table)
 
-        page += """<details>\n\t<summary>Example Usage From {}</summary>\n```\n{}\n```\n</details>\n\n""".format(example_usage_from, example_usage)
+        code_block = "```plaintext\n{}\n```".format(example_usage) if example_usage else ""
+        page += """<details>\n\t<summary>Example Usage From {}</summary>\n{}\n</details>\n\n""".format(example_usage_from, code_block)
 
-    
         with open(out_fn, 'w') as f:
             f.write(page)
 

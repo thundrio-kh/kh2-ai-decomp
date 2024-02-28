@@ -52,7 +52,7 @@ Returns the serial value for an object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```
+```plaintext
 L2562:
  popToSp 0
  pushFromFSp 0

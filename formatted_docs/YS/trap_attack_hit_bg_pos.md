@@ -43,7 +43,7 @@ Returns the position of when the attack hit the background
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L1263:
  pushFromFSp 176
  syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)

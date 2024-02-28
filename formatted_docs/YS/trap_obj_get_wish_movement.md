@@ -76,7 +76,7 @@ get the direction that a summon object has moved
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L4682:
  dup 
  jnz L4714

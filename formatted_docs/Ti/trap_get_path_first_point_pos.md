@@ -23,8 +23,6 @@ Get the position of the first point on a path
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

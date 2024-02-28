@@ -24,7 +24,7 @@ Set the force leave flag to true
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
-```
+```plaintext
 L3824:
  popToSp 4
  popToSp 0

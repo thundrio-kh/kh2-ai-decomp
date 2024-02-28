@@ -26,7 +26,7 @@ Return the level of an object
 
 <details>
 	<summary>Example Usage From obj\N_CM000_BTL\n_cm.bdscript</summary>
-```
+```plaintext
 L16905:
  popToSp 0
  gosub 4, L398

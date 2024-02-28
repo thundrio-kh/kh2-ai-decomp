@@ -30,7 +30,7 @@ Checks if an object is stopped
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L19588:
  jz L19615
  halt 

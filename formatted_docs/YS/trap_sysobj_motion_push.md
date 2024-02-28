@@ -461,7 +461,7 @@ Push a motion set entry to be played after the current queue is empty
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1331:
  pushFromPWp W0
  fetchValue 0

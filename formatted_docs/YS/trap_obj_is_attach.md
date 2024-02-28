@@ -356,7 +356,7 @@ Returns if the object is attached to another object
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L1067:
  popToSp 0
  pushFromPWp W72

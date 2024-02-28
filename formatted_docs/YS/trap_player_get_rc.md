@@ -26,7 +26,7 @@ Get the value of the players current rc
 
 <details>
 	<summary>Example Usage From obj\F_TR010\f_tr.bdscript</summary>
-```
+```plaintext
 L25:
  gosub 4, L99
  memcpyToSp 16, 16

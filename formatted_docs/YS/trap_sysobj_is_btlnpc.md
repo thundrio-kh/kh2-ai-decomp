@@ -29,7 +29,7 @@ Returns true if the object is a NPC
 
 <details>
 	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
-```
+```plaintext
 L177:
  pushFromPSp 0
  gosub 8, L214

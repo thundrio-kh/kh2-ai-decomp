@@ -28,7 +28,7 @@ Returns if a party member has an equipped ability. "tarp" typo comes directly fr
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L378:
  dup 
  jz L389

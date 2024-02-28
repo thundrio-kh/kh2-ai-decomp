@@ -49,7 +49,7 @@ Returns if the damage from an attack is a finisher type
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L1372:
  pushFromFSp 4
  syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)

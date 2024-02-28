@@ -67,7 +67,7 @@ Checks value of a progress flag
 
 <details>
 	<summary>Example Usage From 00common</summary>
-```
+```plaintext
 L68:
  pushImm 13325
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)

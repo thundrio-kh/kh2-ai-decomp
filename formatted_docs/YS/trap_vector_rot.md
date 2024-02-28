@@ -69,7 +69,7 @@ Rotates a vector along an axis by a given angle
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L4165:
  pushFromFSp 4
  pushFromFSp 72

@@ -27,7 +27,7 @@ Attach a system PAX effect to an attack
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```
+```plaintext
 L612:
  popToSp 0
  pushFromPSpVal 0

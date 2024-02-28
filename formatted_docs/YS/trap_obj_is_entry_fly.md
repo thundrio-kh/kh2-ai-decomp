@@ -581,7 +581,7 @@ Returns if the "fly" flag is checked for the obj in its objentry
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L6466:
  popToSp 0
  gosub 12, L6617

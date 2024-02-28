@@ -27,7 +27,7 @@ Set the parameters of dice actions based on a number of parameters
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L10397:
  gosub 4, L946
  memcpyToSp 16, 16

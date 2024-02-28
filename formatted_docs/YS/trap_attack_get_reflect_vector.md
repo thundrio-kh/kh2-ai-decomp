@@ -96,7 +96,7 @@ Returns the direction vector of the reflected attack
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L5227:
  pushFromFSpVal 68
  syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)

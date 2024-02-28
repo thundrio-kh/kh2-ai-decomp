@@ -72,7 +72,7 @@ Starts and binds a PAX effect
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```
+```plaintext
 L362:
  pushFromFSpVal 16
  pushFromFSp 4

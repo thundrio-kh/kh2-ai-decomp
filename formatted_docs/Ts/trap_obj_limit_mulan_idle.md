@@ -22,7 +22,7 @@ Change the mulan limit action to idle
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```
+```plaintext
 L5649:
  popToSp 0
  gosub 12, L5675

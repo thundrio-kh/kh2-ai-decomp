@@ -212,7 +212,7 @@ Applies a matrix to a bone
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L782:
  pushFromPSp 176
  gosub 52, L2499

@@ -31,7 +31,7 @@ Get the hitback value of damage
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L1729:
  jz L1743
  pushFromFSp 0

@@ -33,7 +33,7 @@ sets a value to watch on the specified widget
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```
+```plaintext
 L209:
  pushFromFSp 0
  fetchValue 8

@@ -32,7 +32,7 @@ Overrides the command for all of the slots on the command cage with priority 100
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L958:
  popToSp 0
  pushFromPSpVal 152

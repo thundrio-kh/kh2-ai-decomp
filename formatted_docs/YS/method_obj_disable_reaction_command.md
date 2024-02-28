@@ -21,8 +21,6 @@ Disables a reaction command from being activated by the player. Unused in the va
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

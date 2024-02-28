@@ -67,7 +67,7 @@ Takes the screen from being all white and fades in.
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L8679:
  popToSp 0
  pushImmf 360

@@ -30,7 +30,7 @@ Returns if the object is in shade
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L1544:
  pushFromFSp 0
  fetchValue 132

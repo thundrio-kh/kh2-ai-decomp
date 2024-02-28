@@ -25,7 +25,7 @@ Have the friend start the leave action
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L3514:
  popToSp 0
  pushFromFSp 0

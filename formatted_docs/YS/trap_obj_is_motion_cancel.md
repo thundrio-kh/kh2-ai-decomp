@@ -30,7 +30,7 @@ Returns if the object is cancelling a motion
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L1937:
  popToSp 0
  pushImm 0

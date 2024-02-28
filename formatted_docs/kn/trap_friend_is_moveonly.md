@@ -27,7 +27,7 @@ Checks if the friend is moveonly
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L9007:
  dup 
  jz L9016

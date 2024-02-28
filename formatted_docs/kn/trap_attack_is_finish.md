@@ -27,7 +27,7 @@ Returns if an attack is a finisher
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L135:
  pushFromFSp 0
  gosub 4, L170

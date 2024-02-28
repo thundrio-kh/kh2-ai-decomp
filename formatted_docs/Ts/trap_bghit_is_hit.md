@@ -49,7 +49,7 @@ Check if a bghit has hit something
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L6856:
  popToSp 4
  popToSp 8

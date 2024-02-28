@@ -35,7 +35,7 @@ Returns the position matrix offset value of a motion set entry, this value is ta
 
 <details>
 	<summary>Example Usage From obj\M_EX020\m_ex.bdscript</summary>
-```
+```plaintext
 L2835:
  popToSp 0
  pushFromFSp 0

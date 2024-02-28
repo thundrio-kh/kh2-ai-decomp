@@ -24,8 +24,6 @@ Set an path for an object by group ID
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

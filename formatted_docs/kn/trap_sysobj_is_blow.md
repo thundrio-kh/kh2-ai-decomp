@@ -27,7 +27,7 @@ Check if the object is in a blow state
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L26146:
  jz L26172
  pushFromFSp 0

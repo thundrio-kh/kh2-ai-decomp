@@ -24,8 +24,6 @@ checks if an object can look? Unclear how this is different than trap_obj_can_lo
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

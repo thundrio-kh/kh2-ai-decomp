@@ -23,7 +23,7 @@ Free memory associated with Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4019:
  popToSp 0
  pushFromFSpVal 80

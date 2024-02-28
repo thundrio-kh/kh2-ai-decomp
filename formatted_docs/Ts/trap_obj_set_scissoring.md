@@ -24,7 +24,7 @@ Set the scissoring flag for an object
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L7475:
  popToSp 0
  pushFromFSp 0

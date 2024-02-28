@@ -38,7 +38,7 @@ Get the position that the player is moving to
 
 <details>
 	<summary>Example Usage From limit\goofy\limi.bdscript</summary>
-```
+```plaintext
 L1410:
  jz L1742
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)

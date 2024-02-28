@@ -22,7 +22,7 @@ Activates the spawn file with the passed in name.
 
 <details>
 	<summary>Example Usage From ard\wi00\wi00.bdscript</summary>
-```
+```plaintext
 TR3:
  pushImm 13318
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)

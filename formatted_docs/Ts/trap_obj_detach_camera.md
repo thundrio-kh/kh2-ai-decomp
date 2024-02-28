@@ -22,7 +22,7 @@ Detatch the camera from an object
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L169:
  popToSp 0
  gosub 20, L397

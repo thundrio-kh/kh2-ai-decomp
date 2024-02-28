@@ -77,7 +77,7 @@ Adds an amount of HP to an object
 
 <details>
 	<summary>Example Usage From msn\TT14_MS110\tt14.bdscript</summary>
-```
+```plaintext
 L99:
  gosub 4, L182
  memcpyToSp 16, 16

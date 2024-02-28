@@ -45,7 +45,7 @@ Set the history flag for an field object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```
+```plaintext
 L2368:
  popToSp 0
  pushFromFSpVal 164

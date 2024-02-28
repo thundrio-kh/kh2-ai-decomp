@@ -104,7 +104,7 @@ Get a vector indicating the direction the object moved.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L920:
  pushFromFSp 0
  pushFromPSp 48

@@ -22,7 +22,7 @@ enables the event HUD
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L15358:
  gosub 12, L757
  memcpyToSp 16, 32

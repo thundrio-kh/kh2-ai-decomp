@@ -154,7 +154,7 @@ closes the scrolling message window in the top left of the screen
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L4514:
  pushFromFSp 48
  syscall 1, 33 ; trap_message_close (1 in, 0 out)

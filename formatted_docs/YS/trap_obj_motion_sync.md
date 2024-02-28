@@ -47,7 +47,7 @@ Syncs two motion sets
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4229:
  popToSp 4
  popToSp 8

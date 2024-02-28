@@ -20,8 +20,6 @@ Jumps to a new area, without a program. Unclear how this is different from trap_
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

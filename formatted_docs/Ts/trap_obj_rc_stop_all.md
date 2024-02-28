@@ -29,7 +29,7 @@ Stop the object from doing anything else due to an RC
 
 <details>
 	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
-```
+```plaintext
 L9190:
  popToSp 4
  popToSp 0

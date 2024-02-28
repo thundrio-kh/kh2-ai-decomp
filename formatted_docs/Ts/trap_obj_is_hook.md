@@ -27,7 +27,7 @@ Checks if an object script execution is a hook?
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L493:
  dup 
  jz L502

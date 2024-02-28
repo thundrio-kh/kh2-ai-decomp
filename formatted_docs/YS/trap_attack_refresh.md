@@ -19,8 +19,6 @@ Refresh all the hits on the attack
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

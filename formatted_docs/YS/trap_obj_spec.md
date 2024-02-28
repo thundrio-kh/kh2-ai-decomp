@@ -87,7 +87,7 @@ Returns the spec of an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L4649:
  popToSp 4
  popToSp 0

@@ -190,7 +190,7 @@ Adds two vectors of floats together, Third parameter has an unknown purpose
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L2082:
  pushFromPSp 48
  pushFromPSpVal 32

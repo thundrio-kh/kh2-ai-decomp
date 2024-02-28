@@ -30,7 +30,7 @@ Set the parameters of card actions based on a number of parameters
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L15018:
  popToSp 0
  pushImmf 4

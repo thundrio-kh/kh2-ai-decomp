@@ -22,8 +22,6 @@ Returns a count of all the enemies currently being damaged
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -25,7 +25,7 @@ Forces a friend to perform a warp
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
-```
+```plaintext
 L817:
  jz L1095
  pushFromPSp 4

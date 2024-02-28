@@ -28,7 +28,7 @@ Similar to trap_obj_hop, but does not set an animation for the object, just perf
 
 <details>
 	<summary>Example Usage From obj\M_EX530\m_ex.bdscript</summary>
-```
+```plaintext
 L8286:
  pushFromPSp 16
  pushImm 4

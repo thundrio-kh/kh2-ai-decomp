@@ -23,8 +23,6 @@ executes reflect
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

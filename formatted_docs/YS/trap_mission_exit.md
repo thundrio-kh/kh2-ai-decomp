@@ -306,7 +306,7 @@ exits a mission
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L141:
  pushFromFSpVal 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)

@@ -37,7 +37,7 @@ Checks if an object is playing a damage animation
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L2783:
  pushFromPSp 4
  syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)

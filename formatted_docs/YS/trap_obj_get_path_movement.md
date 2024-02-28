@@ -26,7 +26,7 @@ Gets a movement vector along a specific path
 
 <details>
 	<summary>Example Usage From obj\N_AL090_BTL\n_al.bdscript</summary>
-```
+```plaintext
 L3262:
  pushFromFSp 0
  fetchValue 4

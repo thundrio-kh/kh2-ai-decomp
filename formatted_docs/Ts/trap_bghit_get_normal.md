@@ -42,7 +42,7 @@ Get the normal vector of a bghit
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```
+```plaintext
 L298:
  pushFromFSp 88
  pushImmf 0

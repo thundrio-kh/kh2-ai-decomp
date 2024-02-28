@@ -24,7 +24,7 @@ Set the position of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L3056:
  popToSp 4
  popToSp 0

@@ -21,7 +21,7 @@ Clear the target before the player
 
 <details>
 	<summary>Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript</summary>
-```
+```plaintext
 L5513:
  popToSp 0
  pushFromPAi L11211 ; ___ai 'target_player' (L11211)

@@ -24,7 +24,7 @@ Makes a number of prizes appear at a position
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L1121:
  pushFromFSp 4
  syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)

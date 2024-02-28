@@ -28,7 +28,7 @@ Unknown
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
-```
+```plaintext
 L6918:
  pushFromFSp 0
  pushFromFSp 4

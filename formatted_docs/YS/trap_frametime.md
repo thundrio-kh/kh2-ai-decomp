@@ -1036,7 +1036,7 @@ Returns the time (since the VM started?) as a number of frames.
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L158:
  pushFromFSp 0
  pushImmf 0

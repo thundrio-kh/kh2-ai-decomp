@@ -192,7 +192,7 @@ Allocates an amount of work memory
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L116:
  pushImm 3
  pushImm 12

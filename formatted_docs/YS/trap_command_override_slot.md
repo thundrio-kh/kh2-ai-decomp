@@ -26,8 +26,6 @@ Overrides the specified slot on the command cage with priority 100, and returns 
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

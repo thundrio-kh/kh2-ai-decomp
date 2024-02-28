@@ -24,8 +24,6 @@ Give an item to the player
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -595,7 +595,7 @@ Starts an effect associated with an object and binds it to that object
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L7676:
  popToSp 4
  popToSp 8

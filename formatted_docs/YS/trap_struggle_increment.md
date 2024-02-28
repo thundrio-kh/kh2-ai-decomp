@@ -29,7 +29,7 @@ Increments the struggle value
 
 <details>
 	<summary>Example Usage From msn\TT04_MS00\tt04.bdscript</summary>
-```
+```plaintext
 L172:
  popToSp 0
  pushFromFSpVal 8

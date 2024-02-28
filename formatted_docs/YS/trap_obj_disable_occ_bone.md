@@ -23,7 +23,7 @@ Disable occlusion culling for a specific bone
 
 <details>
 	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
-```
+```plaintext
 L10872:
  pushFromFSp 0
  fetchValue 4

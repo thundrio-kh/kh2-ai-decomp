@@ -34,7 +34,7 @@ Sets a flag value to true
 
 <details>
 	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```
+```plaintext
 L29:
  pushImm 64
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)

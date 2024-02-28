@@ -29,7 +29,7 @@ Enables the anmatr effect for a given motion set entry
 
 <details>
 	<summary>Example Usage From obj\B_LK110\b_lk.bdscript</summary>
-```
+```plaintext
 L8820:
  popToSp 0
  pushImm 0

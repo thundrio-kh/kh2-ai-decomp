@@ -33,7 +33,7 @@ Set the effective range of a vacuum object
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L15007:
  popToSp 0
  pushFromFSpVal 68

@@ -21,8 +21,6 @@ Jumps to a new room, using no battle/event/map programs
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

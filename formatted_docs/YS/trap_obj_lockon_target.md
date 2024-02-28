@@ -57,7 +57,7 @@ Locks the player onto the target object
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```
+```plaintext
 L287:
  popToSp 4
  popToSp 0

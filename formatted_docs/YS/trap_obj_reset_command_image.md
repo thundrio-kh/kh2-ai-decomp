@@ -22,7 +22,7 @@ Resets the image on the command menu
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L2350:
  pushFromFSp 0
  syscall 1, 360 ; trap_obj_reset_command_image (1 in, 0 out)

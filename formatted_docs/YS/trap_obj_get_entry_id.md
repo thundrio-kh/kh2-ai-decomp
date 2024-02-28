@@ -344,7 +344,7 @@ returns the ID for an object (according to 00objentry.bin)
 
 <details>
 	<summary>Example Usage From msn\AL14_MS_O\al14.bdscript</summary>
-```
+```plaintext
 L89:
  pushFromPSp 16
  pushFromFSp 0

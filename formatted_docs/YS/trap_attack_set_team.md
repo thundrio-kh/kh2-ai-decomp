@@ -32,7 +32,7 @@ Sets a team for an attack (most likely so that objects on the same team cannot b
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L9800:
  pushFromFSpVal 68
  pushFromFSp 68

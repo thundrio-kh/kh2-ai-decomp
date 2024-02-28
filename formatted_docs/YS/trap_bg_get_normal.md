@@ -29,7 +29,7 @@ Return the normal of the background position from the given camera
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L8661:
  pushFromFSp 64
  syscall 1, 137 ; trap_bg_get_normal (1 in, 1 out)

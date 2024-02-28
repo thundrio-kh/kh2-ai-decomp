@@ -27,7 +27,7 @@ checks if the mission custom hud is activated
 
 <details>
 	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
-```
+```plaintext
 TR10:
  popToSp 0
  popToSp 4

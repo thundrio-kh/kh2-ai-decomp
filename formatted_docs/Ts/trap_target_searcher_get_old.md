@@ -31,7 +31,7 @@ Return the nth oldest target in the searcher
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L549:
  pushFromFSp 72
  pushImm 0

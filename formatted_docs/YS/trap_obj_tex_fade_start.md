@@ -37,7 +37,7 @@ Starts a texture fade
 
 <details>
 	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
-```
+```plaintext
 L3724:
  popToSp 0
  pushFromFSp 0

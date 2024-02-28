@@ -27,7 +27,7 @@ Set the position of a vacuum
 
 <details>
 	<summary>Example Usage From obj\M_EX210\m_ex.bdscript</summary>
-```
+```plaintext
 L5866:
  pushFromFSpVal 108
  pushImm 0

@@ -35,7 +35,7 @@ Starts running a label to change the camera to a global target, usually for a sp
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
-```
+```plaintext
 L140:
  popToSp 4
  popToSp 0

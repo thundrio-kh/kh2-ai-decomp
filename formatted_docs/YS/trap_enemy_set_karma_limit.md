@@ -66,7 +66,7 @@ Sets an enemies karma value (revenge limit) to the specified number.
 
 <details>
 	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
-```
+```plaintext
 L4842:
  pushFromFSp 0
  pushFromFSp 8

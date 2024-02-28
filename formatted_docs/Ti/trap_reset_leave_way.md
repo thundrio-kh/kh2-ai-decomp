@@ -253,7 +253,7 @@ Reset the leave way action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1650:
  pushFromFSpVal 64
  jz L1673

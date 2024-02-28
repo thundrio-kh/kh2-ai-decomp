@@ -306,7 +306,7 @@ Marks the mission as complete because the boss is dead
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L113:
  pushFromFSpVal 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)

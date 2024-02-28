@@ -55,7 +55,7 @@ Stop an object from ending all actions
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3414:
  pushImm 17
  syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)

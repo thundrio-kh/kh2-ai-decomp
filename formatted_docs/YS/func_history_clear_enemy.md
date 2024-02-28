@@ -23,7 +23,7 @@ Appears to clear out the history (cache?) of enemies in the current room.
 
 <details>
 	<summary>Example Usage From obj\B_EX240\b_ex.bdscript</summary>
-```
+```plaintext
 L4498:
  syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
  pushImm 152

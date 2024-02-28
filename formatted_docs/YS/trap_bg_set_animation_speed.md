@@ -22,7 +22,7 @@ Sets the background animation speed of the map. Only used by Hostile Program to 
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
-```
+```plaintext
 L402:
  gosub 12, L440
  pushImm 6

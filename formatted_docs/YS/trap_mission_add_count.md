@@ -33,7 +33,7 @@ Adds to a on screen counter
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript</summary>
-```
+```plaintext
 L50:
  jz L64
  pushFromFSp 0

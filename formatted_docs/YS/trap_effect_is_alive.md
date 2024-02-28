@@ -84,7 +84,7 @@ checks if an effect is still alive
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```
+```plaintext
 L224:
  pushFromFSpVal 32
  syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)

@@ -28,7 +28,7 @@ Updates the target of a friend
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L6099:
  popToSp 0
  pushFromFSp 0

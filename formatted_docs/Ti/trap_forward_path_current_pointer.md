@@ -20,8 +20,6 @@ Go forward on the current path a distance
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

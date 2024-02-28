@@ -34,7 +34,7 @@ Set the range at which the player is allowed to lockon from
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L4649:
  popToSp 4
  popToSp 0

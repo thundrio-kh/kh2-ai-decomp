@@ -26,7 +26,7 @@ Takes a integer and returns the absolute value of that integer
 
 <details>
 	<summary>Example Usage From obj\F_TR150\f_tr.bdscript</summary>
-```
+```plaintext
 L2016:
  jz L2056
  pushFromFSpVal 136

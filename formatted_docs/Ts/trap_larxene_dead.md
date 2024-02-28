@@ -22,7 +22,7 @@ Mark all copies of larxene as dead
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
-```
+```plaintext
 L28537:
  pushFromFSp 0
  syscall 6, 69 ; trap_larxene_dead (1 in, 0 out)

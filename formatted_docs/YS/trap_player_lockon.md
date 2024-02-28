@@ -24,7 +24,7 @@ Locks the player onto an object
 
 <details>
 	<summary>Example Usage From msn\TT04_MS107\tt04.bdscript</summary>
-```
+```plaintext
 L63:
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
  memcpyToSp 16, 8

@@ -21,8 +21,6 @@ Resets the reaction command state to starting state
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

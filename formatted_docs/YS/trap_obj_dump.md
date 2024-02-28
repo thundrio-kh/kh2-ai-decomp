@@ -38,7 +38,7 @@ likely printed the name of an object, but does nothing in the production version
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L400:
  pushFromFSp 20
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)

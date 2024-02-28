@@ -26,7 +26,7 @@ Set a position offset for being able to perform a reaction command
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L1882:
  pushFromFSp 4
  pushFromPSpVal 96

@@ -786,7 +786,7 @@ Returns the number of components in a vector
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L920:
  pushFromFSp 0
  pushFromPSp 48

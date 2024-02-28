@@ -36,7 +36,7 @@ Make the camera shake according to a lot of parameters
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```
+```plaintext
 L4703:
  jz L4735
  pushImmf 240

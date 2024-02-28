@@ -257,7 +257,7 @@ Checks if an object can look at a pos
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1297:
  pushImm 1
  jz L1412

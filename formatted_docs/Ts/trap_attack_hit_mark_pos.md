@@ -32,7 +32,7 @@ Get the position of an attacks hit marker
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L45:
  pushFromFSp 0
  syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)

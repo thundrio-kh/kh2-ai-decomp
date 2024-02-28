@@ -293,7 +293,7 @@ Is there another mission going on already?
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L44:
  popToSp 4
  popToSp 0

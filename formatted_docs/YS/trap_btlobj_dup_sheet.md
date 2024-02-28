@@ -23,7 +23,7 @@ Duplicates a battle object
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
-```
+```plaintext
 L3817:
  popToSp 4
  popToSp 0

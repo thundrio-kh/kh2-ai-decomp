@@ -28,7 +28,7 @@ returns the type of the attack, as defined in its Atkp entry found in 00battle.b
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```
+```plaintext
 L108:
  pushFromFSp 4
  syscall 2, 35 ; trap_damage_attack_type (1 in, 1 out)

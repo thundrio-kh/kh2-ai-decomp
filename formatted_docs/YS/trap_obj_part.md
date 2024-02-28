@@ -55,7 +55,7 @@ Returns the number of parts of an object
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```
+```plaintext
 L58:
  pushFromFSp 4
  syscall 1, 213 ; trap_obj_part (1 in, 1 out)

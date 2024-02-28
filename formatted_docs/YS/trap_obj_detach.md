@@ -97,7 +97,7 @@ removes a connection between two bones
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4061:
  pushFromFSp 0
  syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)

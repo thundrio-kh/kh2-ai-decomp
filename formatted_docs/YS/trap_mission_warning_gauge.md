@@ -23,7 +23,7 @@ sets a warning flag for the specified gauge
 
 <details>
 	<summary>Example Usage From obj\N_CM040_BTL\n_cm.bdscript</summary>
-```
+```plaintext
 L20248:
  pushFromPAi L24325 ; ___ai 'change_gauge' (L24325)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

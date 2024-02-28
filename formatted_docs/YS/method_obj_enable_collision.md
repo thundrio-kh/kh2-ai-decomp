@@ -122,7 +122,7 @@ Turns on part of an objects collision
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
-```
+```plaintext
 L4369:
  popToSp 0
  pushFromFSp 0

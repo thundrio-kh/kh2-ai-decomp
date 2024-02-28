@@ -25,8 +25,6 @@ Get the reverse direction of a path
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -234,7 +234,7 @@ ends an effect and frees the associated memory
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4545:
  popToSp 0
  pushFromFSpVal 64

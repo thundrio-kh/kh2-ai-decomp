@@ -98,7 +98,7 @@ Return the object that reflected this attack
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L5092:
  jz L5190
  pushFromFSpVal 68

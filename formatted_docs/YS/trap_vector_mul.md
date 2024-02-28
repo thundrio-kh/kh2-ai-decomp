@@ -344,7 +344,7 @@ Multiplies two vectors together
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L985:
  pushFromFSp 0
  fetchValue 4

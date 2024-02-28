@@ -273,7 +273,7 @@ Return the value of a unit argument
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L2308:
  popToSp 0
  pushFromFSp 0

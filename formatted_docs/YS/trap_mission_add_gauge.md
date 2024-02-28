@@ -85,7 +85,7 @@ Adds to a gauge on the screen
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```
+```plaintext
 TR6:
  popToSp 0
  popToSp 4

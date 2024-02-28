@@ -54,7 +54,7 @@ Set the position for an object. This is identical to trap_obj_set_pos but it als
 
 <details>
 	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```
+```plaintext
 L1483:
  popToSp 0
  pushFromPSpVal 4

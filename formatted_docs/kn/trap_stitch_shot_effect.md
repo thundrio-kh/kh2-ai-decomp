@@ -23,7 +23,7 @@ Activate the shot effect for stitch
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L1141:
  pushFromPWp W108
  pushFromFSp 0

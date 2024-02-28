@@ -57,7 +57,7 @@ Return the min HP of an object
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L3693:
  drop 
  pushFromFSp 0

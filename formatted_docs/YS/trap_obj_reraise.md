@@ -22,7 +22,7 @@ Revives the player (ala Tinker Bells ability)
 
 <details>
 	<summary>Example Usage From obj\P_EX340\p_ex.bdscript</summary>
-```
+```plaintext
 L1695:
  popToSp 0
  pushFromFSp 0

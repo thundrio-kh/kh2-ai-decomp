@@ -19,8 +19,6 @@ Moves the sidecar to the before point in the Dragon Xemnas fight
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

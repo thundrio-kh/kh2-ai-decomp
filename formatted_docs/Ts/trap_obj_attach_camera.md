@@ -19,8 +19,6 @@ attach the camera to an object
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

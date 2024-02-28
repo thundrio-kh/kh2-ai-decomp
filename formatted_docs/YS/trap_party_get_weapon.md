@@ -53,7 +53,7 @@ Return the ID of the weapon the party member has equipped
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L6058:
  popToSp 0
  pushFromPWp W72

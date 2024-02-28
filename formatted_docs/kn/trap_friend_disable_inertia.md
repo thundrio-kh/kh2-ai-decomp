@@ -22,7 +22,7 @@ Disable a friends inertia action
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L7902:
  popToSp 4
  popToSp 0

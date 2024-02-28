@@ -210,7 +210,7 @@ Constrain a radian value to a certain range
 
 <details>
 	<summary>Example Usage From limit\sparrow\limi.bdscript</summary>
-```
+```plaintext
 L402:
  popToSp 0
  pushFromPWp W0

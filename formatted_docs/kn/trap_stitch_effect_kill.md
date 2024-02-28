@@ -23,7 +23,7 @@ Kill a stitch effect
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L3436:
  popToSp 0
  pushFromFSp 0

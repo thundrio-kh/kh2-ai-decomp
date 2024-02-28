@@ -24,7 +24,7 @@ Clear the friends action queue
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L947:
  pushFromPSpVal 80
  pushImm 598051

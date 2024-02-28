@@ -287,7 +287,7 @@ Set the mutex lock for the mission, to inform other threads it is running
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L44:
  popToSp 4
  popToSp 0

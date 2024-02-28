@@ -131,7 +131,7 @@ Returns true if the object is the player
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```
+```plaintext
 TR6:
  popToSp 0
  popToSp 4

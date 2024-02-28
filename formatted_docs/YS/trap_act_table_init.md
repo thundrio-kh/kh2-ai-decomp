@@ -811,7 +811,7 @@ Initializes an action table to be used by an object. Needs actions added to it a
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L6423:
  popToSp 4
  popToSp 0

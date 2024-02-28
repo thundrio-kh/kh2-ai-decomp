@@ -24,7 +24,7 @@ Set the force leave flag to false
 
 <details>
 	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
-```
+```plaintext
 L6971:
  popToSp 0
  pushFromFWp W4708

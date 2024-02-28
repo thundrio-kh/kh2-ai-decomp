@@ -32,7 +32,7 @@ Checks if an attack has hit the floor
 
 <details>
 	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
-```
+```plaintext
 L19567:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)

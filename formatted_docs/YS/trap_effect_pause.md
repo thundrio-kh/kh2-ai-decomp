@@ -26,7 +26,7 @@ pause an effect under certain condictions
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L1827:
  pushFromFSpVal 64
  pushImm 1

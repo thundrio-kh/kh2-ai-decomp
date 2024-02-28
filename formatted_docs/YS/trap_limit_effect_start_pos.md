@@ -32,7 +32,7 @@ Starts a limit effect at a specified position
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L303:
  pushFromFSp 4
  fetchValue 4

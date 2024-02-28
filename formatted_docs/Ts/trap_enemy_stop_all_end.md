@@ -22,7 +22,7 @@ Lets all instances of the object start doing things again
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
-```
+```plaintext
 L429:
  pushImm 6
  syscall 7, 1 ; trap_enemy_stop_all_end (1 in, 0 out)

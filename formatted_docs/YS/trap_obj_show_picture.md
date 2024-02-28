@@ -30,7 +30,7 @@ Show a numbered picture associated with an object
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L16883:
  pushFromFSp 100
  jz L18181

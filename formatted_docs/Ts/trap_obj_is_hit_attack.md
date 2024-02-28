@@ -26,7 +26,7 @@ Checks if the object is hitting something with an attack
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4020:
  popToSp 0
  pushFromFSp 0

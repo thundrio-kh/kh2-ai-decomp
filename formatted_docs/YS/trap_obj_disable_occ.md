@@ -25,7 +25,7 @@ disable occlusion culling for all bones in an culling object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
-```
+```plaintext
 L5615:
  popToSp 4
  popToSp 0

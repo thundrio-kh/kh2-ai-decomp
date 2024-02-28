@@ -36,7 +36,7 @@ Turns on custom HUD, such as Demyx timer or hud used by Mushrooms
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```
+```plaintext
 L108:
  syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
  ret

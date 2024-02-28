@@ -170,7 +170,7 @@ Fades out an effect
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4451:
  popToSp 4
  popToSp 0

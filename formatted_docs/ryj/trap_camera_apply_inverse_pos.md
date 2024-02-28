@@ -26,7 +26,7 @@ Inverse the position of the camera and apply it
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
-```
+```plaintext
 L5355:
  pushFromFSpVal 64
  eqz 

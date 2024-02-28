@@ -19,8 +19,6 @@ Changes the speed the game runs.
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

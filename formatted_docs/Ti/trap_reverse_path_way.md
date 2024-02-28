@@ -256,7 +256,7 @@ Reverse the way the object associated with this path is going
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2432:
  pushFromFSp 0
  syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)

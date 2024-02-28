@@ -26,7 +26,7 @@ Return if the path is moving during the dragon xemnas fight
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
-```
+```plaintext
 L829:
  pushFromFSpVal 124
  pushImm 0

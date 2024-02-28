@@ -27,7 +27,7 @@ Checks if an enemy is being attacked by the passed in object
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L6338:
  dup 
  jz L6360

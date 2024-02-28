@@ -51,7 +51,7 @@
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L468:
  pushFromFSp 180
  syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)

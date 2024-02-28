@@ -23,7 +23,7 @@ Set the number of CA medals an object has
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L3024:
  pushFromFSp 0
  pushFromFSp 12

@@ -263,7 +263,7 @@ Get the direction of a path
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2613:
  pushFromFSp 0
  pushFromFSpVal 68

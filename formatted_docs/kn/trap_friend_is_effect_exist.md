@@ -29,7 +29,7 @@ Checks if the effect still exists
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L2908:
  dup 
  jz L2918

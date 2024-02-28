@@ -43,7 +43,7 @@ get the press position of an object
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L1848:
  popToSp 4
  popToSp 8

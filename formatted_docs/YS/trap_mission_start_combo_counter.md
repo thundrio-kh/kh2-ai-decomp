@@ -24,7 +24,7 @@ adds and starts a combo counter that is id 0
 
 <details>
 	<summary>Example Usage From msn\TT06_PERFORM_01\tt06.bdscript</summary>
-```
+```plaintext
 L33:
  pushImmf 0
  syscall 4, 25 ; trap_mission_start_combo_counter (1 in, 0 out)

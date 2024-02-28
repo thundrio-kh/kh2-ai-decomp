@@ -55,7 +55,7 @@ Something to do with enabling/disabling team member limits
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5230:
  popToSp 4
  popToSp 0

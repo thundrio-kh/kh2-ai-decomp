@@ -25,7 +25,7 @@ Set the owner of an RC
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L5260:
  jz L5404
  pushFromPSpVal 32

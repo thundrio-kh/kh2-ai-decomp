@@ -21,8 +21,6 @@ Enables a reaction command so it can be activated by the player. Unused in the v
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -54,7 +54,7 @@ Get the nth party member
 
 <details>
 	<summary>Example Usage From magic\cure1\cure.bdscript</summary>
-```
+```plaintext
 L323:
  popToSp 0
  pushFromPSp 16

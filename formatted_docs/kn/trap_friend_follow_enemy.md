@@ -22,7 +22,7 @@ Have a friend follow an enemy
 
 <details>
 	<summary>Example Usage From obj\P_LK020\p_lk.bdscript</summary>
-```
+```plaintext
 L2181:
  pushFromPSpVal 0
  pushFromPSpVal 0

@@ -26,7 +26,7 @@ Check if the object is in a finish blow state
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L6309:
  popToSp 4
  popToSp 0

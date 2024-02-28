@@ -58,7 +58,7 @@ Adds one to a counter
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```
+```plaintext
 TR6:
  popToSp 0
  popToSp 4

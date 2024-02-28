@@ -23,8 +23,6 @@ Returns if the background the camera is looking at is the floor
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

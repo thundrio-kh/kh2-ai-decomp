@@ -38,7 +38,7 @@ Return the number of instances of an object
 
 <details>
 	<summary>Example Usage From msn\MU09_KINOKO_VEX\kino.bdscript</summary>
-```
+```plaintext
 L402:
  pushImm 2345
  syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)

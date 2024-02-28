@@ -68,7 +68,7 @@ Adds a value to the combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
-```
+```plaintext
 L33:
  pushFromFSp 0
  pushImmf 0

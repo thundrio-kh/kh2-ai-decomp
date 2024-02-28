@@ -295,7 +295,7 @@ Returns the number for the current world
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6541:
  popToSp 4
  popToSp 8

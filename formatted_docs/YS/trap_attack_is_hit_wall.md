@@ -44,7 +44,7 @@ Checks if an attack has hit the wall
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L1057:
  jz L1263
  pushFromFSp 180

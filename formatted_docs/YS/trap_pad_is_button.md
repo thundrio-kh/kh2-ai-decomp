@@ -41,7 +41,7 @@ Checks if a button is pressed on the controller.
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L2134:
  jz L2167
  pushImm 8

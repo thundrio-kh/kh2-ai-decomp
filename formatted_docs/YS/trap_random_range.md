@@ -630,7 +630,7 @@ Return a random float between the two values
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L289:
  gosub 4, L205
  pushImm 4

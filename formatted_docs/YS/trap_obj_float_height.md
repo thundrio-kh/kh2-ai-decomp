@@ -80,7 +80,7 @@ Returns the height the object is floating above the ground.
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L6649:
  jz L6704
  halt 

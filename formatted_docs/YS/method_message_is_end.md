@@ -158,7 +158,7 @@ Checks if the message playing at the top of the screen is done being scrolled
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L4504:
  pushFromFSp 48
  syscall 1, 48 ; method_message_is_end (1 in, 1 out)

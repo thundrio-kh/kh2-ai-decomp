@@ -581,7 +581,7 @@ Perform a fade out effect
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4073:
  pushFromPWp W72
  fetchValue 0

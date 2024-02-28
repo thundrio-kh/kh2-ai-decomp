@@ -48,7 +48,7 @@ Return the bone ID of the hand of the party member
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4229:
  popToSp 4
  popToSp 8

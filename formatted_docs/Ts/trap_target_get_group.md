@@ -59,7 +59,7 @@ Get the group ID a target belongs to
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L1675:
  popToSp 4
  popToSp 0

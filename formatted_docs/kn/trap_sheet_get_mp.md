@@ -27,7 +27,7 @@ Get the amount of MP left
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L327:
  popToSp 0
  pushFromPWp W0

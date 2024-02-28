@@ -705,7 +705,7 @@ Returns the direction of the object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L573:
  pushFromPSp 176
  pushImmf 0

@@ -24,7 +24,7 @@ Sets an object to use its MP
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L4060:
  popToSp 0
  pushImm 1

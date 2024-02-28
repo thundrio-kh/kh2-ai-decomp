@@ -92,7 +92,7 @@ Sets the speed of a motion set
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L7602:
  pushFromFSp 0
  pushImmf 0

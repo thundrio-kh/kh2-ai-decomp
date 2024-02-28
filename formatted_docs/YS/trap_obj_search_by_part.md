@@ -62,7 +62,7 @@ Return an object with a specific part number
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L9026:
  popToSp 4
  popToSp 0

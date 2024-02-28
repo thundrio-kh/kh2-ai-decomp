@@ -20,8 +20,6 @@ Sets the maximum number of consumables the player can equip
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

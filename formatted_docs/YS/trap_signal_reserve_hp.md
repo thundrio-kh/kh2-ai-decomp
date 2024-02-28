@@ -22,8 +22,6 @@ Signal an object to reserve an HP value
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

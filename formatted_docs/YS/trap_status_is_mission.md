@@ -22,8 +22,6 @@ Returns if a mission is going on
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

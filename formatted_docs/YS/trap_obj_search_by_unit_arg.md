@@ -32,7 +32,7 @@ Searches for an object with a specific unit argument
 
 <details>
 	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
-```
+```plaintext
 L3195:
  popToSp 0
  pushFromFSp 0

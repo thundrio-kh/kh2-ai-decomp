@@ -26,7 +26,7 @@ Create and allocate a new Flare Force Object
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L1573:
  popToSp 0
  pushFromFSp 0

@@ -403,7 +403,7 @@ Returns if the object is touching a Zone
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L4766:
  popToSp 0
  gosub 4, L664

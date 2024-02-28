@@ -858,7 +858,7 @@ Get the player object
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L277:
  pushFromPSp 0
  pushImm 4

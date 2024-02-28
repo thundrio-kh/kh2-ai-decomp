@@ -25,7 +25,7 @@ Set the stealth color for an object
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
-```
+```plaintext
 L17408:
  popToSp 0
  pushImmf 200

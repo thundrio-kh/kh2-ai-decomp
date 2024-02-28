@@ -34,7 +34,7 @@ Set the skateboard to be riding an edge
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L474:
  popToSp 4
  popToSp 0

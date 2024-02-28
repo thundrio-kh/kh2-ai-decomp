@@ -22,7 +22,7 @@ Enables a numbered command group. 0 enables everything.
 
 <details>
 	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
-```
+```plaintext
 L5811:
  pushImm 0
  syscall 1, 366 ; trap_command_enable_group (1 in, 0 out)

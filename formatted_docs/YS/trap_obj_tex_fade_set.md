@@ -20,8 +20,6 @@ Sets the time for a texture fade
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

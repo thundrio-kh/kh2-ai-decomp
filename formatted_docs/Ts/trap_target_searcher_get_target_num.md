@@ -29,7 +29,7 @@ Return the index number of a target within a position and a direction
 
 <details>
 	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```
+```plaintext
 L921:
  popToSp 0
  pushFromPWp W16

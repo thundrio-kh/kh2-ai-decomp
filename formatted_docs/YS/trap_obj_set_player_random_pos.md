@@ -19,8 +19,6 @@ Moves the player to a random open position, using the passed in object as a base
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

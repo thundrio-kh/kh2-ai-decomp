@@ -80,7 +80,7 @@ Starts an effect associated with an object and binds it to another object
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L15416:
  popToSp 0
  gosub 4, L1075

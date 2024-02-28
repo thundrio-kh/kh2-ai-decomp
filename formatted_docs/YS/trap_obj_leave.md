@@ -581,7 +581,7 @@ Makes an object leave
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```
+```plaintext
 L134:
  pushFromPSp 32
  pushFromFSp 0

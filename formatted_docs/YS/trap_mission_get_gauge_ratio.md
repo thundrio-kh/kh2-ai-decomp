@@ -84,7 +84,7 @@ Returns the a value from 0.0 to 1.0 representing the current progress of the spe
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```
+```plaintext
 L163:
  popToSp 0
  popToSp 4

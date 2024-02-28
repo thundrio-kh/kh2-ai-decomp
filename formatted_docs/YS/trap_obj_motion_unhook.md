@@ -40,7 +40,7 @@ Unhooks a motion set
 
 <details>
 	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```
+```plaintext
 L5222:
  pushFromFSp 0
  syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)

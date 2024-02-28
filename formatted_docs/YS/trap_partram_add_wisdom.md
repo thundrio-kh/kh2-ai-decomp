@@ -23,7 +23,7 @@ Gives magic to the player
 
 <details>
 	<summary>Example Usage From ard\tt04\tt04.bdscript</summary>
-```
+```plaintext
 L94:
  pushImm 1
  pushImm 501

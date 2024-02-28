@@ -281,7 +281,7 @@ Free a target object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3420:
  popToSp 0
  pushFromFSpVal 48

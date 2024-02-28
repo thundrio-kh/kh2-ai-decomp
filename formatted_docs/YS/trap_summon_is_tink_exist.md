@@ -25,7 +25,7 @@ Returns true if Peter Pan can revive the player using Tinker Bell
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L5320:
  pushFromFSpVal 44
  syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)

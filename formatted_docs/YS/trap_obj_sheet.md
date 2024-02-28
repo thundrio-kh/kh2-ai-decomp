@@ -258,7 +258,7 @@ returns the objects stat sheet
 
 <details>
 	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```
+```plaintext
 L163:
  popToSp 0
  popToSp 4

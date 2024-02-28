@@ -41,7 +41,7 @@ executes blow damage against an enemy.
 
 <details>
 	<summary>Example Usage From obj\B_NM100\b_nm.bdscript</summary>
-```
+```plaintext
 L3020:
  jz L3053
  pushImm 0

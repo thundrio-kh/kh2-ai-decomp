@@ -123,7 +123,7 @@ returns the parameter id associated with an attack
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 TR26:
  popToSp 0
  popToSp 4

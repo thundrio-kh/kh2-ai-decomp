@@ -252,7 +252,7 @@ Set the time parameter for an RTN
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L303:
  popToSp 4
  popToSp 0

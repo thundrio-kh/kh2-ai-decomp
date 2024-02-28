@@ -299,7 +299,7 @@ Takes a float and returns the absolute value of that float
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2130:
  pushFromFSpVal 104
  jz L2209

@@ -48,7 +48,7 @@ Starts an animation associated with a limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L758:
  pushFromPSp 48
  pushImm 64

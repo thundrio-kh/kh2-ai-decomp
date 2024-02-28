@@ -26,7 +26,7 @@ Get the parts value of the attack, which is the "Element" value defined in its A
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L3611:
  popToSp 4
  popToSp 0

@@ -296,7 +296,7 @@ Destroy an attack object, freeing the memory.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4568:
  popToSp 0
  pushFromFSpVal 68

@@ -26,7 +26,7 @@ Check if the Flare Force gauge is empty
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L7062:
  syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
  eqz 

@@ -22,7 +22,7 @@ Turns off temporary barriers, like those used during the escape from Hades seque
 
 <details>
 	<summary>Example Usage From msn\HE05_MS102\he05.bdscript</summary>
-```
+```plaintext
 L44:
  syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
  pushImm 8037

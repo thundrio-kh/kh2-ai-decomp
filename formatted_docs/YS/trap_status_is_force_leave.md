@@ -462,7 +462,7 @@ Returns if the force leave flag is true
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L7147:
  popToSp 0
  syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)

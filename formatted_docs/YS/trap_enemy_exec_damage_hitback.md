@@ -49,7 +49,7 @@ executes hitback damage against an enemy
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L2116:
  pushFromFSp 0
  pushFromFSp 4

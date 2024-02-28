@@ -22,7 +22,7 @@ Stop the friend from following the player
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
-```
+```plaintext
 L5725:
  popToSp 0
  pushImm 0

@@ -65,7 +65,7 @@ Attaches a PAX effect to an attack
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```
+```plaintext
 L377:
  popToSp 4
  popToSp 0

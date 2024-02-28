@@ -20,8 +20,6 @@ Either start the stop action or stop the start action
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

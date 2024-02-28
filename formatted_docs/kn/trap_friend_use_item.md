@@ -28,7 +28,7 @@ Have a friend use an item
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L7518:
  popToSp 0
  pushFromPSpVal 0

@@ -26,7 +26,7 @@ Checks if the friend has started the leave action
 
 <details>
 	<summary>Example Usage From obj\P_EX360\p_ex.bdscript</summary>
-```
+```plaintext
 L1237:
  dup 
  jz L1246

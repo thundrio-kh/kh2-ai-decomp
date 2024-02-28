@@ -45,7 +45,7 @@ Check if an object is a limit
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L40:
  dup 
  jz L56

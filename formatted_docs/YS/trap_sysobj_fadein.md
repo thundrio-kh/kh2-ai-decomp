@@ -571,7 +571,7 @@ Perform a fade in effect
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L4186:
  pushFromPWp W72
  pushImm 268

@@ -43,7 +43,7 @@ Open a tutorial window displaying a message
 
 <details>
 	<summary>Example Usage From ard\bb03\bb.bdscript</summary>
-```
+```plaintext
 TR3:
  pushImm 39
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)

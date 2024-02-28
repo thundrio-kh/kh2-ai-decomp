@@ -449,7 +449,7 @@ Looks up an object by objentry ID and puts the object in the data object. If thi
 
 <details>
 	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
-```
+```plaintext
 L55:
  pushFromPSp 0
  pushImm 1295

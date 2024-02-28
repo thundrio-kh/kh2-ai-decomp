@@ -253,7 +253,7 @@ Removes a created lookat object in the specified time
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1973:
  pushFromFSp 0
  pushImmf 20

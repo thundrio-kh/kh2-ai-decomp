@@ -18,8 +18,6 @@ Doesnt appear to do anything except print some debug warnings
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

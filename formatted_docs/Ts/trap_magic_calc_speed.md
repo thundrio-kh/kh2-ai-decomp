@@ -30,7 +30,7 @@ Calculate the speed of magic
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L592:
  pushImmf 0
  popToSp 184

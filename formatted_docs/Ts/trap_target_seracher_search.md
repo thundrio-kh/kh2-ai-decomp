@@ -87,7 +87,7 @@ Searches for a target based on a number of parameters
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3839:
  pushFromFSp 20
  pushImm 20

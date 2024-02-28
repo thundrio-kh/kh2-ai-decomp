@@ -311,7 +311,7 @@ ends a mission in failure
 
 <details>
 	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```
+```plaintext
 L128:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
  jmp L147

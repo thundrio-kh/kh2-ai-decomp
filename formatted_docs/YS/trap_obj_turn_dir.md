@@ -431,7 +431,7 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 
 <details>
 	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```
+```plaintext
 L2255:
  pushFromFSp 0
  pushFromPSp 32

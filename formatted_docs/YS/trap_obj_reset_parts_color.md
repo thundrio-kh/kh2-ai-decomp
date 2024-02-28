@@ -27,7 +27,7 @@ Resets the color of an object part
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L5082:
  pushFromFSp 0
  fetchValue 4

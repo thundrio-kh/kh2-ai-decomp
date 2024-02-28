@@ -187,7 +187,7 @@ Jumps an object to the vector
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L1950:
  pushFromPSp 16
  pushImm 4

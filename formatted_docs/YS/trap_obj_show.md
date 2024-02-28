@@ -90,7 +90,7 @@ Shows all parts of an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3670:
  popToSp 0
  pushFromPSpVal 4

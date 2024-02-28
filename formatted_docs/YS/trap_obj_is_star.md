@@ -100,7 +100,7 @@ Returns if the object is currently invulnerable
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4020:
  popToSp 0
  pushFromFSp 0

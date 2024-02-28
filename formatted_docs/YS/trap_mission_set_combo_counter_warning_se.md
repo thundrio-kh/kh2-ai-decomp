@@ -24,7 +24,7 @@ Set the sound effect that will play when the combo counter reaches the warning v
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
-```
+```plaintext
 L221:
  pushImm 10
  pushImm 0

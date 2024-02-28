@@ -45,7 +45,7 @@ Sets the player to be executing a reaction command
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L342:
  popToSp 4
  popToSp 0

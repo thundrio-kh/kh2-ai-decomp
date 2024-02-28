@@ -31,7 +31,7 @@ value"
 
 <details>
 	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
-```
+```plaintext
 L3409:
  pushFromFSp 0
  gosub 4, L3877

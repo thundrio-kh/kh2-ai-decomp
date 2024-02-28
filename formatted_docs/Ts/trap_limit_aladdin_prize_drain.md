@@ -21,7 +21,7 @@ Set Aladdin prize drain
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5053:
  popToSp 0
  pushImmf 14

@@ -658,7 +658,7 @@ Returns True if the object is still spawned
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```
+```plaintext
 L134:
  pushFromPSp 32
  pushFromFSp 0

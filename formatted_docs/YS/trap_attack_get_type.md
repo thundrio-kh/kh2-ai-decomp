@@ -23,8 +23,6 @@ returns the type of the passed in attack
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -28,7 +28,7 @@ Returns if the object is hovering
 
 <details>
 	<summary>Example Usage From obj\F_HB090\f_hb.bdscript</summary>
-```
+```plaintext
 L442:
  pushFromFSp 0
  syscall 1, 208 ; trap_obj_is_hover (1 in, 1 out)

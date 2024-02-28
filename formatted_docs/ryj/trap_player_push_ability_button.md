@@ -23,8 +23,6 @@ Chcks if the player is pushing the reaction command button
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

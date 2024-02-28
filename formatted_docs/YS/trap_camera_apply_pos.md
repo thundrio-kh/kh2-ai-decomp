@@ -37,7 +37,7 @@ Apply a position vector to the camera
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
-```
+```plaintext
 L5355:
  pushFromFSpVal 64
  eqz 

@@ -469,7 +469,7 @@ Determines if obj is currently being culled
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L7175:
  pushImm 0
  popToSp 8

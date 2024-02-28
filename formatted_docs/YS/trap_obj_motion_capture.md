@@ -231,7 +231,7 @@ starts a motion set id that captures an object, returning the id of the capture
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L2804:
  pushFromPSpVal 0
  pushFromPSp 4

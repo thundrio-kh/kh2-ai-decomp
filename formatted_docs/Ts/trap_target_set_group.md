@@ -23,7 +23,7 @@ Set the group ID that a target belongs to
 
 <details>
 	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
-```
+```plaintext
 L3502:
  pushFromFSp 20
  pushImm 20

@@ -23,7 +23,7 @@ Sets the level up path to sword/shield/staff.
 
 <details>
 	<summary>Example Usage From ard\tt32\tt_l.bdscript</summary>
-```
+```plaintext
 L40:
  pushFromFSp 8
  pushImm 0

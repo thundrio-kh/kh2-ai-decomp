@@ -37,7 +37,7 @@ Sets a "reaction" view camera to watch a target
 
 <details>
 	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
-```
+```plaintext
 L55:
  pushFromPSp 0
  pushImm 1295

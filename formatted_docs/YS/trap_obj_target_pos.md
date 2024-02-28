@@ -105,7 +105,7 @@ Returns the position of the objects current target
 
 <details>
 	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```
+```plaintext
 L1383:
  popToSp 0
  pushFromPWp W108

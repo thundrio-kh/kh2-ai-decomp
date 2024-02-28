@@ -27,7 +27,7 @@ Set the speed of a vacuum
 
 <details>
 	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
-```
+```plaintext
 L5602:
  pushFromFWp W4264
  pushFromFSp 72

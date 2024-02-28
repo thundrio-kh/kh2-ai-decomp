@@ -26,7 +26,7 @@ Returns the blow speed value for the attack, documented in openkh as ???
 
 <details>
 	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
-```
+```plaintext
 L305:
  pushFromPSpVal 112
  pushImm 12

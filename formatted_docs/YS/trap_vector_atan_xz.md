@@ -176,7 +176,7 @@ Computes the arctangent of the ratio of the x and z components of the vector
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L3072:
  pushFromPSp 48
  pushImmf 0

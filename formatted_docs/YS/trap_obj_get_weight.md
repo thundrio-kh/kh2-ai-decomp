@@ -26,7 +26,7 @@ Returns the defined weight of an object
 
 <details>
 	<summary>Example Usage From msn\TR07_MS203\tr07.bdscript</summary>
-```
+```plaintext
 L240:
  pushFromPSp 0
  gosub 32, L268

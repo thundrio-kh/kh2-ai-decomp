@@ -72,7 +72,7 @@ Returns  if the object can decide command.
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5456:
  popToSp 4
  popToSp 8

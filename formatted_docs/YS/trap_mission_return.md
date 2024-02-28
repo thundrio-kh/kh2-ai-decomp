@@ -22,7 +22,7 @@ Unlocks a mission and returns control/settings to normal
 
 <details>
 	<summary>Example Usage From msn\HB16_MS404D\hb16.bdscript</summary>
-```
+```plaintext
 L87:
  gosub 4, L109
  pushImm 42

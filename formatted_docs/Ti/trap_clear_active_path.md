@@ -19,8 +19,6 @@ Clears the active path
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

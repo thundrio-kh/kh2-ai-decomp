@@ -138,7 +138,7 @@ Disable resistances/sturdy frames for an object
 
 <details>
 	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
-```
+```plaintext
 L9044:
  popToSp 0
  pushFromFSp 0

@@ -37,7 +37,7 @@ return the number of minutes on the specified timer
 
 <details>
 	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```
+```plaintext
 L112:
  popToSp 0
  syscall 4, 13 ; trap_mission_pause_timer (0 in, 0 out)

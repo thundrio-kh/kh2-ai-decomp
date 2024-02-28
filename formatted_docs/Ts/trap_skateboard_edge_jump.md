@@ -36,7 +36,7 @@ Have the skateboard perform an edge jump
 
 <details>
 	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```
+```plaintext
 L970:
  popToSp 4
  popToSp 0

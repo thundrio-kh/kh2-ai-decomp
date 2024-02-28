@@ -26,7 +26,7 @@ Gives the player/party an ability.
 
 <details>
 	<summary>Example Usage From ard\mu07\mu_g.bdscript</summary>
-```
+```plaintext
 TR2:
  pushImm 6
  syscall 0, 61 ; trap_saveram_get_partram (1 in, 1 out)

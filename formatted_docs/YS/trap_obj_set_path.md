@@ -267,7 +267,7 @@ Sets the movement path for an NPC object
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L232:
  pushFromFSp 0
  pushImm -1

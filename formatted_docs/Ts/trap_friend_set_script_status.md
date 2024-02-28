@@ -24,8 +24,6 @@ Set the script status of a friend
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

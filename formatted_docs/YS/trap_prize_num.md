@@ -22,8 +22,6 @@ Return the number of prizes currently spawned
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -230,7 +230,7 @@ Sets the position of an effect to pos
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4188:
  jz L4406
  pushFromFSpVal 68

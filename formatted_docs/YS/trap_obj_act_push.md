@@ -809,7 +809,7 @@ pushes an action so that it starts next
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L7353:
  pushFromFSp 0
  pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)

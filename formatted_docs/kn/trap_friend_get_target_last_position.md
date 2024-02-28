@@ -26,7 +26,7 @@ Get the last position of the friends target
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L8852:
  pushFromPSpVal 0
  fetchValue 4

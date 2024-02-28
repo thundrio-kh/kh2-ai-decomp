@@ -43,7 +43,7 @@ Attaches a reaction command to an attack for the player to use
 
 <details>
 	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```
+```plaintext
 L1572:
  pushFromFSpVal 120
  jz L1630

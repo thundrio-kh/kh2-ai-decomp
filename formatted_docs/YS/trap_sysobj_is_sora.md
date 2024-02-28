@@ -29,7 +29,7 @@ Returns true if the object is Sora
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
-```
+```plaintext
 L2835:
  gosub 4, L2828
  pushImm 0

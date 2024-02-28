@@ -61,7 +61,7 @@ fades light out
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L2462:
  popToSp 4
  popToSp 0

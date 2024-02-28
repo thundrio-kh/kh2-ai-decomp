@@ -22,8 +22,6 @@ Set parameters for a gauge
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

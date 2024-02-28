@@ -23,8 +23,6 @@ Gets the current action for an object
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -23,7 +23,7 @@ Vacuums all medals within a designated range of the object
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L6370:
  pushFromFSp 0
  fetchValue 4

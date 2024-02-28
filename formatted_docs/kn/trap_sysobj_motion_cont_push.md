@@ -21,8 +21,6 @@ Push a motion entry onto the motion queue
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

@@ -18,8 +18,6 @@ Takes away Soras ability to jump infinitely
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

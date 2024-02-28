@@ -35,7 +35,7 @@ Computes the angle between two vectors
 
 <details>
 	<summary>Example Usage From obj\F_EH060\f_eh.bdscript</summary>
-```
+```plaintext
 L3755:
  popToSp 0
  syscall 1, 306 ; trap_camera_at (0 in, 1 out)

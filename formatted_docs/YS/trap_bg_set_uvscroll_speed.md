@@ -23,7 +23,7 @@ UNknown. Used only by Oogie Boogie conveyor belts
 
 <details>
 	<summary>Example Usage From obj\F_NM140\f_nm.bdscript</summary>
-```
+```plaintext
 L2162:
  popToSp 0
  pushFromFSp 0

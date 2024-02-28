@@ -20,8 +20,6 @@ Restart an object so it is no longer stopped
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

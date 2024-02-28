@@ -27,7 +27,7 @@ End the prize drain effect
 
 <details>
 	<summary>Example Usage From magic\MAGNET_1\magn.bdscript</summary>
-```
+```plaintext
 L44:
  halt 
  pushFromFSp 0

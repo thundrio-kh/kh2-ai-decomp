@@ -54,7 +54,7 @@ Return some reference associated with the limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6698:
  pushFromFSp 0
  fetchValue 0

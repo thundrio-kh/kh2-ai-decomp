@@ -74,7 +74,7 @@ Sets a unit argument for an object
 
 <details>
 	<summary>Example Usage From msn\HE00_MS104B\he00.bdscript</summary>
-```
+```plaintext
 L725:
  pushFromFWp W12
  pushImm 0

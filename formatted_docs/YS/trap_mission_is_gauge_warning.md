@@ -23,8 +23,6 @@ Returns if the specified gauge at the warning level
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

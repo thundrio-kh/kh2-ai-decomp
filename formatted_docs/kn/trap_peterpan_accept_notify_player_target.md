@@ -22,7 +22,7 @@ Accept a notify player target
 
 <details>
 	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
-```
+```plaintext
 L6806:
  popToSp 0
  pushImm 0

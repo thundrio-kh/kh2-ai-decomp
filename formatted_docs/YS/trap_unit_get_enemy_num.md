@@ -31,7 +31,7 @@ Get the number of enemies currently spawned
 
 <details>
 	<summary>Example Usage From obj\F_MU080\f_mu.bdscript</summary>
-```
+```plaintext
 L103:
  popToSp 0
  pushFromFSp 0

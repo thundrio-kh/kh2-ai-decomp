@@ -18,8 +18,6 @@ Performs a file flush
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

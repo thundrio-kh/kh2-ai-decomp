@@ -25,7 +25,7 @@ Links magic to a friend
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L208:
  popToSp 0
  gosub 4, L228

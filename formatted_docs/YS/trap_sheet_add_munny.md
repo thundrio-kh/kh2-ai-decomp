@@ -44,7 +44,7 @@ Adds an amount of money to the player
 
 <details>
 	<summary>Example Usage From ard\tt02\tt_n.bdscript</summary>
-```
+```plaintext
 TR3:
  pushImm 362
  pushImm 100

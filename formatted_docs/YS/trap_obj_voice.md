@@ -122,7 +122,7 @@ Plays a voice clip belonging to an object
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L9010:
  pushFromFSp 0
  fetchValue 4

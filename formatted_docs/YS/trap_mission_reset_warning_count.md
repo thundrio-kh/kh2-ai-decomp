@@ -22,7 +22,7 @@ Reset the warning flag for a counter
 
 <details>
 	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
-```
+```plaintext
 L5144:
  pushFromFSp 0
  fetchValue 4

@@ -94,7 +94,7 @@ Collision check along a line
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2954:
  popToSp 0
  pushFromPSpVal 4

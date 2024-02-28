@@ -42,7 +42,7 @@ Plays a sound effect
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L8150:
  pushFromFSp 4
  jz L8183

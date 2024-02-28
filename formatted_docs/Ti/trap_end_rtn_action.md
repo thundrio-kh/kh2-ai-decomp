@@ -252,7 +252,7 @@ End an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1127:
  pushFromFSp 0
  syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)

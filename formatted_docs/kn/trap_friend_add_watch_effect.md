@@ -25,7 +25,7 @@ Have a friend watch an effect object
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L2856:
  pushFromPSpVal 0
  pushImmf 6

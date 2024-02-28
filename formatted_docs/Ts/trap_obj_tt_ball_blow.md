@@ -25,7 +25,7 @@ Make the twilight town minigame ball perform a blow
 
 <details>
 	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
-```
+```plaintext
 L165:
  drop 
  pushFromFSp 4

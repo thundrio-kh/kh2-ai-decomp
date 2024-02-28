@@ -44,7 +44,7 @@ Moves to a random space within the given radius
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3079:
  pushFromPSpVal 4
  gosub 12, L3189

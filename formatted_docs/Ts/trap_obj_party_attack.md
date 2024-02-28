@@ -27,7 +27,7 @@ Activate a party attack
 
 <details>
 	<summary>Example Usage From obj\P_EX100_KH1F\limi.bdscript</summary>
-```
+```plaintext
 L1683:
  popToSp 0
  pushFromFSp 0

@@ -23,7 +23,7 @@ Makes a number of prizes for mushroom 3 appear at a position
 
 <details>
 	<summary>Example Usage From obj\M_EX350_03\m_ex.bdscript</summary>
-```
+```plaintext
 L440:
  jz L474
  pushFromFSp 0

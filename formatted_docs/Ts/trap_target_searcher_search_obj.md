@@ -31,7 +31,7 @@ Has a target searcher search for a specific object.
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L80:
  popToSp 4
  popToSp 0

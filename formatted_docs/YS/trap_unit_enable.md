@@ -38,7 +38,7 @@ Enable a unit group so it can spawn
 
 <details>
 	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
-```
+```plaintext
 L204:
  pushImm 417
  syscall 1, 203 ; trap_unit_enable (1 in, 0 out)

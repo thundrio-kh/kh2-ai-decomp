@@ -22,7 +22,7 @@ Returns the camera to the normal mode from scope mode.
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L10848:
  popToSp 0
  pushImm 5

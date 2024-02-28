@@ -29,7 +29,7 @@ Returns if a battle is going on
 
 <details>
 	<summary>Example Usage From obj\F_HB020\f_hb.bdscript</summary>
-```
+```plaintext
 L2276:
  popToSp 0
  syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)

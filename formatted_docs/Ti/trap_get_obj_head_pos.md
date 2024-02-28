@@ -255,7 +255,7 @@ Get the position of an objects head
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1173:
  pushFromFSp 32
  pushImmf 0

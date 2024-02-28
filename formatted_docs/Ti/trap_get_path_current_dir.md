@@ -23,8 +23,6 @@ Get the current direction of the path
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

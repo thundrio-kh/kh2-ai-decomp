@@ -35,7 +35,7 @@ Disable a unit group from being able to spawn
 
 <details>
 	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
-```
+```plaintext
 TR3:
  gosub 4, L329
  pushImm 417

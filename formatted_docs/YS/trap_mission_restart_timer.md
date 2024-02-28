@@ -24,7 +24,7 @@ Restarts a paused timer. if time parameter is < 1, timer counts up instead of do
 
 <details>
 	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
-```
+```plaintext
 L184:
  pushImm -1
  pushImm 0

@@ -20,8 +20,6 @@ Set the effect ID of a trinity limit shot
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

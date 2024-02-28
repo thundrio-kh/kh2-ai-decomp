@@ -23,7 +23,7 @@ Starts mpdrive for an object
 
 <details>
 	<summary>Example Usage From obj\N_HB630\n_hb.bdscript</summary>
-```
+```plaintext
 L5513:
  popToSp 0
  pushFromFSp 0

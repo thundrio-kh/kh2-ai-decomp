@@ -22,7 +22,7 @@ Removes the dome (dark globe) effect at the end of the Final Xemnas attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L15101:
  popToSp 0
  pushFromFSp 0

@@ -32,7 +32,7 @@ Unbinds the effect from the object
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
-```
+```plaintext
 L38605:
  pushFromFSp 0
  gosub32 32, L36670

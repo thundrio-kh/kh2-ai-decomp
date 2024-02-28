@@ -22,7 +22,7 @@ Move to the next point on the path in the Dragon Xemnas fight
 
 <details>
 	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
-```
+```plaintext
 L7170:
  popToSp 0
  pushFromFSp 0

@@ -396,7 +396,7 @@ Attaches a bone between two objects
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2833:
  popToSp 0
  pushImm 0

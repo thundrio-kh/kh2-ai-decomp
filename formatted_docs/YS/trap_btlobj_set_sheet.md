@@ -307,7 +307,7 @@ Sets a batleobj to use a specific enmp entry.
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L4649:
  popToSp 4
  popToSp 0

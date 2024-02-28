@@ -25,7 +25,7 @@ Sets a filled in ratio for the specified gauge
 
 <details>
 	<summary>Example Usage From obj\B_EX270_SIDECAR\b_ex.bdscript</summary>
-```
+```plaintext
 L2536:
  pushImmf 0
  pushImm 0

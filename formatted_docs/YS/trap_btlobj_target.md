@@ -648,7 +648,7 @@ Retrieves the btlobj of the subject of a target object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3456:
  popToSp 0
  popToSp 4

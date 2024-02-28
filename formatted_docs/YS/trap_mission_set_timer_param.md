@@ -37,7 +37,7 @@ sets parameters for a timer
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript</summary>
-```
+```plaintext
 TR3:
  pushFromPWp W0
  gosub 4, L400

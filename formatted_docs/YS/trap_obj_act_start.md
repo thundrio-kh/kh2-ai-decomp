@@ -813,7 +813,7 @@ starts an action
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L3114:
  popToSp 4
  popToSp 8

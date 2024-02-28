@@ -23,8 +23,6 @@ Draws a sphere around a vector.
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

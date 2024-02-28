@@ -21,7 +21,7 @@ Pauses/stops the onscreen timer
 
 <details>
 	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
-```
+```plaintext
 L1183:
  syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
  pushImm 16

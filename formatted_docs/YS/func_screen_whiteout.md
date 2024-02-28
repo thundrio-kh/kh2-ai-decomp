@@ -43,7 +43,7 @@ Fades the screen to white. On HD versions of the game, the spinning KH logo is p
 
 <details>
 	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```
+```plaintext
 L246:
  jz L265
  pushImmf 150

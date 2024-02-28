@@ -26,7 +26,7 @@ Have Chicken Little shoot in the direction of the target
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L518:
  popToSp 0
  pushFromFSp 0

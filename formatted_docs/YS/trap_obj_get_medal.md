@@ -29,7 +29,7 @@ Get the current number of medals an object has
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```
+```plaintext
 L106:
  gosub 12, L142
  memcpyToSp 16, 32

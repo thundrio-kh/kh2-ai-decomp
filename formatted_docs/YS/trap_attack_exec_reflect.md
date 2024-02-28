@@ -22,7 +22,7 @@ reflects an attack. Unsure if it changes the direction of the attack, or changes
 
 <details>
 	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
-```
+```plaintext
 L75:
  jz L83
  pushFromFSp 4

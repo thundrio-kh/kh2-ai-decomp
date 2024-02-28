@@ -26,7 +26,7 @@ Scatters a number of Pirates of the Caribbean coins from an object
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```
+```plaintext
 L294:
  pushFromFSp 4
  gosub 4, L142

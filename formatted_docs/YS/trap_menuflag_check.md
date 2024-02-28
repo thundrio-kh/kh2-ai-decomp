@@ -29,7 +29,7 @@ checks if a menuflag is activated
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```
+```plaintext
 L100:
  popToSp 0
  popToSp 4

@@ -32,7 +32,7 @@ Checks the value of the 0x102B flag
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```
+```plaintext
 L136:
  popToSp 0
  syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)

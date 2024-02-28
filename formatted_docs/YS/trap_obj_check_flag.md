@@ -24,8 +24,6 @@ Checks if an object flag is set. Unused normally
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

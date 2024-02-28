@@ -32,7 +32,7 @@ Set the xyz rotation of an object
 
 <details>
 	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
-```
+```plaintext
 L36929:
  pushFromPSp 16
  pushImmf 0

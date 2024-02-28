@@ -71,7 +71,7 @@ Returns if the object is flying
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L3114:
  pushFromFSp 4
  syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)

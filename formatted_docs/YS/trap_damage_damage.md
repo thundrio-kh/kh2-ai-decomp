@@ -38,7 +38,7 @@ Returns the Team value of the attack, as documented in the Openkh ATKP page (Dea
 
 <details>
 	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```
+```plaintext
 TR6:
  popToSp 0
  popToSp 4

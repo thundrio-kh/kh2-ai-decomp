@@ -27,7 +27,7 @@ Warps the camera (to another object?)
 
 <details>
 	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
-```
+```plaintext
 L3109:
  pushFromFSp 0
  pushFromFSp 0

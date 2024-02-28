@@ -154,7 +154,7 @@ Check if a step is interesecting with a given line?
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L4358:
  pushFromFSp 0
  fetchValue 4

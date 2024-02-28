@@ -29,7 +29,7 @@ Get the parameter of a friends action
 
 <details>
 	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
-```
+```plaintext
 L803:
  popToSp 4
  popToSp 0

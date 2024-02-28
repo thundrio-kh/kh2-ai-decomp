@@ -46,7 +46,7 @@ Checks if a button is held down on the controller.
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L1794:
  popToSp 0
  pushFromFSp 0

@@ -21,7 +21,7 @@ Enable the command menu?
 
 <details>
 	<summary>Example Usage From obj\N_EX690_TT_TUTOR_RTN\n_ex.bdscript</summary>
-```
+```plaintext
 L37:
  syscall 1, 334 ; trap_command_enable (0 in, 0 out)
  pushFromPWp W4112

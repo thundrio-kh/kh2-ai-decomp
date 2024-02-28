@@ -26,7 +26,7 @@ Parameters for the present cannon
 
 <details>
 	<summary>Example Usage From obj\F_NM180\f_nm.bdscript</summary>
-```
+```plaintext
 TR0:
  popToSp 0
  pushFromPSp 16

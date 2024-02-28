@@ -31,7 +31,7 @@ Sets a specific digit in the counter to a value
 
 <details>
 	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
-```
+```plaintext
 L8060:
  popToSp 0
  pushFromFSp 0

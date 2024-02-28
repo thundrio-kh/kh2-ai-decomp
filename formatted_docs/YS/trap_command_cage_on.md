@@ -30,7 +30,7 @@ Turns on temporary barriers, like those used during the escape from Hades sequen
 
 <details>
 	<summary>Example Usage From msn\HB16_MS404B\hb16.bdscript</summary>
-```
+```plaintext
 L33:
  pushImm 21
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)

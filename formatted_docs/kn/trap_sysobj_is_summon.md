@@ -61,7 +61,7 @@ Check if the object is a summon
 
 <details>
 	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```
+```plaintext
 L321:
  popToSp 4
  popToSp 0

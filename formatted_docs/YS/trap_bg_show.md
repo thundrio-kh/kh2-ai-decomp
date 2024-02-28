@@ -83,7 +83,7 @@ Shows a group for the map.
 
 <details>
 	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```
+```plaintext
 L100:
  popToSp 0
  popToSp 4

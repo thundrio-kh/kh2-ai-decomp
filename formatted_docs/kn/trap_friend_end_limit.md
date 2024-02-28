@@ -25,7 +25,7 @@ End a friends limit
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L1009:
  popToSp 0
  pushFromPSpVal 20

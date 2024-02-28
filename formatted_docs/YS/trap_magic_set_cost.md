@@ -20,8 +20,6 @@ sets the cost for this magic object
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

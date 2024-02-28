@@ -23,7 +23,7 @@ sets a warning state for the specified combo counter
 
 <details>
 	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
-```
+```plaintext
 L64:
  popToSp 4
  popToSp 0

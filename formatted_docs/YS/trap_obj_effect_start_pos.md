@@ -167,7 +167,7 @@ Starts an effect associated with an object at the specified position
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L185:
  popToSp 0
  popToSp 4

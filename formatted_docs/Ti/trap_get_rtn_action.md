@@ -256,7 +256,7 @@ Get the parameter for an RTN action
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L2305:
  popToSp 0
  pushFromFSp 0

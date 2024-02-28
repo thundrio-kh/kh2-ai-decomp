@@ -27,7 +27,7 @@ Reset the pause mode
 
 <details>
 	<summary>Example Usage From msn\CA09_MEDAL\ca_m.bdscript</summary>
-```
+```plaintext
 L247:
  syscall 4, 23 ; trap_mission_reset_pause_mode (0 in, 0 out)
  ret

@@ -74,7 +74,7 @@ Adds a callback function to an attack that will run on hit
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L5011:
  pushFromPSpVal 0
  pushImm 1539

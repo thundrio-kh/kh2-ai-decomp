@@ -88,7 +88,7 @@ Gets a random open position
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L7019:
  pushFromPSp 16
  pushFromPSp 96

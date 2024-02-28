@@ -133,7 +133,7 @@ Sets an amount of time for an attack to go on. Looks like it is a more powerful 
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3275:
  popToSp 0
  pushFromPSpVal 32

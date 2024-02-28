@@ -454,7 +454,7 @@ Start the "dead" effect
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L5649:
  pushFromFSp 0
  pushImm 2

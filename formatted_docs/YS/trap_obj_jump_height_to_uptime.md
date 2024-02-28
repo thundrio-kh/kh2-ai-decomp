@@ -59,7 +59,7 @@ Converts jump height to uptime using the following formula: `math.sqrt(math.abs(
 
 <details>
 	<summary>Example Usage From limit\goofy\limi.bdscript</summary>
-```
+```plaintext
 L1794:
  popToSp 4
  popToSp 0

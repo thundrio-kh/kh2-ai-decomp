@@ -43,7 +43,7 @@ Sets the object to a team (IE player, enemy, or npc)
 
 <details>
 	<summary>Example Usage From obj\B_NM110_HEAD\b_nm.bdscript</summary>
-```
+```plaintext
 L137:
  gosub 12, L380
  jz L150

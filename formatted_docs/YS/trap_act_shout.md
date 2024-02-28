@@ -20,8 +20,6 @@ Adds the passed action into the ShoutBuff. Maybe this is a separate queue that h
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

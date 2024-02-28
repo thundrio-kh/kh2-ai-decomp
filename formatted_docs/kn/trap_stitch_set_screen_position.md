@@ -23,7 +23,7 @@ Set the position of stitch on the screen
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L1369:
  popToSp 4
  popToSp 0

@@ -30,7 +30,7 @@ Start the limit command
 
 <details>
 	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
-```
+```plaintext
 L3640:
  popToSp 4
  popToSp 0

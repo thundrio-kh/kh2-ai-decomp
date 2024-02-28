@@ -24,7 +24,7 @@ Turn off the secure mode flag
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```
+```plaintext
 L221:
  halt 
  syscall 1, 264 ; trap_status_secure_mode_end (0 in, 0 out)

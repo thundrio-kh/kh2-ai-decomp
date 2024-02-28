@@ -23,7 +23,7 @@ Levels up the specified unit group of spawns
 
 <details>
 	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
-```
+```plaintext
 L2170:
  popToSp 0
  pushFromFSp 0

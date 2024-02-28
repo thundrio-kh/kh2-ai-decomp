@@ -559,7 +559,7 @@ Returns the appear way value of an object, or -1. It seems like just about every
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L6432:
  popToSp 0
  pushFromFSp 0

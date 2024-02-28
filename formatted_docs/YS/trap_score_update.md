@@ -102,7 +102,7 @@ Updates a score object
 
 <details>
 	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```
+```plaintext
 L67:
  popToSp 4
  popToSp 0

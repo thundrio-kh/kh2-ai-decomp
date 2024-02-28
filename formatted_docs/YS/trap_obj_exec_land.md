@@ -123,7 +123,7 @@ Tells the object to land
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L8976:
  popToSp 0
  pushFromFSp 0

@@ -219,7 +219,7 @@ Return a random integer between 0 and range
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L1160:
  popToSp 0
  popToSp 4

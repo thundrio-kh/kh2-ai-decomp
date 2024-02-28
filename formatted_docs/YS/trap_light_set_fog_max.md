@@ -31,7 +31,7 @@ Sets the maximum density for fog
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript</summary>
-```
+```plaintext
 L415:
  pushImm 1
  syscall 1, 181 ; trap_light_create (1 in, 1 out)

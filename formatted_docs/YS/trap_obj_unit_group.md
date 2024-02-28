@@ -391,7 +391,7 @@ Returns the unit group the object belongs to
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L4766:
  popToSp 0
  gosub 4, L664

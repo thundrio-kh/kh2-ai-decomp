@@ -22,7 +22,7 @@ Perform a menu pause?
 
 <details>
 	<summary>Example Usage From msn\TT04_MS107\tt04.bdscript</summary>
-```
+```plaintext
 L81:
  pushImmf 12
  gosub 4, L99

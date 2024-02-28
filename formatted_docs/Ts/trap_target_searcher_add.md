@@ -34,7 +34,7 @@ Add an object to a target searcher
 
 <details>
 	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
-```
+```plaintext
 L421:
  popToSp 4
  popToSp 0

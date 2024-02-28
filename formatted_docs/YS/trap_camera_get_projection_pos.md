@@ -27,7 +27,7 @@ Gets the projection pos of the camera
 
 <details>
 	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
-```
+```plaintext
 L22781:
  popToSp 0
  pushImm 0

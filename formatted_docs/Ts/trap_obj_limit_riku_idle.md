@@ -22,7 +22,7 @@ Set the riku limit action to idle
 
 <details>
 	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```
+```plaintext
 L7279:
  pushFromFSp 0
  gosub 4, L7785

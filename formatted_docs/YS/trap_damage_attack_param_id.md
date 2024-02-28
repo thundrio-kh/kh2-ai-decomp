@@ -117,7 +117,7 @@ returns the SubId of the attack, as defined in its Atkp entry found in 00battle.
 
 <details>
 	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```
+```plaintext
 L279:
  jz L316
  pushFromFSp 0

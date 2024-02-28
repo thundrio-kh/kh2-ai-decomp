@@ -23,7 +23,7 @@ Starts the Final Xemnas Dome Laser attack
 
 <details>
 	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
-```
+```plaintext
 L14922:
  popToSp 0
  pushFromPSp 16

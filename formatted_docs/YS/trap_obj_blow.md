@@ -53,7 +53,7 @@ Performs a blow in the direction specified by the vector
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L10262:
  pushImm 1
  popToWp W4512

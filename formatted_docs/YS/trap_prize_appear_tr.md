@@ -24,7 +24,7 @@ Makes a number of Hostile Program orbs appear at a position
 
 <details>
 	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
-```
+```plaintext
 L2202:
  popToSp 4
  popToSp 0

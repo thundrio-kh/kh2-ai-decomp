@@ -29,7 +29,7 @@ Add a target to a target searcher
 
 <details>
 	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```
+```plaintext
 L2552:
  popToSp 0
  pushFromPWp W0

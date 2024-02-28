@@ -579,7 +579,7 @@ Sets a specific flag on an object to true
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L5471:
  popToSp 0
  pushFromPSp 16

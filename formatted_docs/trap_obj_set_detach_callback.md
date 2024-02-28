@@ -21,8 +21,6 @@ probably does nothing, is unused
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

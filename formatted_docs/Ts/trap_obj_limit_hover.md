@@ -26,7 +26,7 @@ Hover an object as part of a limit
 
 <details>
 	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```
+```plaintext
 L1340:
  popToSp 4
  popToSp 8

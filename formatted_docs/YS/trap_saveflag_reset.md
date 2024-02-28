@@ -19,8 +19,6 @@ Resets the value of the save flag to 0
 
 <details>
 	<summary>Example Usage From NA</summary>
-```
 
-```
 </details>
 

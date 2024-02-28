@@ -25,7 +25,7 @@ Returns the number of port royal medals that are currently spawned
 
 <details>
 	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```
+```plaintext
 L6551:
  popToSp 0
  syscall 1, 341 ; trap_prize_num_ca (0 in, 1 out)

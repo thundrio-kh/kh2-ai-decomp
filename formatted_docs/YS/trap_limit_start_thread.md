@@ -51,7 +51,7 @@ Limit version of starting a separate thread
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3431:
  popToSp 0
  popToSp 4

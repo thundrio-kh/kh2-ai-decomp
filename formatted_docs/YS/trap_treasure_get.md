@@ -22,7 +22,7 @@ Get a treasure
 
 <details>
 	<summary>Example Usage From obj\M_EX350_13\m_ex.bdscript</summary>
-```
+```plaintext
 L7928:
  popToSp 0
  pushImm 588

@@ -86,7 +86,7 @@ Forces an object to leave
 
 <details>
 	<summary>Example Usage From obj\B_EX310\b_ex.bdscript</summary>
-```
+```plaintext
 L2726:
  popToSp 0
  pushFromFSp 0

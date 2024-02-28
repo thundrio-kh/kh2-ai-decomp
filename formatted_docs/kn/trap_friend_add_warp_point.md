@@ -22,7 +22,7 @@ Add a friend warp point at a position
 
 <details>
 	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
-```
+```plaintext
 L873:
  pushFromPSp 48
  pushImmf 0

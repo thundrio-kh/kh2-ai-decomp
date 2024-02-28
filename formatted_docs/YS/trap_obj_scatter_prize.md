@@ -478,7 +478,7 @@ Scatter a number of prize orbs from an enemy
 
 <details>
 	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```
+```plaintext
 L185:
  pushFromPWp W320
  pushImm 137

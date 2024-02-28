@@ -899,7 +899,7 @@ Performs vector subtraction (vec1 - vec2)
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L511:
  pushFromPSp 48
  pushImmf 0.523599

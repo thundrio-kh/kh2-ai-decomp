@@ -21,7 +21,7 @@ Enable the item row on the command menu
 
 <details>
 	<summary>Example Usage From msn\TT32_MS303\tt32.bdscript</summary>
-```
+```plaintext
 L60:
  syscall 1, 322 ; trap_command_enable_item (0 in, 0 out)
  pushImm 16130

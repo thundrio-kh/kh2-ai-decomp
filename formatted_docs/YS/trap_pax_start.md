@@ -57,7 +57,7 @@ Starts a PAX effect
 
 <details>
 	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```
+```plaintext
 L60:
  pushFromPSpVal 0
  pushFromPSpVal 0

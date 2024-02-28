@@ -49,7 +49,7 @@ Returns if the history flag is set for the object
 
 <details>
 	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```
+```plaintext
 L187:
  popToSp 0
  pushFromFSp 0

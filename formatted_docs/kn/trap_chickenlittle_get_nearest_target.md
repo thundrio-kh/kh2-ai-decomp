@@ -25,7 +25,7 @@ Have chicken little target the nearest enemy
 
 <details>
 	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
-```
+```plaintext
 L584:
  popToSp 0
  popToSp 4

@@ -269,7 +269,7 @@ Starts a new magic thread
 
 <details>
 	<summary>Example Usage From magic\BLIZZARD_1\bliz.bdscript</summary>
-```
+```plaintext
 L1238:
  popToSp 0
  popToSp 4

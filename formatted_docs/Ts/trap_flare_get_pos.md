@@ -27,7 +27,7 @@ Get the position of Flare Force
 
 <details>
 	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```
+```plaintext
 L2440:
  popToSp 0
  pushFromFSpVal 80

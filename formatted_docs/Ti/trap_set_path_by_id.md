@@ -27,7 +27,7 @@ Set a path for an object by ID
 
 <details>
 	<summary>Example Usage From obj\F_TT110\f_tt.bdscript</summary>
-```
+```plaintext
 L4131:
  pushFromFSpVal 120
  popToSpVal 116

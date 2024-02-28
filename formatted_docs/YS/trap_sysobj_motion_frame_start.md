@@ -752,7 +752,7 @@ Have an object start a motion set entry at a specific frame number
 
 <details>
 	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```
+```plaintext
 L6629:
  popToSp 0
  pushFromFSp 0

@@ -51,7 +51,7 @@ returns if the damage is happening while the enemy is in an animation
 
 <details>
 	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```
+```plaintext
 L4913:
  pushFromFSp 0
  syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)

@@ -31,7 +31,7 @@ activates a menuflag
 
 <details>
 	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```
+```plaintext
 TR3:
  syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
  pushImm 80

@@ -24,7 +24,7 @@ Related to trinity limit functionality, probably resets the custom command menu
 
 <details>
 	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```
+```plaintext
 L8991:
  pushFromFSp 0
  fetchValue 0

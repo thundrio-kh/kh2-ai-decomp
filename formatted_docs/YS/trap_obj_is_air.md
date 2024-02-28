@@ -600,7 +600,7 @@ returns if the object is currently in the air
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2833:
  popToSp 0
  pushImm 0

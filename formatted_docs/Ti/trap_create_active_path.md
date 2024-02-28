@@ -23,7 +23,7 @@ Creates an active path from one object to another
 
 <details>
 	<summary>Example Usage From obj\M_EX900\m_ex.bdscript</summary>
-```
+```plaintext
 L5933:
  popToSp 4
  popToSp 8

@@ -151,7 +151,7 @@ returns if the is_no_control flag is set for the motion set
 
 <details>
 	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```
+```plaintext
 L4282:
  popToSp 4
  popToSp 8

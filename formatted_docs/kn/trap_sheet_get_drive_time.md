@@ -29,7 +29,7 @@ Get the amount of drive time left
 
 <details>
 	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
-```
+```plaintext
 L1306:
  gosub 8, L1348
  memcpyToSp 16, 16

@@ -609,7 +609,7 @@ Returns true if the current motion set has ended
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L2619:
  pushFromFSp 4
  fetchValue 4

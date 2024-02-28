@@ -28,7 +28,7 @@ Scatter Mulan orbs from an enemy
 
 <details>
 	<summary>Example Usage From msn\MU01_MS102\mu01.bdscript</summary>
-```
+```plaintext
 L118:
  jz L139
  pushFromFSp 8

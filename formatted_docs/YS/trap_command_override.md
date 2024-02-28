@@ -93,7 +93,7 @@ Overrides the specified slot on the command cage with priority 100
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5490:
  jz L5505
  pushFromFSp 12

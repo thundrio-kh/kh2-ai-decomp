@@ -254,7 +254,7 @@ Create a lookat object using an object as a base
 
 <details>
 	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```
+```plaintext
 L1138:
  popToSp 0
  pushFromPAi L2833before_check' (L2833)

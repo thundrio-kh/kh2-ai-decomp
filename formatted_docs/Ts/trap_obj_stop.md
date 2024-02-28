@@ -27,7 +27,7 @@ Stop an object
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L4096:
  pushFromFSpVal 64
  syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)

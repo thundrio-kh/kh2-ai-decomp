@@ -234,7 +234,7 @@ Tells the object to fall
 
 <details>
 	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
-```
+```plaintext
 TR13:
  pushFromPWp W0
  pushImmf 0

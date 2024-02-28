@@ -70,7 +70,7 @@ Associates a number with a new combo group, for a series of attacks that are in 
 
 <details>
 	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```
+```plaintext
 L951:
  popToSp 0
  pushImm 0

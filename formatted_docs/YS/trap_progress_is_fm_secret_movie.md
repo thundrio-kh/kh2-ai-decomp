@@ -25,7 +25,7 @@ Checks if the Final Mix Secret Movie is unlocked
 
 <details>
 	<summary>Example Usage From ard\es00\es_u.bdscript</summary>
-```
+```plaintext
 TR3:
  gosub 4, L39
  syscall 0, 103 ; trap_progress_is_fm_secret_movie (0 in, 1 out)

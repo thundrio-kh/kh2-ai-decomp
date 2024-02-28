@@ -26,7 +26,7 @@ Get the position of the exclamation mark in the Aladdin limit
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L3957:
  popToSp 0
  popToSp 4

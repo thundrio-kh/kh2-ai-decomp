@@ -63,7 +63,7 @@ Set a worldflag to true
 
 <details>
 	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```
+```plaintext
 L358:
  pushFromPSpVal 12
  pushImm 0

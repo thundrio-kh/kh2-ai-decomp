@@ -34,7 +34,7 @@ Returns the amount of cost left in the room before the capacity is filled (YS::C
 
 <details>
 	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```
+```plaintext
 L230:
  dup 
  jz L254

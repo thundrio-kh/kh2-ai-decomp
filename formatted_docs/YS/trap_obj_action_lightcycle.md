@@ -25,7 +25,7 @@ Does a lightcycle specific action
 
 <details>
 	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
-```
+```plaintext
 L23:
  popToSp 0
  pushFromFSp 0

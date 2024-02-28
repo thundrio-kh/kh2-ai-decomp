@@ -54,7 +54,7 @@ Return the time limit for the limit?
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L5110:
  pushFromFSpVal 44
  dup 

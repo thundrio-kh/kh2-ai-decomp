@@ -32,7 +32,7 @@ Removes/reduces an item from inventory.
 
 <details>
 	<summary>Example Usage From ard\ca01\ca_d.bdscript</summary>
-```
+```plaintext
 TR2:
  pushImm 372
  pushImm 100

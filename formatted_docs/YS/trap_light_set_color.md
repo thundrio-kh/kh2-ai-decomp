@@ -94,7 +94,7 @@ sets a color for a light, "a" value is always 128
 
 <details>
 	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```
+```plaintext
 L6541:
  popToSp 4
  popToSp 8
