@@ -17,10 +17,53 @@ starts a motion set id that captures an object, returning the id of the capture
 | Name | Type
 |------|-----
 | motion_capture_id   | int   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L2804:
+ pushFromPSpVal 0
+ pushFromPSp 4
+ pushImm 254
+ pushImmf 0
+ syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
+ drop 
+ pushFromPSp 4
+ pushImm 8
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromPSp 64
+ pushImmf 0
+ pushImmf -2500
+ pushImmf -2500
+ pushImmf 1
+ gosub 28, L864
+ pushFromPSpVal 0
+ pushImm 16384
+ pushFromPSp 64
+ syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 64
+ pushImmf 180
+ popToSp 80
+ pushFromPSp 64
+ pushFromPSp 4
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 48
+ pushImm 1
+ popToSp 92
+ pushImmf 12
+ gosub 28, L3021
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -227,49 +270,5 @@ starts a motion set id that captures an object, returning the id of the capture
 | obj\P_EX340\p_ex.bdscript       | ((P) Tinker Bell)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L2804:
- pushFromPSpVal 0
- pushFromPSp 4
- pushImm 254
- pushImmf 0
- syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
- drop 
- pushFromPSp 4
- pushImm 8
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromPSp 64
- pushImmf 0
- pushImmf -2500
- pushImmf -2500
- pushImmf 1
- gosub 28, L864
- pushFromPSpVal 0
- pushImm 16384
- pushFromPSp 64
- syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 64
- pushImmf 180
- popToSp 80
- pushFromPSp 64
- pushFromPSp 4
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 48
- pushImm 1
- popToSp 92
- pushImmf 12
- gosub 28, L3021
-```
-</details>
 

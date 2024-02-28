@@ -11,18 +11,7 @@ Kill a stitch effect
 | index   | int   | Index of effect to kill
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L3436:
  popToSp 0
@@ -42,5 +31,15 @@ L3436:
  syscall 10, 16 ; trap_stitch_effect_kill (2 in, 0 out)
  jmp L3468
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+
+
 

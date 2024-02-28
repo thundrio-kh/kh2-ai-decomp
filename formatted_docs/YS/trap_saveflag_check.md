@@ -14,10 +14,23 @@ Returns the value of a save flag
 | Name | Type
 |------|-----
 | value   | bool   
+Example Usage From ard\al09\al09.bdscript
+```plaintext
+L58:
+ pushImm 64
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ dup 
+ jz L72
+ pushImm 65
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           
@@ -34,19 +47,5 @@ Returns the value of a save flag
 | msn\TT02_MS201\save.bdscript       |           
 | obj\F_AL030\f_al.bdscript       | ((F) ??? (AL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```plaintext
-L58:
- pushImm 64
- syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- dup 
- jz L72
- pushImm 65
- syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqzv
-```
-</details>
 

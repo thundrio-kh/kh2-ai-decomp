@@ -14,15 +14,14 @@ Gets the current action of a friend
 | Name | Type
 |------|-----
 | action   | char *   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

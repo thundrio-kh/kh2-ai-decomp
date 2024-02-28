@@ -14,10 +14,43 @@ Computes the arctangent of the ratio of the x and z components of the vector
 | Name | Type
 |------|-----
 | result   | float   
+Example Usage From limit\donald\limi.bdscript
+```plaintext
+L3072:
+ pushFromPSp 48
+ pushImmf 0
+ pushImmf -200
+ pushImmf 250
+ pushImmf 1
+ gosub 24, L1753
+ pushFromPSp 48
+ gosub 24, L1148
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
+ pushImmf 2.094395
+ pushFromFSp 64
+ negf 
+ mulf 
+ addf 
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 48
+ pushImm 0
+ popToSp 72
+ pushImmf 0
+ popToSp 68
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
@@ -172,39 +205,5 @@ Computes the arctangent of the ratio of the x and z components of the vector
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```plaintext
-L3072:
- pushFromPSp 48
- pushImmf 0
- pushImmf -200
- pushImmf 250
- pushImmf 1
- gosub 24, L1753
- pushFromPSp 48
- gosub 24, L1148
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
- pushImmf 2.094395
- pushFromFSp 64
- negf 
- mulf 
- addf 
- syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 48
- pushImm 0
- popToSp 72
- pushImmf 0
- popToSp 68
-```
-</details>
 

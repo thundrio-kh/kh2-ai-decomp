@@ -9,10 +9,21 @@ Increments the "Healed Party Members" value on the battle report at the end of t
 |------|------|------------
 
 
+Example Usage From magic\CURE_1\cure.bdscript
+```plaintext
+L221:
+ drop 
+ pushFromFSp 36
+ jz L230
+ syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
+ jmp L230
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           
@@ -22,17 +33,5 @@ Increments the "Healed Party Members" value on the battle report at the end of t
 | magic\CURE_3\cure.bdscript       |           
 | magic\CURE_3lk\cure.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```plaintext
-L221:
- drop 
- pushFromFSp 36
- jz L230
- syscall 0, 100 ; trap_saveram_increment_friend_recov (0 in, 0 out)
- jmp L230
-```
-</details>
 

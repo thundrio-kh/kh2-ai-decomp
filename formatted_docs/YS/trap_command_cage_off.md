@@ -9,19 +9,7 @@ Turns off temporary barriers, like those used during the escape from Hades seque
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HE05_MS102\he05.bdscript       |           
-| msn\TT40_KINOKO_AXE\kino.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HE05_MS102\he05.bdscript</summary>
+Example Usage From msn\HE05_MS102\he05.bdscript
 ```plaintext
 L44:
  syscall 1, 118 ; trap_command_cage_off (0 in, 0 out)
@@ -33,5 +21,16 @@ L44:
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
  jmp L119
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HE05_MS102\he05.bdscript       |           
+| msn\TT40_KINOKO_AXE\kino.bdscript       |           
+
+
 

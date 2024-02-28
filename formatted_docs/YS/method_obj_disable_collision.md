@@ -11,10 +11,32 @@ Turns off part of an objects collision
 | group   | int   | Probably which part of the collision to turn off. Range of values used between 0 and 30
 
 
+Example Usage From limit\jack\limi.bdscript
+```plaintext
+L1904:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 80
+ jz L1953
+ pushFromFSp 4
+ pushFromPSpVal 4
+ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+ eqz 
+ jz L1937
+ pushFromFSp 4
+ pushImm 14
+ syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 16
+ syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
+ jmp L1951
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           
@@ -151,28 +173,5 @@ Turns off part of an objects collision
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```plaintext
-L1904:
- popToSp 4
- popToSp 0
- pushFromFSpVal 80
- jz L1953
- pushFromFSp 4
- pushFromPSpVal 4
- syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
- eqz 
- jz L1937
- pushFromFSp 4
- pushImm 14
- syscall 1, 54 ; method_obj_reset_collision (2 in, 0 out)
- pushFromFSp 4
- pushImm 16
- syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
- jmp L1951
-```
-</details>
 

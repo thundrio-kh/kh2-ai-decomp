@@ -15,10 +15,50 @@ Calculates the rotation of a vector in the XZ plane
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2130:
+ pushFromFSpVal 104
+ jz L2209
+ pushFromFSp 0
+ gosub 8, L2389
+ pushImmf 0
+ subf 
+ supzf 
+ jz L2207
+ pushFromPSpVal 16
+ pushFromFSp 4
+ syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
+ popToSp 12
+ pushFromFSp 12
+ syscall 0, 23 ; trap_absf (1 in, 1 out)
+ pushFromFSp 0
+ gosub 8, L2389
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ mulf 
+ subf 
+ supzf 
+ jz L2191
+ pushFromFSp 12
+ pushFromFSp 12
+ syscall 0, 23 ; trap_absf (1 in, 1 out)
+ divf 
+ popToSp 12
+ pushFromFSp 12
+ pushFromFSp 0
+ gosub 8, L2389
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ mulf 
+ mulf 
+ popToSp 12
+ jmp L2191
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -393,46 +433,5 @@ Calculates the rotation of a vector in the XZ plane
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2130:
- pushFromFSpVal 104
- jz L2209
- pushFromFSp 0
- gosub 8, L2389
- pushImmf 0
- subf 
- supzf 
- jz L2207
- pushFromPSpVal 16
- pushFromFSp 4
- syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
- popToSp 12
- pushFromFSp 12
- syscall 0, 23 ; trap_absf (1 in, 1 out)
- pushFromFSp 0
- gosub 8, L2389
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- mulf 
- subf 
- supzf 
- jz L2191
- pushFromFSp 12
- pushFromFSp 12
- syscall 0, 23 ; trap_absf (1 in, 1 out)
- divf 
- popToSp 12
- pushFromFSp 12
- pushFromFSp 0
- gosub 8, L2389
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- mulf 
- mulf 
- popToSp 12
- jmp L2191
-```
-</details>
 

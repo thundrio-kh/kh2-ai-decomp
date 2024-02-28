@@ -10,10 +10,25 @@ Turns off control of the object running this function.
 | type   | int   | Unknown purpose. Possible values 0 or 1
 
 
+Example Usage From msn\TT12_WORK_BOX\tt12.bdscript
+```plaintext
+L61:
+ pushImm 0
+ syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
+ pushImm 0
+ pushImm L108
+ pushImm 0
+ pushImm 0
+ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+ drop 
+ jmp L83
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT12_WORK_BOX\tt12.bdscript       |           
@@ -30,21 +45,5 @@ Turns off control of the object running this function.
 | obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\TT12_WORK_BOX\tt12.bdscript</summary>
-```plaintext
-L61:
- pushImm 0
- syscall 1, 42 ; func_obj_control_off (1 in, 0 out)
- pushImm 0
- pushImm L108
- pushImm 0
- pushImm 0
- syscall 0, 9 ; trap_thread_start (4 in, 1 out)
- drop 
- jmp L83
-```
-</details>
 

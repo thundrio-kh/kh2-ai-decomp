@@ -13,15 +13,14 @@ Set parameters for a gauge
 | id   | int   | id of the gauge
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

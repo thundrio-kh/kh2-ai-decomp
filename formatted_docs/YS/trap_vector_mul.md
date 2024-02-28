@@ -15,10 +15,52 @@ Multiplies two vectors together
 | Name | Type
 |------|-----
 | vec   | kn::FVector *   
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L985:
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+ eqz 
+ jz L1190
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromPSp 16
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushImm 4
+ add 
+ pushImmf 0
+ memcpy 0
+ pushFromPSp 32
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ popToSp 52
+ pushFromFSp 52
+ pushImmf 200
+ subf 
+ supzf 
+ jz L1060
+ pushFromPSp 32
+ pushFromFSp 52
+ pushImmf 0.9
+ mulf 
+ syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 32
+ jmp L1074
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -340,48 +382,5 @@ Multiplies two vectors together
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L985:
- pushFromFSp 0
- fetchValue 4
- syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
- eqz 
- jz L1190
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromPSp 16
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 32
- pushFromPSp 32
- pushImm 4
- add 
- pushImmf 0
- memcpy 0
- pushFromPSp 32
- syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
- popToSp 52
- pushFromFSp 52
- pushImmf 200
- subf 
- supzf 
- jz L1060
- pushFromPSp 32
- pushFromFSp 52
- pushImmf 0.9
- mulf 
- syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 32
- jmp L1074
-```
-</details>
 

@@ -17,24 +17,7 @@ Checks if the cross vector hits the line drawn between from and to. Unknown what
 | Name | Type
 |------|-----
 | res_y   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA040_PUB\b_ca.bdscript       | ()          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
-| obj\B_NM110_HEAD\b_nm.bdscript       | ((B) The Experiment (Head))          
-| obj\F_TT170\f_tt.bdscript       | ((F) ??? - flying attack balls - bees? (TT))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA040_PUB\b_ca.bdscript</summary>
+Example Usage From obj\B_CA040_PUB\b_ca.bdscript
 ```plaintext
 L5052:
  popToSp 4
@@ -67,5 +50,21 @@ L5052:
  msbi 
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA040_PUB\b_ca.bdscript       | ()          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
+| obj\B_NM110_HEAD\b_nm.bdscript       | ((B) The Experiment (Head))          
+| obj\F_TT170\f_tt.bdscript       | ((F) ??? - flying attack balls - bees? (TT))          
+
+
 

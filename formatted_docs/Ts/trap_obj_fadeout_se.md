@@ -11,18 +11,7 @@ Fadeout a sound effect
 | fadetime   | int   | Time to take to fade out
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L13066:
  popToSp 0
@@ -39,5 +28,15 @@ L13066:
  popToSpVal 0
  jmp L13093
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+
+
 

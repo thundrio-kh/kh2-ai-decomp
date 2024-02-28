@@ -11,10 +11,21 @@ sets a value to watch on the specified widget
 | id   | int   | id of a widget
 
 
+Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+```plaintext
+L209:
+ pushFromFSp 0
+ fetchValue 8
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSpVal 4
+ syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           
@@ -29,17 +40,5 @@ sets a value to watch on the specified widget
 | msn\TT36_KINOKO_SAI\kino.bdscript       |           
 | msn\WI02_KINOKO_MAR\kino.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```plaintext
-L209:
- pushFromFSp 0
- fetchValue 8
- syscall 4, 36 ; trap_score_score (1 in, 1 out)
- pushFromFSpVal 4
- syscall 4, 39 ; trap_mission_set_watch (2 in, 0 out)
-```
-</details>
 

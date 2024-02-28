@@ -12,31 +12,7 @@ Sets a hitback in a given direction
 | dist   | float   | A distance value (game uses range of 50-200
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| magic\blizzard1\bliz.bdscript       |           
-| magic\BLIZZARD_1\bliz.bdscript       |           
-| magic\BLIZZARD_1lk\bliz.bdscript       |           
-| magic\BLIZZARD_2\bliz.bdscript       |           
-| magic\BLIZZARD_2lk\bliz.bdscript       |           
-| magic\BLIZZARD_3\bliz.bdscript       |           
-| magic\BLIZZARD_3lk\bliz.bdscript       |           
-| magic\LK_BLIZZARD_1\bliz.bdscript       |           
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-
-</details>
-
-<details>
-	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
+Example Usage From magic\blizzard1\bliz.bdscript
 ```plaintext
 L60:
  pushFromPSpVal 0
@@ -112,5 +88,28 @@ L60:
  pushImm 0
  popToSp 72
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| magic\blizzard1\bliz.bdscript       |           
+| magic\BLIZZARD_1\bliz.bdscript       |           
+| magic\BLIZZARD_1lk\bliz.bdscript       |           
+| magic\BLIZZARD_2\bliz.bdscript       |           
+| magic\BLIZZARD_2lk\bliz.bdscript       |           
+| magic\BLIZZARD_3\bliz.bdscript       |           
+| magic\BLIZZARD_3lk\bliz.bdscript       |           
+| magic\LK_BLIZZARD_1\bliz.bdscript       |           
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+
+
 

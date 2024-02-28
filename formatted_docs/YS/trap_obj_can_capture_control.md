@@ -14,15 +14,14 @@ Returns if the objects control can be captured
 | Name | Type
 |------|-----
 | can_control   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

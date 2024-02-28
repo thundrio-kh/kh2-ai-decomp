@@ -14,10 +14,26 @@ returns the parameter id associated with an attack
 | Name | Type
 |------|-----
 | paramid   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+TR26:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 0
+ syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
+ dup 
+ pushImm 770
+ sub 
+ jz L45
+ jmp L61
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -119,22 +135,5 @@ returns the parameter id associated with an attack
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-TR26:
- popToSp 0
- popToSp 4
- popToSp 8
- pushFromFSp 0
- syscall 2, 25 ; trap_attack_get_param_id (1 in, 1 out)
- dup 
- pushImm 770
- sub 
- jz L45
- jmp L61
-```
-</details>
 

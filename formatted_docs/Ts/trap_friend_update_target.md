@@ -15,19 +15,7 @@ Updates the target of a friend
 | Name | Type
 |------|-----
 | is_updated   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6099:
  popToSp 0
@@ -51,5 +39,16 @@ L6099:
  popToSpVal 40
  jmp L6141
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+
+
 

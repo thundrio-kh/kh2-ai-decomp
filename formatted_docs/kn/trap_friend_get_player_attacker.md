@@ -14,18 +14,7 @@ Get a enemy attacking the player and if the argument is true also stop the enemy
 | Name | Type
 |------|-----
 | obj   | YS::OBJ_125   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L8205:
  popToSp 4
@@ -42,5 +31,15 @@ L8205:
  popToSp 4
  jmp L8232
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

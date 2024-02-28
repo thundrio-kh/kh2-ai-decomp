@@ -17,10 +17,28 @@ Starts an animation associated with a limit
 | Name | Type
 |------|-----
 | res   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L758:
+ pushFromPSp 48
+ pushImm 64
+ add 
+ pushFromFSp 180
+ memcpy 0
+ pushFromPWp W0
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 254
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -44,24 +62,5 @@ Starts an animation associated with a limit
 | limit\trinity_zz\limi.bdscript       |           
 | limit\tron\limi.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L758:
- pushFromPSp 48
- pushImm 64
- add 
- pushFromFSp 180
- memcpy 0
- pushFromPWp W0
- fetchValue 0
- pushFromFSp 0
- pushImm 254
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop
-```
-</details>
 

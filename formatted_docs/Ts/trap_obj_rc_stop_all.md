@@ -13,22 +13,7 @@ Stop the object from doing anything else due to an RC
 | force   | bool   | If the stop should be forced?
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
-| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
-| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
-| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
+Example Usage From obj\B_EX120\b_ex.bdscript
 ```plaintext
 L9190:
  popToSp 4
@@ -82,5 +67,19 @@ L9190:
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
+| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
+| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
+| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

@@ -11,29 +11,7 @@ Set the distance rate for an object
 | rate   | float   | Rate amount, from 0 to 1
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
-| obj\B_NM110_L_ARM\b_nm.bdscript       | ((B) The Experiment (Left Hand))          
-| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
-| obj\M_EX120\m_ex.bdscript       | ((M) Emerald Blues)          
-| obj\M_EX120_HB\m_ex.bdscript       | ((M) Spring Metal)          
-| obj\M_EX120_NM\m_ex.bdscript       | ((M) Emerald Blues (NM))          
-| obj\M_EX120_TR\m_ex.bdscript       | ((M) Emerald Blues (TR))          
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-| obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L15007:
  popToSp 0
@@ -65,5 +43,26 @@ L15007:
  syscall 7, 32 ; trap_vacuum_set_effective_range (2 in, 0 out)
  jmp L15068
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
+| obj\B_NM110_L_ARM\b_nm.bdscript       | ((B) The Experiment (Left Hand))          
+| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
+| obj\M_EX120\m_ex.bdscript       | ((M) Emerald Blues)          
+| obj\M_EX120_HB\m_ex.bdscript       | ((M) Spring Metal)          
+| obj\M_EX120_NM\m_ex.bdscript       | ((M) Emerald Blues (NM))          
+| obj\M_EX120_TR\m_ex.bdscript       | ((M) Emerald Blues (TR))          
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+| obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
+
+
 

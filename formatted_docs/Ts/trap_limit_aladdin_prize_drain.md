@@ -9,18 +9,7 @@ Set Aladdin prize drain
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L5053:
  popToSp 0
@@ -29,5 +18,15 @@ L5053:
  syscall 6, 31 ; trap_limit_aladdin_prize_drain (0 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+
+
 

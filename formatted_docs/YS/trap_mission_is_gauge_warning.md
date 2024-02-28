@@ -14,15 +14,14 @@ Returns if the specified gauge at the warning level
 | Name | Type
 |------|-----
 | is_warning   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

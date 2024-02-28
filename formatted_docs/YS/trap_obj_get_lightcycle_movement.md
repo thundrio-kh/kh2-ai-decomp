@@ -16,21 +16,7 @@ Get the movement for the light cycle to head to a target
 | Name | Type
 |------|-----
 | movement   | kn::FVector   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          
-| obj\M_EX600_LC_ATK\m_ex.bdscript       | ((M) Magnum Loader (blue))          
-| obj\M_EX600_LC_CHG\m_ex.bdscript       | ((M) Magnum Loader (yellow))          
-| obj\M_EX600_LC_GRD\m_ex.bdscript       | ((M) Magnum Loader (green))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
+Example Usage From obj\M_EX600_LC\m_ex.bdscript
 ```plaintext
 L62:
  pushFromFSp 0
@@ -45,5 +31,18 @@ L62:
  halt 
  jmp L62
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          
+| obj\M_EX600_LC_ATK\m_ex.bdscript       | ((M) Magnum Loader (blue))          
+| obj\M_EX600_LC_CHG\m_ex.bdscript       | ((M) Magnum Loader (yellow))          
+| obj\M_EX600_LC_GRD\m_ex.bdscript       | ((M) Magnum Loader (green))          
+
+
 

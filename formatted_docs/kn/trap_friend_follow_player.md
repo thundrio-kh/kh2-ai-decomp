@@ -10,19 +10,7 @@ Have a friend follow the player
 | friend   | kn::Friend_0 *   | A friend object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6080:
  pushFromPWp W364
@@ -36,5 +24,16 @@ L6080:
  halt 
  jmp L6080
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

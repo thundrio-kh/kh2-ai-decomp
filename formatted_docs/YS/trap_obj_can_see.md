@@ -15,18 +15,7 @@ Checks if object can see target object
 | Name | Type
 |------|-----
 | can_see   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
+Example Usage From obj\B_CA010\b_ca.bdscript
 ```plaintext
 L6358:
  pushFromFSp 64
@@ -40,5 +29,15 @@ L6358:
  syscall 1, 347 ; trap_obj_can_see (2 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
+
+
 

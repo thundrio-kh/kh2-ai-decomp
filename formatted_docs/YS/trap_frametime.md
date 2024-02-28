@@ -13,10 +13,27 @@ Returns the time (since the VM started?) as a number of frames.
 | Name | Type
 |------|-----
 | numframes   | int   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L158:
+ pushFromFSp 0
+ pushImmf 0
+ subf 
+ supzf 
+ jz L177
+ pushFromFSp 0
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 0
+ halt 
+ jmp L158
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -1032,23 +1049,5 @@ Returns the time (since the VM started?) as a number of frames.
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L158:
- pushFromFSp 0
- pushImmf 0
- subf 
- supzf 
- jz L177
- pushFromFSp 0
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSp 0
- halt 
- jmp L158
-```
-</details>
 

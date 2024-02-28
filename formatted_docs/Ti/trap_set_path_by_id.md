@@ -15,18 +15,7 @@ Set a path for an object by ID
 | Name | Type
 |------|-----
 | path   | Ti::Path_3   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TT110\f_tt.bdscript</summary>
+Example Usage From obj\F_TT110\f_tt.bdscript
 ```plaintext
 L4131:
  pushFromFSpVal 120
@@ -41,5 +30,15 @@ L4131:
  drop 
  jmp L4236
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
+
+
 

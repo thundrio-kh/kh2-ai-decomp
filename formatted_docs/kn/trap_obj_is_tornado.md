@@ -14,18 +14,7 @@ Returns if the object is a tornado object
 | Name | Type
 |------|-----
 | is_tornado   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L7335:
  jz L7542
@@ -52,5 +41,15 @@ L7335:
  syscall 2, 17 ; trap_attack_strike (4 in, 0 out)
  jmp L7526
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

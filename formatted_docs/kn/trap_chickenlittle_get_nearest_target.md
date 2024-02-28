@@ -13,18 +13,7 @@ Have chicken little target the nearest enemy
 | h   | float   | Height to look for targets
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L584:
  popToSp 0
@@ -53,5 +42,15 @@ L584:
  syscall 10, 51 ; trap_chickenlittle_get_nearest_target (4 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

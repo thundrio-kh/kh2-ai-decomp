@@ -15,10 +15,47 @@ Get the direction of a path
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2613:
+ pushFromFSp 0
+ pushFromFSpVal 68
+ syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushFromPSp 16
+ syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
+ popToSp 32
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImm 1
+ sub 
+ eqz 
+ jz L2689
+ pushFromFSp 32
+ pushImmf 1.570796
+ subf 
+ supzf 
+ dup 
+ jnz L2673
+ pushFromFSp 32
+ pushImmf -1.570796
+ subf 
+ infzf 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -259,43 +296,5 @@ Get the direction of a path
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2613:
- pushFromFSp 0
- pushFromFSpVal 68
- syscall 5, 3 ; trap_get_path_dir (2 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- pushFromPSp 16
- syscall 0, 21 ; trap_vector_get_rot_xz (2 in, 1 out)
- popToSp 32
- pushFromFSp 0
- fetchValue 4
- syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
- pushImm 1
- sub 
- eqz 
- jz L2689
- pushFromFSp 32
- pushImmf 1.570796
- subf 
- supzf 
- dup 
- jnz L2673
- pushFromFSp 32
- pushImmf -1.570796
- subf 
- infzf 
- neqzv
-```
-</details>
 

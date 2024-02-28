@@ -12,38 +12,7 @@ Moves to a random space within the given radius
 | is_air   | bool   | Is the space to move in the air
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| limit\jack\limi.bdscript       |           
-| limit\riku\limi.bdscript       |           
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
-| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
-| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_HE020\b_he.bdscript       | ((B) Cerberus)          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-| obj\N_EX760_BTL_CLSM\n_ex.bdscript       | ((N) Pete (BTL) (CLSM) (EX))          
-| obj\N_EX760_BTL_HERCULES\n_ex.bdscript       | ((N) Pete (BTL_HERCULES) (EX))          
-| obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
-| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3079:
  pushFromPSpVal 4
@@ -98,5 +67,35 @@ L3079:
  gosub 12, L5024
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| limit\jack\limi.bdscript       |           
+| limit\riku\limi.bdscript       |           
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
+| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
+| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_HE020\b_he.bdscript       | ((B) Cerberus)          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+| obj\N_EX760_BTL_CLSM\n_ex.bdscript       | ((N) Pete (BTL) (CLSM) (EX))          
+| obj\N_EX760_BTL_HERCULES\n_ex.bdscript       | ((N) Pete (BTL_HERCULES) (EX))          
+| obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
+| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

@@ -10,20 +10,7 @@ enable occlusion culling for all bones in an culling object
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\F_EH050\f_eh.bdscript       | ((F) Floating building 1 (EH))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 TR14:
  pushFromPWp W576
@@ -34,5 +21,17 @@ TR14:
  syscall 1, 256 ; trap_obj_enable_occ (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\F_EH050\f_eh.bdscript       | ((F) Floating building 1 (EH))          
+
+
 

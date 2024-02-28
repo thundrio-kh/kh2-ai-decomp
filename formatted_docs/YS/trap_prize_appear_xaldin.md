@@ -11,18 +11,7 @@ Makes a number of prizes for mushroom 3 appear at a position
 | num   | int   | number of prizes
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX350_03\m_ex.bdscript</summary>
+Example Usage From obj\M_EX350_03\m_ex.bdscript
 ```plaintext
 L440:
  jz L474
@@ -42,5 +31,15 @@ L440:
  popToSp 12
  jmp L418
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          
+
+
 

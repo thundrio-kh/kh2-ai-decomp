@@ -15,10 +15,24 @@ Checks if the motion of an object is synced with the child object
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From obj\P_CA000\p_ca.bdscript
+```plaintext
+L4032:
+ pushFromPSp 8
+ pushFromPSp 28
+ syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
+ jz L4048
+ pushFromPSp 8
+ pushFromPSp 28
+ syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
+ jmp L4048
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
@@ -32,20 +46,5 @@ Checks if the motion of an object is synced with the child object
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
-```plaintext
-L4032:
- pushFromPSp 8
- pushFromPSp 28
- syscall 10, 40 ; trap_obj_is_motion_sync (2 in, 1 out)
- jz L4048
- pushFromPSp 8
- pushFromPSp 28
- syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
- jmp L4048
-```
-</details>
 

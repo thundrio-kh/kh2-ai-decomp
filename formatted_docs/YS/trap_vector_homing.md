@@ -12,10 +12,21 @@ Performs a homing calculation between two objects.
 | limit   | float   | Distance limit for the homing calculation
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2209:
+ pushFromPSpVal 16
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 8, L2389
+ syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -168,17 +179,5 @@ Performs a homing calculation between two objects.
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2209:
- pushFromPSpVal 16
- pushFromFSp 4
- pushFromFSp 0
- gosub 8, L2389
- syscall 0, 46 ; trap_vector_homing (3 in, 0 out)
-```
-</details>
 

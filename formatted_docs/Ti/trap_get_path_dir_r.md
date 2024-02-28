@@ -16,15 +16,14 @@ Get the reverse direction of a path
 | Name | Type
 |------|-----
 | dir_r   | kn::FVector *   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

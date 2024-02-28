@@ -11,10 +11,26 @@ Searches for an existing object with the given serial number (a value set in a s
 | serial   | int   | Serial number to search
 
 
+Example Usage From ard\he03\he_t.bdscript
+```plaintext
+L134:
+ pushFromPSp 32
+ pushFromFSp 0
+ syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
+ pushFromPSp 32
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L154
+ pushFromPSp 32
+ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+ jmp L154
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           
@@ -43,22 +59,5 @@ Searches for an existing object with the given serial number (a value set in a s
 | obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          
 | obj\N_BB070_BTL\n_bb.bdscript       | ((N) Mrs. Potts (BTL) (BB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```plaintext
-L134:
- pushFromPSp 32
- pushFromFSp 0
- syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
- pushFromPSp 32
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L154
- pushFromPSp 32
- syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- jmp L154
-```
-</details>
 

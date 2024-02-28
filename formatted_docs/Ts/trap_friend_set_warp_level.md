@@ -10,15 +10,14 @@ Set the warp level of a friend
 | level   | kn::Friend_0::WARP_LEVEL   | level to set
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

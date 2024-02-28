@@ -14,18 +14,7 @@ Summon a new instance of an object
 | Name | Type
 |------|-----
 | new_obj   | YS::OBJ_254 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX740\m_ex.bdscript</summary>
+Example Usage From obj\M_EX740\m_ex.bdscript
 ```plaintext
 L1922:
  popToSp 0
@@ -71,5 +60,15 @@ L1922:
  syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
  jmp L2010
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          
+
+
 

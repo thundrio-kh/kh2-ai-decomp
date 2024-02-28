@@ -13,20 +13,7 @@ checks if the mission custom hud is activated
 | Name | Type
 |------|-----
 | is_activated   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
-| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
-| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX120\b_ex.bdscript</summary>
+Example Usage From obj\B_EX120\b_ex.bdscript
 ```plaintext
 TR10:
  popToSp 0
@@ -40,5 +27,17 @@ TR10:
  jz L9548
  jmp L9564
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
+| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
+| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
+
+
 

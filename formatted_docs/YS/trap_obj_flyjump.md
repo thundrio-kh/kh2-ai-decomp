@@ -14,10 +14,39 @@ Prepares and starts a flyjump for an object
 | start_with_vel   | bool   | If velocity should be applied to the start of the motion, all vanilla game files use a value of 1 here
 
 
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L4450:
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushFromFSp 4
+ fetchValue 0
+ memcpy 0
+ pushFromPSp 16
+ pushImm 12
+ add 
+ pushFromFSp 4
+ fetchValue 24
+ memcpy 0
+ pushFromFSp 4
+ fetchValue 32
+ jz L4496
+ pushFromFSp 0
+ pushFromPSp 16
+ pushFromFSp 4
+ fetchValue 20
+ pushImmf 0
+ pushImm 1
+ syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
+ jmp L4512
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -147,35 +176,5 @@ Prepares and starts a flyjump for an object
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L4450:
- pushFromPSp 16
- pushImm 4
- add 
- pushFromFSp 4
- fetchValue 0
- memcpy 0
- pushFromPSp 16
- pushImm 12
- add 
- pushFromFSp 4
- fetchValue 24
- memcpy 0
- pushFromFSp 4
- fetchValue 32
- jz L4496
- pushFromFSp 0
- pushFromPSp 16
- pushFromFSp 4
- fetchValue 20
- pushImmf 0
- pushImm 1
- syscall 1, 168 ; trap_obj_flyjump (5 in, 0 out)
- jmp L4512
-```
-</details>
 

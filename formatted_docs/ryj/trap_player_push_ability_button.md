@@ -14,15 +14,14 @@ Chcks if the player is pushing the reaction command button
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

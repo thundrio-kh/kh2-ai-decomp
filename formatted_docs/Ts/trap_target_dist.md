@@ -15,10 +15,56 @@ Get the distance to a target from the position
 | Name | Type
 |------|-----
 | distance   | float   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L833:
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L920
+ pushFromFSp 180
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ fetchValue 4
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 208
+ pushFromPSp 208
+ fetchValue 4
+ subf 
+ infzf 
+ jz L918
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushFromFSp 180
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ fetchValue 4
+ memcpy 0
+ pushFromFSp 180
+ pushFromPSp 16
+ syscall 6, 9 ; trap_target_dist (2 in, 1 out)
+ pushImmf 500
+ subf 
+ infzf 
+ jz L916
+ pushFromPAi L6864 ; ___ai 'break' (L6864)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ jmp L1049
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -116,52 +162,5 @@ Get the distance to a target from the position
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L833:
- pushFromFSp 180
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L920
- pushFromFSp 180
- syscall 1, 120 ; trap_target_pos (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- fetchValue 4
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 208
- pushFromPSp 208
- fetchValue 4
- subf 
- infzf 
- jz L918
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 4
- add 
- pushFromFSp 180
- syscall 1, 120 ; trap_target_pos (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- fetchValue 4
- memcpy 0
- pushFromFSp 180
- pushFromPSp 16
- syscall 6, 9 ; trap_target_dist (2 in, 1 out)
- pushImmf 500
- subf 
- infzf 
- jz L916
- pushFromPAi L6864 ; ___ai 'break' (L6864)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- jmp L1049
-```
-</details>
 

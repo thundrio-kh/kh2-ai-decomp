@@ -11,19 +11,7 @@ Push the action of a child object to the action table
 | act   | label   | Label of action to push
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L24594:
  popToSp 0
@@ -78,5 +66,16 @@ L24594:
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  jmp L24706
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+
+
 

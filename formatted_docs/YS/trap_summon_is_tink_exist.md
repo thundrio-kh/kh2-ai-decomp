@@ -13,18 +13,7 @@ Returns true if Peter Pan can revive the player using Tinker Bell
 | Name | Type
 |------|-----
 | tink_exist   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L5320:
  pushFromFSpVal 44
@@ -37,5 +26,15 @@ L5320:
  syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
  jmp L5653
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

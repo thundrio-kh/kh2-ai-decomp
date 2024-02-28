@@ -35,10 +35,29 @@ Enable resistances/sturdy frames for an object
 | value   | int   | Pattern number to enable. See table in description
 
 
+Example Usage From msn\TT04_MS301\tt04.bdscript
+```plaintext
+TR3:
+ gosub 4, L172
+ pushFromPSp 0
+ pushImm 318
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 0
+ pushImm 13
+ syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+ pushImm 566
+ pushImm 0
+ gosub 8, L230
+ pushFromPWp W0
+ gosub 8, L321
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           
@@ -291,25 +310,5 @@ Enable resistances/sturdy frames for an object
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\TT04_MS301\tt04.bdscript</summary>
-```plaintext
-TR3:
- gosub 4, L172
- pushFromPSp 0
- pushImm 318
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 0
- pushImm 13
- syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
- pushImm 566
- pushImm 0
- gosub 8, L230
- pushFromPWp W0
- gosub 8, L321
- ret
-```
-</details>
 

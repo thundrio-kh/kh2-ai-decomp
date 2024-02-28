@@ -14,18 +14,7 @@ Returns the blow up value for the attack, documented in openkh as Knockback Stre
 | Name | Type
 |------|-----
 | blow_up   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
+Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L116:
  pushFromFSp 4
@@ -37,5 +26,15 @@ L116:
  popToSp 8
  jmp L165
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+
+
 

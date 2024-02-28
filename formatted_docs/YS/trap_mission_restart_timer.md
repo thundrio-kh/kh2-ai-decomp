@@ -11,19 +11,7 @@ Restarts a paused timer. if time parameter is < 1, timer counts up instead of do
 | timer_id   | int   | id of a timer
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\CA07_MS105\ca07.bdscript       |           
-| msn\EH26_MS108\eh26.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
+Example Usage From msn\CA07_MS105\ca07.bdscript
 ```plaintext
 L184:
  pushImm -1
@@ -32,5 +20,16 @@ L184:
  pushImm 17353
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\CA07_MS105\ca07.bdscript       |           
+| msn\EH26_MS108\eh26.bdscript       |           
+
+
 

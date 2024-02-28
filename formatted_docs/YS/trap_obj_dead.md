@@ -10,10 +10,31 @@ Performs required cleanup when an object dies
 | obj   | YS::BTLOBJ   | An object
 
 
+Example Usage From obj\B_CA020\b_ca.bdscript
+```plaintext
+L730:
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+ pushImm 0
+ sub 
+ eqz 
+ jz L761
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImmf 100
+ syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
+ jmp L938
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
@@ -98,27 +119,5 @@ Performs required cleanup when an object dies
 | obj\N_LK020_BTL\n_lk.bdscript       | ((N) Pumba (BTL) (LK))          
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
-```plaintext
-L730:
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
- pushImm 0
- sub 
- eqz 
- jz L761
- pushFromFSp 0
- pushFromFSp 4
- pushImmf 100
- syscall 2, 2 ; trap_enemy_exec_damage_small (3 in, 0 out)
- pushFromFSp 0
- syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
- jmp L938
-```
-</details>
 

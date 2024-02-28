@@ -17,10 +17,22 @@ Starts an effect associated with an object
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L4996:
+ pushFromPSpVal 0
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
+ popToSpVal 64
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -182,18 +194,5 @@ Starts an effect associated with an object
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L4996:
- pushFromPSpVal 0
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 21 ; trap_obj_effect_start (4 in, 1 out)
- popToSpVal 64
-```
-</details>
 

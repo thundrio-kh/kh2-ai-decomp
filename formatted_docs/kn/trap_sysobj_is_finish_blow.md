@@ -14,18 +14,7 @@ Check if the object is in a finish blow state
 | Name | Type
 |------|-----
 | is_finish_blow   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L6309:
  popToSp 4
@@ -44,5 +33,15 @@ L6309:
  syscall 10, 30 ; trap_sysobj_is_finish_blow (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

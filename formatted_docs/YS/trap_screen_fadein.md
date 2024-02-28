@@ -10,18 +10,7 @@ Performs a fadein on the screen
 | frame   | float   | Number of frames
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L9573:
  pushImmf 80
@@ -40,5 +29,15 @@ L9573:
  popToSpVal 240
  jmp L9606
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+
+
 

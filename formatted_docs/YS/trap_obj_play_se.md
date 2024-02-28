@@ -11,10 +11,30 @@ Plays a sound effect
 | num   | int   | Sound effect number to play
 
 
+Example Usage From limit\trinity\limi.bdscript
+```plaintext
+L8150:
+ pushFromFSp 4
+ jz L8183
+ pushFromFSp 0
+ pushImm 409020
+ syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
+ pushImmf 60
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushImmf 60
+ gosub 4, L5452
+ pushImm 1
+ syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
+ pushImmf 30
+ gosub 4, L5452
+ jmp L8188
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           
@@ -38,26 +58,5 @@ Plays a sound effect
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```plaintext
-L8150:
- pushFromFSp 4
- jz L8183
- pushFromFSp 0
- pushImm 409020
- syscall 1, 318 ; trap_obj_play_se (2 in, 0 out)
- pushImmf 60
- syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
- pushImmf 60
- gosub 4, L5452
- pushImm 1
- syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
- pushImmf 30
- gosub 4, L5452
- jmp L8188
-```
-</details>
 

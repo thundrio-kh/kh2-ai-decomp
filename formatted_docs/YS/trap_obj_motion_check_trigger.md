@@ -15,10 +15,60 @@ returns the frame trigger count (Triggered on X frame) of a motion entry
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L1074:
+ pushFromPSp 32
+ pushFromFSp 4
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 16
+ pushFromPSp 32
+ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushImm 4
+ add 
+ pushImmf 0
+ memcpy 0
+ pushFromPSp 32
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ popToSp 52
+ pushFromFSp 0
+ pushFromPSp 32
+ pushFromFSp 52
+ pushFromFSp 48
+ mulf 
+ syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+ halt 
+ pushFromFSp 56
+ eqz 
+ dup 
+ jz L1165
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -290,56 +340,5 @@ returns the frame trigger count (Triggered on X frame) of a motion entry
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L1074:
- pushFromPSp 32
- pushFromFSp 4
- syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 32
- pushFromPSp 16
- pushFromPSp 32
- syscall 0, 4 ; trap_vector_add (2 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 32
- pushFromPSp 32
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 32
- pushFromPSp 32
- pushImm 4
- add 
- pushImmf 0
- memcpy 0
- pushFromPSp 32
- syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
- popToSp 52
- pushFromFSp 0
- pushFromPSp 32
- pushFromFSp 52
- pushFromFSp 48
- mulf 
- syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
- halt 
- pushFromFSp 56
- eqz 
- dup 
- jz L1165
- pushFromFSp 0
- pushImm 1
- syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)
- eqzv
-```
-</details>
 

@@ -11,10 +11,25 @@ Set the target to an object
 | obj   | YS::OBJ_125   | An object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L450:
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L1641
+ popToSp 180
+ pushFromPSp 32
+ gosub 52, L1667
+ pushFromFSp 180
+ pushFromPSp 32
+ syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -143,21 +158,5 @@ Set the target to an object
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L450:
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L1641
- popToSp 180
- pushFromPSp 32
- gosub 52, L1667
- pushFromFSp 180
- pushFromPSp 32
- syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
-```
-</details>
 

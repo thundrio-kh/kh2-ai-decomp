@@ -14,10 +14,26 @@ Returns if the object is touching a Zone
 | Name | Type
 |------|-----
 | is_touch   | bool   
+Example Usage From obj\B_CA050\b_ca.bdscript
+```plaintext
+L4766:
+ popToSp 0
+ gosub 4, L664
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
+ pushFromFSp 0
+ syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
+ sub 
+ eqz 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
@@ -399,22 +415,5 @@ Returns if the object is touching a Zone
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```plaintext
-L4766:
- popToSp 0
- gosub 4, L664
- memcpyToSp 16, 16
- pushFromPSp 16
- syscall 1, 145 ; trap_obj_touch_zone (1 in, 1 out)
- pushFromFSp 0
- syscall 1, 170 ; trap_obj_unit_group (1 in, 1 out)
- sub 
- eqz 
- ret
-```
-</details>
 

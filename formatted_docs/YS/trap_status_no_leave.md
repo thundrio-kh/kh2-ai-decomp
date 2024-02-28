@@ -13,10 +13,21 @@ Returns the value of the no_leave flag
 | Name | Type
 |------|-----
 | no_leave   | status   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L7162:
+ syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
+ jz L7175
+ pushImm 0
+ popToSp 8
+ jmp L7217
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -458,17 +469,5 @@ Returns the value of the no_leave flag
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L7162:
- syscall 1, 171 ; trap_status_no_leave (0 in, 1 out)
- jz L7175
- pushImm 0
- popToSp 8
- jmp L7217
-```
-</details>
 

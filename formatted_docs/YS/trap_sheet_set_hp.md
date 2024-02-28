@@ -12,29 +12,7 @@ Set an objects HP
 | index   | int   | HP index to use
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
-| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
-| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
-| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_EX380\b_ex.bdscript       | ((F) Zexion’s book)          
-| obj\F_HB080\f_hb.bdscript       | ((F) CoR’s steam wheel (HB))          
-| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
-| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
-| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
-| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L148:
  popToSp 0
@@ -69,5 +47,26 @@ L148:
  syscall 1, 233 ; trap_sheet_set_hp (3 in, 0 out)
  jmp L217
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
+| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
+| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
+| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_EX380\b_ex.bdscript       | ((F) Zexion’s book)          
+| obj\F_HB080\f_hb.bdscript       | ((F) CoR’s steam wheel (HB))          
+| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
+| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
+| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
+| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
+
+
 

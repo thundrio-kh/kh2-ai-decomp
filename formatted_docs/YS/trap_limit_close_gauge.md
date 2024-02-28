@@ -10,15 +10,14 @@ Closes the limit gauge
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

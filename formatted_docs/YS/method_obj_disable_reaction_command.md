@@ -12,15 +12,14 @@ Disables a reaction command from being activated by the player. Unused in the va
 | group   | int   | Unknown
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

@@ -10,19 +10,7 @@ sets a warning state for the specified combo counter
 | id   | int   | id of a combo counter
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HB09_SKATE_01\hb09.bdscript       |           
-| msn\TT06_PERFORM_02\tt06.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L64:
  popToSp 4
@@ -36,5 +24,16 @@ L64:
  syscall 4, 52 ; trap_mission_warning_combo_counter (1 in, 0 out)
  jmp L85
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HB09_SKATE_01\hb09.bdscript       |           
+| msn\TT06_PERFORM_02\tt06.bdscript       |           
+
+
 

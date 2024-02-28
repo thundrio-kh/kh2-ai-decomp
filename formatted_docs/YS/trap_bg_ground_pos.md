@@ -16,10 +16,34 @@ Gets the position of the nearest ground
 | Name | Type
 |------|-----
 | returnval   | int   
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L96:
+ popToSp 0
+ pushFromPSpVal 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromPSp 16
+ pushImmf 10000
+ syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
+ drop 
+ pushFromPSpVal 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ fetchValue 12
+ popToSp 48
+ pushImm 0
+ popToSp 52
+ pushImm 12
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -110,30 +134,5 @@ Gets the position of the nearest ground
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L96:
- popToSp 0
- pushFromPSpVal 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromPSp 16
- pushImmf 10000
- syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)
- drop 
- pushFromPSpVal 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- fetchValue 12
- popToSp 48
- pushImm 0
- popToSp 52
- pushImm 12
-```
-</details>
 

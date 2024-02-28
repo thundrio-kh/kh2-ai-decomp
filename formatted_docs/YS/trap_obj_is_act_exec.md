@@ -14,10 +14,32 @@ Returns if the object is currently executing and action
 | Name | Type
 |------|-----
 | is_act_exec   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L4091:
+ pushFromFSp 0
+ gosub 4, L4126
+ pushFromFSp 0
+ gosub 4, L4214
+ pushFromFSp 0
+ gosub 4, L4309
+ pushFromFSp 0
+ gosub 4, L4594
+ pushFromFSp 0
+ syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
+ eqz 
+ jz L4122
+ pushFromFSp 0
+ pushFromPAi L11456 ; ___ai 'mode_battle_boss' (L11456)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L4122
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -443,28 +465,5 @@ Returns if the object is currently executing and action
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L4091:
- pushFromFSp 0
- gosub 4, L4126
- pushFromFSp 0
- gosub 4, L4214
- pushFromFSp 0
- gosub 4, L4309
- pushFromFSp 0
- gosub 4, L4594
- pushFromFSp 0
- syscall 1, 10 ; trap_obj_is_act_exec (1 in, 1 out)
- eqz 
- jz L4122
- pushFromFSp 0
- pushFromPAi L11456 ; ___ai 'mode_battle_boss' (L11456)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L4122
-```
-</details>
 

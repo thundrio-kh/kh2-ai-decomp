@@ -14,10 +14,59 @@ Returns if the object is looping a motion
 | Name | Type
 |------|-----
 | is_motion_in_loop   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L8249:
+ jz L8343
+ pushFromFSp 0
+ syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
+ jz L8340
+ pushFromFSp 12
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 12
+ pushFromFSp 8
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ subf 
+ popToSp 8
+ pushFromFSp 8
+ pushImmf 0
+ subf 
+ infzf 
+ jz L8338
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 8, L8381
+ pushFromFSp 0
+ pushImm 2
+ pushImm 0
+ pushImm 0
+ gosub 8, L9278
+ pushImmf 8
+ popToSp 8
+ pushFromFSp 4
+ pushImm 1
+ pushImm 2
+ syscall 0, 16 ; trap_random_get (1 in, 1 out)
+ add 
+ add 
+ popToSp 4
+ pushFromFSp 4
+ pushImm 12
+ sub 
+ ipos 
+ jz L8336
+ pushImm 2
+ syscall 0, 16 ; trap_random_get (1 in, 1 out)
+ popToSp 4
+ jmp L8336
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -133,55 +182,5 @@ Returns if the object is looping a motion
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L8249:
- jz L8343
- pushFromFSp 0
- syscall 1, 63 ; trap_obj_is_motion_in_loop (1 in, 1 out)
- jz L8340
- pushFromFSp 12
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSp 12
- pushFromFSp 8
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSp 8
- pushFromFSp 8
- pushImmf 0
- subf 
- infzf 
- jz L8338
- pushFromFSp 0
- pushFromFSp 4
- gosub 8, L8381
- pushFromFSp 0
- pushImm 2
- pushImm 0
- pushImm 0
- gosub 8, L9278
- pushImmf 8
- popToSp 8
- pushFromFSp 4
- pushImm 1
- pushImm 2
- syscall 0, 16 ; trap_random_get (1 in, 1 out)
- add 
- add 
- popToSp 4
- pushFromFSp 4
- pushImm 12
- sub 
- ipos 
- jz L8336
- pushImm 2
- syscall 0, 16 ; trap_random_get (1 in, 1 out)
- popToSp 4
- jmp L8336
-```
-</details>
 

@@ -9,18 +9,7 @@ Turns off all shadows displayed by objects
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L764:
  popToSp 0
@@ -34,5 +23,15 @@ L764:
  syscall 1, 286 ; trap_status_hide_shadow (0 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

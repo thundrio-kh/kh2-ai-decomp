@@ -14,10 +14,38 @@ Return the object that reflected this attack
 | Name | Type
 |------|-----
 | reflecter   | YS::BTLOBJ *   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L5092:
+ jz L5190
+ pushFromFSpVal 68
+ syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
+ memcpyToSp 16, 20
+ pushFromPSp 20
+ memcpyToSp 16, 4
+ pushFromFSp 0
+ gosub 8, L5191
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSpVal 16, 80
+ pushFromFSpVal 280
+ pushImm 0
+ sub 
+ neqz 
+ jz L5141
+ pushFromFSpVal 280
+ pushImm 0
+ pushImm 0
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ popToSpVal 64
+ jmp L5156
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -94,34 +122,5 @@ Return the object that reflected this attack
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L5092:
- jz L5190
- pushFromFSpVal 68
- syscall 2, 44 ; trap_attack_reflecter (1 in, 1 out)
- memcpyToSp 16, 20
- pushFromPSp 20
- memcpyToSp 16, 4
- pushFromFSp 0
- gosub 8, L5191
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSpVal 16, 80
- pushFromFSpVal 280
- pushImm 0
- sub 
- neqz 
- jz L5141
- pushFromFSpVal 280
- pushImm 0
- pushImm 0
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- popToSpVal 64
- jmp L5156
-```
-</details>
 

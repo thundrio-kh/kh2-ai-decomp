@@ -14,15 +14,14 @@ Get the current point of the path during the Dragon Xemnas fight
 | Name | Type
 |------|-----
 | point   | int   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

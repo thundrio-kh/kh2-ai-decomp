@@ -12,24 +12,7 @@ executes a small amount of damage
 | power   | float   | amount of power for the damage, value of 100 is the only one used in game
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
-| obj\B_CA030\b_ca.bdscript       | ((M) Undead Pirate B)          
-| obj\B_CA040\b_ca.bdscript       | ((M) Undead Pirate C)          
-| obj\B_CA040_PUB\b_ca.bdscript       | ()          
-| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
-| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
-| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
+Example Usage From obj\B_CA020\b_ca.bdscript
 ```plaintext
 L730:
  pushFromFSp 0
@@ -48,5 +31,21 @@ L730:
  syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
  jmp L938
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
+| obj\B_CA030\b_ca.bdscript       | ((M) Undead Pirate B)          
+| obj\B_CA040\b_ca.bdscript       | ((M) Undead Pirate C)          
+| obj\B_CA040_PUB\b_ca.bdscript       | ()          
+| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
+| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
+| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
+
+
 

@@ -11,18 +11,7 @@ Creates an active path from one object to another
 | target_obj   | YS::OBJ_125   | An target object to path to
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX900\m_ex.bdscript</summary>
+Example Usage From obj\M_EX900\m_ex.bdscript
 ```plaintext
 L5933:
  popToSp 4
@@ -96,5 +85,15 @@ L5933:
  jz L6077
  jmp L6198
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
+
+
 

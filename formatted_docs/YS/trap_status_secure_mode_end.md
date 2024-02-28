@@ -9,21 +9,7 @@ Turn off the secure mode flag
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\AL13_TRAP\al13.bdscript       |           
-| msn\AL13_TRAP_FREE\al13.bdscript       |           
-| msn\AL13_TRAP_FREE2\al13.bdscript       |           
-| obj\F_EH110\f_eh.bdscript       | ((F) Rising building (EH))          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
+Example Usage From msn\AL13_TRAP\al13.bdscript
 ```plaintext
 L221:
  halt 
@@ -34,5 +20,18 @@ L221:
  eqz 
  jz L254
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\AL13_TRAP\al13.bdscript       |           
+| msn\AL13_TRAP_FREE\al13.bdscript       |           
+| msn\AL13_TRAP_FREE2\al13.bdscript       |           
+| obj\F_EH110\f_eh.bdscript       | ((F) Rising building (EH))          
+
+
 

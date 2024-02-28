@@ -14,22 +14,7 @@ Checks if an object is stopped
 | Name | Type
 |------|-----
 | is_stop   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L19588:
  jz L19615
@@ -48,5 +33,19 @@ L19588:
  memcpy 0
  jmp L19613
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
+
+
 

@@ -15,10 +15,51 @@ Checks if an object can look at a pos
 | Name | Type
 |------|-----
 | can_look   | bool   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1297:
+ pushImm 1
+ jz L1412
+ pushFromFSp 0
+ gosub 12, L1003
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)
+ eqz 
+ jz L1376
+ gosub 12, L1003
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromFSp 0
+ syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImmf 0.05236
+ syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+ drop 
+ pushFromFSp 0
+ pushImm 129
+ pushImmf 8
+ gosub 12, L1413
+ pushImmf 10
+ popToSp 32
+ jmp L1409
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -253,47 +294,5 @@ Checks if an object can look at a pos
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1297:
- pushImm 1
- jz L1412
- pushFromFSp 0
- gosub 12, L1003
- memcpyToSp 16, 48
- pushFromPSp 48
- syscall 1, 172 ; trap_obj_can_look (2 in, 1 out)
- eqz 
- jz L1376
- gosub 12, L1003
- memcpyToSp 16, 48
- pushFromPSp 48
- syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromFSp 0
- syscall 5, 34 ; trap_get_obj_head_pos (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromPSp 16
- pushImmf 0.05236
- syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
- drop 
- pushFromFSp 0
- pushImm 129
- pushImmf 8
- gosub 12, L1413
- pushImmf 10
- popToSp 32
- jmp L1409
-```
-</details>
 

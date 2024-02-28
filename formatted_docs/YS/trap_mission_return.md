@@ -9,19 +9,7 @@ Unlocks a mission and returns control/settings to normal
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HB16_MS404D\hb16.bdscript       |           
-| msn\TR04_MS202\tr04.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HB16_MS404D\hb16.bdscript</summary>
+Example Usage From msn\HB16_MS404D\hb16.bdscript
 ```plaintext
 L87:
  gosub 4, L109
@@ -35,5 +23,16 @@ L87:
  syscall 4, 32 ; trap_mission_return (0 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HB16_MS404D\hb16.bdscript       |           
+| msn\TR04_MS202\tr04.bdscript       |           
+
+
 

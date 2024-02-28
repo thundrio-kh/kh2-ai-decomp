@@ -10,10 +10,20 @@ Sets a flag value to true
 | flag_num   | int   | A flag number
 
 
+Example Usage From ard\al09\al09.bdscript
+```plaintext
+L29:
+ pushImm 64
+ syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
+ gosub 4, L58
+ jmp L56
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           
@@ -30,16 +40,5 @@ Sets a flag value to true
 | msn\TT02_MS201\save.bdscript       |           
 | obj\F_AL030\f_al.bdscript       | ((F) ??? (AL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```plaintext
-L29:
- pushImm 64
- syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- gosub 4, L58
- jmp L56
-```
-</details>
 

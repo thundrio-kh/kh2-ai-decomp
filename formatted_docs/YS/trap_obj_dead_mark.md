@@ -10,10 +10,32 @@ Marks an object as dead
 | obj   | YS::BTLOBJ   | An object
 
 
+Example Usage From obj\M_EX350_01\m_ex.bdscript
+```plaintext
+L2510:
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 8
+ gosub 8, L2552
+ pushFromFSp 0
+ fetchValue 4
+ pushImmf 30
+ syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+ pushImmf 30
+ gosub 8, L2552
+ pushFromFSp 4
+ jz L2545
+ pushFromFSp 0
+ syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
+ jmp L2545
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\M_EX350_01\m_ex.bdscript       | ((M) Mushroom 1 (EX))          
@@ -37,28 +59,5 @@ Marks an object as dead
 | obj\M_EX870\m_ex.bdscript       | ((M) Sorcerer v2 - Cubes?)          
 | obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\M_EX350_01\m_ex.bdscript</summary>
-```plaintext
-L2510:
- pushFromFSp 0
- pushImm 3
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromFSp 8
- gosub 8, L2552
- pushFromFSp 0
- fetchValue 4
- pushImmf 30
- syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
- pushImmf 30
- gosub 8, L2552
- pushFromFSp 4
- jz L2545
- pushFromFSp 0
- syscall 1, 328 ; trap_obj_dead_mark (1 in, 0 out)
- jmp L2545
-```
-</details>
 

@@ -11,19 +11,7 @@ Sets a hitmark pos
 | dir   | Vector *   | Direction vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
+Example Usage From obj\B_MU120\b_mu.bdscript
 ```plaintext
 L11772:
  pushFromFSp 4
@@ -77,5 +65,16 @@ L11772:
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  jmp L11891
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
+
+
 

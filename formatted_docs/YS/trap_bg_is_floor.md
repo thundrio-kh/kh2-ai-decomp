@@ -14,15 +14,14 @@ Returns if the background the camera is looking at is the floor
 | Name | Type
 |------|-----
 | is_floor   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

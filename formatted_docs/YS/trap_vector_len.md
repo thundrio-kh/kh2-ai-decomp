@@ -14,10 +14,71 @@ Returns the number of components in a vector
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L920:
+ pushFromFSp 0
+ pushFromPSp 48
+ pushImm 16
+ add 
+ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+ pushFromFSp 184
+ pushImmf 5
+ syscall 0, 3 ; trap_frametime (0 in, 1 out)
+ mulf 
+ addf 
+ popToSp 184
+ pushFromPSp 48
+ pushImm 16
+ add 
+ pushImm 4
+ add 
+ pushImmf 0
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 48
+ pushImm 16
+ add 
+ pushFromPSp 160
+ gosub 52, L2509
+ syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+ pushFromPSp 160
+ gosub 52, L2509
+ pushFromPAi L6877 ; ___ai 'speed.speed' (L6877)
+ syscall 0, 1 ; trap_putf (2 in, 0 out)
+ pushFromPSp 16
+ pushImmf 1
+ gosub 52, L1889
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushImmf 1
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 16
+ pushFromFSp 184
+ syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
+ halt 
+ pushFromPSp 176
+ gosub 52, L2555
+ drop 
+ pushFromFSp 0
+ syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+ pushImmf 5
+ subf 
+ infzf 
+ jz L1030
+ jmp L1049
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -782,67 +843,5 @@ Returns the number of components in a vector
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L920:
- pushFromFSp 0
- pushFromPSp 48
- pushImm 16
- add 
- syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
- pushFromFSp 184
- pushImmf 5
- syscall 0, 3 ; trap_frametime (0 in, 1 out)
- mulf 
- addf 
- popToSp 184
- pushFromPSp 48
- pushImm 16
- add 
- pushImm 4
- add 
- pushImmf 0
- memcpy 0
- pushFromFSp 0
- pushFromPSp 48
- pushImm 16
- add 
- pushFromPSp 160
- gosub 52, L2509
- syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
- pushFromPSp 160
- gosub 52, L2509
- pushFromPAi L6877 ; ___ai 'speed.speed' (L6877)
- syscall 0, 1 ; trap_putf (2 in, 0 out)
- pushFromPSp 16
- pushImmf 1
- gosub 52, L1889
- pushFromPSp 16
- pushImm 4
- add 
- pushImmf 1
- memcpy 0
- pushFromFSp 0
- pushFromPSp 16
- pushFromFSp 184
- syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
- halt 
- pushFromPSp 176
- gosub 52, L2555
- drop 
- pushFromFSp 0
- syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- syscall 0, 6 ; trap_vector_len (1 in, 1 out)
- pushImmf 5
- subf 
- infzf 
- jz L1030
- jmp L1049
-```
-</details>
 

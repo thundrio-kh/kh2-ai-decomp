@@ -11,20 +11,7 @@ value"
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| gumimenu\event\gumi.bdscript       |           
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\N_HB590_BTL\n_hb.bdscript       | ((N) Sephiroth (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
+Example Usage From gumimenu\event\gumi.bdscript
 ```plaintext
 L879:
  popToSp 0
@@ -70,5 +57,17 @@ L879:
  syscall 9, 24 ; ?
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| gumimenu\event\gumi.bdscript       |           
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\N_HB590_BTL\n_hb.bdscript       | ((N) Sephiroth (BTL) (HB))          
+
+
 

@@ -12,21 +12,7 @@ Attaches a callback to be used when an attack is reflected
 | unk3   | unknown   | pushFromFSp: 0
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
-| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX430\b_ex.bdscript</summary>
+Example Usage From obj\B_EX430\b_ex.bdscript
 ```plaintext
 L205:
  popToSp 4
@@ -68,5 +54,18 @@ L205:
  syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
+| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
+
+
 

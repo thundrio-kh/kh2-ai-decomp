@@ -14,10 +14,22 @@ Checks if the message playing at the top of the screen is done being scrolled
 | Name | Type
 |------|-----
 | is_finished   | bool   
+Example Usage From obj\B_CA050\b_ca.bdscript
+```plaintext
+L4504:
+ pushFromFSp 48
+ syscall 1, 48 ; method_message_is_end (1 in, 1 out)
+ eqz 
+ jz L4514
+ halt 
+ jmp L4504
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
@@ -154,18 +166,5 @@ Checks if the message playing at the top of the screen is done being scrolled
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_HE000_NPC_QSATO\npc_.bdscript       | ((P) Auron (NPC_QSATO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```plaintext
-L4504:
- pushFromFSp 48
- syscall 1, 48 ; method_message_is_end (1 in, 1 out)
- eqz 
- jz L4514
- halt 
- jmp L4504
-```
-</details>
 

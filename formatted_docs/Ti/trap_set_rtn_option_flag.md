@@ -11,10 +11,32 @@ Set the RTN option flag
 | flag_num   | int   | Flag number to turn on
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2452:
+ pushFromPAi L2895 ; ___ai 'RTN_stop' (L2895)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushImm 0
+ popToSpVal 64
+ pushFromFSp 0
+ pushFromPSpVal 16
+ fetchValue 8
+ pushImmf 8
+ gosub 4, L1413
+ pushFromFSp 0
+ pushImm 0
+ syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L2910 ; ___ai 'fix_idle' (L2910)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L2518
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -248,28 +270,5 @@ Set the RTN option flag
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2452:
- pushFromPAi L2895 ; ___ai 'RTN_stop' (L2895)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushImm 0
- popToSpVal 64
- pushFromFSp 0
- pushFromPSpVal 16
- fetchValue 8
- pushImmf 8
- gosub 4, L1413
- pushFromFSp 0
- pushImm 0
- syscall 5, 27 ; trap_set_rtn_option_flag (2 in, 0 out)
- pushFromFSp 0
- pushFromPAi L2910 ; ___ai 'fix_idle' (L2910)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L2518
-```
-</details>
 

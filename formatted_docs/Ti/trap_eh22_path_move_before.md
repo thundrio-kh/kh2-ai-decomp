@@ -10,15 +10,14 @@ Moves the sidecar to the before point in the Dragon Xemnas fight
 | obj   | YS::OBJ_125   | An object
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

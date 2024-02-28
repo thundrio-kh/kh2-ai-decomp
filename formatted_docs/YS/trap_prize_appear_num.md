@@ -12,18 +12,7 @@ Makes a number of prizes appear at a position
 | num   | int   | number of prizes
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L1121:
  pushFromFSp 4
@@ -40,5 +29,15 @@ L1121:
  syscall 1, 342 ; trap_prize_appear_num (3 in, 0 out)
  jmp L1150
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+
+
 

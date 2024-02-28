@@ -35,35 +35,7 @@ Resets the resistance value to the default state
 | value   | int   | Pattern number to reset. See table in description
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
-| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
-| obj\B_HE110\b_he.bdscript       | ((B) Hydra head (Out of the ground))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\F_EH100\f_eh.bdscript       | ((F) Xemnas’s dragon energy core (EH))          
-| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
-| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
-| obj\N_NM050_BTL_TOY\n_nm.bdscript       | ((N) Lock (toy minigame) (BTL) (NM))          
-| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
-| obj\N_NM060_BTL_TOY\n_nm.bdscript       | ((N) Shock (toy minigame) (BTL) (NM))          
-| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
-| obj\N_NM070_BTL_TOY\n_nm.bdscript       | ((N) Barrel (toy minigame) (BTL) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L3097:
  pushFromPAi L18917 ; ___ai 'SIGNAL_GAUGEMIN' (L18917)
@@ -85,5 +57,32 @@ L3097:
  drop 
  jmp L3135
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
+| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
+| obj\B_HE110\b_he.bdscript       | ((B) Hydra head (Out of the ground))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\F_EH100\f_eh.bdscript       | ((F) Xemnas’s dragon energy core (EH))          
+| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
+| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
+| obj\N_NM050_BTL_TOY\n_nm.bdscript       | ((N) Lock (toy minigame) (BTL) (NM))          
+| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
+| obj\N_NM060_BTL_TOY\n_nm.bdscript       | ((N) Shock (toy minigame) (BTL) (NM))          
+| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
+| obj\N_NM070_BTL_TOY\n_nm.bdscript       | ((N) Barrel (toy minigame) (BTL) (NM))          
+
+
 

@@ -12,10 +12,29 @@ Adds a callback function to an attack that will run on hit
 | unk   | unknown   | unknown
 
 
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L5011:
+ pushFromPSpVal 0
+ pushImm 1539
+ pushFromFSpVal 248
+ pushFromFSpVal 244
+ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+ popToSpVal 68
+ pushFromFSpVal 268
+ jz L5038
+ pushFromFSpVal 68
+ pushFromFSpVal 276
+ pushFromPSpVal 280
+ syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
+ jmp L5038
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -70,25 +89,5 @@ Adds a callback function to an attack that will run on hit
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L5011:
- pushFromPSpVal 0
- pushImm 1539
- pushFromFSpVal 248
- pushFromFSpVal 244
- syscall 2, 10 ; trap_attack_new (4 in, 1 out)
- popToSpVal 68
- pushFromFSpVal 268
- jz L5038
- pushFromFSpVal 68
- pushFromFSpVal 276
- pushFromPSpVal 280
- syscall 2, 38 ; trap_attack_set_hit_callback (3 in, 0 out)
- jmp L5038
-```
-</details>
 

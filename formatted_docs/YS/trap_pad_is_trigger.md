@@ -28,24 +28,7 @@ Checks if a button is held down on the controller.
 | Name | Type
 |------|-----
 | is_held   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          
-| obj\F_MU070\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (MU))          
-| obj\F_MU070_BOSS\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (BOSS) (MU))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L1794:
  popToSp 0
@@ -73,5 +56,21 @@ L1794:
  gosub 12, L2013
  jmp L1854
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          
+| obj\F_MU070\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (MU))          
+| obj\F_MU070_BOSS\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (BOSS) (MU))          
+
+
 

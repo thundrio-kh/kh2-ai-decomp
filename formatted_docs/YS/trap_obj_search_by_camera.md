@@ -11,15 +11,14 @@ Looks up an object by ID and then returns the object that is closest to the came
 | offset   | kn::FVector *   | A position vector?
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

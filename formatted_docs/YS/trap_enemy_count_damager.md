@@ -13,15 +13,14 @@ Returns a count of all the enemies currently being damaged
 | Name | Type
 |------|-----
 | count   | int   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

@@ -10,10 +10,50 @@
 | damage   | YS::DAMAGE_5 *   | An object representing damage
 
 
+Example Usage From obj\B_BB100\b_bb.bdscript
+```plaintext
+L1192:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+ pushFromPAi L4855 ; ___ai 'sheet.hp' (L4855)
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
+ sub 
+ info 
+ jz L1262
+ pushFromPAi L4887 ; ___ai 'freeze' (L4887)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromFWp W4216
+ pushImm 1
+ add 
+ popToWp W4216
+ pushFromFSp 4
+ syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L4887 ; ___ai 'freeze' (L4887)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L4860 ; ___ai 'mode_revenge' (L4860)
+ syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
+ exit
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          
@@ -94,46 +134,5 @@
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
-```plaintext
-L1192:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
- pushFromPAi L4855 ; ___ai 'sheet.hp' (L4855)
- syscall 0, 0 ; trap_puti (2 in, 0 out)
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
- sub 
- info 
- jz L1262
- pushFromPAi L4887 ; ___ai 'freeze' (L4887)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromFWp W4216
- pushImm 1
- add 
- popToWp W4216
- pushFromFSp 4
- syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
- pushFromFSp 0
- pushFromPAi L4887 ; ___ai 'freeze' (L4887)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- pushFromFSp 0
- pushFromPAi L4860 ; ___ai 'mode_revenge' (L4860)
- syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
- exit
-```
-</details>
 

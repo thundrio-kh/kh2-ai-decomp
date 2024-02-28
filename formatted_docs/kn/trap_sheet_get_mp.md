@@ -14,19 +14,7 @@ Get the amount of MP left
 | Name | Type
 |------|-----
 | mp   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L327:
  popToSp 0
@@ -57,5 +45,16 @@ L327:
  supzf 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+
+
 

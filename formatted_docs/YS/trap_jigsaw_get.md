@@ -11,18 +11,7 @@ Gives a jigsaw piece
 | piece   | int   | number piece in the puzzle
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\tt28\jigs.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\tt28\jigs.bdscript</summary>
+Example Usage From ard\tt28\jigs.bdscript
 ```plaintext
 TR2:
  pushImm 0
@@ -30,5 +19,15 @@ TR2:
  syscall 1, 364 ; trap_jigsaw_get (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\tt28\jigs.bdscript       |           
+
+
 

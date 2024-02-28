@@ -14,15 +14,14 @@ Check if an object is attached to a camera
 | Name | Type
 |------|-----
 | is_attach   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

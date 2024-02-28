@@ -10,21 +10,7 @@ disable occlusion culling for all bones in an culling object
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\F_BB120\f_bb.bdscript       | ((F) Minigame’s box (BB))          
-| obj\F_EH050\f_eh.bdscript       | ((F) Floating building 1 (EH))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L5615:
  popToSp 4
@@ -816,5 +802,18 @@ L5615:
  syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
  jmp L7758
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\F_BB120\f_bb.bdscript       | ((F) Minigame’s box (BB))          
+| obj\F_EH050\f_eh.bdscript       | ((F) Floating building 1 (EH))          
+
+
 

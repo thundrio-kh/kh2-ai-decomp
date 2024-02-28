@@ -12,21 +12,7 @@ Resets the color of an object part
 | time   | float   | Time in frames for the color transition to happen
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-| obj\F_NM080\f_nm.bdscript       | ((F) Oogie’s present box (NM))          
-| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
-| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L5082:
  pushFromFSp 0
@@ -74,5 +60,18 @@ L5082:
  syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
  jmp L5216
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+| obj\F_NM080\f_nm.bdscript       | ((F) Oogie’s present box (NM))          
+| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
+| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
+
+
 

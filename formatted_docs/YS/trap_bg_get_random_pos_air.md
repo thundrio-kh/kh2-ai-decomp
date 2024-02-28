@@ -18,10 +18,39 @@ Gets a random open position in the air
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
+Example Usage From limit\donald\limi.bdscript
+```plaintext
+L4039:
+ popToSp 0
+ gosub 12, L1148
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImmf 200
+ pushImmf 250
+ pushImmf -150
+ pushImmf -150
+ syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSp 0
+ gosub 12, L178
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
@@ -63,35 +92,5 @@ Gets a random open position in the air
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```plaintext
-L4039:
- popToSp 0
- gosub 12, L1148
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImmf 200
- pushImmf 250
- pushImmf -150
- pushImmf -150
- syscall 1, 248 ; trap_bg_get_random_pos_air (5 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromPSp 16
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromFSp 0
- gosub 12, L178
- ret
-```
-</details>
 

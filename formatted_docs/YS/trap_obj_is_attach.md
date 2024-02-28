@@ -14,10 +14,44 @@ Returns if the object is attached to another object
 | Name | Type
 |------|-----
 | is_attach   | bool   
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L1067:
+ popToSp 0
+ pushFromPWp W72
+ pushImm 268
+ add 
+ syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+ eqz 
+ jz L1124
+ pushFromPWp W72
+ pushImm 268
+ add 
+ pushFromPWp W72
+ pushImm 4
+ add 
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromPWp W72
+ pushImm 268
+ add 
+ pushFromPWp W72
+ pushImm 20
+ add 
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+ jmp L1124
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -352,40 +386,5 @@ Returns if the object is attached to another object
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L1067:
- popToSp 0
- pushFromPWp W72
- pushImm 268
- add 
- syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
- eqz 
- jz L1124
- pushFromPWp W72
- pushImm 268
- add 
- pushFromPWp W72
- pushImm 4
- add 
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromPWp W72
- pushImm 268
- add 
- pushFromPWp W72
- pushImm 20
- add 
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
- jmp L1124
-```
-</details>
 

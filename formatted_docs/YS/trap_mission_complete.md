@@ -10,10 +10,19 @@ Runs the function to complete a mission, unsure what the signal_arg is used for
 | signal_arg   | int   | Signal to send when marking the mission as complete
 
 
+Example Usage From ard\al05\ms_b.bdscript
+```plaintext
+L98:
+ pushFromFSpVal 4
+ syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
+ jmp L147
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
@@ -313,15 +322,5 @@ Runs the function to complete a mission, unsure what the signal_arg is used for
 | msn\WI06_MS102B\wi06.bdscript       |           
 | msn\WI07_MS102A\wi07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```plaintext
-L98:
- pushFromFSpVal 4
- syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
- jmp L147
-```
-</details>
 

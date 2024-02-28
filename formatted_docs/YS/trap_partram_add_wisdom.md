@@ -11,18 +11,7 @@ Gives magic to the player
 | amt   | int   | Amount of magic to add
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\tt04\tt04.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\tt04\tt04.bdscript</summary>
+Example Usage From ard\tt04\tt04.bdscript
 ```plaintext
 L94:
  pushImm 1
@@ -34,5 +23,15 @@ L94:
  syscall 0, 93 ; trap_partram_add_wisdom (2 in, 0 out)
  jmp L114
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\tt04\tt04.bdscript       |           
+
+
 

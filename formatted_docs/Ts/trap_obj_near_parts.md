@@ -15,20 +15,7 @@ Finds the parts of obj1 that are colliding with obj2?
 | Name | Type
 |------|-----
 | parts_colliding   | YS::COLLISION_ELEM_0 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald\limi.bdscript       |           
-| limit\donald_wi\limi.bdscript       |           
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L1426:
  popToSp 0
@@ -65,5 +52,17 @@ L1426:
  syscall 2, 18 ; trap_attack_is_strike (2 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald\limi.bdscript       |           
+| limit\donald_wi\limi.bdscript       |           
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

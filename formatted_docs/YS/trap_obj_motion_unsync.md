@@ -11,10 +11,27 @@ Unsyncs two motion sets
 | child   | YS::MOTION_289   | A motion set
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L6188:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+ jz L6210
+ pushFromFSp 0
+ syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
+ pushFromFSp 4
+ pushFromFSp 0
+ syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
+ jmp L6210
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -38,23 +55,5 @@ Unsyncs two motion sets
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L6188:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
- jz L6210
- pushFromFSp 0
- syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
- pushFromFSp 4
- pushFromFSp 0
- syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)
- jmp L6210
-```
-</details>
 

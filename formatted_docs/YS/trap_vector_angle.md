@@ -15,26 +15,7 @@ Computes the angle between two vectors
 | Name | Type
 |------|-----
 | angle   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
-| obj\G_EX250_0\g_ex.bdscript       | ()          
-| obj\G_EX250_0_G\g_ex.bdscript       | ()          
-| obj\G_EX250_0_R\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
-| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_EH060\f_eh.bdscript</summary>
+Example Usage From obj\F_EH060\f_eh.bdscript
 ```plaintext
 L3755:
  popToSp 0
@@ -73,5 +54,23 @@ L3755:
  infzf 
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
+| obj\G_EX250_0\g_ex.bdscript       | ()          
+| obj\G_EX250_0_G\g_ex.bdscript       | ()          
+| obj\G_EX250_0_R\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
+| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
+
+
 

@@ -16,10 +16,39 @@ Applies a matrix to a bone
 | Name | Type
 |------|-----
 | matrix_out   | float   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L782:
+ pushFromPSp 176
+ gosub 52, L2499
+ eqz 
+ jz L1049
+ pushFromPSp 16
+ pushImmf 1
+ gosub 52, L1889
+ pushFromFSp 0
+ pushImm 16385
+ pushFromPSp 16
+ syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ memcpyToSp 16, 16
+ pushFromPSp 48
+ pushFromPSp 16
+ gosub 52, L1951
+ pushFromPSp 48
+ fetchValue 92
+ jz L833
+ pushFromPAi L6864 ; ___ai 'break' (L6864)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ jmp L1049
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -208,35 +237,5 @@ Applies a matrix to a bone
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L782:
- pushFromPSp 176
- gosub 52, L2499
- eqz 
- jz L1049
- pushFromPSp 16
- pushImmf 1
- gosub 52, L1889
- pushFromFSp 0
- pushImm 16385
- pushFromPSp 16
- syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- memcpyToSp 16, 16
- pushFromPSp 48
- pushFromPSp 16
- gosub 52, L1951
- pushFromPSp 48
- fetchValue 92
- jz L833
- pushFromPAi L6864 ; ___ai 'break' (L6864)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- jmp L1049
-```
-</details>
 

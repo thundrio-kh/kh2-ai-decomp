@@ -12,15 +12,14 @@ Resets the reaction command state to starting state
 | group   | int   | Unknown
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

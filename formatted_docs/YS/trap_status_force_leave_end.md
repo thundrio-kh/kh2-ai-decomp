@@ -9,21 +9,7 @@ Set the force leave flag to false
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\B_NM000\b_nm.bdscript       | ((B) Oogie Boogie)          
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_MU120\b_mu.bdscript</summary>
+Example Usage From obj\B_MU120\b_mu.bdscript
 ```plaintext
 L6971:
  popToSp 0
@@ -47,5 +33,18 @@ L6971:
  syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
  jmp L7017
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\B_NM000\b_nm.bdscript       | ((B) Oogie Boogie)          
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+| obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
+
+
 

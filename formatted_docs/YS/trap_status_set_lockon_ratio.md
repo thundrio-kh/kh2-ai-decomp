@@ -10,30 +10,7 @@ Set the range at which the player is allowed to lockon from
 | range   | float   | Range to set
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-| obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          
-| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
-| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
-| obj\F_NM170_L\f_nm.bdscript       | ((F) Present minigame (L) (NM))          
-| obj\F_NM170_M\f_nm.bdscript       | ((F) Present minigame (M) (NM))          
-| obj\F_NM170_S\f_nm.bdscript       | ((F) Present minigame (S) (NM))          
-| obj\F_NM170_XL\f_nm.bdscript       | ((F) Present minigame (XL) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L4649:
  popToSp 4
@@ -662,5 +639,27 @@ L4649:
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+| obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          
+| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
+| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
+| obj\F_NM170_L\f_nm.bdscript       | ((F) Present minigame (L) (NM))          
+| obj\F_NM170_M\f_nm.bdscript       | ((F) Present minigame (M) (NM))          
+| obj\F_NM170_S\f_nm.bdscript       | ((F) Present minigame (S) (NM))          
+| obj\F_NM170_XL\f_nm.bdscript       | ((F) Present minigame (XL) (NM))          
+
+
 

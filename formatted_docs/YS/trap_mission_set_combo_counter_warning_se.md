@@ -11,19 +11,7 @@ Set the sound effect that will play when the combo counter reaches the warning v
 | id   | int   | id of a combo counter
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HB09_SKATE_01\hb09.bdscript       |           
-| msn\TT06_PERFORM_02\tt06.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
+Example Usage From msn\HB09_SKATE_01\hb09.bdscript
 ```plaintext
 L221:
  pushImm 10
@@ -31,5 +19,16 @@ L221:
  syscall 4, 53 ; trap_mission_set_combo_counter_warning_se (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HB09_SKATE_01\hb09.bdscript       |           
+| msn\TT06_PERFORM_02\tt06.bdscript       |           
+
+
 

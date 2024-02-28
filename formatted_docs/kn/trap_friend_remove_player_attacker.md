@@ -11,18 +11,7 @@ Remove the player attacker
 | remove_old   | bool   | Should the old attacker also be removed
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L8674:
  popToSp 0
@@ -40,5 +29,15 @@ L8674:
  syscall 10, 34 ; trap_friend_remove_player_attacker (2 in, 0 out)
  jmp L8704
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

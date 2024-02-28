@@ -9,10 +9,26 @@ Start the prize drain effect
 |------|------|------------
 
 
+Example Usage From magic\MAGNET_1\magn.bdscript
+```plaintext
+L23:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1
+ gosub 24, L498
+ popToSp 64
+ pushFromFSp 0
+ gosub 24, L600
+ jz L44
+ syscall 1, 187 ; trap_status_prize_drain_start (0 in, 0 out)
+ jmp L44
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\MAGNET_1\magn.bdscript       |           
@@ -27,22 +43,5 @@ Start the prize drain effect
 | msn\TT32_MS302\tt32.bdscript       |           
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\MAGNET_1\magn.bdscript</summary>
-```plaintext
-L23:
- popToSp 0
- pushFromFSp 0
- pushImm 1
- gosub 24, L498
- popToSp 64
- pushFromFSp 0
- gosub 24, L600
- jz L44
- syscall 1, 187 ; trap_status_prize_drain_start (0 in, 0 out)
- jmp L44
-```
-</details>
 

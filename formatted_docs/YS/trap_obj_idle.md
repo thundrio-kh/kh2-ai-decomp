@@ -10,10 +10,42 @@ Sets the current action for the object to idle.
 | obj   | YS::OBJ_125 *   | An object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L397:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L1366
+ pushFromPWp W0
+ fetchValue 144
+ jz L450
+ pushFromPWp W0
+ pushFromPWp W0
+ pushImm 4
+ add 
+ gosub 52, L1641
+ popToSp 180
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L1393
+ eqz 
+ jz L448
+ pushFromPWp W0
+ pushImm 144
+ add 
+ pushImm 0
+ memcpy 0
+ jmp L448
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -229,38 +261,5 @@ Sets the current action for the object to idle.
 | obj\P_MU000\p_mu.bdscript       | ((P) Mulan)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L397:
- popToSp 0
- pushFromFSp 0
- syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L1366
- pushFromPWp W0
- fetchValue 144
- jz L450
- pushFromPWp W0
- pushFromPWp W0
- pushImm 4
- add 
- gosub 52, L1641
- popToSp 180
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L1393
- eqz 
- jz L448
- pushFromPWp W0
- pushImm 144
- add 
- pushImm 0
- memcpy 0
- jmp L448
-```
-</details>
 

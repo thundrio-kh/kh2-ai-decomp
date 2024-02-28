@@ -11,10 +11,50 @@ Sets an object to go into a falling animation
 | id   | int   | ID of a specific motion set entry
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1258:
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L1393
+ jz L1331
+ pushFromPSp 16
+ pushImmf 1
+ gosub 52, L1889
+ pushFromFSp 0
+ pushFromPSp 16
+ gosub 52, L2589
+ pushFromFSp 0
+ pushImmf 0
+ syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
+ pushFromPWp W0
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 255
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ popToSp 188
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L2649
+ pushFromFSp 0
+ pushImm 258
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 259
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 188
+ gosub 52, L2603
+ drop 
+ jmp L1365
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -88,46 +128,5 @@ Sets an object to go into a falling animation
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 | obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1258:
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L1393
- jz L1331
- pushFromPSp 16
- pushImmf 1
- gosub 52, L1889
- pushFromFSp 0
- pushFromPSp 16
- gosub 52, L2589
- pushFromFSp 0
- pushImmf 0
- syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
- pushFromPWp W0
- fetchValue 0
- pushFromFSp 0
- pushImm 255
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- popToSp 188
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L2649
- pushFromFSp 0
- pushImm 258
- syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
- pushFromFSp 0
- pushImm 259
- syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
- pushFromFSp 0
- pushFromFSp 188
- gosub 52, L2603
- drop 
- jmp L1365
-```
-</details>
 

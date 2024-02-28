@@ -14,10 +14,22 @@ Return if the current RTN action is end
 | Name | Type
 |------|-----
 | is_end   | bool   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1117:
+ pushFromFSp 0
+ syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
+ eqz 
+ jz L1127
+ halt 
+ jmp L1117
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,18 +264,5 @@ Return if the current RTN action is end
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1117:
- pushFromFSp 0
- syscall 5, 11 ; trap_is_end_rtn_action (1 in, 1 out)
- eqz 
- jz L1127
- halt 
- jmp L1117
-```
-</details>
 

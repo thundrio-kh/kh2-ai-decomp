@@ -14,10 +14,35 @@ sets a color for a light, "a" value is always 128
 | time   | int   | time to take to set the color
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L6541:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ syscall 1, 23 ; trap_area_world (0 in, 1 out)
+ pushImm 13
+ sub 
+ eqz 
+ jz L6581
+ pushFromFSp 0
+ fetchValue 0
+ syscall 2, 55 ; trap_limit_light (1 in, 1 out)
+ pushImm 64
+ pushImm 64
+ pushImm 64
+ pushFromFSp 4
+ syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
+ jmp L6597
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -90,31 +115,5 @@ sets a color for a light, "a" value is always 128
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L6541:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- popToSp 0
- syscall 1, 23 ; trap_area_world (0 in, 1 out)
- pushImm 13
- sub 
- eqz 
- jz L6581
- pushFromFSp 0
- fetchValue 0
- syscall 2, 55 ; trap_limit_light (1 in, 1 out)
- pushImm 64
- pushImm 64
- pushImm 64
- pushFromFSp 4
- syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
- jmp L6597
-```
-</details>
 

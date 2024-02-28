@@ -15,10 +15,31 @@ Checks the option of an rtn flag
 | Name | Type
 |------|-----
 | value   | bool   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L179:
+ pushFromFSp 0
+ pushImm 5
+ syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
+ jz L215
+ pushFromPSp 16
+ pushImmf 0
+ pushImmf 0
+ pushImmf 0
+ pushImmf 0
+ gosub 12, L263
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImmf 0
+ syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
+ jmp L215
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -253,27 +274,5 @@ Checks the option of an rtn flag
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L179:
- pushFromFSp 0
- pushImm 5
- syscall 5, 17 ; trap_check_rtn_option_flag (2 in, 1 out)
- jz L215
- pushFromPSp 16
- pushImmf 0
- pushImmf 0
- pushImmf 0
- pushImmf 0
- gosub 12, L263
- pushFromFSp 0
- pushFromPSp 16
- pushImmf 0
- syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
- jmp L215
-```
-</details>
 

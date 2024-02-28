@@ -18,10 +18,23 @@ Starts and binds a PAX effect
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
+Example Usage From magic\blizzard1\bliz.bdscript
+```plaintext
+L362:
+ pushFromFSpVal 16
+ pushFromFSp 4
+ pushFromPSpVal 0
+ pushImm 1
+ pushImm 0
+ syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           
@@ -68,19 +81,5 @@ Starts and binds a PAX effect
 | magic\THUNDER_3\thun.bdscript       |           
 | magic\THUNDER_3lk\thun.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```plaintext
-L362:
- pushFromFSpVal 16
- pushFromFSp 4
- pushFromPSpVal 0
- pushImm 1
- pushImm 0
- syscall 1, 139 ; trap_pax_start_bind (5 in, 1 out)
- ret
-```
-</details>
 

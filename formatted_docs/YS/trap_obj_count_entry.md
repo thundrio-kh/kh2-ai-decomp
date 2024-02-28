@@ -14,10 +14,28 @@ Return the number of instances of an object
 | Name | Type
 |------|-----
 | num   | int   
+Example Usage From msn\MU09_KINOKO_VEX\kino.bdscript
+```plaintext
+L402:
+ pushImm 2345
+ syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)
+ pushFromFSp 40
+ sub 
+ msb 
+ dup 
+ jz L422
+ pushFromFSp 32
+ pushImm 100
+ sub 
+ msb 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU09_KINOKO_VEX\kino.bdscript       |           
@@ -34,24 +52,5 @@ Return the number of instances of an object
 | obj\N_PO040_BTL\n_po.bdscript       | ((N) Eeyore (BTL) (PO))          
 | obj\N_PO070_BTL\n_po.bdscript       | ((N) Roo (BTL) (PO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\MU09_KINOKO_VEX\kino.bdscript</summary>
-```plaintext
-L402:
- pushImm 2345
- syscall 1, 323 ; trap_obj_count_entry (1 in, 1 out)
- pushFromFSp 40
- sub 
- msb 
- dup 
- jz L422
- pushFromFSp 32
- pushImm 100
- sub 
- msb 
- eqzv
-```
-</details>
 

@@ -9,18 +9,7 @@ Clear the target before the player
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript</summary>
+Example Usage From obj\N_EX760_BTL_MEGARA\n_ex.bdscript
 ```plaintext
 L5513:
  popToSp 0
@@ -50,5 +39,15 @@ L5513:
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
+
+
 

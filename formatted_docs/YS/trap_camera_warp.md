@@ -9,24 +9,7 @@ Warps the camera (to another object?)
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
-| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
+Example Usage From obj\B_EX130\b_ex.bdscript
 ```plaintext
 L3109:
  pushFromFSp 0
@@ -65,5 +48,21 @@ L3109:
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
+| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
+
+
 

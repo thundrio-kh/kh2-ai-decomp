@@ -14,10 +14,39 @@ Get the score of the current minigame
 | Name | Type
 |------|-----
 | score   | int   
+Example Usage From msn\AL00_SKATE_01\al00.bdscript
+```plaintext
+L191:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 12
+ syscall 4, 38 ; trap_score_get (1 in, 1 out)
+ popToSpVal 0
+ pushFromFSpVal 0
+ pushImm 1
+ pushImm 0
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ pushFromFSp 8
+ popToSpVal 4
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 2
+ sub 
+ info 
+ jz L237
+ pushFromFSp 4
+ syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
+ jmp L286
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
@@ -97,35 +126,5 @@ Get the score of the current minigame
 | msn\WI02_KINOKO_MAR\kino.bdscript       |           
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```plaintext
-L191:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 0
- pushFromFSp 12
- syscall 4, 38 ; trap_score_get (1 in, 1 out)
- popToSpVal 0
- pushFromFSpVal 0
- pushImm 1
- pushImm 0
- syscall 4, 37 ; trap_score_update (3 in, 1 out)
- drop 
- pushFromFSp 8
- popToSpVal 4
- pushFromFSpVal 0
- syscall 4, 35 ; trap_score_type (1 in, 1 out)
- pushImm 2
- sub 
- info 
- jz L237
- pushFromFSp 4
- syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
- jmp L286
-```
-</details>
 

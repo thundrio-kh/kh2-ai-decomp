@@ -10,10 +10,24 @@ Unhooks a motion set
 | motion   | YS::MOTION_289   | A motion set
 
 
+Example Usage From obj\B_EX160\b_ex.bdscript
+```plaintext
+L5222:
+ pushFromFSp 0
+ syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
@@ -36,20 +50,5 @@ Unhooks a motion set
 | obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```plaintext
-L5222:
- pushFromFSp 0
- syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushImmf 0
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
- ret
-```
-</details>
 

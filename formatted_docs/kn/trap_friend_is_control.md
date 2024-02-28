@@ -14,19 +14,7 @@ Returns if the friend has control
 | Name | Type
 |------|-----
 | has_control   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L8995:
  popToSp 0
@@ -37,5 +25,16 @@ L8995:
  syscall 10, 36 ; trap_friend_is_control (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

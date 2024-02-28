@@ -10,10 +10,27 @@ Destroy an attack object, freeing the memory.
 | attack   | YS::ATTACK_MAGIC *   | attack to be destroyed
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L4568:
+ popToSp 0
+ pushFromFSpVal 68
+ pushImm 0
+ sub 
+ neqz 
+ jz L4590
+ pushFromFSpVal 68
+ syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+ pushImm 0
+ popToSpVal 68
+ jmp L4590
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -292,23 +309,5 @@ Destroy an attack object, freeing the memory.
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L4568:
- popToSp 0
- pushFromFSpVal 68
- pushImm 0
- sub 
- neqz 
- jz L4590
- pushFromFSpVal 68
- syscall 2, 13 ; trap_attack_free (1 in, 0 out)
- pushImm 0
- popToSpVal 68
- jmp L4590
-```
-</details>
 

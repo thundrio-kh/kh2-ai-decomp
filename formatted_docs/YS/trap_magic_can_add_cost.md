@@ -14,15 +14,14 @@ Check if the cost for this magic object can be added to the areas current cost
 | Name | Type
 |------|-----
 | allowed   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

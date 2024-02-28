@@ -14,10 +14,27 @@ Returns true if the object is the player
 | Name | Type
 |------|-----
 | is_player   | bool   
+Example Usage From msn\CA01_MS204\ca01.bdscript
+```plaintext
+TR6:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
+ dup 
+ jz L279
+ pushFromFSp 4
+ syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
+ eqz 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           
@@ -127,23 +144,5 @@ Returns true if the object is the player
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 | obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```plaintext
-TR6:
- popToSp 0
- popToSp 4
- pushFromFSp 4
- fetchValue 4
- syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
- dup 
- jz L279
- pushFromFSp 4
- syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
- eqz 
- eqzv
-```
-</details>
 

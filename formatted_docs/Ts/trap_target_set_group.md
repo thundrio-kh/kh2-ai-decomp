@@ -11,18 +11,7 @@ Set the group ID that a target belongs to
 | group_id   | int   | ID of a group
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L3502:
  pushFromFSp 20
@@ -30,5 +19,15 @@ L3502:
  syscall 6, 56 ; trap_target_set_group (2 in, 0 out)
  jmp L3673
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+
+
 

@@ -13,20 +13,7 @@ Set the parameters of dice actions based on a number of parameters
 | unk4   | float   | Value of 3.5 used in game AI
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L10397:
  gosub 4, L946
@@ -76,5 +63,17 @@ L10397:
  syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

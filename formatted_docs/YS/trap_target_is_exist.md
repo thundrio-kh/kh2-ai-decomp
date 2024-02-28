@@ -14,10 +14,27 @@ Returns true if the target exists
 | Name | Type
 |------|-----
 | is_exist   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L468:
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ eqz 
+ jz L489
+ pushFromFSp 180
+ pushFromPWp W0
+ pushImm 4
+ add 
+ syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
+ gosub 52, L1675
+ jmp L489
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -243,23 +260,5 @@ Returns true if the target exists
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L468:
- pushFromFSp 180
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- eqz 
- jz L489
- pushFromFSp 180
- pushFromPWp W0
- pushImm 4
- add 
- syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
- gosub 52, L1675
- jmp L489
-```
-</details>
 

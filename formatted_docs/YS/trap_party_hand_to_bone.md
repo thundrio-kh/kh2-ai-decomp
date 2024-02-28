@@ -15,39 +15,7 @@ Return the bone ID of the hand of the party member
 | Name | Type
 |------|-----
 | bone_id   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| limit\riku\limi.bdscript       |           
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
-| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
-| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
-| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
-| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
-| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
-| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
-| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
-| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L4229:
  popToSp 4
@@ -75,5 +43,36 @@ L4229:
  syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
  jmp L4279
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| limit\riku\limi.bdscript       |           
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
+| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
+| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
+| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
+| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
+| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
+| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
+| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
+| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
+
+
 

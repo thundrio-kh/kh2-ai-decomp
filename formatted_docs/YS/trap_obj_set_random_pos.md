@@ -13,23 +13,7 @@ Sets an object to a random in bounds position (if the random location found is o
 | height   | float   | Determines height of random positions to choose from
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\he05\f_he.bdscript       |           
-| ard\he07\f_he.bdscript       |           
-| ard\he11\f_he.bdscript       |           
-| ard\he15\f_he.bdscript       |           
-| ard\he16\f_he.bdscript       |           
-| ard\he17\f_he.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
+Example Usage From ard\he05\f_he.bdscript
 ```plaintext
 L56:
  jz L112
@@ -59,5 +43,20 @@ L56:
  gosub 12, L289
  jmp L112
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\he05\f_he.bdscript       |           
+| ard\he07\f_he.bdscript       |           
+| ard\he11\f_he.bdscript       |           
+| ard\he15\f_he.bdscript       |           
+| ard\he16\f_he.bdscript       |           
+| ard\he17\f_he.bdscript       |           
+
+
 

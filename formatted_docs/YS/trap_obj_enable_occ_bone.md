@@ -11,18 +11,7 @@ Enable occlusion culling for a specific bone
 | boneid   | ID of a bone   | 
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
+Example Usage From obj\B_HE100\b_he.bdscript
 ```plaintext
 L5637:
  popToSp 0
@@ -151,5 +140,15 @@ L5637:
  syscall 1, 336 ; trap_obj_enable_occ_bone (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
+
+
 

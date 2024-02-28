@@ -17,18 +17,7 @@ Return the index number of a target within a position and a direction
 | Name | Type
 |------|-----
 | target_num   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\mulan\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L921:
  popToSp 0
@@ -75,5 +64,15 @@ L921:
  gosub 4, L1061
  jmp L1031
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\mulan\limi.bdscript       |           
+
+
 

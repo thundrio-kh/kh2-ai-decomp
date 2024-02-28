@@ -10,19 +10,7 @@ turns off the display of an on screen timer
 | timer_id   | int   | id of counter
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\CA07_MS105\ca07.bdscript       |           
-| msn\EH26_MS108\eh26.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
+Example Usage From msn\CA07_MS105\ca07.bdscript
 ```plaintext
 L204:
  pushImm 0
@@ -31,5 +19,16 @@ L204:
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  jmp L176
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\CA07_MS105\ca07.bdscript       |           
+| msn\EH26_MS108\eh26.bdscript       |           
+
+
 

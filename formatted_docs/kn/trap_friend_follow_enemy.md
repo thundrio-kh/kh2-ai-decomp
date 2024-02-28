@@ -10,18 +10,7 @@ Have a friend follow an enemy
 | friend   | kn::Friend_0 *   | A friend object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_LK020\p_lk.bdscript</summary>
+Example Usage From obj\P_LK020\p_lk.bdscript
 ```plaintext
 L2181:
  pushFromPSpVal 0
@@ -39,5 +28,15 @@ L2181:
  syscall 10, 21 ; trap_friend_follow_enemy (1 in, 0 out)
  jmp L2207
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+
+
 

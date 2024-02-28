@@ -15,20 +15,7 @@ Get the parameter of a friends action
 | Name | Type
 |------|-----
 | param   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L803:
  popToSp 4
@@ -278,5 +265,17 @@ L803:
  syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
  jmp L1459
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
+
+
 

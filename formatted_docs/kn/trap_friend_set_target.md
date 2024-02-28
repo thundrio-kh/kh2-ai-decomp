@@ -12,26 +12,7 @@ Set the target for a friend
 | unk3   | unknown   | Unknown
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
-| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
-| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
-| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
-| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
-| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L545:
  popToSp 0
@@ -68,5 +49,23 @@ L545:
  syscall 10, 14 ; trap_friend_set_target (3 in, 0 out)
  jmp L615
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
+| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
+| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
+| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
+| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
+| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
+
+
 

@@ -14,18 +14,7 @@ Have genie get the limit command
 | Name | Type
 |------|-----
 | command_id   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
+Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L4091:
  pushFromFSp 0
@@ -36,5 +25,15 @@ L4091:
  halt 
  jmp L4070
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+
+
 

@@ -11,18 +11,7 @@ sets a warning flag for the specified gauge
 | id   | int   | id of a gauge
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_CM040_BTL\n_cm.bdscript</summary>
+Example Usage From obj\N_CM040_BTL\n_cm.bdscript
 ```plaintext
 L20248:
  pushFromPAi L24325 ; ___ai 'change_gauge' (L24325)
@@ -31,5 +20,15 @@ L20248:
  pushImm 0
  syscall 4, 57 ; trap_mission_warning_gauge (2 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+
+
 

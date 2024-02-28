@@ -10,10 +10,19 @@ Enable a unit group so it can spawn
 | id   | id   | Unit group ID
 
 
+Example Usage From msn\MU02_MS103B\mu02.bdscript
+```plaintext
+L204:
+ pushImm 417
+ syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
+ jmp L229
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU02_MS103B\mu02.bdscript       |           
@@ -34,15 +43,5 @@ Enable a unit group so it can spawn
 | obj\N_EX760_BTL_HERCULES\n_ex.bdscript       | ((N) Pete (BTL_HERCULES) (EX))          
 | obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
-```plaintext
-L204:
- pushImm 417
- syscall 1, 203 ; trap_unit_enable (1 in, 0 out)
- jmp L229
-```
-</details>
 

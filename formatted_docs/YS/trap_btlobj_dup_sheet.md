@@ -11,18 +11,7 @@ Duplicates a battle object
 | param   | int   | Unknown purpose, only used value is 216 (Larxene Datas enmp entry
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L3817:
  popToSp 4
@@ -1436,5 +1425,15 @@ L3817:
  memcpy 0
  jmp L7694
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+
+
 

@@ -15,41 +15,7 @@ Checks if an attack is striking an object
 | Name | Type
 |------|-----
 | result   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\donald\limi.bdscript       |           
-| limit\donald_wi\limi.bdscript       |           
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
-| obj\B_EX110_FRIEND\b_ex.bdscript       | ((A?) Axel)          
-| obj\B_EX110_LV99\b_ex.bdscript       | ((B99) Axel (Limit Cut))          
-| obj\B_EX110_SKIRMISH\b_ex.bdscript       | ((B) Axel (boss, freezes when RC is used) (SKIRMISH) (EX))          
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
-| obj\B_HE020\b_he.bdscript       | ((B) Cerberus)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
-| obj\M_EX800\m_ex.bdscript       | ((M) Bolt Tower)          
-| obj\M_EX800_DC\m_ex.bdscript       | ((M) Bolt Tower (DC))          
-| obj\M_EX800_MU\m_ex.bdscript       | ((M) Bolt Tower (MU))          
-| obj\M_EX800_MU_RAW\m_ex.bdscript       | ((M) Bolt Tower (MU) (RAW))          
-| obj\M_EX800_RAW\m_ex.bdscript       | ((M) Bolt Tower (RAW))          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4188:
  jz L4406
@@ -148,5 +114,38 @@ L4188:
  syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
  jmp L4398
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\donald\limi.bdscript       |           
+| limit\donald_wi\limi.bdscript       |           
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
+| obj\B_EX110_FRIEND\b_ex.bdscript       | ((A?) Axel)          
+| obj\B_EX110_LV99\b_ex.bdscript       | ((B99) Axel (Limit Cut))          
+| obj\B_EX110_SKIRMISH\b_ex.bdscript       | ((B) Axel (boss, freezes when RC is used) (SKIRMISH) (EX))          
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
+| obj\B_HE020\b_he.bdscript       | ((B) Cerberus)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
+| obj\M_EX800\m_ex.bdscript       | ((M) Bolt Tower)          
+| obj\M_EX800_DC\m_ex.bdscript       | ((M) Bolt Tower (DC))          
+| obj\M_EX800_MU\m_ex.bdscript       | ((M) Bolt Tower (MU))          
+| obj\M_EX800_MU_RAW\m_ex.bdscript       | ((M) Bolt Tower (MU) (RAW))          
+| obj\M_EX800_RAW\m_ex.bdscript       | ((M) Bolt Tower (RAW))          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
+
+
 

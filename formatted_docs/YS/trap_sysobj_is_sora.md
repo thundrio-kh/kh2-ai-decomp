@@ -14,21 +14,7 @@ Returns true if the object is Sora
 | Name | Type
 |------|-----
 | is_sora   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
-| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
+Example Usage From obj\B_EX130\b_ex.bdscript
 ```plaintext
 L2835:
  gosub 4, L2828
@@ -47,5 +33,18 @@ L2835:
  gosub 12, L2886
  neqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
+| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+
+
 

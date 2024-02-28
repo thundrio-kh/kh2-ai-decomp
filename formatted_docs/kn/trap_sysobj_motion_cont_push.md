@@ -12,15 +12,14 @@ Push a motion entry onto the motion queue
 | blend_time   | float   | time to blend two animations
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

@@ -15,15 +15,14 @@ Checks if an object flag is set. Unused normally
 | Name | Type
 |------|-----
 | is_set   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

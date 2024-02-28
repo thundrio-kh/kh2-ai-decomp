@@ -10,18 +10,7 @@ reflects an attack. Unsure if it changes the direction of the attack, or changes
 | attack   | YS::ATTACK_MAGIC *   | attack object to be reflected
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
+Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L75:
  jz L83
@@ -29,5 +18,15 @@ L75:
  syscall 2, 26 ; trap_attack_exec_reflect (1 in, 0 out)
  jmp L83
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+
+
 

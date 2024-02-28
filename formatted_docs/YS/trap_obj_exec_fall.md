@@ -10,10 +10,27 @@ Tells the object to fall
 | obj   | YS::OBJ_125   | An Object
 
 
+Example Usage From obj\B_AL110\b_al.bdscript
+```plaintext
+TR13:
+ pushFromPWp W0
+ pushImmf 0
+ syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
+ pushFromPWp W0
+ fetchValue 4
+ pushImm 4
+ pushImmf 8
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromPWp W0
+ syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
@@ -230,23 +247,5 @@ Tells the object to fall
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
-```plaintext
-TR13:
- pushFromPWp W0
- pushImmf 0
- syscall 1, 128 ; trap_obj_sysjump (2 in, 0 out)
- pushFromPWp W0
- fetchValue 4
- pushImm 4
- pushImmf 8
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
- pushFromPWp W0
- syscall 1, 65 ; trap_obj_exec_fall (1 in, 0 out)
- ret
-```
-</details>
 

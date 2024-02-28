@@ -12,25 +12,7 @@ Return the nth oldest target in the searcher
 | n   | int   | An index value for the list of targets
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L549:
  pushFromFSp 72
@@ -64,5 +46,22 @@ L549:
  syscall 6, 12 ; trap_target_searcher_get_old (3 in, 0 out)
  jmp L607
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+
+
 

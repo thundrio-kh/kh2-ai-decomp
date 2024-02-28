@@ -12,18 +12,7 @@ Play the specified path in the Dragon Xemnas fight
 | dir   | bool   | Boolean that indicates directon
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L5141:
  popToSp 0
@@ -36,5 +25,15 @@ L5141:
  pushImmf 60
  gosub 4, L193
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+
+
 

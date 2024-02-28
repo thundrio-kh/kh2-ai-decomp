@@ -10,15 +10,14 @@ Activates a bonus get (Normally the things acquired by finishing missions ). Unu
 | id   | int   | id of the bonus to give
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

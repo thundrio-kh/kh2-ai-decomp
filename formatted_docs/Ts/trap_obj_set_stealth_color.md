@@ -13,18 +13,7 @@ Set the stealth color for an object
 | b   | int   | Blue value, 0-255
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L17408:
  popToSp 0
@@ -70,5 +59,15 @@ L17408:
  gosub 12, L543
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+
+
 

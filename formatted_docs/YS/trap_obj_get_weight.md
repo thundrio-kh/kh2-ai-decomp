@@ -14,18 +14,7 @@ Returns the defined weight of an object
 | Name | Type
 |------|-----
 | weight   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\TR07_MS203\tr07.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\TR07_MS203\tr07.bdscript</summary>
+Example Usage From msn\TR07_MS203\tr07.bdscript
 ```plaintext
 L240:
  pushFromPSp 0
@@ -38,5 +27,15 @@ L240:
  popToSp 108
  jmp L240
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\TR07_MS203\tr07.bdscript       |           
+
+
 

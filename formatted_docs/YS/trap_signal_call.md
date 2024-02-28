@@ -11,10 +11,21 @@ Perform a signal call.
 | arg   | int   | Argument to call signal with
 
 
+Example Usage From ard\al09\al09.bdscript
+```plaintext
+L72:
+ jz L84
+ pushImm 9
+ pushImm 0
+ syscall 1, 41 ; trap_signal_call (2 in, 0 out)
+ jmp L84
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           
@@ -116,17 +127,5 @@ Perform a signal call.
 | obj\N_EX740_TT_SKATE_RTN\n_ex.bdscript       | ((N) Dove (TT) (SKATE) (RTN) (EX))          
 | obj\N_PO010_BTL\n_po.bdscript       | ((N) Pooh (BTL) (PO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al09\al09.bdscript</summary>
-```plaintext
-L72:
- jz L84
- pushImm 9
- pushImm 0
- syscall 1, 41 ; trap_signal_call (2 in, 0 out)
- jmp L84
-```
-</details>
 

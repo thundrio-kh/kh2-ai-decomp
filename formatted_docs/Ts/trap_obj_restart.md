@@ -11,15 +11,14 @@ Restart an object so it is no longer stopped
 | id   | int   | unknown
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

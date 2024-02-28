@@ -14,18 +14,7 @@ Inverse the position of the camera and apply it
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L5355:
  pushFromFSpVal 64
@@ -94,5 +83,15 @@ L5355:
  gosub 16, L193
  jmp L5355
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+
+
 

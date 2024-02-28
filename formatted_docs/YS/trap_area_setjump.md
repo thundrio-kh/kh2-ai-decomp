@@ -11,15 +11,14 @@ Jumps to a new area, without a program. Unclear how this is different from trap_
 | fadetype   | int   | fade type to use
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

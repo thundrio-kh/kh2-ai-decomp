@@ -14,10 +14,28 @@ Returns the appear way value of an object, or -1. It seems like just about every
 | Name | Type
 |------|-----
 | result   | int   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L6432:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
+ dup 
+ pushImm 2
+ sub 
+ jz L6454
+ dup 
+ pushImm -1
+ sub 
+ jz L6454
+ jmp L6460
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -555,24 +573,5 @@ Returns the appear way value of an object, or -1. It seems like just about every
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L6432:
- popToSp 0
- pushFromFSp 0
- syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)
- dup 
- pushImm 2
- sub 
- jz L6454
- dup 
- pushImm -1
- sub 
- jz L6454
- jmp L6460
-```
-</details>
 

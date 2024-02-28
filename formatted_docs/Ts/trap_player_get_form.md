@@ -13,10 +13,21 @@ Return the id of the form the player is currently in
 | Name | Type
 |------|-----
 | form_id   | int   
+Example Usage From obj\B_EX130\b_ex.bdscript
+```plaintext
+L2886:
+ syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
+ pushImm 6
+ sub 
+ eqz 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
@@ -39,17 +50,5 @@ Return the id of the form the player is currently in
 | obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
 | obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX130\b_ex.bdscript</summary>
-```plaintext
-L2886:
- syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
- pushImm 6
- sub 
- eqz 
- ret
-```
-</details>
 

@@ -17,15 +17,14 @@ Overrides the specified slot on the command cage with priority 100, and returns 
 | Name | Type
 |------|-----
 | commandslot   | YS::COMMAND_SLOT_14 *   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

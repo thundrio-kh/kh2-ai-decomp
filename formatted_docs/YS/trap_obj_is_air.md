@@ -14,10 +14,65 @@ returns if the object is currently in the air
 | Name | Type
 |------|-----
 | is_air   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2833:
+ popToSp 0
+ pushImm 0
+ popToSpVal 44
+ pushFromPSpVal 4
+ syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
+ popToSpVal 152
+ pushFromPSpVal 4
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ pushFromFSp 0
+ fetchValue 0
+ pushFromPSpVal 4
+ pushImm 256
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 
+ pushFromPSpVal 4
+ pushImm L2942
+ pushImm 0
+ syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
+ pushFromFSp 0
+ fetchValue 0
+ pushFromPSpVal 20
+ pushImm 256
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 
+ pushFromPSpVal 20
+ pushImm L2942
+ pushImm 0
+ syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
+ pushFromPSpVal 20
+ pushFromPSpVal 4
+ pushImm 16386
+ pushImm 1
+ pushImm 0
+ pushImm 0
+ syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+ pushFromPWp W0
+ pushImm 80
+ add 
+ pushFromFSp 0
+ gosub 4, L2954
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ memcpy 16
+ pushFromFSp 0
+ pushImm L3043
+ gosub 4, L5063
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -596,61 +651,5 @@ returns if the object is currently in the air
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2833:
- popToSp 0
- pushImm 0
- popToSpVal 44
- pushFromPSpVal 4
- syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
- popToSpVal 152
- pushFromPSpVal 4
- syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
- pushFromFSp 0
- fetchValue 0
- pushFromPSpVal 4
- pushImm 256
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop 
- pushFromPSpVal 4
- pushImm L2942
- pushImm 0
- syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
- pushFromFSp 0
- fetchValue 0
- pushFromPSpVal 20
- pushImm 256
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop 
- pushFromPSpVal 20
- pushImm L2942
- pushImm 0
- syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
- pushFromPSpVal 20
- pushFromPSpVal 4
- pushImm 16386
- pushImm 1
- pushImm 0
- pushImm 0
- syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
- pushFromPWp W0
- pushImm 80
- add 
- pushFromFSp 0
- gosub 4, L2954
- memcpyToSp 16, 16
- pushFromPSp 16
- memcpy 16
- pushFromFSp 0
- pushImm L3043
- gosub 4, L5063
- ret
-```
-</details>
 

@@ -10,10 +10,19 @@ Stop an object from ending all actions
 | id   | int   | unknown
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3414:
+ pushImm 17
+ syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -51,15 +60,5 @@ Stop an object from ending all actions
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3414:
- pushImm 17
- syscall 6, 47 ; trap_obj_stop_end_all (1 in, 0 out)
- ret
-```
-</details>
 

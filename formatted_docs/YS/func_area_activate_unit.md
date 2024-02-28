@@ -10,18 +10,7 @@ Activates the spawn file with the passed in name.
 | unit   | string   | name of spawn file to be activated (ie 'f01_'
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\wi00\wi00.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\wi00\wi00.bdscript</summary>
+Example Usage From ard\wi00\wi00.bdscript
 ```plaintext
 TR3:
  pushImm 13318
@@ -31,5 +20,15 @@ TR3:
  syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
  jmp L31
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\wi00\wi00.bdscript       |           
+
+
 

@@ -9,10 +9,18 @@ ends a mission in failure
 |------|------|------------
 
 
+Example Usage From ard\al05\ms_b.bdscript
+```plaintext
+L128:
+ syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
+ jmp L147
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
@@ -307,14 +315,5 @@ ends a mission in failure
 | msn\WI06_MS102B\wi06.bdscript       |           
 | msn\WI07_MS102A\wi07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```plaintext
-L128:
- syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
- jmp L147
-```
-</details>
 

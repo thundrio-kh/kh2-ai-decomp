@@ -11,10 +11,67 @@ Sets the position for an object
 | pos   | kn::FVector *   | A position vector
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3079:
+ pushFromPSpVal 4
+ gosub 12, L3189
+ gosub 12, L3400
+ pushImmf 94
+ gosub 12, L3378
+ pushFromPSp 16
+ pushImmf 1
+ gosub 12, L1889
+ pushFromPSpVal 4
+ pushFromFSp 0
+ pushImm 80
+ add 
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromPSpVal 4
+ pushImmf 500
+ pushImm 1
+ syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
+ pushFromPSpVal 4
+ gosub 12, L3499
+ pushFromPSpVal 4
+ pushFromFSp 0
+ gosub 12, L2954
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromPSpVal 4
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ pushFromPSpVal 4
+ pushFromFSp 0
+ fetchValue 0
+ pushImm 1
+ pushImm 1
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ pushImmf 3600
+ gosub 12, L3536
+ pushFromFSp 0
+ gosub 12, L3659
+ pushImmf 60
+ gosub 12, L3378
+ pushFromFSp 0
+ gosub 12, L3670
+ pushImmf 20
+ gosub 12, L3378
+ pushFromFSp 0
+ gosub 12, L3681
+ halt 
+ gosub 12, L3406
+ gosub 12, L3414
+ pushFromPSpVal 20
+ gosub 12, L5024
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -207,63 +264,5 @@ Sets the position for an object
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3079:
- pushFromPSpVal 4
- gosub 12, L3189
- gosub 12, L3400
- pushImmf 94
- gosub 12, L3378
- pushFromPSp 16
- pushImmf 1
- gosub 12, L1889
- pushFromPSpVal 4
- pushFromFSp 0
- pushImm 80
- add 
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromPSpVal 4
- pushImmf 500
- pushImm 1
- syscall 1, 220 ; trap_obj_move_to_space (3 in, 0 out)
- pushFromPSpVal 4
- gosub 12, L3499
- pushFromPSpVal 4
- pushFromFSp 0
- gosub 12, L2954
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromPSpVal 4
- syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
- pushFromPSpVal 4
- pushFromFSp 0
- fetchValue 0
- pushImm 1
- pushImm 1
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- pushImmf 3600
- gosub 12, L3536
- pushFromFSp 0
- gosub 12, L3659
- pushImmf 60
- gosub 12, L3378
- pushFromFSp 0
- gosub 12, L3670
- pushImmf 20
- gosub 12, L3378
- pushFromFSp 0
- gosub 12, L3681
- halt 
- gosub 12, L3406
- gosub 12, L3414
- pushFromPSpVal 20
- gosub 12, L5024
- ret
-```
-</details>
 

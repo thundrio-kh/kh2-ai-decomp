@@ -18,10 +18,59 @@ Starts an effect associated with an object and binds it to another object
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
+Example Usage From obj\B_EX100\b_ex.bdscript
+```plaintext
+L15416:
+ popToSp 0
+ gosub 4, L1075
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 9
+ syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 9
+ syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+ pushImmf 8
+ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+ pushFromPWp W976
+ pushImm 18
+ gosub 4, L1075
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 1
+ pushImm 0
+ syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
+ popToSp 4
+ pushImmf 180
+ gosub 4, L1474
+ pushImmf 180
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushImmf 180
+ gosub 4, L1474
+ pushFromFSp 4
+ syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
+ pushImmf 90
+ gosub 4, L1474
+ pushImmf 90
+ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+ gosub 4, L1075
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 9
+ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 9
+ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+ pushFromPWp W976
+ gosub 4, L15517
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
@@ -76,55 +125,5 @@ Starts an effect associated with an object and binds it to another object
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
-```plaintext
-L15416:
- popToSp 0
- gosub 4, L1075
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 9
- syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
- pushFromFSp 0
- pushImm 9
- syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
- pushImmf 8
- syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
- pushFromPWp W976
- pushImm 18
- gosub 4, L1075
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 1
- pushImm 0
- syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
- popToSp 4
- pushImmf 180
- gosub 4, L1474
- pushImmf 180
- syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
- pushImmf 180
- gosub 4, L1474
- pushFromFSp 4
- syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
- pushImmf 90
- gosub 4, L1474
- pushImmf 90
- syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
- gosub 4, L1075
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 9
- syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
- pushFromFSp 0
- pushImm 9
- syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
- pushFromPWp W976
- gosub 4, L15517
- ret
-```
-</details>
 

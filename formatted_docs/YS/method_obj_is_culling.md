@@ -14,10 +14,33 @@ Determines if obj is currently being culled
 | Name | Type
 |------|-----
 | is_culling   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L7175:
+ pushImm 0
+ popToSp 8
+ pushFromFSp 0
+ gosub 8, L6617
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ gosub 12, L7220
+ popToSp 4
+ pushFromFSp 0
+ syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
+ jz L7209
+ pushFromFSp 4
+ pushFromFSpVal 60
+ subf 
+ supzf 
+ popToSp 8
+ jmp L7217
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -465,29 +488,5 @@ Determines if obj is currently being culled
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L7175:
- pushImm 0
- popToSp 8
- pushFromFSp 0
- gosub 8, L6617
- memcpyToSp 16, 16
- pushFromPSp 16
- gosub 12, L7220
- popToSp 4
- pushFromFSp 0
- syscall 1, 56 ; method_obj_is_culling (1 in, 1 out)
- jz L7209
- pushFromFSp 4
- pushFromFSpVal 60
- subf 
- supzf 
- popToSp 8
- jmp L7217
-```
-</details>
 

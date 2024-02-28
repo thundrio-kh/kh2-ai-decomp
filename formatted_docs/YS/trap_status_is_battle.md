@@ -13,22 +13,7 @@ Returns if a battle is going on
 | Name | Type
 |------|-----
 | is_battle   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_HB020\f_hb.bdscript</summary>
+Example Usage From obj\F_HB020\f_hb.bdscript
 ```plaintext
 L2276:
  popToSp 0
@@ -42,5 +27,19 @@ L2276:
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

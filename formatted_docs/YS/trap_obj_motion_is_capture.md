@@ -14,10 +14,23 @@ Returns if the motion set is a capture
 | Name | Type
 |------|-----
 | is_capture   | bool   
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L1176:
+ pushFromPWp W72
+ fetchValue 44
+ dup 
+ jz L1188
+ pushFromFSp 0
+ syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -95,19 +108,5 @@ Returns if the motion set is a capture
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
 | obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L1176:
- pushFromPWp W72
- fetchValue 44
- dup 
- jz L1188
- pushFromFSp 0
- syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)
- eqzv
-```
-</details>
 

@@ -18,10 +18,32 @@ Starts an effect associated with an object at the specified position
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L185:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushImm -1
+ pushImm 0
+ sub 
+ msbi 
+ jz L219
+ pushFromFSp 8
+ pushImm -1
+ pushFromFSp 4
+ pushImm 1
+ pushImm 0
+ syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
+ drop 
+ jmp L219
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -163,28 +185,5 @@ Starts an effect associated with an object at the specified position
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L185:
- popToSp 0
- popToSp 4
- popToSp 8
- pushImm -1
- pushImm 0
- sub 
- msbi 
- jz L219
- pushFromFSp 8
- pushImm -1
- pushFromFSp 4
- pushImm 1
- pushImm 0
- syscall 1, 22 ; trap_obj_effect_start_pos (5 in, 1 out)
- drop 
- jmp L219
-```
-</details>
 

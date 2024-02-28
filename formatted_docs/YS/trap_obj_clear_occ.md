@@ -10,15 +10,14 @@ clears the OCC
 | objocc   | YS::OBJOCC_133 *   | an occlusion culling object
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

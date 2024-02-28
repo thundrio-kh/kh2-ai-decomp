@@ -16,18 +16,7 @@ Return a position within a space that the object can move to
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L15264:
  popToSp 4
@@ -79,5 +68,15 @@ L15264:
  gosub32 16, L1748
  jmp L15372
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+
+
 

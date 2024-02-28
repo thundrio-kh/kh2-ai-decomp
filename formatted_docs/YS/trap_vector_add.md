@@ -15,10 +15,43 @@ Adds two vectors together
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1951:
+ popToSp 4
+ popToSp 0
+ pushImmf 100000
+ popToSpVal 76
+ pushFromFSpVal 88
+ jz L2053
+ pushFromFSp 0
+ gosub 12, L2088
+ jz L2010
+ pushFromFSpVal 64
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromPSpVal 32
+ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushFromFSp 4
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromFSp 4
+ pushFromPSp 16
+ gosub 12, L2106
+ jmp L2051
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -389,39 +422,5 @@ Adds two vectors together
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1951:
- popToSp 4
- popToSp 0
- pushImmf 100000
- popToSpVal 76
- pushFromFSpVal 88
- jz L2053
- pushFromFSp 0
- gosub 12, L2088
- jz L2010
- pushFromFSpVal 64
- syscall 1, 120 ; trap_target_pos (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- pushFromPSpVal 32
- syscall 0, 4 ; trap_vector_add (2 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- pushFromFSp 4
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromFSp 4
- pushFromPSp 16
- gosub 12, L2106
- jmp L2051
-```
-</details>
 

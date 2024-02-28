@@ -15,19 +15,7 @@ Returns if a party member has an equipped ability. "tarp" typo comes directly fr
 | Name | Type
 |------|-----
 | is_equipped   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L378:
  dup 
@@ -37,5 +25,16 @@ L378:
  syscall 10, 24 ; tarp_friend_is_equiped_ability (2 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+
+
 

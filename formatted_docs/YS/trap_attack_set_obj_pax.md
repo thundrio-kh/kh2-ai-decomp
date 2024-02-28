@@ -11,10 +11,76 @@ Attaches an PAX effect during an attack. Unknown how this is different from trap
 | pax   | struct *   | The pax effect to attach. Unknown what type of object this is
 
 
+Example Usage From limit\goofy2\limi.bdscript
+```plaintext
+L903:
+ popToSp 0
+ pushFromPSp 64
+ pushImmf 0.785398
+ pushImmf -0.087266
+ pushImmf 0
+ pushImmf 50
+ pushImmf 0
+ gosub 52, L1344
+ pushFromPSp 64
+ gosub 52, L1543
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 208
+ pushFromPSp 208
+ gosub 60, L2094
+ pushFromPSp 64
+ pushImm 64
+ add 
+ pushFromFSpVal 48
+ memcpy 0
+ pushFromPSp 36
+ pushImmf 100
+ pushImmf -1
+ pushImmf 60
+ pushImmf 0
+ gosub 52, L1555
+ pushFromPSp 32
+ pushImmf 300
+ memcpy 0
+ pushFromPSpVal 0
+ syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
+ popToSp 184
+ pushFromPSpVal 64
+ pushFromPSpVal 32
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSpVal 96
+ pushFromPSpVal 64
+ pushImm 253
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 
+ pushFromFSpVal 96
+ pushImm 2
+ pushImm 1
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ popToSp 176
+ pushFromPSpVal 0
+ pushImm 711
+ pushImm -1
+ pushImm 0
+ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+ popToSp 180
+ pushFromFSp 180
+ pushFromPSpVal 64
+ syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
+ pushFromFSp 180
+ pushImmf 60
+ pushImmf 0
+ syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           
@@ -151,72 +217,5 @@ Attaches an PAX effect during an attack. Unknown how this is different from trap
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```plaintext
-L903:
- popToSp 0
- pushFromPSp 64
- pushImmf 0.785398
- pushImmf -0.087266
- pushImmf 0
- pushImmf 50
- pushImmf 0
- gosub 52, L1344
- pushFromPSp 64
- gosub 52, L1543
- memcpyToSp 16, 192
- pushFromPSp 192
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 208
- pushFromPSp 208
- gosub 60, L2094
- pushFromPSp 64
- pushImm 64
- add 
- pushFromFSpVal 48
- memcpy 0
- pushFromPSp 36
- pushImmf 100
- pushImmf -1
- pushImmf 60
- pushImmf 0
- gosub 52, L1555
- pushFromPSp 32
- pushImmf 300
- memcpy 0
- pushFromPSpVal 0
- syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
- popToSp 184
- pushFromPSpVal 64
- pushFromPSpVal 32
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromFSpVal 96
- pushFromPSpVal 64
- pushImm 253
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop 
- pushFromFSpVal 96
- pushImm 2
- pushImm 1
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- popToSp 176
- pushFromPSpVal 0
- pushImm 711
- pushImm -1
- pushImm 0
- syscall 2, 10 ; trap_attack_new (4 in, 1 out)
- popToSp 180
- pushFromFSp 180
- pushFromPSpVal 64
- syscall 2, 22 ; trap_attack_set_obj_pax (2 in, 0 out)
- pushFromFSp 180
- pushImmf 60
- pushImmf 0
- syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
-```
-</details>
 

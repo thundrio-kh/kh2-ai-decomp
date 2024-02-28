@@ -13,20 +13,7 @@ Set the speed of a vacuum
 | unk4   | float   | Unknown
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
+Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L5602:
  pushFromFWp W4264
@@ -42,5 +29,17 @@ L5602:
  syscall 1, 295 ; trap_camera_reset (0 in, 0 out)
  jmp L5627
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
+
+
 

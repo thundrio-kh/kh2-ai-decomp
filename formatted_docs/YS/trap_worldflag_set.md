@@ -10,10 +10,24 @@ Set a worldflag to true
 | id   | int   | Worldflag ID
 
 
+Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+```plaintext
+L358:
+ pushFromPSpVal 12
+ pushImm 0
+ pushImm 0
+ pushImm 1
+ gosub 4, L593
+ pushImm 212
+ syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
+ jmp L591
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           
@@ -59,20 +73,5 @@ Set a worldflag to true
 | msn\HE_COL_8_50\he_c.bdscript       |           
 | msn\HE_COL_8_6\he_c.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```plaintext
-L358:
- pushFromPSpVal 12
- pushImm 0
- pushImm 0
- pushImm 1
- gosub 4, L593
- pushImm 212
- syscall 0, 19 ; trap_worldflag_set (1 in, 0 out)
- jmp L591
-```
-</details>
 

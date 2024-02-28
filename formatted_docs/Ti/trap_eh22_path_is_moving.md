@@ -14,18 +14,7 @@ Return if the path is moving during the dragon xemnas fight
 | Name | Type
 |------|-----
 | is_moving   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L829:
  pushFromFSpVal 124
@@ -47,5 +36,15 @@ L829:
  syscall 5, 30 ; trap_eh22_path_is_moving (1 in, 1 out)
  neqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+
+
 

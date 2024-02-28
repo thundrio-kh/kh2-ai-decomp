@@ -14,15 +14,14 @@ Check the status of a worldflag
 | Name | Type
 |------|-----
 | status   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

@@ -14,10 +14,27 @@ Get the direction of a RTN action
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2245:
+ popToSp 0
+ pushFromFSp 0
+ syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImmf 0.087266
+ syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+ drop
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,23 +269,5 @@ Get the direction of a RTN action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2245:
- popToSp 0
- pushFromFSp 0
- syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromPSp 16
- pushImmf 0.087266
- syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
- drop
-```
-</details>
 

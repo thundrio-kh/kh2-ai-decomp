@@ -13,10 +13,24 @@ Returns the number for the battle program being executed
 | Name | Type
 |------|-----
 | battlenum   | The number representing the battle program being executed   
+Example Usage From msn\AL13_TRAP\al13.bdscript
+```plaintext
+TR3:
+ syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
+ pushImm 80
+ sub 
+ eqz 
+ jz L328
+ pushImm 21
+ syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
+ jmp L328
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           
@@ -65,20 +79,5 @@ Returns the number for the battle program being executed
 | msn\HE_COL_8_50\he_c.bdscript       |           
 | msn\HE_COL_8_6\he_c.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```plaintext
-TR3:
- syscall 1, 26 ; trap_area_battle_set (0 in, 1 out)
- pushImm 80
- sub 
- eqz 
- jz L328
- pushImm 21
- syscall 0, 69 ; trap_menuflag_set (1 in, 0 out)
- jmp L328
-```
-</details>
 

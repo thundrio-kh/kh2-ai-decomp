@@ -14,10 +14,44 @@ Return a player reference associated with a limit
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L5230:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ popToSpVal 0
+ pushFromPSpVal 4
+ pushFromFSp 4
+ syscall 2, 48 ; trap_limit_player (1 in, 1 out)
+ gosub 4, L361
+ pushFromPSpVal 20
+ pushFromFSp 4
+ pushImm 0
+ syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
+ gosub 4, L361
+ pushImm 1
+ popToSpVal 44
+ pushFromPSpVal 4
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+ popToSpVal 36
+ pushFromPSpVal 20
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L5288
+ pushFromPSpVal 20
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+ popToSpVal 40
+ jmp L5293
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -50,40 +84,5 @@ Return a player reference associated with a limit
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L5230:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- popToSpVal 0
- pushFromPSpVal 4
- pushFromFSp 4
- syscall 2, 48 ; trap_limit_player (1 in, 1 out)
- gosub 4, L361
- pushFromPSpVal 20
- pushFromFSp 4
- pushImm 0
- syscall 2, 49 ; trap_limit_friend (2 in, 1 out)
- gosub 4, L361
- pushImm 1
- popToSpVal 44
- pushFromPSpVal 4
- syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
- syscall 1, 131 ; trap_target_dup (1 in, 1 out)
- popToSpVal 36
- pushFromPSpVal 20
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L5288
- pushFromPSpVal 20
- syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
- syscall 1, 131 ; trap_target_dup (1 in, 1 out)
- popToSpVal 40
- jmp L5293
-```
-</details>
 

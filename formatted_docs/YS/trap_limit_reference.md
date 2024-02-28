@@ -14,10 +14,25 @@ Return some reference associated with the limit
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L6698:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
+ pushImm 0
+ sub 
+ ipos 
+ jz L6714
+ halt 
+ jmp L6698
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -50,21 +65,5 @@ Return some reference associated with the limit
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L6698:
- pushFromFSp 0
- fetchValue 0
- syscall 2, 63 ; trap_limit_reference (1 in, 1 out)
- pushImm 0
- sub 
- ipos 
- jz L6714
- halt 
- jmp L6698
-```
-</details>
 

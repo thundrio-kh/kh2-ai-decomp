@@ -13,19 +13,7 @@ Create and allocate a new Flare Force Object
 | Name | Type
 |------|-----
 | flare   | Ts::FLARE_0 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1573:
  popToSp 0
@@ -49,5 +37,16 @@ L1573:
  syscall 7, 7 ; trap_flare_set_radius (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+
+
 

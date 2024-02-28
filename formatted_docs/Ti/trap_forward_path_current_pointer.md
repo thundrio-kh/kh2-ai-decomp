@@ -11,15 +11,14 @@ Go forward on the current path a distance
 | dist   | float   | Distance to move forward
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

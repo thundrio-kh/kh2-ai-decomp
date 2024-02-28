@@ -10,10 +10,25 @@ Sets a "reaction" view camera to watch a target
 | target   | YS::TARGET_3 *   | target for the camera to watch
 
 
+Example Usage From ard\hb10\moog.bdscript
+```plaintext
+L55:
+ pushFromPSp 0
+ pushImm 1295
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 0
+ syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
+ pushImm 36
+ pushImm 17626
+ gosub 8, L75
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\hb10\moog.bdscript       |           
@@ -33,21 +48,5 @@ Sets a "reaction" view camera to watch a target
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 | obj\N_PO010_BTL\n_po.bdscript       | ((N) Pooh (BTL) (PO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
-```plaintext
-L55:
- pushFromPSp 0
- pushImm 1295
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 0
- syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
- pushImm 36
- pushImm 17626
- gosub 8, L75
- ret
-```
-</details>
 

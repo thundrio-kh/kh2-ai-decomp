@@ -11,10 +11,22 @@ Starts an action (with priority?)
 | unk2   | string   | A label for an action
 
 
+Example Usage From obj\B_EX210\b_ex.bdscript
+```plaintext
+L3972:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromPAi L6378 ; ___ai 'rush_start' (L6378)
+ syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
@@ -30,18 +42,5 @@ Starts an action (with priority?)
 | obj\M_EX930\m_ex.bdscript       | ((M) Dancer)          
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX210\b_ex.bdscript</summary>
-```plaintext
-L3972:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromPAi L6378 ; ___ai 'rush_start' (L6378)
- syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
- ret
-```
-</details>
 

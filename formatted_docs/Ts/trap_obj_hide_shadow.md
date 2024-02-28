@@ -10,22 +10,7 @@ Hide the shadow of an object
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
-| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
-| obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L8099:
  pushFromPWp W0
@@ -52,5 +37,19 @@ L8099:
  syscall 6, 45 ; trap_obj_hide_shadow (1 in, 0 out)
  jmp L8148
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
+| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
+| obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
+
+
 

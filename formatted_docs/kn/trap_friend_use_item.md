@@ -13,21 +13,7 @@ Have a friend use an item
 | num   | int   | How many of the item to use? 0 is the only value used by game scripts
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-| obj\P_HE000\p_he.bdscript       | ((P) Auron)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L7518:
  popToSp 0
@@ -42,5 +28,18 @@ L7518:
  syscall 10, 29 ; trap_friend_use_item (4 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+| obj\P_HE000\p_he.bdscript       | ((P) Auron)          
+
+
 

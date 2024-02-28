@@ -14,10 +14,39 @@ Duplicates a target object
 | Name | Type
 |------|-----
 | dup   | YS::TARGET_108 *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3456:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 8
+ syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
+ popToSp 12
+ pushFromFSp 12
+ pushFromFSp 0
+ memcpy 16
+ pushFromFSp 12
+ pushImm 16
+ add 
+ pushImm 0
+ memcpy 0
+ pushFromFSp 12
+ pushImm 48
+ add 
+ pushFromFSp 12
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+ memcpy 0
+ pushFromFSp 12
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -281,35 +310,5 @@ Duplicates a target object
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3456:
- popToSp 0
- popToSp 4
- popToSp 8
- pushFromFSp 8
- syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
- popToSp 12
- pushFromFSp 12
- pushFromFSp 0
- memcpy 16
- pushFromFSp 12
- pushImm 16
- add 
- pushImm 0
- memcpy 0
- pushFromFSp 12
- pushImm 48
- add 
- pushFromFSp 12
- syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
- syscall 1, 131 ; trap_target_dup (1 in, 1 out)
- memcpy 0
- pushFromFSp 12
- ret
-```
-</details>
 

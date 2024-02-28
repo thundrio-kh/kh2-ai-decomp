@@ -11,10 +11,40 @@ Syncs two motion sets
 | child   | YS::MOTION_289   | A motion set
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L4229:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromPSp 12
+ pushFromFSp 8
+ fetchValue 4
+ gosub 12, L221
+ pushFromFSp 0
+ syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+ eqz 
+ jz L4279
+ pushFromPSp 12
+ pushFromFSp 0
+ syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPSp 12
+ pushFromPSp 12
+ pushFromFSp 4
+ syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+ jmp L4279
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -43,36 +73,5 @@ Syncs two motion sets
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L4229:
- popToSp 4
- popToSp 8
- popToSp 0
- pushFromPSp 12
- pushFromFSp 8
- fetchValue 4
- gosub 12, L221
- pushFromFSp 0
- syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
- eqz 
- jz L4279
- pushFromPSp 12
- pushFromFSp 0
- syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)
- pushFromFSp 0
- pushFromPSp 12
- pushFromPSp 12
- pushFromFSp 4
- syscall 1, 235 ; trap_party_hand_to_bone (2 in, 1 out)
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
- jmp L4279
-```
-</details>
 

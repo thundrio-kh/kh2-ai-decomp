@@ -14,19 +14,7 @@ Check if the object is in a blow state
 | Name | Type
 |------|-----
 | is_blow   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L26146:
  jz L26172
@@ -38,5 +26,16 @@ L26146:
  syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
  jmp L26162
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+
+
 

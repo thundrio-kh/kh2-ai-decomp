@@ -11,24 +11,7 @@ Invalidates a warp point within range of the friend
 | range   | float   | A range value
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
-| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
-| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L17950:
  pushFromPSp 80
@@ -66,5 +49,21 @@ L17950:
  gosub 28, L13940
  jmp L18038
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
+| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
+| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
+
+
 

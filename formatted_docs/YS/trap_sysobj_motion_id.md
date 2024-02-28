@@ -14,10 +14,35 @@ Gets the motion ID of a motion object
 | Name | Type
 |------|-----
 | id   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L6642:
+ popToSp 0
+ syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
+ eqz 
+ popToSp 4
+ pushFromPSpVal 20
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImm 254
+ sub 
+ eqz 
+ dup 
+ jnz L6675
+ pushFromPSpVal 20
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImm 255
+ sub 
+ eqz 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -831,31 +856,5 @@ Gets the motion ID of a motion object
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L6642:
- popToSp 0
- syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
- eqz 
- popToSp 4
- pushFromPSpVal 20
- fetchValue 4
- syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
- pushImm 254
- sub 
- eqz 
- dup 
- jnz L6675
- pushFromPSpVal 20
- fetchValue 4
- syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
- pushImm 255
- sub 
- eqz 
- neqzv
-```
-</details>
 

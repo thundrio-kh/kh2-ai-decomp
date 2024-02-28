@@ -13,15 +13,14 @@ Returns the number for the battle program being executed
 | Name | Type
 |------|-----
 | mapnum   | The number representing the map program being executed   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

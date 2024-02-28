@@ -14,10 +14,35 @@ returns the number of seconds remaining on the specified timer
 | Name | Type
 |------|-----
 | value   | int   
+Example Usage From msn\AL13_TRAP\al13.bdscript
+```plaintext
+L363:
+ pushFromFWp W8
+ pushImm 5
+ sub 
+ msb 
+ jz L494
+ pushImm 0
+ syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
+ popToSp 0
+ pushFromFWp W8
+ pushImm 0
+ sub 
+ eqz 
+ dup 
+ jz L397
+ pushFromFSp 0
+ pushImm 120
+ sub 
+ info 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           
@@ -61,31 +86,5 @@ returns the number of seconds remaining on the specified timer
 | obj\M_EX350_12\m_ex.bdscript       | ((M) Mushroom 12 (EX))          
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL13_TRAP\al13.bdscript</summary>
-```plaintext
-L363:
- pushFromFWp W8
- pushImm 5
- sub 
- msb 
- jz L494
- pushImm 0
- syscall 4, 40 ; trap_mission_get_timer_second (1 in, 1 out)
- popToSp 0
- pushFromFWp W8
- pushImm 0
- sub 
- eqz 
- dup 
- jz L397
- pushFromFSp 0
- pushImm 120
- sub 
- info 
- eqzv
-```
-</details>
 

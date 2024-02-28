@@ -10,18 +10,7 @@ hooks the command image
 | stdobj   | YS::STDOBJ_112   | An std object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L2290:
  popToSp 0
@@ -44,5 +33,15 @@ L2290:
  drop 
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+
+
 

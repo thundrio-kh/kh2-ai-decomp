@@ -10,10 +10,31 @@ Adds one to a counter
 | counter_id   | int   | id of a counter
 
 
+Example Usage From msn\AL00_MS101\ms_a.bdscript
+```plaintext
+TR6:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 0
+ gosub 4, L118
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ gosub 12, L138
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+ eqz 
+ jz L117
+ pushImm 0
+ syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
+ jmp L117
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           
@@ -54,27 +75,5 @@ Adds one to a counter
 | obj\M_EX350_09\m_ex.bdscript       | ((M) Mushroom 9 (EX))          
 | obj\M_EX350_12\m_ex.bdscript       | ((M) Mushroom 12 (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```plaintext
-TR6:
- popToSp 0
- popToSp 4
- pushFromFSp 0
- gosub 4, L118
- memcpyToSp 16, 16
- pushFromPSp 16
- gosub 12, L138
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
- eqz 
- jz L117
- pushImm 0
- syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
- jmp L117
-```
-</details>
 

@@ -14,30 +14,7 @@ returns the owner of an attack
 | Name | Type
 |------|-----
 | owner   | YS::BTLOBJ *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
-| obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
-| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
-| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
+Example Usage From obj\B_EX160\b_ex.bdscript
 ```plaintext
 L5643:
  popToSp 4
@@ -78,5 +55,27 @@ L5643:
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L5724
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
+| obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
+| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
+| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
+
+
 

@@ -14,18 +14,7 @@ Get the position of stitch on the screen
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L3526:
  popToSp 4
@@ -63,5 +52,15 @@ L3526:
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  jmp L3607
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+
+
 

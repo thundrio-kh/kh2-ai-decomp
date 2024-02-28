@@ -9,20 +9,7 @@ Turns off player control for an event
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\TT02_MS201\save.bdscript       |           
-| msn\TT32_MS303\tt32.bdscript       |           
-| obj\F_AL030\f_al.bdscript       | ((F) ??? (AL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\TT02_MS201\save.bdscript</summary>
+Example Usage From msn\TT02_MS201\save.bdscript
 ```plaintext
 L52:
  pushImm 32
@@ -32,5 +19,17 @@ L52:
  popToWp W12
  jmp L66
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\TT02_MS201\save.bdscript       |           
+| msn\TT32_MS303\tt32.bdscript       |           
+| obj\F_AL030\f_al.bdscript       | ((F) ??? (AL))          
+
+
 

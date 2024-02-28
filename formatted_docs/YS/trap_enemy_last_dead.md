@@ -13,15 +13,14 @@ Returns the object of the last enemy attacker.
 | Name | Type
 |------|-----
 | obj   | YS::OBJ_103   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

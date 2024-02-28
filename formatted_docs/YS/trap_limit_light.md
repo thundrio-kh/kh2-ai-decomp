@@ -14,10 +14,35 @@ Creates a light object associated with the limit
 | Name | Type
 |------|-----
 | light_object   | YS::LIGHT_0 *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L6541:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ syscall 1, 23 ; trap_area_world (0 in, 1 out)
+ pushImm 13
+ sub 
+ eqz 
+ jz L6581
+ pushFromFSp 0
+ fetchValue 0
+ syscall 2, 55 ; trap_limit_light (1 in, 1 out)
+ pushImm 64
+ pushImm 64
+ pushImm 64
+ pushFromFSp 4
+ syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
+ jmp L6597
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -44,31 +69,5 @@ Creates a light object associated with the limit
 | obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
 | obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L6541:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- popToSp 0
- syscall 1, 23 ; trap_area_world (0 in, 1 out)
- pushImm 13
- sub 
- eqz 
- jz L6581
- pushFromFSp 0
- fetchValue 0
- syscall 2, 55 ; trap_limit_light (1 in, 1 out)
- pushImm 64
- pushImm 64
- pushImm 64
- pushFromFSp 4
- syscall 1, 183 ; trap_light_set_color (5 in, 0 out)
- jmp L6597
-```
-</details>
 

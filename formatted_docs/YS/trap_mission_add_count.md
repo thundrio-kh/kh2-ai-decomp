@@ -11,10 +11,23 @@ Adds to a on screen counter
 | counter_id   | int   | id of counter
 
 
+Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript
+```plaintext
+L50:
+ jz L64
+ pushFromFSp 0
+ syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
+ neg 
+ pushImm 2
+ syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
+ jmp L64
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_3\he_c.bdscript       |           
@@ -29,19 +42,5 @@ Adds to a on screen counter
 | obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
 | obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM_3\he_c.bdscript</summary>
-```plaintext
-L50:
- jz L64
- pushFromFSp 0
- syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
- neg 
- pushImm 2
- syscall 4, 41 ; trap_mission_add_count (2 in, 0 out)
- jmp L64
-```
-</details>
 

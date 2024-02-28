@@ -13,23 +13,7 @@ Start the limit command
 | Name | Type
 |------|-----
 | result   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
+Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L3640:
  popToSp 4
@@ -53,5 +37,20 @@ L3640:
  gosub 12, L150
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+
+
 

@@ -14,10 +14,29 @@ Converts jump height to uptime using the following formula: `math.sqrt(math.abs(
 | Name | Type
 |------|-----
 | uptime   | float   
+Example Usage From limit\goofy\limi.bdscript
+```plaintext
+L1794:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ gosub 4, L1819
+ pushFromFSp 4
+ pushFromPAi L2962 ; ___ai 'height' (L2962)
+ syscall 0, 1 ; trap_putf (2 in, 0 out)
+ pushFromFSp 4
+ popToSpVal 8
+ pushFromFSp 4
+ syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
+ popToSpVal 16
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy\limi.bdscript       |           
@@ -55,25 +74,5 @@ Converts jump height to uptime using the following formula: `math.sqrt(math.abs(
 | obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\goofy\limi.bdscript</summary>
-```plaintext
-L1794:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- gosub 4, L1819
- pushFromFSp 4
- pushFromPAi L2962 ; ___ai 'height' (L2962)
- syscall 0, 1 ; trap_putf (2 in, 0 out)
- pushFromFSp 4
- popToSpVal 8
- pushFromFSp 4
- syscall 1, 100 ; trap_obj_jump_height_to_uptime (1 in, 1 out)
- popToSpVal 16
- ret
-```
-</details>
 

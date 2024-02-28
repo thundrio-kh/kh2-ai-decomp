@@ -10,20 +10,7 @@ resets a menu flag to the default state
 | flag   | int   | a number representing a specific menuflag
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          
-| obj\F_AL070_FIRE\f_al.bdscript       | ((F) Fire orbs (AL))          
-| obj\F_AL070_THUNDER\f_al.bdscript       | ((F) Thunder orbs (AL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript</summary>
+Example Usage From obj\F_AL070_BLIZZARD\f_al.bdscript
 ```plaintext
 L3817:
  popToSp 0
@@ -94,5 +81,17 @@ L3817:
  syscall 0, 73 ; trap_menuflag_reset (1 in, 0 out)
  jmp L4004
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          
+| obj\F_AL070_FIRE\f_al.bdscript       | ((F) Fire orbs (AL))          
+| obj\F_AL070_THUNDER\f_al.bdscript       | ((F) Thunder orbs (AL))          
+
+
 

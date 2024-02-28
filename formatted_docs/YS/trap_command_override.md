@@ -13,10 +13,23 @@ Overrides the specified slot on the command cage with priority 100
 | num   | int   | unknown
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L5490:
+ jz L5505
+ pushFromFSp 12
+ pushFromFSp 8
+ pushFromPSpVal 20
+ pushImm 1
+ syscall 1, 165 ; trap_command_override (4 in, 0 out)
+ jmp L5505
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -89,19 +102,5 @@ Overrides the specified slot on the command cage with priority 100
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L5490:
- jz L5505
- pushFromFSp 12
- pushFromFSp 8
- pushFromPSpVal 20
- pushImm 1
- syscall 1, 165 ; trap_command_override (4 in, 0 out)
- jmp L5505
-```
-</details>
 

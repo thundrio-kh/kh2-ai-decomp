@@ -14,18 +14,7 @@ Gets a movement vector along a specific path
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_AL090_BTL\n_al.bdscript       | ((N) Abu holding gem (BTL) (AL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_AL090_BTL\n_al.bdscript</summary>
+Example Usage From obj\N_AL090_BTL\n_al.bdscript
 ```plaintext
 L3262:
  pushFromFSp 0
@@ -50,5 +39,15 @@ L3262:
  halt 
  jmp L3262
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_AL090_BTL\n_al.bdscript       | ((N) Abu holding gem (BTL) (AL))          
+
+
 

@@ -14,10 +14,26 @@ Return the time limit for the limit?
 | Name | Type
 |------|-----
 | time   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L5110:
+ pushFromFSpVal 44
+ dup 
+ jz L5127
+ pushFromFSp 0
+ fetchValue 0
+ syscall 2, 60 ; trap_limit_time (1 in, 1 out)
+ pushImmf 0
+ subf 
+ supzf 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -50,22 +66,5 @@ Return the time limit for the limit?
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L5110:
- pushFromFSpVal 44
- dup 
- jz L5127
- pushFromFSp 0
- fetchValue 0
- syscall 2, 60 ; trap_limit_time (1 in, 1 out)
- pushImmf 0
- subf 
- supzf 
- eqzv
-```
-</details>
 

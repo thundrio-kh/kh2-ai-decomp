@@ -12,10 +12,31 @@ Create a lookat object using an object as a base
 | time   | float   | time for the lookat to last
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1138:
+ popToSp 0
+ pushFromPAi L2833before_check' (L2833)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromFSp 0
+ pushImm 0
+ pushImmf 8
+ gosub 12, L1413
+ pushFromFSp 0
+ gosub 12, L1003
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushImmf 20
+ syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
+ pushImmf 20
+ popToSp 32
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -250,27 +271,5 @@ Create a lookat object using an object as a base
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1138:
- popToSp 0
- pushFromPAi L2833before_check' (L2833)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromFSp 0
- pushImm 0
- pushImmf 8
- gosub 12, L1413
- pushFromFSp 0
- gosub 12, L1003
- memcpyToSp 16, 48
- pushFromPSp 48
- pushImmf 20
- syscall 1, 174 ; trap_obj_look_start (3 in, 0 out)
- pushImmf 20
- popToSp 32
-```
-</details>
 

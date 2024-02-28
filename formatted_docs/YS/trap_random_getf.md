@@ -14,10 +14,42 @@ Return a random float between 0 and range
 | Name | Type
 |------|-----
 | num   | int   
+Example Usage From gumimenu\event\gumi.bdscript
+```plaintext
+L1230:
+ popToSp 0
+ pushFromPWp W0
+ fetchValue 0
+ pushImmf 1.047198
+ pushImm 0
+ syscall 9, 32 ; ?
+ pushFromPWp W64
+ pushImm 1
+ pushImm 1
+ pushImm 0
+ gosub 4, L1002
+ jz L1307
+ pushImmf 1
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImmf 0.5
+ subf 
+ infzf 
+ jz L1289
+ pushFromPAi L2402 ; ___ai '-------------------------- pattern 1' (L2402)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromFSp 0
+ fetchValue 0
+ pushImm 211
+ pushImmf 0
+ syscall 9, 4 ; ?
+ jmp L1305
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
@@ -623,38 +655,5 @@ Return a random float between 0 and range
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```plaintext
-L1230:
- popToSp 0
- pushFromPWp W0
- fetchValue 0
- pushImmf 1.047198
- pushImm 0
- syscall 9, 32 ; ?
- pushFromPWp W64
- pushImm 1
- pushImm 1
- pushImm 0
- gosub 4, L1002
- jz L1307
- pushImmf 1
- syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0.5
- subf 
- infzf 
- jz L1289
- pushFromPAi L2402 ; ___ai '-------------------------- pattern 1' (L2402)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromFSp 0
- fetchValue 0
- pushImm 211
- pushImmf 0
- syscall 9, 4 ; ?
- jmp L1305
-```
-</details>
 

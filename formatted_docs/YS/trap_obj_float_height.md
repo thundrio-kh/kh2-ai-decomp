@@ -14,10 +14,33 @@ Returns the height the object is floating above the ground.
 | Name | Type
 |------|-----
 | height   | float   
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L6649:
+ jz L6704
+ halt 
+ pushFromFSp 0
+ syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
+ pushFromPAi L10696 ; ___ai 'self.float_height' (L10696)
+ syscall 0, 1 ; trap_putf (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
+ dup 
+ jz L6680
+ pushFromFSp 0
+ syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
+ pushImmf -500
+ subf 
+ supzf 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -76,29 +99,5 @@ Returns the height the object is floating above the ground.
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 | obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L6649:
- jz L6704
- halt 
- pushFromFSp 0
- syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
- pushFromPAi L10696 ; ___ai 'self.float_height' (L10696)
- syscall 0, 1 ; trap_putf (2 in, 0 out)
- pushFromFSp 0
- pushImm 1
- syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
- dup 
- jz L6680
- pushFromFSp 0
- syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
- pushImmf -500
- subf 
- supzf 
- eqzv
-```
-</details>
 

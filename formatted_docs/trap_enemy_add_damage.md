@@ -11,23 +11,7 @@ Unknown
 | unk2   | unknown   | probably an amount of damage
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\F_BB050\f_bb.bdscript       | ((F) Shadow Stalker (Chandelier) (BB))          
-| obj\F_BB060\f_bb.bdscript       | ((F) Shadow Stalker (Columns) (BB))          
-| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
-| obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L6918:
  pushFromFSp 0
@@ -48,5 +32,20 @@ L6918:
  syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
  jmp L6960
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\F_BB050\f_bb.bdscript       | ((F) Shadow Stalker (Chandelier) (BB))          
+| obj\F_BB060\f_bb.bdscript       | ((F) Shadow Stalker (Columns) (BB))          
+| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
+| obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
+
+
 

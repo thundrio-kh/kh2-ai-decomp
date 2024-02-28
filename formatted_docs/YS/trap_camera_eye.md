@@ -13,36 +13,7 @@ Returns the passed in position with height + 80 to account for being at eye leve
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
-| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
-| obj\EH_G_EX250_FLY\g_ex.bdscript       | ((EH) Bomb Bell B (FLY) (G_EX))          
-| obj\EH_G_EX290\g_ex.bdscript       | ((EH) Speeder B (G_EX))          
-| obj\EH_G_EX320\g_ex.bdscript       | ((EH) Spiked Roller B (G_EX))          
-| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
-| obj\M_EX350_11\m_ex.bdscript       | ((M) Mushroom 11 (EX))          
-| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
-| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
-| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
-| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L291:
  popToSp 0
@@ -67,5 +38,33 @@ L291:
  pushFromPSp 16
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
+| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
+| obj\EH_G_EX250_FLY\g_ex.bdscript       | ((EH) Bomb Bell B (FLY) (G_EX))          
+| obj\EH_G_EX290\g_ex.bdscript       | ((EH) Speeder B (G_EX))          
+| obj\EH_G_EX320\g_ex.bdscript       | ((EH) Spiked Roller B (G_EX))          
+| obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
+| obj\M_EX350_11\m_ex.bdscript       | ((M) Mushroom 11 (EX))          
+| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
+| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
+| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
+| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+
+
 

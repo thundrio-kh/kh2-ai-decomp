@@ -14,10 +14,32 @@ Return the value of the specified counter
 | Name | Type
 |------|-----
 | value   | int   
+Example Usage From msn\AL00_SKATE_01\al00.bdscript
+```plaintext
+L67:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 0
+ pushFromFSp 4
+ pushFromFSpVal 4
+ syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ jz L100
+ pushFromFSp 4
+ pushImm 3
+ sub 
+ msbi 
+ jz L98
+ pushFromFSpVal 4
+ syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
+ jmp L98
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
@@ -118,28 +140,5 @@ Return the value of the specified counter
 | obj\N_EX610_BTL\n_ex.bdscript       | ((N) Vivi (BTL) (EX))          
 | obj\N_EX610_BTL2\n_ex.bdscript       | ((N) Vivi (BTL2) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```plaintext
-L67:
- popToSp 4
- popToSp 0
- pushFromFSpVal 0
- pushFromFSp 4
- pushFromFSpVal 4
- syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
- syscall 4, 37 ; trap_score_update (3 in, 1 out)
- jz L100
- pushFromFSp 4
- pushImm 3
- sub 
- msbi 
- jz L98
- pushFromFSpVal 4
- syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
- jmp L98
-```
-</details>
 

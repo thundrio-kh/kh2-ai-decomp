@@ -15,10 +15,27 @@ Rotates a vector along the Y axis
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
+Example Usage From gumimenu\event\gumi.bdscript
+```plaintext
+L597:
+ pushFromPSpVal 16
+ pushFromFSpVal 48
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ memcpyToSpVal 16, 16
+ pushFromFSp 0
+ fetchValue 0
+ pushFromPSpVal 16
+ syscall 9, 22 ; ?
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
@@ -415,23 +432,5 @@ Rotates a vector along the Y axis
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```plaintext
-L597:
- pushFromPSpVal 16
- pushFromFSpVal 48
- syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- memcpyToSpVal 16, 16
- pushFromFSp 0
- fetchValue 0
- pushFromPSpVal 16
- syscall 9, 22 ; ?
- ret
-```
-</details>
 

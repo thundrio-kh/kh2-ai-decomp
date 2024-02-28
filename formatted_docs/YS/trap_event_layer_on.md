@@ -9,19 +9,7 @@ enables the event HUD
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L15358:
  gosub 12, L757
@@ -107,5 +95,16 @@ L15358:
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+
+
 

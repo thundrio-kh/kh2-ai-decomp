@@ -11,20 +11,7 @@ Set the owner of an RC
 | obj   | YS::OBJ_125   | An object to set as the owner
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L5260:
  jz L5404
@@ -90,5 +77,17 @@ L5260:
  syscall 7, 34 ; trap_attack_set_rc_owner (2 in, 0 out)
  jmp L5397
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
+
+
 

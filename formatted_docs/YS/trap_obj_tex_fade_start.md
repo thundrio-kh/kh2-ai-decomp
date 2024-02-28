@@ -13,30 +13,7 @@ Starts a texture fade
 | time   | float   | Number of frames for the fade
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          
-| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
-| obj\B_HE030_HE05\b_he.bdscript       | ((B) Hades)          
-| obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
-| obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          
-| obj\F_AL070_FIRE\f_al.bdscript       | ((F) Fire orbs (AL))          
-| obj\F_AL070_THUNDER\f_al.bdscript       | ((F) Thunder orbs (AL))          
-| obj\F_TR020\f_tr.bdscript       | ((F) Energy core’s cube (TR))          
-| obj\M_EX500\m_ex.bdscript       | ((M) Trick Ghost)          
-| obj\M_EX500_HB\m_ex.bdscript       | ((M) Magic Phantom)          
-| obj\M_EX500_NM\m_ex.bdscript       | ((M) Trick Ghost (NM))          
-| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
-| obj\N_HE010_BTL_CLSM\n_he.bdscript       | ((N) Hercules (BTL) (CLSM) (HE))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_BB100\b_bb.bdscript</summary>
+Example Usage From obj\B_BB100\b_bb.bdscript
 ```plaintext
 L3724:
  popToSp 0
@@ -86,5 +63,27 @@ L3724:
  gosub 4, L2779
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          
+| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
+| obj\B_HE030_HE05\b_he.bdscript       | ((B) Hades)          
+| obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
+| obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          
+| obj\F_AL070_FIRE\f_al.bdscript       | ((F) Fire orbs (AL))          
+| obj\F_AL070_THUNDER\f_al.bdscript       | ((F) Thunder orbs (AL))          
+| obj\F_TR020\f_tr.bdscript       | ((F) Energy core’s cube (TR))          
+| obj\M_EX500\m_ex.bdscript       | ((M) Trick Ghost)          
+| obj\M_EX500_HB\m_ex.bdscript       | ((M) Magic Phantom)          
+| obj\M_EX500_NM\m_ex.bdscript       | ((M) Trick Ghost (NM))          
+| obj\N_HE010_BTL\n_he.bdscript       | ((N) Hercules (BTL) (HE))          
+| obj\N_HE010_BTL_CLSM\n_he.bdscript       | ((N) Hercules (BTL) (CLSM) (HE))          
+
+
 

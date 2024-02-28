@@ -14,19 +14,7 @@ Converts the passed in vector to an angle
 | Name | Type
 |------|-----
 | angle   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
-| obj\EH_G_EX290\g_ex.bdscript       | ((EH) Speeder B (G_EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\EH_G_EX120\g_ex.bdscript</summary>
+Example Usage From obj\EH_G_EX120\g_ex.bdscript
 ```plaintext
 L2751:
  popToSp 0
@@ -60,5 +48,16 @@ L2751:
  syscall 8, 2 ; trap_obj_set_xyzrot (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
+| obj\EH_G_EX290\g_ex.bdscript       | ((EH) Speeder B (G_EX))          
+
+
 

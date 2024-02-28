@@ -9,15 +9,14 @@ Doesnt appear to do anything except print some debug warnings
 |------|------|------------
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

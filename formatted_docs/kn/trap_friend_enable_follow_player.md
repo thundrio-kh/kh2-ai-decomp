@@ -10,15 +10,14 @@ Enable a friend to follow the player
 | friend   | kn::Friend_0 *   | A friend object
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

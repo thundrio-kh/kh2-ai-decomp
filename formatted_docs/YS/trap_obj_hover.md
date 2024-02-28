@@ -12,40 +12,7 @@ Has the object hover at a given velocity and acceleration
 | accel   | float   | Acceleration value
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          
-| obj\B_EX220_LV99\b_ex.bdscript       | ((F) Saix’s claymore limit cut (Usable))          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          
-| obj\F_MU070\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (MU))          
-| obj\F_MU070_BOSS\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (BOSS) (MU))          
-| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
-| obj\F_WI070\f_wi.bdscript       | ((F) Toy box (WI))          
-| obj\F_WI080\f_wi.bdscript       | ((F) Box with stuff (WI))          
-| obj\F_WI090\f_wi.bdscript       | ((F) Sofa 1 (WI))          
-| obj\F_WI100\f_wi.bdscript       | ((F) Chair 1 (WI))          
-| obj\F_WI110\f_wi.bdscript       | ((F) Chair 2 (WI))          
-| obj\F_WI130\f_wi.bdscript       | ((F) Wardrobe 1 (WI))          
-| obj\F_WI140\f_wi.bdscript       | ((F) Wardrobe 2 (WI))          
-| obj\F_WI150\f_wi.bdscript       | ((F) Wardrobe 3 (WI))          
-| obj\F_WI190\f_wi.bdscript       | ((F) Train toy (WI))          
-| obj\F_WI200\f_wi.bdscript       | ((F) Stool (WI))          
-| obj\F_WI210\f_wi.bdscript       | ((F) Dog bed (WI))          
-| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
-| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
-| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
-| obj\M_EX850\m_ex.bdscript       | ((M) Berserker weapon (Useable))          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX220\b_ex.bdscript</summary>
+Example Usage From obj\B_EX220\b_ex.bdscript
 ```plaintext
 L150:
  popToSp 4
@@ -99,5 +66,37 @@ L150:
  syscall 1, 53 ; method_obj_disable_collision (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          
+| obj\B_EX220_LV99\b_ex.bdscript       | ((F) Saix’s claymore limit cut (Usable))          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          
+| obj\F_MU070\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (MU))          
+| obj\F_MU070_BOSS\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (BOSS) (MU))          
+| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
+| obj\F_WI070\f_wi.bdscript       | ((F) Toy box (WI))          
+| obj\F_WI080\f_wi.bdscript       | ((F) Box with stuff (WI))          
+| obj\F_WI090\f_wi.bdscript       | ((F) Sofa 1 (WI))          
+| obj\F_WI100\f_wi.bdscript       | ((F) Chair 1 (WI))          
+| obj\F_WI110\f_wi.bdscript       | ((F) Chair 2 (WI))          
+| obj\F_WI130\f_wi.bdscript       | ((F) Wardrobe 1 (WI))          
+| obj\F_WI140\f_wi.bdscript       | ((F) Wardrobe 2 (WI))          
+| obj\F_WI150\f_wi.bdscript       | ((F) Wardrobe 3 (WI))          
+| obj\F_WI190\f_wi.bdscript       | ((F) Train toy (WI))          
+| obj\F_WI200\f_wi.bdscript       | ((F) Stool (WI))          
+| obj\F_WI210\f_wi.bdscript       | ((F) Dog bed (WI))          
+| obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
+| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
+| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
+| obj\M_EX850\m_ex.bdscript       | ((M) Berserker weapon (Useable))          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+
+
 

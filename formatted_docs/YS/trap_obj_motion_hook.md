@@ -11,10 +11,25 @@ Hooks a motion set entry
 | id   | int   | ID of a specific motion set entry
 
 
+Example Usage From obj\B_EX160\b_ex.bdscript
+```plaintext
+L5073:
+ pushFromFSp 0
+ pushImm 161
+ syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
@@ -40,21 +55,5 @@ Hooks a motion set entry
 | obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```plaintext
-L5073:
- pushFromFSp 0
- pushImm 161
- syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushImmf 0
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
- ret
-```
-</details>
 

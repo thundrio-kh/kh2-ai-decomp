@@ -10,18 +10,7 @@ Mark all copies of larxene as dead
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L28537:
  pushFromFSp 0
@@ -39,5 +28,15 @@ L28537:
  gosub 4, L28567
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+
+
 

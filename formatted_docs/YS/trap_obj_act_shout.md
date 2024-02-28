@@ -12,10 +12,23 @@ Shouts an action after an amount of time
 | wait   | float   | time to wait before shouting the action
 
 
+Example Usage From limit\tron\limi.bdscript
+```plaintext
+L3139:
+ pushFromPWp W36
+ pushImm 4
+ add 
+ pushFromPAi L5812 ; ___ai 'tr_unit_stop' (L5812)
+ pushImmf 0
+ syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
+ jmp L3154
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
@@ -167,19 +180,5 @@ Shouts an action after an amount of time
 | obj\N_PO070_BTL\n_po.bdscript       | ((N) Roo (BTL) (PO))          
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```plaintext
-L3139:
- pushFromPWp W36
- pushImm 4
- add 
- pushFromPAi L5812 ; ___ai 'tr_unit_stop' (L5812)
- pushImmf 0
- syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
- jmp L3154
-```
-</details>
 

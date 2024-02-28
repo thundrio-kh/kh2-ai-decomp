@@ -14,19 +14,7 @@ Gets the projection pos of the camera
 | Name | Type
 |------|-----
 | projection_pos   | kn::FMatrix   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L22781:
  popToSp 0
@@ -51,5 +39,16 @@ L22781:
  infoezf 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+
+
 

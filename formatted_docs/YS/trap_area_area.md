@@ -13,10 +13,35 @@ Returns the number representing the current map (ie for ca03 it would return 3)
 | Name | Type
 |------|-----
 | area   | int   
+Example Usage From msn\HE00_MS104B\he00.bdscript
+```plaintext
+L214:
+ pushImm 6
+ pushImm 176
+ syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
+ popToWp W0
+ pushFromFWp W0
+ fetchValue 0
+ eqz 
+ jz L637
+ syscall 1, 23 ; trap_area_world (0 in, 1 out)
+ pushImm 6
+ sub 
+ eqz 
+ dup 
+ jz L249
+ syscall 1, 24 ; trap_area_area (0 in, 1 out)
+ pushImm 2
+ sub 
+ eqz 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE00_MS104B\he00.bdscript       |           
@@ -62,31 +87,5 @@ Returns the number representing the current map (ie for ca03 it would return 3)
 | obj\N_HB530_BOSS\n_hb.bdscript       | ((N) Squall / Leon (BOSS) (HB))          
 | obj\N_HB530_BTL\n_hb.bdscript       | ((N) Squall / Leon (BTL) (HB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HE00_MS104B\he00.bdscript</summary>
-```plaintext
-L214:
- pushImm 6
- pushImm 176
- syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
- popToWp W0
- pushFromFWp W0
- fetchValue 0
- eqz 
- jz L637
- syscall 1, 23 ; trap_area_world (0 in, 1 out)
- pushImm 6
- sub 
- eqz 
- dup 
- jz L249
- syscall 1, 24 ; trap_area_area (0 in, 1 out)
- pushImm 2
- sub 
- eqz 
- eqzv
-```
-</details>
 

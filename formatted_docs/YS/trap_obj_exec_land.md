@@ -10,10 +10,22 @@ Tells the object to land
 | obj   | YS::OBJ_125   | An Object
 
 
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L8976:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -119,18 +131,5 @@ Tells the object to land
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L8976:
- popToSp 0
- pushFromFSp 0
- syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
- pushFromFSp 0
- syscall 1, 66 ; trap_obj_exec_land (1 in, 0 out)
- ret
-```
-</details>
 

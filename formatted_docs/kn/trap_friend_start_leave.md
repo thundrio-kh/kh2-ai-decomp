@@ -10,21 +10,7 @@ Have the friend start the leave action
 | friend   | kn::Friend_0 *   | A friend object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L3514:
  popToSp 0
@@ -34,5 +20,18 @@ L3514:
  popToSpVal 16
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

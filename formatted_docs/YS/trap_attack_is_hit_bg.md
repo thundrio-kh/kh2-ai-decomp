@@ -14,10 +14,69 @@ Checks if an attack hit the background (OOB?).
 | Name | Type
 |------|-----
 | ishit   | bool   
+Example Usage From limit\mulan\limi.bdscript
+```plaintext
+L4735:
+ pushFromFSpVal 68
+ syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
+ jz L4865
+ pushFromPAi L5896 ; ___ai 'hit floor' (L5896)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromFSp 0
+ fetchValue 72
+ pushImm 7
+ pushImm 1
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ popToSp 104
+ pushFromFSpVal 68
+ syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 48
+ pushFromPSp 64
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf -100
+ addf 
+ memcpy 0
+ pushFromPSp 48
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf 100
+ addf 
+ memcpy 0
+ pushFromPSp 16
+ pushFromPSp 64
+ pushFromPSp 48
+ pushImm 65540
+ syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+ jz L4845
+ pushFromFSp 104
+ pushFromPSp 16
+ syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
+ pushFromFSp 104
+ pushFromPSp 16
+ syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
+ jmp L4845
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
@@ -91,65 +150,5 @@ Checks if an attack hit the background (OOB?).
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```plaintext
-L4735:
- pushFromFSpVal 68
- syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
- jz L4865
- pushFromPAi L5896 ; ___ai 'hit floor' (L5896)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromFSp 0
- fetchValue 72
- pushImm 7
- pushImm 1
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- popToSp 104
- pushFromFSpVal 68
- syscall 2, 42 ; trap_attack_hit_bg_pos (1 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 48
- pushFromPSp 64
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImmf -100
- addf 
- memcpy 0
- pushFromPSp 48
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImmf 100
- addf 
- memcpy 0
- pushFromPSp 16
- pushFromPSp 64
- pushFromPSp 48
- pushImm 65540
- syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
- jz L4845
- pushFromFSp 104
- pushFromPSp 16
- syscall 6, 52 ; trap_bghit_get_normal (1 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- syscall 0, 41 ; trap_effect_set_dir (2 in, 0 out)
- pushFromFSp 104
- pushFromPSp 16
- syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
- jmp L4845
-```
-</details>
 

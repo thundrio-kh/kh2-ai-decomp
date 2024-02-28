@@ -14,10 +14,23 @@ Checks if an attack has hit something
 | Name | Type
 |------|-----
 | result   | bool   
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L3490:
+ pushFromFSpVal 64
+ syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
+ jz L3676
+ pushFromFSpVal 68
+ syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
+ jz L3506
+ jmp L3676
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -124,19 +137,5 @@ Checks if an attack has hit something
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L3490:
- pushFromFSpVal 64
- syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
- jz L3676
- pushFromFSpVal 68
- syscall 2, 14 ; trap_attack_is_hit (1 in, 1 out)
- jz L3506
- jmp L3676
-```
-</details>
 

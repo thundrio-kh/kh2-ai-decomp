@@ -13,15 +13,14 @@ Checks if a file is being read
 | Name | Type
 |------|-----
 | is_reading   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

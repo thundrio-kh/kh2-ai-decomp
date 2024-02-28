@@ -16,10 +16,30 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 | Name | Type
 |------|-----
 | result   | bool   
+Example Usage From limit\beast\limi.bdscript
+```plaintext
+L2255:
+ pushFromFSp 0
+ pushFromPSp 32
+ pushFromPSp 68
+ gosub 28, L1734
+ syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
+ pushFromFSp 0
+ pushFromPSp 32
+ pushImmf 0.174533
+ syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+ drop 
+ halt 
+ pushFromPSp 68
+ gosub 28, L1739
+ jmp L2283
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
@@ -427,26 +447,5 @@ Attempts to turn the object in a direction. Returns 1 if the turn completes, 0 i
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```plaintext
-L2255:
- pushFromFSp 0
- pushFromPSp 32
- pushFromPSp 68
- gosub 28, L1734
- syscall 1, 89 ; trap_obj_move_request (3 in, 0 out)
- pushFromFSp 0
- pushFromPSp 32
- pushImmf 0.174533
- syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
- drop 
- halt 
- pushFromPSp 68
- gosub 28, L1739
- jmp L2283
-```
-</details>
 

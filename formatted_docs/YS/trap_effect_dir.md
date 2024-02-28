@@ -14,24 +14,7 @@ returns the direction of an effect as a vector
 | Name | Type
 |------|-----
 | eff_dir   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\F_BB090\f_bb.bdscript       | ((F) ??? (BB))          
-| obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          
-| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
-| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
-| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
-| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
+Example Usage From obj\B_EX180\b_ex.bdscript
 ```plaintext
 L347:
  popToSp 0
@@ -70,5 +53,21 @@ L347:
  popToSpVal 196
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\F_BB090\f_bb.bdscript       | ((F) ??? (BB))          
+| obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          
+| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
+| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
+| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
+| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
+
+
 

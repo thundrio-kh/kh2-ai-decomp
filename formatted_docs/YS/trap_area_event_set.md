@@ -13,15 +13,14 @@ Returns the number for the event program being executed
 | Name | Type
 |------|-----
 | eventnum   | The number representing the event program being executed   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

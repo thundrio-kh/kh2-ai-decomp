@@ -14,10 +14,25 @@ Get the nth party member
 | Name | Type
 |------|-----
 | party_member   | YS::OBJ_125   
+Example Usage From magic\cure1\cure.bdscript
+```plaintext
+L323:
+ popToSp 0
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushFromFSp 0
+ syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
+ memcpy 0
+ pushFromPSp 16
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\cure1\cure.bdscript       |           
@@ -50,21 +65,5 @@ Get the nth party member
 | obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\cure1\cure.bdscript</summary>
-```plaintext
-L323:
- popToSp 0
- pushFromPSp 16
- pushImm 4
- add 
- pushFromFSp 0
- syscall 1, 93 ; trap_sysobj_party (1 in, 1 out)
- memcpy 0
- pushFromPSp 16
- ret
-```
-</details>
 

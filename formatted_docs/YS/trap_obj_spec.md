@@ -14,79 +14,7 @@ Returns the spec of an object
 | Name | Type
 |------|-----
 | spec   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\B_MU110\b_mu.bdscript       | ((B) Hayabusa (Shan-Yu’s Falcon))          
-| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
-| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-| obj\F_WI060\f_wi.bdscript       | ((F) Cannon tower (WI))          
-| obj\F_WI070\f_wi.bdscript       | ((F) Toy box (WI))          
-| obj\F_WI080\f_wi.bdscript       | ((F) Box with stuff (WI))          
-| obj\F_WI090\f_wi.bdscript       | ((F) Sofa 1 (WI))          
-| obj\F_WI100\f_wi.bdscript       | ((F) Chair 1 (WI))          
-| obj\F_WI110\f_wi.bdscript       | ((F) Chair 2 (WI))          
-| obj\F_WI130\f_wi.bdscript       | ((F) Wardrobe 1 (WI))          
-| obj\F_WI140\f_wi.bdscript       | ((F) Wardrobe 2 (WI))          
-| obj\F_WI150\f_wi.bdscript       | ((F) Wardrobe 3 (WI))          
-| obj\F_WI190\f_wi.bdscript       | ((F) Train toy (WI))          
-| obj\F_WI200\f_wi.bdscript       | ((F) Stool (WI))          
-| obj\F_WI210\f_wi.bdscript       | ((F) Dog bed (WI))          
-| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
-| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
-| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
-| obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          
-| obj\M_EX500\m_ex.bdscript       | ((M) Trick Ghost)          
-| obj\M_EX500_HB\m_ex.bdscript       | ((M) Magic Phantom)          
-| obj\M_EX500_NM\m_ex.bdscript       | ((M) Trick Ghost (NM))          
-| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
-| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
-| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
-| obj\M_EX540\m_ex.bdscript       | ((M) Aeroplane)          
-| obj\M_EX540_WI\m_ex.bdscript       | ((M) Aeroplane (WI))          
-| obj\M_EX570\m_ex.bdscript       | ((M) Assault Rider)          
-| obj\M_EX670\m_ex.bdscript       | ((M) Living Bone)          
-| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
-| obj\M_EX730\m_ex.bdscript       | ((M) Tornado Step)          
-| obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          
-| obj\M_EX750\m_ex.bdscript       | ((M) Creeper Plant)          
-| obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
-| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
-| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
-| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
-| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
-| obj\M_EX780\m_ex.bdscript       | ((M) Aerial Knocker)          
-| obj\M_EX780_HB\m_ex.bdscript       | ((M) Aeriel Champ)          
-| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
-| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
-| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
-| obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
-| obj\M_EX940\m_ex.bdscript       | ((M) Berserker)          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-| obj\M_EX960\m_ex.bdscript       | ((M) Sorcerer)          
-| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
-| obj\N_NM070_BTL_TOY\n_nm.bdscript       | ((N) Barrel (toy minigame) (BTL) (NM))          
-| obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
-| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
-| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L4649:
  popToSp 4
@@ -715,5 +643,76 @@ L4649:
  syscall 1, 250 ; trap_status_set_lockon_ratio (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\B_MU110\b_mu.bdscript       | ((B) Hayabusa (Shan-Yu’s Falcon))          
+| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
+| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+| obj\F_WI060\f_wi.bdscript       | ((F) Cannon tower (WI))          
+| obj\F_WI070\f_wi.bdscript       | ((F) Toy box (WI))          
+| obj\F_WI080\f_wi.bdscript       | ((F) Box with stuff (WI))          
+| obj\F_WI090\f_wi.bdscript       | ((F) Sofa 1 (WI))          
+| obj\F_WI100\f_wi.bdscript       | ((F) Chair 1 (WI))          
+| obj\F_WI110\f_wi.bdscript       | ((F) Chair 2 (WI))          
+| obj\F_WI130\f_wi.bdscript       | ((F) Wardrobe 1 (WI))          
+| obj\F_WI140\f_wi.bdscript       | ((F) Wardrobe 2 (WI))          
+| obj\F_WI150\f_wi.bdscript       | ((F) Wardrobe 3 (WI))          
+| obj\F_WI190\f_wi.bdscript       | ((F) Train toy (WI))          
+| obj\F_WI200\f_wi.bdscript       | ((F) Stool (WI))          
+| obj\F_WI210\f_wi.bdscript       | ((F) Dog bed (WI))          
+| obj\M_EX050\m_ex.bdscript       | ((M) Large Body)          
+| obj\M_EX050_WI\m_ex.bdscript       | ((M) Large Body (WI))          
+| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
+| obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          
+| obj\M_EX500\m_ex.bdscript       | ((M) Trick Ghost)          
+| obj\M_EX500_HB\m_ex.bdscript       | ((M) Magic Phantom)          
+| obj\M_EX500_NM\m_ex.bdscript       | ((M) Trick Ghost (NM))          
+| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
+| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
+| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
+| obj\M_EX540\m_ex.bdscript       | ((M) Aeroplane)          
+| obj\M_EX540_WI\m_ex.bdscript       | ((M) Aeroplane (WI))          
+| obj\M_EX570\m_ex.bdscript       | ((M) Assault Rider)          
+| obj\M_EX670\m_ex.bdscript       | ((M) Living Bone)          
+| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
+| obj\M_EX730\m_ex.bdscript       | ((M) Tornado Step)          
+| obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          
+| obj\M_EX750\m_ex.bdscript       | ((M) Creeper Plant)          
+| obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
+| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
+| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
+| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
+| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
+| obj\M_EX780\m_ex.bdscript       | ((M) Aerial Knocker)          
+| obj\M_EX780_HB\m_ex.bdscript       | ((M) Aeriel Champ)          
+| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
+| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
+| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
+| obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
+| obj\M_EX940\m_ex.bdscript       | ((M) Berserker)          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+| obj\M_EX960\m_ex.bdscript       | ((M) Sorcerer)          
+| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
+| obj\N_NM070_BTL_TOY\n_nm.bdscript       | ((N) Barrel (toy minigame) (BTL) (NM))          
+| obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
+| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
+| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
+
+
 

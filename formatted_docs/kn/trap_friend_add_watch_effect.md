@@ -11,20 +11,7 @@ Have a friend watch an effect object
 | effect   | ryj::EFFECT_55 *   | An effect object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L2856:
  pushFromPSpVal 0
@@ -43,5 +30,17 @@ L2856:
  pushImmf 30
  popToSp 48
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
+
+
 

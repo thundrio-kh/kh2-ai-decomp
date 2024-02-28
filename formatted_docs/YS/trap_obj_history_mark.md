@@ -10,10 +10,25 @@ Set the history flag for an field object
 | obj   | YS::FIELDOBJ *   | A field object
 
 
+Example Usage From obj\F_AL050\f_al.bdscript
+```plaintext
+L2368:
+ popToSp 0
+ pushFromFSpVal 164
+ gosub 4, L1332
+ pushFromFSp 0
+ syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ gosub 4, L2386
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
@@ -41,21 +56,5 @@ Set the history flag for an field object
 | obj\F_NM040_10\f_nm.bdscript       | ((F) Statue (human) (NM))          
 | obj\F_NM050\f_nm.bdscript       | ((F) Falling grave (NM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```plaintext
-L2368:
- popToSp 0
- pushFromFSpVal 164
- gosub 4, L1332
- pushFromFSp 0
- syscall 1, 189 ; trap_obj_history_mark (1 in, 0 out)
- pushFromFSp 0
- pushImm -1
- gosub 4, L2386
- ret
-```
-</details>
 

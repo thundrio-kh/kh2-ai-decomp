@@ -12,10 +12,48 @@ Tells an object to fly with a specific velocity and acceleration
 | accel   | float   | Acceleration value
 
 
+Example Usage From limit\jack\limi.bdscript
+```plaintext
+L738:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 12, L812
+ pushFromPSpVal 48
+ pushImm 406
+ pushImm 407
+ pushImm 409
+ gosub 12, L1097
+ pushImm 0
+ popToSpVal 80
+ pushFromFSp 0
+ pushImm 128
+ pushImm 96
+ pushImm 128
+ pushImmf 30
+ gosub 12, L1124
+ pushFromPSpVal 4
+ gosub 12, L1181
+ pushFromPSp 16
+ pushImmf 1
+ gosub 12, L1463
+ pushImm 1
+ popToSpVal 84
+ pushFromPSpVal 4
+ pushFromPSp 16
+ pushImmf 0
+ syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
+ pushFromFSp 0
+ gosub 12, L1483
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           
@@ -487,44 +525,5 @@ Tells an object to fly with a specific velocity and acceleration
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```plaintext
-L738:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 12, L812
- pushFromPSpVal 48
- pushImm 406
- pushImm 407
- pushImm 409
- gosub 12, L1097
- pushImm 0
- popToSpVal 80
- pushFromFSp 0
- pushImm 128
- pushImm 96
- pushImm 128
- pushImmf 30
- gosub 12, L1124
- pushFromPSpVal 4
- gosub 12, L1181
- pushFromPSp 16
- pushImmf 1
- gosub 12, L1463
- pushImm 1
- popToSpVal 84
- pushFromPSpVal 4
- pushFromPSp 16
- pushImmf 0
- syscall 1, 58 ; trap_obj_fly (3 in, 0 out)
- pushFromFSp 0
- gosub 12, L1483
- ret
-```
-</details>
 

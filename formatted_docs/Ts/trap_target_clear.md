@@ -10,10 +10,32 @@ Clear a target
 | target   | YS::TARGET_108 *   | A target object
 
 
+Example Usage From limit\mulan\limi.bdscript
+```plaintext
+L1061:
+ popToSp 0
+ pushFromPWp W16
+ pushFromFSp 0
+ gosub 4, L1097
+ popToSp 4
+ pushFromFSp 4
+ syscall 6, 16 ; trap_target_clear (1 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImmf 40
+ pushImmf 50
+ pushImmf -8
+ pushImmf -8
+ pushImmf 40
+ gosub 4, L1123
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
@@ -39,28 +61,5 @@ Clear a target
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
-```plaintext
-L1061:
- popToSp 0
- pushFromPWp W16
- pushFromFSp 0
- gosub 4, L1097
- popToSp 4
- pushFromFSp 4
- syscall 6, 16 ; trap_target_clear (1 in, 0 out)
- pushFromFSp 0
- pushFromFSp 4
- pushImmf 40
- pushImmf 50
- pushImmf -8
- pushImmf -8
- pushImmf 40
- gosub 4, L1123
- ret
-```
-</details>
 

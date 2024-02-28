@@ -11,18 +11,7 @@ Disable occlusion culling for a specific bone
 | boneid   | ID of a bone   | 
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_HE100\b_he.bdscript</summary>
+Example Usage From obj\B_HE100\b_he.bdscript
 ```plaintext
 L10872:
  pushFromFSp 0
@@ -93,5 +82,15 @@ L10872:
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
+
+
 

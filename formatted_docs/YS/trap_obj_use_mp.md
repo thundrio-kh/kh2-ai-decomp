@@ -10,10 +10,40 @@ Use up the mp for a party member
 | obj   | YS::OBJ_125   | An object
 
 
+Example Usage From obj\P_AL000\p_al.bdscript
+```plaintext
+L2717:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushImm 0
+ popToSpVal 20
+ pushFromFSp 8
+ memcpyToSpVal 20, 0
+ pushImm 0
+ popToSpVal 24
+ pushImm 0
+ popToSpVal 28
+ pushFromPSpVal 0
+ fetchValue 4
+ syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
+ eqz 
+ jz L2771
+ pushFromPSpVal 0
+ pushImm 8
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 4
+ jz L2769
+ pushFromPSpVal 0
+ syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
+ jmp L2769
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
@@ -47,36 +77,5 @@ Use up the mp for a party member
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
-```plaintext
-L2717:
- popToSp 4
- popToSp 8
- popToSp 0
- pushImm 0
- popToSpVal 20
- pushFromFSp 8
- memcpyToSpVal 20, 0
- pushImm 0
- popToSpVal 24
- pushImm 0
- popToSpVal 28
- pushFromPSpVal 0
- fetchValue 4
- syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
- eqz 
- jz L2771
- pushFromPSpVal 0
- pushImm 8
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromFSp 4
- jz L2769
- pushFromPSpVal 0
- syscall 1, 276 ; trap_obj_use_mp (1 in, 0 out)
- jmp L2769
-```
-</details>
 

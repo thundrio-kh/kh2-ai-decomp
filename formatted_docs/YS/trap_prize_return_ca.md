@@ -16,18 +16,7 @@ Moves a number of medals from the player to the target battle object
 | Name | Type
 |------|-----
 | all_returned   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_CA690_BTL\f_ca.bdscript       | ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_CA690_BTL\f_ca.bdscript</summary>
+Example Usage From obj\F_CA690_BTL\f_ca.bdscript
 ```plaintext
 L278:
  popToSp 4
@@ -38,5 +27,15 @@ L278:
  syscall 1, 338 ; trap_prize_return_ca (3 in, 1 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_CA690_BTL\f_ca.bdscript       | ((F) Isla de Muerta’s chest (Grim Reaper) (Open) (BTL) (CA))          
+
+
 

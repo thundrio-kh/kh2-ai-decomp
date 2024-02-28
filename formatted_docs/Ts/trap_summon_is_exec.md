@@ -13,15 +13,14 @@ Is there currently a summon
 | Name | Type
 |------|-----
 | is_summon   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

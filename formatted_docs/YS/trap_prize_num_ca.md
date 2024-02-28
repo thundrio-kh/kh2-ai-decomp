@@ -13,18 +13,7 @@ Returns the number of port royal medals that are currently spawned
 | Name | Type
 |------|-----
 | num   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L6551:
  popToSp 0
@@ -38,5 +27,15 @@ L6551:
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L6570
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+
+
 

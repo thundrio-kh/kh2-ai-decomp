@@ -10,20 +10,7 @@ Related to trinity limit functionality, probably resets the custom command menu
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| limit\trinity_zz\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L8991:
  pushFromFSp 0
@@ -44,5 +31,17 @@ L8991:
  syscall 1, 132 ; trap_target_free (1 in, 0 out)
  jmp L9025
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| limit\trinity_zz\limi.bdscript       |           
+
+
 

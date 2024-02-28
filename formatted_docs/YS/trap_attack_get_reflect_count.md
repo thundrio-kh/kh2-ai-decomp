@@ -14,24 +14,7 @@ Returns the count for the current reflect attack
 | Name | Type
 |------|-----
 | count   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| magic\reflect1\refl.bdscript       |           
-| magic\REFLECT_1\refl.bdscript       |           
-| magic\REFLECT_1lk\refl.bdscript       |           
-| magic\REFLECT_2\refl.bdscript       |           
-| magic\REFLECT_2lk\refl.bdscript       |           
-| magic\REFLECT_3\refl.bdscript       |           
-| magic\REFLECT_3lk\refl.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From magic\reflect1\refl.bdscript</summary>
+Example Usage From magic\reflect1\refl.bdscript
 ```plaintext
 L125:
  halt 
@@ -57,5 +40,21 @@ L125:
  popToSp 8
  jmp L167
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| magic\reflect1\refl.bdscript       |           
+| magic\REFLECT_1\refl.bdscript       |           
+| magic\REFLECT_1lk\refl.bdscript       |           
+| magic\REFLECT_2\refl.bdscript       |           
+| magic\REFLECT_2lk\refl.bdscript       |           
+| magic\REFLECT_3\refl.bdscript       |           
+| magic\REFLECT_3lk\refl.bdscript       |           
+
+
 

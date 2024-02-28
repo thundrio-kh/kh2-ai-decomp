@@ -12,10 +12,27 @@ executes hitback damage against an enemy
 | power   | float   | amount of power for the damage
 
 
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L2116:
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImmf 0
+ syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L10954 ; ___ai 'fear' (L10954)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L10676 ; ___ai 'move_back' (L10676)
+ syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
+ jmp L2167
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -45,23 +62,5 @@ executes hitback damage against an enemy
 | obj\M_EX350_12\m_ex.bdscript       | ((M) Mushroom 12 (EX))          
 | obj\M_EX620_AL\m_ex.bdscript       | ((M) Fortuneteller (AL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L2116:
- pushFromFSp 0
- pushFromFSp 4
- pushImmf 0
- syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
- pushFromFSp 0
- pushFromPAi L10954 ; ___ai 'fear' (L10954)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- pushFromFSp 0
- pushFromPAi L10676 ; ___ai 'move_back' (L10676)
- syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
- jmp L2167
-```
-</details>
 

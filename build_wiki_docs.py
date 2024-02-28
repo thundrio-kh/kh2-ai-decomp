@@ -112,10 +112,11 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
             appears_table += '| {}       | {}          \n'.format(obj_fn, obj_entity)
         if not appears_in:
             appears_table = ''
-        page += """\n\n<details>\n\t<summary>Appears in:</summary>\n{}\n</details>\n\n""".format(appears_table)
 
         code_block = "```plaintext\n{}\n```".format(example_usage) if example_usage else ""
-        page += """<details>\n\t<summary>Example Usage From {}</summary>\n{}\n</details>\n\n""".format(example_usage_from, code_block)
+        page += """Example Usage From {}\n{}\n\n\n""".format(example_usage_from, code_block)
+
+        page += """\n\n\n\tAppears in:\n{}\n\n\n""".format(appears_table)
 
         with open(out_fn, 'w') as f:
             f.write(page)

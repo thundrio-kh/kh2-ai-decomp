@@ -9,19 +9,7 @@ Involved in performing Final Xemnas Dome Laser attack
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX170_LAST\b_ex.bdscript</summary>
+Example Usage From obj\B_EX170_LAST\b_ex.bdscript
 ```plaintext
 L16062:
  popToSp 0
@@ -39,5 +27,16 @@ L16062:
  syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
  jmp L16091
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+
+
 

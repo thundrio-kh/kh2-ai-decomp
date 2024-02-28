@@ -13,10 +13,22 @@ Checks the value of the 0x102B flag
 | Name | Type
 |------|-----
 | value   | bool   
+Example Usage From obj\F_AL050\f_al.bdscript
+```plaintext
+L136:
+ popToSp 0
+ syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)
+ dup 
+ jz L146
+ pushFromFSpVal 160
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
@@ -28,18 +40,5 @@ Checks the value of the 0x102B flag
 | obj\F_MU060\f_mu.bdscript       | ((F) Drive Orb Wagon (MU))          
 | obj\F_NM070\f_nm.bdscript       | ((F) Merry-go-round (NM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```plaintext
-L136:
- popToSp 0
- syscall 0, 70 ; trap_progress_is_second (0 in, 1 out)
- dup 
- jz L146
- pushFromFSpVal 160
- eqzv
-```
-</details>
 

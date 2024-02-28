@@ -13,30 +13,7 @@ sets parameters for a timer
 | id   | int   | id of a timer
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HE_COLOSSEUM_2\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_6\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_6_FOG\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_8_CEL\he_c.bdscript       |           
-| msn\HE_COL_2_10\he_c.bdscript       |           
-| msn\HE_COL_6_10\he_c.bdscript       |           
-| msn\HE_COL_8_31\he_c.bdscript       |           
-| msn\HE_COL_8_35\he_c.bdscript       |           
-| msn\HE_COL_8_40\he_c.bdscript       |           
-| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
-| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
-| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript</summary>
+Example Usage From msn\HE_COLOSSEUM_2\he_c.bdscript
 ```plaintext
 TR3:
  pushFromPWp W0
@@ -61,5 +38,27 @@ TR3:
  syscall 4, 17 ; trap_mission_set_timer_param (4 in, 0 out)
  jmp L395
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HE_COLOSSEUM_2\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_6\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_6_FOG\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_8_CEL\he_c.bdscript       |           
+| msn\HE_COL_2_10\he_c.bdscript       |           
+| msn\HE_COL_6_10\he_c.bdscript       |           
+| msn\HE_COL_8_31\he_c.bdscript       |           
+| msn\HE_COL_8_35\he_c.bdscript       |           
+| msn\HE_COL_8_40\he_c.bdscript       |           
+| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
+| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
+| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
+
+
 

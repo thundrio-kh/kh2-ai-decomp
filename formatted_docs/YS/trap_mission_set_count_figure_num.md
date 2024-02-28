@@ -12,25 +12,7 @@ Sets a specific digit in the counter to a value
 | id   | int   | id of a counter
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
-| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
-| obj\F_CA050\f_ca.bdscript       | ((F) Explosive barrel (CA))          
-| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
-| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
-| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
+Example Usage From obj\B_LK100\b_lk.bdscript
 ```plaintext
 L8060:
  popToSp 0
@@ -57,5 +39,22 @@ L8060:
  syscall 4, 48 ; trap_mission_set_count_figure_num (3 in, 0 out)
  jmp L8109
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
+| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
+| obj\F_CA050\f_ca.bdscript       | ((F) Explosive barrel (CA))          
+| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
+| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
+| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
+
+
 

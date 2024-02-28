@@ -9,21 +9,7 @@ Sets the command cage to the back side
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\bb03\bb.bdscript       |           
-| ard\mu00\chan.bdscript       |           
-| ard\mu07\limi.bdscript       |           
-| msn\HB13_MS902\hb13.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\bb03\bb.bdscript</summary>
+Example Usage From ard\bb03\bb.bdscript
 ```plaintext
 TR3:
  pushImm 39
@@ -39,5 +25,18 @@ TR3:
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
  jmp L44
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\bb03\bb.bdscript       |           
+| ard\mu00\chan.bdscript       |           
+| ard\mu07\limi.bdscript       |           
+| msn\HB13_MS902\hb13.bdscript       |           
+
+
 

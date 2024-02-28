@@ -11,10 +11,61 @@ Perform a fade out effect
 | time   | float   | Number of frames for the fade out
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L4073:
+ pushFromPWp W72
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 255
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ popToSp 8
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf -10
+ addf 
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPWp W72
+ pushImm 4
+ add 
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 4
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 8
+ syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+ pushFromPWp W72
+ pushImm 268
+ add 
+ fetchValue 4
+ pushImmf 20
+ syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -577,57 +628,5 @@ Perform a fade out effect
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L4073:
- pushFromPWp W72
- fetchValue 0
- pushFromFSp 0
- pushImm 255
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- popToSp 8
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImmf -10
- addf 
- memcpy 0
- pushFromFSp 0
- pushFromPSp 16
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromFSp 0
- pushFromPWp W72
- pushImm 4
- add 
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
- pushFromFSp 0
- pushImm 4
- syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushImmf 8
- syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
- pushFromPWp W72
- pushImm 268
- add 
- fetchValue 4
- pushImmf 20
- syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
-```
-</details>
 

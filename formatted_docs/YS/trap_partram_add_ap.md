@@ -11,22 +11,7 @@ Gives AP to the player
 | amt   | int   | Amount of AP to give to the player
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\mu07\mu_g.bdscript       |           
-| ard\tr03\tr_g.bdscript       |           
-| ard\tt06\tt_a.bdscript       |           
-| ard\tt08\tt_a_0.bdscript       |           
-| ard\tt08\tt_a_1.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\mu07\mu_g.bdscript</summary>
+Example Usage From ard\mu07\mu_g.bdscript
 ```plaintext
 TR2:
  pushImm 6
@@ -57,5 +42,19 @@ TR2:
  syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\mu07\mu_g.bdscript       |           
+| ard\tr03\tr_g.bdscript       |           
+| ard\tt06\tt_a.bdscript       |           
+| ard\tt08\tt_a_0.bdscript       |           
+| ard\tt08\tt_a_1.bdscript       |           
+
+
 

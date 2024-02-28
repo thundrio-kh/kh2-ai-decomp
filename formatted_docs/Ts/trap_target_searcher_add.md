@@ -11,29 +11,7 @@ Add an object to a target searcher
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
-| obj\B_CA030\b_ca.bdscript       | ((M) Undead Pirate B)          
-| obj\B_CA040\b_ca.bdscript       | ((M) Undead Pirate C)          
-| obj\B_CA040_PUB\b_ca.bdscript       | ()          
-| obj\M_EX110\m_ex.bdscript       | ((M) Silver Rock)          
-| obj\M_EX760\m_ex.bdscript       | ((M) Armored Knight)          
-| obj\M_EX760_NM\m_ex.bdscript       | ((M) Armored Knight (NM))          
-| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
-| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
-| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
-| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA020\b_ca.bdscript</summary>
+Example Usage From obj\B_CA020\b_ca.bdscript
 ```plaintext
 L421:
  popToSp 4
@@ -73,5 +51,26 @@ L421:
  syscall 6, 8 ; trap_target_searcher_add (2 in, 0 out)
  jmp L498
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
+| obj\B_CA030\b_ca.bdscript       | ((M) Undead Pirate B)          
+| obj\B_CA040\b_ca.bdscript       | ((M) Undead Pirate C)          
+| obj\B_CA040_PUB\b_ca.bdscript       | ()          
+| obj\M_EX110\m_ex.bdscript       | ((M) Silver Rock)          
+| obj\M_EX760\m_ex.bdscript       | ((M) Armored Knight)          
+| obj\M_EX760_NM\m_ex.bdscript       | ((M) Armored Knight (NM))          
+| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
+| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
+| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
+| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+
+
 

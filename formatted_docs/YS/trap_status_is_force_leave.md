@@ -13,10 +13,22 @@ Returns if the force leave flag is true
 | Name | Type
 |------|-----
 | is_force_leave   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L7147:
+ popToSp 0
+ syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
+ jz L7162
+ pushImm 1
+ popToSp 8
+ jmp L7217
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -458,18 +470,5 @@ Returns if the force leave flag is true
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L7147:
- popToSp 0
- syscall 1, 206 ; trap_status_is_force_leave (0 in, 1 out)
- jz L7162
- pushImm 1
- popToSp 8
- jmp L7217
-```
-</details>
 

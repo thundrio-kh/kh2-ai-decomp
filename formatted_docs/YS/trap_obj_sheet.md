@@ -14,10 +14,50 @@ returns the objects stat sheet
 | Name | Type
 |------|-----
 | sheet   | YS::SHEET_44 *   
+Example Usage From msn\AL00_MS101\ms_a.bdscript
+```plaintext
+L163:
+ popToSp 0
+ popToSp 4
+ pushFromPSp 16
+ pushFromFSp 4
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 16
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ syscall 0, 60 ; trap_assert (1 in, 0 out)
+ pushFromPSp 16
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ popToSp 32
+ pushFromFSp 32
+ pushImm 0
+ sub 
+ neqz 
+ syscall 0, 60 ; trap_assert (1 in, 0 out)
+ pushFromFSp 32
+ pushImm 0
+ syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
+ cfti 
+ pushFromFSp 0
+ syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
+ mulf 
+ citf 
+ popToSp 36
+ pushFromFSp 36
+ pushImm 0
+ sub 
+ info 
+ jz L228
+ pushImm 1
+ popToSp 36
+ jmp L228
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           
@@ -254,46 +294,5 @@ returns the objects stat sheet
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```plaintext
-L163:
- popToSp 0
- popToSp 4
- pushFromPSp 16
- pushFromFSp 4
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 16
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- syscall 0, 60 ; trap_assert (1 in, 0 out)
- pushFromPSp 16
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- popToSp 32
- pushFromFSp 32
- pushImm 0
- sub 
- neqz 
- syscall 0, 60 ; trap_assert (1 in, 0 out)
- pushFromFSp 32
- pushImm 0
- syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
- cfti 
- pushFromFSp 0
- syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
- mulf 
- citf 
- popToSp 36
- pushFromFSp 36
- pushImm 0
- sub 
- info 
- jz L228
- pushImm 1
- popToSp 36
- jmp L228
-```
-</details>
 

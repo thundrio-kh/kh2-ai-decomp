@@ -11,10 +11,21 @@ Turns on part of an objects collision
 | group   | int   | Probably which part of the collision to turn off. Range of values used between 0 and 30
 
 
+Example Usage From obj\B_AL110\b_al.bdscript
+```plaintext
+L4369:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 0
+ syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
@@ -118,17 +129,5 @@ Turns on part of an objects collision
 | obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
-```plaintext
-L4369:
- popToSp 0
- pushFromFSp 0
- pushImm 0
- syscall 1, 52 ; method_obj_enable_collision (2 in, 0 out)
- ret
-```
-</details>
 

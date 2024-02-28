@@ -11,10 +11,54 @@ Sets an enemies karma value (revenge limit) to the specified number.
 | karma   | float   | value to set for karma. Is 100 normally
 
 
+Example Usage From obj\B_EX110\b_ex.bdscript
+```plaintext
+L4842:
+ pushFromFSp 0
+ pushFromFSp 8
+ pushImm -1
+ pushImmf 300
+ pushImmf 600
+ pushImmf 8
+ pushImm -1
+ pushImmf 0.75
+ pushImmf 0.4
+ gosub 8, L11946
+ pushFromFSp 0
+ gosub 8, L12261
+ pushImm 1
+ popToWp W4560
+ pushImm 1
+ popToWp W4564
+ pushImm 0
+ popToWp W4568
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 0
+ sub 
+ eqz 
+ jz L4930
+ pushFromPWp W4544
+ pushImmf 1
+ gosub 8, L252
+ pushFromFSp 0
+ gosub 8, L12296
+ popToSpVal 112
+ pushFromFSp 0
+ gosub 8, L13058
+ popToSpVal 116
+ pushFromFSp 0
+ pushImmf 92
+ syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
+ jmp L4969
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
@@ -62,50 +106,5 @@ Sets an enemies karma value (revenge limit) to the specified number.
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
-```plaintext
-L4842:
- pushFromFSp 0
- pushFromFSp 8
- pushImm -1
- pushImmf 300
- pushImmf 600
- pushImmf 8
- pushImm -1
- pushImmf 0.75
- pushImmf 0.4
- gosub 8, L11946
- pushFromFSp 0
- gosub 8, L12261
- pushImm 1
- popToWp W4560
- pushImm 1
- popToWp W4564
- pushImm 0
- popToWp W4568
- pushFromFSp 0
- pushImm 1
- syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
- pushImm 0
- sub 
- eqz 
- jz L4930
- pushFromPWp W4544
- pushImmf 1
- gosub 8, L252
- pushFromFSp 0
- gosub 8, L12296
- popToSpVal 112
- pushFromFSp 0
- gosub 8, L13058
- popToSpVal 116
- pushFromFSp 0
- pushImmf 92
- syscall 2, 76 ; trap_enemy_set_karma_limit (2 in, 0 out)
- jmp L4969
-```
-</details>
 

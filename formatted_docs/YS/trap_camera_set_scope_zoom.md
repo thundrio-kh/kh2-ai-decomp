@@ -10,19 +10,7 @@ Amount of zoom for the scope mode camera
 | value   | float   | Amount of zoom to use
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L21728:
  pushFromPSpVal 32
@@ -31,5 +19,16 @@ L21728:
  syscall 1, 312 ; trap_camera_set_scope_zoom (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+
+
 

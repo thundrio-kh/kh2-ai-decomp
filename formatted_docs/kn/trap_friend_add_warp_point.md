@@ -10,18 +10,7 @@ Add a friend warp point at a position
 | pos   | kn::FVector *   | A position vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L873:
  pushFromPSp 48
@@ -102,5 +91,15 @@ L873:
  syscall 10, 57 ; trap_friend_add_warp_point (1 in, 0 out)
  jmp L1090
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+
+
 

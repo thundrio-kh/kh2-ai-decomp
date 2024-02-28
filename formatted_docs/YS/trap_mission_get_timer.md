@@ -14,29 +14,7 @@ return the number of minutes on the specified timer
 | Name | Type
 |------|-----
 | value   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\AL10_KINOKO_LEX\kino.bdscript       |           
-| msn\CA02_SKATE_01\ca02.bdscript       |           
-| msn\CA13_KINOKO_LUX\kino.bdscript       |           
-| msn\HE17_KINOKO_ZEX\kino.bdscript       |           
-| msn\PO09_MS401_FREE\po09.bdscript       |           
-| msn\TT06_BAGGAGE_02\tt06.bdscript       |           
-| msn\TT06_LETTER_02\tt06.bdscript       |           
-| msn\TT07_POSTER_02\tt07.bdscript       |           
-| msn\TT07_WORM_02\tt07.bdscript       |           
-| msn\TT36_KINOKO_SAI\kino.bdscript       |           
-| msn\WI02_KINOKO_MAR\kino.bdscript       |           
-| obj\M_EX350_01\m_ex.bdscript       | ((M) Mushroom 1 (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
+Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
 ```plaintext
 L112:
  popToSp 0
@@ -53,5 +31,26 @@ L112:
  syscall 0, 65 ; trap_sound_play_system (1 in, 0 out)
  jmp L140
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\AL10_KINOKO_LEX\kino.bdscript       |           
+| msn\CA02_SKATE_01\ca02.bdscript       |           
+| msn\CA13_KINOKO_LUX\kino.bdscript       |           
+| msn\HE17_KINOKO_ZEX\kino.bdscript       |           
+| msn\PO09_MS401_FREE\po09.bdscript       |           
+| msn\TT06_BAGGAGE_02\tt06.bdscript       |           
+| msn\TT06_LETTER_02\tt06.bdscript       |           
+| msn\TT07_POSTER_02\tt07.bdscript       |           
+| msn\TT07_WORM_02\tt07.bdscript       |           
+| msn\TT36_KINOKO_SAI\kino.bdscript       |           
+| msn\WI02_KINOKO_MAR\kino.bdscript       |           
+| obj\M_EX350_01\m_ex.bdscript       | ((M) Mushroom 1 (EX))          
+
+
 

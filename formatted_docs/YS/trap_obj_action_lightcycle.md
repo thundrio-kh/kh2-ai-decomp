@@ -10,21 +10,7 @@ Does a lightcycle specific action
 | obj   | YS::OBJ_125 *   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          
-| obj\M_EX600_LC_ATK\m_ex.bdscript       | ((M) Magnum Loader (blue))          
-| obj\M_EX600_LC_CHG\m_ex.bdscript       | ((M) Magnum Loader (yellow))          
-| obj\M_EX600_LC_GRD\m_ex.bdscript       | ((M) Magnum Loader (green))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX600_LC\m_ex.bdscript</summary>
+Example Usage From obj\M_EX600_LC\m_ex.bdscript
 ```plaintext
 L23:
  popToSp 0
@@ -46,5 +32,18 @@ L23:
  pushFromPAi L2803 ; ___ai 'choice' (L2803)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          
+| obj\M_EX600_LC_ATK\m_ex.bdscript       | ((M) Magnum Loader (blue))          
+| obj\M_EX600_LC_CHG\m_ex.bdscript       | ((M) Magnum Loader (yellow))          
+| obj\M_EX600_LC_GRD\m_ex.bdscript       | ((M) Magnum Loader (green))          
+
+
 

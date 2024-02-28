@@ -11,24 +11,7 @@ Add a target to a target searcher
 | target   | YS::TARGET_108 *   | A target object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| limit\mulan\limi.bdscript       |           
-| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\N_DC010_BTL\n_dc.bdscript       | ((N) Minnie (BTL) (DC))          
-| obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
-| obj\P_EX220\mick.bdscript       | ((P) Mickey)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L2552:
  popToSp 0
@@ -52,5 +35,21 @@ L2552:
  syscall 6, 21 ; trap_target_searcher_add_target (2 in, 0 out)
  jmp L2629
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| limit\mulan\limi.bdscript       |           
+| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\N_DC010_BTL\n_dc.bdscript       | ((N) Minnie (BTL) (DC))          
+| obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
+| obj\P_EX220\mick.bdscript       | ((P) Mickey)          
+
+
 

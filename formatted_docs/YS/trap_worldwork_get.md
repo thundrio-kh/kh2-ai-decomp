@@ -13,10 +13,32 @@ Get a YS::WORLDWORK object
 | Name | Type
 |------|-----
 | worldwork   | YS::WORLDWORK    
+Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+```plaintext
+L307:
+ popToSp 0
+ syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L340
+ syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
+ popToSpVal 8
+ pushFromFSpVal 8
+ fetchValue 4
+ pushImm 0
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushFromFSpVal 8
+ fetchValue 12
+ pushImm 0
+ syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
+ syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           
@@ -67,28 +89,5 @@ Get a YS::WORLDWORK object
 | msn\TT12_WORK_BOX\tt12.bdscript       |           
 | msn\TT36_WORK_FIGURE\tt36.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```plaintext
-L307:
- popToSp 0
- syscall 1, 299 ; trap_area_set_next_entrance (0 in, 0 out)
- pushFromFSp 0
- gosub 4, L340
- syscall 1, 298 ; trap_worldwork_get (0 in, 1 out)
- popToSpVal 8
- pushFromFSpVal 8
- fetchValue 4
- pushImm 0
- syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
- pushFromFSpVal 8
- fetchValue 12
- pushImm 0
- syscall 4, 43 ; trap_mission_set_max_combo_counter (2 in, 0 out)
- syscall 1, 317 ; trap_status_no_gameover (0 in, 0 out)
- ret
-```
-</details>
 

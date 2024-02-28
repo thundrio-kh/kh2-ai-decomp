@@ -14,10 +14,53 @@ returns if the is_no_control flag is set for the motion set
 | Name | Type
 |------|-----
 | is_no_control   | bool   
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L4282:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromFSp 8
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ popToSp 48
+ pushFromFSp 0
+ syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
+ eqz 
+ jz L4530
+ pushFromFSp 0
+ pushFromPSp 32
+ pushFromFSp 4
+ fetchValue 8
+ syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
+ drop 
+ pushFromFSp 0
+ syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
+ jz L4358
+ pushFromFSp 0
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromFSp 4
+ fetchValue 24
+ syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+ jmp L4528
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -147,49 +190,5 @@ returns if the is_no_control flag is set for the motion set
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L4282:
- popToSp 4
- popToSp 8
- popToSp 0
- pushFromFSp 8
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
- popToSp 48
- pushFromFSp 0
- syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)
- eqz 
- jz L4530
- pushFromFSp 0
- pushFromPSp 32
- pushFromFSp 4
- fetchValue 8
- syscall 1, 80 ; trap_obj_turn_dir (3 in, 1 out)
- drop 
- pushFromFSp 0
- syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
- jz L4358
- pushFromFSp 0
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromFSp 4
- fetchValue 24
- syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
- jmp L4528
-```
-</details>
 

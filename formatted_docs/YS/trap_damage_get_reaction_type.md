@@ -32,10 +32,27 @@ def YS::DAMAGE::GetReactionType(reaction):
 | Name | Type
 |------|-----
 | reaction_type   | int   
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L1372:
+ pushFromFSp 4
+ syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
+ syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
+ pushImm 4
+ sub 
+ eqz 
+ dup 
+ jz L1391
+ pushFromFSp 4
+ syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -51,23 +68,5 @@ def YS::DAMAGE::GetReactionType(reaction):
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L1372:
- pushFromFSp 4
- syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
- syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
- pushImm 4
- sub 
- eqz 
- dup 
- jz L1391
- pushFromFSp 4
- syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
- eqzv
-```
-</details>
 

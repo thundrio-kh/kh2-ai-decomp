@@ -11,34 +11,7 @@ Set the flag to hide from friends target_searcher
 | check   | bool   | A flag of some sort
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
-| obj\P_BB000\p_bb.bdscript       | ((P) Beast)          
-| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
-| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
-| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
-| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
-| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
-| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
-| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
-| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
-| obj\P_HE000\p_he.bdscript       | ((P) Auron)          
-| obj\P_LK000\p_lk.bdscript       | ((P) Simba)          
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
-| obj\P_MU000\p_mu.bdscript       | ((P) Mulan)          
-| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
-| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_AL000\p_al.bdscript</summary>
+Example Usage From obj\P_AL000\p_al.bdscript
 ```plaintext
 L2790:
  popToSp 0
@@ -78,5 +51,31 @@ L2790:
  syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
  jmp L2871
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
+| obj\P_BB000\p_bb.bdscript       | ((P) Beast)          
+| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
+| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
+| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
+| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
+| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
+| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
+| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
+| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
+| obj\P_HE000\p_he.bdscript       | ((P) Auron)          
+| obj\P_LK000\p_lk.bdscript       | ((P) Simba)          
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+| obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
+| obj\P_MU000\p_mu.bdscript       | ((P) Mulan)          
+| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
+| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
+
+
 

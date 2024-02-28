@@ -12,21 +12,7 @@ Stop an object
 | time   | float   | Time to stop for, 0 is indefinite time
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| msn\TT04_MS301\tt04.bdscript       |           
-| msn\TT05_MS403\tt05.bdscript       |           
-| msn\TT05_MS404\tt05.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4096:
  pushFromFSpVal 64
@@ -48,5 +34,18 @@ L4096:
  syscall 6, 6 ; trap_obj_stop (3 in, 0 out)
  jmp L4136
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| msn\TT04_MS301\tt04.bdscript       |           
+| msn\TT05_MS403\tt05.bdscript       |           
+| msn\TT05_MS404\tt05.bdscript       |           
+
+
 

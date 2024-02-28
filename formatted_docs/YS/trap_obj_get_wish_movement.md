@@ -14,10 +14,33 @@ get the direction that a summon object has moved
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L4682:
+ dup 
+ jnz L4714
+ pushFromFSp 0
+ syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+ pushFromFSp 0
+ syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 0, 6 ; trap_vector_len (1 in, 1 out)
+ pushImmf 0.5
+ mulf 
+ subf 
+ infzf 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -72,29 +95,5 @@ get the direction that a summon object has moved
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L4682:
- dup 
- jnz L4714
- pushFromFSp 0
- syscall 1, 62 ; trap_obj_get_moved (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- syscall 0, 6 ; trap_vector_len (1 in, 1 out)
- pushFromFSp 0
- syscall 1, 64 ; trap_obj_get_wish_movement (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 0, 6 ; trap_vector_len (1 in, 1 out)
- pushImmf 0.5
- mulf 
- subf 
- infzf 
- neqzv
-```
-</details>
 

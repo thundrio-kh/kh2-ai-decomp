@@ -14,20 +14,7 @@ Get the radius of a target
 | Name | Type
 |------|-----
 | radius   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L8788:
  pushFromPSpVal 5468
@@ -74,5 +61,17 @@ L8788:
  gosub 12, L7805
  jmp L8881
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
+
+
 

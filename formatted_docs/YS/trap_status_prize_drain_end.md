@@ -9,10 +9,22 @@ End the prize drain effect
 |------|------|------------
 
 
+Example Usage From magic\MAGNET_1\magn.bdscript
+```plaintext
+L44:
+ halt 
+ pushFromFSp 0
+ gosub 24, L600
+ jz L55
+ syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
+ jmp L55
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\MAGNET_1\magn.bdscript       |           
@@ -23,18 +35,5 @@ End the prize drain effect
 | magic\MAGNET_3lk\magn.bdscript       |           
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\MAGNET_1\magn.bdscript</summary>
-```plaintext
-L44:
- halt 
- pushFromFSp 0
- gosub 24, L600
- jz L55
- syscall 1, 188 ; trap_status_prize_drain_end (0 in, 0 out)
- jmp L55
-```
-</details>
 

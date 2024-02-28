@@ -14,10 +14,30 @@ Returns if the motion set is a hook
 | Name | Type
 |------|-----
 | is_hook   | bool   
+Example Usage From obj\B_EX160\b_ex.bdscript
+```plaintext
+L1536:
+ pushFromFWp W8
+ jz L1632
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 6
+ pushImm 0
+ syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
+ jz L1568
+ pushImmf -0.05
+ pushImm 0
+ syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+ jmp L1630
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
@@ -37,26 +57,5 @@ Returns if the motion set is a hook
 | obj\M_EX750\m_ex.bdscript       | ((M) Creeper Plant)          
 | obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX160\b_ex.bdscript</summary>
-```plaintext
-L1536:
- pushFromFWp W8
- jz L1632
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 6
- pushImm 0
- syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
- pushFromFSp 0
- syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)
- jz L1568
- pushImmf -0.05
- pushImm 0
- syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
- jmp L1630
-```
-</details>
 

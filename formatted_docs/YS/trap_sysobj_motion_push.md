@@ -12,10 +12,31 @@ Push a motion set entry to be played after the current queue is empty
 | blend_time   | float   | Time to take to blend the animations
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1331:
+ pushFromPWp W0
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 255
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ popToSp 188
+ pushFromPWp W0
+ pushFromFSp 0
+ gosub 52, L2649
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -457,27 +478,5 @@ Push a motion set entry to be played after the current queue is empty
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 | obj\P_WI030_RTN\rtn_.bdscript       | ((P) Goofy (WI) (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1331:
- pushFromPWp W0
- fetchValue 0
- pushFromFSp 0
- pushImm 255
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- popToSp 188
- pushFromPWp W0
- pushFromFSp 0
- gosub 52, L2649
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushImmf 0
- syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
-```
-</details>
 

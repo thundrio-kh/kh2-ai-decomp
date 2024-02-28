@@ -14,34 +14,7 @@ Get the normal vector of a bghit
 | Name | Type
 |------|-----
 | normal   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\mulan\limi.bdscript       |           
-| limit\tron\limi.bdscript       |           
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
-| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
-| obj\N_TR010_BTL\n_tr.bdscript       | ((N) Sark (BTL) (TR))          
-| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
-| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
-| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
-| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L298:
  pushFromFSp 88
@@ -117,5 +90,31 @@ L298:
  popToSp 84
  jmp L451
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\mulan\limi.bdscript       |           
+| limit\tron\limi.bdscript       |           
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
+| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
+| obj\N_TR010_BTL\n_tr.bdscript       | ((N) Sark (BTL) (TR))          
+| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
+| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
+| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
+| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
+
+
 

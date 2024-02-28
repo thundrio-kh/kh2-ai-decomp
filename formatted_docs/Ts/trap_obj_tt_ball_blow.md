@@ -13,18 +13,7 @@ Make the twilight town minigame ball perform a blow
 | unk2   | unknown   | UNknown
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
+Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L165:
  drop 
@@ -66,5 +55,15 @@ L165:
  syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
  jmp L475
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+
+
 

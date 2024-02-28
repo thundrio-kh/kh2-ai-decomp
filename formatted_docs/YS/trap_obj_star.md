@@ -11,10 +11,26 @@ Grants Iframes?
 | numframes   | float   | Number of frames?
 
 
+Example Usage From magic\CURE_1\cure.bdscript
+```plaintext
+L506:
+ jz L528
+ pushFromFSp 20
+ pushImmf 60
+ syscall 1, 91 ; trap_obj_star (2 in, 0 out)
+ pushImm 64
+ pushImm L563
+ pushFromFSp 20
+ gosub 8, L696
+ drop 
+ jmp L528
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           
@@ -34,22 +50,5 @@ Grants Iframes?
 | obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```plaintext
-L506:
- jz L528
- pushFromFSp 20
- pushImmf 60
- syscall 1, 91 ; trap_obj_star (2 in, 0 out)
- pushImm 64
- pushImm L563
- pushFromFSp 20
- gosub 8, L696
- drop 
- jmp L528
-```
-</details>
 

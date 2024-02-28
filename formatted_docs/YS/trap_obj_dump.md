@@ -10,10 +10,25 @@ likely printed the name of an object, but does nothing in the production version
 | obj   | YS::OBJ_125 *   | An object
 
 
+Example Usage From limit\goofy2\limi.bdscript
+```plaintext
+L400:
+ pushFromFSp 20
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L419
+ pushFromFSp 20
+ gosub 12, L655
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
+ jmp L419
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           
@@ -34,21 +49,5 @@ likely printed the name of an object, but does nothing in the production version
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```plaintext
-L400:
- pushFromFSp 20
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L419
- pushFromFSp 20
- gosub 12, L655
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 122 ; trap_obj_dump (1 in, 0 out)
- jmp L419
-```
-</details>
 

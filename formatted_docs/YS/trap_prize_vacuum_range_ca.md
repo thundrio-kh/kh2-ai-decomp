@@ -11,18 +11,7 @@ Vacuums all medals within a designated range of the object
 | range   | float   | A range value
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L6370:
  pushFromFSp 0
@@ -43,5 +32,15 @@ L6370:
  popToSp 4
  jmp L6404
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+
+
 

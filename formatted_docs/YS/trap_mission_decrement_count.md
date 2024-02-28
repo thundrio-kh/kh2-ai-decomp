@@ -10,10 +10,19 @@ subtracts one from the value of an on screen counter
 | counter_id   | int   | id of counter
 
 
+Example Usage From msn\AL10_MS102\ms_d.bdscript
+```plaintext
+L33:
+ pushImm 0
+ syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
+ jmp L69
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_MS102\ms_d.bdscript       |           
@@ -62,15 +71,5 @@ subtracts one from the value of an on screen counter
 | msn\TT40_MS002\ms_d.bdscript       |           
 | msn\TT40_MS003\ms_d.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL10_MS102\ms_d.bdscript</summary>
-```plaintext
-L33:
- pushImm 0
- syscall 4, 20 ; trap_mission_decrement_count (1 in, 0 out)
- jmp L69
-```
-</details>
 

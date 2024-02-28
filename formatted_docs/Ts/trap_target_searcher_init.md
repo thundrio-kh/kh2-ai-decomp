@@ -11,10 +11,21 @@
 | num   | int   | Number of targets the target searcher is allowed to have
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3932:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 20
+ syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -78,17 +89,5 @@
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3932:
- popToSp 0
- pushFromFSp 0
- pushImm 20
- syscall 6, 3 ; trap_target_searcher_init (2 in, 0 out)
- ret
-```
-</details>
 

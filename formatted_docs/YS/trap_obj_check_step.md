@@ -17,10 +17,55 @@ Check if a step is interesecting with a given line?
 | Name | Type
 |------|-----
 | is_step   | bool   
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L4358:
+ pushFromFSp 0
+ fetchValue 4
+ pushFromFSp 4
+ fetchValue 12
+ pushFromFSp 4
+ fetchValue 16
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 12
+ add 
+ pushImmf 100
+ memcpy 0
+ pushFromFSp 4
+ pushImm 28
+ add 
+ pushFromFSp 0
+ pushFromPSp 16
+ pushFromFSp 4
+ fetchValue 0
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
+ memcpy 0
+ pushFromFSp 4
+ fetchValue 28
+ dup 
+ pushImm 1
+ sub 
+ jz L4435
+ dup 
+ pushImm 2
+ sub 
+ jz L4435
+ jmp L4514
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -150,51 +195,5 @@ Check if a step is interesecting with a given line?
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L4358:
- pushFromFSp 0
- fetchValue 4
- pushFromFSp 4
- fetchValue 12
- pushFromFSp 4
- fetchValue 16
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 12
- add 
- pushImmf 100
- memcpy 0
- pushFromFSp 4
- pushImm 28
- add 
- pushFromFSp 0
- pushFromPSp 16
- pushFromFSp 4
- fetchValue 0
- pushFromFSp 4
- fetchValue 4
- syscall 1, 119 ; trap_obj_check_step (4 in, 1 out)
- memcpy 0
- pushFromFSp 4
- fetchValue 28
- dup 
- pushImm 1
- sub 
- jz L4435
- dup 
- pushImm 2
- sub 
- jz L4435
- jmp L4514
-```
-</details>
 

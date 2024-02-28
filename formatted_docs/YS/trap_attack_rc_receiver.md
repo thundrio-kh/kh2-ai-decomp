@@ -14,31 +14,7 @@ Return the receiver of the attack rc
 | Name | Type
 |------|-----
 | receiver   | YS::BTLOBJ *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\M_EX620\m_ex.bdscript       | ((M) Fortuneteller)          
-| obj\M_EX670\m_ex.bdscript       | ((M) Living Bone)          
-| obj\M_EX720\m_ex.bdscript       | ((M) Shaman)          
-| obj\M_EX720_HB\m_ex.bdscript       | ((M) Necromancer)          
-| obj\M_EX750\m_ex.bdscript       | ((M) Creeper Plant)          
-| obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX100\b_ex.bdscript</summary>
+Example Usage From obj\B_EX100\b_ex.bdscript
 ```plaintext
 L167:
  popToSp 0
@@ -89,5 +65,28 @@ L167:
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\M_EX620\m_ex.bdscript       | ((M) Fortuneteller)          
+| obj\M_EX670\m_ex.bdscript       | ((M) Living Bone)          
+| obj\M_EX720\m_ex.bdscript       | ((M) Shaman)          
+| obj\M_EX720_HB\m_ex.bdscript       | ((M) Necromancer)          
+| obj\M_EX750\m_ex.bdscript       | ((M) Creeper Plant)          
+| obj\M_EX750_NM\m_ex.bdscript       | ((M) Creeper Plant (NM))          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+
+
 

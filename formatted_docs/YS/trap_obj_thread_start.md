@@ -18,28 +18,7 @@ Starts a new VM thread and begins execution at the label
 | Name | Type
 |------|-----
 | vm   | YS::VM_377 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
-| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
-| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
-| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
-| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
-| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
-| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
-| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
-| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_CA000\p_ca.bdscript</summary>
+Example Usage From obj\P_CA000\p_ca.bdscript
 ```plaintext
 L3109:
  popToSp 0
@@ -58,5 +37,25 @@ L3109:
  pushImmf 0
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
+| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
+| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
+| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
+| obj\P_EX030\p_ex.bdscript       | ((P) Goofy)          
+| obj\P_EX030_NM\p_ex.bdscript       | ((P) Goofy (NM))          
+| obj\P_EX030_TR\p_ex.bdscript       | ((N) Goofy (TR))          
+| obj\P_EX030_XM\p_ex.bdscript       | ((P) Goofy (XM))          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
+| obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
+
+
 

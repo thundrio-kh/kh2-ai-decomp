@@ -12,15 +12,14 @@ Create a lookat object using a lookat as a base
 | time   | float   | time for the lookat to last
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

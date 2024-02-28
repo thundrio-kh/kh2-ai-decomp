@@ -11,15 +11,14 @@ Set the way on a path that an object is going
 | dir   | bool   | bool indicating direction?
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

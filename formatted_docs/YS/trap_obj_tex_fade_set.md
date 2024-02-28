@@ -11,15 +11,14 @@ Sets the time for a texture fade
 | fromto   | float   | Unknown, but used as both the from and to arguments
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

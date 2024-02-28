@@ -14,10 +14,21 @@ is the enemy control on?
 | Name | Type
 |------|-----
 | iscontrol   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L6860:
+ pushFromFSp 0
+ syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
+ jz L6869
+ halt 
+ jmp L6860
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -577,17 +588,5 @@ is the enemy control on?
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L6860:
- pushFromFSp 0
- syscall 2, 5 ; trap_enemy_is_no_control (1 in, 1 out)
- jz L6869
- halt 
- jmp L6860
-```
-</details>
 

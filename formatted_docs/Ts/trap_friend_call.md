@@ -15,18 +15,7 @@ make a call to a friend script
 | Name | Type
 |------|-----
 | result   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L69:
  pushFromFSp 0
@@ -42,5 +31,15 @@ L69:
  drop 
  jmp L92
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+
+
 

@@ -10,10 +10,27 @@ ends an effect and frees the associated memory
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L4545:
+ popToSp 0
+ pushFromFSpVal 64
+ pushImm 0
+ sub 
+ neqz 
+ jz L4567
+ pushFromFSpVal 64
+ syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
+ pushImm 0
+ popToSpVal 64
+ jmp L4567
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -230,23 +247,5 @@ ends an effect and frees the associated memory
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L4545:
- popToSp 0
- pushFromFSpVal 64
- pushImm 0
- sub 
- neqz 
- jz L4567
- pushFromFSpVal 64
- syscall 0, 51 ; trap_effect_kill (1 in, 0 out)
- pushImm 0
- popToSpVal 64
- jmp L4567
-```
-</details>
 

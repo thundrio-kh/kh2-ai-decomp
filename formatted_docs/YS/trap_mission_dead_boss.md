@@ -10,10 +10,19 @@ Marks the mission as complete because the boss is dead
 | signal_arg   | int   | Signal to send when marking the mission as complete
 
 
+Example Usage From ard\al05\ms_b.bdscript
+```plaintext
+L113:
+ pushFromFSpVal 4
+ syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
+ jmp L147
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
@@ -302,15 +311,5 @@ Marks the mission as complete because the boss is dead
 | msn\WI06_MS102B\wi06.bdscript       |           
 | msn\WI07_MS102A\wi07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```plaintext
-L113:
- pushFromFSpVal 4
- syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
- jmp L147
-```
-</details>
 

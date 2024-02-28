@@ -10,10 +10,48 @@ Start the "dead" effect
 | effectobj   | ryj::EFFECT_278 *   | 
 
 
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L5649:
+ pushFromFSp 0
+ pushImm 2
+ pushImm 1
+ pushImm 0
+ syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+ popToSp 4
+ pushFromFSp 4
+ syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 6
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromFSpVal 32
+ pushImmf 0.5
+ mulf 
+ gosub 4, L1353
+ pushFromFSp 0
+ fetchValue 4
+ pushFromFSpVal 32
+ pushImmf 0.5
+ mulf 
+ syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
+ pushFromFSpVal 32
+ pushImmf 0.5
+ mulf 
+ gosub 4, L1353
+ pushFromFSp 0
+ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+ gosub 4, L4719
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -450,44 +488,5 @@ Start the "dead" effect
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L5649:
- pushFromFSp 0
- pushImm 2
- pushImm 1
- pushImm 0
- syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
- popToSp 4
- pushFromFSp 4
- syscall 0, 79 ; trap_effect_add_dead_block (1 in, 0 out)
- pushFromFSp 0
- pushImm 3
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromFSp 0
- pushImm 6
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromFSpVal 32
- pushImmf 0.5
- mulf 
- gosub 4, L1353
- pushFromFSp 0
- fetchValue 4
- pushFromFSpVal 32
- pushImmf 0.5
- mulf 
- syscall 1, 19 ; trap_sysobj_fadeout (2 in, 0 out)
- pushFromFSpVal 32
- pushImmf 0.5
- mulf 
- gosub 4, L1353
- pushFromFSp 0
- syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- gosub 4, L4719
- ret
-```
-</details>
 

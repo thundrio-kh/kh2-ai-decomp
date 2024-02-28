@@ -11,10 +11,20 @@ pushes an action so that it starts next
 | unk2   | string   | A label for an action
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L7353:
+ pushFromFSp 0
+ pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)
+ syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -805,16 +815,5 @@ pushes an action so that it starts next
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L7353:
- pushFromFSp 0
- pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)
- syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
- ret
-```
-</details>
 

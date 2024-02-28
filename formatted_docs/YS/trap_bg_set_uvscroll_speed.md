@@ -10,19 +10,7 @@ UNknown. Used only by Oogie Boogie conveyor belts
 | unk1   | unknown   | pushFromFSp: 0
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          
-| obj\F_NM150\f_nm.bdscript       | ((F) ??? (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_NM140\f_nm.bdscript</summary>
+Example Usage From obj\F_NM140\f_nm.bdscript
 ```plaintext
 L2162:
  popToSp 0
@@ -40,5 +28,16 @@ L2162:
  syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          
+| obj\F_NM150\f_nm.bdscript       | ((F) ??? (NM))          
+
+
 

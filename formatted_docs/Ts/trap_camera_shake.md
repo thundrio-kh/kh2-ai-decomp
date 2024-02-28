@@ -16,26 +16,7 @@ Make the camera shake according to a lot of parameters
 | unk7   | float   | Values of -0.05,-0.1,-0.133333,-0.2,-0.3,-0.5,2 used in game AI
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\mulan\limi.bdscript       |           
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX250\b_ex.bdscript       | ((?) Xemna’s dragon’s arms (Anchored))          
-| obj\F_CA000\f_ca.bdscript       | ((F) Black Pearl (CA))          
-| obj\F_CA010\f_ca.bdscript       | ((F) ??? - Something from Black Pearl? (CA))          
-| obj\F_HB080\f_hb.bdscript       | ((F) CoR’s steam wheel (HB))          
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-| obj\P_LK000\p_lk.bdscript       | ((P) Simba)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L4703:
  jz L4735
@@ -51,5 +32,23 @@ L4703:
  popToWp W4
  jmp L4735
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\mulan\limi.bdscript       |           
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX250\b_ex.bdscript       | ((?) Xemna’s dragon’s arms (Anchored))          
+| obj\F_CA000\f_ca.bdscript       | ((F) Black Pearl (CA))          
+| obj\F_CA010\f_ca.bdscript       | ((F) ??? - Something from Black Pearl? (CA))          
+| obj\F_HB080\f_hb.bdscript       | ((F) CoR’s steam wheel (HB))          
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+| obj\P_LK000\p_lk.bdscript       | ((P) Simba)          
+
+
 

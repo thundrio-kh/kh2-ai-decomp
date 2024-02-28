@@ -14,18 +14,7 @@ Returns the blow speed value for the attack, documented in openkh as ???
 | Name | Type
 |------|-----
 | blow_speed   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TT020\f_tt.bdscript</summary>
+Example Usage From obj\F_TT020\f_tt.bdscript
 ```plaintext
 L305:
  pushFromPSpVal 112
@@ -54,5 +43,15 @@ L305:
  syscall 6, 25 ; trap_obj_tt_ball_blow (4 in, 0 out)
  jmp L474
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+
+
 

@@ -10,18 +10,7 @@ Change the mulan limit action to idle
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\mulan\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\mulan\limi.bdscript</summary>
+Example Usage From limit\mulan\limi.bdscript
 ```plaintext
 L5649:
  popToSp 0
@@ -38,5 +27,15 @@ L5649:
  gosub 12, L2011
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\mulan\limi.bdscript       |           
+
+
 

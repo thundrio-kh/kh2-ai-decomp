@@ -17,30 +17,7 @@ starts an limit effect bound to an object
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\beast\limi.bdscript       |           
-| limit\donald\limi.bdscript       |           
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-| limit\donald_wi\limi.bdscript       |           
-| limit\goofy\limi.bdscript       |           
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| limit\goofy_wi\limi.bdscript       |           
-| limit\jack\limi.bdscript       |           
-| limit\sparrow\limi.bdscript       |           
-| limit\tron\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L1405:
  popToSp 4
@@ -120,5 +97,27 @@ L1405:
  popToSpVal 28
  jmp L1564
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\beast\limi.bdscript       |           
+| limit\donald\limi.bdscript       |           
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+| limit\donald_wi\limi.bdscript       |           
+| limit\goofy\limi.bdscript       |           
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| limit\goofy_wi\limi.bdscript       |           
+| limit\jack\limi.bdscript       |           
+| limit\sparrow\limi.bdscript       |           
+| limit\tron\limi.bdscript       |           
+
+
 

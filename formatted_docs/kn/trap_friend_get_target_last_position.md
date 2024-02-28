@@ -14,18 +14,7 @@ Get the last position of the friends target
 | Name | Type
 |------|-----
 | last_pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L8852:
  pushFromPSpVal 0
@@ -79,5 +68,15 @@ L8852:
  gosub 48, L9066
  jmp L8977
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

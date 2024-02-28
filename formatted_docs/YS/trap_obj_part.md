@@ -14,10 +14,30 @@ Returns the number of parts of an object
 | Name | Type
 |------|-----
 | num_parts   | int   
+Example Usage From msn\EH14_MS103\ms_l.bdscript
+```plaintext
+L58:
+ pushFromFSp 4
+ syscall 1, 213 ; trap_obj_part (1 in, 1 out)
+ pushImm 4005
+ sub 
+ eqz 
+ jz L86
+ pushImm 1
+ pushFromFSp 0
+ syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
+ gosub 4, L89
+ negf 
+ pushImm 1
+ syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+ jmp L86
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           
@@ -51,26 +71,5 @@ Returns the number of parts of an object
 | obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
 | obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```plaintext
-L58:
- pushFromFSp 4
- syscall 1, 213 ; trap_obj_part (1 in, 1 out)
- pushImm 4005
- sub 
- eqz 
- jz L86
- pushImm 1
- pushFromFSp 0
- syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
- gosub 4, L89
- negf 
- pushImm 1
- syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
- jmp L86
-```
-</details>
 

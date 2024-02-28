@@ -12,25 +12,7 @@ Has a target searcher search for a specific object.
 | pos   | kn::FVector *   | A position vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
+Example Usage From limit\goofy2\limi.bdscript
 ```plaintext
 L80:
  popToSp 4
@@ -46,5 +28,22 @@ L80:
  popToSpVal 104
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+
+
 

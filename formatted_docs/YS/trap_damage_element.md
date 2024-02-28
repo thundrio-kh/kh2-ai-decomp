@@ -14,10 +14,24 @@ Returns the element of the attack, according to openkh documentation
 | Name | Type
 |------|-----
 | element   | int   
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L2101:
+ jz L2170
+ pushFromFSp 4
+ syscall 2, 85 ; trap_damage_element (1 in, 1 out)
+ dup 
+ pushImm 2
+ sub 
+ jz L2116
+ jmp L2139
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -52,20 +66,5 @@ Returns the element of the attack, according to openkh documentation
 | obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
 | obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L2101:
- jz L2170
- pushFromFSp 4
- syscall 2, 85 ; trap_damage_element (1 in, 1 out)
- dup 
- pushImm 2
- sub 
- jz L2116
- jmp L2139
-```
-</details>
 

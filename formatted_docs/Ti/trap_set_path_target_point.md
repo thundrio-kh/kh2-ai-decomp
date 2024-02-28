@@ -11,20 +11,7 @@ Set a target point on a path
 | point_index   | label   | call label for point index
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_AL070_BTL\n_al.bdscript       | ((N) Jafar clone (BTL) (AL))          
-| obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          
-| obj\N_BB070_BTL\n_bb.bdscript       | ((N) Mrs. Potts (BTL) (BB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_AL070_BTL\n_al.bdscript</summary>
+Example Usage From obj\N_AL070_BTL\n_al.bdscript
 ```plaintext
 L1140:
  pushFromFSp 0
@@ -46,5 +33,17 @@ L1140:
  syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
  jmp L1178
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_AL070_BTL\n_al.bdscript       | ((N) Jafar clone (BTL) (AL))          
+| obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          
+| obj\N_BB070_BTL\n_bb.bdscript       | ((N) Mrs. Potts (BTL) (BB))          
+
+
 

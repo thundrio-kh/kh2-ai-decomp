@@ -13,15 +13,14 @@ Return the number of prizes currently spawned
 | Name | Type
 |------|-----
 | num   | int   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

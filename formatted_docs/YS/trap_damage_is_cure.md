@@ -14,30 +14,7 @@ Returns if the type of damage is healing (if the value is 5 or 6)
 | Name | Type
 |------|-----
 | isheal   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\EH14_MS103\ms_l.bdscript       |           
-| msn\HE_COLOSSEUM_3\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_7\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_8_TIT\he_c.bdscript       |           
-| msn\HE_COL_4_3\he_c.bdscript       |           
-| msn\HE_COL_4_7\he_c.bdscript       |           
-| msn\HE_COL_8TI_BOSS\he_c.bdscript       |           
-| msn\MU01_MS102\mu01.bdscript       |           
-| msn\MU01_MS103C\mu01.bdscript       |           
-| msn\MU02_MS103A\mu02.bdscript       |           
-| msn\MU02_MS103B\mu02.bdscript       |           
-| msn\MU03_MS104\mu03.bdscript       |           
-| msn\MU09_MS108\mu09.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
+Example Usage From msn\EH14_MS103\ms_l.bdscript
 ```plaintext
 TR6:
  popToSp 0
@@ -59,5 +36,27 @@ TR6:
  syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
  jmp L86
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\EH14_MS103\ms_l.bdscript       |           
+| msn\HE_COLOSSEUM_3\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_7\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_8_TIT\he_c.bdscript       |           
+| msn\HE_COL_4_3\he_c.bdscript       |           
+| msn\HE_COL_4_7\he_c.bdscript       |           
+| msn\HE_COL_8TI_BOSS\he_c.bdscript       |           
+| msn\MU01_MS102\mu01.bdscript       |           
+| msn\MU01_MS103C\mu01.bdscript       |           
+| msn\MU02_MS103A\mu02.bdscript       |           
+| msn\MU02_MS103B\mu02.bdscript       |           
+| msn\MU03_MS104\mu03.bdscript       |           
+| msn\MU09_MS108\mu09.bdscript       |           
+
+
 

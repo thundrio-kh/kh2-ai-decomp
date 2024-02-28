@@ -16,15 +16,14 @@ Get the direction for a path from an object
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

@@ -12,20 +12,7 @@ Gives the player/party an ability.
 | equip   | bool   | Whether or not to start the ability equipped
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\mu07\mu_g.bdscript       |           
-| ard\tr03\tr_g.bdscript       |           
-| ard\tr05\tr_g.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\mu07\mu_g.bdscript</summary>
+Example Usage From ard\mu07\mu_g.bdscript
 ```plaintext
 TR2:
  pushImm 6
@@ -56,5 +43,17 @@ TR2:
  syscall 0, 99 ; trap_partram_add_ability (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\mu07\mu_g.bdscript       |           
+| ard\tr03\tr_g.bdscript       |           
+| ard\tr05\tr_g.bdscript       |           
+
+
 

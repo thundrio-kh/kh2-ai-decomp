@@ -13,47 +13,7 @@ Set the position for an object. This is identical to trap_obj_set_pos but it als
 | pos   | kn::FVector *   | A position vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\jack\limi.bdscript       |           
-| limit\riku\limi.bdscript       |           
-| limit\simba\limi.bdscript       |           
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
-| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\B_LK110\b_lk.bdscript       | ((B) Scar)          
-| obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
-| obj\F_BB100\f_bb.bdscript       | ((F) Minigame’s lamp (BB))          
-| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
-| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
-| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
-| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
-| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
-| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
-| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\jack\limi.bdscript</summary>
+Example Usage From limit\jack\limi.bdscript
 ```plaintext
 L1483:
  popToSp 0
@@ -100,5 +60,44 @@ L1483:
  syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\jack\limi.bdscript       |           
+| limit\riku\limi.bdscript       |           
+| limit\simba\limi.bdscript       |           
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
+| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\B_LK110\b_lk.bdscript       | ((B) Scar)          
+| obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
+| obj\F_BB100\f_bb.bdscript       | ((F) Minigame’s lamp (BB))          
+| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
+| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
+| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
+| obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
+| obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          
+| obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
+| obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
+
+
 

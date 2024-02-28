@@ -16,10 +16,54 @@ Searches for a target based on a number of parameters
 | is_history   | bool   | Unknown purpose, only value used in game is 1
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3839:
+ pushFromFSp 20
+ pushImm 20
+ sub 
+ msb 
+ jz L3931
+ pushFromFSp 20
+ pushImm 1
+ add 
+ popToSp 20
+ pushFromPWp W0
+ pushImm 156
+ add 
+ pushFromFSp 16
+ pushFromPSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromPSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ pushImm 1
+ pushImm 1
+ pushImm 1
+ syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
+ pushFromFSp 16
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L3927
+ pushImmf 1
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImmf 0.5
+ subf 
+ infzf 
+ jz L3919
+ pushFromPSp 0
+ pushFromFSp 16
+ gosub 8, L3957
+ jmp L3925
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -83,50 +127,5 @@ Searches for a target based on a number of parameters
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3839:
- pushFromFSp 20
- pushImm 20
- sub 
- msb 
- jz L3931
- pushFromFSp 20
- pushImm 1
- add 
- popToSp 20
- pushFromPWp W0
- pushImm 156
- add 
- pushFromFSp 16
- pushFromPSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- pushFromPSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- pushImm 1
- pushImm 1
- pushImm 1
- syscall 6, 5 ; trap_target_seracher_search (7 in, 0 out)
- pushFromFSp 16
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L3927
- pushImmf 1
- syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0.5
- subf 
- infzf 
- jz L3919
- pushFromPSp 0
- pushFromFSp 16
- gosub 8, L3957
- jmp L3925
-```
-</details>
 

@@ -10,18 +10,7 @@ Revives the player (ala Tinker Bells ability)
 | player   | YS::PLAYER_44 *   | Player object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX340\p_ex.bdscript       | ((P) Tinker Bell)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX340\p_ex.bdscript</summary>
+Example Usage From obj\P_EX340\p_ex.bdscript
 ```plaintext
 L1695:
  popToSp 0
@@ -62,5 +51,15 @@ L1695:
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX340\p_ex.bdscript       | ((P) Tinker Bell)          
+
+
 

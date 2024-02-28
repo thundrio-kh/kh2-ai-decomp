@@ -10,18 +10,7 @@ Disables a numbered command group
 | group   | int   | Values used by Lingering Will are 1 and 2
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L4680:
  popToSp 0
@@ -43,5 +32,15 @@ L4680:
  drop 
  jmp L4722
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+
+
 

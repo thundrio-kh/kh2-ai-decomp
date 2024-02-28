@@ -14,10 +14,33 @@ Returns the object that last attacked the passed in object
 | Name | Type
 |------|-----
 | attacker   | YS::OBJ_128 *   
+Example Usage From obj\B_HE030_PART\b_he.bdscript
+```plaintext
+L39:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
+ syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
+ jz L86
+ pushFromFSp 4
+ syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
+ syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
+ pushImm 4
+ sub 
+ eqz 
+ dup 
+ jz L70
+ pushFromFSp 4
+ syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
@@ -68,29 +91,5 @@ Returns the object that last attacked the passed in object
 | obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
 | obj\M_EX930\m_ex.bdscript       | ((M) Dancer)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_HE030_PART\b_he.bdscript</summary>
-```plaintext
-L39:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- syscall 2, 88 ; trap_enemy_get_attacker (1 in, 1 out)
- syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
- jz L86
- pushFromFSp 4
- syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
- syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
- pushImm 4
- sub 
- eqz 
- dup 
- jz L70
- pushFromFSp 4
- syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
- eqzv
-```
-</details>
 

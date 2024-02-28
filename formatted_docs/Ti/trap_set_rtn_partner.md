@@ -11,10 +11,40 @@ Set a partner for an RTN action
 | npc_partner   | YS::NPC_0 *   | An npc object
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L125:
+ drop 
+ pushFromFSp 8
+ pushImm 0
+ sub 
+ neqz 
+ jz L177
+ pushFromPSpVal 80
+ pushFromFSp 8
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSpVal 80
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L175
+ pushFromPSpVal 80
+ pushFromFSp 0
+ pushImm 16384
+ pushImm 0
+ pushImm 0
+ pushImm 0
+ syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
+ pushFromFSp 0
+ pushFromPSpVal 80
+ syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
+ jmp L175
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -248,36 +278,5 @@ Set a partner for an RTN action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L125:
- drop 
- pushFromFSp 8
- pushImm 0
- sub 
- neqz 
- jz L177
- pushFromPSpVal 80
- pushFromFSp 8
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSpVal 80
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L175
- pushFromPSpVal 80
- pushFromFSp 0
- pushImm 16384
- pushImm 0
- pushImm 0
- pushImm 0
- syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
- pushFromFSp 0
- pushFromPSpVal 80
- syscall 5, 26 ; trap_set_rtn_partner (2 in, 0 out)
- jmp L175
-```
-</details>
 

@@ -12,10 +12,27 @@ Adds two vectors of floats together, Third parameter has an unknown purpose
 | unk   | float   | unk
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L2082:
+ pushFromPSp 48
+ pushFromPSpVal 32
+ gosub 44, L2626
+ pushFromPSpVal 32
+ pushFromPSp 48
+ pushImm 16
+ add 
+ pushFromPSp 32
+ gosub 44, L3051
+ syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
+ jmp L2104
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -186,23 +203,5 @@ Adds two vectors of floats together, Third parameter has an unknown purpose
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L2082:
- pushFromPSp 48
- pushFromPSpVal 32
- gosub 44, L2626
- pushFromPSpVal 32
- pushFromPSp 48
- pushImm 16
- add 
- pushFromPSp 32
- gosub 44, L3051
- syscall 0, 45 ; trap_vector_addf (3 in, 0 out)
- jmp L2104
-```
-</details>
 

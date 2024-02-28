@@ -11,19 +11,7 @@ Switch the camera mode to the inverse scope used in the Xigbar fight.
 | heightOffset   | int   | height offset for the camera, value of 200 is used by Xigbar
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L20862:
  popToSp 4
@@ -98,5 +86,16 @@ L20862:
  popToSpVal 224
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+
+
 

@@ -14,21 +14,7 @@ Get the amount of drive time left
 | Name | Type
 |------|-----
 | time   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB040_BTL\n_hb.bdscript</summary>
+Example Usage From obj\N_HB040_BTL\n_hb.bdscript
 ```plaintext
 L1306:
  gosub 8, L1348
@@ -42,5 +28,18 @@ L1306:
  jz L1328
  jmp L1345
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

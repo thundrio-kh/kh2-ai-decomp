@@ -10,15 +10,14 @@ Reset the current pointer of the path
 | path   | Ti::Path_3   | Path object
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

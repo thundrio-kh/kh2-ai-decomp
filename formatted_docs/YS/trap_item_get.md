@@ -15,15 +15,14 @@ Give an item to the player
 | Name | Type
 |------|-----
 | unk   | int   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

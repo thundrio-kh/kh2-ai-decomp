@@ -10,10 +10,30 @@ Cancel the currecnt camera event
 | should_interpolate   | bool   | Flag for if the screen should be interpolated as the camera is canceled
 
 
+Example Usage From limit\jack\limi.bdscript
+```plaintext
+L710:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L738
+ pushFromFSp 0
+ gosub 4, L2706
+ pushFromPSpVal 4
+ syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L2799
+ pushImm 1
+ syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           
@@ -39,26 +59,5 @@ Cancel the currecnt camera event
 | obj\N_EX760_BTL_MEGARA\n_ex.bdscript       | ((N) Pete (BTL_MEGARA) (EX))          
 | obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\jack\limi.bdscript</summary>
-```plaintext
-L710:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L738
- pushFromFSp 0
- gosub 4, L2706
- pushFromPSpVal 4
- syscall 1, 74 ; trap_obj_idle (1 in, 0 out)
- pushFromFSp 0
- gosub 4, L2799
- pushImm 1
- syscall 1, 223 ; trap_camera_cancel (1 in, 0 out)
- ret
-```
-</details>
 

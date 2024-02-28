@@ -14,10 +14,27 @@ Returns if the object is dead
 | Name | Type
 |------|-----
 | is_dead   | bool   
+Example Usage From msn\CA10_MS107\ca10.bdscript
+```plaintext
+L98:
+ pushFromPSp 0
+ pushImm 8
+ syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
+ pushFromPSp 0
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ dup 
+ jz L119
+ pushFromPSp 0
+ syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA10_MS107\ca10.bdscript       |           
@@ -47,23 +64,5 @@ Returns if the object is dead
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\CA10_MS107\ca10.bdscript</summary>
-```plaintext
-L98:
- pushFromPSp 0
- pushImm 8
- syscall 1, 210 ; trap_obj_search_by_part (2 in, 0 out)
- pushFromPSp 0
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- dup 
- jz L119
- pushFromPSp 0
- syscall 1, 272 ; trap_obj_is_dead (1 in, 1 out)
- eqzv
-```
-</details>
 

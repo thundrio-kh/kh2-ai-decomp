@@ -9,18 +9,7 @@ Show the screen effect of the Pete curtain closing
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
+Example Usage From obj\N_EX760_BTL\n_ex.bdscript
 ```plaintext
 L6309:
  pushFromFSp 4
@@ -59,5 +48,15 @@ L6309:
  fetchValue 36
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+
+
 

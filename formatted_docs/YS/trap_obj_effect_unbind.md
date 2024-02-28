@@ -11,27 +11,7 @@ Unbinds the effect from the object
 | effect   | ryj::EFFECT_310   | An effect object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-| obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
-| obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L38605:
  pushFromFSp 0
@@ -50,5 +30,24 @@ L38605:
  syscall 1, 169 ; trap_obj_effect_unbind (2 in, 0 out)
  jmp L38636
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+| obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
+| obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
+
+
 

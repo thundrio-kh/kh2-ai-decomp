@@ -10,10 +10,23 @@ Sets the value of a flag to true
 | flag_num   | int   | Flag number
 
 
+Example Usage From 00common
+```plaintext
+L68:
+ pushImm 13325
+ syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
+ eqz 
+ jz L83
+ pushImm 13325
+ syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
+ jmp L118
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | 00common       |           
@@ -55,19 +68,5 @@ Sets the value of a flag to true
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
 | 00common       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From 00common</summary>
-```plaintext
-L68:
- pushImm 13325
- syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
- eqz 
- jz L83
- pushImm 13325
- syscall 0, 14 ; trap_progress_set_flag (1 in, 0 out)
- jmp L118
-```
-</details>
 

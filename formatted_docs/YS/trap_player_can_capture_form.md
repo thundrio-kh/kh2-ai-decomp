@@ -13,18 +13,7 @@ Returns whether the players form can be captured, which is determined by if the 
 | Name | Type
 |------|-----
 | can_capture_form   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
+Example Usage From obj\M_EX950\m_ex.bdscript
 ```plaintext
 L9331:
  popToSp 0
@@ -64,5 +53,15 @@ L9331:
  syscall 2, 13 ; trap_attack_free (1 in, 0 out)
  jmp L9564
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

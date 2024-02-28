@@ -17,21 +17,7 @@ Starts a limit effect at a specified position
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\auron\limi.bdscript       |           
-| limit\jack\limi.bdscript       |           
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L303:
  pushFromFSp 4
@@ -71,5 +57,18 @@ L303:
  pushImmf 0
  syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\auron\limi.bdscript       |           
+| limit\jack\limi.bdscript       |           
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+
+
 

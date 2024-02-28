@@ -16,19 +16,7 @@ Moves an object to a position
 | Name | Type
 |------|-----
 | unk   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX420\m_ex.bdscript       | ((M) Neoshadow)          
-| obj\M_EX420_NM\m_ex.bdscript       | ((M) Neoshadow (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX420\m_ex.bdscript</summary>
+Example Usage From obj\M_EX420\m_ex.bdscript
 ```plaintext
 L3495:
  pushFromFSp 16
@@ -137,5 +125,16 @@ L3495:
  infzf 
  neqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX420\m_ex.bdscript       | ((M) Neoshadow)          
+| obj\M_EX420_NM\m_ex.bdscript       | ((M) Neoshadow (NM))          
+
+
 

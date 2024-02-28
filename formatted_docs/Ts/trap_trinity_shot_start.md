@@ -17,19 +17,7 @@ Start a trinity limit shot
 | Name | Type
 |------|-----
 | result   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L7618:
  pushFromFSp 36
@@ -113,5 +101,16 @@ L7618:
  popToSp 36
  jmp L7618
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+
+
 

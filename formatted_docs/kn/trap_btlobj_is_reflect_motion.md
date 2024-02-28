@@ -14,19 +14,7 @@ Returns if an object is performing a reflect animation
 | Name | Type
 |------|-----
 | is_reflect_motion   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L1635:
  pushFromFSp 0
@@ -42,5 +30,16 @@ L1635:
  syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+
+
 

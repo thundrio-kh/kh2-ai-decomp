@@ -12,18 +12,7 @@ executes a large amount of damage
 | power   | float   | pushImmf: 0
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_HE030\b_he.bdscript</summary>
+Example Usage From obj\B_HE030\b_he.bdscript
 ```plaintext
 L81:
  pushFromFWp W4212
@@ -65,5 +54,15 @@ L81:
  syscall 2, 87 ; trap_enemy_exec_damage_large (3 in, 0 out)
  exit
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
+
+
 

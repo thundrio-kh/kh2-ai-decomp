@@ -15,10 +15,33 @@ Starts a new magic thread
 | Name | Type
 |------|-----
 | thread   | YS::MAGIC_85 *   
+Example Usage From magic\BLIZZARD_1\bliz.bdscript
+```plaintext
+L1238:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 8
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 8, L1270
+ popToSp 12
+ pushFromFSp 12
+ pushImm 52
+ add 
+ pushFromFSp 4
+ pushFromFSp 12
+ syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+ memcpy 0
+ pushFromFSp 12
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\BLIZZARD_1\bliz.bdscript       |           
@@ -265,29 +288,5 @@ Starts a new magic thread
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\BLIZZARD_1\bliz.bdscript</summary>
-```plaintext
-L1238:
- popToSp 0
- popToSp 4
- popToSp 8
- pushFromFSp 8
- pushFromFSp 4
- pushFromFSp 0
- gosub 8, L1270
- popToSp 12
- pushFromFSp 12
- pushImm 52
- add 
- pushFromFSp 4
- pushFromFSp 12
- syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
- memcpy 0
- pushFromFSp 12
- ret
-```
-</details>
 

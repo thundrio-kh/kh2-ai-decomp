@@ -14,10 +14,28 @@ Returns if the object is flying
 | Name | Type
 |------|-----
 | is_fly   | bool   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L3114:
+ pushFromFSp 4
+ syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
+ jz L3140
+ pushFromFSp 4
+ syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
+ pushFromFSp 4
+ pushImm 4
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 4
+ pushImm 5
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+ jmp L3140
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -67,24 +85,5 @@ Returns if the object is flying
 | obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
 | obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L3114:
- pushFromFSp 4
- syscall 1, 59 ; trap_obj_is_fly (1 in, 1 out)
- jz L3140
- pushFromFSp 4
- syscall 1, 95 ; trap_obj_fly_to_jump (1 in, 0 out)
- pushFromFSp 4
- pushImm 4
- syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
- pushFromFSp 4
- pushImm 5
- syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
- jmp L3140
-```
-</details>
 

@@ -12,10 +12,27 @@ Searches for a target of a given type
 | type   | int   | Target type
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L489:
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ eqz 
+ jz L511
+ pushFromFSp 180
+ pushFromPWp W0
+ pushImm 4
+ add 
+ pushImm 4
+ syscall 1, 121 ; trap_target_search (3 in, 0 out)
+ jmp L511
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -579,23 +596,5 @@ Searches for a target of a given type
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L489:
- pushFromFSp 180
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- eqz 
- jz L511
- pushFromFSp 180
- pushFromPWp W0
- pushImm 4
- add 
- pushImm 4
- syscall 1, 121 ; trap_target_search (3 in, 0 out)
- jmp L511
-```
-</details>
 

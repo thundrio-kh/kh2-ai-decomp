@@ -10,19 +10,7 @@ activate mickeys recovery holy light
 | mickey_obj   | YS::MICKEY_0 *   | Object for mickey
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
-| obj\P_EX220\mick.bdscript       | ((P) Mickey)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX200\mick.bdscript</summary>
+Example Usage From obj\P_EX200\mick.bdscript
 ```plaintext
 L1677:
  popToSp 0
@@ -42,5 +30,16 @@ L1677:
  syscall 1, 275 ; trap_obj_recov_holylight (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
+| obj\P_EX220\mick.bdscript       | ((P) Mickey)          
+
+
 

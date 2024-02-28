@@ -10,10 +10,29 @@ Normally does nothing in production game. When running the PC version of the gam
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
+Example Usage From gumimenu\event\gumi.bdscript
+```plaintext
+L19:
+ popToSp 0
+ pushFromFSp 0
+ gosub 8, L382
+ pushImm 0
+ popToSp 12
+ pushImm 0
+ popToSp 16
+ pushImmf 0
+ popToSp 8
+ pushImmf 0
+ popToSp 4
+ pushFromPAi L2470 ; ___ai 'main' (L2470)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
@@ -545,25 +564,5 @@ Normally does nothing in production game. When running the PC version of the gam
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```plaintext
-L19:
- popToSp 0
- pushFromFSp 0
- gosub 8, L382
- pushImm 0
- popToSp 12
- pushImm 0
- popToSp 16
- pushImmf 0
- popToSp 8
- pushImmf 0
- popToSp 4
- pushFromPAi L2470 ; ___ai 'main' (L2470)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
-```
-</details>
 

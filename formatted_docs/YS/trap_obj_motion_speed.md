@@ -11,10 +11,28 @@ Sets the speed of a motion set
 | speed   | float   | Speed to set
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L7602:
+ pushFromFSp 0
+ pushImmf 0
+ pushImmf 0
+ pushImmf 0
+ gosub 8, L7630
+ pushImmf 30
+ gosub 8, L3021
+ pushFromFSp 0
+ pushImmf 0.05
+ syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
+ gosub 8, L6740
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -88,24 +106,5 @@ Sets the speed of a motion set
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L7602:
- pushFromFSp 0
- pushImmf 0
- pushImmf 0
- pushImmf 0
- gosub 8, L7630
- pushImmf 30
- gosub 8, L3021
- pushFromFSp 0
- pushImmf 0.05
- syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)
- gosub 8, L6740
- ret
-```
-</details>
 

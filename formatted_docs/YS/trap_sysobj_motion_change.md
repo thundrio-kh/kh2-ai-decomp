@@ -12,10 +12,23 @@ Changes the object to use a different motion set entry
 | blend_time   | float   | Time to take to blend the animations
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L6824:
+ pushFromFSp 0
+ fetchValue 4
+ pushFromFSp 12
+ pushFromFSp 0
+ pushFromFSp 12
+ gosub 8, L6962
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -808,19 +821,5 @@ Changes the object to use a different motion set entry
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L6824:
- pushFromFSp 0
- fetchValue 4
- pushFromFSp 12
- pushFromFSp 0
- pushFromFSp 12
- gosub 8, L6962
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
-```
-</details>
 

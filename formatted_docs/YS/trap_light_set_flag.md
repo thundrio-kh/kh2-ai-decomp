@@ -11,10 +11,33 @@ flag to set.
 | flag_number   | int   | which flag to set, only a value of 1 is used in game
 
 
+Example Usage From limit\trinity\limi.bdscript
+```plaintext
+L1419:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ popToSp 0
+ pushFromFSpVal 100
+ pushImm 0
+ sub 
+ eqz 
+ jz L1454
+ pushImm 0
+ syscall 1, 181 ; trap_light_create (1 in, 1 out)
+ popToSpVal 100
+ pushFromFSpVal 100
+ pushImm 1
+ syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
+ jmp L1454
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           
@@ -64,29 +87,5 @@ flag to set.
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```plaintext
-L1419:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- popToSp 0
- pushFromFSpVal 100
- pushImm 0
- sub 
- eqz 
- jz L1454
- pushImm 0
- syscall 1, 181 ; trap_light_create (1 in, 1 out)
- popToSpVal 100
- pushFromFSpVal 100
- pushImm 1
- syscall 1, 182 ; trap_light_set_flag (2 in, 0 out)
- jmp L1454
-```
-</details>
 

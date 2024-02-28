@@ -13,10 +13,20 @@ Checks if a tutorial window is open
 | Name | Type
 |------|-----
 | is_open   | bool   
+Example Usage From ard\eh18\full.bdscript
+```plaintext
+L29:
+ syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
+ jz L36
+ halt 
+ jmp L29
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\eh18\full.bdscript       |           
@@ -548,16 +558,5 @@ Checks if a tutorial window is open
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\eh18\full.bdscript</summary>
-```plaintext
-L29:
- syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
- jz L36
- halt 
- jmp L29
-```
-</details>
 

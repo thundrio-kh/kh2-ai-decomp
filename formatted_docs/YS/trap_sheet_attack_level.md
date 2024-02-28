@@ -14,15 +14,14 @@ Gets the attack level of an object
 | Name | Type
 |------|-----
 | attack_level   | int   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

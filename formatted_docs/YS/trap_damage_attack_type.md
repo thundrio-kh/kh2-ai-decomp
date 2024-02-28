@@ -14,20 +14,7 @@ returns the type of the attack, as defined in its Atkp entry found in 00battle.b
 | Name | Type
 |------|-----
 | damage_type   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
-| obj\F_HE000\f_he.bdscript       | ((F) Standing Torch (HE))          
-| obj\M_EX350_07\m_ex.bdscript       | ((M) Mushroom 7 (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
+Example Usage From obj\F_AL050\f_al.bdscript
 ```plaintext
 L108:
  pushFromFSp 4
@@ -43,5 +30,17 @@ L108:
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L131
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
+| obj\F_HE000\f_he.bdscript       | ((F) Standing Torch (HE))          
+| obj\M_EX350_07\m_ex.bdscript       | ((M) Mushroom 7 (EX))          
+
+
 

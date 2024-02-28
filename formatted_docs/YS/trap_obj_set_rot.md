@@ -11,10 +11,35 @@ Set the rotation value of an object.
 | rot   | float   | Rotation value
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L3322:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 8
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSp 0
+ pushFromFSp 8
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ fetchValue 12
+ pushFromFSp 4
+ addf 
+ syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -161,31 +186,5 @@ Set the rotation value of an object.
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_HE000_NPC_QSATO\npc_.bdscript       | ((P) Auron (NPC_QSATO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L3322:
- popToSp 4
- popToSp 8
- popToSp 0
- pushFromFSp 0
- pushFromFSp 8
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromFSp 0
- pushFromFSp 8
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- fetchValue 12
- pushFromFSp 4
- addf 
- syscall 1, 1 ; trap_obj_set_rot (2 in, 0 out)
- ret
-```
-</details>
 

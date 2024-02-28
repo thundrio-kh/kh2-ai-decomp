@@ -14,10 +14,31 @@ Checks if damage from an attack should be reacted to, which it is as long as the
 | Name | Type
 |------|-----
 | shouldreact   | bool   
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L2139:
+ pushFromFSp 4
+ syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
+ jz L2167
+ pushFromFSp 0
+ pushImm 20
+ add 
+ dup 
+ fetchValue 0
+ pushImm 1
+ add 
+ memcpy 0
+ pushFromFSp 0
+ pushFromPAi L10834 ; ___ai 'mode_revenge_boss' (L10834)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L2167
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -263,27 +284,5 @@ Checks if damage from an attack should be reacted to, which it is as long as the
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L2139:
- pushFromFSp 4
- syscall 2, 8 ; trap_damage_is_reaction (1 in, 1 out)
- jz L2167
- pushFromFSp 0
- pushImm 20
- add 
- dup 
- fetchValue 0
- pushImm 1
- add 
- memcpy 0
- pushFromFSp 0
- pushFromPAi L10834 ; ___ai 'mode_revenge_boss' (L10834)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L2167
-```
-</details>
 

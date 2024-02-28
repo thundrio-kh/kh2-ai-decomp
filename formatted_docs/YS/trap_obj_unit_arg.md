@@ -15,10 +15,26 @@ Return the value of a unit argument
 | Name | Type
 |------|-----
 | unit_arg   | int   
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L2308:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
+ pushImm 1
+ sub 
+ eqz 
+ jz L2328
+ gosub 12, L2424
+ jmp L2334
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -269,22 +285,5 @@ Return the value of a unit argument
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L2308:
- popToSp 0
- pushFromFSp 0
- pushImm 1
- syscall 1, 39 ; trap_obj_unit_arg (2 in, 1 out)
- pushImm 1
- sub 
- eqz 
- jz L2328
- gosub 12, L2424
- jmp L2334
-```
-</details>
 

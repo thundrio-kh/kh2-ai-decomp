@@ -14,10 +14,26 @@ returns the ID for an object (according to 00objentry.bin)
 | Name | Type
 |------|-----
 | entry_id   | int   
+Example Usage From msn\AL14_MS_O\al14.bdscript
+```plaintext
+L89:
+ pushFromPSp 16
+ pushFromFSp 0
+ syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
+ pushFromPSp 16
+ syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
+ dup 
+ pushImm 1554
+ sub 
+ jz L108
+ jmp L117
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL14_MS_O\al14.bdscript       |           
@@ -340,22 +356,5 @@ returns the ID for an object (according to 00objentry.bin)
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL14_MS_O\al14.bdscript</summary>
-```plaintext
-L89:
- pushFromPSp 16
- pushFromFSp 0
- syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
- pushFromPSp 16
- syscall 1, 222 ; trap_obj_get_entry_id (1 in, 1 out)
- dup 
- pushImm 1554
- sub 
- jz L108
- jmp L117
-```
-</details>
 

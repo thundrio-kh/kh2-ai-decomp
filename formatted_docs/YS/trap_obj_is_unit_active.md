@@ -14,25 +14,7 @@ Returns if the object's unit is active
 | Name | Type
 |------|-----
 | is_unit_active   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          
-| obj\F_CA060_MEDAL\f_ca.bdscript       | ((F) ??? - Attackable floor? (MEDAL) (CA))          
-| obj\F_TR080\tr_w.bdscript       | ((F) Light cycle’s wall (TR))          
-| obj\F_TR090\tr_w.bdscript       | ((F) Light cycle’s wall 2 (TR))          
-| obj\F_TR100\tr_w.bdscript       | ((F) Light cycle’s wall 3 (single panel) (TR))          
-| obj\F_TR110\tr_b.bdscript       | ((F) Light cycle’s columns (5) (TR))          
-| obj\F_TR120\tr_b.bdscript       | ((F) Light cycle’s columns (3) (TR))          
-| obj\F_TR130\tr_b.bdscript       | ((F) Light cycle’s columns (1) (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
+Example Usage From obj\F_CA060\f_ca.bdscript
 ```plaintext
 L143:
  pushFromFSp 0
@@ -46,5 +28,22 @@ L143:
  eqz 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          
+| obj\F_CA060_MEDAL\f_ca.bdscript       | ((F) ??? - Attackable floor? (MEDAL) (CA))          
+| obj\F_TR080\tr_w.bdscript       | ((F) Light cycle’s wall (TR))          
+| obj\F_TR090\tr_w.bdscript       | ((F) Light cycle’s wall 2 (TR))          
+| obj\F_TR100\tr_w.bdscript       | ((F) Light cycle’s wall 3 (single panel) (TR))          
+| obj\F_TR110\tr_b.bdscript       | ((F) Light cycle’s columns (5) (TR))          
+| obj\F_TR120\tr_b.bdscript       | ((F) Light cycle’s columns (3) (TR))          
+| obj\F_TR130\tr_b.bdscript       | ((F) Light cycle’s columns (1) (TR))          
+
+
 

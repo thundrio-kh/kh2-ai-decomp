@@ -11,10 +11,33 @@ Perform a fade in effect
 | time   | float   | Number of frames for the fade in
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L4186:
+ pushFromPWp W72
+ pushImm 268
+ add 
+ fetchValue 4
+ pushImmf 1
+ syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
+ pushFromPWp W72
+ pushImm 268
+ add 
+ syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+ pushFromPWp W72
+ pushImm 268
+ add 
+ pushFromFSp 0
+ pushImm 0
+ gosub 12, L4229
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -567,29 +590,5 @@ Perform a fade in effect
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L4186:
- pushFromPWp W72
- pushImm 268
- add 
- fetchValue 4
- pushImmf 1
- syscall 1, 20 ; trap_sysobj_fadein (2 in, 0 out)
- pushFromPWp W72
- pushImm 268
- add 
- syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
- pushFromPWp W72
- pushImm 268
- add 
- pushFromFSp 0
- pushImm 0
- gosub 12, L4229
- ret
-```
-</details>
 

@@ -11,26 +11,7 @@ Sets the color of an effect
 | color_vector   | kn::FVector *   | probably r,g,b,a color vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
-| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
-| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
-| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
-| obj\M_EX350_11\m_ex.bdscript       | ((M) Mushroom 11 (EX))          
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL110\b_al.bdscript</summary>
+Example Usage From obj\B_AL110\b_al.bdscript
 ```plaintext
 L3409:
  pushFromFSp 56
@@ -96,5 +77,23 @@ L3409:
  halt 
  jmp L3349
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
+| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
+| obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
+| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
+| obj\M_EX350_11\m_ex.bdscript       | ((M) Mushroom 11 (EX))          
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+
+
 

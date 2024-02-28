@@ -20,10 +20,32 @@ Plays a voice clip belonging to an object
 | priority   | int   | Priority for playing the voice clip
 
 
+Example Usage From obj\B_CA010\b_ca.bdscript
+```plaintext
+L9010:
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushImmf 0
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L8910
+ pushImmf 0.5
+ subf 
+ infzf 
+ jz L9045
+ pushFromFSp 0
+ pushImm 19
+ pushImm 1
+ syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
+ jmp L9045
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
@@ -118,28 +140,5 @@ Plays a voice clip belonging to an object
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```plaintext
-L9010:
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushImmf 0
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
- pushFromFSp 0
- gosub 4, L8910
- pushImmf 0.5
- subf 
- infzf 
- jz L9045
- pushFromFSp 0
- pushImm 19
- pushImm 1
- syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
- jmp L9045
-```
-</details>
 

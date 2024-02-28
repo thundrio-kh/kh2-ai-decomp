@@ -16,50 +16,7 @@ Calculates the intersection point between two vectors
 | Name | Type
 |------|-----
 | result   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
-| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
-| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
-| obj\B_LK110\b_lk.bdscript       | ((B) Scar)          
-| obj\G_EX220\g_ex.bdscript       | ()          
-| obj\G_EX220_G\g_ex.bdscript       | ()          
-| obj\G_EX220_R\g_ex.bdscript       | ()          
-| obj\G_EX240\g_ex.bdscript       | ()          
-| obj\G_EX240_G\g_ex.bdscript       | ()          
-| obj\G_EX240_R\g_ex.bdscript       | ()          
-| obj\G_EX250_0\g_ex.bdscript       | ()          
-| obj\G_EX250_0_G\g_ex.bdscript       | ()          
-| obj\G_EX250_0_R\g_ex.bdscript       | ()          
-| obj\G_EX250_1\g_ex.bdscript       | ()          
-| obj\G_EX250_1_G\g_ex.bdscript       | ()          
-| obj\G_EX250_1_R\g_ex.bdscript       | ()          
-| obj\G_EX260\g_ex.bdscript       | ()          
-| obj\G_EX260_G\g_ex.bdscript       | ()          
-| obj\G_EX260_R\g_ex.bdscript       | ()          
-| obj\G_EX270\g_ex.bdscript       | ()          
-| obj\G_EX270_G\g_ex.bdscript       | ()          
-| obj\G_EX270_R\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
-| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
+Example Usage From obj\B_AL100_2ND\b_al.bdscript
 ```plaintext
 L2480:
  dup 
@@ -138,5 +95,47 @@ L2480:
  gosub 28, L2657
  jmp L2626
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
+| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
+| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
+| obj\B_LK110\b_lk.bdscript       | ((B) Scar)          
+| obj\G_EX220\g_ex.bdscript       | ()          
+| obj\G_EX220_G\g_ex.bdscript       | ()          
+| obj\G_EX220_R\g_ex.bdscript       | ()          
+| obj\G_EX240\g_ex.bdscript       | ()          
+| obj\G_EX240_G\g_ex.bdscript       | ()          
+| obj\G_EX240_R\g_ex.bdscript       | ()          
+| obj\G_EX250_0\g_ex.bdscript       | ()          
+| obj\G_EX250_0_G\g_ex.bdscript       | ()          
+| obj\G_EX250_0_R\g_ex.bdscript       | ()          
+| obj\G_EX250_1\g_ex.bdscript       | ()          
+| obj\G_EX250_1_G\g_ex.bdscript       | ()          
+| obj\G_EX250_1_R\g_ex.bdscript       | ()          
+| obj\G_EX260\g_ex.bdscript       | ()          
+| obj\G_EX260_G\g_ex.bdscript       | ()          
+| obj\G_EX260_R\g_ex.bdscript       | ()          
+| obj\G_EX270\g_ex.bdscript       | ()          
+| obj\G_EX270_G\g_ex.bdscript       | ()          
+| obj\G_EX270_R\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
+| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+
+
 

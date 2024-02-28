@@ -11,10 +11,42 @@ Sets a specific flag on an object to true
 | flagnum   | int   | Flag number
 
 
+Example Usage From limit\tron\limi.bdscript
+```plaintext
+L5471:
+ popToSp 0
+ pushFromPSp 16
+ pushImm 1755
+ gosub 12, L5597
+ pushFromPSp 16
+ pushImm 0
+ syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
+ pushFromPSp 16
+ pushFromPSpVal 32
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromFSpVal 76
+ pushImm 3
+ pushImm 1
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ popToSp 8
+ pushFromFSp 8
+ pushFromPSpVal 32
+ syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
+ pushFromFSpVal 76
+ pushImm 0
+ pushImm 0
+ syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
+ popToSpVal 64
+ pushFromPSp 4
+ pushImmf 226
+ gosub 12, L1832
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
@@ -575,38 +607,5 @@ Sets a specific flag on an object to true
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```plaintext
-L5471:
- popToSp 0
- pushFromPSp 16
- pushImm 1755
- gosub 12, L5597
- pushFromPSp 16
- pushImm 0
- syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
- pushFromPSp 16
- pushFromPSpVal 32
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromFSpVal 76
- pushImm 3
- pushImm 1
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- popToSp 8
- pushFromFSp 8
- pushFromPSpVal 32
- syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
- pushFromFSpVal 76
- pushImm 0
- pushImm 0
- syscall 2, 57 ; trap_limit_effect_start (3 in, 1 out)
- popToSpVal 64
- pushFromPSp 4
- pushImmf 226
- gosub 12, L1832
-```
-</details>
 

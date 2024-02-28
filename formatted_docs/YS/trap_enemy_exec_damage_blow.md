@@ -15,10 +15,30 @@ executes blow damage against an enemy.
 | speed   | float   | speed to blow
 
 
+Example Usage From obj\B_NM100\b_nm.bdscript
+```plaintext
+L3020:
+ jz L3053
+ pushImm 0
+ popToWp W160
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImm 16
+ pushImm 18
+ pushImmf -300
+ pushImmf 100
+ syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L12078 ; ___ai 'move_roll' (L12078)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L3059
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
@@ -37,26 +57,5 @@ executes blow damage against an enemy.
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_NM100\b_nm.bdscript</summary>
-```plaintext
-L3020:
- jz L3053
- pushImm 0
- popToWp W160
- pushFromFSp 0
- pushFromFSp 4
- pushImm 16
- pushImm 18
- pushImmf -300
- pushImmf 100
- syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
- pushFromFSp 0
- pushFromPAi L12078 ; ___ai 'move_roll' (L12078)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L3059
-```
-</details>
 

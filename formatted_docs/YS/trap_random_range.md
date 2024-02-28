@@ -15,10 +15,32 @@ Return a random float between the two values
 | Name | Type
 |------|-----
 | num   | float   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L289:
+ gosub 4, L205
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImm 1
+ add 
+ memcpy 0
+ gosub 4, L205
+ pushImm 8
+ add 
+ pushImmf 30
+ pushImmf 120
+ syscall 0, 18 ; trap_random_range (2 in, 1 out)
+ memcpy 0
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -626,28 +648,5 @@ Return a random float between the two values
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L289:
- gosub 4, L205
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImm 1
- add 
- memcpy 0
- gosub 4, L205
- pushImm 8
- add 
- pushImmf 30
- pushImmf 120
- syscall 0, 18 ; trap_random_range (2 in, 1 out)
- memcpy 0
- ret
-```
-</details>
 

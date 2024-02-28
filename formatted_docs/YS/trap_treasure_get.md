@@ -10,18 +10,7 @@ Get a treasure
 | id   | int   | Treasure location ID
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX350_13\m_ex.bdscript</summary>
+Example Usage From obj\M_EX350_13\m_ex.bdscript
 ```plaintext
 L7928:
  popToSp 0
@@ -39,5 +28,15 @@ L7928:
  gosub 4, L2575
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
+
+
 

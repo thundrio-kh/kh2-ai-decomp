@@ -10,18 +10,7 @@ Enables a numbered command group. 0 enables everything.
 | group   | int   | Enables a numbered command group. Only value used ingame is 0
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX420\b_ex.bdscript</summary>
+Example Usage From obj\B_EX420\b_ex.bdscript
 ```plaintext
 L5811:
  pushImm 0
@@ -39,5 +28,15 @@ L5811:
  syscall 1, 149 ; trap_obj_effect_start_bind_other (5 in, 1 out)
  drop
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+
+
 

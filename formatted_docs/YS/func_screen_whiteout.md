@@ -10,10 +10,25 @@ Fades the screen to white. On HD versions of the game, the spinning KH logo is p
 | frame   | int   | Number of frames to take for fade out
 
 
+Example Usage From gumimenu\event\gumi.bdscript
+```plaintext
+L246:
+ jz L265
+ pushImmf 150
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushFromFSp 0
+ pushImm 4
+ add 
+ pushImm 1
+ memcpy 0
+ jmp L265
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
@@ -39,21 +54,5 @@ Fades the screen to white. On HD versions of the game, the spinning KH logo is p
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From gumimenu\event\gumi.bdscript</summary>
-```plaintext
-L246:
- jz L265
- pushImmf 150
- syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
- pushFromFSp 0
- pushImm 4
- add 
- pushImm 1
- memcpy 0
- jmp L265
-```
-</details>
 

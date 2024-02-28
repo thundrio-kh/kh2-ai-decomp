@@ -14,10 +14,25 @@ seems to return an array of all instances of an enemy
 | Name | Type
 |------|-----
 | enemy_array   | an array of all instances of this enemy   
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L1759:
+ popToSp 0
+ pushFromFSpVal 4
+ syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
+ popToSpVal 4
+ pushFromFSpVal 4
+ pushImm 0
+ sub 
+ neqz 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -42,21 +57,5 @@ seems to return an array of all instances of an enemy
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L1759:
- popToSp 0
- pushFromFSpVal 4
- syscall 2, 4 ; trap_enemy_each (1 in, 1 out)
- popToSpVal 4
- pushFromFSpVal 4
- pushImm 0
- sub 
- neqz 
- ret
-```
-</details>
 

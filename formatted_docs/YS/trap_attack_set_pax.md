@@ -11,10 +11,29 @@ Attaches a PAX effect to an attack
 | pax   | struct *   | A PAX effect. Exact object type unknown
 
 
+Example Usage From magic\blizzard1\bliz.bdscript
+```plaintext
+L377:
+ popToSp 4
+ popToSp 0
+ pushFromPSpVal 0
+ pushFromFSp 4
+ pushImm -1
+ pushFromFSpVal 20
+ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+ popToSp 8
+ pushFromFSp 8
+ pushFromFSpVal 16
+ syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
+ pushFromFSp 8
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           
@@ -61,25 +80,5 @@ Attaches a PAX effect to an attack
 | magic\THUNDER_3\thun.bdscript       |           
 | magic\THUNDER_3lk\thun.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```plaintext
-L377:
- popToSp 4
- popToSp 0
- pushFromPSpVal 0
- pushFromFSp 4
- pushImm -1
- pushFromFSpVal 20
- syscall 2, 10 ; trap_attack_new (4 in, 1 out)
- popToSp 8
- pushFromFSp 8
- pushFromFSpVal 16
- syscall 2, 30 ; trap_attack_set_pax (2 in, 0 out)
- pushFromFSp 8
- ret
-```
-</details>
 

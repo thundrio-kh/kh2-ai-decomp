@@ -9,18 +9,7 @@ Pauses/stops the onscreen timer
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX950\m_ex.bdscript</summary>
+Example Usage From obj\M_EX950\m_ex.bdscript
 ```plaintext
 L1183:
  syscall 4, 24 ; trap_mission_cancel_pause_timer (0 in, 0 out)
@@ -36,5 +25,15 @@ L1183:
  syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
  jmp L1208
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

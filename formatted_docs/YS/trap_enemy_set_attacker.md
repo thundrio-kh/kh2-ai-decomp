@@ -11,19 +11,7 @@ Set the attacker for an enemy.
 | attacker   | YS::OBJ_138   | Object of the attacker
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX590\m_ex.bdscript       | ((M) Bulky Vendor)          
-| obj\M_EX590_NM\m_ex.bdscript       | ((M) Bulky Vendor (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX590\m_ex.bdscript</summary>
+Example Usage From obj\M_EX590\m_ex.bdscript
 ```plaintext
 L5246:
  popToSp 0
@@ -75,5 +63,16 @@ L5246:
  syscall 1, 209 ; trap_obj_dead (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX590\m_ex.bdscript       | ((M) Bulky Vendor)          
+| obj\M_EX590_NM\m_ex.bdscript       | ((M) Bulky Vendor (NM))          
+
+
 

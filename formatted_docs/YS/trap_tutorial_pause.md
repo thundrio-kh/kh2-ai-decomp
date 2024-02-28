@@ -10,18 +10,7 @@ Perform a menu pause?
 | message_id   | int   | Message ID
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\TT04_MS107\tt04.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\TT04_MS107\tt04.bdscript</summary>
+Example Usage From msn\TT04_MS107\tt04.bdscript
 ```plaintext
 L81:
  pushImmf 12
@@ -33,5 +22,15 @@ L81:
  gosub 4, L121
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\TT04_MS107\tt04.bdscript       |           
+
+
 

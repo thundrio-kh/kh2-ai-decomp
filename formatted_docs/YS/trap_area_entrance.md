@@ -13,10 +13,28 @@ Returns the number for the entrance used to enter the room
 | Name | Type
 |------|-----
 | entnum   | int   
+Example Usage From msn\HE_COLOSSEUM\he_c.bdscript
+```plaintext
+L188:
+ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+ pushFromFSpVal 20
+ sub 
+ msb 
+ jz L210
+ pushFromPSpVal 12
+ fetchValue 0
+ pushImm 2
+ syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
+ syscall 4, 37 ; trap_score_update (3 in, 1 out)
+ drop 
+ jmp L217
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           
@@ -63,24 +81,5 @@ Returns the number for the entrance used to enter the room
 | msn\HE_COL_8_6\he_c.bdscript       |           
 | obj\F_AL030\f_al.bdscript       | ((F) ??? (AL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM\he_c.bdscript</summary>
-```plaintext
-L188:
- syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
- pushFromFSpVal 20
- sub 
- msb 
- jz L210
- pushFromPSpVal 12
- fetchValue 0
- pushImm 2
- syscall 1, 196 ; trap_area_entrance (0 in, 1 out)
- syscall 4, 37 ; trap_score_update (3 in, 1 out)
- drop 
- jmp L217
-```
-</details>
 

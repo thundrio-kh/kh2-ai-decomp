@@ -12,26 +12,7 @@ Searches for an object with a specific unit argument
 | argnum   | int   | Argument to search for
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-| obj\B_LK130\b_lk.bdscript       | ((F) Path for Sora Lion’s groundshaker RC)          
-| obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          
-| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
-| obj\F_TT070\f_tt.bdscript       | ((F) Skateboard Checkmark (TT))          
-| obj\M_EX130_AL\m_ex.bdscript       | ((M) Crimson Jazz (AL))          
-| obj\M_EX520_AL\m_ex.bdscript       | ((M) Hook Bat (AL))          
-| obj\M_EX620_AL\m_ex.bdscript       | ((M) Fortuneteller (AL))          
-| obj\M_EX660_AL\m_ex.bdscript       | ((M) Rapid Thruster (AL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX400\b_ex.bdscript</summary>
+Example Usage From obj\B_EX400\b_ex.bdscript
 ```plaintext
 L3195:
  popToSp 0
@@ -48,5 +29,23 @@ L3195:
  syscall 1, 292 ; trap_obj_search_by_unit_arg (3 in, 0 out)
  jmp L3233
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+| obj\B_LK130\b_lk.bdscript       | ((F) Path for Sora Lion’s groundshaker RC)          
+| obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          
+| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
+| obj\F_TT070\f_tt.bdscript       | ((F) Skateboard Checkmark (TT))          
+| obj\M_EX130_AL\m_ex.bdscript       | ((M) Crimson Jazz (AL))          
+| obj\M_EX520_AL\m_ex.bdscript       | ((M) Hook Bat (AL))          
+| obj\M_EX620_AL\m_ex.bdscript       | ((M) Fortuneteller (AL))          
+| obj\M_EX660_AL\m_ex.bdscript       | ((M) Rapid Thruster (AL))          
+
+
 

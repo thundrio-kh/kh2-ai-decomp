@@ -14,10 +14,21 @@ Returns the position of the floor under an object
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3028:
+ pushFromPSpVal 4
+ syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 48
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -236,17 +247,5 @@ Returns the position of the floor under an object
 | obj\P_HE000\p_he.bdscript       | ((P) Auron)          
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3028:
- pushFromPSpVal 4
- syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 48
-```
-</details>
 

@@ -14,10 +14,30 @@ Returns the serial value for an object
 | Name | Type
 |------|-----
 | serial   | int   
+Example Usage From obj\F_AL050\f_al.bdscript
+```plaintext
+L2562:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
+ pushFromPAi L3100 ; ___ai 'break_reset' (L3100)
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 3
+ syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 24
+ add 
+ pushImm 0
+ memcpy 0
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
@@ -48,26 +68,5 @@ Returns the serial value for an object
 | obj\N_BB080_BTL\n_bb.bdscript       | ((N) Wardrobe maid (BTL) (BB))          
 | obj\N_DC010_BTL\n_dc.bdscript       | ((N) Minnie (BTL) (DC))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```plaintext
-L2562:
- popToSp 0
- pushFromFSp 0
- syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
- pushFromPAi L3100 ; ___ai 'break_reset' (L3100)
- syscall 0, 0 ; trap_puti (2 in, 0 out)
- pushFromFSp 0
- pushImm 3
- syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
- pushFromFSp 0
- pushImm 24
- add 
- pushImm 0
- memcpy 0
- ret
-```
-</details>
 

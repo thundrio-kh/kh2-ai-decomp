@@ -14,10 +14,30 @@ Check if the object is a summon
 | Name | Type
 |------|-----
 | is_summon   | bool   
+Example Usage From magic\CURE_1\cure.bdscript
+```plaintext
+L321:
+ popToSp 4
+ popToSp 0
+ pushImm 0
+ popToSp 8
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ dup 
+ jz L347
+ pushFromFSp 4
+ fetchValue 4
+ syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
+ eqz 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           
@@ -57,26 +77,5 @@ Check if the object is a summon
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
-```plaintext
-L321:
- popToSp 4
- popToSp 0
- pushImm 0
- popToSp 8
- pushFromFSp 4
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- dup 
- jz L347
- pushFromFSp 4
- fetchValue 4
- syscall 10, 31 ; trap_sysobj_is_summon (1 in, 1 out)
- eqz 
- eqzv
-```
-</details>
 

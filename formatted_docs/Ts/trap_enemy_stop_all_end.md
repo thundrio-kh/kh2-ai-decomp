@@ -10,18 +10,7 @@ Lets all instances of the object start doing things again
 | id   | int   | ID of an enemy
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L429:
  pushImm 6
@@ -30,5 +19,15 @@ L429:
  syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+
+
 

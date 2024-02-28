@@ -14,10 +14,24 @@ Returns if the history flag is set for the object
 | Name | Type
 |------|-----
 | is_history_mark   | bool   
+Example Usage From obj\F_AL050\f_al.bdscript
+```plaintext
+L187:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
+ jz L203
+ pushFromFSp 0
+ syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
+ gosub 4, L204
+ jmp L203
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
@@ -45,20 +59,5 @@ Returns if the history flag is set for the object
 | obj\F_NM040_10\f_nm.bdscript       | ((F) Statue (human) (NM))          
 | obj\F_NM050\f_nm.bdscript       | ((F) Falling grave (NM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_AL050\f_al.bdscript</summary>
-```plaintext
-L187:
- popToSp 0
- pushFromFSp 0
- syscall 1, 190 ; trap_obj_is_history_mark (1 in, 1 out)
- jz L203
- pushFromFSp 0
- syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- gosub 4, L204
- jmp L203
-```
-</details>
 

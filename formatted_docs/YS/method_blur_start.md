@@ -10,15 +10,14 @@ Starts the blur effect. Unused in the vanilla game
 | blur   | YS::BLUR *   | blur object that has been initialized?
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

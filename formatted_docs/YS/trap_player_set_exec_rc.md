@@ -11,10 +11,26 @@ Sets the player to be executing a reaction command
 | command   | int   | Reaction command ID
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L342:
+ popToSp 4
+ popToSp 0
+ pushFromPSp 8
+ pushFromPSpVal 4
+ fetchValue 4
+ gosub 8, L361
+ pushFromPSp 8
+ pushFromFSp 4
+ syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -41,22 +57,5 @@ Sets the player to be executing a reaction command
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L342:
- popToSp 4
- popToSp 0
- pushFromPSp 8
- pushFromPSpVal 4
- fetchValue 4
- gosub 8, L361
- pushFromPSp 8
- pushFromFSp 4
- syscall 1, 263 ; trap_player_set_exec_rc (2 in, 0 out)
- ret
-```
-</details>
 

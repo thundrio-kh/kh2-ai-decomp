@@ -14,10 +14,29 @@ Checks if an attack is reflected
 | Name | Type
 |------|-----
 | result   | bool   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L5057:
+ pushFromFSp 0
+ gosub 8, L5251
+ pushFromFSp 0
+ gosub 8, L5474
+ pushFromFSpVal 68
+ pushImm 0
+ sub 
+ neqz 
+ dup 
+ jz L5080
+ pushFromFSpVal 68
+ syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -117,25 +136,5 @@ Checks if an attack is reflected
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L5057:
- pushFromFSp 0
- gosub 8, L5251
- pushFromFSp 0
- gosub 8, L5474
- pushFromFSpVal 68
- pushImm 0
- sub 
- neqz 
- dup 
- jz L5080
- pushFromFSpVal 68
- syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
- eqzv
-```
-</details>
 

@@ -15,23 +15,7 @@ Calculate an xyzrot value for strike raid
 | Name | Type
 |------|-----
 | unk   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX390\b_ex.bdscript</summary>
+Example Usage From obj\B_EX390\b_ex.bdscript
 ```plaintext
 L38553:
  pushFromFSp 0
@@ -59,5 +43,20 @@ L38553:
  drop 
  jmp L38420
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+
+
 

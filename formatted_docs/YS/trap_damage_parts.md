@@ -14,18 +14,7 @@ Get the parts value of the attack, which is the "Element" value defined in its A
 | Name | Type
 |------|-----
 | parts   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3611:
  popToSp 4
@@ -50,5 +39,15 @@ L3611:
  jz L3649
  jmp L3693
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+
+
 

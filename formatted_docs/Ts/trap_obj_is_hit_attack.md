@@ -14,18 +14,7 @@ Checks if the object is hitting something with an attack
 | Name | Type
 |------|-----
 | is_hit_attack   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L4020:
  popToSp 0
@@ -38,5 +27,15 @@ L4020:
  syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+
+
 

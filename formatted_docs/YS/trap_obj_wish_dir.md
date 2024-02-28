@@ -11,10 +11,47 @@ Sets the direction an object wishes to face
 | dir   | kn::FVector   | A direction vector
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1092:
+ pushFromPSp 176
+ gosub 52, L2499
+ eqz 
+ jz L1258
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L1158
+ pushFromFSp 180
+ gosub 52, L1699
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 208
+ pushFromPSp 208
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 224
+ pushFromPSp 224
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 240
+ pushFromPSp 240
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ pushFromPSp 160
+ gosub 52, L2509
+ syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
+ jmp L1211
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -826,43 +863,5 @@ Sets the direction an object wishes to face
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1092:
- pushFromPSp 176
- gosub 52, L2499
- eqz 
- jz L1258
- pushFromFSp 180
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L1158
- pushFromFSp 180
- gosub 52, L1699
- memcpyToSp 16, 192
- pushFromPSp 192
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 208
- pushFromPSp 208
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 224
- pushFromPSp 224
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 240
- pushFromPSp 240
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromPSp 16
- pushFromPSp 160
- gosub 52, L2509
- syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
- pushFromFSp 0
- pushFromPSp 16
- syscall 1, 4 ; trap_obj_wish_dir (2 in, 0 out)
- jmp L1211
-```
-</details>
 

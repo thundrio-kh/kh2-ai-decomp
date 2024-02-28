@@ -11,15 +11,14 @@ Either start the stop action or stop the start action
 | mask   | int   | unknown
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

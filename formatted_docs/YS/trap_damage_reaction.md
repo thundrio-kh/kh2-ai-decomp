@@ -14,10 +14,24 @@ Gets the reaction type value of an attack, which is the "Enemy Reaction" value d
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From msn\CA07_MS105\ca07.bdscript
+```plaintext
+L122:
+ jz L153
+ pushFromFSp 0
+ syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)
+ dup 
+ pushImm 4
+ sub 
+ jz L137
+ jmp L150
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           
@@ -43,20 +57,5 @@ Gets the reaction type value of an attack, which is the "Enemy Reaction" value d
 | obj\N_EX610_BTL2\n_ex.bdscript       | ((N) Vivi (BTL2) (EX))          
 | obj\N_LK020_BTL\n_lk.bdscript       | ((N) Pumba (BTL) (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\CA07_MS105\ca07.bdscript</summary>
-```plaintext
-L122:
- jz L153
- pushFromFSp 0
- syscall 2, 7 ; trap_damage_reaction (1 in, 1 out)
- dup 
- pushImm 4
- sub 
- jz L137
- jmp L150
-```
-</details>
 

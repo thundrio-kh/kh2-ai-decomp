@@ -15,52 +15,7 @@ Rotates a vector along the X axis
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\trinity\limi.bdscript       |           
-| limit\trinity_wi\limi.bdscript       |           
-| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
-| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
-| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
-| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
-| obj\F_PO090\f_po.bdscript       | ((PO) Bees (PO))          
-| obj\F_PO090_ETC\f_po.bdscript       | ((F) Bees (ETC) (PO))          
-| obj\F_PO090_TT\f_po.bdscript       | ((F) Bees (TT) (PO))          
-| obj\G_EX904\g_ex.bdscript       | ()          
-| obj\M_EX110\m_ex.bdscript       | ((M) Silver Rock)          
-| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
-| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
-| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
-| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
-| obj\M_EX540\m_ex.bdscript       | ((M) Aeroplane)          
-| obj\M_EX540_WI\m_ex.bdscript       | ((M) Aeroplane (WI))          
-| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
-| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
-| obj\M_EX760\m_ex.bdscript       | ((M) Armored Knight)          
-| obj\M_EX760_NM\m_ex.bdscript       | ((M) Armored Knight (NM))          
-| obj\M_EX760_NM_RAW\m_ex.bdscript       | ()          
-| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
-| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
-| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
-| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
-| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
+Example Usage From limit\trinity\limi.bdscript
 ```plaintext
 L7618:
  pushFromFSp 36
@@ -144,5 +99,49 @@ L7618:
  popToSp 36
  jmp L7618
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\trinity\limi.bdscript       |           
+| limit\trinity_wi\limi.bdscript       |           
+| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
+| obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
+| obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
+| obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
+| obj\F_PO090\f_po.bdscript       | ((PO) Bees (PO))          
+| obj\F_PO090_ETC\f_po.bdscript       | ((F) Bees (ETC) (PO))          
+| obj\F_PO090_TT\f_po.bdscript       | ((F) Bees (TT) (PO))          
+| obj\G_EX904\g_ex.bdscript       | ()          
+| obj\M_EX110\m_ex.bdscript       | ((M) Silver Rock)          
+| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
+| obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
+| obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          
+| obj\M_EX530_TR\m_ex.bdscript       | ((M) Bookmaster (TR))          
+| obj\M_EX540\m_ex.bdscript       | ((M) Aeroplane)          
+| obj\M_EX540_WI\m_ex.bdscript       | ((M) Aeroplane (WI))          
+| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
+| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
+| obj\M_EX760\m_ex.bdscript       | ((M) Armored Knight)          
+| obj\M_EX760_NM\m_ex.bdscript       | ((M) Armored Knight (NM))          
+| obj\M_EX760_NM_RAW\m_ex.bdscript       | ()          
+| obj\M_EX760_RAW\m_ex.bdscript       | ((M) Armored Knight (RAW) (1000 battle))          
+| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
+| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
+| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
+| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+
+
 

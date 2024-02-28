@@ -11,15 +11,14 @@ Set the effect ID of a trinity limit shot
 | effect_id   | int   | ID of an effect
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

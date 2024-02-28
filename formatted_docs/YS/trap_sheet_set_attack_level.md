@@ -11,18 +11,7 @@ Set the attack level of an object
 | level   | int   | The new attack level
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
+Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L5357:
  pushFromFSp 0
@@ -33,5 +22,15 @@ L5357:
  popToSpVal 168
  jmp L5491
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+
+
 

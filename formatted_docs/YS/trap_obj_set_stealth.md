@@ -11,21 +11,7 @@ Turns stealth on or off for an object
 | set_stealth   | bool   | If stealth should be set to on (1
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
-| obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L11216:
  pushFromFSp 0
@@ -41,5 +27,18 @@ L11216:
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
+| obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+
+
 

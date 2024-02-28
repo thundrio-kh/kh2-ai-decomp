@@ -15,10 +15,52 @@ Return the amount of HP an object has
 | Name | Type
 |------|-----
 | hp   | int   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L3693:
+ drop 
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
+ sub 
+ info 
+ jz L3814
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
+ pushFromFSpVal 128
+ sub 
+ eqz 
+ jz L3764
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushFromFSpVal 132
+ pushImm 0
+ syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 24
+ add 
+ pushImm 1
+ memcpy 0
+ pushFromFSp 0
+ pushImm 16
+ add 
+ pushImm 10000
+ memcpy 0
+ jmp L3812
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -119,48 +161,5 @@ Return the amount of HP an object has
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L3693:
- drop 
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
- sub 
- info 
- jz L3814
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 232 ; trap_sheet_min_hp (2 in, 1 out)
- pushFromFSpVal 128
- sub 
- eqz 
- jz L3764
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushFromFSpVal 132
- pushImm 0
- syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
- pushFromFSp 0
- pushImm 24
- add 
- pushImm 1
- memcpy 0
- pushFromFSp 0
- pushImm 16
- add 
- pushImm 10000
- memcpy 0
- jmp L3812
-```
-</details>
 

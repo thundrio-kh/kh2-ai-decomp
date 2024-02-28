@@ -14,10 +14,32 @@ Return a random integer between 0 and range
 | Name | Type
 |------|-----
 | num   | int   
+Example Usage From limit\donald\limi.bdscript
+```plaintext
+L1160:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ pushFromFSp 16
+ pushFromFSp 12
+ pushFromFSp 8
+ pushFromFSp 4
+ pushImm 2
+ pushImm 3
+ syscall 0, 16 ; trap_random_get (1 in, 1 out)
+ add 
+ pushFromFSp 0
+ gosub 8, L1192
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
@@ -215,28 +237,5 @@ Return a random integer between 0 and range
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```plaintext
-L1160:
- popToSp 0
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- pushFromFSp 16
- pushFromFSp 12
- pushFromFSp 8
- pushFromFSp 4
- pushImm 2
- pushImm 3
- syscall 0, 16 ; trap_random_get (1 in, 1 out)
- add 
- pushFromFSp 0
- gosub 8, L1192
- ret
-```
-</details>
 

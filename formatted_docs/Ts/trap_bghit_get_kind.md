@@ -14,10 +14,27 @@ Get the kind of bghit
 | Name | Type
 |------|-----
 | kind   | int   
+Example Usage From limit\tron\limi.bdscript
+```plaintext
+L2524:
+ popToSp 0
+ pushFromFSp 0
+ syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
+ dup 
+ jz L2543
+ pushFromFSp 0
+ syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
+ pushImm 1
+ sub 
+ eqz 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
@@ -45,23 +62,5 @@ Get the kind of bghit
 | obj\P_CA000_HUMAN_LOW\p_ca.bdscript       | ((P) Jack Sparrow (human) (LOW))          
 | obj\P_CA000_LOW\p_ca.bdscript       | ((P) Jack Sparrow (LOW))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```plaintext
-L2524:
- popToSp 0
- pushFromFSp 0
- syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
- dup 
- jz L2543
- pushFromFSp 0
- syscall 6, 55 ; trap_bghit_get_kind (1 in, 1 out)
- pushImm 1
- sub 
- eqz 
- eqzv
-```
-</details>
 

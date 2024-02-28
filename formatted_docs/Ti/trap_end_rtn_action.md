@@ -10,10 +10,22 @@ End an RTN action
 | npc   | YS::NPC_0 *   | An npc object
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1127:
+ pushFromFSp 0
+ syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -248,18 +260,5 @@ End an RTN action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1127:
- pushFromFSp 0
- syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
- pushFromFSp 0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- ret
-```
-</details>
 

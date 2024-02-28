@@ -15,15 +15,14 @@ checks if an object can look? Unclear how this is different than trap_obj_can_lo
 | Name | Type
 |------|-----
 | can_look   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

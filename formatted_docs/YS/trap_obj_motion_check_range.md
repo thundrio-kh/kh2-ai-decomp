@@ -15,10 +15,22 @@ returns the range trigger count (Happens during X frames) of a motion entry
 | Name | Type
 |------|-----
 | range   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L6675:
+ jz L6688
+ pushFromPSpVal 20
+ pushImm 1
+ syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
+ popToSp 4
+ jmp L6688
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -150,18 +162,5 @@ returns the range trigger count (Happens during X frames) of a motion entry
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L6675:
- jz L6688
- pushFromPSpVal 20
- pushImm 1
- syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)
- popToSp 4
- jmp L6688
-```
-</details>
 

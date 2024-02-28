@@ -10,10 +10,33 @@ Ends an effect loop
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2691:
+ dup 
+ pushFromFSp 4
+ sub 
+ info 
+ jnz L2721
+ pushFromPSpVal 0
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
+ pushFromFSp 4
+ pushImm 1
+ add 
+ popToSp 4
+ jmp L2691
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -213,29 +236,5 @@ Ends an effect loop
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2691:
- dup 
- pushFromFSp 4
- sub 
- info 
- jnz L2721
- pushFromPSpVal 0
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- fetchValue 0
- syscall 0, 44 ; trap_effect_loop_end (1 in, 0 out)
- pushFromFSp 4
- pushImm 1
- add 
- popToSp 4
- jmp L2691
-```
-</details>
 

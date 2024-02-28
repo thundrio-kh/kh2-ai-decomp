@@ -14,24 +14,7 @@ Checks if an attack has hit the floor
 | Name | Type
 |------|-----
 | result   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
-| obj\B_HE030_CLSM\b_he.bdscript       | ((B) Hades (CLSM) (HE))          
-| obj\B_HE030_HE05\b_he.bdscript       | ((B) Hades)          
-| obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
-| obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
-| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX370\b_ex.bdscript</summary>
+Example Usage From obj\B_EX370\b_ex.bdscript
 ```plaintext
 L19567:
  pushFromFSpVal 64
@@ -56,5 +39,21 @@ L19567:
  syscall 2, 41 ; trap_attack_is_hit_floor (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          
+| obj\B_HE030_CLSM\b_he.bdscript       | ((B) Hades (CLSM) (HE))          
+| obj\B_HE030_HE05\b_he.bdscript       | ((B) Hades)          
+| obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
+| obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
+| obj\M_EX060\m_ex.bdscript       | ((M) Fat Bandit)          
+
+
 

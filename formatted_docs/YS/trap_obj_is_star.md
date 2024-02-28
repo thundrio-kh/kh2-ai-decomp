@@ -14,10 +14,25 @@ Returns if the object is currently invulnerable
 | Name | Type
 |------|-----
 | is_star   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L4020:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
+ eqz 
+ dup 
+ jz L4035
+ pushFromFSp 0
+ syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -96,21 +111,5 @@ Returns if the object is currently invulnerable
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L4020:
- popToSp 0
- pushFromFSp 0
- syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
- eqz 
- dup 
- jz L4035
- pushFromFSp 0
- syscall 6, 10 ; trap_obj_is_hit_attack (1 in, 1 out)
- eqzv
-```
-</details>
 

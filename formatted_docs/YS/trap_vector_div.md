@@ -15,18 +15,7 @@ Divides the values of two vectors
 | Name | Type
 |------|-----
 | unk   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX330\p_ex.bdscript</summary>
+Example Usage From obj\P_EX330\p_ex.bdscript
 ```plaintext
 L7250:
  pushFromFSp 0
@@ -69,5 +58,15 @@ L7250:
  popToSpVal 12
  jmp L7348
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

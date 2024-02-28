@@ -11,20 +11,7 @@ Sets the rotation of an effect
 | rotation   | kn::FVector *   | A rotation vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL120\b_al.bdscript       | ((B) Blizzard Lord’s ice spikes)          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL120\b_al.bdscript</summary>
+Example Usage From obj\B_AL120\b_al.bdscript
 ```plaintext
 L2453:
  popToSp 0
@@ -80,5 +67,17 @@ L2453:
  popToSpVal 84
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL120\b_al.bdscript       | ((B) Blizzard Lord’s ice spikes)          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

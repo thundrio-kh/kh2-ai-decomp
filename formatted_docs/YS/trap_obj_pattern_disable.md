@@ -35,10 +35,47 @@ Disable resistances/sturdy frames for an object
 | value   | int   | Pattern number to disable. See table in description
 
 
+Example Usage From obj\B_AL100_2ND\b_al.bdscript
+```plaintext
+L9044:
+ popToSp 0
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 2
+ pushImmf 40
+ pushImm 0
+ pushImm 0
+ gosub 12, L8630
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
+ pushImm 0
+ popToSpVal 128
+ pushFromFSp 0
+ pushImm 16
+ add 
+ pushImm 0
+ memcpy 0
+ pushImm 1
+ popToSp 36
+ pushFromFSp 0
+ gosub 12, L6059
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 202
+ pushFromFSp 0
+ pushImm 202
+ gosub 12, L7179
+ syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
@@ -134,43 +171,5 @@ Disable resistances/sturdy frames for an object
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_EX100_HTLF_BTL\p_ex.bdscript       | ((P) Vexen’s Anti-Sora (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
-```plaintext
-L9044:
- popToSp 0
- pushFromFSp 0
- pushImm 1
- syscall 1, 211 ; trap_obj_pattern_enable (2 in, 0 out)
- pushFromFSp 0
- pushImm 2
- pushImmf 40
- pushImm 0
- pushImm 0
- gosub 12, L8630
- pushFromFSp 0
- pushImm 1
- syscall 1, 212 ; trap_obj_pattern_disable (2 in, 0 out)
- pushImm 0
- popToSpVal 128
- pushFromFSp 0
- pushImm 16
- add 
- pushImm 0
- memcpy 0
- pushImm 1
- popToSp 36
- pushFromFSp 0
- gosub 12, L6059
- pushFromFSp 0
- fetchValue 4
- pushImm 202
- pushFromFSp 0
- pushImm 202
- gosub 12, L7179
- syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
-```
-</details>
 

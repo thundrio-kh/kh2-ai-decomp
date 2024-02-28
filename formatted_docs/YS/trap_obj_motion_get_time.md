@@ -14,10 +14,53 @@ Get the time of a motion set entry
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From obj\B_AL100_2ND\b_al.bdscript
+```plaintext
+L1235:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushImmf 500
+ syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImmf 0.034907
+ pushFromFSp 0
+ syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)
+ mulf 
+ syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromPSp 32
+ pushImm 2044
+ gosub 16, L993
+ pushFromPSp 32
+ pushFromPSp 16
+ pushFromFSp 0
+ syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ pushFromPSp 32
+ pushImm 1
+ pushImm 0
+ syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
@@ -221,49 +264,5 @@ Get the time of a motion set entry
 | obj\P_WI020_RTN\rtn_.bdscript       | ((P) Donald (WI) (RTN))          
 | obj\P_WI030_RTN\rtn_.bdscript       | ((P) Goofy (WI) (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_2ND\b_al.bdscript</summary>
-```plaintext
-L1235:
- popToSp 0
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- pushImmf 500
- syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImmf 0.034907
- pushFromFSp 0
- syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)
- mulf 
- syscall 0, 13 ; trap_vector_roty (2 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromPSp 32
- pushImm 2044
- gosub 16, L993
- pushFromPSp 32
- pushFromPSp 16
- pushFromFSp 0
- syscall 1, 98 ; trap_obj_step_pos (1 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- syscall 0, 4 ; trap_vector_add (2 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- pushFromPSp 32
- pushImm 1
- pushImm 0
- syscall 1, 218 ; trap_obj_set_unit_arg (3 in, 0 out)
- ret
-```
-</details>
 

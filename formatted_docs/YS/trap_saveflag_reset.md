@@ -10,15 +10,14 @@ Resets the value of the save flag to 0
 | flag_num   | int   | A flag number
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

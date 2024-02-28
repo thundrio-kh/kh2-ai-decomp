@@ -12,10 +12,23 @@ Forks the current VM and hooks the new fork
 | unk3   | unknown   | pushImm: 0
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L197:
+ pushFromPWp W0
+ pushImm 20
+ add 
+ pushImm L370
+ pushImm 0
+ syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
+ jmp L274
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -194,19 +207,5 @@ Forks the current VM and hooks the new fork
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L197:
- pushFromPWp W0
- pushImm 20
- add 
- pushImm L370
- pushImm 0
- syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
- jmp L274
-```
-</details>
 

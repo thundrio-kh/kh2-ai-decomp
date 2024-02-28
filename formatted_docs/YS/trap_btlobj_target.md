@@ -14,10 +14,39 @@ Retrieves the btlobj of the subject of a target object
 | Name | Type
 |------|-----
 | btlobj   | YS::BTLOBJ *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3456:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 8
+ syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
+ popToSp 12
+ pushFromFSp 12
+ pushFromFSp 0
+ memcpy 16
+ pushFromFSp 12
+ pushImm 16
+ add 
+ pushImm 0
+ memcpy 0
+ pushFromFSp 12
+ pushImm 48
+ add 
+ pushFromFSp 12
+ syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
+ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+ memcpy 0
+ pushFromFSp 12
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -644,35 +673,5 @@ Retrieves the btlobj of the subject of a target object
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3456:
- popToSp 0
- popToSp 4
- popToSp 8
- pushFromFSp 8
- syscall 0, 47 ; trap_memory_alloc (1 in, 1 out)
- popToSp 12
- pushFromFSp 12
- pushFromFSp 0
- memcpy 16
- pushFromFSp 12
- pushImm 16
- add 
- pushImm 0
- memcpy 0
- pushFromFSp 12
- pushImm 48
- add 
- pushFromFSp 12
- syscall 2, 23 ; trap_btlobj_target (1 in, 1 out)
- syscall 1, 131 ; trap_target_dup (1 in, 1 out)
- memcpy 0
- pushFromFSp 12
- ret
-```
-</details>
 

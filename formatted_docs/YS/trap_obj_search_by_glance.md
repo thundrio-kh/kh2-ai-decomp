@@ -11,22 +11,7 @@ Looks up an object by ID and then returns the copy of the object that is closest
 | entry_id   | int   | ID of the object to look up
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          
-| obj\M_EX130_AL\m_ex.bdscript       | ((M) Crimson Jazz (AL))          
-| obj\M_EX520_AL\m_ex.bdscript       | ((M) Hook Bat (AL))          
-| obj\M_EX620_AL\m_ex.bdscript       | ((M) Fortuneteller (AL))          
-| obj\M_EX660_AL\m_ex.bdscript       | ((M) Rapid Thruster (AL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_AL110\f_al.bdscript</summary>
+Example Usage From obj\F_AL110\f_al.bdscript
 ```plaintext
 L218:
  pushFromPSp 16
@@ -44,5 +29,19 @@ L218:
  memcpy 0
  jmp L246
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          
+| obj\M_EX130_AL\m_ex.bdscript       | ((M) Crimson Jazz (AL))          
+| obj\M_EX520_AL\m_ex.bdscript       | ((M) Hook Bat (AL))          
+| obj\M_EX620_AL\m_ex.bdscript       | ((M) Fortuneteller (AL))          
+| obj\M_EX660_AL\m_ex.bdscript       | ((M) Rapid Thruster (AL))          
+
+
 

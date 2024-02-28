@@ -11,10 +11,31 @@ Hides a specific bone/part of an object
 | part   | int   | A part number
 
 
+Example Usage From obj\B_CA010\b_ca.bdscript
+```plaintext
+L1000:
+ pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromPWp W384
+ pushImm 13
+ syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
+ pushFromPWp W384
+ pushImm 23
+ syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
+ pushFromPWp W384
+ pushImm 14
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ pushFromPWp W384
+ pushImm 24
+ syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
+ jmp L1077
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
@@ -91,27 +112,5 @@ Hides a specific bone/part of an object
 | obj\N_TR010_BTL\n_tr.bdscript       | ((N) Sark (BTL) (TR))          
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```plaintext
-L1000:
- pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromPWp W384
- pushImm 13
- syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
- pushFromPWp W384
- pushImm 23
- syscall 1, 108 ; trap_obj_show_part (2 in, 0 out)
- pushFromPWp W384
- pushImm 14
- syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
- pushFromPWp W384
- pushImm 24
- syscall 1, 109 ; trap_obj_hide_part (2 in, 0 out)
- jmp L1077
-```
-</details>
 

@@ -14,10 +14,24 @@ returns the SubId of the attack, as defined in its Atkp entry found in 00battle.
 | Name | Type
 |------|-----
 | param_id   | int   
+Example Usage From msn\CA01_MS204\ca01.bdscript
+```plaintext
+L279:
+ jz L316
+ pushFromFSp 0
+ syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
+ dup 
+ pushImm 1073
+ sub 
+ jz L294
+ jmp L313
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           
@@ -113,20 +127,5 @@ returns the SubId of the attack, as defined in its Atkp entry found in 00battle.
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\CA01_MS204\ca01.bdscript</summary>
-```plaintext
-L279:
- jz L316
- pushFromFSp 0
- syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
- dup 
- pushImm 1073
- sub 
- jz L294
- jmp L313
-```
-</details>
 

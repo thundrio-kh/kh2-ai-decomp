@@ -16,20 +16,7 @@ Set the parameters of card actions based on a number of parameters
 | unk7   | float   | Values of 3 used in game AI
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L15018:
  popToSp 0
@@ -57,5 +44,17 @@ L15018:
  syscall 4, 56 ; trap_event_continue_control_off (0 in, 0 out)
  jmp L15077
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

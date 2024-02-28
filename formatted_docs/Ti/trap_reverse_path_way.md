@@ -14,10 +14,22 @@ Reverse the way the object associated with this path is going
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2432:
+ pushFromFSp 0
+ syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
+ drop 
+ pushFromFSp 0
+ syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
+ jmp L2518
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,18 +264,5 @@ Reverse the way the object associated with this path is going
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2432:
- pushFromFSp 0
- syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
- drop 
- pushFromFSp 0
- syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
- jmp L2518
-```
-</details>
 

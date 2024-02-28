@@ -13,10 +13,26 @@ starts the specialized limit camera
 | is_air   | bool   | pushImm: 0,1
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3043:
+ popToSp 0
+ pushFromFSpVal 152
+ jz L3065
+ pushFromFSp 0
+ fetchValue 0
+ pushFromPAi L6867 ; ___ai '10' (L6867)
+ pushImmf 500
+ pushImm 1
+ syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
+ jmp L3079
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -31,22 +47,5 @@ starts the specialized limit camera
 | limit\trinity_wi\limi.bdscript       |           
 | limit\tron\limi.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3043:
- popToSp 0
- pushFromFSpVal 152
- jz L3065
- pushFromFSp 0
- fetchValue 0
- pushFromPAi L6867 ; ___ai '10' (L6867)
- pushImmf 500
- pushImm 1
- syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)
- jmp L3079
-```
-</details>
 

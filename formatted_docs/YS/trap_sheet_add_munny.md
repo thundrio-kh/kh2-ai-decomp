@@ -14,10 +14,24 @@ Adds an amount of money to the player
 | Name | Type
 |------|-----
 | total_munny   | int   
+Example Usage From ard\tt02\tt_n.bdscript
+```plaintext
+TR3:
+ pushImm 362
+ pushImm 100
+ syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ neg 
+ syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
+ drop 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt02\tt_n.bdscript       |           
@@ -40,20 +54,5 @@ Adds an amount of money to the player
 | msn\TT07_WORM_01\tt07.bdscript       |           
 | msn\TT07_WORM_02\tt07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\tt02\tt_n.bdscript</summary>
-```plaintext
-TR3:
- pushImm 362
- pushImm 100
- syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
- syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
- neg 
- syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
- drop 
- ret
-```
-</details>
 

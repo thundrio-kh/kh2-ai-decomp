@@ -11,25 +11,7 @@ Attach an object to a board
 | board   | YS::OBJ_125   | An board object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          
-| obj\F_TT010_AL\f_tt.bdscript       | ((F) Skateboard (AL))          
-| obj\F_TT010_CA\f_tt.bdscript       | ((F) Skateboard (CA))          
-| obj\F_TT010_HE\f_tt.bdscript       | ((F) Skateboard (HE))          
-| obj\F_TT010_NM\f_tt.bdscript       | ((F) Skateboard (NM))          
-| obj\F_TT010_SORA\f_tt.bdscript       | ((F) Skateboard (SORA) (TT))          
-| obj\F_TT010_TR\f_tt.bdscript       | ((F) Skateboard (TR))          
-| obj\F_TT010_WI\f_tt.bdscript       | ((F) Skateboard (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
+Example Usage From obj\F_TT010\f_tt.bdscript
 ```plaintext
 L45:
  pushFromFSp 8
@@ -69,5 +51,22 @@ L45:
  syscall 1, 302 ; trap_obj_set_skateboard_mode (2 in, 0 out)
  jmp L124
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          
+| obj\F_TT010_AL\f_tt.bdscript       | ((F) Skateboard (AL))          
+| obj\F_TT010_CA\f_tt.bdscript       | ((F) Skateboard (CA))          
+| obj\F_TT010_HE\f_tt.bdscript       | ((F) Skateboard (HE))          
+| obj\F_TT010_NM\f_tt.bdscript       | ((F) Skateboard (NM))          
+| obj\F_TT010_SORA\f_tt.bdscript       | ((F) Skateboard (SORA) (TT))          
+| obj\F_TT010_TR\f_tt.bdscript       | ((F) Skateboard (TR))          
+| obj\F_TT010_WI\f_tt.bdscript       | ((F) Skateboard (WI))          
+
+
 

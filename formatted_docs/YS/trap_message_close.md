@@ -10,10 +10,33 @@ closes the scrolling message window in the top left of the screen
 | window   | YS::WINDOW_8 *   | a window object
 
 
+Example Usage From obj\B_CA050\b_ca.bdscript
+```plaintext
+L4514:
+ pushFromFSp 48
+ syscall 1, 33 ; trap_message_close (1 in, 0 out)
+ syscall 4, 1 ; ?
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 51
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromFSp 0
+ fetchValue 4
+ gosub 16, L4551
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImm 48
+ pushImm 49
+ gosub 16, L4564
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
@@ -150,29 +173,5 @@ closes the scrolling message window in the top left of the screen
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_HE000_NPC_QSATO\npc_.bdscript       | ((P) Auron (NPC_QSATO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```plaintext
-L4514:
- pushFromFSp 48
- syscall 1, 33 ; trap_message_close (1 in, 0 out)
- syscall 4, 1 ; ?
- pushFromFSp 0
- fetchValue 4
- pushImm 51
- pushImmf 0
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
- pushFromFSp 0
- fetchValue 4
- gosub 16, L4551
- pushFromFSp 0
- pushFromPSp 16
- pushImm 48
- pushImm 49
- gosub 16, L4564
- ret
-```
-</details>
 

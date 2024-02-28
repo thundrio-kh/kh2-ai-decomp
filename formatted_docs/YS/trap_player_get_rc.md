@@ -14,18 +14,7 @@ Get the value of the players current rc
 | Name | Type
 |------|-----
 | rc   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TR010\f_tr.bdscript       | ((F) A Terminal from Space Paranoids (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TR010\f_tr.bdscript</summary>
+Example Usage From obj\F_TR010\f_tr.bdscript
 ```plaintext
 L25:
  gosub 4, L99
@@ -44,5 +33,15 @@ L25:
  eqz 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TR010\f_tr.bdscript       | ((F) A Terminal from Space Paranoids (TR))          
+
+
 

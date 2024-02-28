@@ -11,10 +11,29 @@ Limit version of starting a separate thread
 | limit_obj   | YS::LIMIT_1 *   | A limit object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3431:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ pushFromFSp 8
+ pushFromFSp 4
+ pushFromFSp 0
+ gosub 8, L3456
+ popToSp 12
+ pushFromFSp 4
+ pushFromFSp 12
+ syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
+ pushFromFSp 12
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -47,25 +66,5 @@ Limit version of starting a separate thread
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3431:
- popToSp 0
- popToSp 4
- popToSp 8
- pushFromFSp 8
- pushFromFSp 4
- pushFromFSp 0
- gosub 8, L3456
- popToSp 12
- pushFromFSp 4
- pushFromFSp 12
- syscall 2, 54 ; trap_limit_start_thread (2 in, 0 out)
- pushFromFSp 12
- ret
-```
-</details>
 

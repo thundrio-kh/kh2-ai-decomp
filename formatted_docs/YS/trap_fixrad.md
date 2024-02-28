@@ -14,10 +14,73 @@ Constrain a radian value to a certain range
 | Name | Type
 |------|-----
 | radian_out   | constrained radians   
+Example Usage From limit\sparrow\limi.bdscript
+```plaintext
+L402:
+ popToSp 0
+ pushFromPWp W0
+ pushImm 48
+ add 
+ pushImm 358
+ gosub 24, L365
+ pushFromPWp W0
+ pushImm 4
+ add 
+ syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
+ syscall 1, 131 ; trap_target_dup (1 in, 1 out)
+ popToSp 48
+ pushFromFSp 48
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ popToSp 80
+ pushFromFSp 80
+ jz L556
+ pushFromPWp W0
+ pushImm 80
+ add 
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 16
+ pushFromPWp W0
+ pushImm 80
+ add 
+ pushFromFSp 48
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 32
+ pushFromPSp 16
+ syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
+ pushFromPSp 32
+ syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
+ subf 
+ syscall 0, 43 ; trap_fixrad (1 in, 1 out)
+ pushImmf 0
+ subf 
+ infzf 
+ jz L522
+ pushImmf 0.436332
+ popToSp 76
+ pushFromPWp W0
+ pushImm 136
+ add 
+ pushImm 1
+ memcpy 0
+ jmp L537
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\sparrow\limi.bdscript       |           
@@ -206,69 +269,5 @@ Constrain a radian value to a certain range
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\sparrow\limi.bdscript</summary>
-```plaintext
-L402:
- popToSp 0
- pushFromPWp W0
- pushImm 48
- add 
- pushImm 358
- gosub 24, L365
- pushFromPWp W0
- pushImm 4
- add 
- syscall 2, 56 ; trap_btlobj_lockon_target (1 in, 1 out)
- syscall 1, 131 ; trap_target_dup (1 in, 1 out)
- popToSp 48
- pushFromFSp 48
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- popToSp 80
- pushFromFSp 80
- jz L556
- pushFromPWp W0
- pushImm 80
- add 
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 16
- pushFromPWp W0
- pushImm 80
- add 
- pushFromFSp 48
- syscall 1, 120 ; trap_target_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 32
- pushFromPSp 16
- syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
- pushFromPSp 32
- syscall 0, 42 ; trap_vector_atan_xz (1 in, 1 out)
- subf 
- syscall 0, 43 ; trap_fixrad (1 in, 1 out)
- pushImmf 0
- subf 
- infzf 
- jz L522
- pushImmf 0.436332
- popToSp 76
- pushFromPWp W0
- pushImm 136
- add 
- pushImm 1
- memcpy 0
- jmp L537
-```
-</details>
 

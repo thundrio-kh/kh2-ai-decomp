@@ -15,10 +15,26 @@ Sets the movement path for an NPC object
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L232:
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
+ jz L254
+ pushImm 1
+ popToSpVal 64
+ pushFromFSp 0
+ pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L260
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -263,22 +279,5 @@ Sets the movement path for an NPC object
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L232:
- pushFromFSp 0
- pushImm -1
- syscall 1, 177 ; trap_obj_set_path (2 in, 1 out)
- jz L254
- pushImm 1
- popToSpVal 64
- pushFromFSp 0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L260
-```
-</details>
 

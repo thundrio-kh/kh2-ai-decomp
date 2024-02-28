@@ -14,10 +14,28 @@ Get the group ID a target belongs to
 | Name | Type
 |------|-----
 | group_id   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1675:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ gosub 4, L1699
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
+ pushFromFSp 4
+ syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
+ popToSpVal 4
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -55,24 +73,5 @@ Get the group ID a target belongs to
 | obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
 | obj\P_EX220\mick.bdscript       | ((P) Mickey)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1675:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L1699
- memcpyToSp 16, 16
- pushFromPSp 16
- syscall 1, 160 ; trap_target_set_obj (2 in, 0 out)
- pushFromFSp 4
- syscall 6, 57 ; trap_target_get_group (1 in, 1 out)
- popToSpVal 4
- ret
-```
-</details>
 

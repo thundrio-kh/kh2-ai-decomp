@@ -14,10 +14,49 @@ Jumps an object to the vector
 | force   | bool   | Probably whether or not to force the animation to switch
 
 
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L1950:
+ pushFromPSp 16
+ pushImm 4
+ add 
+ pushImmf 0
+ memcpy 0
+ pushFromPSp 16
+ syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
+ drop 
+ pushFromPSp 16
+ pushImm 12
+ add 
+ pushImmf 16
+ memcpy 0
+ pushFromFSp 0
+ pushFromPSp 16
+ pushImm 3
+ pushImmf 0
+ pushImm 1
+ syscall 1, 55 ; method_obj_jump (5 in, 0 out)
+ pushFromPWp W108
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 255
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+ halt
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -183,45 +222,5 @@ Jumps an object to the vector
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L1950:
- pushFromPSp 16
- pushImm 4
- add 
- pushImmf 0
- memcpy 0
- pushFromPSp 16
- syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
- drop 
- pushFromPSp 16
- pushImm 12
- add 
- pushImmf 16
- memcpy 0
- pushFromFSp 0
- pushFromPSp 16
- pushImm 3
- pushImmf 0
- pushImm 1
- syscall 1, 55 ; method_obj_jump (5 in, 0 out)
- pushFromPWp W108
- fetchValue 0
- pushFromFSp 0
- pushImm 255
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop 
- pushFromFSp 0
- pushImm -1
- syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
- pushFromFSp 0
- pushImm -1
- syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
- halt
-```
-</details>
 

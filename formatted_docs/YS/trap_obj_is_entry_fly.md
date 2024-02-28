@@ -14,10 +14,49 @@ Returns if the "fly" flag is checked for the obj in its objentry
 | Name | Type
 |------|-----
 | is_entry_fly   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L6466:
+ popToSp 0
+ gosub 12, L6617
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 16
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
+ pushImm 4
+ popToSp 32
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 44
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ pushFromFSp 0
+ syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
+ dup 
+ jnz L6537
+ pushFromFSp 0
+ syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
+ eqz 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -577,45 +616,5 @@ Returns if the "fly" flag is checked for the obj in its objentry
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L6466:
- popToSp 0
- gosub 12, L6617
- memcpyToSp 16, 48
- pushFromPSp 48
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 16
- pushFromFSp 0
- pushFromPSp 16
- syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
- pushImm 4
- popToSp 32
- pushFromFSp 0
- fetchValue 4
- pushImm 44
- pushImmf 0
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
- pushFromFSp 0
- syscall 1, 124 ; trap_obj_is_entry_fly (1 in, 1 out)
- dup 
- jnz L6537
- pushFromFSp 0
- syscall 1, 60 ; trap_obj_is_air (1 in, 1 out)
- eqz 
- neqzv
-```
-</details>
 

@@ -14,10 +14,25 @@ Check if an object is a limit
 | Name | Type
 |------|-----
 | is_limit   | bool   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L40:
+ dup 
+ jz L56
+ gosub 16, L277
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ fetchValue 4
+ syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
+ eqz 
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -41,21 +56,5 @@ Check if an object is a limit
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L40:
- dup 
- jz L56
- gosub 16, L277
- memcpyToSp 16, 48
- pushFromPSp 48
- fetchValue 4
- syscall 10, 19 ; trap_sysobj_is_limit (1 in, 1 out)
- eqz 
- eqzv
-```
-</details>
 

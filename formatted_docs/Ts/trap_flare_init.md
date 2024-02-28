@@ -9,19 +9,7 @@ Initialize Flare Force
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L5986:
  syscall 7, 3 ; trap_flare_init (0 in, 0 out)
@@ -31,5 +19,16 @@ L5986:
  popToSp 0
  pushImm 16
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+
+
 

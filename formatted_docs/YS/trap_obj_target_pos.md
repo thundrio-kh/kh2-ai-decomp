@@ -14,10 +14,50 @@ Returns the position of the objects current target
 | Name | Type
 |------|-----
 | pos   | kn::FVector   
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L1383:
+ popToSp 0
+ pushFromPWp W108
+ pushImm 48
+ add 
+ pushImm 0
+ gosub 24, L1191
+ pushFromFSp 0
+ gosub 24, L1625
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L1461
+ pushImm 1
+ popToSp 68
+ pushFromPSp 16
+ syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 96 ; ___possible_ref
+ pushFromPSp 96 ; ___possible_ref
+ memcpyToSp 16, 48
+ pushImmf 10
+ popToSp 64
+ jmp L1483
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -101,46 +141,5 @@ Returns the position of the objects current target
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L1383:
- popToSp 0
- pushFromPWp W108
- pushImm 48
- add 
- pushImm 0
- gosub 24, L1191
- pushFromFSp 0
- gosub 24, L1625
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 16
- pushFromPSp 16
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L1461
- pushImm 1
- popToSp 68
- pushFromPSp 16
- syscall 1, 88 ; trap_obj_target_pos (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- memcpyToSp 16, 32
- pushFromPSp 32
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 96 ; ___possible_ref
- pushFromPSp 96 ; ___possible_ref
- memcpyToSp 16, 48
- pushImmf 10
- popToSp 64
- jmp L1483
-```
-</details>
 

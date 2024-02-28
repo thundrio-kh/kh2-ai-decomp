@@ -11,21 +11,7 @@ Resets the stealth value of an object back to default
 | partnum   | int   | Part number
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
-| obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          
-| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
+Example Usage From obj\B_BB110\b_bb.bdscript
 ```plaintext
 L1144:
  pushFromFSp 4
@@ -105,5 +91,18 @@ L1144:
  syscall 1, 70 ; trap_obj_set_flag (2 in, 0 out)
  jmp L1315
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
+| obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          
+| obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+
+
 

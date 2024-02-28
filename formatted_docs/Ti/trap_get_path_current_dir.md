@@ -14,15 +14,14 @@ Get the current direction of the path
 | Name | Type
 |------|-----
 | dir   | kn::FVector *   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

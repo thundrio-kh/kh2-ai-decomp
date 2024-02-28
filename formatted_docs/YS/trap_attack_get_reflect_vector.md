@@ -14,10 +14,27 @@ Returns the direction vector of the reflected attack
 | Name | Type
 |------|-----
 | vec   | kn::FVector *   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L5227:
+ pushFromFSpVal 68
+ syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ memcpyToSp 16, 16
+ pushFromFSpVal 68
+ syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+ pushImm 0
+ popToSpVal 68
+ pushFromPSp 16
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -92,23 +109,5 @@ Returns the direction vector of the reflected attack
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L5227:
- pushFromFSpVal 68
- syscall 2, 43 ; trap_attack_get_reflect_vector (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromFSpVal 68
- syscall 2, 13 ; trap_attack_free (1 in, 0 out)
- pushImm 0
- popToSpVal 68
- pushFromPSp 16
- ret
-```
-</details>
 

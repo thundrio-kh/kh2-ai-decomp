@@ -10,10 +10,19 @@ exits a mission
 | signal_arg   | int   | signal to send when exiting the mission
 
 
+Example Usage From ard\al05\ms_b.bdscript
+```plaintext
+L141:
+ pushFromFSpVal 4
+ syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
+ jmp L147
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
@@ -302,15 +311,5 @@ exits a mission
 | msn\WI06_MS102B\wi06.bdscript       |           
 | msn\WI07_MS102A\wi07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```plaintext
-L141:
- pushFromFSpVal 4
- syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
- jmp L147
-```
-</details>
 

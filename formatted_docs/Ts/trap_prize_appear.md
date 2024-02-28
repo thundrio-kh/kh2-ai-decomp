@@ -11,10 +11,23 @@ Make a prize appear
 | prize_id   | int   | ID of the prize to appear
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L45:
+ pushFromFSp 0
+ syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ pushImm 97
+ syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
+ jmp L158
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -29,19 +42,5 @@ Make a prize appear
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L45:
- pushFromFSp 0
- syscall 7, 2 ; trap_attack_hit_mark_pos (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 97
- syscall 6, 1 ; trap_prize_appear (2 in, 0 out)
- jmp L158
-```
-</details>
 

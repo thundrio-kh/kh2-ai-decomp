@@ -10,18 +10,7 @@ Move to the next point on the path in the Dragon Xemnas fight
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX330\b_ex.bdscript</summary>
+Example Usage From obj\B_EX330\b_ex.bdscript
 ```plaintext
 L7170:
  popToSp 0
@@ -29,5 +18,15 @@ L7170:
  syscall 5, 28 ; trap_eh22_path_move_next (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+
+
 

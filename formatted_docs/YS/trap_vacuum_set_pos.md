@@ -11,22 +11,7 @@ Set the position of a vacuum
 | pos   | kn::FVector *   | A position vector
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          
-| obj\M_EX210_HB\m_ex.bdscript       | ((M) Aerial Viking)          
-| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
-| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
-| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX210\m_ex.bdscript</summary>
+Example Usage From obj\M_EX210\m_ex.bdscript
 ```plaintext
 L5866:
  pushFromFSpVal 108
@@ -45,5 +30,19 @@ L5866:
  halt 
  jmp L5866
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          
+| obj\M_EX210_HB\m_ex.bdscript       | ((M) Aerial Viking)          
+| obj\M_EX880_DANCER\m_ex.bdscript       | ((M) Demyx’s water form)          
+| obj\M_EX880_DANCER_EH\m_ex.bdscript       | ((M) Demyx’s water form (EH))          
+| obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
+
+
 

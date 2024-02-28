@@ -16,47 +16,7 @@ Starts a limit effect
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_145 *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\donald\limi.bdscript       |           
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-| limit\donald_wi\limi.bdscript       |           
-| limit\goofy2\limi.bdscript       |           
-| limit\goofy2_wi\limi.bdscript       |           
-| limit\mulan\limi.bdscript       |           
-| limit\riku\limi.bdscript       |           
-| limit\simba\limi.bdscript       |           
-| limit\tron\limi.bdscript       |           
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
-| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
-| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
-| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
-| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX020\p_ex.bdscript       | ((P) Donald)          
-| obj\P_EX020_NM\p_ex.bdscript       | ((P) Donald (NM))          
-| obj\P_EX020_TR\p_ex.bdscript       | ((P) Donald (TR))          
-| obj\P_EX020_XM\p_ex.bdscript       | ((P) Donald (XM))          
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-| obj\P_NM000\p_nm.bdscript       | ((P) Jack Skellington)          
-| obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
-| obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3079:
  pushFromPSpVal 4
@@ -111,5 +71,44 @@ L3079:
  gosub 12, L5024
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\donald\limi.bdscript       |           
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+| limit\donald_wi\limi.bdscript       |           
+| limit\goofy2\limi.bdscript       |           
+| limit\goofy2_wi\limi.bdscript       |           
+| limit\mulan\limi.bdscript       |           
+| limit\riku\limi.bdscript       |           
+| limit\simba\limi.bdscript       |           
+| limit\tron\limi.bdscript       |           
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
+| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
+| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
+| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
+| obj\M_EX920\m_ex.bdscript       | ((M) Sniper)          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX020\p_ex.bdscript       | ((P) Donald)          
+| obj\P_EX020_NM\p_ex.bdscript       | ((P) Donald (NM))          
+| obj\P_EX020_TR\p_ex.bdscript       | ((P) Donald (TR))          
+| obj\P_EX020_XM\p_ex.bdscript       | ((P) Donald (XM))          
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+| obj\P_NM000\p_nm.bdscript       | ((P) Jack Skellington)          
+| obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
+| obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
+
+
 

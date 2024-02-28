@@ -11,15 +11,14 @@ wedges an action, unclear what this means (it is unused in the vanilla game)
 | unk2   | string   | A label for an action
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

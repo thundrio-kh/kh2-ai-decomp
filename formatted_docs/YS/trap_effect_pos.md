@@ -14,10 +14,23 @@ Returns the position of an effect
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3258:
+ jz L3274
+ pushFromFSpVal 16
+ syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ memcpyToSpVal 16, 32
+ jmp L3274
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -289,19 +302,5 @@ Returns the position of an effect
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3258:
- jz L3274
- pushFromFSpVal 16
- syscall 0, 53 ; trap_effect_pos (1 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- memcpyToSpVal 16, 32
- jmp L3274
-```
-</details>
 

@@ -14,10 +14,21 @@ Checks if an attack has hit the wall
 | Name | Type
 |------|-----
 | result   | bool   
+Example Usage From limit\goofy2\limi.bdscript
+```plaintext
+L1057:
+ jz L1263
+ pushFromFSp 180
+ syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
+ jz L1069
+ jmp L1263
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           
@@ -40,17 +51,5 @@ Checks if an attack has hit the wall
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\goofy2\limi.bdscript</summary>
-```plaintext
-L1057:
- jz L1263
- pushFromFSp 180
- syscall 2, 40 ; trap_attack_is_hit_wall (1 in, 1 out)
- jz L1069
- jmp L1263
-```
-</details>
 

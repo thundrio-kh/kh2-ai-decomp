@@ -9,18 +9,7 @@ Show the screen effect of the Pete curtain opening
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_EX760_BTL\n_ex.bdscript</summary>
+Example Usage From obj\N_EX760_BTL\n_ex.bdscript
 ```plaintext
 L6577:
  pushFromFSp 0
@@ -75,5 +64,15 @@ L6577:
  memcpy 0
  jmp L6700
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+
+
 

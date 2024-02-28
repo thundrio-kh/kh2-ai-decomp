@@ -11,10 +11,24 @@ sets a sound effect for when the specified widget gets to a warning state
 | id   | int   | id of a widget (gauge, timer, counter, etc
 
 
+Example Usage From msn\AL00_SKATE_01\al00.bdscript
+```plaintext
+L268:
+ pushFromFSp 0
+ fetchValue 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushFromFSp 4
+ syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
+ pushImm 10
+ pushImm 0
+ syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
@@ -80,20 +94,5 @@ sets a sound effect for when the specified widget gets to a warning state
 | msn\TT25_KINOKO_AXE\kino.bdscript       |           
 | msn\TT40_KINOKO_AXE\kino.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```plaintext
-L268:
- pushFromFSp 0
- fetchValue 0
- syscall 4, 36 ; trap_score_score (1 in, 1 out)
- pushFromFSp 4
- syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
- pushImm 10
- pushImm 0
- syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
-```
-</details>
 

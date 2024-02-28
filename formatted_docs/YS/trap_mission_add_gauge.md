@@ -11,10 +11,34 @@ Adds to a gauge on the screen
 | gauge_id   | int   | id of gauge to add to
 
 
+Example Usage From msn\EH14_MS103\ms_l.bdscript
+```plaintext
+TR6:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 0
+ syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
+ eqz 
+ jz L88
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
+ jz L58
+ pushImm 0
+ pushFromFSp 0
+ syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
+ gosub 4, L89
+ negf 
+ pushImm 0
+ syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
+ jmp L86
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           
@@ -81,30 +105,5 @@ Adds to a gauge on the screen
 | obj\N_PO040_BTL\n_po.bdscript       | ((N) Eeyore (BTL) (PO))          
 | obj\N_PO070_BTL\n_po.bdscript       | ((N) Roo (BTL) (PO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\EH14_MS103\ms_l.bdscript</summary>
-```plaintext
-TR6:
- popToSp 0
- popToSp 4
- pushFromFSp 0
- syscall 2, 72 ; trap_damage_is_cure (1 in, 1 out)
- eqz 
- jz L88
- pushFromFSp 4
- fetchValue 4
- syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
- jz L58
- pushImm 0
- pushFromFSp 0
- syscall 2, 46 ; trap_damage_damage (1 in, 1 out)
- gosub 4, L89
- negf 
- pushImm 0
- syscall 4, 9 ; trap_mission_add_gauge (2 in, 0 out)
- jmp L86
-```
-</details>
 

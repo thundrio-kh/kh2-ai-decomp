@@ -15,20 +15,7 @@ Increments the struggle value
 | Name | Type
 |------|-----
 | unk   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\TT04_MS00\tt04.bdscript       |           
-| msn\TT04_MS01\tt04.bdscript       |           
-| msn\TT04_MS02\tt04.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\TT04_MS00\tt04.bdscript</summary>
+Example Usage From msn\TT04_MS00\tt04.bdscript
 ```plaintext
 L172:
  popToSp 0
@@ -47,5 +34,17 @@ L172:
  eqz 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\TT04_MS00\tt04.bdscript       |           
+| msn\TT04_MS01\tt04.bdscript       |           
+| msn\TT04_MS02\tt04.bdscript       |           
+
+
 

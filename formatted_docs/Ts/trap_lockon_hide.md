@@ -9,20 +9,7 @@ Hide the lockon reticle
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\auron\limi.bdscript       |           
-| limit\sparrow\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L3650:
  popToSp 0
@@ -31,5 +18,17 @@ L3650:
  syscall 6, 18 ; trap_lockon_hide (0 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\auron\limi.bdscript       |           
+| limit\sparrow\limi.bdscript       |           
+
+
 

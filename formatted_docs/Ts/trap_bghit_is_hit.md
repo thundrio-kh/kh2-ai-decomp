@@ -14,10 +14,37 @@ Check if a bghit has hit something
 | Name | Type
 |------|-----
 | is_hit   | bool   
+Example Usage From limit\trinity\limi.bdscript
+```plaintext
+L6856:
+ popToSp 4
+ popToSp 8
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 8
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ pushFromFSp 4
+ pushImmf 0
+ gosub 16, L6759
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSpVal 112
+ syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
+ jz L6902
+ pushFromFSp 8
+ pushFromPSp 16
+ syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
+ jmp L6947
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           
@@ -45,33 +72,5 @@ Check if a bghit has hit something
 | obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
 | obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```plaintext
-L6856:
- popToSp 4
- popToSp 8
- popToSp 0
- pushFromFSp 0
- pushFromFSp 8
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- pushFromFSp 4
- pushImmf 0
- gosub 16, L6759
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSpVal 112
- syscall 6, 53 ; trap_bghit_is_hit (1 in, 1 out)
- jz L6902
- pushFromFSp 8
- pushFromPSp 16
- syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
- jmp L6947
-```
-</details>
 

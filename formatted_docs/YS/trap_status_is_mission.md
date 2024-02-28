@@ -13,15 +13,14 @@ Returns if a mission is going on
 | Name | Type
 |------|-----
 | is_mission   | bool   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

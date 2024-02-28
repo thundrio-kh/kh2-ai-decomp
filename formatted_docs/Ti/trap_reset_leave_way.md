@@ -11,10 +11,27 @@ Reset the leave way action
 | obj   | YS::OBJ_125   | An object
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1650:
+ pushFromFSpVal 64
+ jz L1673
+ pushFromFSp 0
+ gosub 12, L1003
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
+ pushFromFSp 0
+ pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
+ jmp L1679
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -249,23 +266,5 @@ Reset the leave way action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1650:
- pushFromFSpVal 64
- jz L1673
- pushFromFSp 0
- gosub 12, L1003
- memcpyToSp 16, 48
- pushFromPSp 48
- syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
- pushFromFSp 0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
- syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- jmp L1679
-```
-</details>
 

@@ -17,19 +17,7 @@ Calculate the speed of magic
 | Name | Type
 |------|-----
 | speed   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\aladdin\limi.bdscript       |           
-| limit\beast\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
+Example Usage From limit\aladdin\limi.bdscript
 ```plaintext
 L592:
  pushImmf 0
@@ -86,5 +74,16 @@ L592:
  gosub 52, L2458
  jmp L722
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\aladdin\limi.bdscript       |           
+| limit\beast\limi.bdscript       |           
+
+
 

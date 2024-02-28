@@ -14,10 +14,29 @@ return the id of a motion capture
 | Name | Type
 |------|-----
 | id   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2626:
+ popToSp 0
+ popToSp 4
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+ dup 
+ jnz L2648
+ pushFromFSp 0
+ pushFromFSp 4
+ syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
+ sub 
+ neqz 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -201,25 +220,5 @@ return the id of a motion capture
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2626:
- popToSp 0
- popToSp 4
- pushFromFSp 4
- fetchValue 4
- syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
- dup 
- jnz L2648
- pushFromFSp 0
- pushFromFSp 4
- syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)
- sub 
- neqz 
- neqzv
-```
-</details>
 

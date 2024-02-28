@@ -17,10 +17,59 @@ Creates a new attack object
 | Name | Type
 |------|-----
 | attack   | YS::ATTACK_MAGIC *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3275:
+ popToSp 0
+ pushFromPSpVal 32
+ pushImmf 150
+ pushImmf 50
+ pushImmf 600
+ pushImmf 1
+ gosub 4, L1909
+ pushFromPSpVal 0
+ pushImm 16384
+ pushFromPSpVal 32
+ syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ memcpyToSpVal 16, 32
+ pushFromPSpVal 0
+ pushImm 375
+ pushImm -1
+ pushImm 0
+ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+ popToSp 4
+ pushImmf 98
+ gosub 4, L3378
+ pushFromFSp 4
+ pushFromPSpVal 32
+ syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
+ pushFromFSp 4
+ pushImmf 5000
+ pushImmf 5000
+ syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+ pushFromFSp 4
+ pushImmf 90
+ pushImmf 0
+ pushImmf 0
+ syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+ pushImmf 90
+ gosub 4, L3378
+ halt 
+ pushFromFSpVal 64
+ jz L3377
+ gosub 4, L3400
+ gosub 4, L3406
+ gosub 4, L3414
+ jmp L3377
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -320,55 +369,5 @@ Creates a new attack object
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3275:
- popToSp 0
- pushFromPSpVal 32
- pushImmf 150
- pushImmf 50
- pushImmf 600
- pushImmf 1
- gosub 4, L1909
- pushFromPSpVal 0
- pushImm 16384
- pushFromPSpVal 32
- syscall 1, 83 ; trap_obj_apply_bone_matrix (3 in, 1 out)
- memcpyToSp 16, 16
- pushFromPSp 16
- memcpyToSpVal 16, 32
- pushFromPSpVal 0
- pushImm 375
- pushImm -1
- pushImm 0
- syscall 2, 10 ; trap_attack_new (4 in, 1 out)
- popToSp 4
- pushImmf 98
- gosub 4, L3378
- pushFromFSp 4
- pushFromPSpVal 32
- syscall 2, 12 ; trap_attack_set_pos (2 in, 0 out)
- pushFromFSp 4
- pushImmf 5000
- pushImmf 5000
- syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
- pushFromFSp 4
- pushImmf 90
- pushImmf 0
- pushImmf 0
- syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
- pushImmf 90
- gosub 4, L3378
- halt 
- pushFromFSpVal 64
- jz L3377
- gosub 4, L3400
- gosub 4, L3406
- gosub 4, L3414
- jmp L3377
-```
-</details>
 

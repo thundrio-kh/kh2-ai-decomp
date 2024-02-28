@@ -12,20 +12,7 @@
 | left   | int   | Left hand weapon ID, 0 for none
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| 00common       |           
-| ard\tt04\tt04.bdscript       |           
-| 00common       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From 00common</summary>
+Example Usage From 00common
 ```plaintext
 L193:
  pushImm 1
@@ -103,5 +90,17 @@ L193:
  syscall 0, 76 ; trap_saveram_set_form_weapon (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| 00common       |           
+| ard\tt04\tt04.bdscript       |           
+| 00common       |           
+
+
 

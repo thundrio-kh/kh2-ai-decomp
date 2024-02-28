@@ -11,10 +11,22 @@ Sets the object to a team (IE player, enemy, or npc)
 | team   | int   | team to set
 
 
+Example Usage From obj\B_NM110_HEAD\b_nm.bdscript
+```plaintext
+L137:
+ gosub 12, L380
+ jz L150
+ pushFromFSp 0
+ pushImm 1
+ syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
+ jmp L157
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_NM110_HEAD\b_nm.bdscript       | ((B) The Experiment (Head))          
@@ -39,18 +51,5 @@ Sets the object to a team (IE player, enemy, or npc)
 | obj\M_EX350_12\m_ex.bdscript       | ((M) Mushroom 12 (EX))          
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_NM110_HEAD\b_nm.bdscript</summary>
-```plaintext
-L137:
- gosub 12, L380
- jz L150
- pushFromFSp 0
- pushImm 1
- syscall 1, 38 ; trap_obj_set_team (2 in, 0 out)
- jmp L157
-```
-</details>
 

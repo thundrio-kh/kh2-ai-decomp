@@ -11,19 +11,7 @@ Set a Flare Force effect
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L1717:
  pushImm 0
@@ -101,5 +89,16 @@ L1717:
  pushFromPSp 176
  memcpy 16
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+
+
 

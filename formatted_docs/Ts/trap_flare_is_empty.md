@@ -13,19 +13,7 @@ Check if the Flare Force gauge is empty
 | Name | Type
 |------|-----
 | is_empty   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald2\limi.bdscript       |           
-| limit\donald2_wi\limi.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
+Example Usage From limit\donald2\limi.bdscript
 ```plaintext
 L7062:
  syscall 7, 11 ; trap_flare_is_empty (0 in, 1 out)
@@ -34,5 +22,16 @@ L7062:
  halt 
  jmp L7062
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald2\limi.bdscript       |           
+| limit\donald2_wi\limi.bdscript       |           
+
+
 

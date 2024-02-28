@@ -12,15 +12,14 @@ Enables a reaction command so it can be activated by the player. Unused in the v
 | group   | int   | Unknown
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

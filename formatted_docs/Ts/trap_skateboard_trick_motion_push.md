@@ -12,10 +12,27 @@ Push a skateboard trick animation to the action stack
 | blend_time   | float   | Time to blend animations
 
 
+Example Usage From obj\F_TT010\f_tt.bdscript
+```plaintext
+L832:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ pushImm 266
+ pushImmf 0
+ syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
+ pushFromFSp 4
+ pushImm 252
+ pushImmf 0
+ syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          
@@ -32,23 +49,5 @@ Push a skateboard trick animation to the action stack
 | obj\N_EX690_TT_A_SKATE_RTN\n_ex.bdscript       | ((N) Villager (woman) (TT_A_SKATE) (RTN) (EX))          
 | obj\N_EX740_TT_SKATE_RTN\n_ex.bdscript       | ((N) Dove (TT) (SKATE) (RTN) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```plaintext
-L832:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- pushImm 266
- pushImmf 0
- syscall 6, 33 ; trap_skateboard_trick (3 in, 0 out)
- pushFromFSp 4
- pushImm 252
- pushImmf 0
- syscall 6, 34 ; trap_skateboard_trick_motion_push (3 in, 0 out)
- ret
-```
-</details>
 

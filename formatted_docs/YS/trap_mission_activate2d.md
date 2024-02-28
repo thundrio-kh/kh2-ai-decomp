@@ -9,10 +9,18 @@ Turns on custom HUD, such as Demyx timer or hud used by Mushrooms
 |------|------|------------
 
 
+Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript
+```plaintext
+L108:
+ syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           
@@ -32,14 +40,5 @@ Turns on custom HUD, such as Demyx timer or hud used by Mushrooms
 | obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
 | obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL10_KINOKO_LEX\kino.bdscript</summary>
-```plaintext
-L108:
- syscall 4, 14 ; trap_mission_activate2d (0 in, 0 out)
- ret
-```
-</details>
 

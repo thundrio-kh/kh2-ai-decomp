@@ -16,59 +16,7 @@ Rotates a vector along an axis by a given angle
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\riku\limi.bdscript       |           
-| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
-| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
-| obj\G_EC129\g_ec.bdscript       | ()          
-| obj\G_EX220\g_ex.bdscript       | ()          
-| obj\G_EX220_G\g_ex.bdscript       | ()          
-| obj\G_EX220_R\g_ex.bdscript       | ()          
-| obj\G_EX250_1\g_ex.bdscript       | ()          
-| obj\G_EX250_1_G\g_ex.bdscript       | ()          
-| obj\G_EX250_1_R\g_ex.bdscript       | ()          
-| obj\G_EX260\g_ex.bdscript       | ()          
-| obj\G_EX260_G\g_ex.bdscript       | ()          
-| obj\G_EX260_R\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
-| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
-| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
-| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
-| obj\G_EX903\g_ex.bdscript       | ()          
-| obj\G_OA100\g_oa.bdscript       | ()          
-| obj\G_OA200\g_oa.bdscript       | ()          
-| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
-| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
-| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
-| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
-| obj\N_EX940_BTL\n_ex.bdscript       | ((N) Riku (coat) (BTL) (EX))          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
-| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
-| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
-| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
-| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
-| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
+Example Usage From limit\riku\limi.bdscript
 ```plaintext
 L4165:
  pushFromFSp 4
@@ -135,5 +83,56 @@ L4165:
  gosub 24, L6798
  jmp L4303
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\riku\limi.bdscript       |           
+| obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
+| obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
+| obj\G_EC129\g_ec.bdscript       | ()          
+| obj\G_EX220\g_ex.bdscript       | ()          
+| obj\G_EX220_G\g_ex.bdscript       | ()          
+| obj\G_EX220_R\g_ex.bdscript       | ()          
+| obj\G_EX250_1\g_ex.bdscript       | ()          
+| obj\G_EX250_1_G\g_ex.bdscript       | ()          
+| obj\G_EX250_1_R\g_ex.bdscript       | ()          
+| obj\G_EX260\g_ex.bdscript       | ()          
+| obj\G_EX260_G\g_ex.bdscript       | ()          
+| obj\G_EX260_R\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT\g_ex.bdscript       | ()          
+| obj\G_EX900_COMBAT_HARD\g_ex.bdscript       | ()          
+| obj\G_EX900_FINAL\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT\g_ex.bdscript       | ()          
+| obj\G_EX900_FLIGHT_HARD\g_ex.bdscript       | ()          
+| obj\G_EX903\g_ex.bdscript       | ()          
+| obj\G_OA100\g_oa.bdscript       | ()          
+| obj\G_OA200\g_oa.bdscript       | ()          
+| obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          
+| obj\M_EX680\m_ex.bdscript       | ((M) Devastator)          
+| obj\M_EX680_HB\m_ex.bdscript       | ((M) Reckless)          
+| obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
+| obj\N_EX940_BTL\n_ex.bdscript       | ((N) Riku (coat) (BTL) (EX))          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
+| obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          
+| obj\P_EX100_TR_KH1F\limi.bdscript       | ((P) Sora (TR) (Limit))          
+| obj\P_EX100_WI_KH1F\limi.bdscript       | ((P) Sora (WI) (Limit))          
+| obj\P_EX100_XM_KH1F\limi.bdscript       | ((P) Sora (XM) (Limit))          
+| obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
+
+
 

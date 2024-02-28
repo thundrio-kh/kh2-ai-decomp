@@ -14,10 +14,27 @@ returns if the damage is happening while the enemy is in an animation
 | Name | Type
 |------|-----
 | ismotion   | bool   
+Example Usage From obj\B_CA010\b_ca.bdscript
+```plaintext
+L4913:
+ pushFromFSp 0
+ syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
+ dup 
+ jnz L4932
+ pushFromFSp 0
+ fetchValue 4
+ syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
+ pushImm 17
+ sub 
+ eqz 
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
@@ -47,23 +64,5 @@ returns if the damage is happening while the enemy is in an animation
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA010\b_ca.bdscript</summary>
-```plaintext
-L4913:
- pushFromFSp 0
- syscall 2, 6 ; trap_enemy_is_damage_motion (1 in, 1 out)
- dup 
- jnz L4932
- pushFromFSp 0
- fetchValue 4
- syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)
- pushImm 17
- sub 
- eqz 
- neqzv
-```
-</details>
 

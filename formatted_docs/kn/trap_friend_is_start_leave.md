@@ -14,18 +14,7 @@ Checks if the friend has started the leave action
 | Name | Type
 |------|-----
 | is_start_leave   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX360\p_ex.bdscript</summary>
+Example Usage From obj\P_EX360\p_ex.bdscript
 ```plaintext
 L1237:
  dup 
@@ -35,5 +24,15 @@ L1237:
  eqz 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
+
+
 

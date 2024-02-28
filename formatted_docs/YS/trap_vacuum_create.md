@@ -15,10 +15,24 @@ Create a vacuum object
 | Name | Type
 |------|-----
 | vacuum   | YS::VACUUM::VACUUM   
+Example Usage From obj\B_EX180\b_ex.bdscript
+```plaintext
+L5403:
+ pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
+ syscall 0, 2 ; trap_puts (1 in, 0 out)
+ pushFromPSp 32
+ pushFromFSp 72
+ syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
+ popToWp W4264
+ pushFromFSp 8
+ syscall 2, 13 ; trap_attack_free (1 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
@@ -41,20 +55,5 @@ Create a vacuum object
 | obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX180\b_ex.bdscript</summary>
-```plaintext
-L5403:
- pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromPSp 32
- pushFromFSp 72
- syscall 2, 77 ; trap_vacuum_create (2 in, 1 out)
- popToWp W4264
- pushFromFSp 8
- syscall 2, 13 ; trap_attack_free (1 in, 0 out)
-```
-</details>
 

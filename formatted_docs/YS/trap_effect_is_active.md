@@ -14,10 +14,26 @@ checks if an effect is still active
 | Name | Type
 |------|-----
 | isactive   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3241:
+ popToSp 0
+ pushFromFSpVal 16
+ pushImm 0
+ sub 
+ neqz 
+ dup 
+ jz L3258
+ pushFromFSpVal 16
+ syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -281,22 +297,5 @@ checks if an effect is still active
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3241:
- popToSp 0
- pushFromFSpVal 16
- pushImm 0
- sub 
- neqz 
- dup 
- jz L3258
- pushFromFSpVal 16
- syscall 0, 50 ; trap_effect_is_active (1 in, 1 out)
- eqzv
-```
-</details>
 

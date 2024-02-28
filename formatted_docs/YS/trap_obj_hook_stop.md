@@ -10,35 +10,7 @@ Stops the hook
 | unk1   | unknown   | 
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\auron\limi.bdscript       |           
-| limit\beast\limi.bdscript       |           
-| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
-| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
-| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
-| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
-| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
-| obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          
-| obj\F_WI390_RTN\f_wi.bdscript       | ((F) Steamboat’s hook (RTN) (WI))          
-| obj\M_EX850\m_ex.bdscript       | ((M) Berserker weapon (Useable))          
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L2149:
  popToSp 0
@@ -95,5 +67,32 @@ L2149:
  gosub 4, L2267
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\auron\limi.bdscript       |           
+| limit\beast\limi.bdscript       |           
+| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
+| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
+| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
+| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
+| obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\B_EX410\b_ex.bdscript       | ((P) Sora book)          
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
+| obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          
+| obj\F_WI390_RTN\f_wi.bdscript       | ((F) Steamboat’s hook (RTN) (WI))          
+| obj\M_EX850\m_ex.bdscript       | ((M) Berserker weapon (Useable))          
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

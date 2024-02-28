@@ -13,10 +13,23 @@ Get the player object
 | Name | Type
 |------|-----
 | player   | YS::OBJ_125   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L277:
+ pushFromPSp 0
+ pushImm 4
+ add 
+ syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
+ memcpy 0
+ pushFromPSp 0
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -854,19 +867,5 @@ Get the player object
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L277:
- pushFromPSp 0
- pushImm 4
- add 
- syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
- memcpy 0
- pushFromPSp 0
- ret
-```
-</details>
 

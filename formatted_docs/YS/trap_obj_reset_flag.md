@@ -11,10 +11,24 @@ Reset a specific flag on an object
 | id   | int   | ID of a flag
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L3001:
+ pushFromPSp 4
+ pushImm 8
+ syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
+ pushFromPSp 4
+ fetchValue 4
+ pushImm 0
+ pushImmf 16
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -252,20 +266,5 @@ Reset a specific flag on an object
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L3001:
- pushFromPSp 4
- pushImm 8
- syscall 1, 71 ; trap_obj_reset_flag (2 in, 0 out)
- pushFromPSp 4
- fetchValue 4
- pushImm 0
- pushImmf 16
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
-```
-</details>
 

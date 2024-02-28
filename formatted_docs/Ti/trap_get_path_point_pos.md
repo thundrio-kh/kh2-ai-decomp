@@ -15,24 +15,7 @@ Get the position of a point on a path.
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
-| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
-| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
-| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
-| obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          
-| obj\N_BB070_BTL\n_bb.bdscript       | ((N) Mrs. Potts (BTL) (BB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK100\b_lk.bdscript</summary>
+Example Usage From obj\B_LK100\b_lk.bdscript
 ```plaintext
 L5755:
  popToSp 0
@@ -57,5 +40,21 @@ L5755:
  memcpyToSp 16, 16
  jmp L5835
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          
+| obj\B_LK100_10\b_lk.bdscript       | ((B) Banzai)          
+| obj\B_LK100_20\b_lk.bdscript       | ((B) Ed)          
+| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
+| obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          
+| obj\N_BB070_BTL\n_bb.bdscript       | ((N) Mrs. Potts (BTL) (BB))          
+
+
 

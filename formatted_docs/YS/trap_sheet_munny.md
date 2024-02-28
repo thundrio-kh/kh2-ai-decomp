@@ -13,10 +13,24 @@ Return the amount of munny the player has
 | Name | Type
 |------|-----
 | amt   | int   
+Example Usage From ard\tt02\tt_n.bdscript
+```plaintext
+TR3:
+ pushImm 362
+ pushImm 100
+ syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
+ syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
+ neg 
+ syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
+ drop 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\tt02\tt_n.bdscript       |           
@@ -40,20 +54,5 @@ Return the amount of munny the player has
 | msn\TT07_WORM_02\tt07.bdscript       |           
 | obj\N_EX500_MONEY_RTN\n_ex.bdscript       | ((N) Hayner (MONEY) (RTN) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\tt02\tt_n.bdscript</summary>
-```plaintext
-TR3:
- pushImm 362
- pushImm 100
- syscall 0, 97 ; trap_item_reduce (2 in, 0 out)
- syscall 1, 261 ; trap_sheet_munny (0 in, 1 out)
- neg 
- syscall 1, 280 ; trap_sheet_add_munny (1 in, 1 out)
- drop 
- ret
-```
-</details>
 

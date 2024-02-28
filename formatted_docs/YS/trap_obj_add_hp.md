@@ -17,10 +17,33 @@ Adds an amount of HP to an object
 | Name | Type
 |------|-----
 | new_hp   | int   
+Example Usage From msn\TT14_MS110\tt14.bdscript
+```plaintext
+L99:
+ gosub 4, L182
+ memcpyToSp 16, 16
+ pushFromPSp 16
+ gosub 12, L182
+ memcpyToSp 16, 32
+ pushFromPSp 32
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
+ pushImm 0
+ pushImm 0
+ syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
+ drop 
+ pushImm 566
+ pushImm 0
+ gosub 4, L194
+ jmp L139
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\TT14_MS110\tt14.bdscript       |           
@@ -73,29 +96,5 @@ Adds an amount of HP to an object
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\TT14_MS110\tt14.bdscript</summary>
-```plaintext
-L99:
- gosub 4, L182
- memcpyToSp 16, 16
- pushFromPSp 16
- gosub 12, L182
- memcpyToSp 16, 32
- pushFromPSp 32
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
- pushImm 0
- pushImm 0
- syscall 1, 155 ; trap_obj_add_hp (4 in, 1 out)
- drop 
- pushImm 566
- pushImm 0
- gosub 4, L194
- jmp L139
-```
-</details>
 

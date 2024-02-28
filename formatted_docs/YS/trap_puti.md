@@ -11,10 +11,59 @@ value"
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
+Example Usage From limit\beast\limi.bdscript
+```plaintext
+L3767:
+ dup 
+ pushFromFSp 4
+ sub 
+ info 
+ jnz L3863
+ pushFromPSpVal 116
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ pushImm 0
+ sub 
+ eqz 
+ jz L3853
+ pushFromPSpVal 116
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ pushFromFSp 0
+ fetchValue 0
+ pushImm 8
+ pushFromFSp 4
+ add 
+ pushFromPSpVal 20
+ pushImm 0
+ syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
+ memcpy 0
+ pushFromPSpVal 116
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ pushImm 0
+ sub 
+ eqz 
+ jz L3845
+ pushFromFSp 4
+ pushFromPAi L4528 ; ___ai '@aura[i] is null' (L4528)
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ jmp L3851
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
@@ -178,55 +227,5 @@ value"
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```plaintext
-L3767:
- dup 
- pushFromFSp 4
- sub 
- info 
- jnz L3863
- pushFromPSpVal 116
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- fetchValue 0
- pushImm 0
- sub 
- eqz 
- jz L3853
- pushFromPSpVal 116
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- pushFromFSp 0
- fetchValue 0
- pushImm 8
- pushFromFSp 4
- add 
- pushFromPSpVal 20
- pushImm 0
- syscall 2, 59 ; trap_limit_effect_start_bind (4 in, 1 out)
- memcpy 0
- pushFromPSpVal 116
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- fetchValue 0
- pushImm 0
- sub 
- eqz 
- jz L3845
- pushFromFSp 4
- pushFromPAi L4528 ; ___ai '@aura[i] is null' (L4528)
- syscall 0, 0 ; trap_puti (2 in, 0 out)
- jmp L3851
-```
-</details>
 

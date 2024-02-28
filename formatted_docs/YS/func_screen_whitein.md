@@ -10,10 +10,26 @@ Takes the screen from being all white and fades in.
 | frame   | float   | Number of frames to take for fade in
 
 
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L8679:
+ popToSp 0
+ pushImmf 360
+ gosub 4, L2060
+ pushImmf 60
+ syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
+ pushImmf 82
+ gosub 4, L2060
+ pushImmf 0
+ syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -63,22 +79,5 @@ Takes the screen from being all white and fades in.
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L8679:
- popToSp 0
- pushImmf 360
- gosub 4, L2060
- pushImmf 60
- syscall 0, 31 ; func_screen_whiteout (1 in, 0 out)
- pushImmf 82
- gosub 4, L2060
- pushImmf 0
- syscall 0, 32 ; func_screen_whitein (1 in, 0 out)
- ret
-```
-</details>
 

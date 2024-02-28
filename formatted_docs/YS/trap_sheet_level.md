@@ -14,18 +14,7 @@ Return the level of an object
 | Name | Type
 |------|-----
 | level   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_CM000_BTL\n_cm.bdscript</summary>
+Example Usage From obj\N_CM000_BTL\n_cm.bdscript
 ```plaintext
 L16905:
  popToSp 0
@@ -124,5 +113,15 @@ L16905:
  pushFromFSp 0
  gosub 4, L7141
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
+
+
 

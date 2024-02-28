@@ -13,10 +13,24 @@ Associates a number with a new combo group, for a series of attacks that are in 
 | Name | Type
 |------|-----
 | combogroup   | int   
+Example Usage From limit\donald\limi.bdscript
+```plaintext
+L951:
+ popToSp 0
+ pushImm 0
+ popToSp 36
+ syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
+ popToSp 32
+ pushFromFSpVal 48
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L1103
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
@@ -66,20 +80,5 @@ Associates a number with a new combo group, for a series of attacks that are in 
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
-```plaintext
-L951:
- popToSp 0
- pushImm 0
- popToSp 36
- syscall 2, 67 ; trap_attack_new_combo_group (0 in, 1 out)
- popToSp 32
- pushFromFSpVal 48
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L1103
-```
-</details>
 

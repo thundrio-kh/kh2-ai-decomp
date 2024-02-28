@@ -12,10 +12,28 @@ Set an objects minimum HP
 | index   | int   | HP index to use
 
 
+Example Usage From msn\AL00_MS101\ms_a.bdscript
+```plaintext
+L228:
+ pushFromFSp 36
+ pushFromPAi L374 ; ___ai 'INT' (L374)
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ pushFromFSp 32
+ pushFromFSp 36
+ pushImm 0
+ syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
+ pushFromPSp 16
+ pushImm 20
+ pushImm 0
+ syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           
@@ -121,24 +139,5 @@ Set an objects minimum HP
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_MS101\ms_a.bdscript</summary>
-```plaintext
-L228:
- pushFromFSp 36
- pushFromPAi L374 ; ___ai 'INT' (L374)
- syscall 0, 0 ; trap_puti (2 in, 0 out)
- pushFromFSp 32
- pushFromFSp 36
- pushImm 0
- syscall 1, 231 ; trap_sheet_set_min_hp (3 in, 0 out)
- pushFromPSp 16
- pushImm 20
- pushImm 0
- syscall 1, 142 ; trap_signal_reserve_min_hp (3 in, 0 out)
- ret
-```
-</details>
 

@@ -10,31 +10,7 @@ Disable a unit group from being able to spawn
 | id   | id   | Unit group ID
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\MU02_MS103B\mu02.bdscript       |           
-| msn\MU03_MS104\mu03.bdscript       |           
-| msn\MU07_MS106\mu07.bdscript       |           
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          
-| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
-| obj\F_CA050\f_ca.bdscript       | ((F) Explosive barrel (CA))          
-| obj\F_PO030\f_po.bdscript       | ((F) ??? (PO))          
-| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-| obj\N_HB550_BOSS\n_hb.bdscript       | ((N) Cloud (BOSS) (HB))          
-| obj\N_HB550_BTL\n_hb.bdscript       | ((N) Cloud (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\MU02_MS103B\mu02.bdscript</summary>
+Example Usage From msn\MU02_MS103B\mu02.bdscript
 ```plaintext
 TR3:
  gosub 4, L329
@@ -55,5 +31,28 @@ TR3:
  gosub 4, L341
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\MU02_MS103B\mu02.bdscript       |           
+| msn\MU03_MS104\mu03.bdscript       |           
+| msn\MU07_MS106\mu07.bdscript       |           
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          
+| obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
+| obj\F_CA050\f_ca.bdscript       | ((F) Explosive barrel (CA))          
+| obj\F_PO030\f_po.bdscript       | ((F) ??? (PO))          
+| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+| obj\N_HB550_BOSS\n_hb.bdscript       | ((N) Cloud (BOSS) (HB))          
+| obj\N_HB550_BTL\n_hb.bdscript       | ((N) Cloud (BTL) (HB))          
+
+
 

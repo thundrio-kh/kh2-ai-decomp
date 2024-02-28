@@ -11,26 +11,7 @@ Sets the distance that the fog becomes fully opaque
 | distance   | int   | far distance for the fog, only value of 1000 is used in game scripts
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           
-| msn\HE_COLOSSEUM_6_FOG\he_c.bdscript       |           
-| msn\HE_COL_2_10\he_c.bdscript       |           
-| msn\HE_COL_4_9\he_c.bdscript       |           
-| msn\HE_COL_6_10\he_c.bdscript       |           
-| msn\HE_COL_8_30\he_c.bdscript       |           
-| msn\HE_COL_8_6\he_c.bdscript       |           
-| obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          
-| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript</summary>
+Example Usage From msn\HE_COLOSSEUM_2_FOG\he_c.bdscript
 ```plaintext
 L415:
  pushImm 1
@@ -71,5 +52,23 @@ L415:
  gosub 4, L503
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           
+| msn\HE_COLOSSEUM_6_FOG\he_c.bdscript       |           
+| msn\HE_COL_2_10\he_c.bdscript       |           
+| msn\HE_COL_4_9\he_c.bdscript       |           
+| msn\HE_COL_6_10\he_c.bdscript       |           
+| msn\HE_COL_8_30\he_c.bdscript       |           
+| msn\HE_COL_8_6\he_c.bdscript       |           
+| obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          
+| obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
+
+
 

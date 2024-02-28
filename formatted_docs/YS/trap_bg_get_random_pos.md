@@ -16,10 +16,53 @@ Gets a random open position
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L7019:
+ pushFromPSp 16
+ pushFromPSp 96
+ pushFromPSp 80
+ pushImm 65536
+ syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+ jz L7111
+ pushFromPSp 80
+ pushFromPSp 96
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ memcpyToSp 16, 80
+ pushFromPSp 96
+ pushFromPSp 80
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 128
+ pushFromPSp 128
+ memcpyToSp 16, 80
+ pushFromPSp 16
+ pushFromPSp 96
+ pushFromPSp 80
+ pushImm 65540
+ syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+ jz L7104
+ pushFromPWp W0
+ pushImm 4
+ add 
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 112
+ pushFromPSp 112
+ pushImmf 100
+ pushImmf 100
+ syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
+ memcpyToSp 16, 128
+ pushFromPSp 128
+ memcpyToSp 16, 64
+ jmp L7109
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -84,49 +127,5 @@ Gets a random open position
 | obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L7019:
- pushFromPSp 16
- pushFromPSp 96
- pushFromPSp 80
- pushImm 65536
- syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
- jz L7111
- pushFromPSp 80
- pushFromPSp 96
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- memcpyToSp 16, 80
- pushFromPSp 96
- pushFromPSp 80
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 128
- pushFromPSp 128
- memcpyToSp 16, 80
- pushFromPSp 16
- pushFromPSp 96
- pushFromPSp 80
- pushImm 65540
- syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
- jz L7104
- pushFromPWp W0
- pushImm 4
- add 
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 112
- pushFromPSp 112
- pushImmf 100
- pushImmf 100
- syscall 1, 247 ; trap_bg_get_random_pos (3 in, 1 out)
- memcpyToSp 16, 128
- pushFromPSp 128
- memcpyToSp 16, 64
- jmp L7109
-```
-</details>
 

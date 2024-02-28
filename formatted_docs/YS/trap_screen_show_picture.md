@@ -11,15 +11,14 @@ Shows a picture on the screen
 | number   | int   | ID of picture to show
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

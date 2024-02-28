@@ -13,10 +13,29 @@ Have an object start a motion set entry at a specific frame number
 | start_time   | float   | Frame number to start the animation at
 
 
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L6629:
+ popToSp 0
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 0
+ pushFromFSp 0
+ pushImm 0
+ syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
+ syscall 0, 17 ; trap_random_getf (1 in, 1 out)
+ pushImmf 0
+ syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
+ pushFromFSp 0
+ gosub 4, L6657
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -748,25 +767,5 @@ Have an object start a motion set entry at a specific frame number
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 | obj\P_WI030_RTN\rtn_.bdscript       | ((P) Goofy (WI) (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L6629:
- popToSp 0
- pushFromFSp 0
- fetchValue 4
- pushImm 0
- pushFromFSp 0
- pushImm 0
- syscall 1, 67 ; trap_obj_motion_get_length (2 in, 1 out)
- syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0
- syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)
- pushFromFSp 0
- gosub 4, L6657
- ret
-```
-</details>
 

@@ -10,10 +10,42 @@ Ends an effect loop and kills it.
 | effect   | ryj::EFFECT_144 *   | an effect object
 
 
+Example Usage From limit\beast\limi.bdscript
+```plaintext
+L3879:
+ dup 
+ pushFromFSp 4
+ sub 
+ info 
+ jnz L3948
+ pushFromFSp 4
+ pushFromPAi L4428 ; ___ai 'aura end' (L4428)
+ syscall 0, 0 ; trap_puti (2 in, 0 out)
+ pushFromPSpVal 116
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ pushImm 0
+ sub 
+ neqz 
+ jz L3925
+ pushFromPSpVal 116
+ pushFromFSp 4
+ pushImm 4
+ mul 
+ add 
+ fetchValue 0
+ syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
+ jmp L3925
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
@@ -153,38 +185,5 @@ Ends an effect loop and kills it.
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```plaintext
-L3879:
- dup 
- pushFromFSp 4
- sub 
- info 
- jnz L3948
- pushFromFSp 4
- pushFromPAi L4428 ; ___ai 'aura end' (L4428)
- syscall 0, 0 ; trap_puti (2 in, 0 out)
- pushFromPSpVal 116
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- fetchValue 0
- pushImm 0
- sub 
- neqz 
- jz L3925
- pushFromPSpVal 116
- pushFromFSp 4
- pushImm 4
- mul 
- add 
- fetchValue 0
- syscall 0, 85 ; trap_effect_loop_end_kill (1 in, 0 out)
- jmp L3925
-```
-</details>
 

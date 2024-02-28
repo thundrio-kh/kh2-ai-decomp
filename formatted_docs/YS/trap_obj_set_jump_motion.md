@@ -11,23 +11,7 @@ Sets an object to go into a falling animation
 | id   | int   | ID of a specific motion set entry
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\auron\limi.bdscript       |           
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
-| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
+Example Usage From limit\auron\limi.bdscript
 ```plaintext
 L2149:
  popToSp 0
@@ -84,5 +68,20 @@ L2149:
  gosub 4, L2267
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\auron\limi.bdscript       |           
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
+| obj\M_EX710\m_ex.bdscript       | ((M) Morning Star)          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 

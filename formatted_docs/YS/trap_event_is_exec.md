@@ -13,10 +13,20 @@ Returns if an event is executing
 | Name | Type
 |------|-----
 | is_exec   | bool   
+Example Usage From ard\es00\es_s.bdscript
+```plaintext
+L39:
+ syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
+ jz L46
+ halt 
+ jmp L39
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\es00\es_s.bdscript       |           
@@ -597,16 +607,5 @@ Returns if an event is executing
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\es00\es_s.bdscript</summary>
-```plaintext
-L39:
- syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
- jz L46
- halt 
- jmp L39
-```
-</details>
 

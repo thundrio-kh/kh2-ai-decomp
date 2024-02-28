@@ -15,10 +15,23 @@ Compares two numbers, and returns the difference
 | Name | Type
 |------|-----
 | result   | int   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L1393:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ pushFromPSpVal 4
+ syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
+ eqz 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -156,19 +169,5 @@ Compares two numbers, and returns the difference
 | obj\P_LK030\p_lk.bdscript       | ((P) Goofy (LK))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L1393:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- pushFromPSpVal 4
- syscall 1, 130 ; trap_obj_cmp (2 in, 1 out)
- eqz 
- ret
-```
-</details>
 

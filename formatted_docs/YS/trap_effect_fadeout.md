@@ -12,10 +12,28 @@ Fades out an effect
 | shouldfade   | int   | A boolean value. If 0 then this trap does nothing.
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L4451:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ pushImmf 0
+ subf 
+ supoezf 
+ jz L4475
+ pushFromFSp 0
+ pushFromFSp 4
+ pushImm 0
+ syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
+ jmp L4479
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -166,24 +184,5 @@ Fades out an effect
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L4451:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- pushImmf 0
- subf 
- supoezf 
- jz L4475
- pushFromFSp 0
- pushFromFSp 4
- pushImm 0
- syscall 0, 52 ; trap_effect_fadeout (3 in, 0 out)
- jmp L4479
-```
-</details>
 

@@ -22,10 +22,37 @@ Set resistances for an object
 | percent   | int   | Percentage damage taken
 
 
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L4269:
+ pushFromFSp 0
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 1
+ pushImm 0
+ syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
+ pushFromFSp 0
+ pushImm 24
+ add 
+ pushImm 1
+ memcpy 0
+ pushFromFSp 0
+ gosub 4, L10272
+ pushFromFSp 0
+ gosub 4, L2525
+ pushImm 0
+ popToSpVal 180
+ pushImm L10508
+ pushFromFSp 0
+ syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
+ drop 
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -108,33 +135,5 @@ Set resistances for an object
 | obj\N_EX760_BTL_WILLY\n_ex.bdscript       | ((N) Pete (BTL_WILLY) (EX))          
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L4269:
- pushFromFSp 0
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 1
- pushImm 0
- syscall 1, 311 ; trap_sheet_set_element_rate (3 in, 0 out)
- pushFromFSp 0
- pushImm 24
- add 
- pushImm 1
- memcpy 0
- pushFromFSp 0
- gosub 4, L10272
- pushFromFSp 0
- gosub 4, L2525
- pushImm 0
- popToSpVal 180
- pushImm L10508
- pushFromFSp 0
- syscall 2, 20 ; trap_magic_start_thread (2 in, 1 out)
- drop 
- ret
-```
-</details>
 

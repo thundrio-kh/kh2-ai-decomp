@@ -10,10 +10,21 @@ Set the skateboard to be riding an edge
 | obj   | YS::OBJ_125   | An object
 
 
+Example Usage From obj\F_TT010\f_tt.bdscript
+```plaintext
+L474:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 4
+ syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          
@@ -30,17 +41,5 @@ Set the skateboard to be riding an edge
 | obj\N_EX690_TT_A_SKATE_RTN\n_ex.bdscript       | ((N) Villager (woman) (TT_A_SKATE) (RTN) (EX))          
 | obj\N_EX740_TT_SKATE_RTN\n_ex.bdscript       | ((N) Dove (TT) (SKATE) (RTN) (EX))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\F_TT010\f_tt.bdscript</summary>
-```plaintext
-L474:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- syscall 6, 39 ; trap_skateboard_ride_edge (1 in, 0 out)
- ret
-```
-</details>
 

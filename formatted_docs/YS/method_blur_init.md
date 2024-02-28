@@ -10,15 +10,14 @@ Initialize a blur object. Unused in the vanilla game
 | blur   | YS::BLUR *   | Variable to store the blur object in?
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

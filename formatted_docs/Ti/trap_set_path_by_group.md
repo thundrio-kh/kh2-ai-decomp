@@ -15,15 +15,14 @@ Set an path for an object by group ID
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

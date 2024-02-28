@@ -10,10 +10,28 @@ Open a tutorial window displaying a message
 | message_id   | int   | Message ID
 
 
+Example Usage From ard\bb03\bb.bdscript
+```plaintext
+TR3:
+ pushImm 39
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jz L56
+ syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
+ pushImm 38
+ syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
+ eqz 
+ jz L39
+ pushImm 17627
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ jmp L44
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\bb03\bb.bdscript       |           
@@ -39,24 +57,5 @@ Open a tutorial window displaying a message
 | msn\TT32_MS302\tt32.bdscript       |           
 | msn\TT32_MS303\tt32.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\bb03\bb.bdscript</summary>
-```plaintext
-TR3:
- pushImm 39
- syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L56
- syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
- pushImm 38
- syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L39
- pushImm 17627
- syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- jmp L44
-```
-</details>
 

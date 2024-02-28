@@ -11,18 +11,7 @@ Have chicken little set the destination to shoot
 | target_pos   | kn::FVector *   | pushFromPSp: 16
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L409:
  syscall 1, 34 ; trap_event_is_exec (0 in, 1 out)
@@ -33,5 +22,15 @@ L409:
  halt 
  jmp L409
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

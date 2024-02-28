@@ -11,19 +11,7 @@ Set the hitback addition value for an object
 | hitback_addition   | float   | The new hitback addition value
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          
-| obj\B_EX220_LV99\b_ex.bdscript       | ((F) Saix’s claymore limit cut (Usable))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX220\b_ex.bdscript</summary>
+Example Usage From obj\B_EX220\b_ex.bdscript
 ```plaintext
 L409:
  popToSp 4
@@ -41,5 +29,16 @@ L409:
  pushImmf 200
  syscall 1, 348 ; trap_sheet_set_hitback_addition (2 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          
+| obj\B_EX220_LV99\b_ex.bdscript       | ((F) Saix’s claymore limit cut (Usable))          
+
+
 

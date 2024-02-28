@@ -11,18 +11,7 @@ Starts mpdrive for an object
 | ratio   | float   | Ratio mpdrive should start at
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_HB630\n_hb.bdscript</summary>
+Example Usage From obj\N_HB630\n_hb.bdscript
 ```plaintext
 L5513:
  popToSp 0
@@ -102,5 +91,15 @@ L5513:
  syscall 1, 353 ; trap_obj_start_mpdrive (2 in, 0 out)
  jmp L5685
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
+
+
 

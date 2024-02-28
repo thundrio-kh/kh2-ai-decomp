@@ -14,10 +14,20 @@ Returns true if the current motion set has ended
 | Name | Type
 |------|-----
 | is_end   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2619:
+ pushFromFSp 4
+ fetchValue 4
+ syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -605,16 +615,5 @@ Returns true if the current motion set has ended
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2619:
- pushFromFSp 4
- fetchValue 4
- syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)
- ret
-```
-</details>
 

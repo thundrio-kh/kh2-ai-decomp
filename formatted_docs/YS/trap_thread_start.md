@@ -29,10 +29,34 @@ startThread:
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From limit\tron\limi.bdscript
+```plaintext
+L4479:
+ popToSp 0
+ pushImm 0
+ pushImm L4569
+ pushImm 0
+ pushFromFSp 0
+ syscall 0, 9 ; trap_thread_start (4 in, 1 out)
+ drop 
+ pushFromPSpVal 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSp 16, 16
+ pushFromPSpVal 32
+ pushFromPSp 16
+ syscall 0, 4 ; trap_vector_add (2 in, 1 out)
+ memcpyToSp 16, 48
+ pushFromPSp 48
+ memcpyToSpVal 16, 32
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
@@ -115,30 +139,5 @@ startThread:
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\tron\limi.bdscript</summary>
-```plaintext
-L4479:
- popToSp 0
- pushImm 0
- pushImm L4569
- pushImm 0
- pushFromFSp 0
- syscall 0, 9 ; trap_thread_start (4 in, 1 out)
- drop 
- pushFromPSpVal 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSpVal 32
- pushFromPSp 16
- syscall 0, 4 ; trap_vector_add (2 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSpVal 16, 32
-```
-</details>
 

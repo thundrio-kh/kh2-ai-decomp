@@ -11,10 +11,25 @@ Looks up an object by objentry ID and puts the object in the data object. If thi
 | entry_id   | int   | ID of the object to look up
 
 
+Example Usage From ard\hb10\moog.bdscript
+```plaintext
+L55:
+ pushFromPSp 0
+ pushImm 1295
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 0
+ syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
+ pushImm 36
+ pushImm 17626
+ gosub 8, L75
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\hb10\moog.bdscript       |           
@@ -445,21 +460,5 @@ Looks up an object by objentry ID and puts the object in the data object. If thi
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\hb10\moog.bdscript</summary>
-```plaintext
-L55:
- pushFromPSp 0
- pushImm 1295
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 0
- syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
- pushImm 36
- pushImm 17626
- gosub 8, L75
- ret
-```
-</details>
 

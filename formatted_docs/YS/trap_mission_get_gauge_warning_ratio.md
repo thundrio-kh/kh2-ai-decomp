@@ -14,15 +14,14 @@ Returns the a value from 0.0 to 1.0 representing the current progress of the spe
 | Name | Type
 |------|-----
 | value   | float   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

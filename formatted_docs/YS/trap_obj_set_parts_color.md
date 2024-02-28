@@ -13,21 +13,7 @@ Set a part of an object to a color
 | time   | unknown   | Time to take to blend to this color
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-| obj\F_NM080\f_nm.bdscript       | ((F) Oogie’s present box (NM))          
-| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
-| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L3024:
  pushFromFSp 0
@@ -116,5 +102,18 @@ L3024:
  syscall 1, 265 ; trap_obj_set_medal (2 in, 0 out)
  jmp L3268
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+| obj\F_NM080\f_nm.bdscript       | ((F) Oogie’s present box (NM))          
+| obj\F_TR160\f_tr.bdscript       | ((F) WARNING message (TR))          
+| obj\N_TR010_BTL_L\n_tr.bdscript       | ((N) Sark (large) (BTL) (TR))          
+
+
 

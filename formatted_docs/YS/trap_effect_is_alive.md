@@ -14,10 +14,26 @@ checks if an effect is still alive
 | Name | Type
 |------|-----
 | unk   | unknown   
+Example Usage From magic\blizzard1\bliz.bdscript
+```plaintext
+L224:
+ pushFromFSpVal 32
+ syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
+ jz L338
+ pushFromFSpVal 28
+ syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
+ dup 
+ jnz L242
+ pushFromFSpVal 28
+ syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           
@@ -80,22 +96,5 @@ checks if an effect is still alive
 | obj\P_MU000\p_mu.bdscript       | ((P) Mulan)          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\blizzard1\bliz.bdscript</summary>
-```plaintext
-L224:
- pushFromFSpVal 32
- syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
- jz L338
- pushFromFSpVal 28
- syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
- dup 
- jnz L242
- pushFromFSpVal 28
- syscall 2, 39 ; trap_attack_is_reflect (1 in, 1 out)
- neqzv
-```
-</details>
 

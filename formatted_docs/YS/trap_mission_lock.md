@@ -9,10 +9,27 @@ Set the mutex lock for the mission, to inform other threads it is running
 |------|------|------------
 
 
+Example Usage From ard\al05\ms_b.bdscript
+```plaintext
+L44:
+ popToSp 4
+ popToSp 0
+ syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
+ eqz 
+ jz L66
+ pushImm 2
+ popToSpVal 0
+ pushFromFSp 4
+ popToSpVal 4
+ syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
+ jmp L66
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
@@ -283,23 +300,5 @@ Set the mutex lock for the mission, to inform other threads it is running
 | msn\WI06_MS102B\wi06.bdscript       |           
 | msn\WI07_MS102A\wi07.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\al05\ms_b.bdscript</summary>
-```plaintext
-L44:
- popToSp 4
- popToSp 0
- syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
- eqz 
- jz L66
- pushImm 2
- popToSpVal 0
- pushFromFSp 4
- popToSpVal 4
- syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
- jmp L66
-```
-</details>
 

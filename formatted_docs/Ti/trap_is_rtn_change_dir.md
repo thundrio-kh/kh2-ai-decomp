@@ -14,10 +14,23 @@ Return if the RTN is changing direction
 | Name | Type
 |------|-----
 | is_rtn_change_dir   | bool   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2569:
+ pushFromFSp 0
+ syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
+ jz L2582
+ pushFromFSp 0
+ syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
+ drop 
+ jmp L2582
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,19 +265,5 @@ Return if the RTN is changing direction
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2569:
- pushFromFSp 0
- syscall 5, 7 ; trap_is_rtn_change_dir (1 in, 1 out)
- jz L2582
- pushFromFSp 0
- syscall 5, 2 ; trap_reverse_path_way (1 in, 1 out)
- drop 
- jmp L2582
-```
-</details>
 

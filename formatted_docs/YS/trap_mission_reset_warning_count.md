@@ -10,18 +10,7 @@ Reset the warning flag for a counter
 | counter_id   | int   | id of a counter
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\N_CM020_BTL\n_cm.bdscript</summary>
+Example Usage From obj\N_CM020_BTL\n_cm.bdscript
 ```plaintext
 L5144:
  pushFromFSp 0
@@ -52,5 +41,15 @@ L5144:
  citf 
  memcpy 0
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\N_CM020_BTL\n_cm.bdscript       | ((N) Lexaeus (BTL) (CM))          
+
+
 

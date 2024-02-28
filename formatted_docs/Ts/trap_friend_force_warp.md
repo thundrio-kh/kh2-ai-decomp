@@ -10,21 +10,7 @@ Forces a friend to perform a warp
 | friend   | kn::Friend_0 *   | A friend object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
-| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
-| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L817:
  jz L1095
@@ -55,5 +41,18 @@ L817:
  jz L873
  jmp L1063
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          
+| obj\F_EH080\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (left) (EH))          
+| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
+
+
 

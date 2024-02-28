@@ -14,10 +14,27 @@ Returns if the damage from an attack is a finisher type
 | Name | Type
 |------|-----
 | is_finish   | bool   
+Example Usage From obj\B_BB110\b_bb.bdscript
+```plaintext
+L1372:
+ pushFromFSp 4
+ syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
+ syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
+ pushImm 4
+ sub 
+ eqz 
+ dup 
+ jz L1391
+ pushFromFSp 4
+ syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
+ eqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
@@ -45,23 +62,5 @@ Returns if the damage from an attack is a finisher type
 | obj\F_WI310\f_wi.bdscript       | ((F) ??? (WI))          
 | obj\M_EX880_DANCER_LV99\m_ex.bdscript       | ((M) Demyx’s water form (Data))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_BB110\b_bb.bdscript</summary>
-```plaintext
-L1372:
- pushFromFSp 4
- syscall 2, 64 ; trap_damage_orig_reaction (1 in, 1 out)
- syscall 2, 91 ; trap_damage_get_reaction_type (1 in, 1 out)
- pushImm 4
- sub 
- eqz 
- dup 
- jz L1391
- pushFromFSp 4
- syscall 2, 92 ; trap_damage_is_finish (1 in, 1 out)
- eqzv
-```
-</details>
 

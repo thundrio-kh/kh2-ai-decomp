@@ -11,10 +11,29 @@ fades light out
 | time   | int   | time to take to fade light out
 
 
+Example Usage From limit\trinity\limi.bdscript
+```plaintext
+L2462:
+ popToSp 4
+ popToSp 0
+ pushFromFSpVal 100
+ pushImm 0
+ sub 
+ neqz 
+ jz L2488
+ pushFromFSpVal 100
+ pushFromFSp 4
+ syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
+ pushImm 0
+ popToSpVal 100
+ jmp L2488
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           
@@ -57,25 +76,5 @@ fades light out
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\trinity\limi.bdscript</summary>
-```plaintext
-L2462:
- popToSp 4
- popToSp 0
- pushFromFSpVal 100
- pushImm 0
- sub 
- neqz 
- jz L2488
- pushFromFSpVal 100
- pushFromFSp 4
- syscall 1, 184 ; trap_light_fadeout (2 in, 0 out)
- pushImm 0
- popToSpVal 100
- jmp L2488
-```
-</details>
 

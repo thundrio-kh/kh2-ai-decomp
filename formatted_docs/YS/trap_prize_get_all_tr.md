@@ -10,18 +10,7 @@ Make all the hostile program orbs that are out disappear?
 | btlobj   | YS::BTLOBJ *   | A battle object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L10470:
  pushFromFSp 0
@@ -45,5 +34,15 @@ L10470:
  gosub 4, L8154
  jmp L10520
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+
+
 

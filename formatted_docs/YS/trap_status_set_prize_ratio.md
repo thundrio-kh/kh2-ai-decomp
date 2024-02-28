@@ -10,21 +10,7 @@ Set the range the player has to be from a prize to pick it up
 | range   | float   | The new prize range value
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| msn\MU01_MS103C\mu01.bdscript       |           
-| msn\MU02_MS103A\mu02.bdscript       |           
-| msn\MU02_MS103B\mu02.bdscript       |           
-| msn\MU03_MS104\mu03.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From msn\MU01_MS103C\mu01.bdscript</summary>
+Example Usage From msn\MU01_MS103C\mu01.bdscript
 ```plaintext
 TR3:
  gosub 4, L239
@@ -43,5 +29,18 @@ TR3:
  gosub 4, L270
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| msn\MU01_MS103C\mu01.bdscript       |           
+| msn\MU02_MS103A\mu02.bdscript       |           
+| msn\MU02_MS103B\mu02.bdscript       |           
+| msn\MU03_MS104\mu03.bdscript       |           
+
+
 

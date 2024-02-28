@@ -10,18 +10,7 @@ Stop the friend from following the player
 | friend   | kn::Friend_0 *   | A friend object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX260\b_ex.bdscript</summary>
+Example Usage From obj\B_EX260\b_ex.bdscript
 ```plaintext
 L5725:
  popToSp 0
@@ -42,5 +31,15 @@ L5725:
  syscall 10, 48 ; trap_friend_disable_follow_player (1 in, 0 out)
  jmp L5762
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+
+
 

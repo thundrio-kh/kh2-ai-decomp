@@ -14,10 +14,24 @@ Returns if the object is jumping.
 | Name | Type
 |------|-----
 | is_jump   | bool   
+Example Usage From magic\FIRE_1\fire.bdscript
+```plaintext
+L47:
+ pushFromPSpVal 0
+ syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
+ jz L65
+ pushImm 5
+ popToSp 8
+ pushImm 7
+ popToSp 16
+ jmp L75
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | magic\FIRE_1\fire.bdscript       |           
@@ -181,20 +195,5 @@ Returns if the object is jumping.
 | obj\P_EX130\p_ex.bdscript       | ((P) Shadow Roxas)          
 | obj\P_EX230\p_ex.bdscript       | ((P) Mickey (with Keyblade))          
 
-</details>
 
-<details>
-	<summary>Example Usage From magic\FIRE_1\fire.bdscript</summary>
-```plaintext
-L47:
- pushFromPSpVal 0
- syscall 1, 57 ; trap_obj_is_jump (1 in, 1 out)
- jz L65
- pushImm 5
- popToSp 8
- pushImm 7
- popToSp 16
- jmp L75
-```
-</details>
 

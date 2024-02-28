@@ -14,10 +14,29 @@ Get the parameter for an RTN action
 | Name | Type
 |------|-----
 | param   | int   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2305:
+ popToSp 0
+ pushFromFSp 0
+ syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)
+ memcpyToSp 12, 4
+ pushFromPSp 4
+ memcpyToSpVal 12, 16
+ pushFromPSpVal 16
+ fetchValue 0
+ dup 
+ pushImm 4
+ sub 
+ jz L2332
+ jmp L2340
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,25 +271,5 @@ Get the parameter for an RTN action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2305:
- popToSp 0
- pushFromFSp 0
- syscall 5, 5 ; trap_get_rtn_action (1 in, 1 out)
- memcpyToSp 12, 4
- pushFromPSp 4
- memcpyToSpVal 12, 16
- pushFromPSpVal 16
- fetchValue 0
- dup 
- pushImm 4
- sub 
- jz L2332
- jmp L2340
-```
-</details>
 

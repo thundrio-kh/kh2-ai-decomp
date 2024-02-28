@@ -11,10 +11,25 @@ Removes a created lookat object in the specified time
 | time   | float   | Amount of frames before the lookat is ended
 
 
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L1973:
+ pushFromFSp 0
+ pushImmf 20
+ syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
+ pushFromFSp 0
+ pushImm 0
+ pushImmf 8
+ gosub 12, L1413
+ pushImmf 10
+ popToSp 32
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -249,21 +264,5 @@ Removes a created lookat object in the specified time
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L1973:
- pushFromFSp 0
- pushImmf 20
- syscall 1, 176 ; trap_obj_look_end (2 in, 0 out)
- pushFromFSp 0
- pushImm 0
- pushImmf 8
- gosub 12, L1413
- pushImmf 10
- popToSp 32
-```
-</details>
 

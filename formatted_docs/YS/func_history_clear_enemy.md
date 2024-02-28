@@ -9,20 +9,7 @@ Appears to clear out the history (cache?) of enemies in the current room.
 |------|------|------------
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          
-| obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          
-| obj\F_WI390_RTN\f_wi.bdscript       | ((F) Steamboat’s hook (RTN) (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX240\b_ex.bdscript</summary>
+Example Usage From obj\B_EX240\b_ex.bdscript
 ```plaintext
 L4498:
  syscall 1, 44 ; func_history_clear_enemy (0 in, 0 out)
@@ -41,5 +28,17 @@ L4498:
  gosub 4, L204
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          
+| obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          
+| obj\F_WI390_RTN\f_wi.bdscript       | ((F) Steamboat’s hook (RTN) (WI))          
+
+
 

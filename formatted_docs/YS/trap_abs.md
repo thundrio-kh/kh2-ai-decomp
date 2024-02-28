@@ -14,18 +14,7 @@ Takes a integer and returns the absolute value of that integer
 | Name | Type
 |------|-----
 | abs_value   | int   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_TR150\f_tr.bdscript</summary>
+Example Usage From obj\F_TR150\f_tr.bdscript
 ```plaintext
 L2016:
  jz L2056
@@ -50,5 +39,15 @@ L2016:
  popToSp 4
  jmp L2056
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
+
+
 

@@ -11,10 +11,30 @@ Set the target of an object to be before the player
 | priority   | int   | Priority of the target
 
 
+Example Usage From msn\MU01_MS102\mu01.bdscript
+```plaintext
+TR3:
+ pushImm 19155
+ syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
+ gosub 8, L291
+ pushFromPSp 0
+ pushImm 100
+ syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
+ pushFromPSp 0
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L263
+ pushFromPSp 0
+ pushImm 0
+ syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
+ jmp L263
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\MU01_MS102\mu01.bdscript       |           
@@ -40,26 +60,5 @@ Set the target of an object to be before the player
 | obj\N_HE030_BTL_DEF\n_he.bdscript       | ((N) Megara (Pete battle) (BTL_DEF) (HE))          
 | obj\N_LK020_BTL\n_lk.bdscript       | ((N) Pumba (BTL) (LK))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\MU01_MS102\mu01.bdscript</summary>
-```plaintext
-TR3:
- pushImm 19155
- syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- gosub 8, L291
- pushFromPSp 0
- pushImm 100
- syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 0
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L263
- pushFromPSp 0
- pushImm 0
- syscall 1, 162 ; trap_target_set_before_player (2 in, 0 out)
- jmp L263
-```
-</details>
 

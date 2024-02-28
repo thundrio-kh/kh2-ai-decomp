@@ -10,10 +10,27 @@ Shows a group for the map.
 | groupNumber   | int   | groupNumber to hide
 
 
+Example Usage From ard\he03\he_t.bdscript
+```plaintext
+L100:
+ popToSp 0
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 16
+ pushFromFSp 16
+ syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
+ jz L122
+ pushFromFSp 8
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ jmp L122
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           
@@ -79,23 +96,5 @@ Shows a group for the map.
 | obj\F_WI350\f_wi.bdscript       | ((F) Lilliput houses 4 (WI))          
 | obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
-```plaintext
-L100:
- popToSp 0
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- pushFromFSp 16
- syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
- jz L122
- pushFromFSp 8
- syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- jmp L122
-```
-</details>
 

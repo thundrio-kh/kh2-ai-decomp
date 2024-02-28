@@ -13,15 +13,14 @@ Signal an object to reserve an HP value
 | arg   | int   | Argument to call signal with
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

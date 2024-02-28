@@ -15,10 +15,43 @@ Performs vector subtraction (vec1 - vec2)
 | Name | Type
 |------|-----
 | res   | kn::FVector *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L511:
+ pushFromPSp 48
+ pushImmf 0.523599
+ pushImmf 0
+ pushImmf 0.523599
+ pushImmf 500
+ pushImmf 0
+ gosub 52, L1710
+ pushFromFSp 180
+ syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
+ jz L573
+ pushFromPSp 176
+ pushImmf 60
+ memcpy 0
+ pushFromPSp 48
+ pushFromFSp 180
+ syscall 1, 120 ; trap_target_pos (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 208
+ pushFromPSp 208
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 224
+ pushFromPSp 224
+ gosub 64, L1936
+ jmp L592
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -895,39 +928,5 @@ Performs vector subtraction (vec1 - vec2)
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L511:
- pushFromPSp 48
- pushImmf 0.523599
- pushImmf 0
- pushImmf 0.523599
- pushImmf 500
- pushImmf 0
- gosub 52, L1710
- pushFromFSp 180
- syscall 1, 140 ; trap_target_is_exist (1 in, 1 out)
- jz L573
- pushFromPSp 176
- pushImmf 60
- memcpy 0
- pushFromPSp 48
- pushFromFSp 180
- syscall 1, 120 ; trap_target_pos (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 208
- pushFromPSp 208
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 224
- pushFromPSp 224
- gosub 64, L1936
- jmp L592
-```
-</details>
 

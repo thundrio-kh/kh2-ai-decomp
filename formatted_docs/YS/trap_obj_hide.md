@@ -10,10 +10,22 @@ Hides all parts of an object
 | obj   | YS::OBJ_130 *   | An object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3659:
+ popToSp 0
+ pushFromPSpVal 4
+ syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+ pushFromPSpVal 20
+ syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -108,18 +120,5 @@ Hides all parts of an object
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3659:
- popToSp 0
- pushFromPSpVal 4
- syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
- pushFromPSpVal 20
- syscall 1, 133 ; trap_obj_hide (1 in, 0 out)
- ret
-```
-</details>
 

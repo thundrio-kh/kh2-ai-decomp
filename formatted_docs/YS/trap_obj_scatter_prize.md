@@ -11,10 +11,20 @@ Scatter a number of prize orbs from an enemy
 | num   | int   | Number to scatter
 
 
+Example Usage From obj\B_AL100_1ST\b_al.bdscript
+```plaintext
+L185:
+ pushFromPWp W320
+ pushImm 137
+ syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
+ jmp L194
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
@@ -474,16 +484,5 @@ Scatter a number of prize orbs from an enemy
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL100_1ST\b_al.bdscript</summary>
-```plaintext
-L185:
- pushFromPWp W320
- pushImm 137
- syscall 1, 92 ; trap_obj_scatter_prize (2 in, 0 out)
- jmp L194
-```
-</details>
 

@@ -13,10 +13,31 @@ Set parameters for the specified counter
 | id   | int   | id of a counter
 
 
+Example Usage From msn\AL00_SKATE_01\al00.bdscript
+```plaintext
+L237:
+ pushFromFSpVal 0
+ syscall 4, 35 ; trap_score_type (1 in, 1 out)
+ pushImm 6
+ sub 
+ neqz 
+ jz L268
+ pushImm 0
+ pushImm 0
+ pushFromFSpVal 0
+ syscall 4, 36 ; trap_score_score (1 in, 1 out)
+ pushImm 1
+ add 
+ pushFromFSpVal 4
+ syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
+ jmp L268
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
@@ -85,27 +106,5 @@ Set parameters for the specified counter
 | obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          
 | obj\B_EX120_HB_LV99\b_ex.bdscript       | ((B99) Demyx (Limit Cut))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\AL00_SKATE_01\al00.bdscript</summary>
-```plaintext
-L237:
- pushFromFSpVal 0
- syscall 4, 35 ; trap_score_type (1 in, 1 out)
- pushImm 6
- sub 
- neqz 
- jz L268
- pushImm 0
- pushImm 0
- pushFromFSpVal 0
- syscall 4, 36 ; trap_score_score (1 in, 1 out)
- pushImm 1
- add 
- pushFromFSpVal 4
- syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
- jmp L268
-```
-</details>
 

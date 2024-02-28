@@ -11,18 +11,7 @@ Changes the genies form
 | formCommand   | int   | Which form to change to
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_AL010\p_al.bdscript</summary>
+Example Usage From obj\P_AL010\p_al.bdscript
 ```plaintext
 L68:
  pushFromPWp W312
@@ -59,5 +48,15 @@ L68:
  memcpy 0
  jmp L137
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+
+
 

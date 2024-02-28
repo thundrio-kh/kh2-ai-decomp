@@ -10,18 +10,7 @@ Sets the background animation speed of the map. Only used by Hostile Program to 
 | ratio   | float   | ratio to set for animation speed. Used values are 0 and 1
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L402:
  gosub 12, L440
@@ -30,5 +19,15 @@ L402:
  pushImmf 0
  syscall 1, 326 ; trap_bg_set_animation_speed (1 in, 0 out)
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+
+
 

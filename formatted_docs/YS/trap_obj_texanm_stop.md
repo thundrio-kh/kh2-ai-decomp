@@ -11,26 +11,7 @@ Stops a specific animation
 | id   | int   | ID of the animation
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
-| obj\B_EX110_LV99\b_ex.bdscript       | ((B99) Axel (Limit Cut))          
-| obj\B_EX110_SKIRMISH\b_ex.bdscript       | ((B) Axel (boss, freezes when RC is used) (SKIRMISH) (EX))          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
-| obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          
-| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
-| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX110\b_ex.bdscript</summary>
+Example Usage From obj\B_EX110\b_ex.bdscript
 ```plaintext
 L11734:
  popToSp 0
@@ -86,5 +67,23 @@ L11734:
  syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)
  jmp L11939
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
+| obj\B_EX110_LV99\b_ex.bdscript       | ((B99) Axel (Limit Cut))          
+| obj\B_EX110_SKIRMISH\b_ex.bdscript       | ((B) Axel (boss, freezes when RC is used) (SKIRMISH) (EX))          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
+| obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          
+| obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
+| obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          
+
+
 

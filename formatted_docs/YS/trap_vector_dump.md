@@ -11,46 +11,7 @@ Normally does nothing in production game. When running the PC version of the gam
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
-| obj\B_CA060\b_ca.bdscript       | ((?) Port Royal enemy?)          
-| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
-| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\B_EX170\b_ex.bdscript       | ((B) Xemnas)          
-| obj\B_EX170_LV99\b_ex.bdscript       | ((B99) Xemnas (Limit Cut Memory’s Contortion))          
-| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_HE110\b_he.bdscript       | ((B) Hydra head (Out of the ground))          
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
-| obj\F_HB050\f_hb.bdscript       | ((F) CoR’s pushing pillar (HB))          
-| obj\F_HB050_23\f_hb.bdscript       | ((F) CoR’s pushing pillar 2 (HB))          
-| obj\F_HB060\f_hb.bdscript       | ((F) CoR’s rising pillar (HB))          
-| obj\F_HB140\f_hb.bdscript       | ((F) Cavern of Remembrance big pushing block (HB))          
-| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
-| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
-| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
-| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
-| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
-| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
-| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
-| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
-| obj\M_EX800_DC\m_ex.bdscript       | ((M) Bolt Tower (DC))          
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
+Example Usage From obj\B_AL020\b_al.bdscript
 ```plaintext
 L3114:
  popToSp 4
@@ -134,5 +95,43 @@ L3114:
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
+| obj\B_CA060\b_ca.bdscript       | ((?) Port Royal enemy?)          
+| obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          
+| obj\B_EX130_LV99\b_ex.bdscript       | ((B99) Xaldin (Limit Cut))          
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\B_EX170\b_ex.bdscript       | ((B) Xemnas)          
+| obj\B_EX170_LV99\b_ex.bdscript       | ((B99) Xemnas (Limit Cut Memory’s Contortion))          
+| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_HE110\b_he.bdscript       | ((B) Hydra head (Out of the ground))          
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+| obj\B_NM110\b_nm.bdscript       | ((B) The Experiment)          
+| obj\F_HB050\f_hb.bdscript       | ((F) CoR’s pushing pillar (HB))          
+| obj\F_HB050_23\f_hb.bdscript       | ((F) CoR’s pushing pillar 2 (HB))          
+| obj\F_HB060\f_hb.bdscript       | ((F) CoR’s rising pillar (HB))          
+| obj\F_HB140\f_hb.bdscript       | ((F) Cavern of Remembrance big pushing block (HB))          
+| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
+| obj\F_NM130\f_nm.bdscript       | ((F) ??? (NM))          
+| obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
+| obj\M_EX350_10\m_ex.bdscript       | ((M) Mushroom 10 (EX))          
+| obj\M_EX770\m_ex.bdscript       | ((M) Surveillance Robot)          
+| obj\M_EX770_RAW\m_ex.bdscript       | ((M) Surveillance Robot (RAW) (1000 battle))          
+| obj\M_EX770_TR\m_ex.bdscript       | ((M) Surveillance Robot (TR))          
+| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
+| obj\M_EX800_DC\m_ex.bdscript       | ((M) Bolt Tower (DC))          
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
+
+
 

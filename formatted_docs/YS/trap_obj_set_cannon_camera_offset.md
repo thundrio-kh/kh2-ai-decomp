@@ -12,18 +12,7 @@ Sets the present cannon camera offset
 | offset2   | kn::FVector *   | Second offset
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_NM180\f_nm.bdscript</summary>
+Example Usage From obj\F_NM180\f_nm.bdscript
 ```plaintext
 TR0:
  popToSp 0
@@ -54,5 +43,15 @@ TR0:
  syscall 1, 333 ; trap_obj_set_cannon_param (5 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          
+
+
 

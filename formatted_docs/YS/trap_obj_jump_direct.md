@@ -11,10 +11,36 @@ Makes an object jump probably 10 units.
 | unk   | unknown   | Unknown what this is used for
 
 
+Example Usage From limit\auron\limi.bdscript
+```plaintext
+L1200:
+ popToSp 0
+ pushFromPWp W108
+ fetchValue 0
+ pushFromFSp 0
+ pushImm 252
+ pushImmf 0
+ syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
+ drop 
+ pushFromPSp 16
+ pushImmf 1
+ gosub 12, L1323
+ pushFromFSp 0
+ pushFromPSp 16
+ syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
+ pushFromFSp 0
+ pushImm -1
+ syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
@@ -59,32 +85,5 @@ Makes an object jump probably 10 units.
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\auron\limi.bdscript</summary>
-```plaintext
-L1200:
- popToSp 0
- pushFromPWp W108
- fetchValue 0
- pushFromFSp 0
- pushImm 252
- pushImmf 0
- syscall 2, 47 ; trap_limit_motion_start (4 in, 1 out)
- drop 
- pushFromPSp 16
- pushImmf 1
- gosub 12, L1323
- pushFromFSp 0
- pushFromPSp 16
- syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
- pushFromFSp 0
- pushImm -1
- syscall 1, 179 ; trap_obj_set_fall_motion (2 in, 0 out)
- pushFromFSp 0
- pushImm -1
- syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)
-```
-</details>
 

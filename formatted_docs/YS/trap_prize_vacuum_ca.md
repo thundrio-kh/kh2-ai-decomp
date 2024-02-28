@@ -16,19 +16,7 @@ Vacuums up a number of medals from one object to the target
 | Name | Type
 |------|-----
 | all_vacuumed   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
-| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
+Example Usage From obj\B_CA050\b_ca.bdscript
 ```plaintext
 L6690:
  jz L6758
@@ -50,5 +38,16 @@ L6690:
  drop 
  jmp L6725
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
+| obj\M_EX890\m_ex.bdscript       | ((M) Dragoon)          
+
+
 

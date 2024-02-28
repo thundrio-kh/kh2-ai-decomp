@@ -14,21 +14,7 @@ checks if a menuflag is activated
 | Name | Type
 |------|-----
 | is_checked   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| ard\he03\he_t.bdscript       |           
-| msn\TT04_MS00\tt04.bdscript       |           
-| msn\TT04_MS01\tt04.bdscript       |           
-| msn\TT04_MS02\tt04.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From ard\he03\he_t.bdscript</summary>
+Example Usage From ard\he03\he_t.bdscript
 ```plaintext
 L100:
  popToSp 0
@@ -43,5 +29,18 @@ L100:
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
  jmp L122
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| ard\he03\he_t.bdscript       |           
+| msn\TT04_MS00\tt04.bdscript       |           
+| msn\TT04_MS01\tt04.bdscript       |           
+| msn\TT04_MS02\tt04.bdscript       |           
+
+
 

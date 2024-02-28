@@ -15,10 +15,35 @@ Allocates an amount of work memory
 | Name | Type
 |------|-----
 | result   | int   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L116:
+ pushImm 3
+ pushImm 12
+ syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
+ popToWp W0
+ pushFromFWp W0
+ fetchValue 0
+ eqz 
+ jz L155
+ pushFromFWp W0
+ pushImm 4
+ add 
+ pushImm 0
+ memcpy 0
+ pushFromFWp W0
+ pushImm 8
+ add 
+ pushImmf 60
+ memcpy 0
+ jmp L155
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -188,31 +213,5 @@ Allocates an amount of work memory
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L116:
- pushImm 3
- pushImm 12
- syscall 2, 21 ; trap_teamwork_alloc (2 in, 1 out)
- popToWp W0
- pushFromFWp W0
- fetchValue 0
- eqz 
- jz L155
- pushFromFWp W0
- pushImm 4
- add 
- pushImm 0
- memcpy 0
- pushFromFWp W0
- pushImm 8
- add 
- pushImmf 60
- memcpy 0
- jmp L155
-```
-</details>
 

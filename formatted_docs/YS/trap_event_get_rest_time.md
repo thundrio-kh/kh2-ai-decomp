@@ -22,21 +22,7 @@ def GetRestTime:
 | Name | Type
 |------|-----
 | rest_time   | float   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\M_EX660_WI_RAW\m_ex.bdscript       | ()          
-| obj\M_EX760_NM_RAW\m_ex.bdscript       | ()          
-| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
-| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript</summary>
+Example Usage From obj\M_EX660_WI_RAW\m_ex.bdscript
 ```plaintext
 L2592:
  syscall 1, 274 ; trap_event_get_rest_time (0 in, 1 out)
@@ -47,5 +33,18 @@ L2592:
  halt 
  jmp L2592
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\M_EX660_WI_RAW\m_ex.bdscript       | ()          
+| obj\M_EX760_NM_RAW\m_ex.bdscript       | ()          
+| obj\M_EX770_TR_RAW\m_ex.bdscript       | ()          
+| obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
+
+
 

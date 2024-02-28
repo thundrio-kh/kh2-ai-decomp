@@ -14,10 +14,26 @@ Checks if an object is playing a damage animation
 | Name | Type
 |------|-----
 | is_damage_motion   | bool   
+Example Usage From obj\B_AL020\b_al.bdscript
+```plaintext
+L2783:
+ pushFromPSp 4
+ syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
+ jz L2804
+ pushFromPSp 32
+ pushImmf 1
+ gosub 28, L1838
+ pushFromPSp 4
+ pushFromPSp 32
+ syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
+ jmp L2804
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
@@ -33,22 +49,5 @@ Checks if an object is playing a damage animation
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
 | obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_AL020\b_al.bdscript</summary>
-```plaintext
-L2783:
- pushFromPSp 4
- syscall 6, 63 ; trap_obj_is_damage_motion (1 in, 1 out)
- jz L2804
- pushFromPSp 32
- pushImmf 1
- gosub 28, L1838
- pushFromPSp 4
- pushFromPSp 32
- syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
- jmp L2804
-```
-</details>
 

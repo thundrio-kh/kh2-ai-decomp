@@ -9,10 +9,22 @@ Turns on temporary barriers, like those used during the escape from Hades sequen
 |------|------|------------
 
 
+Example Usage From msn\HB16_MS404B\hb16.bdscript
+```plaintext
+L33:
+ pushImm 21
+ syscall 1, 37 ; trap_bg_show (1 in, 0 out)
+ pushImm 8077
+ syscall 4, 4 ; trap_mission_information (1 in, 0 out)
+ syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
+ jmp L65
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB16_MS404B\hb16.bdscript       |           
@@ -26,18 +38,5 @@ Turns on temporary barriers, like those used during the escape from Hades sequen
 | msn\HE05_MS102\he05.bdscript       |           
 | msn\TT40_KINOKO_AXE\kino.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HB16_MS404B\hb16.bdscript</summary>
-```plaintext
-L33:
- pushImm 21
- syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- pushImm 8077
- syscall 4, 4 ; trap_mission_information (1 in, 0 out)
- syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
- jmp L65
-```
-</details>
 

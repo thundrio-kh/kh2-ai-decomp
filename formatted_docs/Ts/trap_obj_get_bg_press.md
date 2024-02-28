@@ -14,35 +14,7 @@ get the press position of an object
 | Name | Type
 |------|-----
 | pos   | kn::FVector *   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\donald\limi.bdscript       |           
-| limit\donald_wi\limi.bdscript       |           
-| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
-| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
-| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
-| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
-| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
-| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
-| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
-| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
-| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
-| obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          
-| obj\M_EX210_HB\m_ex.bdscript       | ((M) Aerial Viking)          
-| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
-| obj\N_HB500_BTL\n_hb.bdscript       | ()          
-| obj\N_HB530_BOSS\n_hb.bdscript       | ((N) Squall / Leon (BOSS) (HB))          
-| obj\N_HB530_BTL\n_hb.bdscript       | ((N) Squall / Leon (BTL) (HB))          
-| obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\donald\limi.bdscript</summary>
+Example Usage From limit\donald\limi.bdscript
 ```plaintext
 L1848:
  popToSp 4
@@ -86,5 +58,32 @@ L1848:
  jz L1933
  jmp L2267
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\donald\limi.bdscript       |           
+| limit\donald_wi\limi.bdscript       |           
+| obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
+| obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
+| obj\B_AL100_FIRE\b_al.bdscript       | ((B) Volcanic Lord)          
+| obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          
+| obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
+| obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
+| obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
+| obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
+| obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
+| obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          
+| obj\M_EX210_HB\m_ex.bdscript       | ((M) Aerial Viking)          
+| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
+| obj\N_HB500_BTL\n_hb.bdscript       | ()          
+| obj\N_HB530_BOSS\n_hb.bdscript       | ((N) Squall / Leon (BOSS) (HB))          
+| obj\N_HB530_BTL\n_hb.bdscript       | ((N) Squall / Leon (BTL) (HB))          
+| obj\P_TR010\p_tr.bdscript       | ((P) ??? (TR))          
+
+
 

@@ -15,20 +15,7 @@ Checks if the effect still exists
 | Name | Type
 |------|-----
 | is_effect_exist   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
-| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
-| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EH000\p_eh.bdscript</summary>
+Example Usage From obj\P_EH000\p_eh.bdscript
 ```plaintext
 L2908:
  dup 
@@ -38,5 +25,17 @@ L2908:
  syscall 10, 54 ; trap_friend_is_effect_exist (2 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
+| obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          
+| obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
+
+
 

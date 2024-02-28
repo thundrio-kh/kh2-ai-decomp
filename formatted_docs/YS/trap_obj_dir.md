@@ -14,10 +14,25 @@ Returns the direction of the object
 | Name | Type
 |------|-----
 | dir   | kn::FVector   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L573:
+ pushFromPSp 176
+ pushImmf 0
+ memcpy 0
+ pushFromPSp 48
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 192
+ pushFromPSp 192
+ gosub 56, L1936
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -701,21 +716,5 @@ Returns the direction of the object
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L573:
- pushFromPSp 176
- pushImmf 0
- memcpy 0
- pushFromPSp 48
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 192
- pushFromPSp 192
- gosub 56, L1936
-```
-</details>
 

@@ -12,10 +12,28 @@ Starts playing a motion set entry
 | blend_time   | float   | Time to take to blend the animations
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2778:
+ popToSp 0
+ pushFromPWp W0
+ fetchValue 148
+ jz L2804
+ pushFromPWp W0
+ pushImm 20
+ add 
+ fetchValue 4
+ pushImm 0
+ pushImmf 8
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+ jmp L2804
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -592,24 +610,5 @@ Starts playing a motion set entry
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2778:
- popToSp 0
- pushFromPWp W0
- fetchValue 148
- jz L2804
- pushFromPWp W0
- pushImm 20
- add 
- fetchValue 4
- pushImm 0
- pushImmf 8
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
- jmp L2804
-```
-</details>
 

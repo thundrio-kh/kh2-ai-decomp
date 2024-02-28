@@ -10,19 +10,7 @@ Levels up the specified unit group of spawns
 | unit   | YS::UNIT_GROUP_8 *   | A unit group
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          
-| obj\F_CA060_MEDAL\f_ca.bdscript       | ((F) ??? - Attackable floor? (MEDAL) (CA))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_CA060\f_ca.bdscript</summary>
+Example Usage From obj\F_CA060\f_ca.bdscript
 ```plaintext
 L2170:
  popToSp 0
@@ -63,5 +51,16 @@ L2170:
  drop 
  jmp L2249
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          
+| obj\F_CA060_MEDAL\f_ca.bdscript       | ((F) ??? - Attackable floor? (MEDAL) (CA))          
+
+
 

@@ -11,26 +11,7 @@ value"
 | description   | string   | A string, should be pushed to the stack using pushFromPAi
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
-| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
-| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
-| obj\B_NM000\b_nm.bdscript       | ((B) Oogie Boogie)          
-| obj\F_AL000\f_al.bdscript       | ((F) Water spitting statue (AL))          
-| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
-| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
-| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
-| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX150\b_ex.bdscript</summary>
+Example Usage From obj\B_EX150\b_ex.bdscript
 ```plaintext
 L3409:
  pushFromFSp 0
@@ -48,5 +29,23 @@ L3409:
  popToSpVal 128
  jmp L3438
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
+| obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
+| obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          
+| obj\B_NM000\b_nm.bdscript       | ((B) Oogie Boogie)          
+| obj\F_AL000\f_al.bdscript       | ((F) Water spitting statue (AL))          
+| obj\M_EX910\m_ex.bdscript       | ((M) Samurai)          
+| obj\N_NM050_BTL\n_nm.bdscript       | ((N) Lock (BTL) (NM))          
+| obj\N_NM060_BTL\n_nm.bdscript       | ((N) Shock (BTL) (NM))          
+| obj\N_NM070_BTL\n_nm.bdscript       | ((N) Barrel (BTL) (NM))          
+
+
 

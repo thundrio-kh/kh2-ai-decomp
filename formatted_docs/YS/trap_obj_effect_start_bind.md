@@ -17,10 +17,32 @@ Starts an effect associated with an object and binds it to that object
 | Name | Type
 |------|-----
 | effect   | ryj::EFFECT_310   
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L7676:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSpVal 0
+ pushImm 0
+ sub 
+ eqz 
+ jz L7708
+ pushFromFSp 12
+ pushFromFSp 8
+ pushImm 0
+ pushFromFSp 4
+ syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
+ popToSpVal 0
+ jmp L7708
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -591,28 +613,5 @@ Starts an effect associated with an object and binds it to that object
 | obj\W_EX010_ROXAS_DARK\w_ex.bdscript       | ((W) Roxas’s Oblivion)          
 | obj\W_EX010_ROXAS_LIGHT\w_ex.bdscript       | ((W) Roxas’s Oathkeeper)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L7676:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 0
- pushFromFSpVal 0
- pushImm 0
- sub 
- eqz 
- jz L7708
- pushFromFSp 12
- pushFromFSp 8
- pushImm 0
- pushFromFSp 4
- syscall 1, 87 ; trap_obj_effect_start_bind (4 in, 1 out)
- popToSpVal 0
- jmp L7708
-```
-</details>
 

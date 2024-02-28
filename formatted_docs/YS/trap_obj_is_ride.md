@@ -14,21 +14,7 @@ Checks if the ride flag is checked on the object
 | Name | Type
 |------|-----
 | is_ride   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
-| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
-| obj\F_WI360\f_wi.bdscript       | ((F) Building site’s platform (WI))          
-| obj\F_WI360_PETE\f_wi.bdscript       | ((F) Building site’s platform (PETE) (WI))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_LK120\b_lk.bdscript</summary>
+Example Usage From obj\B_LK120\b_lk.bdscript
 ```plaintext
 L5360:
  popToSp 0
@@ -62,5 +48,18 @@ L5360:
  syscall 1, 254 ; trap_obj_is_ride (1 in, 1 out)
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
+| obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          
+| obj\F_WI360\f_wi.bdscript       | ((F) Building site’s platform (WI))          
+| obj\F_WI360_PETE\f_wi.bdscript       | ((F) Building site’s platform (PETE) (WI))          
+
+
 

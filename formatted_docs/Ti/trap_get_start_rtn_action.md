@@ -14,10 +14,22 @@ Get the param for the start of an RTN action
 | Name | Type
 |------|-----
 | param   | int   
+Example Usage From obj\B_EX110_RTN\rtn_.bdscript
+```plaintext
+L2269:
+ pushFromFSp 0
+ syscall 5, 0 ; trap_get_start_rtn_action (1 in, 1 out)
+ jz L2281
+ pushFromFSp 0
+ gosub 12, L2305
+ jmp L2281
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
@@ -252,18 +264,5 @@ Get the param for the start of an RTN action
 | obj\W_EX010_V0_RTN\rtn_.bdscript       | ((W) Struggle Wand (RTN))          
 | obj\W_EX010_W0_RTN\rtn_.bdscript       | ((W) Struggle Sword (RTN))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX110_RTN\rtn_.bdscript</summary>
-```plaintext
-L2269:
- pushFromFSp 0
- syscall 5, 0 ; trap_get_start_rtn_action (1 in, 1 out)
- jz L2281
- pushFromFSp 0
- gosub 12, L2305
- jmp L2281
-```
-</details>
 

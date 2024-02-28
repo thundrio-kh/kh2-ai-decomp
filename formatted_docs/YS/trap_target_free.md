@@ -10,10 +10,22 @@ Free a target object
 | target   | YS::TARGET_108 *   | A target object
 
 
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L3420:
+ popToSp 0
+ pushFromFSpVal 48
+ syscall 1, 132 ; trap_target_free (1 in, 0 out)
+ pushFromFSp 0
+ syscall 0, 48 ; trap_memory_free (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -277,18 +289,5 @@ Free a target object
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L3420:
- popToSp 0
- pushFromFSpVal 48
- syscall 1, 132 ; trap_target_free (1 in, 0 out)
- pushFromFSp 0
- syscall 0, 48 ; trap_memory_free (1 in, 0 out)
- ret
-```
-</details>
 

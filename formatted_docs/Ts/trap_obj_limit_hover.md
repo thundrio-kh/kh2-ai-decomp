@@ -13,19 +13,7 @@ Hover an object as part of a limit
 | brake_slow   | float   | Slow brake speed
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| limit\tron\limi.bdscript       |           
-| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
-
-</details>
-
-<details>
-	<summary>Example Usage From limit\tron\limi.bdscript</summary>
+Example Usage From limit\tron\limi.bdscript
 ```plaintext
 L1340:
  popToSp 4
@@ -46,5 +34,16 @@ L1340:
  syscall 6, 26 ; trap_obj_limit_hover (4 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| limit\tron\limi.bdscript       |           
+| obj\P_AL010\p_al.bdscript       | ((P) Genie)          
+
+
 

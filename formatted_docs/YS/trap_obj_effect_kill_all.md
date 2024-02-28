@@ -10,19 +10,7 @@ Kills all effects for an object PAX
 | pax   | ryj::PAX_161 *   | A PAX effect
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_HB020\f_hb.bdscript</summary>
+Example Usage From obj\F_HB020\f_hb.bdscript
 ```plaintext
 L9368:
  popToSp 0
@@ -32,5 +20,16 @@ L9368:
  syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          
+
+
 

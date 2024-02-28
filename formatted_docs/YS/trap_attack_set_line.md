@@ -12,10 +12,40 @@ Sets a line for an attack that needs a line set
 | p2   | kn::FVector *   | The position of the other end of the line to be set
 
 
+Example Usage From limit\riku\limi.bdscript
+```plaintext
+L6269:
+ pushFromFSpVal 68
+ pushImm 0
+ sub 
+ neqz 
+ jz L6319
+ pushFromFSpVal 252
+ pushImmf 0
+ subf 
+ supzf 
+ jz L6311
+ pushFromFSpVal 68
+ pushFromPSpVal 32
+ pushFromPSp 80
+ syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
+ pushFromPSp 80
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushFromFSpVal 252
+ negf 
+ addf 
+ memcpy 0
+ jmp L6317
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
@@ -73,36 +103,5 @@ Sets a line for an attack that needs a line set
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\riku\limi.bdscript</summary>
-```plaintext
-L6269:
- pushFromFSpVal 68
- pushImm 0
- sub 
- neqz 
- jz L6319
- pushFromFSpVal 252
- pushImmf 0
- subf 
- supzf 
- jz L6311
- pushFromFSpVal 68
- pushFromPSpVal 32
- pushFromPSp 80
- syscall 2, 19 ; trap_attack_set_line (3 in, 0 out)
- pushFromPSp 80
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushFromFSpVal 252
- negf 
- addf 
- memcpy 0
- jmp L6317
-```
-</details>
 

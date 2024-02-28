@@ -13,15 +13,14 @@ Divides the total cost of all objects currently spawned by the capacity of the r
 | Name | Type
 |------|-----
 | percentage   | percentage of rooms capacity that is currently used   
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

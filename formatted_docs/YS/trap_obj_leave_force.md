@@ -10,10 +10,20 @@ Forces an object to leave
 | obj   | YS::OBJ_125 *   | An object
 
 
+Example Usage From obj\B_EX310\b_ex.bdscript
+```plaintext
+L2726:
+ popToSp 0
+ pushFromFSp 0
+ syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_EX310\b_ex.bdscript       | ((F) Xemnas armor - Xaldin’s spears)          
@@ -82,16 +92,5 @@ Forces an object to leave
 | obj\N_WI010_BTL\n_wi.bdscript       | ((N) Pete (captain) (BTL) (WI))          
 | obj\N_WI010_BTL_VS\n_wi.bdscript       | ((N) Pete (captain) (BTL_VS) (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_EX310\b_ex.bdscript</summary>
-```plaintext
-L2726:
- popToSp 0
- pushFromFSp 0
- syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)
- ret
-```
-</details>
 

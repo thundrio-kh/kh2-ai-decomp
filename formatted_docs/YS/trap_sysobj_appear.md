@@ -14,10 +14,23 @@ Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 | Name | Type
 |------|-----
 | crowd_event   | YS::CROWD_EVENT_4   
+Example Usage From ard\he05\f_he.bdscript
+```plaintext
+L255:
+ popToSp 4
+ popToSp 0
+ pushFromFSp 0
+ pushFromFSp 4
+ syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
+ gosub 4, L268
+ ret
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | ard\he05\f_he.bdscript       |           
@@ -95,19 +108,5 @@ Has the object appear the 0,0,0 of the map with a 3.14 rotation value
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From ard\he05\f_he.bdscript</summary>
-```plaintext
-L255:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- syscall 1, 0 ; trap_sysobj_appear (1 in, 1 out)
- gosub 4, L268
- ret
-```
-</details>
 

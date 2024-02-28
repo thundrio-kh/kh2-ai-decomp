@@ -15,10 +15,49 @@ Opens a scrolling text window in the top left of the screen
 | Name | Type
 |------|-----
 | window   | YS::WINDOW_8 *   
+Example Usage From obj\B_CA050\b_ca.bdscript
+```plaintext
+L4427:
+ pushFromFSp 0
+ syscall 4, 0 ; ?
+ pushFromFSp 4
+ pushImm 0
+ syscall 1, 32 ; trap_message_open (2 in, 1 out)
+ popToSp 48
+ pushFromFSp 0
+ syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ memcpyToSp 16, 16
+ pushFromFSp 8
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushFromFSp 0
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 32
+ pushFromFSp 0
+ pushFromPSp 32
+ pushImm 48
+ pushImm 49
+ gosub 16, L4564
+ pushFromFSp 0
+ fetchValue 4
+ pushImm 50
+ pushImmf 0
+ syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
@@ -155,45 +194,5 @@ Opens a scrolling text window in the top left of the screen
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          
 | obj\P_HE000_NPC_QSATO\npc_.bdscript       | ((P) Auron (NPC_QSATO))          
 
-</details>
 
-<details>
-	<summary>Example Usage From obj\B_CA050\b_ca.bdscript</summary>
-```plaintext
-L4427:
- pushFromFSp 0
- syscall 4, 0 ; ?
- pushFromFSp 4
- pushImm 0
- syscall 1, 32 ; trap_message_open (2 in, 1 out)
- popToSp 48
- pushFromFSp 0
- syscall 1, 201 ; trap_obj_dir (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- memcpyToSp 16, 16
- pushFromFSp 8
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 64
- pushFromPSp 64
- pushFromFSp 0
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 80
- pushFromPSp 80
- syscall 0, 5 ; trap_vector_sub (2 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 32
- pushFromFSp 0
- pushFromPSp 32
- pushImm 48
- pushImm 49
- gosub 16, L4564
- pushFromFSp 0
- fetchValue 4
- pushImm 50
- pushImmf 0
- syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
-```
-</details>
 

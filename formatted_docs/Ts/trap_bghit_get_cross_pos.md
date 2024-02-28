@@ -14,10 +14,52 @@ Get the interesection point of a collision
 | Name | Type
 |------|-----
 | cross_pos   | kn::FVector *   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L2954:
+ popToSp 0
+ pushFromPSpVal 4
+ syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 80
+ pushFromPSp 80
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf -100
+ addf 
+ memcpy 0
+ pushFromPSp 80
+ memcpyToSp 16, 64
+ pushFromPSp 64
+ pushImm 4
+ add 
+ dup 
+ fetchValue 0
+ pushImmf 40000
+ addf 
+ memcpy 0
+ pushFromPSp 16
+ pushFromPSp 80
+ pushFromPSp 64
+ pushImm 65536
+ syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
+ jz L3028
+ pushFromPSp 16
+ syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
+ memcpyToSp 16, 96
+ pushFromPSp 96
+ memcpyToSp 16, 48
+ jmp L3040
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -76,48 +118,5 @@ Get the interesection point of a collision
 | obj\P_NM000_SANTA\p_nm.bdscript       | ((P) Jack Skellington (XM))          
 | obj\P_WI020\p_ex.bdscript       | ((P) Donald (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L2954:
- popToSp 0
- pushFromPSpVal 4
- syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 80
- pushFromPSp 80
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImmf -100
- addf 
- memcpy 0
- pushFromPSp 80
- memcpyToSp 16, 64
- pushFromPSp 64
- pushImm 4
- add 
- dup 
- fetchValue 0
- pushImmf 40000
- addf 
- memcpy 0
- pushFromPSp 16
- pushFromPSp 80
- pushFromPSp 64
- pushImm 65536
- syscall 6, 51 ; trap_bghit_check_line (4 in, 1 out)
- jz L3028
- pushFromPSp 16
- syscall 6, 54 ; trap_bghit_get_cross_pos (1 in, 1 out)
- memcpyToSp 16, 96
- pushFromPSp 96
- memcpyToSp 16, 48
- jmp L3040
-```
-</details>
 

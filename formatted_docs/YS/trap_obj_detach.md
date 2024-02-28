@@ -10,10 +10,22 @@ removes a connection between two bones
 | object   | YS::OBJ_126   | An object
 
 
+Example Usage From limit\donald2\limi.bdscript
+```plaintext
+L4061:
+ pushFromFSp 0
+ syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
+ jz L4073
+ pushFromFSp 0
+ syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
+ jmp L4073
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
@@ -93,18 +105,5 @@ removes a connection between two bones
 | obj\P_TR000\p_tr.bdscript       | ((P) Tron)          
 | obj\P_WI030\p_ex.bdscript       | ((P) Goofy (WI))          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\donald2\limi.bdscript</summary>
-```plaintext
-L4061:
- pushFromFSp 0
- syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)
- jz L4073
- pushFromFSp 0
- syscall 1, 102 ; trap_obj_detach (1 in, 0 out)
- jmp L4073
-```
-</details>
 

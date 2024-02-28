@@ -10,20 +10,7 @@ Unknown. Used by conveyor belts in Oogie Boogie boss room
 | unk1   | unknown   | pushFromPSp: 16
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\F_HB110\f_hb.bdscript       | ((F) ??? (HB))          
-| obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          
-| obj\F_NM150\f_nm.bdscript       | ((F) ??? (NM))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\F_HB110\f_hb.bdscript</summary>
+Example Usage From obj\F_HB110\f_hb.bdscript
 ```plaintext
 L2054:
  popToSp 0
@@ -44,5 +31,17 @@ L2054:
  syscall 1, 158 ; trap_bg_set_belt_conveyor (1 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\F_HB110\f_hb.bdscript       | ((F) ??? (HB))          
+| obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          
+| obj\F_NM150\f_nm.bdscript       | ((F) ??? (NM))          
+
+
 

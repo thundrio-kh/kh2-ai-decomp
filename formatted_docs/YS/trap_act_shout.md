@@ -11,15 +11,14 @@ Adds the passed action into the ShoutBuff. Maybe this is a separate queue that h
 | wait   | float   | amount of time to wait before shouting action
 
 
+Example Usage From NA
 
 
-<details>
-	<summary>Appears in:</summary>
 
-</details>
 
-<details>
-	<summary>Example Usage From NA</summary>
 
-</details>
+
+	Appears in:
+
+
 

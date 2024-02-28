@@ -11,19 +11,7 @@ Makes a number of Hostile Program orbs appear at a position
 | num   | int   | number of prizes
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
-| obj\F_TR030\f_tr.bdscript       | ((F) ??? (TR))          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_TR000\b_tr.bdscript</summary>
+Example Usage From obj\B_TR000\b_tr.bdscript
 ```plaintext
 L2202:
  popToSp 4
@@ -65,5 +53,16 @@ L2202:
  syscall 1, 279 ; trap_prize_appear_tr (2 in, 0 out)
  jmp L2282
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
+| obj\F_TR030\f_tr.bdscript       | ((F) ??? (TR))          
+
+
 

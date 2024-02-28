@@ -11,10 +11,23 @@ Adds a value to the combo counter
 | time   | int   | Time to set to timer associated with counter. Value of 0 or 600 used in game
 
 
+Example Usage From msn\HB09_SKATE_01\hb09.bdscript
+```plaintext
+L33:
+ pushFromFSp 0
+ pushImmf 0
+ syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
+ pushFromPWp W8
+ pushImm 3
+ gosub 4, L64
+ jmp L62
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           
@@ -64,19 +77,5 @@ Adds a value to the combo counter
 | msn\TT06_LETTER_02\tt06.bdscript       |           
 | msn\TT06_WORK_LETTER\tt06.bdscript       |           
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\HB09_SKATE_01\hb09.bdscript</summary>
-```plaintext
-L33:
- pushFromFSp 0
- pushImmf 0
- syscall 4, 33 ; trap_mission_add_combo_counter (2 in, 0 out)
- pushFromPWp W8
- pushImm 3
- gosub 4, L64
- jmp L62
-```
-</details>
 

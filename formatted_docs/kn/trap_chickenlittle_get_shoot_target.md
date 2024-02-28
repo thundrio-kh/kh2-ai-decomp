@@ -14,18 +14,7 @@ Have Chicken Little shoot in the direction of the target
 | Name | Type
 |------|-----
 | shoot_dir   | kn::FVector   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\P_EX350\p_ex.bdscript</summary>
+Example Usage From obj\P_EX350\p_ex.bdscript
 ```plaintext
 L518:
  popToSp 0
@@ -55,5 +44,15 @@ L518:
  gosub 16, L584
  jmp L583
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
+
+
 

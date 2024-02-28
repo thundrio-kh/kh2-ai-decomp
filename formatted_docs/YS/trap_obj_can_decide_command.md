@@ -16,10 +16,35 @@ Returns  if the object can decide command.
 | Name | Type
 |------|-----
 | can_decide   | bool   
+Example Usage From limit\aladdin\limi.bdscript
+```plaintext
+L5456:
+ popToSp 4
+ popToSp 8
+ popToSp 12
+ popToSp 0
+ pushFromFSp 8
+ pushImm 0
+ sub 
+ neqz 
+ dup 
+ jz L5490
+ pushFromFSp 4
+ eqz 
+ dup 
+ jnz L5489
+ pushFromPSpVal 4
+ pushFromFSp 8
+ pushFromPSpVal 20
+ syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
+ neqzv
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
@@ -68,31 +93,5 @@ Returns  if the object can decide command.
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 | obj\P_EX350\p_ex.bdscript       | ((P) Chicken Little)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\aladdin\limi.bdscript</summary>
-```plaintext
-L5456:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 0
- pushFromFSp 8
- pushImm 0
- sub 
- neqz 
- dup 
- jz L5490
- pushFromFSp 4
- eqz 
- dup 
- jnz L5489
- pushFromPSpVal 4
- pushFromFSp 8
- pushFromPSpVal 20
- syscall 1, 221 ; trap_obj_can_decide_command (3 in, 1 out)
- neqzv
-```
-</details>
 

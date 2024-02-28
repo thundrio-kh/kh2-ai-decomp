@@ -10,18 +10,7 @@ Clear the hitback flag for an object
 | obj   | YS::OBJ_125   | An object
 
 
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_MU100\b_mu.bdscript</summary>
+Example Usage From obj\B_MU100\b_mu.bdscript
 ```plaintext
 L201:
  popToSp 0
@@ -62,5 +51,15 @@ L201:
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
+
+
 

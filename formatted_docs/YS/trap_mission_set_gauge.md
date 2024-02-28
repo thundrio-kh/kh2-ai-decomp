@@ -11,10 +11,32 @@ sets a gauge to a specified value
 | id   | int   | id of a gauge
 
 
+Example Usage From msn\DC00_MS101\dc_m.bdscript
+```plaintext
+L152:
+ pushFromPSpVal 16
+ fetchValue 4
+ syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
+ jz L185
+ pushImmf 1
+ pushFromPSpVal 16
+ syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
+ pushImm 0
+ syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
+ subf 
+ pushImmf 100
+ mulf 
+ pushImm 0
+ syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
+ halt 
+ jmp L152
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | msn\DC00_MS101\dc_m.bdscript       |           
@@ -40,28 +62,5 @@ sets a gauge to a specified value
 | obj\F_TR170\f_tr.bdscript       | ((F) ??? (TR))          
 | obj\N_CM040_BTL\n_cm.bdscript       | ((N) Vexen (BTL) (CM))          
 
-</details>
 
-<details>
-	<summary>Example Usage From msn\DC00_MS101\dc_m.bdscript</summary>
-```plaintext
-L152:
- pushFromPSpVal 16
- fetchValue 4
- syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L185
- pushImmf 1
- pushFromPSpVal 16
- syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
- pushImm 0
- syscall 1, 230 ; trap_sheet_hp_rate (2 in, 1 out)
- subf 
- pushImmf 100
- mulf 
- pushImm 0
- syscall 4, 8 ; trap_mission_set_gauge (2 in, 0 out)
- halt 
- jmp L152
-```
-</details>
 

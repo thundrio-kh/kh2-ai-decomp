@@ -15,23 +15,7 @@ Returns if the object has the specified ability equipped
 | Name | Type
 |------|-----
 | is_equip_ability   | bool   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| magic\CURE_1\cure.bdscript       |           
-| magic\CURE_1lk\cure.bdscript       |           
-| magic\CURE_2\cure.bdscript       |           
-| magic\CURE_2lk\cure.bdscript       |           
-| magic\CURE_3\cure.bdscript       |           
-| magic\CURE_3lk\cure.bdscript       |           
-
-</details>
-
-<details>
-	<summary>Example Usage From magic\CURE_1\cure.bdscript</summary>
+Example Usage From magic\CURE_1\cure.bdscript
 ```plaintext
 L488:
  pushFromFSp 20
@@ -45,5 +29,20 @@ L488:
  eqz 
  eqzv
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| magic\CURE_1\cure.bdscript       |           
+| magic\CURE_1lk\cure.bdscript       |           
+| magic\CURE_2\cure.bdscript       |           
+| magic\CURE_2lk\cure.bdscript       |           
+| magic\CURE_3\cure.bdscript       |           
+| magic\CURE_3lk\cure.bdscript       |           
+
+
 

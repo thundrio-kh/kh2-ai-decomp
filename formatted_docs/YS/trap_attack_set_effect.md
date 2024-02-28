@@ -11,10 +11,35 @@ Applies an object effect to an attack
 | effect   | ryj::EFFECT *   | an object effect to apply to an attack
 
 
+Example Usage From limit\beast\limi.bdscript
+```plaintext
+L39:
+ pushFromFSp 8
+ pushImm 497
+ pushImm -1
+ pushImm 0
+ syscall 2, 10 ; trap_attack_new (4 in, 1 out)
+ popToSp 12
+ pushFromFSp 12
+ pushFromFSp 0
+ syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
+ pushFromFSp 12
+ pushImmf 450
+ pushImmf 50
+ syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
+ pushFromFSp 12
+ pushImmf 55
+ pushImmf 100
+ pushImmf 0
+ syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
+ jmp L85
+```
 
 
-<details>
-	<summary>Appears in:</summary>
+
+
+
+	Appears in:
 | filename | Entity (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
@@ -48,31 +73,5 @@ Applies an object effect to an attack
 | obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
 | obj\M_EX940\m_ex.bdscript       | ((M) Berserker)          
 
-</details>
 
-<details>
-	<summary>Example Usage From limit\beast\limi.bdscript</summary>
-```plaintext
-L39:
- pushFromFSp 8
- pushImm 497
- pushImm -1
- pushImm 0
- syscall 2, 10 ; trap_attack_new (4 in, 1 out)
- popToSp 12
- pushFromFSp 12
- pushFromFSp 0
- syscall 2, 61 ; trap_attack_set_effect (2 in, 0 out)
- pushFromFSp 12
- pushImmf 450
- pushImmf 50
- syscall 2, 11 ; trap_attack_set_radius (3 in, 0 out)
- pushFromFSp 12
- pushImmf 55
- pushImmf 100
- pushImmf 0
- syscall 2, 62 ; trap_attack_set_time (4 in, 0 out)
- jmp L85
-```
-</details>
 

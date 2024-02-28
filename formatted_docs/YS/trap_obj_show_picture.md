@@ -15,21 +15,7 @@ Show a numbered picture associated with an object
 | Name | Type
 |------|-----
 | unk   | unknown   
-
-
-<details>
-	<summary>Appears in:</summary>
-| filename | Entity (obj)
-|----------|-------------
-| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
-| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
-| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
-| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
-
-</details>
-
-<details>
-	<summary>Example Usage From obj\B_EX140\b_ex.bdscript</summary>
+Example Usage From obj\B_EX140\b_ex.bdscript
 ```plaintext
 L16883:
  pushFromFSp 100
@@ -133,5 +119,18 @@ L16883:
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
  jmp L17119
 ```
-</details>
+
+
+
+
+
+	Appears in:
+| filename | Entity (obj)
+|----------|-------------
+| obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
+| obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          
+| obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
+| obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
+
+
 
