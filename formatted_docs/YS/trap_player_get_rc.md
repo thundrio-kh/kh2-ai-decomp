@@ -36,7 +36,7 @@ L25:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TR010\f_tr.bdscript       | ((F) A Terminal from Space Paranoids (TR))          
 

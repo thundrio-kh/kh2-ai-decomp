@@ -54,7 +54,7 @@ L2790:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_AL000\p_al.bdscript       | ((P) Aladdin)          
 | obj\P_BB000\p_bb.bdscript       | ((P) Beast)          

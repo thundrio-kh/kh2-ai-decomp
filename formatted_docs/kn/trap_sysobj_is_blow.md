@@ -29,7 +29,7 @@ L26146:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
 | obj\B_EX400\b_ex.bdscript       | ((B) Larxene (Absent Silhouette))          

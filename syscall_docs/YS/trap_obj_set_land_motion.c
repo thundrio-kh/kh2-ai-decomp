@@ -5,7 +5,7 @@ name: trap_obj_set_land_motion
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

@@ -35,7 +35,7 @@ L58:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           
 | msn\MU01_MS102\mu01.bdscript       |           

@@ -30,7 +30,7 @@ L64:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           
 | msn\HE_COLOSSEUM\he_c.bdscript       |           

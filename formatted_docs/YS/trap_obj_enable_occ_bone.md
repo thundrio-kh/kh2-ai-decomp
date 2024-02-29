@@ -143,7 +143,7 @@ L5637:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_HE100\b_he.bdscript       | ((B) Hydra)          
 

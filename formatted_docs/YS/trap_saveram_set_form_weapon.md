@@ -92,7 +92,7 @@ L193:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | 00common       |           
 | 00common       |           

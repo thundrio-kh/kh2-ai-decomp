@@ -30,7 +30,7 @@ L1759:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | limit\mulan\limi.bdscript       |           

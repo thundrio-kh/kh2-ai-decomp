@@ -1,4 +1,4 @@
-## trap_obj_set_land_motion* (mset)
+## trap_obj_set_land_motion* (motion)
 
 `syscall 1, 180 ; trap_obj_set_land_motion (2 in, 0 out)`
 
@@ -52,7 +52,7 @@ L1258:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

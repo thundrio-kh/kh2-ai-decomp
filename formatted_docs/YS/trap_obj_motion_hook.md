@@ -1,4 +1,4 @@
-## trap_obj_motion_hook* (mset)
+## trap_obj_motion_hook* (motion)
 
 `syscall 1, 75 ; trap_obj_motion_hook (2 in, 0 out)`
 
@@ -27,7 +27,7 @@ L5073:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
 | obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          

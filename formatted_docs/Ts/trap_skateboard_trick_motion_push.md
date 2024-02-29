@@ -30,7 +30,7 @@ L832:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TT010\f_tt.bdscript       | ((F) Skateboard (TT))          
 | obj\F_TT010_AL\f_tt.bdscript       | ((F) Skateboard (AL))          

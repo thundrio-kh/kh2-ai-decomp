@@ -31,7 +31,7 @@ L4766:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          

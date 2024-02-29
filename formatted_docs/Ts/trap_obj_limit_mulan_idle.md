@@ -30,7 +30,7 @@ L5649:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
 

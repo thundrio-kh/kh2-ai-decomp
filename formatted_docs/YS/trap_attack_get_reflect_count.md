@@ -43,7 +43,7 @@ L125:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\reflect1\refl.bdscript       |           
 | magic\REFLECT_1\refl.bdscript       |           

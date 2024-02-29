@@ -26,7 +26,7 @@ L36:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\tt04\tt04.bdscript       |           
 

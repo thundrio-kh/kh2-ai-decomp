@@ -29,7 +29,7 @@ L12374:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX370\b_ex.bdscript       | ((B) Zexion (Absent Silhouette))          
 

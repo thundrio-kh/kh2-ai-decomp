@@ -31,7 +31,7 @@ L7928:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX350_13\m_ex.bdscript       | ((M) Mushroom 13 (EX))          
 

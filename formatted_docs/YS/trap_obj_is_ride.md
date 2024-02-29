@@ -51,7 +51,7 @@ L5360:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
 | obj\F_TT000\f_tt.bdscript       | ((F) Tram (TT))          

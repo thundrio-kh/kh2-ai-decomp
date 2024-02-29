@@ -24,7 +24,7 @@ L68:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | 00common       |           
 | msn\TT04_MS00\tt04.bdscript       |           

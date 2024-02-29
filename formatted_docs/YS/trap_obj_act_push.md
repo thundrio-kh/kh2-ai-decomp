@@ -22,7 +22,7 @@ L7353:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

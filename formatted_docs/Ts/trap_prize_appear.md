@@ -25,7 +25,7 @@ L45:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | obj\B_HE110\b_he.bdscript       | ((B) Hydra head (Out of the ground))          

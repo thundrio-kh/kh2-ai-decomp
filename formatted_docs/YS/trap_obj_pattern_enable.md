@@ -55,7 +55,7 @@ TR3:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           
 | msn\TT14_MS109\tt_d.bdscript       |           

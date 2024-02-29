@@ -45,7 +45,7 @@ TR2:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\mu07\mu_g.bdscript       |           
 | ard\tr03\tr_g.bdscript       |           

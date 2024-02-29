@@ -56,7 +56,7 @@ L163:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL00_MS101\ms_a.bdscript       |           
 | msn\BB01_MS101\ms_a.bdscript       |           

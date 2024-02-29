@@ -465,25 +465,7 @@
 * [trap_mission_set_watch](YS/trap_mission_set_watch.md)
 
 
-## movement
-* [trap_obj_fly](YS/trap_obj_fly.md)
-* [trap_obj_flyjump](YS/trap_obj_flyjump.md)
-* [trap_obj_get_move_to_space_pos](YS/trap_obj_get_move_to_space_pos.md)
-* [trap_obj_hop](YS/trap_obj_hop.md)
-* [trap_obj_hop_direct](Ts/trap_obj_hop_direct.md)
-* [trap_obj_hover](YS/trap_obj_hover.md)
-* [trap_obj_jump_direct](YS/trap_obj_jump_direct.md)
-* [trap_obj_move_request](YS/trap_obj_move_request.md)
-* [trap_obj_move_to_space](YS/trap_obj_move_to_space.md)
-* [trap_obj_set_movement](YS/trap_obj_set_movement.md)
-* [trap_obj_set_path](YS/trap_obj_set_path.md)
-* [trap_obj_shadow_move_end](YS/trap_obj_shadow_move_end.md)
-* [trap_obj_shadow_move_start](YS/trap_obj_shadow_move_start.md)
-* [trap_obj_turn_dir](YS/trap_obj_turn_dir.md)
-* [trap_obj_wish_dir](YS/trap_obj_wish_dir.md)
-
-
-## mset
+## motion
 * [trap_obj_motion_capture](YS/trap_obj_motion_capture.md)
 * [trap_obj_motion_capture_id](YS/trap_obj_motion_capture_id.md)
 * [trap_obj_motion_check_range](YS/trap_obj_motion_check_range.md)
@@ -511,6 +493,24 @@
 * [trap_sysobj_motion_is_end](YS/trap_sysobj_motion_is_end.md)
 * [trap_sysobj_motion_push](YS/trap_sysobj_motion_push.md)
 * [trap_sysobj_motion_start](YS/trap_sysobj_motion_start.md)
+
+
+## movement
+* [trap_obj_fly](YS/trap_obj_fly.md)
+* [trap_obj_flyjump](YS/trap_obj_flyjump.md)
+* [trap_obj_get_move_to_space_pos](YS/trap_obj_get_move_to_space_pos.md)
+* [trap_obj_hop](YS/trap_obj_hop.md)
+* [trap_obj_hop_direct](Ts/trap_obj_hop_direct.md)
+* [trap_obj_hover](YS/trap_obj_hover.md)
+* [trap_obj_jump_direct](YS/trap_obj_jump_direct.md)
+* [trap_obj_move_request](YS/trap_obj_move_request.md)
+* [trap_obj_move_to_space](YS/trap_obj_move_to_space.md)
+* [trap_obj_set_movement](YS/trap_obj_set_movement.md)
+* [trap_obj_set_path](YS/trap_obj_set_path.md)
+* [trap_obj_shadow_move_end](YS/trap_obj_shadow_move_end.md)
+* [trap_obj_shadow_move_start](YS/trap_obj_shadow_move_start.md)
+* [trap_obj_turn_dir](YS/trap_obj_turn_dir.md)
+* [trap_obj_wish_dir](YS/trap_obj_wish_dir.md)
 
 
 ## object

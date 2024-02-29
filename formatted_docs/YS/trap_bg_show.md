@@ -28,7 +28,7 @@ L100:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           
 | msn\AL13_TRAP\al13.bdscript       |           

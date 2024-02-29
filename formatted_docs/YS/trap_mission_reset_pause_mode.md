@@ -18,7 +18,7 @@ L247:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA09_MEDAL\ca_m.bdscript       |           
 | msn\CA10_MEDAL\ca_m.bdscript       |           

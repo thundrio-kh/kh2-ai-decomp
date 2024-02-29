@@ -30,7 +30,7 @@ TR10:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX120\b_ex.bdscript       | ((B) Demyx (Only playing sitar?))          
 | obj\B_EX120_HB\b_ex.bdscript       | ((B) Demyx)          

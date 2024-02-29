@@ -36,7 +36,7 @@ L2139:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          

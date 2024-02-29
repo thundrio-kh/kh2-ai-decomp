@@ -32,7 +32,7 @@ L218:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_AL110\f_al.bdscript       | ((F) ??? (AL))          
 | obj\M_EX130_AL\m_ex.bdscript       | ((M) Crimson Jazz (AL))          

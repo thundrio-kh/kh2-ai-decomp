@@ -38,7 +38,7 @@ L39:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_HE030_PART\b_he.bdscript       | ((B) Hades (1st & 2nd fight))          
 | obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          

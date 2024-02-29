@@ -1,4 +1,4 @@
-## trap_sysobj_motion_change* (mset)
+## trap_sysobj_motion_change* (motion)
 
 `syscall 1, 12 ; trap_sysobj_motion_change (3 in, 0 out)`
 
@@ -26,7 +26,7 @@ L6824:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

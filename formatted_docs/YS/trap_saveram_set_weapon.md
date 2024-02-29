@@ -93,7 +93,7 @@ L193:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | 00common       |           
 | ard\tt04\tt04.bdscript       |           

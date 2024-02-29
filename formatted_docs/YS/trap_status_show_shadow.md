@@ -20,7 +20,7 @@ L2991:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EX330\p_ex.bdscript       | ((P) Peter Pan)          
 

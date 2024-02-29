@@ -36,7 +36,7 @@ L3020:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          
 | obj\EH_G_EX250\g_ex.bdscript       | ((EH) Bomb Bell B)          

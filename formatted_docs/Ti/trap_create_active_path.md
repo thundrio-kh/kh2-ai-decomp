@@ -88,7 +88,7 @@ L5933:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX900\m_ex.bdscript       | ((M) Assassin)          
 

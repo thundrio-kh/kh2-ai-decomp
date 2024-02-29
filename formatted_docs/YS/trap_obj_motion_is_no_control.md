@@ -1,4 +1,4 @@
-## trap_obj_motion_is_no_control* (mset)
+## trap_obj_motion_is_no_control* (motion)
 
 `syscall 1, 78 ; trap_obj_motion_is_no_control (1 in, 1 out)`
 
@@ -58,7 +58,7 @@ L4282:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
 | obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          

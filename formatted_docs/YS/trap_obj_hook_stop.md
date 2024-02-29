@@ -70,7 +70,7 @@ L2149:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | limit\beast\limi.bdscript       |           

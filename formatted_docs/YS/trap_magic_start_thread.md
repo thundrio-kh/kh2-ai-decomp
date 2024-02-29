@@ -39,7 +39,7 @@ L1238:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\BLIZZARD_1\bliz.bdscript       |           
 | magic\BLIZZARD_1lk\bliz.bdscript       |           

@@ -20,7 +20,7 @@ L204:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\MU02_MS103B\mu02.bdscript       |           
 | msn\MU07_MS106\mu07.bdscript       |           

@@ -40,7 +40,7 @@ L191:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
 | msn\AL14_MS202_FREE\al14.bdscript       |           

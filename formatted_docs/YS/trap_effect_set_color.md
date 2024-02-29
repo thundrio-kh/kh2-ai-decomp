@@ -80,7 +80,7 @@ L3409:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

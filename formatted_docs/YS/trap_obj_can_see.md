@@ -32,7 +32,7 @@ L6358:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
 

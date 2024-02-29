@@ -32,7 +32,7 @@ TR3:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\MU01_MS103C\mu01.bdscript       |           
 | msn\MU02_MS103A\mu02.bdscript       |           

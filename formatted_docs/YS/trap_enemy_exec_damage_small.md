@@ -34,7 +34,7 @@ L730:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          
 | obj\B_CA030\b_ca.bdscript       | ((M) Undead Pirate B)          

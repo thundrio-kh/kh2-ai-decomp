@@ -32,7 +32,7 @@ L3409:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          

@@ -1,4 +1,4 @@
-## trap_sysobj_motion_push* (mset)
+## trap_sysobj_motion_push* (motion)
 
 `syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)`
 
@@ -34,7 +34,7 @@ L1331:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

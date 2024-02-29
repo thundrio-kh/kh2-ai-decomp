@@ -24,7 +24,7 @@ L29:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\eh18\full.bdscript       |           
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

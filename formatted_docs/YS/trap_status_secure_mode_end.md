@@ -23,7 +23,7 @@ L221:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL13_TRAP\al13.bdscript       |           
 | msn\AL13_TRAP_FREE\al13.bdscript       |           

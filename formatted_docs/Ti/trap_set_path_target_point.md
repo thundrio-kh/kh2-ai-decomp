@@ -36,7 +36,7 @@ L1140:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_AL070_BTL\n_al.bdscript       | ((N) Jafar clone (BTL) (AL))          
 | obj\N_BB060_BTL\n_bb.bdscript       | ((N) Lumière (BTL) (BB))          

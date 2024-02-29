@@ -44,7 +44,7 @@ L817:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX260\b_ex.bdscript       | ((B) Xemnas (Armor))          
 | obj\F_EH070\f_eh.bdscript       | ((F) Xemnas’s dragon core cylinder (right) (EH))          

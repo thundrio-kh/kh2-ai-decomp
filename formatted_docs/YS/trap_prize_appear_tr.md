@@ -56,7 +56,7 @@ L2202:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
 | obj\F_TR030\f_tr.bdscript       | ((F) ??? (TR))          

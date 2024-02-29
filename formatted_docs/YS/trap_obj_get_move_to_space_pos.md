@@ -71,7 +71,7 @@ L15264:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
 

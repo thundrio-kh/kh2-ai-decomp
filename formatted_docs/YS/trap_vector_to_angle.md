@@ -51,7 +51,7 @@ L2751:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          
 | obj\EH_G_EX290\g_ex.bdscript       | ((EH) Speeder B (G_EX))          

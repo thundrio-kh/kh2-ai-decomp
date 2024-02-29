@@ -42,7 +42,7 @@ L2016:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TR150\f_tr.bdscript       | ((F) ??? (TR))          
 

@@ -30,7 +30,7 @@ L323:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\cure1\cure.bdscript       |           
 | magic\CURE_1\cure.bdscript       |           

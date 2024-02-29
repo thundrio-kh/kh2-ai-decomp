@@ -5,7 +5,7 @@ name: trap_obj_motion_get_length
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

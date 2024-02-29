@@ -60,7 +60,7 @@ L879:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
 | obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          

@@ -2,13 +2,13 @@
 
 `syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)`
 
-Return the ID of the weapon the party member has equipped
+Return the ID of the weapon the party member has equipped in either the left or right hand, using the character index at https://openkh.dev/kh2/dictionary/characters.html
 
 ### Input parameters
 | Name | Type | Description
 |------|------|------------
-| party   | YS::PARTY_63 *   | Party object
-| member_index   | int   | Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html
+| party   | YS::PARTY_63 *   | Party member
+| hand_index   | int   | Index of the left or right hand
 
 
 ### Output Parameters
@@ -69,7 +69,7 @@ L6058:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
 | limit\donald2_wi\limi.bdscript       |           

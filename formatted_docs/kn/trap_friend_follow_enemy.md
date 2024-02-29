@@ -31,7 +31,7 @@ L2181:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_LK020\p_lk.bdscript       | ((P) Donald (LK))          
 

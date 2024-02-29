@@ -22,7 +22,7 @@ L33:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HB16_MS404B\hb16.bdscript       |           
 | msn\HB16_MS404C\hb16.bdscript       |           

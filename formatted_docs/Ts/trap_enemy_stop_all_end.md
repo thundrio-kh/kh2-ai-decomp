@@ -22,7 +22,7 @@ L429:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          
 

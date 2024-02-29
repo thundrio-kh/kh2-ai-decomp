@@ -268,7 +268,7 @@ L803:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          
 | obj\P_EH000_LAST\p_eh.bdscript       | ((P) Riku (final battle))          

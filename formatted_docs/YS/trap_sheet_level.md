@@ -116,7 +116,7 @@ L16905:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_CM000_BTL\n_cm.bdscript       | ((N) Marluxia (BTL) (CM))          
 

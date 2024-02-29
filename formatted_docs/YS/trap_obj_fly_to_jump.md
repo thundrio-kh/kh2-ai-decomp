@@ -29,7 +29,7 @@ L3114:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | limit\simba\limi.bdscript       |           

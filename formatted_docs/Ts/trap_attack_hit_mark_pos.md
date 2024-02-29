@@ -28,7 +28,7 @@ L45:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | obj\B_NM100\b_nm.bdscript       | ((B) Prison Keeper)          

@@ -31,7 +31,7 @@ L4961:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
 | obj\M_EX020\m_ex.bdscript       | ((M) Shadow)          

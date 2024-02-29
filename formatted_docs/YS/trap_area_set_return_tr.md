@@ -18,7 +18,7 @@ TR2:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TR02_MS102_FREE\tr02.bdscript       |           
 

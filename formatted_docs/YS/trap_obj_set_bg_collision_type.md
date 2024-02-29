@@ -34,7 +34,7 @@ L2612:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_HE030_L\f_he.bdscript       | ((F) Phil minigame L (HE))          
 | obj\F_HE030_L_FREE\f_he.bdscript       | ((F) Phil minigame L (FREE) (HE))          

@@ -1,4 +1,4 @@
-## trap_obj_set_jump_motion* (mset)
+## trap_obj_set_jump_motion* (motion)
 
 `syscall 1, 115 ; trap_obj_set_jump_motion (2 in, 0 out)`
 
@@ -71,7 +71,7 @@ L2149:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          

@@ -26,7 +26,7 @@ L87:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HB16_MS404D\hb16.bdscript       |           
 | msn\TR04_MS202\tr04.bdscript       |           

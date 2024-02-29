@@ -74,7 +74,7 @@ L4735:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
 | limit\riku\limi.bdscript       |           

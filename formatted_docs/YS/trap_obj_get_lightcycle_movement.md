@@ -34,7 +34,7 @@ L62:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX600_LC\m_ex.bdscript       | ((M) Magnum Loader (white))          
 | obj\M_EX600_LC_ATK\m_ex.bdscript       | ((M) Magnum Loader (blue))          

@@ -43,7 +43,7 @@ L9010:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          

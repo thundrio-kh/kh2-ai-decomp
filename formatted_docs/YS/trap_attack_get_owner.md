@@ -58,7 +58,7 @@ L5643:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
 | obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          

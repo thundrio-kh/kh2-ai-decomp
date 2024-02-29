@@ -68,7 +68,7 @@ L11772:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
 | obj\P_BB000_BTL\p_bb.bdscript       | ((P) Beast (BTL))          

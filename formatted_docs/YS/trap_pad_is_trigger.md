@@ -4,19 +4,26 @@
 
 Checks if a button is held down on the controller.
 
-| Button | Value |
-|--------|-------|
-| Start  | 1     |
-| Circle | 2     |
-| Up     | 4     |
-| Down   | 5     |
-| Left   | 6     |
-| Right  | 7     |
-| X      | 8     |
-| Square | 9     |
-| Triangle | 10  |
-| R1     | 11    |
-| Select | 22    |
+| Button            | Value |
+|-------------------|-------|
+| Start             | 1     |
+| Circle            | 2     |
+| Up                | 4     |
+| Down              | 5     |
+| Left              | 6     |
+| Right             | 7     |
+| X                 | 8     |
+| Square            | 9     |
+| Triangle          | 10    |
+| R1                | 11    |
+| Right Stick Up    | 18    |
+| Right Stick Down  | 19    |
+| Right Stick Left  | 20    |
+| Right Stick Right | 21    |
+| Select            | 22    |
+| R2                | 32    |
+| L1                | 23    | 
+| Any Button        | 34    |
 
 ### Input parameters
 | Name | Type | Description
@@ -59,7 +66,7 @@ L1794:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
 | obj\B_EX170_LAST_LV99\b_ex.bdscript       | ((B99) Xemnas (Final) (Limit Cut The World of Nothing)?)          

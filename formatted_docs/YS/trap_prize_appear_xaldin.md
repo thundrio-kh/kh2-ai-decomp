@@ -34,7 +34,7 @@ L440:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX350_03\m_ex.bdscript       | ((M) Mushroom 3 (EX))          
 

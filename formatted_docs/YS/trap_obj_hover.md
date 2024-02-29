@@ -69,7 +69,7 @@ L150:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX220\b_ex.bdscript       | ((F) Saix’s claymore (Usable))          
 | obj\B_EX220_LV99\b_ex.bdscript       | ((F) Saix’s claymore limit cut (Usable))          

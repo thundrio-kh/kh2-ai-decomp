@@ -23,7 +23,7 @@ L209:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           
 | msn\CA02_SKATE_01\ca02.bdscript       |           

@@ -7,7 +7,7 @@ Gets the position of the nearest ground
 ### Input parameters
 | Name | Type | Description
 |------|------|------------
-| pos   | current position to use when calculated nearest ground   | 
+| pos   | kn::FVector *   | current position to use when calculated nearest ground
 | result   | kn::FVector *   | vector that the result will be stored in
 | height   | float   | Value to add to the result of the nearest ground
 
@@ -41,7 +41,7 @@ L96:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | limit\goofy2\limi.bdscript       |           

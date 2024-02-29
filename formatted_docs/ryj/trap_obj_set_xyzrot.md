@@ -34,7 +34,7 @@ L36929:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
 | obj\EH_G_EX120\g_ex.bdscript       | ((EH) Xemnas’s dragon missile (G_EX))          

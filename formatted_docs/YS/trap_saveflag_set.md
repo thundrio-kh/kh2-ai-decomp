@@ -21,7 +21,7 @@ L29:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\al09\al09.bdscript       |           
 | ard\bb03\bb.bdscript       |           

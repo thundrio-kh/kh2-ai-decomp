@@ -19,21 +19,28 @@ pop is_held ; (bool)
 ---
 ---
 ---
-description:  Checks if a button is held down on the controller.
+description: Checks if a button is held down on the controller.
 
-| Button | Value |
-|--------|-------|
-| Start  | 1     |
-| Circle | 2     |
-| Up     | 4     |
-| Down   | 5     |
-| Left   | 6     |
-| Right  | 7     |
-| X      | 8     |
-| Square | 9     |
-| Triangle | 10  |
-| R1     | 11    |
-| Select | 22    |
+| Button            | Value |
+|-------------------|-------|
+| Start             | 1     |
+| Circle            | 2     |
+| Up                | 4     |
+| Down              | 5     |
+| Left              | 6     |
+| Right             | 7     |
+| X                 | 8     |
+| Square            | 9     |
+| Triangle          | 10    |
+| R1                | 11    |
+| Right Stick Up    | 18    |
+| Right Stick Down  | 19    |
+| Right Stick Left  | 20    |
+| Right Stick Right | 21    |
+| Select            | 22    |
+| R2                | 32    |
+| L1                | 23    | 
+| Any Button        | 34    |
 ---
 ---
 ---

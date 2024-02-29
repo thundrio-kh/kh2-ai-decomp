@@ -35,7 +35,7 @@ L6918:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX420\b_ex.bdscript       | ((B) Lingering Will)          
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          

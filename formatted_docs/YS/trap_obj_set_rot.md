@@ -37,7 +37,7 @@ L3322:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          

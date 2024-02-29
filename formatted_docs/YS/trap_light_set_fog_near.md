@@ -55,7 +55,7 @@ L415:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_2_FOG\he_c.bdscript       |           
 | msn\HE_COLOSSEUM_6_FOG\he_c.bdscript       |           

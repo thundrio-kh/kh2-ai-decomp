@@ -1,4 +1,4 @@
-## trap_sysobj_motion_cont_push* (mset)
+## trap_sysobj_motion_cont_push* (motion)
 
 `syscall 10, 15 ; trap_sysobj_motion_cont_push (3 in, 0 out)`
 

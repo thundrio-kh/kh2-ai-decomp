@@ -66,7 +66,7 @@ L3724:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          
 | obj\B_HE030\b_he.bdscript       | ((B) Hades (3rd & Paradox Hades Cup fight))          

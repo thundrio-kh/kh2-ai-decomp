@@ -54,7 +54,7 @@ L4479:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
 | msn\AL13_TRAP\al13.bdscript       |           

@@ -24,7 +24,7 @@ L31:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_MU030\f_mu.bdscript       | ((F) ??? (MU))          
 

@@ -646,7 +646,7 @@ L4649:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

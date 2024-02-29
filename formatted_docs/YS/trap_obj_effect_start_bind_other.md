@@ -68,7 +68,7 @@ L15416:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
 | obj\B_EX130\b_ex.bdscript       | ((B) Xaldin)          

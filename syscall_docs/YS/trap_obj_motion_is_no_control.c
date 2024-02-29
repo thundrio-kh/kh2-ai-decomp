@@ -5,7 +5,7 @@ name: trap_obj_motion_is_no_control
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

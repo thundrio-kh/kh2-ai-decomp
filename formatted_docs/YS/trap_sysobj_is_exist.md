@@ -31,7 +31,7 @@ L134:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           
 | ard\he05\f_he.bdscript       |           

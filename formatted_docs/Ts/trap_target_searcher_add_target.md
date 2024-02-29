@@ -38,7 +38,7 @@ L2552:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\goofy2\limi.bdscript       |           
 | limit\goofy2_wi\limi.bdscript       |           

@@ -31,7 +31,7 @@ L89:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL14_MS_O\al14.bdscript       |           
 | msn\AL14_MS_S\al14.bdscript       |           

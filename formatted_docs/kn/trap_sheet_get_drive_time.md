@@ -31,7 +31,7 @@ L1306:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          

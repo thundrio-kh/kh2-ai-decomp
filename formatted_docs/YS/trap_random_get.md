@@ -37,7 +37,7 @@ L1160:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
 | limit\donald2\limi.bdscript       |           

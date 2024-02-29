@@ -35,7 +35,7 @@ L321:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\CURE_1\cure.bdscript       |           
 | magic\CURE_1lk\cure.bdscript       |           

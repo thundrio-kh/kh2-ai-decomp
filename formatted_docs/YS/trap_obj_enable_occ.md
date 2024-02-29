@@ -24,7 +24,7 @@ TR14:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_LK120\b_lk.bdscript       | ((B) Groundshaker)          
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          

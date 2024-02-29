@@ -33,7 +33,7 @@ L4131:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TT110\f_tt.bdscript       | ((F) Dog’s sack (TT))          
 

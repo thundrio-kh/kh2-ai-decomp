@@ -33,7 +33,7 @@ L1677:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EX200\mick.bdscript       | ((P) Micky (hood))          
 | obj\P_EX220\mick.bdscript       | ((P) Mickey)          

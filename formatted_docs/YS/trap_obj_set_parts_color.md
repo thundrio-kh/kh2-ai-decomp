@@ -105,7 +105,7 @@ L3024:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
 | obj\F_NM080\f_nm.bdscript       | ((F) Oogie’s present box (NM))          

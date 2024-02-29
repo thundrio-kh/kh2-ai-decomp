@@ -22,7 +22,7 @@ L44:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\MAGNET_1\magn.bdscript       |           
 | magic\MAGNET_1lk\magn.bdscript       |           

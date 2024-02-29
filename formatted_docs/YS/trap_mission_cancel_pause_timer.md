@@ -28,7 +28,7 @@ L1183:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX950\m_ex.bdscript       | ((M) Gambler)          
 

@@ -30,7 +30,7 @@ L2276:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

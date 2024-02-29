@@ -1,4 +1,4 @@
-## trap_sysobj_motion_start* (mset)
+## trap_sysobj_motion_start* (motion)
 
 `syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)`
 
@@ -31,7 +31,7 @@ L2778:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

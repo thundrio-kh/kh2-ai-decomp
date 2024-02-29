@@ -26,7 +26,7 @@ L55:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\hb10\moog.bdscript       |           
 | limit\jack\limi.bdscript       |           

@@ -34,7 +34,7 @@ L69:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 

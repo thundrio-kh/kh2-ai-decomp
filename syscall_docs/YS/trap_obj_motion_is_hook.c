@@ -5,7 +5,7 @@ name: trap_obj_motion_is_hook
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

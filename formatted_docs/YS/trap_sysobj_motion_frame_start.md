@@ -1,4 +1,4 @@
-## trap_sysobj_motion_frame_start* (mset)
+## trap_sysobj_motion_frame_start* (motion)
 
 `syscall 1, 61 ; trap_sysobj_motion_frame_start (4 in, 0 out)`
 
@@ -33,7 +33,7 @@ L6629:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

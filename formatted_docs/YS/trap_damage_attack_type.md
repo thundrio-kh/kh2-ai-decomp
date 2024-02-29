@@ -33,7 +33,7 @@ L108:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_AL050\f_al.bdscript       | ((F) ??? (AL))          
 | obj\F_HE000\f_he.bdscript       | ((F) Standing Torch (HE))          

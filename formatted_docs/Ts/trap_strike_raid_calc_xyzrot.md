@@ -46,7 +46,7 @@ L38553:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX390\b_ex.bdscript       | ((B) Hooded Roxas)          
 | obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          

@@ -34,7 +34,7 @@ L7279:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 

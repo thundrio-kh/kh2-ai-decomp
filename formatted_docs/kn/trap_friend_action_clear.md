@@ -35,7 +35,7 @@ L947:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_HB040_BTL\n_hb.bdscript       | ((N) Stitch (BTL) (HB))          
 | obj\P_EH000\p_eh.bdscript       | ((P) Riku)          

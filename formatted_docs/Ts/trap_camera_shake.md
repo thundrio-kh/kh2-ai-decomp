@@ -35,7 +35,7 @@ L4703:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

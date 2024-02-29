@@ -56,7 +56,7 @@ L347:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX180\b_ex.bdscript       | ((?) Xemnas’s dragon (Throne))          
 | obj\F_BB090\f_bb.bdscript       | ((F) ??? (BB))          

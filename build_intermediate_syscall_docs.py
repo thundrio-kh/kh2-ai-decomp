@@ -3,6 +3,11 @@ from kh2lib.kh2lib import kh2lib
 SOURCE_PATH = 'C:\\Users\\12sam\\Desktop\\dissassem\\kh2disassem\\source'
 syscall_list = [s.split("\t") for s in open("syscall_list.tsv").read().split("\n")]
 
+SEPERATOR = """SPLITCHAR
+SPLITCHAR
+SPLITCHAR
+""".replace("SPLITCHAR", "---")
+
 output_template = """SPLITCHAR
 SPLITCHAR
 SPLITCHAR
@@ -39,6 +44,8 @@ SPLITCHAR
 example usage from {}
 {}
 """.replace("SPLITCHAR", "---")
+
+
 
 trapcode_fns = {}
 trap_functions = {}
@@ -146,27 +153,35 @@ objects = {
     for obj in open("objlist.tsv").read().split("\n")
 }
 for syscall in syscall_list:
+    docfn = "syscall_docs" + os.sep + trapfn[7:]
+    docdir = os.path.dirname(docfn)
+    if not os.path.isdir(docdir):
+        os.makedirs(docdir)
+
+    existing_doc = open(docfn).read().split(SEPERATOR)
+
     tableidx = syscall[0]
     funcidx = syscall[1]
     name = syscall[2]
-    category = ""
-    doclevel = "stub"
-    argspec = trap_argspecs.get(name, "Not Found")
-    nin = len(trap_params.get(name, [])) # not strictly true
-    if name in trap_params and nin > 0 :
-        argspec_lines = argspec.split("\n")
-        for i in range(nin):
-            argexamples = trap_params[name][i]
-            for inst in argexamples:
-                MAX_EXAMPLES = 5
-                list_examples = sorted(list(argexamples[inst]))
-                if not inst.startswith("pushImm") and len(list_examples) > MAX_EXAMPLES:
-                    list_examples = list_examples[:MAX_EXAMPLES] + ["..."]
-                values = ','.join(list_examples)
-                argspec_lines[i] += " ({}: {})".format(inst, values)
-        argspec = "\n".join(argspec_lines)
+    category = existing_doc[1].split(":")[1].strip()
+    doclevel = existing_doc[2].split(":")[1].strip()
+    # argspec = trap_argspecs.get(name, "Not Found")
+    # nin = len(trap_params.get(name, [])) # not strictly true
+    # if name in trap_params and nin > 0 :
+    #     argspec_lines = argspec.split("\n")
+    #     for i in range(nin):
+    #         argexamples = trap_params[name][i]
+    #         for inst in argexamples:
+    #             MAX_EXAMPLES = 5
+    #             list_examples = sorted(list(argexamples[inst]))
+    #             if not inst.startswith("pushImm") and len(list_examples) > MAX_EXAMPLES:
+    #                 list_examples = list_examples[:MAX_EXAMPLES] + ["..."]
+    #             values = ','.join(list_examples)
+    #             argspec_lines[i] += " ({}: {})".format(inst, values)
+    #     argspec = "\n".join(argspec_lines)
+    argspec = existing_doc[3].split(":")[1].strip()
 
-    description = ""
+    description = existing_doc[4].split(":")[1].strip()
     decompiled_code = trap_functions.get(name, "Not Found")
 
     appears_in = ["{} ({})".format(n, objects.get(n.split(os.sep)[-2], "")) if n.startswith("obj") else n for n in trap_appears.get(name, [])]
@@ -174,11 +189,6 @@ for syscall in syscall_list:
     examplecode = trap_examples.get(name, [""])[-1]
 
     trapfn = trapcode_fns.get(name, os.path.join("source", name+".c"))
-
-    docfn = "syscall_docs" + os.sep + trapfn[7:]
-    docdir = os.path.dirname(docfn)
-    if not os.path.isdir(docdir):
-        os.makedirs(docdir)
 
     with open(docfn, "w") as f:
         f.write(output_template.format(
