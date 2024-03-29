@@ -5,7 +5,7 @@ name: trap_obj_motion_check_trigger
 ---
 ---
 ---
-category: mset 
+category: mset
 ---
 ---
 ---

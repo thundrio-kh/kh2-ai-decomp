@@ -220,7 +220,7 @@ obj\P_MU000\p_mu.bdscript ((P) Mulan)
 ---
 ---
 example usage from obj\B_BB110\b_bb.bdscript
-L5368:
+L5368: ;___label for action pushFromPAi L12298 ; ___ai hop
  popToSp 0
  pushFromFSp 0
  gosub 12, L3601

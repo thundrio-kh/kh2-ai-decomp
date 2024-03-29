@@ -172,7 +172,7 @@ obj\P_AL010\p_al.bdscript ((P) Genie)
 ---
 example usage from obj\B_CA010\b_ca.bdscript
 L1000:
- pushFromPAi L12173 ; ___ai 'show_gun#########' (L12173)
+ pushFromPAi L12173 ; ___ai show_gun######### (L12173)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromPWp W384
  pushImm 13

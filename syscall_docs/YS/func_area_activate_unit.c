@@ -18,7 +18,7 @@ syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
 ---
 ---
 ---
-description: Activates the spawn file with the passed in name.  
+description: Activates the spawn file with the passed in name.
 ---
 ---
 ---
@@ -103,6 +103,6 @@ TR3:
  pushImm 13318
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
  jz L27
- pushFromPAi L180 ; ___ai 'c02_' (L180)
+ pushFromPAi L180 ; ___ai c02_ (L180)
  syscall 1, 45 ; func_area_activate_unit (1 in, 0 out)
  jmp L31

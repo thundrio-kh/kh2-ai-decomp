@@ -137,7 +137,7 @@ obj\N_BB070_BTL\n_bb.bdscript ((N) Mrs. Potts (BTL) (BB))
 ---
 ---
 example usage from obj\B_LK100\b_lk.bdscript
-L5755:
+L5755: ;___label for action pushFromPAi L8756 ; ___ai escape_run
  popToSp 0
  pushImmf 300
  popToSp 44

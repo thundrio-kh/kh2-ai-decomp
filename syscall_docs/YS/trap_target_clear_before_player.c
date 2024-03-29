@@ -45,9 +45,9 @@ obj\N_EX760_BTL_MEGARA\n_ex.bdscript ((N) Pete (BTL_MEGARA) (EX))
 ---
 ---
 example usage from obj\N_EX760_BTL_MEGARA\n_ex.bdscript
-L5513:
+L5513: ;___label for action pushFromPAi L11373 ; ___ai cheer
  popToSp 0
- pushFromPAi L11211 ; ___ai 'target_player' (L11211)
+ pushFromPAi L11211 ; ___ai target_player (L11211)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  syscall 1, 245 ; trap_target_clear_before_player (0 in, 0 out)
  pushImm 1

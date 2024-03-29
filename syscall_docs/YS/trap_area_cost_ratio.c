@@ -18,7 +18,7 @@ pop percentage ; (percentage of rooms capacity that is currently used)
 ---
 ---
 ---
-description: Divides the total cost of all objects currently spawned by the capacity of the room (YS::Cost / YS::Capacity) 
+description: Divides the total cost of all objects currently spawned by the capacity of the room (YS::Cost / YS::Capacity)
 ---
 ---
 ---

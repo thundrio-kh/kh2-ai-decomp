@@ -176,7 +176,7 @@ L140:
  pushFromPSp 16
  syscall 1, 148 ; trap_obj_set_pos (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L13898 ; ___ai '10' (L13898)
+ pushFromPAi L13898 ; ___ai 10 (L13898)
  syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
  pushFromFSp 0
  pushFromFSp 4
@@ -190,7 +190,7 @@ L140:
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  pushFromPSpVal 0
- pushFromPAi L13913 ; ___ai 'rc_clear_light' (L13913)
+ pushFromPAi L13913 ; ___ai rc_clear_light (L13913)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushImm L303
  pushFromFSp 0

@@ -174,7 +174,7 @@ obj\P_EX360\p_ex.bdscript ((P) ??? (EX))
 ---
 ---
 example usage from obj\B_BB110\b_bb.bdscript
-L8976:
+L8976: ;___callback for action pushFromPAi L12734 ; ___ai atk_rip
  popToSp 0
  pushFromFSp 0
  syscall 1, 74 ; trap_obj_idle (1 in, 0 out)

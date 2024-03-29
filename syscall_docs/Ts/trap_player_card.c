@@ -17,7 +17,7 @@ syscall 6, 29 ; trap_player_card (0 in, 0 out)
 ---
 ---
 ---
-description: Change the player into a card 
+description: Change the player into a card
 ---
 ---
 ---

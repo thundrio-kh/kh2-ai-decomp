@@ -52,7 +52,7 @@ obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 example usage from obj\M_EX950\m_ex.bdscript
-L9331:
+L9331: ;___label for action pushFromPAi L10939 ; ___ai rc_card_failure
  popToSp 0
  pushFromFSp 0
  pushImm 8

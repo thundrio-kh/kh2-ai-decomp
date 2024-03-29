@@ -260,7 +260,7 @@ L3139:
  pushFromPWp W36
  pushImm 4
  add 
- pushFromPAi L5812 ; ___ai 'tr_unit_stop' (L5812)
+ pushFromPAi L5812 ; ___ai tr_unit_stop (L5812)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  jmp L3154

@@ -122,7 +122,7 @@ obj\N_HB530_BTL2\n_hb.bdscript ((N) Squall / Leon (BTL2) (HB))
 ---
 ---
 example usage from obj\B_LK110\b_lk.bdscript
-L8820:
+L8820: ;___label for action pushFromPAi L10719 ; ___ai mode_change_flame
  popToSp 0
  pushImm 0
  popToSpVal 128

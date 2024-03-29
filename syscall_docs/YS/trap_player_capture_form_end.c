@@ -59,7 +59,7 @@ obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 example usage from obj\B_EX150\b_ex.bdscript
-L10506:
+L10506: ;___label for action pushFromPAi L18581 ; ___ai test_return_form
  popToSp 0
  syscall 1, 243 ; trap_player_capture_form_end (0 in, 0 out)
  ret 

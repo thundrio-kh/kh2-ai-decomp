@@ -111,7 +111,7 @@ obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 example usage from obj\N_HB040_BTL\n_hb.bdscript
-L3436:
+L3436: ;___label for action pushFromPAi L3827 ; ___ai leave
  popToSp 0
  pushFromFSp 0
  gosub 4, L3514

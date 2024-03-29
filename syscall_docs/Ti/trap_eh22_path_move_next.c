@@ -74,7 +74,7 @@ obj\B_EX330\b_ex.bdscript ((F) Xemnas’s dragon (Flying))
 ---
 ---
 example usage from obj\B_EX330\b_ex.bdscript
-L7170:
+L7170: ;___label for action pushFromPAi L8832 ; ___ai next_path
  popToSp 0
  pushFromFSp 0
  syscall 5, 28 ; trap_eh22_path_move_next (1 in, 0 out)

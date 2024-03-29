@@ -99,7 +99,7 @@ obj\P_EX340\p_ex.bdscript ((P) Tinker Bell)
 ---
 ---
 example usage from obj\P_EX340\p_ex.bdscript
-L1695:
+L1695: ;___label for action pushFromPAi L1887 ; ___ai reraise
  popToSp 0
  pushFromFSp 0
  gosub 4, L1288
@@ -117,7 +117,7 @@ L1695:
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  pushFromFSp 0
- pushFromPAi L1874 ; ___ai '20' (L1874)
+ pushFromPAi L1874 ; ___ai 20 (L1874)
  gosub 4, L1288
  memcpyToSp 16, 16
  pushFromPSp 16

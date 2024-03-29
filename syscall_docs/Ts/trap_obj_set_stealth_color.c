@@ -80,7 +80,7 @@ obj\B_LK120\b_lk.bdscript ((B) Groundshaker)
 ---
 ---
 example usage from obj\B_LK120\b_lk.bdscript
-L17408:
+L17408: ;___label for action pushFromPAi L23568 ; ___ai atk_child_punch
  popToSp 0
  pushImmf 200
  gosub 12, L543
@@ -106,7 +106,7 @@ L17408:
  pushFromFSp 0
  gosub 12, L17671
  pushFromFSp 0
- pushFromPAi L23568 ; ___ai 'atk_child_punch' (L23568)
+ pushFromPAi L23568 ; ___ai atk_child_punch (L23568)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  halt 

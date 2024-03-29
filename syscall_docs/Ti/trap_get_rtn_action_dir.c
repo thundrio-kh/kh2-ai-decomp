@@ -473,7 +473,7 @@ obj\W_EX010_W0_RTN\rtn_.bdscript ((W) Struggle Sword (RTN))
 ---
 ---
 example usage from obj\B_EX110_RTN\rtn_.bdscript
-L2245:
+L2245: ;___label for action pushFromPAi L2890 ; ___ai rtn_avoid
  popToSp 0
  pushFromFSp 0
  syscall 5, 6 ; trap_get_rtn_action_dir (1 in, 1 out)

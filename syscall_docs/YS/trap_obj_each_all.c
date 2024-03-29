@@ -5,7 +5,7 @@ name: trap_obj_each_all
 ---
 ---
 ---
-category: object 
+category: object
 ---
 ---
 ---

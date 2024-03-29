@@ -515,6 +515,6 @@ L4091:
  eqz 
  jz L4122
  pushFromFSp 0
- pushFromPAi L11456 ; ___ai 'mode_battle_boss' (L11456)
+ pushFromPAi L11456 ; ___ai mode_battle_boss (L11456)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L4122

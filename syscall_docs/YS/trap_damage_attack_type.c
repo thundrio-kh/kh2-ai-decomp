@@ -53,6 +53,6 @@ L108:
  pushFromFSp 0
  gosub 4, L136
  pushFromFSp 0
- pushFromPAi L3059 ; ___ai 'break' (L3059)
+ pushFromPAi L3059 ; ___ai break (L3059)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L131

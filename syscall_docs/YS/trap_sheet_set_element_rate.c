@@ -31,8 +31,6 @@ description: Set resistances for an object
 | 4     | Darkness|
 | 5     | Light   |
 | 6     | All     |
-
-
 ---
 ---
 ---

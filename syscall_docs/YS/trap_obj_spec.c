@@ -148,7 +148,7 @@ L4649:
  pushFromPWp W480
  syscall 1, 7 ; trap_obj_set_act_table (2 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11318 ; ___ai 'appear' (L11318)
+ pushFromPAi L11318 ; ___ai appear (L11318)
  pushImm 100
  pushImm L6432
  pushImm 0
@@ -161,7 +161,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11568 ; ___ai 'leave' (L11568)
+ pushFromPAi L11568 ; ___ai leave (L11568)
  pushImm 196908
  pushImm L6684
  pushImm 0
@@ -174,7 +174,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11411 ; ___ai 'freeze' (L11411)
+ pushFromPAi L11411 ; ___ai freeze (L11411)
  pushImm 100
  pushImm L6744
  pushImm 0
@@ -187,7 +187,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11443 ; ___ai 'event' (L11443)
+ pushFromPAi L11443 ; ___ai event (L11443)
  pushImm 196908
  pushImm L6761
  pushImm 0
@@ -200,7 +200,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11221 ; ___ai 'idle' (L11221)
+ pushFromPAi L11221 ; ___ai idle (L11221)
  pushImm 100
  pushImm L6781
  pushImm 0
@@ -213,7 +213,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)
+ pushFromPAi L11341 ; ___ai mode_battle (L11341)
  pushImm 100
  pushImm L7055
  pushImm 0
@@ -226,7 +226,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11583 ; ___ai 'mode_revenge' (L11583)
+ pushFromPAi L11583 ; ___ai mode_revenge (L11583)
  pushImm 100
  pushImm L7318
  pushImm 0
@@ -239,7 +239,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11456 ; ___ai 'mode_battle_boss' (L11456)
+ pushFromPAi L11456 ; ___ai mode_battle_boss (L11456)
  pushImm 100
  pushImm L7360
  pushImm 0
@@ -252,7 +252,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11484 ; ___ai 'mode_revenge_boss' (L11484)
+ pushFromPAi L11484 ; ___ai mode_revenge_boss (L11484)
  pushImm 100
  pushImm L7426
  pushImm 0
@@ -265,7 +265,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11499 ; ___ai 'revenge' (L11499)
+ pushFromPAi L11499 ; ___ai revenge (L11499)
  pushImm 65836
  pushImm L7492
  pushImm 0
@@ -278,7 +278,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11597 ; ___ai 'dead' (L11597)
+ pushFromPAi L11597 ; ___ai dead (L11597)
  pushImm 196908
  pushImm L7551
  pushImm 0
@@ -291,7 +291,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11516 ; ___ai 'magic_spot_l' (L11516)
+ pushFromPAi L11516 ; ___ai magic_spot_l (L11516)
  pushImm 100
  pushImm L7685
  pushImm 0
@@ -304,7 +304,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11534 ; ___ai 'magic_spot_r' (L11534)
+ pushFromPAi L11534 ; ___ai magic_spot_r (L11534)
  pushImm 100
  pushImm L7716
  pushImm 0
@@ -317,7 +317,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11262 ; ___ai 'atk_summon_tower' (L11262)
+ pushFromPAi L11262 ; ___ai atk_summon_tower (L11262)
  pushImm 200
  pushImm L7747
  pushImm 0
@@ -330,7 +330,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11291 ; ___ai 'atk_magic_fire' (L11291)
+ pushFromPAi L11291 ; ___ai atk_magic_fire (L11291)
  pushImm 200
  pushImm L8056
  pushImm 0
@@ -343,7 +343,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11555 ; ___ai 'atk_auto_thunder_starter' (L11555)
+ pushFromPAi L11555 ; ___ai atk_auto_thunder_starter (L11555)
  pushImm 200
  pushImm L8085
  pushImm 0
@@ -356,7 +356,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11571 ; ___ai 'atk_auto_thunder_ender' (L11571)
+ pushFromPAi L11571 ; ___ai atk_auto_thunder_ender (L11571)
  pushImm 200
  pushImm L8100
  pushImm 0
@@ -369,7 +369,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11403 ; ___ai 'atk_magic_storm' (L11403)
+ pushFromPAi L11403 ; ___ai atk_magic_storm (L11403)
  pushImm 200
  pushImm L8113
  pushImm 0
@@ -382,7 +382,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11228 ; ___ai 'atk_spin_blow' (L11228)
+ pushFromPAi L11228 ; ___ai atk_spin_blow (L11228)
  pushImm 200
  pushImm L8142
  pushImm 0
@@ -395,7 +395,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11283 ; ___ai 'atk_flash_bind' (L11283)
+ pushFromPAi L11283 ; ___ai atk_flash_bind (L11283)
  pushImm 200
  pushImm L8166
  pushImm L8186
@@ -408,7 +408,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11310 ; ___ai 'atk_summon_junk' (L11310)
+ pushFromPAi L11310 ; ___ai atk_summon_junk (L11310)
  pushImm 200
  pushImm L8194
  pushImm 0
@@ -421,7 +421,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11366 ; ___ai 'atk_black_storm' (L11366)
+ pushFromPAi L11366 ; ___ai atk_black_storm (L11366)
  pushImm 200
  pushImm L9397
  pushImm 0
@@ -434,7 +434,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11211 ; ___ai 'pos' (L11211)
+ pushFromPAi L11211 ; ___ai pos (L11211)
  pushImm 100
  pushImm L10028
  pushImm 0
@@ -447,7 +447,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11347 ; ___ai 'body_break' (L11347)
+ pushFromPAi L11347 ; ___ai body_break (L11347)
  pushImm 300
  pushImm L10044
  pushImm L10180
@@ -460,7 +460,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11509 ; ___ai 'body_break_a' (L11509)
+ pushFromPAi L11509 ; ___ai body_break_a (L11509)
  pushImm 300
  pushImm L10187
  pushImm L10209
@@ -473,7 +473,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11224 ; ___ai 'stun' (L11224)
+ pushFromPAi L11224 ; ___ai stun (L11224)
  pushImm 300
  pushImm L10220
  pushImm 0
@@ -486,7 +486,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11215 ; ___ai 'stun_a' (L11215)
+ pushFromPAi L11215 ; ___ai stun_a (L11215)
  pushImm 300
  pushImm L10245
  pushImm 0
@@ -499,7 +499,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11322 ; ___ai 'rc_roll_up' (L11322)
+ pushFromPAi L11322 ; ___ai rc_roll_up (L11322)
  pushImm 100
  pushImm L10279
  pushImm 0
@@ -512,7 +512,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11359 ; ___ai 'rc_spin_burst' (L11359)
+ pushFromPAi L11359 ; ___ai rc_spin_burst (L11359)
  pushImm 100
  pushImm L10325
  pushImm 0
@@ -525,7 +525,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11240 ; ___ai 'idle_time' (L11240)
+ pushFromPAi L11240 ; ___ai idle_time (L11240)
  pushImm 100
  pushImm L10364
  pushImm 0
@@ -538,7 +538,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11235 ; ___ai 'footwork' (L11235)
+ pushFromPAi L11235 ; ___ai footwork (L11235)
  pushImm 100
  pushImm L10388
  pushImm 0
@@ -551,7 +551,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11590 ; ___ai 'first_action' (L11590)
+ pushFromPAi L11590 ; ___ai first_action (L11590)
  pushImm 100
  pushImm L10425
  pushImm L10475
@@ -564,7 +564,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11374 ; ___ai 'btl_normal' (L11374)
+ pushFromPAi L11374 ; ___ai btl_normal (L11374)
  pushImm 100
  pushImm L10483
  pushImm 0
@@ -577,7 +577,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11391 ; ___ai 'btl_hard' (L11391)
+ pushFromPAi L11391 ; ___ai btl_hard (L11391)
  pushImm 100
  pushImm L10583
  pushImm 0
@@ -590,7 +590,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11417 ; ___ai 'btl_super_hard' (L11417)
+ pushFromPAi L11417 ; ___ai btl_super_hard (L11417)
  pushImm 100
  pushImm L10861
  pushImm 0
@@ -603,7 +603,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11305 ; ___ai 'rvg_short' (L11305)
+ pushFromPAi L11305 ; ___ai rvg_short (L11305)
  pushImm 100
  pushImm L11025
  pushImm 0
@@ -616,7 +616,7 @@ L4649:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W480
- pushFromPAi L11331 ; ___ai 'rvg_long' (L11331)
+ pushFromPAi L11331 ; ___ai rvg_long (L11331)
  pushImm 100
  pushImm L11034
  pushImm 0

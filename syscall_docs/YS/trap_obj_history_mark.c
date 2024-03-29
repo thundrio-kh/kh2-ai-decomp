@@ -121,7 +121,7 @@ obj\F_NM050\f_nm.bdscript ((F) Falling grave (NM))
 ---
 ---
 example usage from obj\F_AL050\f_al.bdscript
-L2368:
+L2368: ;___label for action pushFromPAi L3059 ; ___ai break
  popToSp 0
  pushFromFSpVal 164
  gosub 4, L1332

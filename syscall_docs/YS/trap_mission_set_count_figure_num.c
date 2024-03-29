@@ -83,7 +83,7 @@ obj\N_NM070_BTL\n_nm.bdscript ((N) Barrel (BTL) (NM))
 ---
 ---
 example usage from obj\B_LK100\b_lk.bdscript
-L8060:
+L8060: ;___label for action pushFromPAi L9035 ; ___ai dead
  popToSp 0
  pushFromFSp 0
  pushImm 1

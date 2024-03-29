@@ -355,6 +355,6 @@ L1127:
  pushFromFSp 0
  syscall 5, 4 ; trap_end_rtn_action (1 in, 0 out)
  pushFromFSp 0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ pushFromPAi L2943 ; ___ai path_move (L2943)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret 

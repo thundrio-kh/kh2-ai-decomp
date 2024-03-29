@@ -59,7 +59,7 @@ example usage from obj\B_EX150\b_ex.bdscript
 L3409:
  pushFromFSp 0
  gosub 4, L3877
- pushFromPAi L18699 ; ___ai 'phase' (L18699)
+ pushFromPAi L18699 ; ___ai phase (L18699)
  syscall 0, 24 ; trap_stputi (2 in, 0 out)
  syscall 6, 2 ; trap_player_get_form (0 in, 1 out)
  pushImm 12

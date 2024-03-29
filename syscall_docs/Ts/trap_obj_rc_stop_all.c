@@ -187,7 +187,7 @@ L9190:
  pushFromPSpVal 0
  syscall 6, 46 ; trap_obj_rc_stop_all (4 in, 0 out)
  pushFromFSp 0
- pushFromPAi L18270 ; ___ai '10' (L18270)
+ pushFromPAi L18270 ; ___ai 10 (L18270)
  pushFromPSpVal 0
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  pushFromPSpVal 0
@@ -221,9 +221,9 @@ L9190:
  pushImm 0
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  pushFromPSpVal 0
- pushFromPAi L18279 ; ___ai 'rc_dance_counter' (L18279)
+ pushFromPAi L18279 ; ___ai rc_dance_counter (L18279)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
- pushFromPAi L18296 ; ___ai 'set star' (L18296)
+ pushFromPAi L18296 ; ___ai set star (L18296)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromPSpVal 0
  pushImm 8

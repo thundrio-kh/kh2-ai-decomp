@@ -163,7 +163,7 @@ L2149:
  syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
  pushFromFSp 0
  fetchValue 0
- pushFromPAi L3411 ; ___ai '10' (L3411)
+ pushFromPAi L3411 ; ___ai 10 (L3411)
  pushImmf 500
  pushImm 0
  syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)

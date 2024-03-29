@@ -107,7 +107,7 @@ obj\N_HB040_BTL\n_hb.bdscript ((N) Stitch (BTL) (HB))
 ---
 ---
 example usage from obj\N_HB040_BTL\n_hb.bdscript
-L3314:
+L3314: ;___callback for action pushFromPAi L3806 ; ___ai appear_skip
  popToSp 0
  gosub 12, L1348
  memcpyToSp 16, 32

@@ -149,7 +149,7 @@ obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World o
 ---
 example usage from obj\B_EX170_LAST\b_ex.bdscript
 L1116:
- pushFromPAi L27786 ; ___ai 'riku detach' (L27786)
+ pushFromPAi L27786 ; ___ai riku detach (L27786)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromPWp W688
  pushImm 144

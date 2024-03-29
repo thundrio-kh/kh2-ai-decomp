@@ -165,9 +165,9 @@ L2116:
  pushImmf 0
  syscall 2, 3 ; trap_enemy_exec_damage_hitback (3 in, 0 out)
  pushFromFSp 0
- pushFromPAi L10954 ; ___ai 'fear' (L10954)
+ pushFromPAi L10954 ; ___ai fear (L10954)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L10676 ; ___ai 'move_back' (L10676)
+ pushFromPAi L10676 ; ___ai move_back (L10676)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  jmp L2167

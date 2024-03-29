@@ -138,7 +138,7 @@ obj\N_WI010_BTL_VS\n_wi.bdscript ((N) Pete (captain) (BTL_VS) (WI))
 ---
 ---
 example usage from obj\B_EX310\b_ex.bdscript
-L2726:
+L2726: ;___callback for action pushFromPAi L3024 ; ___ai event
  popToSp 0
  pushFromFSp 0
  syscall 1, 17 ; trap_obj_leave_force (1 in, 0 out)

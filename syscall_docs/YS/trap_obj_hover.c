@@ -149,7 +149,7 @@ L150:
  pushFromPSp 32
  gosub 16, L291
  pushFromFSp 0
- pushFromPAi L4686 ; ___ai 'exec_rc' (L4686)
+ pushFromPAi L4686 ; ___ai exec_rc (L4686)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromPSp 16
  pushImmf 1

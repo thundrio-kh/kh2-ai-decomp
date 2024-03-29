@@ -44,7 +44,6 @@ description: Disable resistances/sturdy frames for an object
 | REACTION_PS_SMALL | 18 |
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
-
 ---
 ---
 ---
@@ -205,7 +204,7 @@ obj\P_EX100_HTLF_BTL\p_ex.bdscript ((P) Vexen’s Anti-Sora (BTL))
 ---
 ---
 example usage from obj\B_AL100_2ND\b_al.bdscript
-L9044:
+L9044: ;___label for action pushFromPAi L11562 ; ___ai atk_breath
  popToSp 0
  pushFromFSp 0
  pushImm 1

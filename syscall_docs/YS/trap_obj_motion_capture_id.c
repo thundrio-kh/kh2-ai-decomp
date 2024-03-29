@@ -19,7 +19,7 @@ pop id ; (int)
 ---
 ---
 ---
-description: return the id of a motion capture 
+description: return the id of a motion capture
 ---
 ---
 ---

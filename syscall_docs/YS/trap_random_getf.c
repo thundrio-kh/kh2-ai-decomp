@@ -19,7 +19,7 @@ pop num ; (int)
 ---
 ---
 ---
-description:  Return a random float between 0 and range
+description: Return a random float between 0 and range
 ---
 ---
 ---
@@ -663,7 +663,7 @@ L1230:
  subf 
  infzf 
  jz L1289
- pushFromPAi L2402 ; ___ai '-------------------------- pattern 1' (L2402)
+ pushFromPAi L2402 ; ___ai -------------------------- pattern 1 (L2402)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFSp 0
  fetchValue 0

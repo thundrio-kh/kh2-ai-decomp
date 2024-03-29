@@ -148,6 +148,6 @@ L7475:
  pushFromPSp 16
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  pushFromPWp W176
- pushFromPAi L27887 ; ___ai '71' (L27887)
+ pushFromPAi L27887 ; ___ai 71 (L27887)
  syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
  jmp L7558

@@ -19,7 +19,7 @@ pop is_pressed ; (bool)
 ---
 ---
 ---
-description:  Checks if a button is pressed on the controller.
+description: Checks if a button is pressed on the controller.
 
 | Button | Value |
 |--------|-------|
@@ -34,7 +34,6 @@ description:  Checks if a button is pressed on the controller.
 | Triangle | 10  |
 | R1     | 11    |
 | Select | 22    |
-
 ---
 ---
 ---

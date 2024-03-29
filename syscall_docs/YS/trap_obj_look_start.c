@@ -373,14 +373,7 @@ obj\W_EX010_W0_RTN\rtn_.bdscript ((W) Struggle Sword (RTN))
 ---
 ---
 example usage from obj\B_EX110_RTN\rtn_.bdscript
-L1138:
- popToSp 0
- pushFromPAi L2833before_check' (L2833)
- syscall 0, 2 ; trap_puts (1 in, 0 out)
- pushFromFSp 0
- pushImm 0
- pushImmf 8
- gosub 12, L1413
+L1720:
  pushFromFSp 0
  gosub 12, L1003
  memcpyToSp 16, 48

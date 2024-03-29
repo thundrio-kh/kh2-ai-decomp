@@ -285,7 +285,7 @@ L3879:
  info 
  jnz L3948
  pushFromFSp 4
- pushFromPAi L4428 ; ___ai 'aura end' (L4428)
+ pushFromPAi L4428 ; ___ai aura end (L4428)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromPSpVal 116
  pushFromFSp 4

@@ -31,7 +31,6 @@ void __fastcall YS::trap_frametime(BD_VALUE_16 *args)
 }
 // A0AD74: using guessed type float dk::Vsync::s_frameTime;
 
-
 //BASIC
 ---
 ---

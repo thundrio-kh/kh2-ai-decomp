@@ -54,7 +54,7 @@ L3824:
  sub 
  eqz 
  jz L3861
- pushFromPAi L14988 ; ___ai 'disable_zone?' (L14988)
+ pushFromPAi L14988 ; ___ai disable_zone? (L14988)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushImm 97
  syscall 1, 202 ; trap_unit_disable (1 in, 0 out)

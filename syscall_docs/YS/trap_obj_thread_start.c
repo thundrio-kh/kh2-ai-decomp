@@ -29,7 +29,7 @@ description: Starts a new VM thread and begins execution at the label
 ---
 decompiled code:
 void __fastcall YS::VM::stop(YS::VM_377 *const this, int mask, int match)
-YS::VM_377 *YS::VM::start(YS::VM_377 *const this, int group, int pc, BD_VALUE_0 *args, int argc); // idb
+YS::VM_377 *__fastcall YS::VM::Start(unsigned int *code, YS::OBJ_175 *owner)
 /----- (0000000000505C64) ----------------------------------------------------
 void __fastcall YS::trap_obj_thread_start(BD_VALUE_21 *args)
 {

@@ -59,6 +59,6 @@ example usage from obj\B_EX370\b_ex.bdscript
 L1205:
  pushFromFSpVal 16
  jz L1215
- pushFromPAi L28319 ; ___ai 'cap donald' (L28319)
+ pushFromPAi L28319 ; ___ai cap donald (L28319)
  syscall 0, 26 ; trap_stputs (1 in, 0 out)
  jmp L1215

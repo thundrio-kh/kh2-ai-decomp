@@ -22,7 +22,7 @@ pop unk ; (unknown)
 ---
 ---
 ---
-description:  Starts a new thread of execution
+description: Starts a new thread of execution
 
 Example:
 
@@ -35,7 +35,6 @@ startThread:
  pushFromFSp 0
  syscall 0, 9 ; trap_thread_start (4 in, 1 out)
  ret
-
 ---
 ---
 ---

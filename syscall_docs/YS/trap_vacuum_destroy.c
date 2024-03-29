@@ -177,7 +177,7 @@ obj\N_HB630\n_hb.bdscript ((N) Sephiroth (HB))
 ---
 example usage from obj\B_EX180\b_ex.bdscript
 L5637:
- pushFromPAi L11074 ; ___ai 'destroy' (L11074)
+ pushFromPAi L11074 ; ___ai destroy (L11074)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFWp W4264
  syscall 2, 78 ; trap_vacuum_destroy (1 in, 0 out)

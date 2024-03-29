@@ -214,7 +214,7 @@ L921:
  syscall 6, 22 ; trap_target_searcher_get_target_num (4 in, 1 out)
  popToSp 4
  pushFromFSp 4
- pushFromPAi L6003 ; ___ai 'frametan enemy num' (L6003)
+ pushFromPAi L6003 ; ___ai frametan enemy num (L6003)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromFSp 4
  pushImm 0

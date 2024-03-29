@@ -103,7 +103,7 @@ obj\N_HE010_BTL_CLSM\n_he.bdscript ((N) Hercules (BTL) (CLSM) (HE))
 ---
 ---
 example usage from obj\B_BB100\b_bb.bdscript
-L3724:
+L3724: ;___label for action pushFromPAi L4900 ; ___ai release
  popToSp 0
  pushFromFSp 0
  pushImm 5
@@ -131,7 +131,7 @@ L3724:
  pushImmf 4
  gosub 4, L2701
  pushFromFSp 0
- pushFromPAi L4912 ; ___ai 'self_appear' (L4912)
+ pushFromPAi L4912 ; ___ai self_appear (L4912)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  pushImmf 4

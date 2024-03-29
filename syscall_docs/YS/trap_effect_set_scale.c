@@ -155,7 +155,7 @@ L395:
  popToSp 4
  popToSp 0
  pushFromFSp 4
- pushFromPAi L630 ; ___ai 'src' (L630)
+ pushFromPAi L630 ; ___ai src (L630)
  syscall 0, 1 ; trap_putf (2 in, 0 out)
  pushFromFSp 4
  pushImmf 0.5
@@ -169,7 +169,7 @@ L395:
  mulf 
  popToSp 4
  pushFromFSp 4
- pushFromPAi L638 ; ___ai 'des' (L638)
+ pushFromPAi L638 ; ___ai des (L638)
  syscall 0, 1 ; trap_putf (2 in, 0 out)
  pushFromPSp 16
  pushFromFSp 4

@@ -289,7 +289,7 @@ L3114:
  syscall 1, 147 ; trap_obj_pos (1 in, 1 out)
  memcpyToSp 16, 48
  pushFromPSp 48
- pushFromPAi L11299 ; ___ai 'target pos' (L11299)
+ pushFromPAi L11299 ; ___ai target pos (L11299)
  syscall 0, 8 ; trap_vector_dump (2 in, 0 out)
  pushFromFSp 8
  pushFromPSpVal 0
@@ -324,10 +324,10 @@ L3114:
  pushImmf 0
  syscall 1, 13 ; trap_sysobj_motion_push (3 in, 0 out)
  pushFromFSp 0
- pushFromPAi L11322 ; ___ai 'rc_roll_up' (L11322)
+ pushFromPAi L11322 ; ___ai rc_roll_up (L11322)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L11339 ; ___ai '00' (L11339)
+ pushFromPAi L11339 ; ___ai 00 (L11339)
  pushFromFSp 8
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  ret 

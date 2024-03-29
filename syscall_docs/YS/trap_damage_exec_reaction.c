@@ -123,7 +123,7 @@ L1192:
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
  pushImm 0
  syscall 1, 228 ; trap_sheet_hp (2 in, 1 out)
- pushFromPAi L4855 ; ___ai 'sheet.hp' (L4855)
+ pushFromPAi L4855 ; ___ai sheet.hp (L4855)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromFSp 0
  syscall 1, 84 ; trap_obj_sheet (1 in, 1 out)
@@ -136,7 +136,7 @@ L1192:
  sub 
  info 
  jz L1262
- pushFromPAi L4887 ; ___ai 'freeze' (L4887)
+ pushFromPAi L4887 ; ___ai freeze (L4887)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFWp W4216
  pushImm 1
@@ -145,9 +145,9 @@ L1192:
  pushFromFSp 4
  syscall 2, 15 ; trap_damage_exec_reaction (1 in, 0 out)
  pushFromFSp 0
- pushFromPAi L4887 ; ___ai 'freeze' (L4887)
+ pushFromPAi L4887 ; ___ai freeze (L4887)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L4860 ; ___ai 'mode_revenge' (L4860)
+ pushFromPAi L4860 ; ___ai mode_revenge (L4860)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  exit 

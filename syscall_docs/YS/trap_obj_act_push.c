@@ -20,7 +20,6 @@ syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
 ---
 ---
 description: pushes an action so that it starts next
-
 ---
 ---
 ---
@@ -909,6 +908,6 @@ obj\W_EX010_W0_RTN\rtn_.bdscript ((W) Struggle Sword (RTN))
 example usage from obj\B_AL020\b_al.bdscript
 L7353:
  pushFromFSp 0
- pushFromPAi L11341 ; ___ai 'mode_battle' (L11341)
+ pushFromPAi L11341 ; ___ai mode_battle (L11341)
  syscall 1, 9 ; trap_obj_act_push (2 in, 0 out)
  ret 

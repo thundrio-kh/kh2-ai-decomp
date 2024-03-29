@@ -45,7 +45,7 @@ void __fastcall YS::trap_obj_reaction_callback(BD_VALUE_21 *args)
   __int64 back_chain; // [sp+0h] [-D0h]
   YS::TARGET_108 v13; // [sp+70h] [-60h] BYREF
 
-  v2 = *(unsigned int *)&(*args)[12]; // arg 4
+  v2 = *(unsigned int *)&(*args)[12];
   v3 = (unsigned int)*(_QWORD *)(back_chain + 16);
   if ( !(_DWORD)v2 )
   {
@@ -134,7 +134,7 @@ void __fastcall YS::trap_obj_reaction_callback(BD_VALUE_21 *args)
   YS::OBJ::reaction_callback(
     v10,
     (YS::OBJ_125 *)*(unsigned int *)(v11 + 4),
-    *(int *)&(*args)[8], // arg 3
+    *(int *)&(*args)[8],
     (YS::TARGET_78 *)v13,
     v8,
     v7,

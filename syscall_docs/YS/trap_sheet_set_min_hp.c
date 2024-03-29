@@ -164,7 +164,7 @@ obj\P_EX230\p_ex.bdscript ((P) Mickey (with Keyblade))
 example usage from msn\AL00_MS101\ms_a.bdscript
 L228:
  pushFromFSp 36
- pushFromPAi L374 ; ___ai 'INT' (L374)
+ pushFromPAi L374 ; ___ai INT (L374)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromFSp 32
  pushFromFSp 36

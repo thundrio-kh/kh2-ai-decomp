@@ -5,7 +5,7 @@ name: trap_enemy_exec_reflect
 ---
 ---
 ---
-category: enemy 
+category: enemy
 ---
 ---
 ---

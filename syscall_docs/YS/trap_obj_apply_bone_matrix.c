@@ -5,7 +5,7 @@ name: trap_obj_apply_bone_matrix
 ---
 ---
 ---
-category: bones 
+category: bones
 ---
 ---
 ---
@@ -580,6 +580,6 @@ L782:
  pushFromPSp 48
  fetchValue 92
  jz L833
- pushFromPAi L6864 ; ___ai 'break' (L6864)
+ pushFromPAi L6864 ; ___ai break (L6864)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  jmp L1049

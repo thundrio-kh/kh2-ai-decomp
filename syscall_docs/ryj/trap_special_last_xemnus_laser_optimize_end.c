@@ -48,7 +48,7 @@ obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World o
 ---
 ---
 example usage from obj\B_EX170_LAST\b_ex.bdscript
-L15101:
+L15101: ;___callback for action pushFromPAi L28178 ; ___ai rc_crowd_laser
  popToSp 0
  pushFromFSp 0
  gosub 4, L15124
