@@ -112,7 +112,7 @@ L1144:
  sub 
  eqz 
  jz L1330
- pushFromPAi L12784 ; ___ai 'turn_revenge' (L12784)
+ pushFromPAi L12784 ; ___ai turn_revenge (L12784)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFWp W4512
  pushImm 0

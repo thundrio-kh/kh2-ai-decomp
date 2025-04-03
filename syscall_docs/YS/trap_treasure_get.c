@@ -180,7 +180,7 @@ obj\M_EX350_13\m_ex.bdscript ((M) Mushroom 13 (EX))
 ---
 ---
 example usage from obj\M_EX350_13\m_ex.bdscript
-L7928:
+L7928: ;___label for action pushFromPAi L9465 ; ___ai present_end
  popToSp 0
  pushImm 588
  syscall 1, 362 ; trap_treasure_get (1 in, 0 out)
@@ -190,7 +190,7 @@ L7928:
  pushImm 0
  syscall 1, 41 ; trap_signal_call (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L9397 ; ___ai 'light_return_wait' (L9397)
+ pushFromPAi L9397 ; ___ai light_return_wait (L9397)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  gosub 4, L2575

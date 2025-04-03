@@ -55,7 +55,7 @@ example usage from obj\B_EX140\b_ex.bdscript
 L21874:
  popToSp 0
  pushFromFSpVal 212
- cfti 
+ citf 
  pushImmf 3
  divf 
  popToSp 4

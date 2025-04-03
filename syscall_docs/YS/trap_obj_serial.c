@@ -114,11 +114,11 @@ obj\N_DC010_BTL\n_dc.bdscript ((N) Minnie (BTL) (DC))
 ---
 ---
 example usage from obj\F_AL050\f_al.bdscript
-L2562:
+L2562: ;___callback for action pushFromPAi L3059 ; ___ai break
  popToSp 0
  pushFromFSp 0
  syscall 1, 144 ; trap_obj_serial (1 in, 1 out)
- pushFromPAi L3100 ; ___ai 'break_reset' (L3100)
+ pushFromPAi L3100 ; ___ai break_reset (L3100)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromFSp 0
  pushImm 3

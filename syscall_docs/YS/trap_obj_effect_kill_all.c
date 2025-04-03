@@ -166,7 +166,7 @@ obj\F_NM020\f_nm.bdscript ((F) Spitting fountain (NM))
 ---
 ---
 example usage from obj\F_HB020\f_hb.bdscript
-L9368:
+L9368: ;___callback for action pushFromPAi L9539 ; ___ai event
  popToSp 0
  pushFromFSp 0
  syscall 1, 349 ; trap_obj_effect_kill_all (1 in, 0 out)

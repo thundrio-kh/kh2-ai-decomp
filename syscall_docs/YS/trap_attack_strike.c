@@ -26,7 +26,7 @@ description: Sets up an attack to strike a specific part of an object
 ---
 ---
 decompiled code:
-YS::DAMAGE_3 *YS::ATTACK::strike(YS::ATTACK_10 *const this, YS::BTLOBJ *obj, int hitpart, int parts); // idb
+__int64 __fastcall YS::ATTACK::Strike(YS::BTLOBJ *owner, __int64 param_id, YS::BTLOBJ *target, const kn::FVector *dir, bool is_force)
 void __fastcall YS::DAMAGE::Free(YS::DAMAGE_5 *damage)
 /----- (00000000004F49FC) ----------------------------------------------------
 void __fastcall YS::trap_attack_strike(BD_VALUE_19 *args)

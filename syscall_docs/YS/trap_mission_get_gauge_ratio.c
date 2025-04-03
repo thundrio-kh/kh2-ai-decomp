@@ -135,11 +135,11 @@ L163:
  pushFromFSp 32
  pushImm 0
  syscall 1, 229 ; trap_sheet_max_hp (2 in, 1 out)
- cfti 
+ citf 
  pushFromFSp 0
  syscall 4, 12 ; trap_mission_get_gauge_ratio (1 in, 1 out)
  mulf 
- citf 
+ cfti 
  popToSp 36
  pushFromFSp 36
  pushImm 0

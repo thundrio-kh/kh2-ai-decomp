@@ -149,7 +149,7 @@ L45:
  pushFromFSp 8
  syscall 6, 32 ; trap_skateboard_ride (2 in, 0 out)
  pushFromPWp W48
- pushFromPAi L5089 ; ___ai 'ride' (L5089)
+ pushFromPAi L5089 ; ___ai ride (L5089)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromFSp 8
  pushImm 1

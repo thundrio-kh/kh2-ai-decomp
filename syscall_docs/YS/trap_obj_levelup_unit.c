@@ -176,7 +176,7 @@ obj\F_CA060_MEDAL\f_ca.bdscript ((F) ??? - Attackable floor? (MEDAL) (CA))
 ---
 ---
 example usage from obj\F_CA060\f_ca.bdscript
-L2170:
+L2170: ;___label for action pushFromPAi L3016 ; ___ai break
  popToSp 0
  pushFromFSp 0
  pushImm 24

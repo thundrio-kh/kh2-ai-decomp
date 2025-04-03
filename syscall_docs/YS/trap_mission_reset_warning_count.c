@@ -88,8 +88,8 @@ L5144:
  add 
  pushFromFWp W4
  gosub 4, L3953
- cfti 
+ citf 
  pushImmf 15
  divf 
- citf 
+ cfti 
  memcpy 0

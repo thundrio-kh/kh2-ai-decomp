@@ -60,7 +60,7 @@ obj\N_CM040_BTL\n_cm.bdscript ((N) Vexen (BTL) (CM))
 ---
 example usage from obj\N_CM040_BTL\n_cm.bdscript
 L20248:
- pushFromPAi L24325 ; ___ai 'change_gauge' (L24325)
+ pushFromPAi L24325 ; ___ai change_gauge (L24325)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushImm 1
  pushImm 0

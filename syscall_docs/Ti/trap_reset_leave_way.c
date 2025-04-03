@@ -421,6 +421,6 @@ L1650:
  pushFromPSp 48
  syscall 5, 16 ; trap_reset_leave_way (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ pushFromPAi L2943 ; ___ai path_move (L2943)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L1679

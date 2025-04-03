@@ -193,7 +193,7 @@ L6649:
  halt 
  pushFromFSp 0
  syscall 1, 99 ; trap_obj_float_height (1 in, 1 out)
- pushFromPAi L10696 ; ___ai 'self.float_height' (L10696)
+ pushFromPAi L10696 ; ___ai self.float_height (L10696)
  syscall 0, 1 ; trap_putf (2 in, 0 out)
  pushFromFSp 0
  pushImm 1

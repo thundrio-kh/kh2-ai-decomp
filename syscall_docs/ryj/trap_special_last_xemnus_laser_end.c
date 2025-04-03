@@ -57,7 +57,7 @@ obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World o
 example usage from obj\B_EX170_LAST\b_ex.bdscript
 L7213:
  popToSp 0
- pushFromPAi L28020 ; ___ai 'crowd_laser_finish' (L28020)
+ pushFromPAi L28020 ; ___ai crowd_laser_finish (L28020)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  syscall 8, 5 ; trap_special_last_xemnus_laser_end (0 in, 0 out)
  pushFromPWp W176

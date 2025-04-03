@@ -130,6 +130,6 @@ L15358:
  pushImm 1
  syscall 1, 43 ; func_obj_control_on (1 in, 0 out)
  pushFromFSp 0
- pushFromPAi L27920 ; ___ai 'laser_faint' (L27920)
+ pushFromPAi L27920 ; ___ai laser_faint (L27920)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret 

@@ -104,7 +104,7 @@ obj\B_EX170_LAST_LV99\b_ex.bdscript ((B99) Xemnas (Final) (Limit Cut The World o
 ---
 ---
 example usage from obj\B_EX110\b_ex.bdscript
-L11734:
+L11734: ;___label for action pushFromPAi L13976 ; ___ai battle_start
  popToSp 0
  pushFromFSp 0
  pushImm 2

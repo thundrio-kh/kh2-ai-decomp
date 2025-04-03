@@ -185,6 +185,6 @@ L10872:
  fetchValue 36
  syscall 1, 11 ; trap_sysobj_motion_start (3 in, 0 out)
  pushFromFSp 0
- pushFromPAi L12047 ; ___ai 'phil_appear' (L12047)
+ pushFromPAi L12047 ; ___ai phil_appear (L12047)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)

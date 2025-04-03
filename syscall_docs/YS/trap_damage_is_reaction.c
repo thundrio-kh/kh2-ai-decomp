@@ -35,25 +35,6 @@ void __fastcall YS::trap_damage_is_reaction(BD_VALUE_19 *args)
   v3 = v2 <= -1 || v2 > 1;
   *(_DWORD *)args = v3;
 }
-
-/* Note the following is a python rewriting of GetReactionType
-
-def YS::DAMAGE::GetReactionType(reaction):
-  if reaction < 0 or reaction > 18:
-    raiseError()
-  if reaction in [1, 12]:
-    return 1
-  if reaction in [3, 6, 8, 10, 13, 16, 18]:
-    return 3
-  if reaction in [4, 9]:
-    return 4
-
-  // 0 2 5 7 11 14 15 17 all return the input 
-  return reaction;
-}
-
-*/
-
 ->
 /----- (0000000000422060) ----------------------------------------------------
 __int64 __fastcall YS::DAMAGE::GetReactionType(__int64 reaction)
@@ -135,6 +116,7 @@ LABEL_32:
   return reaction;
 }
 // 422168: variable 'back_chain' is possibly undefined
+
 
 ---
 ---
@@ -399,6 +381,6 @@ L2139:
  add 
  memcpy 0
  pushFromFSp 0
- pushFromPAi L10834 ; ___ai 'mode_revenge_boss' (L10834)
+ pushFromPAi L10834 ; ___ai mode_revenge_boss (L10834)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L2167

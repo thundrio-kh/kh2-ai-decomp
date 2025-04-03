@@ -178,10 +178,10 @@ obj\M_EX950\m_ex.bdscript ((M) Gambler)
 ---
 ---
 example usage from obj\B_EX210\b_ex.bdscript
-L3972:
+L3972: ;___callback for action pushFromPAi L6378 ; ___ai rush_start
  popToSp 4
  popToSp 0
  pushFromFSp 0
- pushFromPAi L6378 ; ___ai 'rush_start' (L6378)
+ pushFromPAi L6378 ; ___ai rush_start (L6378)
  syscall 1, 167 ; trap_obj_act_start_pri (2 in, 0 out)
  ret 

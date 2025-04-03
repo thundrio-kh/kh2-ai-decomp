@@ -153,7 +153,7 @@ obj\N_HB630\n_hb.bdscript ((N) Sephiroth (HB))
 ---
 example usage from obj\B_EX180\b_ex.bdscript
 L5403:
- pushFromPAi L11078 ; ___ai 'vacuum' (L11078)
+ pushFromPAi L11078 ; ___ai vacuum (L11078)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromPSp 32
  pushFromFSp 72

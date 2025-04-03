@@ -44,7 +44,6 @@ description: Enable resistances/sturdy frames for an object
 | REACTION_PS_SMALL | 18 |
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
-
 ---
 ---
 ---

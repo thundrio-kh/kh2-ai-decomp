@@ -90,7 +90,7 @@ obj\P_EH000_LAST\p_eh.bdscript ((P) Riku (final battle))
 ---
 ---
 example usage from obj\P_EH000\p_eh.bdscript
-L4060:
+L4060: ;___callback for action pushFromPAi L7641 ; ___ai darkshield
  popToSp 0
  pushImm 1
  popToSpVal 24

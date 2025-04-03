@@ -630,5 +630,5 @@ L19:
  popToSp 8
  pushImmf 0
  popToSp 4
- pushFromPAi L2470 ; ___ai 'main' (L2470)
+ pushFromPAi L2470 ; ___ai main (L2470)
  syscall 0, 2 ; trap_puts (1 in, 0 out)

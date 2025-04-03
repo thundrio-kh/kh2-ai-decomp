@@ -19,7 +19,7 @@ pop vec ; (kn::FVector *)
 ---
 ---
 ---
-description: Returns the position of when the attack hit the background 
+description: Returns the position of when the attack hit the background
 ---
 ---
 ---

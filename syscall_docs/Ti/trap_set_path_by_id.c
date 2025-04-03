@@ -108,7 +108,7 @@ L4131:
  pushFromFSpVal 120
  popToSpVal 116
  pushFromFSp 0
- pushFromPAi L5026 ; ___ai 'toward' (L5026)
+ pushFromPAi L5026 ; ___ai toward (L5026)
  pushImmf 0
  syscall 1, 90 ; trap_obj_act_shout (3 in, 0 out)
  pushFromFSp 0

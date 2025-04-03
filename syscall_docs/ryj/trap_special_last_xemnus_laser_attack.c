@@ -65,7 +65,7 @@ L16062:
  pushImm 19572
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  pushFromFSp 0
- pushFromPAi L28137 ; ___ai '61' (L28137)
+ pushFromPAi L28137 ; ___ai 61 (L28137)
  syscall 1, 164 ; trap_obj_camera_start_global (2 in, 0 out)
  pushFromPSpVal 160
  syscall 1, 161 ; trap_obj_is_attach (1 in, 1 out)

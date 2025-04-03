@@ -53,28 +53,6 @@ void __fastcall Ts::trap_magic_calc_speed(BD_VALUE_24 *args)
   }
 }
 
-// Smpler version
-
-void __fastcall Ts::trap_magic_calc_speed(BD_VALUE_24 *args)
-{
-  double v1; // fp1
-  double v2; // fp1
-
-  if ( !((float)arg_2 == 0.0) | (float)arg_3 - (float)arg_4) * -2.0) < 0.0) )
-  {
-    v1 = ((float)arg_1 * 2.0 * (float)arg_1 * 2.0) - (float)arg_2 * (float)arg_3 - (float)arg_4 * -2.0))
-                       * 4.0));
-    if ( v1 > 0.0 )
-    {
-      v2 = __fsqrts(v1);
-      _FP1 = (float)((float)((float)-(float)(*(float *)&(*args)[0] * (float)2.0) - (float)v2) / *(float *)&(*args)[4])
-           - (float)((float)((float)v2 - (float)(*(float *)&(*args)[0] * (float)2.0)) / *(float *)&(*args)[4]);
-      __asm { fsel      f1, f1, f5, f3 }
-      *(float *)&(*args)[0] = *(float *)&(*args)[0] + (float)_FP1;
-    }
-  }
-}
-
 //BASIC
 ---
 ---

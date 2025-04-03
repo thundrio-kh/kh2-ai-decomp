@@ -86,7 +86,7 @@ L879:
  syscall 9, 22 ; ?
  pushFromPSp 16
  fetchValue 4
- pushFromPAi L2384 ; ___ai 'pos y' (L2384)
+ pushFromPAi L2384 ; ___ai pos y (L2384)
  syscall 0, 25 ; trap_stputf (2 in, 0 out)
  pushFromPWp W0
  fetchValue 0

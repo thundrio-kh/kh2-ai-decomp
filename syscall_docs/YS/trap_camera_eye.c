@@ -18,7 +18,7 @@ pop pos ; (kn::FVector *) (A position vector)
 ---
 ---
 ---
-description: Returns the passed in position with height + 80 to account for being at eye level 
+description: Returns the passed in position with height + 80 to account for being at eye level
 ---
 ---
 ---

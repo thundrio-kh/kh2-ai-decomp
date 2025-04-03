@@ -18,7 +18,7 @@ pop form_id ; (int)
 ---
 ---
 ---
-description:  Return the id of the form the player is currently in
+description: Return the id of the form the player is currently in
 ---
 ---
 ---

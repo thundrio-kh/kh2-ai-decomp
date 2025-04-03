@@ -19,7 +19,7 @@ pop is_exec_reaction ; (bool)
 ---
 ---
 ---
-description: Unused. 
+description: Unused.
 ---
 ---
 ---

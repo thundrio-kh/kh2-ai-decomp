@@ -12,7 +12,8 @@ category: motion
 documentation level: untested
 ---
 ---
---- 
+---
+
 push motion ; (YS::MOTION_289)  (A motion set)
 push id ; (int)  (ID of a specific motion set entry)
 syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)

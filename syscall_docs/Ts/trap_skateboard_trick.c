@@ -119,7 +119,7 @@ L483:
  gosub 8, L205
  memcpyToSp 16, 16
  pushFromPSp 16
- pushFromPAi L4920 ; ___ai '00' (L4920)
+ pushFromPAi L4920 ; ___ai 00 (L4920)
  pushFromFSp 8
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  pushFromFSp 8

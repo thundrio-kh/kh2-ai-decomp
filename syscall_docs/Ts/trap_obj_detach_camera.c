@@ -158,6 +158,6 @@ L169:
  syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)
  drop 
  pushFromPSpVal 20
- pushFromPAi L3844 ; ___ai '10' (L3844)
+ pushFromPAi L3844 ; ___ai 10 (L3844)
  pushFromPSpVal 4
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)

@@ -123,7 +123,7 @@ obj\M_EX350_13\m_ex.bdscript ((M) Mushroom 13 (EX))
 ---
 ---
 example usage from obj\B_EX110\b_ex.bdscript
-L11734:
+L11734: ;___label for action pushFromPAi L13976 ; ___ai battle_start
  popToSp 0
  pushFromFSp 0
  pushImm 2

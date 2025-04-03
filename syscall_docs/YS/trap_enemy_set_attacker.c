@@ -129,7 +129,7 @@ obj\M_EX590_NM\m_ex.bdscript ((M) Bulky Vendor (NM))
 ---
 ---
 example usage from obj\M_EX590\m_ex.bdscript
-L5246:
+L5246: ;___label for action pushFromPAi L6690 ; ___ai rc_gacha
  popToSp 0
  pushFromFSp 0
  fetchValue 4

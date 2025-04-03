@@ -44,7 +44,6 @@ description: Resets the resistance value to the default state
 | REACTION_PS_SMALL | 18 |
 | REACTION_MAX | 19     |
 | REACTION_IGNORE | 255 |
-
 ---
 ---
 ---
@@ -132,7 +131,7 @@ obj\N_NM070_BTL_TOY\n_nm.bdscript ((N) Barrel (toy minigame) (BTL) (NM))
 ---
 example usage from obj\B_EX150\b_ex.bdscript
 L3097:
- pushFromPAi L18917 ; ___ai 'SIGNAL_GAUGEMIN' (L18917)
+ pushFromPAi L18917 ; ___ai SIGNAL_GAUGEMIN (L18917)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromPWp W528
  pushImm 9

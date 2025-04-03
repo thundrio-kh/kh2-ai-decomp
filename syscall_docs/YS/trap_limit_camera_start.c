@@ -125,7 +125,7 @@ L3043:
  jz L3065
  pushFromFSp 0
  fetchValue 0
- pushFromPAi L6867 ; ___ai '10' (L6867)
+ pushFromPAi L6867 ; ___ai 10 (L6867)
  pushImmf 500
  pushImm 1
  syscall 2, 50 ; trap_limit_camera_start (4 in, 0 out)

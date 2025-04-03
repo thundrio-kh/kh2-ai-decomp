@@ -181,6 +181,6 @@ L3020:
  pushImmf 100
  syscall 2, 1 ; trap_enemy_exec_damage_blow (6 in, 0 out)
  pushFromFSp 0
- pushFromPAi L12078 ; ___ai 'move_roll' (L12078)
+ pushFromPAi L12078 ; ___ai move_roll (L12078)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L3059

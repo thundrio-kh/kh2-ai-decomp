@@ -287,6 +287,6 @@ L3767:
  eqz 
  jz L3845
  pushFromFSp 4
- pushFromPAi L4528 ; ___ai '@aura[i] is null' (L4528)
+ pushFromPAi L4528 ; ___ai @aura[i] is null (L4528)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  jmp L3851

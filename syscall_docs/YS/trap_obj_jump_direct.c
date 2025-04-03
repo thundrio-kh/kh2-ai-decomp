@@ -19,7 +19,7 @@ syscall 1, 227 ; trap_obj_jump_direct (2 in, 0 out)
 ---
 ---
 ---
-description: Makes an object jump probably 10 units. 
+description: Makes an object jump probably 10 units.
 ---
 ---
 ---

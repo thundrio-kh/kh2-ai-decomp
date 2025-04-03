@@ -121,7 +121,7 @@ L4735:
  pushFromFSpVal 68
  syscall 2, 29 ; trap_attack_is_hit_bg (1 in, 1 out)
  jz L4865
- pushFromPAi L5896 ; ___ai 'hit floor' (L5896)
+ pushFromPAi L5896 ; ___ai hit floor (L5896)
  syscall 0, 2 ; trap_puts (1 in, 0 out)
  pushFromFSp 0
  fetchValue 72

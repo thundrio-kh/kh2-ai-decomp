@@ -81,7 +81,7 @@ obj\P_EX350\p_ex.bdscript ((P) Chicken Little)
 ---
 ---
 example usage from obj\P_EX330\p_ex.bdscript
-L8995:
+L8995: ;___label for action pushFromPAi L9437 ; ___ai battle
  popToSp 0
  syscall 1, 244 ; trap_status_is_battle (0 in, 1 out)
  dup 

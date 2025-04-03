@@ -40,11 +40,11 @@ void __fastcall YS::trap_pax_start_bind(BD_VALUE_21 *args, __int64 a2, __int64 a
   unsigned __int64 v14; // r30
   __int64 back_chain; // [sp+0h] [-B0h]
 
-  v9 = (ryj::PAX_161 *)(*args)[0]; // 1
-  v10 = *(int *)&(*args)[4]; // 2
-  v11 = *(unsigned int *)&(*args)[8];//6
-  v12 = *(_DWORD *)&(*args)[12]; //3
-  v13 = *(int *)&(*args)[16]; //5
+  v9 = (ryj::PAX_161 *)(*args)[0];
+  v10 = *(int *)&(*args)[4];
+  v11 = *(unsigned int *)&(*args)[8];
+  v12 = *(_DWORD *)&(*args)[12];
+  v13 = *(int *)&(*args)[16];
   v14 = (unsigned int)*(_QWORD *)(back_chain + 16);
   if ( !(_DWORD)v11 )
   {

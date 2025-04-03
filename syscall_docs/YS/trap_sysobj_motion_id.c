@@ -25,7 +25,6 @@ description: Gets the motion ID of a motion object
 ---
 decompiled code:
 
-
 /----- (00000000004F7710) ----------------------------------------------------
 void __fastcall YS::trap_sysobj_motion_id(BD_VALUE_21 *args)
 {

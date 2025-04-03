@@ -38,7 +38,6 @@ def YS::DAMAGE::GetReactionType(reaction):
 }
 
 */
-
 ---
 ---
 ---

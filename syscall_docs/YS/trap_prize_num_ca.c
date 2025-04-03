@@ -61,6 +61,6 @@ L6551:
  msbi 
  jz L6570
  pushFromFSp 0
- pushFromPAi L11290 ; ___ai 'atk_collect' (L11290)
+ pushFromPAi L11290 ; ___ai atk_collect (L11290)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L6570

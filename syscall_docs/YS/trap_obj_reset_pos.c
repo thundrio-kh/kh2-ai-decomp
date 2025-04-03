@@ -146,7 +146,7 @@ obj\N_EX760_BTL\n_ex.bdscript ((B) Pete (BTL))
 ---
 ---
 example usage from obj\B_BB130\b_bb.bdscript
-L4066:
+L4066: ;___label for action pushFromPAi L4413 ; ___ai dead
  popToSp 0
  pushFromFSp 0
  pushFromFSp 0

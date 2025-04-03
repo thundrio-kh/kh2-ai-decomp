@@ -82,7 +82,7 @@ obj\F_AL070_THUNDER\f_al.bdscript ((F) Thunder orbs (AL))
 ---
 ---
 example usage from obj\F_AL070_BLIZZARD\f_al.bdscript
-L3817:
+L3817: ;___label for action pushFromPAi L4076 ; ___ai dead
  popToSp 0
  pushFromFSp 0
  pushImm 66

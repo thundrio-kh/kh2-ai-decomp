@@ -41,7 +41,7 @@ obj\N_CM000_BTL\n_cm.bdscript ((N) Marluxia (BTL) (CM))
 ---
 ---
 example usage from obj\N_CM000_BTL\n_cm.bdscript
-L16905:
+L16905: ;___label for action pushFromPAi L19806 ; ___ai battle_start
  popToSp 0
  gosub 4, L398
  memcpyToSp 16, 16
@@ -129,7 +129,7 @@ L16905:
  pushImm 0
  syscall 1, 18 ; trap_obj_attach (6 in, 0 out)
  pushFromFSp 0
- pushFromPAi L19988 ; ___ai '20' (L19988)
+ pushFromPAi L19988 ; ___ai 20 (L19988)
  pushFromFSp 0
  syscall 1, 157 ; trap_obj_camera_start (3 in, 0 out)
  halt 

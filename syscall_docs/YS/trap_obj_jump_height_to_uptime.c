@@ -35,7 +35,6 @@ void __fastcall YS::trap_obj_jump_height_to_uptime(BD_VALUE_21 *args)
 float __fastcall YS::MATH::JumpHeightToUpTime(double height)
 {
   return __fsqrts(__fabs((float)((float)((float)height * (float)2.0) / (float)0.40816328)));
-    
 }
 
 
@@ -87,7 +86,7 @@ L1794:
  pushFromFSp 0
  gosub 4, L1819
  pushFromFSp 4
- pushFromPAi L2962 ; ___ai 'height' (L2962)
+ pushFromPAi L2962 ; ___ai height (L2962)
  syscall 0, 1 ; trap_putf (2 in, 0 out)
  pushFromFSp 4
  popToSpVal 8

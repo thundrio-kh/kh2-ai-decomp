@@ -377,7 +377,7 @@ L303:
  pushFromPWp W0
  gosub 4, L916
  pushFromPWp W0
- pushFromPAi L2885 ; ___ai 'near_wait' (L2885)
+ pushFromPAi L2885 ; ___ai near_wait (L2885)
  pushImm 100
  pushImm L925
  pushImm 0
@@ -390,7 +390,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2842 ; ___ai 'near' (L2842)
+ pushFromPAi L2842 ; ___ai near (L2842)
  pushImm 100
  pushImm L1015
  pushImm 0
@@ -403,7 +403,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2918 ; ___ai 'rtn_freeze' (L2918)
+ pushFromPAi L2918 ; ___ai rtn_freeze (L2918)
  pushImm 100
  pushImm L1115
  pushImm 0
@@ -416,7 +416,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2924 ; ___ai 'before_check' (L2924)
+ pushFromPAi L2924 ; ___ai before_check (L2924)
  pushImm 100
  pushImm L1138
  pushImm 0
@@ -429,7 +429,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2931 ; ___ai 'after_talk' (L2931)
+ pushFromPAi L2931 ; ___ai after_talk (L2931)
  pushImm 100
  pushImm L1543
  pushImm 0
@@ -442,7 +442,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2854 ; ___ai 'encount_player' (L2854)
+ pushFromPAi L2854 ; ___ai encount_player (L2854)
  pushImm 100
  pushImm L1680
  pushImm 0
@@ -455,7 +455,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2882 ; ___ai 'look' (L2882)
+ pushFromPAi L2882 ; ___ai look (L2882)
  pushImm 100
  pushImm L2036
  pushImm 0
@@ -468,7 +468,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2890 ; ___ai 'rtn_avoid' (L2890)
+ pushFromPAi L2890 ; ___ai rtn_avoid (L2890)
  pushImm 100
  pushImm L2245
  pushImm 0
@@ -481,7 +481,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2870 ; ___ai 'rtn_action' (L2870)
+ pushFromPAi L2870 ; ___ai rtn_action (L2870)
  pushImm 100
  pushImm L2520
  pushImm 0
@@ -494,7 +494,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2943 ; ___ai 'path_move' (L2943)
+ pushFromPAi L2943 ; ___ai path_move (L2943)
  pushImm 100
  pushImm L2597
  pushImm 0
@@ -507,7 +507,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2915 ; ___ai 'talk' (L2915)
+ pushFromPAi L2915 ; ___ai talk (L2915)
  pushImm 100
  pushImm L2749
  pushImm 0
@@ -520,7 +520,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2876 ; ___ai 'static_idle' (L2876)
+ pushFromPAi L2876 ; ___ai static_idle (L2876)
  pushImm 100
  pushImm L2756
  pushImm 0
@@ -533,7 +533,7 @@ L303:
  pushImm 0
  syscall 1, 6 ; trap_act_table_add (12 in, 0 out)
  pushFromPWp W0
- pushFromPAi L2910 ; ___ai 'fix_idle' (L2910)
+ pushFromPAi L2910 ; ___ai fix_idle (L2910)
  pushImm 100
  pushImm L2802
  pushImm 0

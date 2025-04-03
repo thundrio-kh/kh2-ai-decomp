@@ -31,7 +31,7 @@ void __fastcall YS::trap_effect_set_rot(BD_VALUE_16 *args, __int64 a2, __int64 a
   kn::FVector *v9; // r3
 
   v9 = (kn::FVector *)ryj::EFFECT::angle((ryj::EFFECT_144 *const)(*args)[0], a2, a3, a4, a5, a6, a7, a8);
-  kn::FVector::operator=(v9, (const ryj::EFFECT_144 *)*(unsigned int *)&(*args)[4]);
+  kn::FVector::operator=(v9, (const kn::FVector *)*(unsigned int *)&(*args)[4]);
 }
 ->
 /----- (00000000002B16A4) ----------------------------------------------------

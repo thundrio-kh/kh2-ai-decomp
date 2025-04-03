@@ -53,7 +53,7 @@ obj\P_LK030\p_lk.bdscript ((P) Goofy (LK))
 ---
 ---
 example usage from obj\B_EX160\b_ex.bdscript
-L5643:
+L5643: ;___callback for action pushFromPAi L10631 ; ___ai atk_normal_hack
  popToSp 4
  popToSp 8
  popToSp 0
@@ -88,6 +88,6 @@ L5643:
  pushFromPSp 16
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L10734 ; ___ai 'reflect_counter' (L10734)
+ pushFromPAi L10734 ; ___ai reflect_counter (L10734)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  jmp L5724

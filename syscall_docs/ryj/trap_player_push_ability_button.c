@@ -5,7 +5,7 @@ name: trap_player_push_ability_button
 ---
 ---
 ---
-category: input 
+category: input
 ---
 ---
 ---

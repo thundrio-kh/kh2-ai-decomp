@@ -134,7 +134,7 @@ obj\B_EX370\b_ex.bdscript ((B) Zexion (Absent Silhouette))
 ---
 ---
 example usage from obj\B_EX370\b_ex.bdscript
-L12020:
+L12020: ;___label for action pushFromPAi L28228 ; ___ai test_sound_set_bgse_volume_0
  popToSp 0
  pushImm 0
  syscall 0, 104 ; trap_sound_set_bgse_volume (1 in, 0 out)

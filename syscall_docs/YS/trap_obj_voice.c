@@ -5,7 +5,7 @@ name: trap_obj_voice
 ---
 ---
 ---
-category: sound 
+category: sound
 ---
 ---
 ---
@@ -28,7 +28,7 @@ description: Plays a voice clip belonging to an object
  pushImm 9 ; voice clip to play
  pushImm 3 ; priority
  syscall 1, 262 ; trap_obj_voice (3 in, 0 out)
- ret 
+ ret
 ---
 ---
 ---

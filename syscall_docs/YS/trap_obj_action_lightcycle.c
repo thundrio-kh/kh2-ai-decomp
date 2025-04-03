@@ -106,5 +106,5 @@ L23:
  pushFromPSp 32
  syscall 1, 79 ; trap_obj_set_dir (2 in, 0 out)
  pushFromFSp 0
- pushFromPAi L2803 ; ___ai 'choice' (L2803)
+ pushFromPAi L2803 ; ___ai choice (L2803)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)

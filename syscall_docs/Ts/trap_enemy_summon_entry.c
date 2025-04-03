@@ -141,7 +141,7 @@ L1922:
  syscall 7, 33 ; trap_enemy_summon_entry (1 in, 1 out)
  popToSp 48
  pushFromFSp 48
- pushFromPAi L5588 ; ___ai 'INT' (L5588)
+ pushFromPAi L5588 ; ___ai INT (L5588)
  syscall 0, 0 ; trap_puti (2 in, 0 out)
  pushFromPSp 32
  pushFromFSp 48

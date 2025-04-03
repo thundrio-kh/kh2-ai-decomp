@@ -87,7 +87,7 @@ L1887:
  gosub 4, L1787
  drop 
  pushFromPWp W176
- pushFromPAi L10686 ; ___ai 'rc_swing_end' (L10686)
+ pushFromPAi L10686 ; ___ai rc_swing_end (L10686)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  pushFromFSp 4
  fetchValue 4

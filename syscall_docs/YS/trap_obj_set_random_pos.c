@@ -5,7 +5,7 @@ name: trap_obj_set_random_pos
 ---
 ---
 ---
-category:position 
+category: position
 ---
 ---
 ---

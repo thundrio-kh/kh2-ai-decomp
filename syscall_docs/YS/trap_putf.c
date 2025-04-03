@@ -232,7 +232,7 @@ L920:
  syscall 1, 111 ; trap_obj_set_movement (3 in, 0 out)
  pushFromPSp 160
  gosub 52, L2509
- pushFromPAi L6877 ; ___ai 'speed.speed' (L6877)
+ pushFromPAi L6877 ; ___ai speed.speed (L6877)
  syscall 0, 1 ; trap_putf (2 in, 0 out)
  pushFromPSp 16
  pushImmf 1

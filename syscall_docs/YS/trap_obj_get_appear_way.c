@@ -621,7 +621,7 @@ obj\P_WI030\p_ex.bdscript ((P) Goofy (WI))
 ---
 ---
 example usage from obj\B_AL020\b_al.bdscript
-L6432:
+L6432: ;___label for action pushFromPAi L11318 ; ___ai appear
  popToSp 0
  pushFromFSp 0
  syscall 1, 110 ; trap_obj_get_appear_way (1 in, 1 out)

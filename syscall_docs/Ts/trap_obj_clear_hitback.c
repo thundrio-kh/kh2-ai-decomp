@@ -126,6 +126,6 @@ L201:
  pushImm 0
  syscall 1, 112 ; trap_obj_hook (3 in, 0 out)
  pushFromFSp 0
- pushFromPAi L8549 ; ___ai 'rush_guard_start' (L8549)
+ pushFromPAi L8549 ; ___ai rush_guard_start (L8549)
  syscall 1, 8 ; trap_obj_act_start (2 in, 0 out)
  ret 
