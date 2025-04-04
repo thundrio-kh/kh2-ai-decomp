@@ -12,22 +12,22 @@ Name: tutorial-magic
 ; codeRevealer: 
  section .text
 TR3:
- pushImm 37
- pushImm 17624
- gosub 4, L23
+ push 37
+ push 17624
+ jal 4, L23
  ret 
 L23:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L44
- pushFromFSp 0
+ seqz 
+ beqz L44
+ push.d.sp 0
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- pushFromFSp 4
+ push.d.sp 4
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- jmp L44
+ b L44
 L44:
  ret 
 D45:

@@ -14,124 +14,124 @@ Name: hb13_ms902
 ; codeRevealer: -l 198
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 34
+ push 34
  sub 
- jz L33
- jmp L56
+ beqz L33
+ b L56
 L33:
- pushFromFSp 0
+ push.d.sp 0
  dup 
- pushImm 17625
+ push 17625
  sub 
- jz L44
- jmp L53
+ beqz L44
+ b L53
 L44:
- pushFromPWp W0
- pushImm -1
- gosub 4, L58
- jmp L53
+ push.wp W0
+ push -1
+ jal 4, L58
+ b L53
 L53:
  drop 
- jmp L56
+ b L56
 L56:
  drop 
  ret 
 L58:
- popToSp 4
- popToSp 0
+ pop.sp 4
+ pop.sp 0
  syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
- eqz 
- jz L80
- pushImm 4
- popToSpVal 0
- pushFromFSp 4
- popToSpVal 4
+ seqz 
+ beqz L80
+ push 4
+ pop.sp.d 0
+ push.d.sp 4
+ pop.sp.d 4
  syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
- jmp L80
+ b L80
 L80:
  ret 
 TR3:
  syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
- pushImm 17625
+ push 17625
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- pushFromPWp W0
- gosub 4, L93
+ push.wp W0
+ jal 4, L93
  ret 
 L93:
- popToSp 0
- pushFromFSp 0
- gosub 4, L172
+ pop.sp 0
+ push.d.sp 0
+ jal 4, L172
 L99:
- pushFromFSp 0
- gosub 4, L185
- jz L108
+ push.d.sp 0
+ jal 4, L185
+ beqz L108
  halt 
- jmp L99
+ b L99
 L108:
- pushFromFSpVal 0
+ push.d.sp.d 0
  dup 
- pushImm 1
+ push 1
  sub 
- jz L119
- jmp L125
+ beqz L119
+ b L125
 L119:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
- jmp L168
+ b L168
 L125:
  dup 
- pushImm 2
+ push 2
  sub 
- jz L134
- jmp L140
+ beqz L134
+ b L140
 L134:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
- jmp L168
+ b L168
 L140:
  dup 
- pushImm 3
+ push 3
  sub 
- jz L149
- jmp L153
+ beqz L149
+ b L153
 L149:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
- jmp L168
+ b L168
 L153:
  dup 
- pushImm 4
+ push 4
  sub 
- jz L162
- jmp L168
+ beqz L162
+ b L168
 L162:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
- jmp L168
+ b L168
 L168:
  drop 
- gosub 4, L195
+ jal 4, L195
  ret 
 L172:
- popToSp 0
- pushImm 0
- popToSpVal 0
- pushImm -1
- popToSpVal 4
+ pop.sp 0
+ push 0
+ pop.sp.d 0
+ push -1
+ pop.sp.d 4
  ret 
 L185:
- popToSp 0
- pushFromFSpVal 0
- pushImm 0
+ pop.sp 0
+ push.d.sp.d 0
+ push 0
  sub 
- eqz 
+ seqz 
  ret 
 L195:
  halt 
- jmp L195
+ b L195
 D198:
 L198:
  ret 

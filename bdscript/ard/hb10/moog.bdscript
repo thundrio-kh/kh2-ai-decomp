@@ -14,52 +14,52 @@ Name: tutorial-moogle
 ; codeRevealer: 
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 82
+ push 82
  sub 
- jz L33
- jmp L40
+ beqz L33
+ b L40
 L33:
- pushImm 1
- popToWp W0
- jmp L40
+ push 1
+ pop.wp W0
+ b L40
 L40:
  drop 
  ret 
 TR3:
- pushImm 0
- popToWp W0
+ push 0
+ pop.wp W0
 L47:
- pushFromFWp W0
- eqz 
- jz L55
+ push.d.wp W0
+ seqz 
+ beqz L55
  halt 
- jmp L47
+ b L47
 L55:
- pushFromPSp 0
- pushImm 1295
+ push.sp 0
+ push 1295
  syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 0
+ push.sp 0
  syscall 1, 207 ; trap_camera_watch (1 in, 0 out)
- pushImm 36
- pushImm 17626
- gosub 8, L75
+ push 36
+ push 17626
+ jal 8, L75
  ret 
 L75:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L96
- pushFromFSp 0
+ seqz 
+ beqz L96
+ push.d.sp 0
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- pushFromFSp 4
+ push.d.sp 4
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- jmp L96
+ b L96
 L96:
  ret 
 D97:

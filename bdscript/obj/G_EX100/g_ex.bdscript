@@ -14,159 +14,159 @@ Name: g_ex100
 ; codeRevealer: 
  section .text
 TR1:
- pushFromPWp W0
- gosub 4, L23
+ push.wp W0
+ jal 4, L23
  ret 
 L23:
- popToSp 0
+ pop.sp 0
 L25:
- pushImmf 0
- pushFromFSpVal 8
- subf 
- infzf 
- jz L52
- pushFromFSp 0
- gosub 4, L57
- pushFromFSp 0
- gosub 4, L111
- pushFromFSpVal 8
+ push.s 0
+ push.d.sp.d 8
+ sub.s 
+ sltz.s 
+ beqz L52
+ push.d.sp 0
+ jal 4, L57
+ push.d.sp 0
+ jal 4, L111
+ push.d.sp.d 8
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSpVal 8
+ sub.s 
+ pop.sp.d 8
  halt 
- jmp L25
+ b L25
 L52:
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 17 ; ?
  ret 
 L57:
- popToSp 0
- pushFromFSpVal 16
- eqz 
- jz L103
- pushFromFSp 0
+ pop.sp 0
+ push.d.sp.d 16
+ seqz 
+ beqz L103
+ push.d.sp 0
  syscall 3, 82 ; ?
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromPSp 16
- fetchValue 8
- pushImmf 400
- subf 
- infzf 
- jz L94
- pushImm 1
- popToSpVal 16
- jmp L94
+ memcpy.sp 16, 32
+ push.sp 32
+ memcpy.sp 16, 16
+ push.sp 16
+ push.d.pop 8
+ push.s 400
+ sub.s 
+ sltz.s 
+ beqz L94
+ push 1
+ pop.sp.d 16
+ b L94
 L94:
- pushFromFSp 0
- pushImmf 0.2
+ push.d.sp 0
+ push.s 0.2
  syscall 3, 11 ; ?
- jmp L103
+ b L103
 L103:
- pushFromFSp 0
- pushFromFSpVal 12
+ push.d.sp 0
+ push.d.sp.d 12
  syscall 3, 18 ; ?
  drop 
  ret 
 L111:
- popToSp 0
- pushFromFSpVal 48
- jz L150
- pushFromFSpVal 20
+ pop.sp 0
+ push.d.sp.d 48
+ beqz L150
+ push.d.sp.d 20
  syscall 0, 49 ; trap_effect_is_alive (1 in, 1 out)
- jz L143
- pushFromPSpVal 32
+ beqz L143
+ push.sp.d 32
  syscall 3, 119 ; ?
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 16
- pushFromFSpVal 20
- pushFromPSp 16
+ memcpy.sp 16, 32
+ push.sp 32
+ memcpy.sp 16, 16
+ push.d.sp.d 20
+ push.sp 16
  syscall 0, 38 ; trap_effect_set_pos (2 in, 0 out)
- jmp L148
+ b L148
 L143:
- pushImm 0
- popToSpVal 48
+ push 0
+ pop.sp.d 48
 L148:
- jmp L150
+ b L150
 L150:
  ret 
 TR0:
- popToSp 0
- pushFromPWp W0
- pushFromFSp 0
- gosub 4, L160
+ pop.sp 0
+ push.wp W0
+ push.d.sp 0
+ jal 4, L160
  ret 
 L160:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L273
- pushImmf 240
- popToSpVal 8
- pushImmf 48
- popToSpVal 12
- pushFromFSp 0
- pushImm 0
- pushImmf 0
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 0
+ push.d.sp 4
+ jal 4, L273
+ push.s 240
+ pop.sp.d 8
+ push.s 48
+ pop.sp.d 12
+ push.d.sp 0
+ push 0
+ push.s 0
  syscall 3, 35 ; ?
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 45 ; ?
- pushImm 0
- popToSpVal 16
- pushFromFSp 0
- pushImm 0
- pushImm 1
- pushImm 0
+ push 0
+ pop.sp.d 16
+ push.d.sp 0
+ push 0
+ push 1
+ push 0
  syscall 3, 53 ; ?
- popToSp 8
- pushFromFSp 8
+ pop.sp 8
+ push.d.sp 8
  syscall 3, 83 ; ?
- pushFromFSp 0
- pushImm 1
- pushImm 1
- pushImm 0
+ push.d.sp 0
+ push 1
+ push 1
+ push 0
  syscall 3, 51 ; ?
- popToSpVal 20
- pushFromPSp 16
- pushImmf 3
- pushImmf 3
- pushImmf 3
- pushImmf 1
- gosub 12, L282
- pushFromFSpVal 20
- pushFromPSp 16
+ pop.sp.d 20
+ push.sp 16
+ push.s 3
+ push.s 3
+ push.s 3
+ push.s 1
+ jal 12, L282
+ push.d.sp.d 20
+ push.sp 16
  syscall 0, 39 ; trap_effect_set_scale (2 in, 0 out)
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 69 ; ?
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSpVal 16, 32
- pushImm 1
- popToSpVal 48
+ memcpy.sp 16, 32
+ push.sp 32
+ memcpy.sp.d 16, 32
+ push 1
+ pop.sp.d 48
  ret 
 L273:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- popToSpVal 4
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 4
+ pop.sp.d 4
  ret 
 L282:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- popToSp 0
- pushFromFSp 16
- popToSpVal 0
- pushFromFSp 12
- popToSpVal 4
- pushFromFSp 8
- popToSpVal 8
- pushFromFSp 4
- popToSpVal 12
+ pop.sp 4
+ pop.sp 8
+ pop.sp 12
+ pop.sp 16
+ pop.sp 0
+ push.d.sp 16
+ pop.sp.d 0
+ push.d.sp 12
+ pop.sp.d 4
+ push.d.sp 8
+ pop.sp.d 8
+ push.d.sp 4
+ pop.sp.d 12
  ret 
 
  section .bss

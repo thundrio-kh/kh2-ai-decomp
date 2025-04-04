@@ -14,115 +14,115 @@ Name: g_eb100
 ; codeRevealer: -l 34
  section .text
 TR1:
- pushFromPWp W0
- gosub 4, L23
+ push.wp W0
+ jal 4, L23
  ret 
 L23:
- popToSp 0
+ pop.sp 0
 L25:
- pushFromFSp 0
- gosub 4, L48
- eqz 
- jz L36
- jmp L43
+ push.d.sp 0
+ jal 4, L48
+ seqz 
+ beqz L36
+ b L43
 D34:
 L34:
- jmp L36
+ b L36
 L36:
- pushFromFSp 0
- gosub 4, L74
+ push.d.sp 0
+ jal 4, L74
  halt 
- jmp L25
+ b L25
 L43:
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 17 ; ?
  ret 
 L48:
- popToSp 0
- pushFromFSp 0
+ pop.sp 0
+ push.d.sp 0
  syscall 3, 5 ; ?
- jz L66
- pushFromFSp 0
- pushFromFSpVal 8
+ beqz L66
+ push.d.sp 0
+ push.d.sp.d 8
  syscall 3, 4 ; ?
- popToSp 4
- jmp L71
+ pop.sp 4
+ b L71
 L66:
- pushImm 1
- popToSp 4
+ push 1
+ pop.sp 4
 L71:
- pushFromFSp 4
+ push.d.sp 4
  ret 
 L74:
- popToSp 0
- pushFromFSp 0
+ pop.sp 0
+ push.d.sp 0
  syscall 3, 39 ; ?
- pushImm 0
+ push 0
  sub 
- eqz 
- jz L135
- pushFromFSp 0
+ seqz 
+ beqz L135
+ push.d.sp 0
  syscall 3, 38 ; ?
- jz L133
- pushImmf 1
+ beqz L133
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- popToSp 4
- pushFromFSp 4
- pushImmf 0.2
- subf 
- infzf 
- jz L131
- pushFromFSp 0
- pushImm 152
- pushImmf 0
+ pop.sp 4
+ push.d.sp 4
+ push.s 0.2
+ sub.s 
+ sltz.s 
+ beqz L131
+ push.d.sp 0
+ push 152
+ push.s 0
  syscall 3, 35 ; ?
- pushFromFSp 0
- pushImm 0
- pushImmf 0
+ push.d.sp 0
+ push 0
+ push.s 0
  syscall 3, 37 ; ?
- jmp L131
+ b L131
 L131:
- jmp L133
+ b L133
 L133:
- jmp L135
+ b L135
 L135:
  ret 
 TR0:
- popToSp 0
- pushFromPWp W0
- pushFromFSp 0
- gosub 4, L145
+ pop.sp 0
+ push.wp W0
+ push.d.sp 0
+ jal 4, L145
  ret 
 L145:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L192
- pushFromFSp 0
- pushImm 0
- pushImmf 0
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 0
+ push.d.sp 4
+ jal 4, L192
+ push.d.sp 0
+ push 0
+ push.s 0
  syscall 3, 35 ; ?
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 34 ; ? ; ___possible_ref
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 74 ; ?
- popToSpVal 8
- pushFromFSpVal 8
- pushImmf 0
- subf 
- infoezf 
- jz L191
- pushImmf 10
- popToSpVal 8
- jmp L191
+ pop.sp.d 8
+ push.d.sp.d 8
+ push.s 0
+ sub.s 
+ slez.s 
+ beqz L191
+ push.s 10
+ pop.sp.d 8
+ b L191
 L191:
  ret 
 L192:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- popToSpVal 4
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 4
+ pop.sp.d 4
  ret 
 
  section .bss

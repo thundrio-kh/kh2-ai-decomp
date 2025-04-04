@@ -14,99 +14,99 @@ Name: g_oc100
 ; codeRevealer: -l 34 -l 54
  section .text
 TR1:
- pushFromPWp W0
- gosub 4, L23
+ push.wp W0
+ jal 4, L23
  ret 
 L23:
- popToSp 0
+ pop.sp 0
 L25:
- pushFromFSp 0
- gosub 4, L64
- eqz 
- jz L36
- jmp L59
+ push.d.sp 0
+ jal 4, L64
+ seqz 
+ beqz L36
+ b L59
 D34:
 L34:
- jmp L36
+ b L36
 L36:
- pushFromFSpVal 12
+ push.d.sp.d 12
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSpVal 12
- pushFromFSpVal 12
- pushImmf 0
- subf 
- infoezf 
- jz L56
- jmp L59
+ sub.s 
+ pop.sp.d 12
+ push.d.sp.d 12
+ push.s 0
+ sub.s 
+ slez.s 
+ beqz L56
+ b L59
 D54:
 L54:
- jmp L56
+ b L56
 L56:
  halt 
- jmp L25
+ b L25
 L59:
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 17 ; ?
  ret 
 L64:
- popToSp 0
- pushFromFSp 0
+ pop.sp 0
+ push.d.sp 0
  syscall 3, 5 ; ?
- jz L82
- pushFromFSp 0
- pushFromFSpVal 8
+ beqz L82
+ push.d.sp 0
+ push.d.sp.d 8
  syscall 3, 4 ; ?
- popToSp 4
- jmp L87
+ pop.sp 4
+ b L87
 L82:
- pushImm 1
- popToSp 4
+ push 1
+ pop.sp 4
 L87:
- pushFromFSp 4
+ push.d.sp 4
  ret 
 TR0:
- popToSp 0
- pushFromPWp W0
- pushFromFSp 0
- gosub 4, L99
+ pop.sp 0
+ push.wp W0
+ push.d.sp 0
+ jal 4, L99
  ret 
 L99:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L154
- pushFromFSp 0
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 0
+ push.d.sp 4
+ jal 4, L154
+ push.d.sp 0
  syscall 3, 74 ; ?
- popToSpVal 8
- pushFromFSpVal 8
- pushImmf 0
- subf 
- infoezf 
- jz L131
- pushImmf 5
- popToSpVal 8
- jmp L131
+ pop.sp.d 8
+ push.d.sp.d 8
+ push.s 0
+ sub.s 
+ slez.s 
+ beqz L131
+ push.s 5
+ pop.sp.d 8
+ b L131
 L131:
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 78 ; ?
- popToSpVal 12
- pushFromFSpVal 12
- pushImmf 0
- subf 
- infoezf 
- jz L153
- pushImmf 900
- popToSpVal 12
- jmp L153
+ pop.sp.d 12
+ push.d.sp.d 12
+ push.s 0
+ sub.s 
+ slez.s 
+ beqz L153
+ push.s 900
+ pop.sp.d 12
+ b L153
 L153:
  ret 
 L154:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- popToSpVal 4
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 4
+ pop.sp.d 4
  ret 
 
  section .bss

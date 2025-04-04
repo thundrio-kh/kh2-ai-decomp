@@ -16,190 +16,190 @@ Name: ca01_ms204
 ; codeRevealer: -l 91 -l 141 -l 259
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 4
+ push 4
  sub 
- jz L37
- jmp L46
+ beqz L37
+ b L46
 L37:
- pushFromPWp W0
- pushImm -1
- gosub 4, L48
- jmp L46
+ push.wp W0
+ push -1
+ jal 4, L48
+ b L46
 L46:
  drop 
  ret 
 L48:
- popToSp 4
- popToSp 0
+ pop.sp 4
+ pop.sp 0
  syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
- eqz 
- jz L70
- pushImm 2
- popToSpVal 0
- pushFromFSp 4
- popToSpVal 4
+ seqz 
+ beqz L70
+ push 2
+ pop.sp.d 0
+ push.d.sp 4
+ pop.sp.d 4
  syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
- jmp L70
+ b L70
 L70:
  ret 
 TR3:
- pushImm 0
- pushImm L91
- pushImm 0
- pushImm 0
+ push 0
+ push L91
+ push 0
+ push 0
  syscall 0, 9 ; trap_thread_start (4 in, 1 out)
  drop 
- pushFromPWp W0
- gosub 4, L154
+ push.wp W0
+ jal 4, L154
  ret 
 D91:
 L91:
  halt 
- pushFromPSp 0
- pushImm 1740
+ push.sp 0
+ push 1740
  syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
- pushFromPSp 16
- pushImm 1543
+ push.sp 16
+ push 1543
  syscall 1, 114 ; trap_obj_search_by_entry (2 in, 0 out)
 L106:
- gosub 12, L142
- memcpyToSp 16, 32
- pushFromPSp 32
+ jal 12, L142
+ memcpy.sp 16, 32
+ push.sp 32
  syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
- pushImm 0
+ push 0
  syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
- pushFromPSp 0
+ push.sp 0
  syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
- pushImm 1
+ push 1
  syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
- pushFromPSp 16
+ push.sp 16
  syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
- pushImm 2
+ push 2
  syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
  halt 
- jmp L106
+ b L106
 L141:
  ret 
 L142:
- pushFromPSp 0
- pushImm 4
+ push.sp 0
+ push 4
  add 
  syscall 1, 3 ; trap_sysobj_player (0 in, 1 out)
  memcpy 0
- pushFromPSp 0
+ push.sp 0
  ret 
 L154:
- popToSp 0
- pushFromFSp 0
- gosub 4, L233
+ pop.sp 0
+ push.d.sp 0
+ jal 4, L233
 L160:
- pushFromFSp 0
- gosub 4, L246
- jz L169
+ push.d.sp 0
+ jal 4, L246
+ beqz L169
  halt 
- jmp L160
+ b L160
 L169:
- pushFromFSpVal 0
+ push.d.sp.d 0
  dup 
- pushImm 1
+ push 1
  sub 
- jz L180
- jmp L186
+ beqz L180
+ b L186
 L180:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
- jmp L229
+ b L229
 L186:
  dup 
- pushImm 2
+ push 2
  sub 
- jz L195
- jmp L201
+ beqz L195
+ b L201
 L195:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
- jmp L229
+ b L229
 L201:
  dup 
- pushImm 3
+ push 3
  sub 
- jz L210
- jmp L214
+ beqz L210
+ b L214
 L210:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
- jmp L229
+ b L229
 L214:
  dup 
- pushImm 4
+ push 4
  sub 
- jz L223
- jmp L229
+ beqz L223
+ b L229
 L223:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
- jmp L229
+ b L229
 L229:
  drop 
- gosub 4, L256
+ jal 4, L256
  ret 
 L233:
- popToSp 0
- pushImm 0
- popToSpVal 0
- pushImm -1
- popToSpVal 4
+ pop.sp 0
+ push 0
+ pop.sp.d 0
+ push -1
+ pop.sp.d 4
  ret 
 L246:
- popToSp 0
- pushFromFSpVal 0
- pushImm 0
+ pop.sp 0
+ push.d.sp.d 0
+ push 0
  sub 
- eqz 
+ seqz 
  ret 
 L256:
  halt 
- jmp L256
+ b L256
 D259:
 L259:
  ret 
 TR6:
- popToSp 0
- popToSp 4
- pushFromFSp 4
- fetchValue 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
+ push.d.pop 4
  syscall 1, 309 ; trap_sysobj_is_player (1 in, 1 out)
  dup 
- jz L279
- pushFromFSp 4
+ beqz L279
+ push.d.sp 4
  syscall 1, 225 ; trap_obj_is_star (1 in, 1 out)
- eqz 
- eqzv 
+ seqz 
+ land 
 L279:
- jz L316
- pushFromFSp 0
+ beqz L316
+ push.d.sp 0
  syscall 2, 45 ; trap_damage_attack_param_id (1 in, 1 out)
  dup 
- pushImm 1073
+ push 1073
  sub 
- jz L294
- jmp L313
+ beqz L294
+ b L313
 L294:
- pushFromFSp 4
- gosub 4, L142
- memcpyToSp 16, 16
- pushFromPSp 16
+ push.d.sp 4
+ jal 4, L142
+ memcpy.sp 16, 16
+ push.sp 16
  syscall 1, 266 ; trap_obj_get_medal (1 in, 1 out)
- pushImm 4
+ push 4
  div 
  syscall 1, 267 ; trap_obj_scatter_medal (2 in, 0 out)
- jmp L313
+ b L313
 L313:
  drop 
- jmp L316
+ b L316
 L316:
  ret 
 D317:

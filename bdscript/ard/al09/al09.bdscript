@@ -12,47 +12,47 @@ Name: al09_check
 ; codeRevealer: 
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 124
+ push 124
  sub 
- jz L29
- jmp L38
+ beqz L29
+ b L38
 L29:
- pushImm 64
+ push 64
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- gosub 4, L58
- jmp L56
+ jal 4, L58
+ b L56
 L38:
  dup 
- pushImm 125
+ push 125
  sub 
- jz L47
- jmp L56
+ beqz L47
+ b L56
 L47:
- pushImm 65
+ push 65
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- gosub 4, L58
- jmp L56
+ jal 4, L58
+ b L56
 L56:
  drop 
  ret 
 L58:
- pushImm 64
+ push 64
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
  dup 
- jz L72
- pushImm 65
+ beqz L72
+ push 65
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqzv 
+ land 
 L72:
- jz L84
- pushImm 9
- pushImm 0
+ beqz L84
+ push 9
+ push 0
  syscall 1, 41 ; trap_signal_call (2 in, 0 out)
- jmp L84
+ b L84
 L84:
  ret 
 D85:

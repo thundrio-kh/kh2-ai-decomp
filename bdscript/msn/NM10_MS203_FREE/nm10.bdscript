@@ -14,201 +14,201 @@ Name: nm10_ms203_free
 ; codeRevealer: -l 343
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 130
+ push 130
  sub 
- jz L33
- jmp L40
+ beqz L33
+ b L40
 L33:
- pushImm 0
+ push 0
  syscall 4, 6 ; trap_mission_increment_count (1 in, 0 out)
- jmp L65
+ b L65
 L40:
  dup 
- pushImm 74
+ push 74
  sub 
- jz L49
- jmp L65
+ beqz L49
+ b L65
 L49:
- pushFromPWp W8
- pushImm 3
- gosub 4, L67
- pushFromPWp W0
- pushImm -1
- gosub 4, L101
- jmp L65
+ push.wp W8
+ push 3
+ jal 4, L67
+ push.wp W0
+ push -1
+ jal 4, L101
+ b L65
 L65:
  drop 
  ret 
 L67:
- popToSp 4
- popToSp 0
- pushFromFSpVal 0
- pushFromFSp 4
- pushFromFSpVal 4
+ pop.sp 4
+ pop.sp 0
+ push.d.sp.d 0
+ push.d.sp 4
+ push.d.sp.d 4
  syscall 4, 29 ; trap_mission_get_count (1 in, 1 out)
  syscall 4, 37 ; trap_score_update (3 in, 1 out)
- jz L100
- pushFromFSp 4
- pushImm 3
+ beqz L100
+ push.d.sp 4
+ push 3
  sub 
- msbi 
- jz L98
- pushFromFSpVal 4
+ sgez 
+ beqz L98
+ push.d.sp.d 4
  syscall 4, 50 ; trap_mission_warning_count (1 in, 0 out)
- jmp L98
+ b L98
 L98:
- jmp L100
+ b L100
 L100:
  ret 
 L101:
- popToSp 4
- popToSp 0
+ pop.sp 4
+ pop.sp 0
  syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
- eqz 
- jz L123
- pushImm 1
- popToSpVal 0
- pushFromFSp 4
- popToSpVal 4
+ seqz 
+ beqz L123
+ push 1
+ pop.sp.d 0
+ push.d.sp 4
+ pop.sp.d 4
  syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
- jmp L123
+ b L123
 L123:
  ret 
 TR3:
- pushFromPWp W8
- pushImm 9
- pushImm 0
- pushImm 2
- gosub 4, L142
- pushFromPWp W0
- gosub 4, L238
+ push.wp W8
+ push 9
+ push 0
+ push 2
+ jal 4, L142
+ push.wp W0
+ jal 4, L238
  ret 
 L142:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 0
- pushFromFSp 12
+ pop.sp 4
+ pop.sp 8
+ pop.sp 12
+ pop.sp 0
+ push.d.sp 12
  syscall 4, 38 ; trap_score_get (1 in, 1 out)
- popToSpVal 0
- pushFromFSpVal 0
- pushImm 1
- pushImm 0
+ pop.sp.d 0
+ push.d.sp.d 0
+ push 1
+ push 0
  syscall 4, 37 ; trap_score_update (3 in, 1 out)
  drop 
- pushFromFSp 8
- popToSpVal 4
- pushFromFSpVal 0
+ push.d.sp 8
+ pop.sp.d 4
+ push.d.sp.d 0
  syscall 4, 35 ; trap_score_type (1 in, 1 out)
- pushImm 2
+ push 2
  sub 
- info 
- jz L188
- pushFromFSp 4
+ slez 
+ beqz L188
+ push.d.sp 4
  syscall 4, 44 ; trap_mission_disable_count (1 in, 0 out)
- jmp L237
+ b L237
 L188:
- pushFromFSpVal 0
+ push.d.sp.d 0
  syscall 4, 35 ; trap_score_type (1 in, 1 out)
- pushImm 6
+ push 6
  sub 
- neqz 
- jz L219
- pushImm 0
- pushImm 0
- pushFromFSpVal 0
+ snez 
+ beqz L219
+ push 0
+ push 0
+ push.d.sp.d 0
  syscall 4, 36 ; trap_score_score (1 in, 1 out)
- pushImm 1
+ push 1
  add 
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 18 ; trap_mission_set_count_param (4 in, 0 out)
- jmp L219
+ b L219
 L219:
- pushFromFSp 0
- fetchValue 0
+ push.d.sp 0
+ push.d.pop 0
  syscall 4, 36 ; trap_score_score (1 in, 1 out)
- pushFromFSp 4
+ push.d.sp 4
  syscall 4, 5 ; trap_mission_set_count (2 in, 0 out)
- pushImm 10
- pushImm 0
+ push 10
+ push 0
  syscall 4, 46 ; trap_mission_set_warning_se (2 in, 0 out)
 L237:
  ret 
 L238:
- popToSp 0
- pushFromFSp 0
- gosub 4, L317
+ pop.sp 0
+ push.d.sp 0
+ jal 4, L317
 L244:
- pushFromFSp 0
- gosub 4, L330
- jz L253
+ push.d.sp 0
+ jal 4, L330
+ beqz L253
  halt 
- jmp L244
+ b L244
 L253:
- pushFromFSpVal 0
+ push.d.sp.d 0
  dup 
- pushImm 1
+ push 1
  sub 
- jz L264
- jmp L270
+ beqz L264
+ b L270
 L264:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
- jmp L313
+ b L313
 L270:
  dup 
- pushImm 2
+ push 2
  sub 
- jz L279
- jmp L285
+ beqz L279
+ b L285
 L279:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
- jmp L313
+ b L313
 L285:
  dup 
- pushImm 3
+ push 3
  sub 
- jz L294
- jmp L298
+ beqz L294
+ b L298
 L294:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
- jmp L313
+ b L313
 L298:
  dup 
- pushImm 4
+ push 4
  sub 
- jz L307
- jmp L313
+ beqz L307
+ b L313
 L307:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
- jmp L313
+ b L313
 L313:
  drop 
- gosub 4, L340
+ jal 4, L340
  ret 
 L317:
- popToSp 0
- pushImm 0
- popToSpVal 0
- pushImm -1
- popToSpVal 4
+ pop.sp 0
+ push 0
+ pop.sp.d 0
+ push -1
+ pop.sp.d 4
  ret 
 L330:
- popToSp 0
- pushFromFSpVal 0
- pushImm 0
+ pop.sp 0
+ push.d.sp.d 0
+ push 0
  sub 
- eqz 
+ seqz 
  ret 
 L340:
  halt 
- jmp L340
+ b L340
 D343:
 L343:
  ret 

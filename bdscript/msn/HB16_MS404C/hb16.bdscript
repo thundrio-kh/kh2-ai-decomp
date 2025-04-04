@@ -14,146 +14,146 @@ Name: hb16_ms404c
 ; codeRevealer: -l 237
  section .text
 TR10:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  dup 
- pushImm 82
+ push 82
  sub 
- jz L33
- jmp L47
+ beqz L33
+ b L47
 L33:
- pushImm 31
+ push 31
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- pushImm 8079
+ push 8079
  syscall 4, 4 ; trap_mission_information (1 in, 0 out)
  syscall 1, 117 ; trap_command_cage_on (0 in, 0 out)
- jmp L65
+ b L65
 L47:
  dup 
- pushImm 2
+ push 2
  sub 
- jz L56
- jmp L65
+ beqz L56
+ b L65
 L56:
- pushFromPWp W0
- pushImm -1
- gosub 4, L67
- jmp L65
+ push.wp W0
+ push -1
+ jal 4, L67
+ b L65
 L65:
  drop 
  ret 
 L67:
- popToSp 4
- popToSp 0
+ pop.sp 4
+ pop.sp 0
  syscall 4, 55 ; trap_mission_is_lock (0 in, 1 out)
- eqz 
- jz L89
- pushImm 1
- popToSpVal 0
- pushFromFSp 4
- popToSpVal 4
+ seqz 
+ beqz L89
+ push 1
+ pop.sp.d 0
+ push.d.sp 4
+ pop.sp.d 4
  syscall 4, 54 ; trap_mission_lock (0 in, 0 out)
- jmp L89
+ b L89
 L89:
  ret 
 TR3:
- pushImm 22
+ push 22
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- pushImmf 80
- gosub 4, L110
- pushImm 20
+ push.s 80
+ jal 4, L110
+ push 20
  syscall 1, 36 ; trap_bg_hide (1 in, 0 out)
- pushFromPWp W0
- gosub 4, L132
+ push.wp W0
+ jal 4, L132
  ret 
 L110:
- popToSp 0
+ pop.sp 0
 L112:
- pushFromFSp 0
- pushImmf 0
- subf 
- supzf 
- jz L131
- pushFromFSp 0
+ push.d.sp 0
+ push.s 0
+ sub.s 
+ sgtz.s 
+ beqz L131
+ push.d.sp 0
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSp 0
+ sub.s 
+ pop.sp 0
  halt 
- jmp L112
+ b L112
 L131:
  ret 
 L132:
- popToSp 0
- pushFromFSp 0
- gosub 4, L211
+ pop.sp 0
+ push.d.sp 0
+ jal 4, L211
 L138:
- pushFromFSp 0
- gosub 4, L224
- jz L147
+ push.d.sp 0
+ jal 4, L224
+ beqz L147
  halt 
- jmp L138
+ b L138
 L147:
- pushFromFSpVal 0
+ push.d.sp.d 0
  dup 
- pushImm 1
+ push 1
  sub 
- jz L158
- jmp L164
+ beqz L158
+ b L164
 L158:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 3 ; trap_mission_complete (1 in, 0 out)
- jmp L207
+ b L207
 L164:
  dup 
- pushImm 2
+ push 2
  sub 
- jz L173
- jmp L179
+ beqz L173
+ b L179
 L173:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 16 ; trap_mission_dead_boss (1 in, 0 out)
- jmp L207
+ b L207
 L179:
  dup 
- pushImm 3
+ push 3
  sub 
- jz L188
- jmp L192
+ beqz L188
+ b L192
 L188:
  syscall 4, 11 ; trap_mission_failed (0 in, 0 out)
- jmp L207
+ b L207
 L192:
  dup 
- pushImm 4
+ push 4
  sub 
- jz L201
- jmp L207
+ beqz L201
+ b L207
 L201:
- pushFromFSpVal 4
+ push.d.sp.d 4
  syscall 4, 22 ; trap_mission_exit (1 in, 0 out)
- jmp L207
+ b L207
 L207:
  drop 
- gosub 4, L234
+ jal 4, L234
  ret 
 L211:
- popToSp 0
- pushImm 0
- popToSpVal 0
- pushImm -1
- popToSpVal 4
+ pop.sp 0
+ push 0
+ pop.sp.d 0
+ push -1
+ pop.sp.d 4
  ret 
 L224:
- popToSp 0
- pushFromFSpVal 0
- pushImm 0
+ pop.sp 0
+ push.d.sp.d 0
+ push 0
  sub 
- eqz 
+ seqz 
  ret 
 L234:
  halt 
- jmp L234
+ b L234
 D237:
 L237:
  ret 

@@ -13,22 +13,22 @@ Name: tutorial-change
  section .text
 TR3:
  syscall 1, 337 ; trap_command_set_side_b (0 in, 0 out)
- pushImm 38
- pushImm 17629
- gosub 4, L25
+ push 38
+ push 17629
+ jal 4, L25
  ret 
 L25:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L46
- pushFromFSp 0
+ seqz 
+ beqz L46
+ push.d.sp 0
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- pushFromFSp 4
+ push.d.sp 4
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- jmp L46
+ b L46
 L46:
  ret 
 D47:

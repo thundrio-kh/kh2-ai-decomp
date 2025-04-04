@@ -12,67 +12,67 @@ Name: he_trophy
 ; codeRevealer: 
  section .text
 TR3:
- pushImm 97
- pushImm 6206
- pushImm 7
- pushImm 12
- pushImm 130
- gosub 4, L100
- pushImm 105
- pushImm 6208
- pushImm 6
- pushImm 11
- pushImm 129
- gosub 4, L100
- pushImm 99
- pushImm 6209
- pushImm 5
- pushImm 10
- pushImm 128
- gosub 4, L100
- pushImm 100
- pushImm 6212
- pushImm 8
- pushImm 13
- pushImm 131
- gosub 4, L100
- pushImm 101
- pushImm 6225
- pushImm 9
- pushImm 14
- pushImm 132
- gosub 4, L100
+ push 97
+ push 6206
+ push 7
+ push 12
+ push 130
+ jal 4, L100
+ push 105
+ push 6208
+ push 6
+ push 11
+ push 129
+ jal 4, L100
+ push 99
+ push 6209
+ push 5
+ push 10
+ push 128
+ jal 4, L100
+ push 100
+ push 6212
+ push 8
+ push 13
+ push 131
+ jal 4, L100
+ push 101
+ push 6225
+ push 9
+ push 14
+ push 132
+ jal 4, L100
  ret 
 L100:
- popToSp 0
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- pushFromFSp 16
+ pop.sp 0
+ pop.sp 4
+ pop.sp 8
+ pop.sp 12
+ pop.sp 16
+ push.d.sp 16
  syscall 0, 89 ; trap_menuflag_check (1 in, 1 out)
- jz L122
- pushFromFSp 8
+ beqz L122
+ push.d.sp 8
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- jmp L122
+ b L122
 L122:
- pushFromFSp 12
+ push.d.sp 12
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
- jz L134
- pushFromFSp 4
+ beqz L134
+ push.d.sp 4
  syscall 1, 37 ; trap_bg_show (1 in, 0 out)
- jmp L154
+ b L154
 L134:
- pushFromPSp 32
- pushFromFSp 0
+ push.sp 32
+ push.d.sp 0
  syscall 1, 143 ; trap_obj_search_by_serial (2 in, 0 out)
- pushFromPSp 32
- fetchValue 4
+ push.sp 32
+ push.d.pop 4
  syscall 1, 94 ; trap_sysobj_is_exist (1 in, 1 out)
- jz L154
- pushFromPSp 32
+ beqz L154
+ push.sp 32
  syscall 1, 28 ; trap_obj_leave (1 in, 0 out)
- jmp L154
+ b L154
 L154:
  ret 
 D155:

@@ -12,41 +12,41 @@ Name: tutorial-fullop
 ; codeRevealer: 
  section .text
 TR3:
- pushImm 18487
+ push 18487
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
- jz L38
- pushImm 42
- pushImm 19151
- gosub 4, L56
+ beqz L38
+ push 42
+ push 19151
+ jal 4, L56
 L29:
  syscall 1, 301 ; trap_tutorial_is_open (0 in, 1 out)
- jz L36
+ beqz L36
  halt 
- jmp L29
+ b L29
 L36:
- jmp L38
+ b L38
 L38:
- pushImm 1033
+ push 1033
  syscall 0, 15 ; trap_progress_check_flag (1 in, 1 out)
- jz L55
- pushImm 43
- pushImm 20542
- gosub 4, L56
- jmp L55
+ beqz L55
+ push 43
+ push 20542
+ jal 4, L56
+ b L55
 L55:
  ret 
 L56:
- popToSp 0
- popToSp 4
- pushFromFSp 4
+ pop.sp 0
+ pop.sp 4
+ push.d.sp 4
  syscall 0, 59 ; trap_saveflag_check (1 in, 1 out)
- eqz 
- jz L77
- pushFromFSp 0
+ seqz 
+ beqz L77
+ push.d.sp 0
  syscall 1, 296 ; trap_tutorial_open (1 in, 0 out)
- pushFromFSp 4
+ push.d.sp 4
  syscall 0, 57 ; trap_saveflag_set (1 in, 0 out)
- jmp L77
+ b L77
 L77:
  ret 
 D78:

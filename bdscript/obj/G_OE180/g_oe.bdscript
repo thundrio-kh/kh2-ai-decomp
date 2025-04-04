@@ -14,256 +14,256 @@ Name: g_oe180
 ; codeRevealer: -l 59 -l 104
  section .text
 TR1:
- pushFromPWp W0
- gosub 4, L23
+ push.wp W0
+ jal 4, L23
  ret 
 L23:
- popToSp 0
- pushImmf 260
- gosub 4, L69
+ pop.sp 0
+ push.s 260
+ jal 4, L69
 L30:
- pushFromFSp 0
- gosub 4, L91
- pushFromFSpVal 8
+ push.d.sp 0
+ jal 4, L91
+ push.d.sp.d 8
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- addf 
- popToSpVal 8
- pushFromFSpVal 12
+ add.s 
+ pop.sp.d 8
+ push.d.sp.d 12
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- addf 
- popToSpVal 12
- pushFromFSpVal 8
- pushImmf 440
- subf 
- supzf 
- jz L61
- jmp L64
+ add.s 
+ pop.sp.d 12
+ push.d.sp.d 8
+ push.s 440
+ sub.s 
+ sgtz.s 
+ beqz L61
+ b L64
 D59:
 L59:
- jmp L61
+ b L61
 L61:
  halt 
- jmp L30
+ b L30
 L64:
- pushFromFSp 0
+ push.d.sp 0
  syscall 3, 2 ; ?
  ret 
 L69:
- popToSp 0
+ pop.sp 0
 L71:
- pushFromFSp 0
- pushImmf 0
- subf 
- supzf 
- jz L90
- pushFromFSp 0
+ push.d.sp 0
+ push.s 0
+ sub.s 
+ sgtz.s 
+ beqz L90
+ push.d.sp 0
  syscall 0, 3 ; trap_frametime (0 in, 1 out)
- subf 
- popToSp 0
+ sub.s 
+ pop.sp 0
  halt 
- jmp L71
+ b L71
 L90:
  ret 
 L91:
- popToSp 0
- pushFromFSpVal 12
- pushImmf 3
- subf 
- infzf 
- jz L106
- jmp L208
+ pop.sp 0
+ push.d.sp.d 12
+ push.s 3
+ sub.s 
+ sltz.s 
+ beqz L106
+ b L208
 D104:
 L104:
- jmp L106
+ b L106
 L106:
- pushImmf 0
- popToSpVal 12
- pushFromFSp 0
+ push.s 0
+ pop.sp.d 12
+ push.d.sp 0
  syscall 3, 66 ; ?
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSp 16
- gosub 12, L209
- memcpyToSp 16, 48
- pushFromPSp 48
+ memcpy.sp 16, 48
+ push.sp 48
+ memcpy.sp 16, 16
+ push.sp 16
+ jal 12, L209
+ memcpy.sp 16, 48
+ push.sp 48
  syscall 0, 4 ; trap_vector_add (2 in, 1 out)
- memcpyToSp 16, 48
- pushFromPSp 48
- memcpyToSp 16, 16
- pushFromPSp 16
- pushImm 12
+ memcpy.sp 16, 48
+ push.sp 48
+ memcpy.sp 16, 16
+ push.sp 16
+ push 12
  add 
- pushImmf 1
+ push.s 1
  memcpy 0
- pushImmf 1
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- popToSp 32
- pushFromFSp 32
- pushImmf 0.6
- subf 
- supzf 
- jz L179
- pushFromFSp 0
- pushFromPSp 16
- pushImm 0
+ pop.sp 32
+ push.d.sp 32
+ push.s 0.6
+ sub.s 
+ sgtz.s 
+ beqz L179
+ push.d.sp 0
+ push.sp 16
+ push 0
  syscall 3, 134 ; ?
- jmp L208
+ b L208
 L179:
- pushFromFSp 32
- pushImmf 0.3
- subf 
- supzf 
- jz L199
- pushFromFSp 0
- pushFromPSp 16
- pushImm 0
+ push.d.sp 32
+ push.s 0.3
+ sub.s 
+ sgtz.s 
+ beqz L199
+ push.d.sp 0
+ push.sp 16
+ push 0
  syscall 3, 115 ; ?
- jmp L208
+ b L208
 L199:
- pushFromFSp 0
- pushFromPSp 16
- pushImm 0
+ push.d.sp 0
+ push.sp 16
+ push 0
  syscall 3, 111 ; ?
 L208:
  ret 
 L209:
- pushFromPSp 0
- pushImmf 1
+ push.sp 0
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 1
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0
- pushImmf 1
- gosub 8, L366
- pushImmf 1
+ push.s 0
+ push.s 1
+ jal 8, L366
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0.5
- subf 
- infzf 
- jz L253
- pushFromPSp 0
+ push.s 0.5
+ sub.s 
+ sltz.s 
+ beqz L253
+ push.sp 0
  dup 
- fetchValue 0
- pushImmf -1
- mulf 
+ push.d.pop 0
+ push.s -1
+ mul.s 
  memcpy 0
- jmp L253
+ b L253
 L253:
- pushImmf 1
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0.5
- subf 
- infzf 
- jz L281
- pushFromPSp 0
- pushImm 4
+ push.s 0.5
+ sub.s 
+ sltz.s 
+ beqz L281
+ push.sp 0
+ push 4
  add 
  dup 
- fetchValue 0
- pushImmf -1
- mulf 
+ push.d.pop 0
+ push.s -1
+ mul.s 
  memcpy 0
- jmp L281
+ b L281
 L281:
- pushFromPSp 0
+ push.sp 0
  syscall 0, 7 ; trap_vector_normalize (1 in, 1 out)
  drop 
- pushImmf 600
- pushImmf 1800
+ push.s 600
+ push.s 1800
  syscall 0, 18 ; trap_random_range (2 in, 1 out)
- popToSp 16
- pushFromPSp 0
- pushFromFSp 16
+ pop.sp 16
+ push.sp 0
+ push.d.sp 16
  syscall 0, 36 ; trap_vector_mul (2 in, 1 out)
- memcpyToSp 16, 32
- pushFromPSp 32
- memcpyToSp 16, 0
- pushFromPSp 0
- pushImm 12
+ memcpy.sp 16, 32
+ push.sp 32
+ memcpy.sp 16, 0
+ push.sp 0
+ push 12
  add 
- pushImmf 1
+ push.s 1
  memcpy 0
- pushFromPSp 0
- pushImm 8
+ push.sp 0
+ push 8
  add 
- pushImmf 0
- pushImmf 12000
+ push.s 0
+ push.s 12000
  syscall 0, 18 ; trap_random_range (2 in, 1 out)
  memcpy 0
- pushImmf 1
+ push.s 1
  syscall 0, 17 ; trap_random_getf (1 in, 1 out)
- pushImmf 0.5
- subf 
- infzf 
- jz L363
- pushFromPSp 0
- pushImm 8
+ push.s 0.5
+ sub.s 
+ sltz.s 
+ beqz L363
+ push.sp 0
+ push 8
  add 
  dup 
- fetchValue 0
- pushImmf -1
- mulf 
+ push.d.pop 0
+ push.s -1
+ mul.s 
  memcpy 0
- jmp L363
+ b L363
 L363:
- pushFromPSp 0
+ push.sp 0
  ret 
 L366:
- popToSp 4
- popToSp 8
- popToSp 12
- popToSp 16
- popToSp 0
- pushFromFSp 16
- popToSpVal 0
- pushFromFSp 12
- popToSpVal 4
- pushFromFSp 8
- popToSpVal 8
- pushFromFSp 4
- popToSpVal 12
+ pop.sp 4
+ pop.sp 8
+ pop.sp 12
+ pop.sp 16
+ pop.sp 0
+ push.d.sp 16
+ pop.sp.d 0
+ push.d.sp 12
+ pop.sp.d 4
+ push.d.sp 8
+ pop.sp.d 8
+ push.d.sp 4
+ pop.sp.d 12
  ret 
 TR0:
- popToSp 0
- pushFromPWp W0
- pushFromFSp 0
- gosub 4, L402
+ pop.sp 0
+ push.wp W0
+ push.d.sp 0
+ jal 4, L402
  ret 
 L402:
- popToSp 4
- popToSp 0
- pushFromFSp 0
- pushFromFSp 4
- gosub 4, L467
- pushFromPSp 32
- pushImmf 0
- pushImmf -29100
- pushImmf 19500
- pushImmf 1
- gosub 16, L366
- pushFromPSp 16
- pushImmf 0
- pushImmf 0
- pushImmf 1
- pushImmf 0
- gosub 16, L366
- pushFromFSp 0
- pushFromPSp 32
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 0
+ push.d.sp 4
+ jal 4, L467
+ push.sp 32
+ push.s 0
+ push.s -29100
+ push.s 19500
+ push.s 1
+ jal 16, L366
+ push.sp 16
+ push.s 0
+ push.s 0
+ push.s 1
+ push.s 0
+ jal 16, L366
+ push.d.sp 0
+ push.sp 32
  syscall 3, 60 ; ?
- pushFromFSp 0
- pushFromPSp 16
+ push.d.sp 0
+ push.sp 16
  syscall 3, 61 ; ?
- pushImmf 0
- popToSpVal 8
- pushImmf 3
- popToSpVal 12
+ push.s 0
+ pop.sp.d 8
+ push.s 3
+ pop.sp.d 12
  ret 
 L467:
- popToSp 4
- popToSp 0
- pushFromFSp 4
- popToSpVal 4
+ pop.sp 4
+ pop.sp 0
+ push.d.sp 4
+ pop.sp.d 4
  ret 
 
  section .bss
