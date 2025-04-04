@@ -63,7 +63,7 @@ L1483:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\jack\limi.bdscript       |           
 | limit\riku\limi.bdscript       |           

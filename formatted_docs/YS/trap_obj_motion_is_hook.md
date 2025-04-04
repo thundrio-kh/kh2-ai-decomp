@@ -1,4 +1,4 @@
-## trap_obj_motion_is_hook* (mset)
+## trap_obj_motion_is_hook* (motion)
 
 `syscall 1, 77 ; trap_obj_motion_is_hook (1 in, 1 out)`
 
@@ -35,7 +35,7 @@ L1536:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
 | obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          

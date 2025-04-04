@@ -34,7 +34,7 @@ L152:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\DC00_MS101\dc_m.bdscript       |           
 | msn\DC02_MS100\dc_m.bdscript       |           

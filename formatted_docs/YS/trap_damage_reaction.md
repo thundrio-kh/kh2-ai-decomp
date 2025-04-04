@@ -29,7 +29,7 @@ L122:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           
 | obj\B_AL120\b_al.bdscript       | ((B) Blizzard Lord’s ice spikes)          

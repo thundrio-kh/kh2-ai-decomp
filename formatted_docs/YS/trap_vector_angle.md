@@ -57,7 +57,7 @@ L3755:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_EH060\f_eh.bdscript       | ((F) Floating building 2 (EH))          
 | obj\G_EX250_0\g_ex.bdscript       | ()          

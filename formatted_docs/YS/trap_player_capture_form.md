@@ -63,7 +63,7 @@ L10397:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX150\b_ex.bdscript       | ((B) Luxord (WORKS! can’t be killed, or paused))          
 | obj\B_EX150_LV99\b_ex.bdscript       | ((B99) Luxord (Limit Cut))          

@@ -13,14 +13,14 @@ documentation level: untested
 ---
 ---
 ---
-push party ; (YS::PARTY_63 *) (Party object)
-push member_index ; (int) (Index of the party member (likely off the characters index https://openkh.dev/kh2/dictionary/characters.html))
+push party ; (YS::PARTY_63 *) (Party member)
+push hand_index ; (int) (Index of the left or right hand)
 syscall 1, 234 ; trap_party_get_weapon (2 in, 1 out)
 pop id ; (int) 
 ---
 ---
 ---
-description: Return the ID of the weapon the party member has equipped
+description: Return the ID of the weapon the party member has equipped in either the left or right hand, using the character index at https://openkh.dev/kh2/dictionary/characters.html
 ---
 ---
 ---

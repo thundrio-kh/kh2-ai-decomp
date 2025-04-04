@@ -28,7 +28,7 @@ TR13:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          
 | obj\B_AL120\b_al.bdscript       | ((B) Blizzard Lord’s ice spikes)          

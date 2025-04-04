@@ -86,7 +86,7 @@ L4165:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | obj\B_AL110\b_al.bdscript       | ((B) Volcanic Lord’s lava pool)          

@@ -5,7 +5,7 @@ name: trap_obj_set_fall_motion
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

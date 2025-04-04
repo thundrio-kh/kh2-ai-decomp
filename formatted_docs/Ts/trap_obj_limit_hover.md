@@ -37,7 +37,7 @@ L1340:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          

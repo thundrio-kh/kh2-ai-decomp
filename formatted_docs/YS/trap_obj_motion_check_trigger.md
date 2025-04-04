@@ -1,4 +1,4 @@
-## trap_obj_motion_check_trigger* (mset)
+## trap_obj_motion_check_trigger* (motion)
 
 `syscall 1, 151 ; trap_obj_motion_check_trigger (2 in, 1 out)`
 
@@ -66,7 +66,7 @@ L1074:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | limit\donald\limi.bdscript       |           

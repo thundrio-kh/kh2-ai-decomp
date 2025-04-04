@@ -28,7 +28,7 @@ L5141:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX330\b_ex.bdscript       | ((F) Xemnas’s dragon (Flying))          
 

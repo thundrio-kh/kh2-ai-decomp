@@ -43,7 +43,7 @@ L5755:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_LK100\b_lk.bdscript       | ((B) Shenzi)          
 | obj\B_LK100_00\b_lk.bdscript       | ((B) Shenzi)          

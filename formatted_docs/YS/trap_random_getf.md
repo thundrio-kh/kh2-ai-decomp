@@ -47,7 +47,7 @@ L1230:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | gumimenu\event\gumi.bdscript       |           
 | limit\aladdin\limi.bdscript       |           

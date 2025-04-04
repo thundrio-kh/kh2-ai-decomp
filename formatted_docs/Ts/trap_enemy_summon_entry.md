@@ -63,7 +63,7 @@ L1922:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX740\m_ex.bdscript       | ((M) Crescendo)          
 

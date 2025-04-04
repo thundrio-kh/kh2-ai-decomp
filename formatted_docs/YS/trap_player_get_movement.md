@@ -40,7 +40,7 @@ L1410:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\goofy\limi.bdscript       |           
 | limit\goofy_wi\limi.bdscript       |           

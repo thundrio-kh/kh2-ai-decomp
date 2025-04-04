@@ -26,7 +26,7 @@ L61:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT12_WORK_BOX\tt12.bdscript       |           
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

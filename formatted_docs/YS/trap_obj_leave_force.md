@@ -21,7 +21,7 @@ L2726:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX310\b_ex.bdscript       | ((F) Xemnas armor - Xaldin’s spears)          
 | obj\F_BB130\f_bb.bdscript       | ((F) ??? - Minigame related? (BB))          

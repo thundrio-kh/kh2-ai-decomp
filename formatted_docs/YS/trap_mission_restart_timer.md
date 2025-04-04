@@ -23,7 +23,7 @@ L184:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA07_MS105\ca07.bdscript       |           
 | msn\EH26_MS108\eh26.bdscript       |           

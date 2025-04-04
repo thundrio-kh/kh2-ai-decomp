@@ -1,4 +1,4 @@
-## trap_obj_motion_speed* (mset)
+## trap_obj_motion_speed* (motion)
 
 `syscall 1, 107 ; trap_obj_motion_speed (2 in, 0 out)`
 
@@ -30,7 +30,7 @@ L7602:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

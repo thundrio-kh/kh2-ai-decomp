@@ -30,7 +30,7 @@ L11216:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
 | obj\B_BB120\b_bb.bdscript       | ((B) Shadow Stalker)          

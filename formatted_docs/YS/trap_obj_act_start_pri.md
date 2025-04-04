@@ -24,7 +24,7 @@ L3972:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          
 | obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          

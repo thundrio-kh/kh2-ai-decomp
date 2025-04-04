@@ -30,7 +30,7 @@ L4020:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | msn\CA01_MS204\ca01.bdscript       |           

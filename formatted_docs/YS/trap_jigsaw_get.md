@@ -22,7 +22,7 @@ TR2:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\tt28\jigs.bdscript       |           
 

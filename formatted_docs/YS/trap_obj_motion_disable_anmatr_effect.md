@@ -1,4 +1,4 @@
-## trap_obj_motion_disable_anmatr_effect* (mset)
+## trap_obj_motion_disable_anmatr_effect* (motion)
 
 `syscall 1, 270 ; trap_obj_motion_disable_anmatr_effect (2 in, 0 out)`
 
@@ -47,7 +47,7 @@ L8820:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_LK110\b_lk.bdscript       | ((B) Scar)          
 | obj\B_TR000\b_tr.bdscript       | ((B) Hostile Program)          

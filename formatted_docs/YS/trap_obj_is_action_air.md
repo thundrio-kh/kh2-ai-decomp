@@ -26,7 +26,7 @@ L390:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX690\m_ex.bdscript       | ((M) Lance Soldier)          
 | obj\M_EX690_HB\m_ex.bdscript       | ((M) Lance Warrior)          

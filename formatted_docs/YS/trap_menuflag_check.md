@@ -32,7 +32,7 @@ L100:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\he03\he_t.bdscript       |           
 | msn\TT04_MS00\tt04.bdscript       |           

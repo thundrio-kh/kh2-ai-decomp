@@ -24,7 +24,7 @@ L137:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_NM110_HEAD\b_nm.bdscript       | ((B) The Experiment (Head))          
 | obj\B_NM110_L_ARM\b_nm.bdscript       | ((B) The Experiment (Left Hand))          

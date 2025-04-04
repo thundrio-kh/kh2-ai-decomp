@@ -54,7 +54,7 @@ L2170:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_CA060\f_ca.bdscript       | ((F) ??? (CA))          
 | obj\F_CA060_MEDAL\f_ca.bdscript       | ((F) ??? - Attackable floor? (MEDAL) (CA))          

@@ -13,7 +13,7 @@ documentation level: untested
 ---
 ---
 ---
-push pos ; (current position to use when calculated nearest ground)
+push pos ; (kn::FVector *) (current position to use when calculated nearest ground)
 push result ; (kn::FVector *)  (vector that the result will be stored in)
 push height ; (float)  (Value to add to the result of the nearest ground)
 syscall 1, 141 ; trap_bg_ground_pos (3 in, 1 out)

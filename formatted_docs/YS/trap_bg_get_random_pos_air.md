@@ -48,7 +48,7 @@ L4039:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald\limi.bdscript       |           
 | limit\donald_wi\limi.bdscript       |           

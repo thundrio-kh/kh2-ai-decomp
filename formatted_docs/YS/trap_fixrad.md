@@ -78,7 +78,7 @@ L402:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\sparrow\limi.bdscript       |           
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          

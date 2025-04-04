@@ -31,7 +31,7 @@ L4498:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX240\b_ex.bdscript       | ((?) Xemnas’s dragon (Anchored))          
 | obj\F_WI390\f_wi.bdscript       | ((F) Steamboat’s hook (WI))          

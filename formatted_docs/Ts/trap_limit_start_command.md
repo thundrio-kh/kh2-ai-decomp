@@ -40,7 +40,7 @@ L3640:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          
 | obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          

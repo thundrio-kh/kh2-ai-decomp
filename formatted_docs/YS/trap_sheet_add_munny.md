@@ -29,7 +29,7 @@ TR3:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\tt02\tt_n.bdscript       |           
 | msn\TT06_BAGGAGE_01\tt06.bdscript       |           

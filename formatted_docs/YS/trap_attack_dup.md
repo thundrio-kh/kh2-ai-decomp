@@ -59,7 +59,7 @@ L227:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\FIRE_1\fire.bdscript       |           
 | magic\FIRE_1lk\fire.bdscript       |           

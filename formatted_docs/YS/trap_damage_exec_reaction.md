@@ -51,7 +51,7 @@ L1192:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_BB100\b_bb.bdscript       | ((B) Thresholder)          
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

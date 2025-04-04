@@ -56,7 +56,7 @@ L4842:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX110\b_ex.bdscript       | ((B) Axel (Twilight Town, 2nd fight))          
 | obj\B_EX110_LV99\b_ex.bdscript       | ((B99) Axel (Limit Cut))          

@@ -42,7 +42,7 @@ L125:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX110_RTN\rtn_.bdscript       | ((B) Axel (Scene day he freezes) (RTN))          
 | obj\B_EX170_RTN\rtn_.bdscript       | ((B) Xehanort (Scene looking at Kingdom Hearts) (RTN))          

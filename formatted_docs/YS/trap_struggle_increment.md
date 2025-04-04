@@ -37,7 +37,7 @@ L172:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT04_MS00\tt04.bdscript       |           
 | msn\TT04_MS01\tt04.bdscript       |           

@@ -1,4 +1,4 @@
-## trap_obj_motion_check_range* (mset)
+## trap_obj_motion_check_range* (motion)
 
 `syscall 1, 150 ; trap_obj_motion_check_range (2 in, 1 out)`
 
@@ -28,7 +28,7 @@ L6675:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\beast\limi.bdscript       |           

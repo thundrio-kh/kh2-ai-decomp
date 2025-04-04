@@ -37,7 +37,7 @@ L106:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           
 | msn\CA07_MS105\ca07.bdscript       |           

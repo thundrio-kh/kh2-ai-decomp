@@ -57,7 +57,7 @@ L205:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX430\b_ex.bdscript       | ((?) Related to Lingering Will?)          
 | obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          

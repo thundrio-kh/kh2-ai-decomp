@@ -46,7 +46,7 @@ TR0:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_NM180\f_nm.bdscript       | ((F) Present minigame (shooting machine) (NM))          
 

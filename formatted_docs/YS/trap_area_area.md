@@ -39,7 +39,7 @@ L214:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HE00_MS104B\he00.bdscript       |           
 | msn\HE02_MS104C\he02.bdscript       |           

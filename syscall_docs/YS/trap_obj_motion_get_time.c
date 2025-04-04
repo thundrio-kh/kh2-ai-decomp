@@ -5,7 +5,7 @@ name: trap_obj_motion_get_time
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

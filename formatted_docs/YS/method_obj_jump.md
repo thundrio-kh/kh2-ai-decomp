@@ -54,7 +54,7 @@ L1950:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\auron\limi.bdscript       |           
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          

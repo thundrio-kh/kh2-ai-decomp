@@ -66,7 +66,7 @@ L5246:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX590\m_ex.bdscript       | ((M) Bulky Vendor)          
 | obj\M_EX590_NM\m_ex.bdscript       | ((M) Bulky Vendor (NM))          

@@ -20,7 +20,7 @@ L33:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL10_MS102\ms_d.bdscript       |           
 | msn\AL14_MS201A\ms_d.bdscript       |           

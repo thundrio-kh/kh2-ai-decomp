@@ -5,7 +5,7 @@ name: trap_obj_motion_unhook
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

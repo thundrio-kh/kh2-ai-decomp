@@ -49,7 +49,7 @@ L549:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
 | limit\donald2_wi\limi.bdscript       |           

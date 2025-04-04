@@ -30,7 +30,7 @@ L240:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TR07_MS203\tr07.bdscript       |           
 

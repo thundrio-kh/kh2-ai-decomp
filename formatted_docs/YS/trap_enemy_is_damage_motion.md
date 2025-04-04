@@ -32,7 +32,7 @@ L4913:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          
 | obj\B_CA020\b_ca.bdscript       | ((M) Undead Pirate A)          

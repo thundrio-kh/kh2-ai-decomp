@@ -25,7 +25,7 @@ L50:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM_3\he_c.bdscript       |           
 | msn\HE_COLOSSEUM_7\he_c.bdscript       |           

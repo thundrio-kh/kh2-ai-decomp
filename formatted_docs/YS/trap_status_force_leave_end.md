@@ -36,7 +36,7 @@ L6971:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_MU120\b_mu.bdscript       | ((B) Storm Rider)          
 | obj\B_NM000\b_nm.bdscript       | ((B) Oogie Boogie)          

@@ -28,7 +28,7 @@ L118:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\MU01_MS102\mu01.bdscript       |           
 | msn\MU01_MS103C\mu01.bdscript       |           

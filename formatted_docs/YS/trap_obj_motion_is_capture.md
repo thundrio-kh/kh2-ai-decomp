@@ -1,4 +1,4 @@
-## trap_obj_motion_is_capture* (mset)
+## trap_obj_motion_is_capture* (motion)
 
 `syscall 1, 101 ; trap_obj_motion_is_capture (1 in, 1 out)`
 
@@ -28,7 +28,7 @@ L1176:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
 | limit\donald2_wi\limi.bdscript       |           

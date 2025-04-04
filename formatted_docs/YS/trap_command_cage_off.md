@@ -24,7 +24,7 @@ L44:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HE05_MS102\he05.bdscript       |           
 | msn\TT40_KINOKO_AXE\kino.bdscript       |           

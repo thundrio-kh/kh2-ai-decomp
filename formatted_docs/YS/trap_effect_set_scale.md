@@ -47,7 +47,7 @@ L395:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\magnet1\magn.bdscript       |           
 | magic\MAGNET_1\magn.bdscript       |           

@@ -39,7 +39,7 @@ TR6:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\EH14_MS103\ms_l.bdscript       |           
 | msn\HE_COLOSSEUM_3\he_c.bdscript       |           

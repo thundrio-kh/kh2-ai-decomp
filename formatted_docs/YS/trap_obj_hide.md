@@ -23,7 +23,7 @@ L3659:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\donald2\limi.bdscript       |           

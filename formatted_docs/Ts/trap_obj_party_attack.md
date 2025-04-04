@@ -50,7 +50,7 @@ L1683:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EX100_KH1F\limi.bdscript       | ((P) Sora (Limit))          
 | obj\P_EX100_NM_KH1F\limi.bdscript       | ((P) Sora (NM) (Limit))          

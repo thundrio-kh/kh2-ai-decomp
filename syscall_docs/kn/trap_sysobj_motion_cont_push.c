@@ -5,7 +5,7 @@ name: trap_sysobj_motion_cont_push
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

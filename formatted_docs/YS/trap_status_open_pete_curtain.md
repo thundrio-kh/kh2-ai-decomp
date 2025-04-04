@@ -67,7 +67,7 @@ L6577:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_EX760_BTL\n_ex.bdscript       | ((B) Pete (BTL))          
 

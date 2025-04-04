@@ -40,7 +40,7 @@ L8099:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX100\b_ex.bdscript       | ((B) Twilight Thorn)          
 | obj\B_EX210\b_ex.bdscript       | ((M) Luxord’s card (attack))          

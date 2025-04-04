@@ -94,7 +94,7 @@ L5513:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\N_HB630\n_hb.bdscript       | ((N) Sephiroth (HB))          
 

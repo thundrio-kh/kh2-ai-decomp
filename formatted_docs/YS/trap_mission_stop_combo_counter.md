@@ -18,7 +18,7 @@ L58:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HB09_SKATE_01\hb09.bdscript       |           
 | msn\TT06_LETTER_01\tt06.bdscript       |           

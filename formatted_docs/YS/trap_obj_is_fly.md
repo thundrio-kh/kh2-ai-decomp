@@ -33,7 +33,7 @@ L3114:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | obj\B_EX170\b_ex.bdscript       | ((B) Xemnas)          

@@ -1,4 +1,4 @@
-## trap_obj_motion_unsync* (mset)
+## trap_obj_motion_unsync* (motion)
 
 `syscall 1, 236 ; trap_obj_motion_unsync (2 in, 0 out)`
 
@@ -29,7 +29,7 @@ L6188:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
 | limit\donald2_wi\limi.bdscript       |           

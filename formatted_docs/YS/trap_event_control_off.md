@@ -22,7 +22,7 @@ L52:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT02_MS201\save.bdscript       |           
 | msn\TT32_MS303\tt32.bdscript       |           

@@ -27,7 +27,7 @@ L442:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_HB090\f_hb.bdscript       | ((F) CoR’s whirlwind (jumpable) (HB))          
 | obj\F_MU070\f_mu.bdscript       | ((F) Wind ride (Reaction Command) (MU))          

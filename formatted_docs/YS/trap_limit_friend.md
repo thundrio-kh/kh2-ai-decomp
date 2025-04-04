@@ -50,7 +50,7 @@ L5230:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

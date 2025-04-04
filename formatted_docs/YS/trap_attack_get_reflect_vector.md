@@ -32,7 +32,7 @@ L5227:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          

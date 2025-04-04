@@ -35,7 +35,7 @@ L8286:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX530\m_ex.bdscript       | ((M) Bookmaster)          
 | obj\M_EX530_HB\m_ex.bdscript       | ((M) Runemaster)          

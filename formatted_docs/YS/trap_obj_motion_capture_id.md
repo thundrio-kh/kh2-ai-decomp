@@ -1,4 +1,4 @@
-## trap_obj_motion_capture_id* (mset)
+## trap_obj_motion_capture_id* (motion)
 
 `syscall 1, 238 ; trap_obj_motion_capture_id (1 in, 1 out)`
 
@@ -34,7 +34,7 @@ L2626:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

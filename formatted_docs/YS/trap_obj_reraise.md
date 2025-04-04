@@ -54,7 +54,7 @@ L1695:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EX340\p_ex.bdscript       | ((P) Tinker Bell)          
 

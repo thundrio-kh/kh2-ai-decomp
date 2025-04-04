@@ -1,4 +1,4 @@
-## trap_obj_motion_get_time* (mset)
+## trap_obj_motion_get_time* (motion)
 
 `syscall 1, 69 ; trap_obj_motion_get_time (1 in, 1 out)`
 
@@ -58,7 +58,7 @@ L1235:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL100_2ND\b_al.bdscript       | ((M) Blizzard Lord)          
 | obj\B_AL100_ICE\b_al.bdscript       | ((B) Blizzard Lord)          

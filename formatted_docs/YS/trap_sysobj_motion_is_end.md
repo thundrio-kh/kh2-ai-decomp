@@ -1,4 +1,4 @@
-## trap_sysobj_motion_is_end* (mset)
+## trap_sysobj_motion_is_end* (motion)
 
 `syscall 1, 14 ; trap_sysobj_motion_is_end (1 in, 1 out)`
 
@@ -25,7 +25,7 @@ L2619:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\auron\limi.bdscript       |           

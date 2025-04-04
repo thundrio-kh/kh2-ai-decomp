@@ -27,7 +27,7 @@ L636:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TR020\f_tr.bdscript       | ((F) Energy core’s cube (TR))          
 | obj\M_EX610\m_ex.bdscript       | ((M) Strafer)          

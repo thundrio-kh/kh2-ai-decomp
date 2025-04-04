@@ -5,7 +5,7 @@ name: trap_obj_motion_capture_id
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

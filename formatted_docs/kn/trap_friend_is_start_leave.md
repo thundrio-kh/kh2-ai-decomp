@@ -27,7 +27,7 @@ L1237:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_EX360\p_ex.bdscript       | ((P) ??? (EX))          
 

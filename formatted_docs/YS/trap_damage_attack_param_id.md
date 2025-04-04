@@ -29,7 +29,7 @@ L279:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA01_MS204\ca01.bdscript       |           
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

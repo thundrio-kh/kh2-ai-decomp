@@ -36,7 +36,7 @@ L307:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\HE_COLOSSEUM\he_c.bdscript       |           
 | msn\HE_COLOSSEUM_2\he_c.bdscript       |           

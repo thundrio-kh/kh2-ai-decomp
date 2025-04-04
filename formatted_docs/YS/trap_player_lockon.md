@@ -26,7 +26,7 @@ L63:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT04_MS107\tt04.bdscript       |           
 

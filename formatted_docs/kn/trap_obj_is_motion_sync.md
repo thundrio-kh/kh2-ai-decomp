@@ -30,7 +30,7 @@ L4032:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_CA000\p_ca.bdscript       | ((P) Jack Sparrow)          
 | obj\P_CA000_HUMAN\p_ca.bdscript       | ((P) Jack Sparrow (human))          

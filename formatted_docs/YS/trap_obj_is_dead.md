@@ -32,7 +32,7 @@ L98:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\CA10_MS107\ca10.bdscript       |           
 | msn\EH20_MS113\eh20.bdscript       |           

@@ -41,7 +41,7 @@ L185:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | limit\trinity\limi.bdscript       |           

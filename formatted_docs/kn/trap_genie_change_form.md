@@ -51,7 +51,7 @@ L68:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\P_AL010\p_al.bdscript       | ((P) Genie)          
 

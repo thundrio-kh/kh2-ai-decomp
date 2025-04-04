@@ -34,7 +34,7 @@ L5057:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | magic\blizzard1\bliz.bdscript       |           

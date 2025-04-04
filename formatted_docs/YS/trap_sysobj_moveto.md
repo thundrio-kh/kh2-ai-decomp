@@ -128,7 +128,7 @@ L3495:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX420\m_ex.bdscript       | ((M) Neoshadow)          
 | obj\M_EX420_NM\m_ex.bdscript       | ((M) Neoshadow (NM))          

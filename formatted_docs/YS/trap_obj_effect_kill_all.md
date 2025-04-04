@@ -23,7 +23,7 @@ L9368:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_HB020\f_hb.bdscript       | ((F) ??? (HB))          
 | obj\F_NM020\f_nm.bdscript       | ((F) Spitting fountain (NM))          

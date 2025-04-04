@@ -84,7 +84,7 @@ L3817:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_AL070_BLIZZARD\f_al.bdscript       | ((F) Blizzard orbs (AL))          
 | obj\F_AL070_FIRE\f_al.bdscript       | ((F) Fire orbs (AL))          

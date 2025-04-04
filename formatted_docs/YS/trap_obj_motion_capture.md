@@ -1,4 +1,4 @@
-## trap_obj_motion_capture* (mset)
+## trap_obj_motion_capture* (motion)
 
 `syscall 1, 29 ; trap_obj_motion_capture (4 in, 1 out)`
 
@@ -61,7 +61,7 @@ L2804:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_AL100_1ST\b_al.bdscript       | ((M) Volcano Lord)          

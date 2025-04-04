@@ -31,7 +31,7 @@ L103:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_MU080\f_mu.bdscript       | ((F) ??? (MU))          
 | obj\F_MU090\f_mu.bdscript       | ((F) ??? (MU))          

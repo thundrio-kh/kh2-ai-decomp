@@ -59,6 +59,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
         example_usage_from = re.findall(r'example usage from (.*)\n', sections[8])[0].strip()
         example_usage = '\n'.join(sections[8].strip().split("\n")[1:])
 
+
         page = "## "
         page += '*{}*'.format(name) if doc_level == 'complete' else name
         page += '*' if doc_level == 'untested' else ''
@@ -103,7 +104,7 @@ for root, dirs, files in os.walk(os.path.join("syscall_docs")):
                 variable_types.add(arg_type)
                 page += '| {}   | {}   \n'.format(arg_name, arg_type)
 
-        appears_table = '| filename | Entity (obj)\n'
+        appears_table = '| filename | Entity Name (obj)\n'
         appears_table += '|----------|-------------\n'
         # obj\M_EX910\m_ex.bdscript ((M) Samurai)
         for obj in appears_in:

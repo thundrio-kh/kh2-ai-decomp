@@ -24,7 +24,7 @@ L39:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\es00\es_s.bdscript       |           
 | ard\es00\es_u.bdscript       |           

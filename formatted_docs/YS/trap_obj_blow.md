@@ -61,7 +61,7 @@ L10262:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_BB110\b_bb.bdscript       | ((B) Dark Thorn)          
 | obj\B_CA010\b_ca.bdscript       | ((B) Barbossa)          

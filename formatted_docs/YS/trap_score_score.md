@@ -36,7 +36,7 @@ L237:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\AL00_SKATE_01\al00.bdscript       |           
 | msn\AL10_KINOKO_LEX\kino.bdscript       |           

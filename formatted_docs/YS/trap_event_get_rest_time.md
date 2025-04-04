@@ -36,7 +36,7 @@ L2592:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX660_WI_RAW\m_ex.bdscript       | ()          
 | obj\M_EX760_NM_RAW\m_ex.bdscript       | ()          

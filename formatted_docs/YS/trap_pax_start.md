@@ -96,7 +96,7 @@ L60:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | magic\blizzard1\bliz.bdscript       |           
 | magic\BLIZZARD_1\bliz.bdscript       |           

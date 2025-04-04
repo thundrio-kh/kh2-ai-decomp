@@ -41,7 +41,7 @@ L99:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT14_MS110\tt14.bdscript       |           
 | msn\TT32_MS302\tt32.bdscript       |           

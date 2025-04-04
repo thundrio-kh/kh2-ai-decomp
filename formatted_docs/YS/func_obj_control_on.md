@@ -56,7 +56,7 @@ L18089:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          
 | obj\B_EX140_LV99\b_ex.bdscript       | ((B99) Xigbar (Limit Cut))          

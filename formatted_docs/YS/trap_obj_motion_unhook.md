@@ -1,4 +1,4 @@
-## trap_obj_motion_unhook* (mset)
+## trap_obj_motion_unhook* (motion)
 
 `syscall 1, 76 ; trap_obj_motion_unhook (1 in, 0 out)`
 
@@ -25,7 +25,7 @@ L5222:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_EX160\b_ex.bdscript       | ((B) Saïx)          
 | obj\B_EX160_LV99\b_ex.bdscript       | ((B99) Saïx (Limit Cut))          

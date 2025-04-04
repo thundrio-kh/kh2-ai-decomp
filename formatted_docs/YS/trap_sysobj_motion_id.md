@@ -1,4 +1,4 @@
-## trap_sysobj_motion_id* (mset)
+## trap_sysobj_motion_id* (motion)
 
 `syscall 1, 15 ; trap_sysobj_motion_id (1 in, 1 out)`
 
@@ -40,7 +40,7 @@ L6642:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | limit\beast\limi.bdscript       |           

@@ -37,7 +37,7 @@ L39:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\beast\limi.bdscript       |           
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          

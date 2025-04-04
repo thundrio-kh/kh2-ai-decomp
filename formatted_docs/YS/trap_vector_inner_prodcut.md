@@ -75,7 +75,7 @@ L331:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA050\b_ca.bdscript       | ((B) Grim Reaper)          
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

@@ -642,7 +642,7 @@ L4649:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_AL020\b_al.bdscript       | ((B) Jafar (Djinn))          
 | obj\B_CA000\b_ca.bdscript       | ((B) Illuminator)          

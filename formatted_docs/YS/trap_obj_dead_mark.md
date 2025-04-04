@@ -33,7 +33,7 @@ L2510:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX350_01\m_ex.bdscript       | ((M) Mushroom 1 (EX))          
 | obj\M_EX350_02\m_ex.bdscript       | ((M) Mushroom 2 (EX))          

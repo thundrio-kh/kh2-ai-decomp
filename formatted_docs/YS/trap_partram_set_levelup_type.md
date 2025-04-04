@@ -22,7 +22,7 @@ L40:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\tt32\tt_l.bdscript       |           
 

@@ -1,4 +1,4 @@
-## trap_obj_motion_get_loop_top* (mset)
+## trap_obj_motion_get_loop_top* (motion)
 
 `syscall 1, 68 ; trap_obj_motion_get_loop_top (2 in, 1 out)`
 
@@ -44,7 +44,7 @@ L2835:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX020\m_ex.bdscript       | ((M) Shadow)          
 | obj\M_EX020_NM\m_ex.bdscript       | ((M) Shadow (NM))          

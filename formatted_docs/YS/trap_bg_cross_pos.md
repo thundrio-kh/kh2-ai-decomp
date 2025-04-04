@@ -53,7 +53,7 @@ L5052:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_CA040_PUB\b_ca.bdscript       | ()          
 | obj\B_EX140\b_ex.bdscript       | ((B) Xigbar)          

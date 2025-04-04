@@ -22,7 +22,7 @@ TR2:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\lk02\lk_g.bdscript       |           
 | ard\lk03\lk_g.bdscript       |           

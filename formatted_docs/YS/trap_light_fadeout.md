@@ -31,7 +31,7 @@ L2462:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\trinity\limi.bdscript       |           
 | limit\trinity_wi\limi.bdscript       |           

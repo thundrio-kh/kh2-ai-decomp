@@ -28,7 +28,7 @@ L68:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | 00common       |           
 | ard\eh18\full.bdscript       |           

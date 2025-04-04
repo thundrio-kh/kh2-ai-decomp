@@ -1,4 +1,4 @@
-## trap_obj_motion_sync* (mset)
+## trap_obj_motion_sync* (motion)
 
 `syscall 1, 126 ; trap_obj_motion_sync (2 in, 0 out)`
 
@@ -42,7 +42,7 @@ L4229:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\donald2\limi.bdscript       |           
 | limit\donald2_wi\limi.bdscript       |           

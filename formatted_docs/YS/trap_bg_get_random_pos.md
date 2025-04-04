@@ -60,7 +60,7 @@ L7019:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\riku\limi.bdscript       |           
 | msn\MU09_KINOKO_VEX\kino.bdscript       |           

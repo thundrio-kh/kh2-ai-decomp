@@ -37,7 +37,7 @@ L4096:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\aladdin\limi.bdscript       |           
 | msn\TT04_MS301\tt04.bdscript       |           

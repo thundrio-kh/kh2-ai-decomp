@@ -20,7 +20,7 @@ L141:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | ard\al05\ms_b.bdscript       |           
 | ard\tr04\ms_b.bdscript       |           

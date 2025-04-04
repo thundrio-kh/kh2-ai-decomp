@@ -5,7 +5,7 @@ name: trap_sysobj_motion_change
 ---
 ---
 ---
-category: mset
+category: motion
 ---
 ---
 ---

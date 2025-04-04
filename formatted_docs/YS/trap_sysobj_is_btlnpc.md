@@ -33,7 +33,7 @@ L177:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | msn\TT04_MS301\tt04.bdscript       |           
 | msn\TT05_MS403\tt05.bdscript       |           

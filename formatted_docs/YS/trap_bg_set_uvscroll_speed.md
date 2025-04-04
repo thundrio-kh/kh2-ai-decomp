@@ -31,7 +31,7 @@ L2162:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          
 | obj\F_NM150\f_nm.bdscript       | ((F) ??? (NM))          

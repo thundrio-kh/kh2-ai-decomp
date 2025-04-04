@@ -33,7 +33,7 @@ L5866:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\M_EX210\m_ex.bdscript       | ((M) Air Pirate)          
 | obj\M_EX210_HB\m_ex.bdscript       | ((M) Aerial Viking)          

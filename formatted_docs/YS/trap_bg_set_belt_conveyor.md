@@ -34,7 +34,7 @@ L2054:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_HB110\f_hb.bdscript       | ((F) ??? (HB))          
 | obj\F_NM140\f_nm.bdscript       | ((F) ??? (NM))          

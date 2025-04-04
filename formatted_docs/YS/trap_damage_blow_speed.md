@@ -46,7 +46,7 @@ L305:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\F_TT020\f_tt.bdscript       | ((F) Juggling ball (TT))          
 

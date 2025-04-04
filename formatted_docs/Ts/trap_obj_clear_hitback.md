@@ -54,7 +54,7 @@ L201:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | obj\B_MU100\b_mu.bdscript       | ((B) Shan-Yu)          
 

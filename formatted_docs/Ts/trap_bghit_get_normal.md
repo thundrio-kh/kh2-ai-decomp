@@ -93,7 +93,7 @@ L298:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\mulan\limi.bdscript       |           
 | limit\tron\limi.bdscript       |           

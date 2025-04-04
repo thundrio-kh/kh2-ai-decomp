@@ -55,7 +55,7 @@ L50:
 
 
 ### Appears in:
-| filename | Entity (obj)
+| filename | Entity Name (obj)
 |----------|-------------
 | limit\tron\limi.bdscript       |           
 | obj\B_EX170_LAST\b_ex.bdscript       | ((B) Xemnas (Final))          
