@@ -21,6 +21,7 @@ pop id ; (int)
 ---
 ---
 description: Return the ID of the weapon the party member has equipped in either the left or right hand, using the character index at https://openkh.dev/kh2/dictionary/characters.html
+             If said weapon does not exist, it will return 0x00 instead.
 ---
 ---
 ---
